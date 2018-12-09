@@ -1,0 +1,2731 @@
+
+
+
+
+# Introduction
+
+Sirpas stands for “SImple Role Playing Adventure System”. Everything here is streamlined and stripped to what you need to get your role playing adventures going, including the count of words in the descriptions.
+So, we’re talking “adventures” here: a role playing session that can spawn for a casual night with friends, or with the family, or with strangers met at a gaming club.
+Systems thought for Role Playing Games are (usually) complex enough for you to invest lots of time in creating your characters, play through multiple sessions and use some time off to sort your past games out to get fun out of them. Some may say that’s actually part of the fun itself.
+If you like the streamlined experience of Sirpas gameplay, you can play adventures spawning multiple sessions, or multiple adventures with the same characters, in the same world (this is often referred as campaign). But you don’t need to. The idea is having as little commitment necessary to get playing, and then, pour in as much commitment as you want if you like it.
+
+
+## A system for everyone
+
+Sirpas is for everyone: beginners, intermediate and veteran players.
+Who reads this manual and has never heard about role playing games before will encounter many new terms that have a special meaning in RPG, as “session”, “adventure”, “campaign”, “world”, “setting”, “character”, etc. Also, they might need on how to prepare, organise, manage, or even behave during a session. This is important, but it is not covered in this manual. This rulebook presents the game as succinctly as possible; all the concepts commonly known in RPG can be easily found in the larger internet. 
+However, to help the beginners getting on RPG with Sirpas, depending on the media you’re reading the rulebook, we will:
+	1.	provide hyperlink to the description of the term. 
+	2.	highlighting terms with special meaning in RPG. A fast Internet search for “RPG” and the highlighted word will  bring you to the description of the term.
+	3.	Add a box named “For Beginners” near the relevant terms, that experienced readers can skip.
+There are Sirpas expansions dedicated to beginners, and the Sirpas Beginner Manual which actually helps beginners to successfully set up their first role playing gaming experiences.
+
+In most RPG settings, combat is a central part of the game action, if not the absolute protagonist. This leads to RPG systems being usually structured around the combat mechanics, and gaming sessions being mainly occupied by detailing combat actions.
+Sirpas works the other way around: the combat system is simply the specialisation of the general system. As such, is possible to run adventures or entire campaign devoid of “combat”, and focusing either on other kind of contest (as i.e. skill battles in virtual worlds), or in other aspects of the role playing altogether.
+Consider, for example, a police drama as a RPG setting. While gunfights might play an important part in the campaign, the very nature of a gunfight doesn’t translate into interesting RPG mechanics, while more interesting actions as sword fights or martial art fights might not fit the setting.
+As such, Sirpas focuses on a more differentiated gameplay, which can be as combat-intensive or combat-devoid as needed.
+
+Sirpas is a generic role playing system, that doesn’t presume anything on the setting of your adventures. The system applies whatever your players might want to play; as normal people struggling to survive in a post-apocalyptic world, as wizards and knights in a high fantasy setting, as cyborgs in a SF plot, or even as AI in a virtual reality.
+The base Sirpas system uses only 6 sided dices. Expansions might introduce different kind of dices that are used in particular situations.
+
+
+
+
+# Mechanics
+
+The mechanics are the ways the game works, in terms of what players actually do to move their characters through the adventures. Formally declaring what a character does, checking if an action is successful, checking which characters wins over a contest are all mechanics.
+Sirpas mechanics are determined by statistics and checks. 
+Statistics are a numeric or qualitative description of some aspect of a character, for example a value of 12 in strength or a level of expert in lore knowledge. 
+Checks are performed on statistics in order to determine if a character can succeed in some action the player wants it to perform. They usually consist in throwing a set of dice and beating an odd which is determined by some statistic; for example, summing the points from a throw of three dice to the base strength, and surpass a certain total in order to slam a jammed door. In other cases, the check succeeds automatically if the relative statistics has a certain minimum value; for example, in order for the character to know about a certain legend, it must be at least expert in the relative lore.
+
+
+# Statistics
+
+In Sirpas, the statistics are all the numeric or quality values that define a characters. They are divided in the following categories:
+* Mains: basic statistics on which every aspect of the character depends. In the base system, they are body (B) and mind (M).
+* Attributes: important aspect of the character on which many other mechanics depend. For example: health and will.
+* Skills: specific abilities to perform some actions, as hacking, lock picking, running, climbing etc.
+* Injury Statistics: A set of statistics that regulate how characters receive and resist damage; for example Damage Points and Injury Points.
+* Advantages/disadvantages: Statistics affecting others, as example an expert modifier which increase the chance of winning checks against a specific skill. 
+* Perks/drags: distinctive traits setting the character apart from the background people in the game world. Could be things a “famous” or “criminal”. They have an impact in the adventure at large, and might also affect indirectly some checks, providing bonuses and penalties at discretion of the game master.
+
+Numeric statistics are normally expressed as a value between 3 and 18, which is the range of value that can be expressed by summing the result of a 3d6 dice throw. A value of 3 represents the minimum skill level, or characteristic, that a character could have to be still considered minimally  functional in the game world — a value below 3 would indicate a sub-normal characteristic. A value of 18 would represent the apex for the game environment, and the values between 10 and 12 would be the most common across the reference population.
+The scaling would be relative to the game setting. For example, if playing a campaign where the characters are Greek or Norse gods, a value of 3 on any statistic would probably express a skill level far superior to that of humans.
+Notice that the scaling is not linear: it follows the probability distribution of the 3d6 dice throw. For example, a character with strength 12 is just marginally stronger than one with strength 11, but one with strength 18 is in a totally different league than one with strength 17. Similarly, characters with health 10 and 11 have a very similar constitution, but one with health 3 will be much more gracile than one with health 4.  
+Different settings might introduce different ranges with other scaling rules; for example in a vampire society, the body could be measured in a 0-100 range, with B0 being worth a human B18, and where the difference between B0 and B1 is the same as between a B99 and B100.
+
+
+# Character points
+
+Character Points (*CP*) express the amount of experience of your character, and with that, the amount of learning (improvement of its statistics) that the character will perform during the adventure, or in between adventures.
+Roughly speaking, statistics can be bought, and in some case sold, in exchange with character points.
+The amount of CP that must be spent to increase a certain statistic vary depending on the nature of the statistic, and in most cases, also depending on its current level. It is easier to increase low scores, and as the statistic gets higher, it becomes harder and harder to perfect it further.
+Statistics are scored with their base and a specific amount of points assigned to them. For example, the skill sprint is based on dexterity. If the current value of dexterity is 10, and nothing has been invested in sprint, then sprint will be 10 as well. To buy a point of sprint, the character must invest the CP needed to bring it from 10 to 11. Now, if at a later time the character increases its dexterity, the sprint skill will increase as well, as the points previously spent on sprint represent a bonus with respect to the dexterity base.
+This means that it’s usually preferable to invest in the desired skills in the beginning, and then increase the base at a later time. On the other hands, later adventures typically provide a larger amount of CP per session, so the decision wether to invest on single skills or on more powerful bases, while important, is not as critical as it might seem.
+The following table describes how many CP must be spent in order to increase a statistic. Skills have different costs, depending on the complexity of learning a certain skill.
+
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Level    | Mains    | Attributes | Skill/hard | Skill/normal | Skill/easy |
++-------------:+-------------:+-------------:+-------------:+-------------:+-------------:+
+| 4            | 15           | 5            | 1            | 1            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 5            | 18           | 6            | 1            | 1            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 6            | 21           | 7            | 1            | 1            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 7            | 24           | 8            | 1            | 1            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 8            | 27           | 9            | 2            | 1            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 9            | 30           | 10           | 2            | 1            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 10           | 33           | 11           | 3            | 2            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 11           | 36           | 12           | 3            | 2            | 1            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 12           | 39           | 13           | 4            | 2            | 2            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 13           | 42           | 14           | 4            | 3            | 2            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 14           | 45           | 16           | 5            | 3            | 2            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 15           | 50           | 18           | 5            | 3            | 2            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 16           | 55           | 20           | 6            | 4            | 3            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 17           | 60           | 22           | 6            | 4            | 3            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| 18           | 70           | 25           | 7            | 5            | 4            |
++--------------+--------------+--------------+--------------+--------------+--------------+
+
+
+
+
+
+
+
+
+# Checks
+
+A check consists of throwing dices and verify if the result is successful.
+Checks are the nuts and bolts of Sirpas. Practically every action that might succeed or fail requires performing a successful check. There different kind of checks that apply to different situations, but in general, a check consists in beating some high point score summing a 3d6 with the value of the statistics on which the check is performed.
+
+
+
+## Simple check
+
+A simple check is a direct check on a precise skill (or in rarer cases, on an attribute or on a main). For example to verify if the character can land safely after jumping down from a height, a check on the skill acrobatics must be performed.
+To win a simple check, the sum of 3d6 and the value of the skill must be equal or above 21. Modifiers can be applied when the check is particularly easy or hard:
+
+Difficuylty
+Modifier
+Minimum Score
+Trivial
++6
+15
+Easy
++3
+18
+Normal
+0
+21
+Difficult
+-3
+24
+Hard
+-6
+27
+Very Hard
+-8
+29
+
+Instead of the generic difficulty level, some skills have specific modifiers; for example, jumping from a height requires a check on acrobatics with a modifier that depends on how high is the jump.
+
+
+
+## Repeated attempts
+
+In some situation, it is possible to repeat a failed attempt soon after the first try. For example, picking a lock (when no one is around and there aren’t time constraint) can be repeated indefinitely, until a success is achieved — or unless the lock is actually impossible to pick.
+Normally, any skill that can rationally be performed more than once in a row can be repeated by applying a penalty of two points. For example, suppose you’re trying to break in an apartment; you have to perform a check against lock picking at normal level, and your lock picking skill is at level 13. You roll 3d6 for 6 points, for a total of 19, which is a failure. If you have enough time to try again, you can, but now you must win against 23. You roll a 9, for a total of 22 (bad luck there), and if you want to try again, now you must beat 25. You our 3d6 scores a 13, and 13+13 gives a total of 26, which is a success.
+The time required for an attempt is usually indicated in the description of the target skill; if not, is decided by the master, depending on the situation.
+
+ 
+
+
+## Ranking rolls
+
+Ranking rolls are contests between two or more characters, ranking them in a order that doesn’t allow for draws. Also, the margin each character has on the other is not relevant.
+For example, to establish the arrival order in a running relay, every participant rolls a ranking on running. The order of arrival is decided once and for all, for the whole competition, and draws are not allowed.
+Draws are resolved by re-rolling on the same skill. The re-roll is only relevant for the relative order of the characters in draw. For example, suppose that, in said race, four character score a total of 26, 22, 22 and 20 respectively. Now, the second and third characters roll to decide their relative position. Now, if player A rolls 26 and player B rolls 18, the A ends up second, and the B ends up third, no matter what the other participant scored before.
+
+
+
+## Direct contest
+
+Some actions are performed either in competition or against other characters. When this happens, a contest check must be performed. Both characters (or the Master in place of NPCs), must roll a 3d6 and add the value of the skill on which the contest is performed; the character scoring the highest points wins the contest.
+Some contest can be asymmetrical: for example, an attacker will roll on some attack skill, while a defender will try and prevent the attacker success using some defence skill. The skill and combat sections describe some possible asymmetric skills, but players and masters (and other expansions) might come up with new ones if the situation suggests so.
+Draws can be allowed or rerolled, depending on the situation and the skill. For example, suppose that two characters struggle to reach for a weapon during a brawl, with a contest on dexterity. If they roll a draw, it means both of them reached for the weapon, and now the situation has changed.
+In other cases, the draw might be ignored and rerolled until some of the participants win on the others. In this case, the draw is ignored, as if not rolled. This is the case of all the ranking rolls.
+In other cases yet, the draw means a temporary stalemate in the situation. This then becomes a repeated contest.
+
+
+## Repeated contest
+
+In some contest rolls, draws are considered stalemate. In this cases, the characters might decide to give up (and leave the situation at a standstill as it is), or try a completely new roll. 
+For example, consider two characters trying to pull an object away from the grip of the other (i.e. a precious gold statuette found in an ancient temple). They roll a contest on strength, and a draw means that neither was able to snitch the treasure away from the other. Now, if there isn’t any savage tribe running after them, or if the temple is not collapsing, they may try again the same roll.
+
+
+## Critical Results
+
+In some situations, it is possible to achieve a spectacular success, or a devastating failure.  The vast majority of direct checks and some contests are subject to this effect, unless specified otherwise.
+The actual result of a critical success or failure will be determined by the GM, if not specified in the skill description itself.
+This table represents what happens when rolling a high value, depending on the success margin.
+SM
+Roll
+Result
+<= 0
+18
+Success
+= 1
+18
+Critical Success
+>= 2
+17-18
+Critical Success
+>= 3
+16-18
+Critical Success
+>= 6
+15-18
+Critical Success
+A roll of 18 always results in a success, even if the value of the base skill plus the rolled 18 wouldn’t be enough to pass the level (SM less than or equal to zero).
+When SM is 1, a roll of 18 is a critical success. When it’s SM is larger than one, a 17 is enough, when it’s 3 or larger, 16 is enough, and when it’s 6 or larger, a 15 is enough.
+Similarly, the following is the table of the critical failure:
+SM
+Roll
+Result
+>= 0
+3
+Failure
+= -1
+3
+Critical Failure
+<= -2
+3-4
+Critical Failure
+<= -3
+3-5
+Critical Failure
+<= -6
+3-6
+Critical Failure
+This applies also to contests. Suppose a very strong character is facing a weak opponent, and that the stronger character might win even by adding 3 points to its base attack skill value. If it actually rolls a 3, the skill will fail, even with a positive success margin.
+
+
+
+
+
+# Mains
+
+The main attributes, or simply mains, are the base of your character. For a fast adventure, you could simply set your mains and be ready to go, as everything else depends on them. You could then fine tune other attributes and skills as you go, or dedicate time to build your character before the sessions.
+When a character is first created, the mains should express a value around the mean of the attributes they refer to; for example if creating a strong but slow character, it should be given a body value in between the strength, that will be set higher, and the dexterity, that will be set lower.
+
+
+The Body (B) is a value that describes your overall physical prowess in terms of bodily strength, resilience to prolonged efforts, recovery speed, resistance to illness and so on. For humans, it is measured in the range between 3 and 18 (the possible outcomes of 3d6). Most adult characters score in the range between 10 and 12, with 18 representing a person with the best possible body (rarely if ever ill, strong as the strongest wrestler or weight lifter, moving as swift as a record runner and able to run as long as a marathon champion — all at the same time), and 3 representing the weakest possible fully formed and barely functional body.
+
+The Mind (M) is the overall score of mental abilities in terms of intelligence, creativity, will power, mental sanity, depth of knowledge and so on. A mind of 3 represents a character that is barely functional as an autonomous person (or creature) in the reference setting, while a 18 represents a character maximally intelligent, penetrating, knowledgable, sane and wise. The vast majority of characters (or heroes) in the reference setting will have a mind between 10 and 12.
+
+
+# Attributes
+
+Attributes are a finer description than the mains for a character, and form the base for all the underlying skills. In the base system, there are four physical and four mental attributes, which are respectively based on body and mind.
+By default the attributes assume the same value of their base, but it’s possible to increase attribute values with character points.
+
+When creating a character, it is possible to reduce the value of attributes (buying negative points) in order to gain CP to be invested in other attributes or skills, or eventually, even on mains.
+As this operation might change the base of attributes, to avoid ambiguities, first all the increase must be bought, possibly resulting in a negative balance of CP, then the attributes (and eventually skills) are sold. At the end of the process, the CP balance must be in the positive.
+For example, suppose we have 30 CP, and we want to upgrade body from 12 to 13. This costs 42 CP, bringing our balance to 30-42 = -12. Now, physical attributes have base 13, so we can sell a point of Health, going down from 13 to 12, and gaining 14 points, which brings the balance of CP back to 2.
+
+The physical attributes are based on Body (B).
+
+
+## Dexterity
+
+Dexterity (D) expresses the ability to control one’s own body. Eye-hand coordination, agility, reaction times and rapidity are all components of dexterity. A dexterity of 3 indicates sluggish reaction times, 18 indicates a martial-art or olympic gymnast level of dexterity, with the vast majority of common people stacking around 10-12.
+
+
+## Equilibrium
+
+Equilibrium (E) is the stability of the mind, or basically the equivalent of its health (H). It indicates how much mental strain a person can take before being debilitated; of course, it is also important in those settings where attacks are delivered to the mind instead of the body: fantasy, sci-fi and horror settings can present as many dangers for the mind as for the body, or more.
+
+
+## Health
+
+Health (H) represents the resistance to illness and polluted environment (including allergenic agents). The level of health influences also the amount of damage that a body can sustain before being wounded, and that’s very important in fights and other dangerous situations.
+
+
+## Intelligence
+
+Intelligence (I) is the ability to understand and solve complex problems, comprehend difficult study subjects, see through schemes and machinations etc. As it measure the flexibility of the mind processes, it can be thought as the dexterity (D) of the mind.
+
+
+## Strength
+
+Strength (S) is the attribute measuring a character physical strength. In the default setting, it also indicates how much weight the character can transport without being fatigued, or the amount of weight it can carry without being slowed down, or that it can lift. There are different tiers  used in various occasion, all multiple of the value of Strength in pounds:
+
+Weight
+Transport
+Lift
+Movement
+<= Sx1 
+Trivial
+Normal
+Normal
+<= Sx2
+Easy
+Difficult
+Normal
+<= Sx3
+Normal
+Hard
+3/4
+<= Sx4
+Difficult
+Very Hard
+2/3
+<= Sx5
+Hard
+Very Hard
+1/2
+> Sx5
+Very Hard
+Very Hard
+1/3
+The name of the tiers match the names of the skill difficulty levels, as they are directly applied as a difficulty level in various checks. However, they also define other effects that are not directly related with skills; for example, the transport weight tier is applied directly to the combat movement: a character transporting  a “very hard” weight has its movement cut to one third of it normal movement.
+
+
+Mental attributes are based on Mind (M).
+
+
+## Will
+
+Will (W) is the power of the mind to focus on a certain task, perform prolonged mental activity, keep determination in adverse situations and so on. It can be roughly thought as the equivalent of the strength (S) in the mind realm.
+
+
+# Modifiers
+
+In some situation, instead of using a statistic as a direct base, the system requires to use a base modifier instead.
+This happens when some  statistics are baseless by their own nature, but a base statistic influences them nevertheless. For example, many combat styles are baseless, as you need to learn them from scratch to be good at those, but characters with a higher dexterity, or rather strength, are naturally better at it.
+
+-4
+-3
+-2
+-1
+0
++1
++2
++3
++4
+Very Easy
+ 
+
+
+3-8
+9-12
+13-18
+
+
+
+Easy
+
+
+3-6
+7-9
+10-11
+12-14
+15-18
+
+
+Normal
+
+3-5
+6-7
+8-9
+10-11
+12-13
+14-15
+16-18
+
+Hard
+3-4
+5-6
+7-8
+9
+10-11
+12
+13-14
+15-16
+17-18
+Very Hard
+3-5
+6-8
+9-10
+11
+12
+13
+14-15
+16-17
+18
+
+
+
+
+# Skills
+
+Skills are abilities that a character can exercise at a certain moment, and 
+They are usually based on a single attribute; this means that, if the character didn’t invent any CP in them, they assume the same value of he attribute they are based on.
+Some are based on multiple attributes: their base value can be a mean of two or more attributes, or can be the best out of alternative attributes.
+Some skills don’t have a base: they represent abilities that must be learned from scratch; for example lock picking must be learned before being used.
+Last, some skills have a base that depends on a base modifier; this is indicated with a lowercase letter in front of the attribute. For example, Hiding in Shadows has base hD, which means its base value depends on the base modifier table applied to Dexterity. If a character has Dexterity 15, the base will be 2, if it has Dexterity 8 the base will be -1.
+
+
+
+## Acrobatics (D)
+
+The character is able to perform acrobatic feats, including falling from a height that would normally damage a less skilled character. 
+If used to check if the character is hurt when falling from a height, the following table indicates the modifier applied:
+Height
+Modifier
+6 feet
+Trivial
+9 feet
+Easy
+12 feet
+Normal
+18 feet
+Difficult
+24 feet
+Hard
+30 feet
+Very Hard
+Above 30 feet, the check fails automatically. 
+When the check fails the character takes 1 damage point per feet.
+
+
+## Active Mitigation (-; H)
+
+The character can mitigate a damage equal to the success margin once per turn. 
+
+
+## Charisma (M)
+
+Used to influence positively other characters. Not to be confused with Persuade. This skill is specifically meant for characters trying to make a good impression, obtain favours, special treatments, or a generic good attitude. Persuade is the skill to deliver one specific talk with persuasive power.
+ 
+
+
+
+## Chemistry (-; H)
+
+
+## Climbing (D; E)
+
+Used to check when the character climbs a section of wall 6 feet high. Use the following table to determine the difficulty of the action:
+Surface
+Modifier
+Ivy riddled wall
+Trivial
+Old bricks
+Easy
+Stone Wall
+Normal
+Rock Wall
+Difficult
+Castle Wall
+Hard
+Polished Wall
+Very Hard
+If the character fails, it stays at its current spot, and it can try again with the repeated attempt modifiers.
+A critical failure implies that the character fell from the current spot. A critical success indicates it climbed for 12 feet instead of 6.
+
+
+
+## Deceit (-)
+
+It’s the ability to say a credible lie.
+
+deception
+
+
+## Endurance (H)
+
+Endurance is the ability to resist long lasting physical strain. A long march, swimming, carrying weights for a long time etc. requires an endurance check. Subsequent endurance checks against the same condition are treated as repeated check (each of them gets a -1 modifier), even if other skills are used meanwhile.
+For example, if a group is taking a forced march and has already passed a check, is forced to a fight and then resumes the march without any rest, the next endurance check will have a modifier of -1.
+A success indicates that the character is able to continue the effort. In case of failure, the character needs to try again with the ever increasing repeated check, until success becomes impossible.
+A critical success causes the next repeated check to be won automatically, and the current repeated modifier is also reduced by 1.
+A critical failure indicates that the character is exhausted, and needs to rest. If it is in a precarious situation, i.e. swimming, walking along a dangerous mountain trail, it might be forced to roll against a deadly wound or die.
+
+
+
+
+## Engineering (-; H)
+
+
+## First Aid (-)
+
+The character can stabilize a disabled target with a successful check. If a first aid kit is available, the check becomes trivial.
+The character can also cure a fresh wound with a successful check; having a first-aid kit at disposal gives a modifier of +6 (some special first aid kits have higher modifiers). 
+The user can also cure more fresh wounds on the same character, applying a -2 penalty to for each further wounds cured.
+
+
+
+## Hacking/System (-; H)
+
+When a character wants to hack a device or a system, it can roll on this to check if it has the necessary knowledge to hack the system.
+Each action requires a different check. A critical failure implies the hacking has been neutralised and the source identified. A critical success implies that the character has gained privileged access, and further actions on the same system will not require a separate check.
+The specifics of the system depend on the setting. For some settings, the hacking skill could be general, while in other settings specific systems will be identified, and they might require a separate hacking skill.
+
+
+## Healing/Race (-; H)
+
+Prerequisite: First Aid 6
+The character has advanced practical medical knowledge for the setting where the adventure takes place, and is able to heal wounds of the target creatures. 
+The following table is applied when checking for the character success:
+Severity
+Modifier
+Light
+Normal
+Severe
+Difficult
+Incapacitating
+Hard
+Specific healing aids in the target setting can provide other modifiers.
+The time required for the healing to be performed depends on the setting and on the device used. A SF cellular replicator or a magic balm could allow healing incapacitating wounds in one day, in a few hours or in minutes, while in other settings, an herbal healing remedy might require a week.
+
+
+
+## Hiding (I; E)
+
+The character knows how to hide so to look like inconspicuous material (i.e. a sack of potatoes, a part of a load of straw on a cart, a roll of cloth and so on). The difficulty of the check is determined by the GM.
+
+
+
+## Hiding in Shadows (hD)
+
+The character knows how to hide in dark places, or pass unobserved in a crowded place.
+
+
+## Initiative (D/W; H)
+
+This skill represents the reaction times and determination under pressure of the character. It is typically used in contests or rankings, to decide who acts first during a stalemate, but it can be also used in checks. The order in which a combat turn develops is decided by a ranking on the initiative of all the involved characters.
+The base is either Dexterity or Will, the best of the two.
+
+
+## Intimidate (W)
+
+Intimidate is the action of menacing someone that some negative outcome will follow, unless they don’t comply with some desired course of actions. For intimidation to be effective, the menace must be credible, and the target must actually wish for that not to happen.
+
+
+## Investigation (I; H)
+
+The ability to find hidden clue or draw correct conclusions with a limited amount of clue. Particularly useful when visiting the scene of a crime.
+
+
+
+## Lie Detection (hI; H)
+
+This skill represents the ability of the character to detect lies, given small hints on the voice, facial expressions and behaviour of the target.
+A skilled lier can oppose its deception. Otherwise, the character can try a check on this skill, with a difficulty that depends on the amount of information the character has about the truth.
+
+
+## Lock Picking (-)
+
+Used to try opening normal locks. The lock must be within the reach of the technological knowledge of the character. The character must have also proper tools at its disposal to try the action.
+
+
+## Lore Knowledge/field (-; E)
+
+This skill represents the knowledge of the character about lore and stories in the setting where the adventure takes place. The skill is specific for lore types; for example, it can be targeted at norse mythology, egyptology, local lores etc.
+To check wether a character knows a specific lore it gets in contact with, check against a difficulty which depends on how widespread the knowledge is, considered the specific setting where the adventure takes place. 
+A lore everyone knows is checked as “trivial”, one that is particularly obscure an known only to experts or initiates is “very hard”.
+
+
+
+## Perception (W; H)
+
+Determines whether the character is able to detect an element in the surrounding that is hard to spot, as a secret door, a potential danger, a follower and so on.
+It is used when there aren’t more specific skills to be applied in the specific situation. For example, trying to find traps is done by rolling on traps.
+
+
+## Persuade (I)
+
+With this skill, the character can persuade others. Persuading means leading others to believe the truth of some idea, fact or point of view (regardless of them being actually true or not). Persuasion works on characters that don’t have strong evidence or didn’t made up their mind already on said idea, fact or point of view.
+Persuasion can also be used to convince someone into performing some action, or abstaining to perform some action they should do, provided the consequences for doing so are not particularly harsh. For example, you can persuade some security guards to let you in a restricted party, provided they don’t have categorical orders, or provided that they think they can get away with a transgression.
+
+
+
+## Pickpocket (hD)
+
+Tires to remove objects from another characters. The objects must not be secured to its body for the action to be successful. Use the following table to determine the difficulty of the action:
+Target Status
+Modifier
+Sleeping
+Trivial
+Distracted
+Easy
+Unaware
+Normal
+Suspicious
+Difficult
+Aware
+Hard
+In guard
+Very Hard
+The action cannot reasonably be tried if the target is actually aware of the fact that the character is actively trying to pickpocket it.
+
+
+
+## Poison Resistance (H)
+
+This skill is used to check if a character is able to resist a generic poison, when receiving a deadly wound from poison source.
+
+
+## Poisons (-)
+
+
+## Riding/mount (hD)
+
+This skill is used to perform particularly difficult actions while riding a specific animal. For example, jumping a fence with a horse, jumping across acrobatic platforms with a motor bike, running through a busy skyline with a flying car and so on.
+The skill is specific for each device (or animal) that the character might ride.
+Some riding specialisation can be baseless, if learning them requires a specific preparation (for example, helicopter pilot).
+
+
+
+## Running (D)
+
+Running is the skill used when deciding which character wins a run race. It can also be used to check if a character is able to run for a long time.
+
+
+
+## Silent Movement (D)
+
+This skill is used when the character wants to try and move silently. The following table describes possible modifiers:
+Terrain
+Modifier
+Stone
+Trivial
+Compact soil
+Easy
+House wooden floor
+Normal
+Old wooden floor
+Difficult
+Dead Leaves
+Hard
+Squeaky Floor.
+Very Hard
+
+
+
+
+## Traps (I; H)
+
+This skill represents the knowledge of the character about traps, and is used to either detect, build or try and disarm traps, with the following modifiers:
+Height
+Modifier
+Build
+Trivial
+Detect
+Normal
+Disarm
+Hard
+Each tarp might come with a separate specific modifier in order to be detected and disarmed. Once a trap is discovered, the character might attempt a separate check on Traps at normal difficulty to determine its modifier prior attempting to remove it.
+
+
+
+# Advantages
+
+Advantages special conditions that apply to the character in general or to a specific skill in particular, and that have a direct effect on some game mechanics.
+While most advantages are simply possessed by a character or not, some can have different levels. For example, Survival Instinct can have a level 1 and 3, each level granting a higher modifier. In that case, the description of the advantage indicates the initial cost and the cost per additional level. The cost of a further level is given by the base cost, plus the additional level cost times the current level. For example, if the description indicates the cost of being 5/2, it means that the first level costs 5, the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
+Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. For example, they could require having already acquired another advantage, or having a certain minimal score in some specific statistic.
+
+
+
+## Battleproof (10CP)
+
+The character can withstand an additional wound from physical sources before being incapacitated. The first physical wound is received during a fight will automatically heal in 6 hours, even if not treated.
+
+
+## Born in a Mourning Hall (20CP)
+
+Prerequisite: Hard To Die
+The character can withstand an additional wound from mental sources before being incapacitated, and will not die in case the last wound received was from a mental source if not treated for 1 hour, regardless of the Injury Points sustained.
+The last  mental wound received during a fight will automatically heal in 6 hours, even if not treated.
+
+
+## Combat Expert/style (10/5CP)
+
+The character can perform one additional defence with the selected style per combat turn.
+
+
+## Deep Mind 1-6 (5/2CP)
+
+Prerequisite: M 8
+The character acquires a passive mitigation against despair damage equal to the level of this advantage, and a passive mitigation against maddening damage equal to half the level.
+
+
+## Easygoing/skill (3CP)
+
+Easy checks on the target skill get an additional modifier of +1, and trivial checks have an additional modifier of +2.
+
+
+
+## Expertise/skill (6CP)
+
+Skill Expertise (SE) it’s an advantage bought for specific skills. In every check performed on the target skill, the player can throw 4d6 instead of 3d6, and discard the lower result.
+
+
+## Fast Paced 1-3 (6/4CP)
+
+Prerequisite: D 8
+During combat, the character can move for 6 extra feet per turn for each level of this skill.
+
+
+
+
+## Hard Skin 1-6 (4/2CP)
+
+Preprequisite: B 7
+The character gains a passive defence against blunt damage equal to the level acquired, and against cut damage equal to half the level of this advantage.
+
+
+## Hard to Die 1-3 (15/5CP)
+
+The character can withstand an extra wound per level of the advantage before being disabled.
+
+
+## Mastery/skill (10CP)
+
+Preprequisite: Expertise
+Skill Mastery (SM/skill) is an advantage that is applied on a specific skill. As a pre-requisite, the character must have already Expertise on the same skill.
+Mastery changes all the checks using that skill from a 3d6 throw to a 2d6+6 (as if one dice is always automatically rolling a 6).
+
+
+## Natural/skill (6CP)
+
+The character is a “natural” of a certain discipline. Difficult checks on the target skill get an additional modifier of +1, hard checks have an additional modifier of +2, and Very Hard checks have a +3 modifier. Without any other situational modifiers, the effective modifiers for difficult, hard and very hard checks become -2, -4 and -5.
+
+
+
+## Strong Temper (20CP)
+
+Preprequisite: Hard To Die
+The character can withstand an additional wound from physical sources before being incapacitated, and will not die in case the last wound received was from a physical source if not treated for 1 hour, regardless of the Injury Points sustained. 
+The last physical wound received during a fight will automatically heal in 6 hours, even if not treated.
+
+
+## Survival Instinct 1-4 (6/3CP)
+
+All instinctive defence checks and contests get a modifier of +1 per level bought.
+
+
+## Total Mitigation (6CP)
+
+Normal damage mitigation can reduce incoming damage to a minimum of 1 DP. With this advantage, the minimum becomes 0 DP.
+
+
+# Disadvantages
+
+Advantages can also be negative (disadvantages). A character might be given disadvantages temporarily or permanently, because of what happened during previous adventures, or as a background flavour, or in order to gain CP to be spent elsewhere, in other statistics.
+
+
+## Lack of Instinct 1-4 (6/3CP)
+
+All instinctive defence checks and contests get a -1 modifier per level bought. Cannot be countered by buying Survival Instinct.
+
+
+# Perks and Drags
+
+Perks and drags are generic advantages and disadvantages that don’t impact the game system directly. They usually give more flavour  in terms of roleplaying, and better define a character in its settings. Being famous, of noble origins, being able to play a certain instrument, knowing a certain literature or scientific topic, being rich, and the inverse of those are considered perks. 
+They can and usually will have an influence in how the adventure play, and some of them has also some indirect effect on the rules. For example, Medical Knowledge is mainly meant for your character to be able to speak competently about illnesses and cures, but it also influences the rolls on First Aid; Criminal Boss is meant to direct your adventure in a certain direction, but it also influences the skill Intimidate.
+
+
+
+## Aristocracy
+
+Cost: 20, 30, 40 CP
+The character is an aristocrat in the target setting. In settings that don’t comprise a birth right, traditional aristocracy, the perk grants belonging to a similar oligarchy or high-order political elite.
+The cost, and the effect of the perk on the game, depend on the level of aristocracy:
+	•	Baron, career politician, oligarch: 20 CP
+	•	Count, party leader, organisation leader: 30 CP
+	•	Duke, minister, CEO: 40 CP
+
+
+
+## Blind
+
+Cost: -40 CP
+The character is blind. It can still use this drag even if it has a substitute for normal vision, provided the substitute is just minimising the disadvantage. For example, having a dog companion that guides the character through every possible obstacle is still blindness, but having the ability to communicate telepathically with demonic minions and use their sight would invalidate this perk.
+
+
+
+## Criminal
+
+Cost: 10 CP
+The character is an active criminal. It is in hiding and actively searched by the local law enforcement, and is in contact with other criminals and criminal organisations. The character has an initial wealth of 25,000$.
+Add 5 CP if the character is also member of an active criminal organisation. In this case, the character will have an initial wealth of 50,000$ and a monthly wage of 3,000$, but it must abide to the rules of the criminal organisation it is part of.
+This perk grants a modifier of +2 to Intimidate.
+Law Enforcer, Criminal Background, Criminal Boss and Criminal are mutually exclusive: the character can chose only one of them.
+
+
+
+## Criminal Background
+
+Cost: 10 CP
+The character was a member of a criminal organisation, and has retained contacts with the ambient.
+Characters with this perk have a +2 modifier to Persuade and +1 to Intimidate.
+Law Enforcer, Criminal Background, Criminal Boss and Criminal are mutually exclusive: the character can chose only one of them.
+
+
+## Criminal Boss
+
+Cost: variable.
+The character is the leader of a criminal organisation. It has a relatively large network of criminals that follow his orders, a consistent wealth and a flux of incoming money. On the other side, it’s known to relevant police forces, constantly at risk of being arrested and not always welcome in high social circles.
+The size of the organisation determines the cost in terms of points:
+Size
+Wealth
+Monthly Income
+CP
+< 10
+100,000$
+5000$
+20
+10-20
+250,000$
+7000$
+30
+20-50
+1M$
+20,000$
+50
+>50
+5M$
+100,000$
+75
+
+This perk grants a modifier of +4 on Intimidate checks and comparisons against anyone, excluding other characters with the Criminal Boss perk.
+Law Enforcer, Criminal Background, Criminal Boss and Criminal are mutually exclusive: the character can chose only one of them.
+
+
+## Crippled
+
+Cost: -15 or -20 CP
+The character has one arm (-15 CP) or one leg (-20 CP) non functional or missing.
+
+
+
+## Deaf
+
+Cost: -30 CP
+The character is deaf. It can still use this drag even if it has a substitute for normal hearing, provided the substitute is just minimising the disadvantage. For example, having an laptop/tablet/phone that provides the character with speech-to-text recognition is still being deaf, but having the ability to communicate telepathically with demonic minions and use their hearing would invalidate this perk.
+
+
+
+## Field Expert
+
+Cost: 10 CP
+The character is an expert in some relevant field of study: physics, psychology, economics, information technology, regional lore, world lore, history etc.
+This perk can be bought once per specialisation field, and can be upgraded (immediately or later on) to Renown Field Expert.
+
+
+## Law Enforcer
+
+Cost: 15 CP or 20 CP
+The character is a member of Police or equivalent Law Enforcement agency. This includes also roles of Acting Inspectors and Prosecuting Judges.
+The character has an initial wealth of 20,000$ and a monthly wage of 1,000$. 
+Add 5 CP to be in higher ranks of Law Enforcement (Tenant in a police station, Prosecutin Judge). In this case, the initial wealth will be 40,000$ and the monthly wage will be 2,000$.
+However, the character needs to respect the rules of Law Enforcement (or face the consequences), and fulfil direct orders from the upper ranks.
+The perk gives a modifier of +2 to Persuade and -1 to Intimidate.
+
+
+
+## Medical Knowledge
+
+Cost: 12CP
+The character knows relatively advanced medical treatment techniques. It can be either a medic, a surgeon or a researcher. Its knowledge is also correct, regardless of the technological level of the setting. For example, even if set in a medieval period, the character knows how to actually cure most illnesses, and the correct prophylactic procedure to minimise the spread of diseases as the plague.
+A character with this perk gains First Aid, and has a modifier of +6 on all medical skills.
+
+
+## Renown Field Expert
+
+Cost: 10 CP
+Prerequisite: Field Expert
+The character is a renown authority in some relevant field of study: physics, psychology, economics, information technology, regional lore, world lore, history etc.
+It has the same effect of the perk Famous, limited to the other people expert in the same field.
+This perk can be bought only if the character has also bought the Field Expert perk on the same field.
+
+
+## Wheelchair
+
+Cost: -25 CP
+The character legs are non functional, and it needs assistance or mechanical devices to walk. This is not a drag in settings where the technology to fully substitute body parts is readily available.
+
+
+
+
+
+# Injury and Damage
+
+Damage received in combat, or in other situations, impacts on the current physical or mental health of the character. 
+However, the actual effect of damage can vary depending on the character receiving it. The effect of a certain damage source on humans might be different from the effect on machines, artificial intelligence, ghosts, wild beasts and mythological monsters, to name few.
+
+
+## Injury Statitics
+
+The following statistics determine how damage impacts characters, and are collectively called Injury Statistics:
+	•	Damage Points (DP/source): amount of damage sustained during a short period (a set of chained actions, a combat, etc.). Each source has a different damage point pool: physical, mental, and other kind of damage that might be introduced in other settings must be accounted for separately.
+	•	Resistance Level (RL/source): It’s the number of DP a character can take from a source before suffering a wound. By default, the resistance level for physical damage (RL/p) is the value of Health, and for mental damage (RL/m) is the value of Equilibrium.
+	•	Wounds (WND): Number of wounds the character is currently bearing.
+	•	Disable Level (DL): Number of wounds the character can sustain before becoming disabled. For humans and human-sized animals, the default is 4.
+	•	Injury Points (IP): Amount of total injury caused by the received wounds. This value ultimately determines if a wounded character is in immediate danger of death.
+Notice that Wounds and Injury Points are related, but they are playing different roles: the Wounds determine whether a character can still function properly, Injury Points determine if a character is seriously wound.
+These statistic are used in different ways throughout different settings, or they are considered differently for different characters. For example, zombies will ignore wounds, and can be destroyed only by delivering 4 injury points in a single blow.
+The most common way to use this statistics is called Standard Injury Rule, and other Injury Rules are given here as examples.
+
+
+## Standard Injury Rule
+
+The Standard Injury Rule describes the most common way in which Damage Points, Resistance Level, Wounds, Disable Level and Injury Points interacts.
+	•	Damage Points from a certain source are summed up until they get larger than the Resistance Level for the source. The excess of Damage Points is noted down, and the value is reset to 0.
+	•	The character receives a Wound, which severity is determined by the noted excess of Damage Points.
+	•	If the number of Wounds equals or exceeds the Disable Level, the character is disabled.
+	•	The severity of the disable status is determined by the sum of Injury Points.
+The standard rule covers most cases, but there are settings, situations and characters that rely on different rules around Injury Statistics.
+For example, a zombie cannot become disabled, and is immune to light wounds; a vampire will flee, if possible, (transforming into myst or in a bat) after having sustained too much damage; a ghost doesn’t sustain negative effect for incapacitating damage; an advanced AI not is disabled when it receives a certain number of wounds, but when the total injury points is larger than a threshold, etc.
+
+
+
+## Wounds
+
+Wounds are semi-permanent damage to the character physical and mental health. They come in various degree of seriousness, which affect the character differently. Each type of wound gives a certain amount of injury points, which are counted to determine whether a character can survive a certain amount of injury or not.
+	•	Light (1 injury point): a wound without serious consequences. The character can perform any action without penalty, and the wound will heal within a week. 
+	•	Serious (2 injury points): a wound that has consequences on the character performance, inflicting a -3 modifier on all actions until healed. The wound needs treatment to heal, but it can be degraded to a light wound after a month.
+	•	Incapacitating (4 injury points): the wound is serious enough to cripple the character, for example, to make an arm or a leg non-functional, or in case of mental wounds, to make it unable to think coherently. This wounds cannot heal by themselves, and need to be treated by specialists. Any action receives a -6 modifier until healed.
+	•	Deadly (special): The character receiving a deadly wound can possibly die immediately. A special procedure is provided to avert immediate death and degrade the wound to an incapacitating one later on.
+When the damage received is larger than the Resistance Level (by default, Health for physical damage and Equilibrium for mental damage), a wound is received. The outstanding damage past that level determines the severity. 
+If it’s less than half the reference attribute, the wound is light. 
+If it’s half of the reference value but less than the value, it’s serious.
+If it’s large as the resistance level value but less than the double, it’s incapacitating.
+If it’s the double of the value or more, it’s deadly.
+The following table resumes the various aspects of wounds:
+Wound
+Damage
+Penalty
+Injury points
+Light
+< RL/2
+0
+1
+Serious
+< RL
+-3
+2
+Incapacitating
+< RLx2
+-6
+4
+Deadly
+>= RLx2
+-
+-
+Modifiers from wounds are cumulative. For example, if a character receives two serious and one incapacitating wounds, it will be subject to a -12 modifier until healed.
+The effect of wounds and injury points vary depending on the nature of the character and on the setting. Some specific rules are described later on in this chapter.
+
+
+## Incapacitating Wounds
+
+When an incapacitating wounds occurs, usually, the GM decides what’s the incapacitating effect sustained by the character. However, there are some skills can direct damage to a specific part of the body, or some situations that involve only certain areas of a target. In those case, the effect of an incapacitating wound will be described by some specific rule.
+The following table is the Incapacitating Table for humans; it be used to select a random effect for incapacitating wounds, using a 3d6 roll, on humanoid figures.
+Roll Result
+Effect
+3-4
+Leg Numbed, half movement speed.
+5-8
+Arm Numbed, half carrying capacity.
+9-12
+Arm Disabled, 1/4 carrying capacity.
+13-16
+Leg Disabled, 1/4 movement speed.
+17
+Deafness.
+18
+Blindness.
+Human-sized 4 legged animals are subject to the following Incapacitating Table:
+Roll Result
+Effect
+3-8
+Fore Leg Numbed, half movement speed and carrying capacity
+9-16
+Aft Leg disabled, 1/4 movement speed and 1/4 carrying capacity.
+17
+Deafness.
+18
+Blindness.
+Other creatures and settings can have different effects and tables.
+
+
+
+## Disabled Status
+
+When a character receives more wounds than it can sustain, it becomes disabled. 
+The following Disabled Status Table describes the seriousness of the disabled status on humanoids and human-sized animals in common settings:
+
+Injury Points
+Consequence
+Less than 6
+Character is disabled but conscious
+6-7
+Character is unconscious for 2 hours
+8-9
+Character will die within 2 hours
+10+
+Character will die within 10 minutes
+
+When a character is disabled, performing any action against it (including killing it) doesn’t require checks; however, this doesn’t apply if the acting character is anyhow busy with something else, for example, in a combat.
+A disabled character can recover naturally, if the wounds are not serious enough, otherwise, unless treated, it will die. Treating wounds that can lead to death on is called “stabilise”. Specific skills, perks and magic can be used in order to stabilise a disabled character.
+The severity of the disabled status depend on how many total injury points a character has received before becoming disabled. 
+
+
+
+## Deadly Wounds
+
+When receiving a deadly wound, the Character might die immediately. To avert an immediate death, the character must win a check against Body, if the deadly wound is physical, or Mind, if it’s mental. The check has a negative modifier equal to the current amount of Injury Points, not considering the incoming deadly wound.
+Specific settings might introduce specific death-averting skills, other than Body and Mind, and some situation has specific skill to be used instead. For example, if the deadly wound is coming from poison, the skill to use instead of Body is Poison Resistance.
+If the check is successful, the instead of being deadly, the wound becomes incapacitating.
+
+
+## Special Injury Rules
+
+As an example and as a base for expansions, we describe here the rules about wounds and injury points on different type of characters. Your setting might have different rules for the same characters described here, as the following are just examples taken from the basic rules.
+	•	Dragons: They can sustain 16 injury points, regardless from the wound count.
+	•	Ghosts (weak): They can sustain 4 injury points, and any light wound is automatically turned into a serious wound.
+	•	Goblins and Kobolds: They can receive 3 wounds only before becoming disabled.
+	•	Orcs: They can sustain 6 wounds before becoming disabled, and their disabled status table is the same as that for humans with a bonus of 2 points (e.g. they are conscious up to 8 injury points).
+	•	Vampires (low rank): They can receive 8 wounds. If the total count of injury points is less than 16, they are forced to retreat and cannot combat until healed. If the count of injury points is greater than 16, they turn into ash.
+	•	Zombies: They can’t receive light or serious wounds, but are destroyed when they receive an incapacitating or deadly wound. When they receive a light or serious wound, they are unharmed, but the damage count stays at the level of their health (e.g. it becomes easier to inflict a deeper wound).
+Some set of rules are standardised, and can be readily applied to a wide range of characters in the adventure.
+
+
+## Damage Type
+
+Different sources deliver a different kind of damage type. Physical and mental damage types are further divided in three sub-type, which share the same pool of Damage Points per type, but towards which different characters could have higher defence. 
+
+
+### Elemental Damage
+
+Damage caused by energy, or in general, by life-threatening conditions the character might be subject to, is called elemental damage. It is important do determine which kind of elemental damage is sustained, as some characters can have resistance to some kind of element, while other might have a specific weakness.
+All elemental damage cause physical damage, unless differently specified. For example, the fantasy element pure magic generates mental damage. 
+Elemental damage bypasses specific mental or physical resistances, but not generic resistances. For example, a flamethrower will generate heat damage, against which any specific cut, piercing and blunt damage resistance is useless; however, a generic resistance to physical damage would still apply.
+The elemental damage types are:
+	•	Chemical: includes acid and any poisonous substance. 
+	•	Cold: for example, ice and unsustainable cold.
+	•	Electricity: for example, lightning or electric shocks.
+	•	Heat: for example, fire and unsustainable heat.
+	•	Light: Some creatures are damaged by light (radiation in the visible spectrum). Doesn’t include lasers (which generate heat) or other radiation damage.
+	•	Magic: metaphysical damage induced by magic. Magic spells creating a material effect (for example, causing something to catch fire) or directly attacking the mind (i.e. a hypnosis inducing magic spell) are not considered generating a pure magic damage. Pure magic damage source cause mental damage.
+	•	Radiation: for example, exposition to radioactive material, neutron guns, microwaves etc.
+	•	Void: complete air pressure deprivation, i.e. the effects of deep space.
+
+
+
+### Mental Damage
+
+Mental damage types are:
+	•	Despair: The mental attack or stress provokes a state of mental exhaustion, akin with depression, where the victim is less likely to be willing to fight for their own life, or simply, to live. Not to be confused with 
+	•	Maddening: The attack strips the victim character of its rationality, making its thought processes less coherent, and making it to believe things that are not true. It instills sentiments of paranoia, terror, alienation, or alternatively, irrational boldness.
+	•	Confusion: This kind of damage confuses the mind of the target, dumbing its movement, altering its perception, provoking hallucinations and generally scrambling perception and memories. The thought processes of the victim is still sound, and it usually recognises the hallucinations as not being real and can deal with the numbed sensations, unless it’s also maddened.
+
+
+
+### Phisical Damage
+
+Physical damage types are:
+	•	Blunt: Impacts, falls, body slams and blunt weapons generate blunt damage.
+	•	Cut: Sharp weapons generate cut damage, regardless of the fact that a weapon is used to slash or thrust. For example, a slash hit from a broadsword, a thrust from a pike and the wound caused by an arrow are all generating cut damage.
+	•	Piercing: high-power weapons, with the potential to pass through the whole body of the target, and with high penetrating power against armours and covers generate piercing damage. Guns, lasers, and high-yield crossbows are example of piercing weapons.
+Notice that simple arrows are not normally considered generating piercing damage, as they would be stopped by the same kind of armour designed to stop other cut weapons, but some high-yield modern bow might generate piercing damage instead.
+
+
+
+## Damage Mitigation
+
+Incoming damage can be mitigated in several ways. Medieval warriors wear armours that are extremely effective against cut damage; modern army and militia fighters wear anti-piercing kevlar jackets; an advanced AI might have redundancy modules to mitigate the effect of maddening; a monk can meditate to absorb despair, and so on.
+The amount of incoming damage removed is called Damage Mitigation (DM).
+Armours, advantages and other means of mitigation that act regardless of the activity of the character provide an automatic DM, called passive mitigation, often only for a specific type or subtype of damage source.
+Some skill can actively be used to mitigate incoming damage; in that case, the character receiving the damage must perform a successful check on the skill to activate the mitigation.
+The total value of mitigation after counting all the sources is subtracted from the incoming damage. 
+Mitigation cannot reduce the incoming damage to less than 1 DP (unless the character has the Total Mitigation advantage).
+
+
+
+
+
+## Status
+
+
+
+
+
+# Combat
+
+Combat can play an important role in some adventures. However, even in those adventures that don’t have a strong emphasis on combat, Sirpas provides a layer of rules that can be applied to situations where characters need to fight, which cannot be covered by a simple contest roll. For example, Sirpas combat rules would cover a situation where two hackers, or artificial intelligences, are trying to acquire the control of a network server, or are trying to attack each other system. Similarly, a context of magical means might be solved through the combat rules: for example, a sorcerer trying to cast a curse on a village and a priest trying to prevent it.
+Using the combat rules, instead of a simple and direct contest, is a choice that rests upon the Master and the players, and the choice should be made depending on how everyone feels about that particular situation — or about the tenor of the adventure.
+
+
+## Style and Maneuvers
+
+Combat is organised in styles and manoeuvres.  A style is a skill that follow some special rule (for example, it has different cost per level with respect to easy, normal and hard skills). It describes the proficiency with a certain fight style, or with weapons that need a particular training to be effectively used.
+Being able to use a style gives access to some of its manoeuvres (with more manoeuvres unlocked as the proficiency with the style increases), which have certain effects on the combat.
+
+ 
+
+
+
+## Combat Sequence
+
+The combat sequence proceeds as follows:
+	1.	Free Actions: Characters can perform a combat related action which is not directly managed through a skill. For example, drawing a weapon, throwing an object they hold, call or yell for help.
+	2.	Initiative Ranking: all the characters involved in the combat perform a ranking on the Initiative skill. 
+	3.	Resolution: Starting from the highest ranked, the characters perform the actions at their disposal. If a character has still multiple actions as its disposal when its turn comes, it’s free to use them all at once, or wait to use any of them at a later moment.
+	4.	Conclusion: Actions saved for a later moment must be used now or they will be lost. Effects explicitly beginning “at the end of the turn”, according with their description, take place now.
+
+
+
+
+
+## Combat Turns
+
+Combat is divided in turns. Normally, characters can perform just one manoeuvre per turn, but certain skills and advantages grant the ability to perform more manoeuvres.
+The length of the turn depends on the settings: it might be one second in a Wild West setting where gunslingers are fighting, ten seconds when considering melee fights in medieval settings, one nanosecond in fights between AIs, one minute in fights between giant robots or starships and so on. 
+For most situations, you’ll want to consider the length of a combat turn being 10 seconds.
+
+
+
+
+
+## Attacking and Defending
+
+Manoeuvres are divided in three types: attacks, defences and actions.
+When a character turns comes, it can use any of the manoeuvre at his disposal.
+If it uses an attack, it must declare a target, and the target must now decide how to defend. Normally, it will want to use a defence, but it could try other manoeuvres; any non-defence manoeuvre used against an attack which will have a hard modifier.
+Once the attacker and the defender have chosen their actions, a contest between the involved skills is performed, and the winner will have its action being successful.
+The amount of damage inflicted by as successful attack (or a defence involving a counter-attack) may depend on the manoeuvre, the level of its style, the weapon used, and the success margin and other factors specific of each manoeuvre. For example, a simple punch from melee combat will cause a damage equal to the strength of the attacker plus the success margin. 
+The defender needs to use one of its available manoeuvres when named as a target by the attacker. If it has exhausted all its manoeuvres, it can either use an Instinctive Defence against physical attacks, or a Willpower Defence against mental attacks, or let the attacker attack freely. In the last case, the attack becomes a trivial check.
+
+
+
+
+## Automatic Attack
+
+In some case, the target of an attack is unsuspecting or incapacitated to react: for example, the target of a hidden sniper, or a sleeping victim.
+In those situations, the combat is not resolved through a contest; the attacker can simply roll on the attack skill, with the following difficulty table:
+Target awareness
+Modifier
+Sleeping/tied/helpless
+Trivial
+Busy (attention diverted)
+Easy
+Unsuspecting
+Normal
+Attentive
+Difficult
+Suspicious
+Hard to very hard
+
+
+
+## Instinctive Defence
+
+In some situations, the defender is aware of the incoming attack (i.e. has seen the attacker and is ready to receive the blow) but can’t use any defence. One reason might be that it already used all the defence at its disposal in a combat turn and can’t react anymore, or it might be that it has no proficiency in that kind of combat — this often happens with metaphysical attacks directed at targets that don’t have a specific skill to use in response — or in case it’s explicitly dictated by the rules — for example, defending against any attack after using disengage.
+In those cases, provided the defender is at least aware of the attacks, it must either instinctive defence (against physical attacks) or willpower defence (against mind attacks).
+
+
+
+## Moving During Combat
+
+After the initiative ranking has taken place, characters that are not engaged in combat can freely move when their turn comes.
+The amount of movement that can be covered during a turn depends on the character Dexterity and the length of the turn in the setting. In the standard setting, with combat turns ten seconds long, a human character can move 18 feet plus the value of Dexterity.
+Movement takes one combat action. This means that, if the character can only perform one manoeuvre during its turn, after moving it must wait for the next turn to do anything else. Also, it means that, if attacked and in need to respond with a defence, it will not be able to move until the next turn.
+When engaged in combat, a character can still move using the disengage manoeuvre, which is a defence. Disengage allows to move for half the maximum movement for that turn, but gives any nearby opponent the opportunity to attack with better chances than normal.
+Notice that a character that has lost the initiative ranking and has only one manoeuvre at its disposal, it can disengage. Also, the winner of the ranking can disengage in place of attacking, but this gives its nearby opponents the chance to use an attack against its disengage, instead of being forced to a defence.
+
+
+
+
+
+## Repeated Manoeuvres
+
+Some manoeuvre get a negative modifier if being used repeatedly against the same target. For example, repeating using a brawl/punch has diminishing returns: your opponent will read your move, and will be able to better defend against the same attack. In those situations, you’ll want to be less predictable, and use other manoeuvres, or other styles altogether. 
+
+
+
+# Combat Styles
+
+Combat styles are skills, which grant access to a series of manoeuvres. Advantages and perks can be targeted at whole styles; rules that apply to skills can’t address single manoeuvres, even if their mechanics is similar to that of a skill.
+ For example, the advantage expert can be targeted at all the brawl combat style at once, which includes punch, grab and evade. 
+The same combat style can also cover different kind of weapons, with some specific actions limited to some weapons. For example, Firearms is a combat style including rapid reload and sniping; however, rapid reload can be applied to pistols only, while sniping requires a precision rifle.
+
+
+
+
+Generic manoeuvres are themselves proper skills, which any character can use during a combat.
+They differ from normal manoeuvres in the fact that they don’t belong to any style, and as proper skills, they can be learned independently, and targeted by advantages and perks.
+Generic manoeuvre base CP cost is 0, which means that improving them costs exactly a number of CP equal to the new value. For example, bringing Instinctive Defence from 6 to 7 costs 7 CP.
+
+### Disengage
+
+Type
+Defence
+Modifier
+D-Normal
+Prereq
+-
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+Disengage is a defence allowing to move half the normal movement speed in the current turn. It automatically succeeds if the opponents are not trying to attack the character using it. 
+On failure, the disengagement fails and the character cannot move.
+If the contest succeeds, the character can move even if other subsequent attacks succeed. 
+
+
+### Instincitve Defence
+
+Type
+Defence
+Modifier
+D-Normal
+Prereq
+-
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+The instinctive defence is used against physical attacks whenever it’s not possible to use any other defence, for example, because the character has used up all of the available manoeuvres for this turn.
+It’s ineffective against mind attacks.
+
+
+### Shoot
+
+Type
+Attack
+Modifier
+-1
+Prereq
+-
+DR
+-1
+Range
+30
+Dmg type
+Piercing
+Damage
+SM+6
+Condition
+-
+Shoot with a projectile weapon while not being skilled to do so. Weapons requiring skill in being loaded (i.e. bows, special military rifles etc.) cannot be used with this skill, but loaded weapons (i.e. crossbows) can.
+
+### Slash
+
+Type
+Attack
+Modifier
+S-Normal
+Prereq
+-
+DR
+-1
+Range
+Melee
+Dmg type
+Cut/Blunt
+Damage
+SM+S
+Condition
+(Stun 2)
+A generic combat manoeuvre that can be used with any weapon, including improvised ones. Clubs made out of table legs, guns without ammunitions used as maces, and in general anything you swing at an opponent without knowing exactly what you’re doing is covered under this manoeuvre.
+The damage type depends on the nature of the weapon. It can be either cut or blunt.
+On critical success, it applies stun for 2 turns.
+### Throw
+
+Type
+Attack
+Modifier
+D-Normal
+Prereq
+-
+DR
+-1
+Range
+15
+Dmg type
+Blunt/cut
+Damage
+(SM+S)/2
+Condition
+(Stun 2)
+
+This attack consists in throwing a heavy object to an enemy in range. Anything goes; even weapons, 
+as long as the weight of the object is between two and eight pounds weight.
+The damage dealt is normally of blunt type, unless the thrown object is sharp; then it becomes of cut type.
+A critical success applies also the stun condition for 2 turns.
+
+
+### Thrust
+
+Type
+Attack
+Modifier
+D-Normal
+Prereq
+-
+DR
+-1
+Range
+Melee
+Dmg type
+Pierce
+Damage
+(SM+D)/2
+Condition
+-
+A generic manoeuvre performed with any pointed or cutting weapon, including improvised ones. The character thrusts the weapon forward. On success, it causes a piercing damage for half the success margin plus the dexterity.
+
+### Willpower Defence
+
+Type
+Defence
+Modifier
+W-Normal
+Prereq
+-
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+The willpower defence is used against mental attacks, whenever it’s not possible to use any other defence, for example, because the character has used up all of the available manoeuvres for this turn.
+
+
+
+## Archery
+
+Cost: 6CP
+This is the base style (and skill) needed to use bows, crossbows and similar projectile weapons.
+The number of manoeuvres the character can use per round depends on the level of Archery:
+Level
+Manoeuvres
+1-9
+1
+10-16
+2
+17+
+3
+
+
+### Aim
+
+Type
+Action
+Modifier
+-
+Prereq
+Archery 3
+DR
+-
+Range
+Weapon
+Dmg type
+-
+Damage
+-
+Condition
+-
+Take a manoeuvre to improve the next attack, giving it a modifier of +1. It can be repeated any number of times within a single turn, but the modifier is applied only to the very next Shoot.
+
+
+### Localized Shot
+
+Type
+Attack
+Modifier
+Variable
+Prereq
+Archery 5
+DR
+-
+Range
+Weapon
+Dmg type
+Cut
+Damage
+SM+D+6
+Condition
+(Cripple)
+Loads and shoot an arrow or a bolt aiming to a specific part of the body. A critical success will cripple that part of the body, inflicting a permanent negative modifier until healed, and if the localised shot was aimed at the head, it will cause a deadly wound.
+The modifier to be applied depends on the target part of the body:
+Body Part
+Modifier
+Arm
+-2
+Leg
+-3
+Head
+-4
+
+
+
+
+### Overextend
+
+Type
+Action
+Modifier
+S-Hard
+Prereq
+Archery 6
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+Take a manoeuvre to bend the bow more than normal in order to improve  the next attack, giving it a damage modifier equal to the success margin of this check. Can be used only with bows.
+
+
+### Overload
+
+Type
+Action
+Modifier
+-
+Prereq
+Archery 9
+DR
+-
+Range
+Weapon
+Dmg type
+-
+Damage
+-
+Condition
+-
+Loads two arrows or two bolts in the weapon. The next Shoot will have a fixed modifier of -3, but the character gains an extra attack after the next shot.
+This is useful when it’s not currently possible or ideal to attack a target, but you don’t want to lose the attack.
+
+
+### Shoot
+
+Type
+Attack
+Modifier
+D-Hard
+Prereq
+Archery 1
+DR
+-
+Range
+Weapon
+Dmg type
+Cut
+Damage
+SM+D
+Condition
+-
+Loads and shoot an arrow or a bolt.
+
+### Brawl
+
+Cost: 2CP.
+Brawl is the style of fight with bare hand and feet, without a specific preparation. It’s often used in tavern and bar fights, and can also be useful in other combat situations.
+Every human or humanoid character has access to brawl.
+The number of manoeuvres the character can use per round depends on the level of brawl:
+Level
+Manoeuvres
+1-5
+1
+6-10
+2
+11-15
+3
+16+
+4
+
+
+### Evade
+
+Type
+Defence
+Modifier
+D-Hard
+Prereq
+-
+DR
+-1
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+Try and evade an attack. Notice the hard modifier on dexterity (instead of very hard), and the diminishing return -1.
+It can also be used against ranged attacks, with a -3 modifier when the attacker is more than 15 feet away.
+
+
+
+### Grapple
+
+Type
+Attack
+Modifier
+-
+Prereq
+Brawl 8
+DR
+-1
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+Block
+The character tries to grab and control the opponent. Effective only against targets with a strength less than the double of the attacker’s, and with a body less than double the size.
+The attacker and the defender are both blocked, until the attacker fails the attack with a +3 modifier in the subsequent turns, or performs another action.When used against the blocked target, diminishing return is not applied on either side.
+
+
+
+### Kick
+
+Type
+Attack
+Modifier
+D-Normal
+Prereq
+
+DR
+-1
+Range
+Melee
+Dmg type
+Blunt
+Damage
+SM+D
+Condition
+(Stun 2)
+The character attacks with a kick, causing a damage equal its dexterity plus the success margin.
+Gets a +2 modifier on small creatures (less half the size of the attacker) and grounded  targets.
+On critical success, it stuns the target for 2 turns.
+
+
+### Punch
+
+Type
+Attack
+Modifier
+S-Normal
+Prereq
+
+DR
+-1
+Range
+Melee
+Dmg type
+Blunt
+Damage
+SM+S
+Condition
+(Stun 2)
+Attacks with a direct punch. A critical success stuns the target for 2 turns.
+Receives a -2 modifier against targets larger than the attacker.
+
+
+### Smash
+
+Type
+Attack
+Modifier
+S-Normal
+Prereq
+Brawl 6
+DR
+-1
+Range
+Melee
+Dmg type
+Blunt
+Damage
+SM
+Condition
+Grounded
+The attacker throws its own body against the target. On success, the target is grounded for a turn.
+Receives a +2 modifier on smaller targets and -2 on larger targets. Brawl/Evade and other evasions receive a +2 modifier to defend against this action.
+Can’t be used against grounded targets.
+
+## Concentration
+
+Cost: 2CP
+Concentration is a simple mind-oriented fighting style, which can be seamlessly integrated in a traditional melee fight. It covers the role of the “default” combat style for mental combat, analogous to brawl for physical combat. In a world where mental fight is a thing, everyone should be able to mind meld, like everyone is able to brawl in physical worlds.
+While other fighting styles in the manual are realistic, this requires a setting specifically supporting mind powers. However, the style is suitable for sci-fi settings to handle fights between AIs, robots, hackers and so on, with low-resolution.
+The number of manoeuvres the character can use per round depends on the level of Concentration:
+
+Level
+Manoeuvres
+1-7
+1
+8-13
+2
+14+
+3
+
+### Alien Thoughts
+
+Type
+Attack
+Modifier
+I-Normal
+Prereq
+-
+DR
+-1
+Range
+-
+Dmg type
+Maddening
+Damage
+SM+I
+Condition
+-
+The attacker projects alien, irrational thoughts in the defendant’s, in order to cause maddening.
+
+
+### Block
+
+Type
+Defence
+Modifier
+W-Normal
+Prereq
+-
+DR
+-1
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+The character raises a mental barrier in order to block an incoming attack.
+
+
+
+### Dig into you
+
+Type
+Attack
+Modifier
+I-Normal
+Prereq
+
+DR
+-1
+Range
+-
+Dmg type
+Despair
+Damage
+SM+I
+Condition
+-
+The character attacks by searching for painful memories and thoughts, in order to cause despair in the target.
+
+
+### Divert
+
+Type
+Defence
+Modifier
+I-Normal
+Prereq
+-
+DR
+-1
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+The defendant diverts the attention of the attacker on an irrelevant thought or memory, causing the attack to miss.
+
+
+### Mind Grasp
+
+Type
+Attack
+Modifier
+W-Normal
+Prereq
+Mind Meld 6
+DR
+-1
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+Blocked
+The character tries to acquire the control of the defendant mind. On success, the defendant is unable to act until. To keep holding the target, the attacker must continue to use this attack with + 3 modifier against it at each turn. When this manoeuvre is used against a blocked target, diminishing return is not applied on either side.
+The attacker must keep using this attack once per turn and can’t move or perform any other action.
+If the attacker receives any damage, the concentration is broken.
+
+
+
+### Sensations
+
+Type
+Attack
+Modifier
+I-Normal
+Prereq
+Mind Meld 4
+DR
+-1
+Range
+-
+Dmg type
+Confusion
+Damage
+SM+W
+Condition
+(Stun 2)
+The attacker tries to hijack the sensory system of the target mind, causing it to hallucinate and fail to coordinate with the body. On critical success, the target is stunned for 2 turn.
+
+
+
+### Yes, but you...
+
+Type
+Defence
+Modifier
+I-Normal
+Prereq
+Mind Meld 3
+DR
+-1
+Range
+-
+Dmg type
+Despair
+Damage
+SM
+Condition
+-
+The defendant turns the mental attack against the attacker. If the defence is successful, the attacker is hit back for a number of despair points equal to the success margin of the defence.
+
+## Firearms
+
+Cost: 6CP
+This combat style is the bases for using firearms. In general, the weapon gives the modifier for the attack roll and determines the range, but the damage generated is usually the same. Firing with a pistol six feet away from the target or with a precision gun from 90 feet afar yields mostly the same results, provided you can hit the mark.
+Everyone can shoot with a firearm; as such, the firearms style is available to anyone, but most manoeuvres have a relatively high pre-requisite.
+The number of manoeuvres the character can use per round depends on the level of Firearms:
+Level
+Manoeuvres
+1-5
+1
+6-10
+2
+11-15
+3
+16+
+4
+
+
+
+
+### Aim ###
+
+Type
+Action
+Modifier
+-
+Prereq
+Firearms 3
+DR
+-
+Range
+Weapon
+Dmg type
+-
+Damage
+-
+Condition
+-
+Take a manoeuvre to improve the next attack, giving it a
+modifier of +1. It can be repeated any number of times within a 
+single turn, but the modifier is applied only to the very next 
+Shoot or Aimed Shoot, either within the same turn or in the very next one. 
+
+No other action can be performed while aiming, and performing another
+action will discard the modifiers achieved.
+
+### Aimed Shot
+
+Type
+Attack
+Modifier
+-3
+Prereq
+Firearms 6
+DR
+-
+Range
+Weapon
+Dmg type
+Piercing
+Damage
+SM+Weapon
+Condition
+Injury
+Inflicts a -3 modifier on the attack, but it generates an injury one level more severe than normal. Light wounds becomes severe, severe wounds become incapacitating and incapacitating wounds becomes deadly.
+
+
+### Duck
+
+Type
+Defence
+Modifier
+D-Easy
+Prereq
+Firearm 2
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+Duck or evade while holding the firearm to avoid incoming fire.
+
+
+### Fast Reload
+
+Type
+Action
+Modifier
+-
+Prereq
+Firearms 4
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+Ability to reload the weapon in the heat of the combat, using a manoeuvre.
+
+
+### Localized Shot
+
+Type
+Attack
+Modifier
+Variable
+Prereq
+Firearms 4
+DR
+-
+Range
+Weapon
+Dmg type
+Cut
+Damage
+SM+12
+Condition
+(Cripple)
+Shoot aiming a part of the body. A critical success will cripple that part of the body, inflicting a permanent negative modifier until healed, and if the localised shot was aimed at the head, it will cause a deadly wound.
+The modifier to be applied depends on the target part of the body:
+Body Part
+Modifier
+Arm
+-2
+Leg
+-3
+Head
+-4
+
+
+
+
+### Point Blank
+
+Type
+Attack
+Modifier
++2
+Prereq
+Firearm 6
+DR
+-1
+Range
+Melee
+Dmg type
+Piercing
+Damage
+SM+12
+Condition
+(Deadly)
+Fires at point blank on targets in melee range. On critical success it causes a deadly wound.
+
+
+### Rapid Fire
+
+Type
+Attack
+Modifier
+-3
+Prereq
+Firearm 9
+DR
+-2
+Range
+15
+Dmg type
+Piercing
+Damage
+SM+6
+Condition
+-
+Fires twice in a single manoeuvre, each time with reduced attack and damage. Can be used with pistols only.
+
+
+
+### Shoot
+
+Type
+Attack
+Modifier
+0
+Prereq
+-
+DR
+-2
+Range
+Weapon
+Dmg type
+Piercing
+Damage
+SM+9
+Condition
+-
+
+
+Normal base attack with firearms.
+### Take Cover
+
+Type
+Defence
+Modifier
++3
+Prereq
+Firearm 3
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+If a cover is within movement range for the turn, the character can use this defence to run towards a covered position, with a fixed +3 modifier.
+
+Cost: 6CP
+This is the base style (and skill) needed to use bows, crossbows and similar projectile weapons.
+The number of manoeuvres the character can use per round depends on the level of Archery:
+Level
+Manoeuvres
+1-9
+1
+10-16
+2
+17+
+3
+
+
+
+
+## Full Contact
+
+Cost: 4CP
+Prerequisite: Brawl 4
+An advanced version and extension of Brawl. While still not being a full-fledged martial art, it’s a style of combat that requires dedication, and if professionally trained, can be quite effective even against more famous martial arts.
+A character using Full Contact can use all the manoeuvres from Brawl under Full Contact instead (whichever has the higher level).
+A well trained full-contact fighter is as dangerous as an armed opponent.
+A character using Full Contact can use an extra manoeuvre from this style each turn. For example, a character with Full Contact 10 has two manoeuvres it can chose from either Full Contact or Brawl, plus one from Full Contact only.
+
+
+
+
+### Counter Punch
+
+Type
+Defence
+Modifier
+S-Hard
+Prereq
+Full Contact 3
+DR
+-1
+Range
+Melee
+Dmg type
+Blunt
+Damage
+MS
+Condition
+(Stun 2)
+A counter-attack performed on melee attacks. Tries to evade the incoming blow and use the opening to strike with a punch on the higher part of the body. Has modifier -2 against  smaller creatures (it’s harder to find a spot to counter-attack them with a punch).
+Ineffective against non-melee and animal attacks.
+
+
+### Counter kick
+
+Type
+Defence
+Modifier
+D-Hard
+Prereq
+Full Contact 3
+DR
+-1
+Range
+Melee
+Dmg type
+Blunt
+Damage
+MS
+Condition
+(Stun 2)
+A counter-attack performed on melee attacks. Tries to evade the incoming blow and use the opening to strike with a punch on the higher part of the body. Has modifier +2 against  smaller creatures.
+Ineffective against non-melee and animal attacks.
+
+
+### Crouch
+
+Type
+Action
+Modifier
+-
+Prereq
+Full Contact 3
+DR
+-
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+The character loads the next attack, receiving a modifier equal to the success margin to be used in the very next attack in Brawl or Full Contact styles.
+If the next manoeuvre used is not an attack, the modifier is lost.
+
+
+
+### Elbow Blow
+
+Type
+Attack
+Modifier
+S-Hard
+Prereq
+
+DR
+-2
+Range
+Melee
+Dmg type
+Blunt
+Damage
+SM+S
+Condition
+(Stun 2)
+The character attacks with the elbow, causing a damage equal to its strength plus its success margin, and a modifier of +2.
+
+### Knee Blow
+
+Type
+Attack
+Modifier
+D-Normal
+Prereq
+
+DR
+-2
+Range
+Melee
+Dmg type
+Blunt
+Damage
+SM+D+2
+Condition
+-
+The character attacks with its knee, causing a damage equal to its dexterity, plus the success margin and a fixed modifier of 2.
+Gets a +2 modifier on small creatures (less half the size of the attacker) and grounded  targets.
+On critical success, it stuns the target for 2 turns.
+
+
+## Knife Fight
+
+Cost: 5CP
+Fighting with knives and very short swords has different mechanics than the ones used when wielding a longer blade. Basically, it’s like having a fist armed with a single fang.
+While the weapon themselves could be less effective than longer ones, the style itself can be extremely effective in every scenario.
+Knife fighting is particularly adequate for characters with a high dexterity.
+The number of manoeuvres the character can use per round depends on the level of Kinfe Fight:
+Level
+Manoeuvres
+1-5
+1
+6-10
+2
+11-15
+3
+16+
+4
+
+
+
+
+### Backstab
+
+Type
+Attack
+Modifier
+D-Very Hard
+Prereq
+Knife Fight 6
+DR
+-
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+D+9
+Condition
+(Deadly)
+Assail an opponent from behind and deliver a potentially deadly blow. The character must be positioned behind a target to be able to perform this move. On a critical success, the target receives a deadly wound.
+
+
+### Backstep
+
+Type
+Defence
+Modifier
+D-Very Hard
+Prereq
+-
+DR
+-2
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+Skip back, trying to get out of the range of a melee attack.
+
+
+
+
+### Belly Opener
+
+Type
+Attack
+Modifier
+-1
+Prereq
+Knife Fight 3
+DR
+-2
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+D+4+1d6
+Condition
+-
+Swing the blade in an upward strike, aiming at the lower part of the opponent body. It has a -1 fixed modifier, but on success it adds 1d6 to the damage.
+
+
+### Change Hands
+
+Type
+Attack
+Modifier
+D-Very Hard
+Prereq
+Knife Fight 2
+DR
+-2
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+Use a manoeuvre to confuse the opponent and gain a +3 on the next attack. The move is considered an attack, so the opponent must use a defence or suffer the standard penalty.
+
+
+### Downstab
+
+Type
+Attack
+Modifier
+-1
+Prereq
+Knife Fight 2
+DR
+-2
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+D+S/2
+Condition
+-
+Swing the blade in a downward strike, aiming at the upper part of the opponent body. It has a -1 fixed modifier, but on success it adds half the strength to the standard damage.
+
+
+### Evade
+
+Type
+Defence
+Modifier
+D-Hard
+Prereq
+-
+DR
+-1
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+Try and evade an attack. Notice the hard modifier on dexterity (instead of very hard), and the diminishing return -1.
+It can also be used against ranged attacks, with a -3 modifier when the attacker is more than 15 feet away.
+
+
+### Feint
+
+Type
+Attack
+Modifier
++4
+Prereq
+Knife Fight 3
+DR
+-2
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+Fake an attack, without actually completing it. On success it doesn’t deal damage, but gives a modifier on the next move equal to the success margin.
+
+### Hand Cutting
+
+Type
+Defence
+Modifier
+D-Very Hard
+Prereq
+Knife Fight 4
+DR
+-2
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+4
+Condition
+(Disarm)
+Aims at an incoming blow from dealt through an anatomic part (punch, kick, animal attack and so on). Effective also against most melee weapon users, when the attack moves the arm holding the weapon in range. 
+If the counter-attack causes a serious wound or worse, the target loses the weapon.
+
+
+### Spring Up
+
+Type
+Attack
+Modifier
+-3
+Prereq
+Knife Fight 6
+DR
+-2
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+D+S
+Condition
+-
+The character bend on its legs and springs forward, thrusting the blade towards the opponent. It has a -3 modifier, but on success it deals a devastating damage.
+
+
+### Throw
+
+Type
+Attack
+Modifier
+D-Very Hard
+Prereq
+Knife Fighting 6
+DR
+-1
+Range
+15
+Dmg type
+Cut
+Damage
+SM+D/2
+Condition
+-
+Throws the knife at an opponent within 15 feet. On success, it deals a limited damage of half the dexterity plus the success margin.
+
+
+### Thrust
+
+Type
+Attack
+Modifier
+D-Very Hard
+Prereq
+-
+DR
+-2
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+D+3
+Condition
+-
+Attacks the target thrusting the knife forward, in a straight line.
+
+### Wrap and Stab
+
+Type
+Attack
+Modifier
+-3
+Prereq
+Knife Fight 8
+DR
+-2
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+D+6
+Condition
+Injury
+Try to grab the opponent while fighting, to deliver deeper wounds. On success, this manoeuvre delivers an injury one level higher than normal. Light wounds become severe, severe wounds become incapacitating, and incapacitating wounds become deadly.
+
+Cost: 6CP
+This combat style is the bases for using firearms. In general, the weapon gives the modifier for the attack roll and determines the range, but the damage generated is usually the same. Firing with a pistol six feet away from the target or with a precision gun from 90 feet afar yields mostly the same results, provided you can hit the mark.
+Everyone can shoot with a firearm; as such, the firearms style is available to anyone, but most manoeuvres have a relatively high pre-requisite.
+The number of manoeuvres the character can use per round depends on the level of Firearms:
+Level
+Manoeuvres
+1-5
+1
+6-10
+2
+11-15
+3
+16+
+4
+
+
+
+
+## Swordfight
+
+Cost: 4CP
+Swordfight is the simplest discipline for handling traditional melee weapons. Despite the name, it’s not limited to swords, as it can be used also with maces, flails, shields and so on.
+The style doesn’t differentiate between different kind of weapons as far as special effect and damage is concerned. To take advantage of the specificities of each weapon, a character can learn the specific style. Two-handed weapons can be used through this style as well; they prevent the usage of a shield (and any manoeuvre related requiring it), but gives a modifier of +4 to the damage delivered.
+The number of manoeuvres the character can use per round depends on the level of Sword Fight:
+Level
+Manoeuvres
+1-6
+1
+7-11
+2
+12-16
+3
+17+
+4
+
+
+### Cleave
+
+Type
+Attack
+Modifier
+nS
+Prereq
+Swordfight 1
+DR
+-1
+Range
+Melee
+Dmg type
+Cut/Blunt
+Damage
+SM+S+7
+Condition
+(Stun 2)
+A vertical stroke, leveraging on the strength of the weapon welder. A critical success stuns the opponent for 2 turns.
+
+
+
+### Deviate
+
+Type
+Defence
+Modifier
+nD
+Prereq
+Swordfight 1
+DR
+-1
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+A basic defence; the character intercept the opponent’s blow with its own weapon, leveraging its own dexterity.
+
+
+### Feint
+
+Type
+Attack
+Modifier
++3
+Prereq
+Swordfight 6
+DR
+-2
+Range
+-
+Dmg type
+-
+Damage
+-
+Condition
+-
+Uses an manoeuvre to get a modifier equal to the success margin on the very next attack.
+
+
+
+### Parry
+
+Type
+Defence
+Modifier
+nS
+Prereq
+Swordfight 1
+DR
+-1
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+A basic defence; the character intercept the opponent’s blow with its own weapon, leveraging its own strength.
+
+
+### Parry Projectiles
+
+Type
+Defence
+Modifier
+hD+2
+Prereq
+Swordfight 2
+DR
+-1
+Range
+30
+Dmg type
+-
+Damage
+-
+Condition
+-
+Can be used only if the character is wearing a shield. The defender can block a projectile incoming from a maximum range of 30 feet.
+
+
+### Shield Bash
+
+Type
+Attack
+Modifier
+-2
+Prereq
+Swordfight 4
+DR
+-2
+Range
+Melee
+Dmg type
+Blunt
+Damage
+SM
+Condition
+Grounded
+Can be used only if the character is wearing a shield. The attacker charges the opponent with its shield, trying to make it fall on the ground. On success, the opponent is grounded for the rest of the turn.
+
+
+### Shield Parry
+
+Type
+Defence
+Modifier
+nS+2
+Prereq
+Swordfight 2
+DR
+-1
+Range
+Melee
+Dmg type
+-
+Damage
+-
+Condition
+-
+Can be used only if the character is wearing a shield. The defender blocks the opponent’s blow with its shield, leveraging its own strength.
+
+
+### Slash
+
+Type
+Attack
+Modifier
+hS
+Prereq
+Swordfight 1
+DR
+-1
+Range
+Melee
+Dmg type
+Cut/Blunt
+Damage
+SM+S+5
+Condition
+
+A simple lateral stroke. 
+
+
+### Thrust
+
+Type
+Attack
+Modifier
+hD
+Prereq
+Swordfight 2
+DR
+-1
+Range
+Melee
+Dmg type
+Cut
+Damage
+SM+S+8
+Condition
+
+Thrusts a cutting weapon towards the opponent. Cannot be used with blunt or 
+two handed weapons (including swords).
+
+
+
+
+
+
+# Equipment
+## Adventuring Equipment
+
+TODO
+
+
+## Armours
+
+Armours provide damage mitigation against some specific damage types. Naturally, the damage mitigation applies to the part of the body where the armour is applied.
+The following table is a generic guide that indicates the type of material of which armours are built, their approximate weight  in pounds, the cut, blunt and piercing damage mitigation and an approximate cost. The weight refer to the material applied to a body armour; to get the weight of arm and leg armour divide by half, and for an helmet divide by four.
+
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Material   | Weight   | Cut      | Blunt    | Piercing | Cost     |
+| Type       |              |              |              |              |              |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Heavy        | 2            | 2            | 1            | 2            | 200\$        |
+| Garment (1)  |              |              |              |              |              |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Kevlar       | 2            | 12           | 3            | 14           | 800\$        |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Bullet-proof | 12           | 10           | 4            | 16           | 500\$        |
+| Armour       |              |              |              |              |              |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Meta-materia | 6            | 8            | 16           | 10           | 1200\$       |
+| l            |              |              |              |              |              |
+| (2)          |              |              |              |              |              |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Energy       | 0            | 6            | 10           | 8            | 4000\$       |
+| Shielding(3) |              |              |              |              |              |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Leather      | 8            | 8            | 2            | 4            | 40\$         |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Ring Mail    | 10           | 10           | 4            | 4            | 80\$         |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Chain Mail   | 14           | 12           | 6            | 5            | 150\$        |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Scale Mail   | 15           | 13           | 8            | 6            | 400\$        |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Thin Plate   | 18           | 14           | 8            | 8            | 600\$        |
+| (4)          |              |              |              |              |              |
++--------------+--------------+--------------+--------------+--------------+--------------+
+| Heavy Plate  | 24           | 16           | 12           | 9            | 800\$        |
++--------------+--------------+--------------+--------------+--------------+--------------+
+
+
+
+(1) Normal clothing doesn’t provide any mitigation, but heavy, multi-layer garment (i.e. overcoat, jacket, gilet, shirt and underwear) do.
+(2) Gel-like material reactive to sudden shock.
+(3) Just indicative; can be anything, depending on the technology. 
+(4) Includes military metal helmets.
+
+
+
+## Weapons
+
+Weapons are either used unskilfully, using any one of the Generic Manoeuvres, or through the appropriate combat style. The default damage (and often, damage type) caused by the weapon is already accounted for in the combat style; for example, Firearms/shoot causes a higher damage than Brawl/punch because guns are more lethal than bare hands.
+However, some special weapon (i.e. magic swords, experimental rifles etc.) might give their wielder a modifier either to the attack or defence rolls, or solely to the damage caused once a hit is scored.
+In the following table, the weight is the typical weight of for the given type of weapon, the range either the throwing distance or the range of the projectiles, in feet, and the cost is an indicative cost for a normal weapon of that kind.
+
++--------------------+--------------------+--------------------+--------------------+
+| Weapon Type    | Weight         | Range          | Cost           |
++--------------------+--------------------+--------------------+--------------------+
+| Knife              | 1                  | 10                 | 20\$               |
++--------------------+--------------------+--------------------+--------------------+
+| Sword              | 3                  | -                  | 400\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Mace               | 6                  | -                  | 100\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Throwing Knife     | 0.2                | 18                 | 5\$                |
++--------------------+--------------------+--------------------+--------------------+
+| War Hammer (*)    | 12                 | -                  | 300\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Two Handed Sword (*)    | 8                  | -                  | 600\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Shield             | 6                  | -                  | 80\$               |
++--------------------+--------------------+--------------------+--------------------+
+| Pistol (revolver)  | 1                  | 60                 | 600\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Pistol (Semi-auto) | 1                  | 60                 | 800\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Rifle              | 4                  | 90                 | 1200\$             |
++--------------------+--------------------+--------------------+--------------------+
+| Sniper’s rifle     | 6                  | 120                | 1800\$             |
++--------------------+--------------------+--------------------+--------------------+
+| Short Bow          | 1                  | 30                 | 40\$               |
++--------------------+--------------------+--------------------+--------------------+
+| Bow                | 1                  | 45                 | 80\$               |
++--------------------+--------------------+--------------------+--------------------+
+| Long Bow           | 2                  | 60                 | 120\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Crossbow           | 2                  | 40                 | 150\$              |
++--------------------+--------------------+--------------------+--------------------+
+| Heavy Crossbow     | 4                  | 60                 | 200\$              |
++--------------------+--------------------+--------------------+--------------------+
+
+
+
+(*) Two handed weapons.
+
