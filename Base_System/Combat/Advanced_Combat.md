@@ -1,45 +1,26 @@
 ## Advanced Combat
 
-Advanced Combat is organised in styles and manoeuvres. A style is a skill that follow
-some special rule (for example, it has different cost per level with respect to
-easy, normal and hard skills). It describes the proficiency with a certain fight
-style, or with weapons that need a particular training to be effectively used.
-Being able to use a style gives access to some of its manoeuvres (with more
-manoeuvres unlocked as the proficiency with the style increases), which have
-certain effects on the combat.
+Advanced Combat is the most sophisticated combat sub-system; it expands the
+simplified combat system by adding the concept of manoeuvres.
 
-### Attacking and Defending
+Manoeuvres are sub-skills for combat styles; the represent a special action a
+Character can take while using the combat skill.
 
-Manoeuvres are divided in three types: attacks, defences and actions.
-When a character turns comes, it can use any of the manoeuvre at his disposal.
-If it uses an attack, it must declare a target, and the target must now decide
-how to defend. Normally, it will want to use a defence, but it could try other
-manoeuvres; any non-defence manoeuvre used against an attack which will have a
-hard modifier.
+There are specific manoeuvres to attack and defend in each style, and each of
+them has different balances of difficulty of execution versus potential damage,
+or different effects on the reset of the combat. Some manoeuvres provide
+modifiers to subsequent moves, while some other generate damage also
+when defending.
 
-Once the attacker and the defender have chosen their actions, a contest between
-the involved skills is performed, and the winner will have its action being
-successful.
+### Diminishing Returns
 
-The amount of damage inflicted by as successful attack (or a defence involving a
-counter-attack) may depend on the manoeuvre, the level of its style, the weapon
-used, and the success margin and other factors specific of each manoeuvre. For
-example, a simple punch from melee combat will cause a damage equal to the
-strength of the attacker plus the success margin.
-
-The defender needs to use one of its available manoeuvres when named as a target
-by the attacker. If it has exhausted all its manoeuvres, it can either use an
-Instinctive Defence against physical attacks, or a Willpower Defence against
-mental attacks, or let the attacker attack freely. In the last case, the attack
-becomes a trivial check.
-
-### Repeated Manoeuvres
-
-Some manoeuvre get a negative modifier if being used repeatedly against the same
+Some manoeuvres get a negative modifier if being used repeatedly against the same
 target. For example, repeating using a brawl/punch has diminishing returns: your
 opponent will read your move, and will be able to better defend against the same
 attack. In those situations, you’ll want to be less predictable, and use other
 manoeuvres, or other styles altogether.
+
+This factor is called __diminishing return__ (DR) for a certain manoeuvre.
 
 ### Manoeuvre description
 
@@ -58,26 +39,11 @@ Other than the style they refer to, manoeuvres are defined by:
 * *Damage type*: subtype of damage caused by the manoeuvre.
 * *Damage*: Amount of damage caused by a successful contest. Here, SM stands
   for Success Margin.
+* *Limited*: manouvres that can be used only with a subset of the weapons
+ used by this style.
 * *Condition*: Special conditions applied by a success. If in parenthesis, the
   condition is applied only in special cases, otherwise it’s always applied on
   success.
-* *Limited*: manouvres that can be used only with a subset of the weapons
-  used by this style.
-
-Conditions can be one of the following:
-
-* *Wound*: A success causes an immediate wound — the seriousness of the wound
-  being described here or in the skill description.
-* *Block*: the target is grappled or anyhow blocked. The description of the
-  skill will specified wether the attacker is blocked too.
-* *Stun X*: the target is stun for a count X of turns, giving it a modifier
-  of -2 to any action.
-* *Fall*: The target falls on the ground, and is “grounded” for the next turn.
-* *Disarm*: The target loses its weapon.
-* *Cripple*: A limb of the target is crippled and becomes impaired. All
-  actions requiring that limb receives a -4 modifier. If the crippled
-  limb is a leg, 4-legged animals reduce their movement to half, bipedal
-  animals (including human) to 1/4.
 
 Notice that defences might have a damage type and a damage as well: some defence
 acts as a counter-attack, inflicting damage on success.

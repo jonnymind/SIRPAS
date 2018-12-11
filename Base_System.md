@@ -60,7 +60,7 @@ $(include Base_System/Injury_and_Damage/Damage_Type/Elemental_Damage.md)
 $(include Base_System/Injury_and_Damage/Damage_Type/Mental_Damage.md)
 $(include Base_System/Injury_and_Damage/Damage_Type/Phisical_Damage.md)
 $(include Base_System/Injury_and_Damage/Damage_Mitigation.md)
-$(include Base_System/Injury_and_Damage/Status.md)
+$(include Base_System/Injury_and_Damage/Conditions.md)
 
 $(-- Section: COMBAT  --)
 

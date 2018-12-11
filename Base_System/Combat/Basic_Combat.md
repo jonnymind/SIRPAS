@@ -2,7 +2,7 @@
 
 __Basic Combat__ is the most simple form of complete combat rules, dealing
 specifically with different characters on the fighting ground, performing
-different actions.
+different actions during combat.
 
 ### Attack and Defence
 
