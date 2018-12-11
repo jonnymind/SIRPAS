@@ -8,7 +8,7 @@ creatures.
 
 The following table is applied when checking for the character success:
 
-$(include Base_System/tables/healing.md)
+$(include /Base_System/tables/healing.md)
 
 Specific healing aids in the target setting can provide other modifiers.
 The time required for the healing to be performed depends on the setting

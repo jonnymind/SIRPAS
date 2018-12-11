@@ -5,7 +5,7 @@ $(dd cm_firearm_rapid_fire)
 	"Modifier": "-3",
 	"Prereq": "Firearms 9",
 	"DR": "-2",
-	"Range": "15 ft"
+	"Range": "15 ft",
 	"Damage": "__SM__+6"
 }
 

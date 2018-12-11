@@ -2,7 +2,7 @@
 
 $(dd cm_archery_aim)
 { "Type": "Action",
-	"Prereq": "Archery 3",
+	"Prereq": "Archery 3"
 }
 
 Take a manoeuvre to improve the next attack, giving it a modifier of +1.

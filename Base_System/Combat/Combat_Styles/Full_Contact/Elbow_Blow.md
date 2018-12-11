@@ -5,7 +5,7 @@ $(dd cm_full_contact_elbow_blow)
 	"Modifier": "mS-1",
 	"Prereq": "Full Contact 1",
 	"DR": "-2",
-	"Damage": "__SM__+*S"*,
+	"Damage": "__SM__+*S*",
 	"Condition": "__(Stun 2)__"
 }
 

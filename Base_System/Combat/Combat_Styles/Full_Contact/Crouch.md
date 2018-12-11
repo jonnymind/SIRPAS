@@ -2,7 +2,7 @@
 
 $(dd cm_full_contact_crouch)
 { "Type": "Action",
-	"Prereq": "Full Contact 3",
+	"Prereq": "Full Contact 3"
 }
 
 Type

@@ -5,7 +5,7 @@ $(dd cm_knife_fight_downstab)
 	"Modifier": "-1",
 	"Prereq": "Knife Fight 2",
 	"DR": "-2",
-	"Damage": "__SM__+*D*+*S*/26",
+	"Damage": "__SM__+*D*+*S*/2"
 }
 
 Swing the blade in a downward strike, aiming at the upper part of the

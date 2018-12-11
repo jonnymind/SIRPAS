@@ -7,7 +7,7 @@ $(dd cm_concentration_yes_but_you)
 	"Prereq": "Concentration 6",
 	"DR": "-1",
 	"Damage Type": "Despair",
-	"Damage": "__SM__",
+	"Damage": "__SM__"
 }
 
 The defendant turns the mental attack against the attacker.
