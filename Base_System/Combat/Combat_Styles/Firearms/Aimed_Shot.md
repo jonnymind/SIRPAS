@@ -11,4 +11,4 @@ $(dd cm_firearm_aimed_shot)
 
 Inflicts a -3 modifier on the attack, but it generates an injury one level 
 more severe than normal. Light wounds becomes severe, severe wounds become
-incapacitating and incapacitating wounds becomes deadly.
+heavy and heavy wounds becomes deadly.

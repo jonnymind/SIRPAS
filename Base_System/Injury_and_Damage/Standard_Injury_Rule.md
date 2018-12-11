@@ -18,7 +18,7 @@ characters that rely on different rules around Injury Statistics.
 For example, a zombie cannot become disabled, and is immune to light wounds; a
 vampire will flee, if possible, (transforming into myst or in a bat) after
 having sustained too much damage; a ghost doesn’t sustain negative effect for
-incapacitating damage; an advanced AI not is disabled when it receives a certain
+heavy damage; an advanced AI not is disabled when it receives a certain
 number of wounds, but when the total injury points is larger than a threshold,
 etc.
 

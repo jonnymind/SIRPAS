@@ -1,6 +1,10 @@
 ## Firearms
 
-__Cost: 6CP__
+$(dd ac_firearms)
+{
+   "Cost": "6 CP",
+   "Dominance": 7
+}
 
 This combat style is the bases for using firearms. In general, the weapon gives
 the modifier for the attack roll and determines the range, but the damage

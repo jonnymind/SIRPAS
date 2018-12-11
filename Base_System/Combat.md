@@ -1,17 +1,28 @@
 # Combat
 
-Combat can play an important role in some adventures. However, even in those
-adventures that don’t have a strong emphasis on combat, Sirpas provides a layer
-of rules that can be applied to situations where characters need to fight, which
-cannot be covered by a simple contest roll. For example, Sirpas combat rules
-would cover a situation where two hackers, or artificial intelligences, are
-trying to acquire the control of a network server, or are trying to attack each
-other system. Similarly, a context of magical means might be solved through the
-combat rules: for example, a sorcerer trying to cast a curse on a village and a
-priest trying to prevent it.
+Combat is an advanced form of contest. In a normal contest, characters
+try to win one over another on specific skills. Also in combat, there
+the contest is finalized at harming an opponent or defending from an attack.
 
-Using the combat rules, instead of a simple and direct contest, is a choice that
-rests upon the Master and the players, and the choice should be made depending
-on how everyone feels about that particular situation — or about the tenor of
-the adventure.
+Sirpas provides several sub-systems to resolve conflicts, increasingly 
+detailed (and complex):
 
+* *Combat Skill Contest*: It's the simplest way to resolve combats, with minimal
+	additions with respect to a normal contest roll. It also deals with fights
+	among small groups of characters. It's simply considered a specialized
+	skill contest for combat.
+* *Basic Combat*: A very simple version of the combat, still heavily based on
+	the *Combat Contest*, with a few additional rules to deal with different
+	combat styles.
+* *Simplified Combat*: A simplified version of the full combat system, with
+	fewer rules to take care of, but still more precise than the *Basic Combat*.
+* *Advanced Combat*: This is the full fledged combat system, based on
+	special usage of combat sub-skills called _manoeuvres_.
+
+You can mix and match these sub-systems in the same adventure, without
+limitation. You can either choose one or another depending on the experience
+of the players, or their inclinations, or you can base the choice on the
+relevance of the combat in the adventure. For example, you could resolve
+a brawl erupted in a tavern as a simple combat contest, to turn to the
+advanced combat when things get nasty while fighting the guards to escape
+a dungeon.

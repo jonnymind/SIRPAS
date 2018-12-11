@@ -12,4 +12,4 @@ For example, if the deadly wound is coming from poison, the skill to use
 instead of *Body* is *Poison Resistance*.
 
 If the check is successful, the instead of being deadly, the wound
-becomes incapacitating.
+becomes heavy.

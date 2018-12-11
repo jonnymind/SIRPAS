@@ -1,6 +1,10 @@
 ## Concentration
 
-__Cost: 2CP__
+$(dd ac_concentration)
+{
+   "Cost": "2 CP",
+   "Dominance": 1
+}
 
 Concentration is a simple mind-oriented fighting style, which can be seamlessly
 integrated in a traditional melee fight. It covers the role of the “default”
@@ -16,7 +20,7 @@ low-resolution.
 The number of manoeuvres the character can use per round depends on the level
 of Concentration:
 
-$(dt ac_concentration)
+$(dt ac_concentration_levels)
 [["Level", "Manoeuvres"],
 ["1-7", 1],
 ["8-13", 2],

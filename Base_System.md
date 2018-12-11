@@ -1,7 +1,7 @@
-$(-- 
+$(--
 	SIRPAS - Simple Role Play Adventure System
 	Full-lenght base rule manual.
-	
+
 	(C) Giancarlo Niccolai 2018.
 	LICENSE: CC-BY-ATTR Share-alike
 --)
@@ -51,7 +51,7 @@ $(include Base_System/Injury_and_Damage.md)
 $(include Base_System/Injury_and_Damage/Injury_Statitics.md)
 $(include Base_System/Injury_and_Damage/Standard_Injury_Rule.md)
 $(include Base_System/Injury_and_Damage/Wounds.md)
-$(include Base_System/Injury_and_Damage/Incapacitating_Wounds.md)
+$(include Base_System/Injury_and_Damage/Heavy_Wounds.md)
 $(include Base_System/Injury_and_Damage/Disabled_Status.md)
 $(include Base_System/Injury_and_Damage/Deadly_Wounds.md)
 $(include Base_System/Injury_and_Damage/Special_Injury_Rules.md)
@@ -60,22 +60,18 @@ $(include Base_System/Injury_and_Damage/Damage_Type/Elemental_Damage.md)
 $(include Base_System/Injury_and_Damage/Damage_Type/Mental_Damage.md)
 $(include Base_System/Injury_and_Damage/Damage_Type/Phisical_Damage.md)
 $(include Base_System/Injury_and_Damage/Damage_Mitigation.md)
-$(include Base_System/Injury_and_Damage/Status.md)
+$(include Base_System/Injury_and_Damage/Conditions.md)
 
 $(-- Section: COMBAT  --)
 
 $(include Base_System/Combat.md)
-$(include Base_System/Combat/Style_and_Maneuvers.md)
-$(include Base_System/Combat/Combat_Sequence.md)
-$(include Base_System/Combat/Combat_Turns.md)
-$(include Base_System/Combat/Attacking_and_Defending.md)
-$(include Base_System/Combat/Automatic_Attack.md)
-$(include Base_System/Combat/Instinctive_Defence.md)
-$(include Base_System/Combat/Moving_During_Combat.md)
-$(include Base_System/Combat/Repeated_Manoeuvres.md)
+$(include Base_System/Combat/Skill_Contest.md)
+$(include Base_System/Combat/Generic_Combat_Rules.md)
+$(include Base_System/Combat/Basic_Combat.md)
+$(include Base_System/Combat/Simplified_Combat.md)
+$(include Base_System/Combat/Advanced_Combat.md)
 
 $(include Base_System/Combat/Combat_Styles.md)
-$(include Base_System/Combat/Combat_Styles_Cost.md)
 $(include Base_System/Combat/Combat_Styles/Generic_Manoeuvres.md)
 $(include Base_System/Combat/Combat_Styles/Generic_Manoeuvres/*.md)
 $(include Base_System/Combat/Combat_Styles/Archery.md)
