@@ -7,7 +7,7 @@ carry without being slowed down, or that it can lift. There are different
 tiers  used in various occasion, all multiple of the value of Strength in 
 pounds:
 
-$(include Base_System/tables/strength.md)
+$(include /Base_System/tables/strength.md)
 
 The name of the tiers match the names of the skill difficulty levels, 
 as they are directly applied as a difficulty level in various checks.

@@ -9,7 +9,7 @@ arrested and not always welcome in high social circles.
 
 The size of the organisation determines the cost in terms of points:
 
-$(include Base_System/tables/criminal_size.md)
+$(include /Base_System/tables/criminal_size.md)
 
 This perk grants a modifier of +4 on Intimidate checks and comparisons
 against anyone, excluding other characters with the Criminal Boss perk.

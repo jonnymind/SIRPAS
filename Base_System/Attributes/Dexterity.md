@@ -13,7 +13,7 @@ The actual speed depends on what a character actually is; a cyborg with
 The following table is for humans; you can adapt it to other races
 by using the *speed coefficient* of that race (for humans, it's 1).
 
-$(include Base_System/tables/dexterity.md)
+$(include /Base_System/tables/dexterity.md)
 
 Notice that the speed for combat turn is not necessarily the sprint speed,
 as movement during combat is limited by other factors. Also, the combat

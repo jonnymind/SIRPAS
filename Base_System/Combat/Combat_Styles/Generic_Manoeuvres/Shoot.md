@@ -5,7 +5,7 @@ $(dd cm_generic_shoot)
 	"Modifier": "-1",
 	"Prereq": "Concentration 1",
 	"DR": "-1",
-	"Range": "30 ft"
+	"Range": "30 ft",
 	"Damage Type": "Piercing",
 	"Damage": "__SM__+6"
 }

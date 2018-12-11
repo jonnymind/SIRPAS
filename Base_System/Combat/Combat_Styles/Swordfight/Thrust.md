@@ -5,7 +5,7 @@ $(dd cm_swordfight_thrust)
 	"Modifier": "mD",
 	"Prereq": "Swordfight 2",
 	"DR": "-1",
-	"Damage Type": "Cut"
+	"Damage Type": "Cut",
 	"Limitation": "Swords",
 	"Damage": "__SM__+*S*+8"
 }

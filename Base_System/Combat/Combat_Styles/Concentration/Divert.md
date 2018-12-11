@@ -5,7 +5,7 @@ $(dd cm_concentration_divert)
 { "Type": "Defence",
 	"Modifier": "mI",
 	"Prereq": "Concentration 1",
-	"DR": "-1",
+	"DR": "-1"
 }
 
 The defendant diverts the attention of the attacker on an irrelevant
