@@ -117,7 +117,7 @@ class Processor:
 		for line in table:
 			header += 1
 			# skip creating a header separator if provided
-			if not header == 2 and "--" not in line[0]:
+			if header == 2 and "--" not in line[0]:
 				self.fout.write("|")
 				for word in line:
 					self.fout.write("-" * (len(str(word))+2) +"|")
