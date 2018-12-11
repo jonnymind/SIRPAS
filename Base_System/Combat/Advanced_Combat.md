@@ -12,6 +12,19 @@ or different effects on the reset of the combat. Some manoeuvres provide
 modifiers to subsequent moves, while some other generate damage also
 when defending.
 
+### Damage Computation
+
+In the __advanced combat__ the damage generated is specifically described by
+the manoeuvre description.
+
+A _critical success_ in the roll of the offending side,
+or a _critical failure_ on the side receiving the damage, doubles the
+contribution of the the _success margin_ to the __damage points__ generated
+in the exchange.
+
+> Notice that, in the advanced system, a successful defence might damage
+the attacker.
+
 ### Diminishing Returns
 
 Some manoeuvres get a negative modifier if being used repeatedly against the same

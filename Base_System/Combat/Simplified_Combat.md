@@ -13,11 +13,10 @@ The effect of the damage is computed as described by the
 ### Damage computation
 
 The damage caused by a successful attack is determined by the _success margin_
-plus the _dominance_ of the attack multiplied by two, or by three if the
-attack was a _critical success_ or the defence was a _critical failure_.
+of the attack, plus some factor specified in the combat skill description.
 
-The attack _dominance_ is the sum of the skill _dominance_ and any other
-_dominance_ provided by weapons, perks, magic, and auxiliary skills.
+If the attack was a was a _critical success_, or the defence was a
+_critical failure_, the damage portion caused by the success margin is doubled.
 
 This amount is then reduced by the passive defence offered by the defender,
 which involves its armour and other means, as described by the _injury_ rules.
