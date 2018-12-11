@@ -1,6 +1,6 @@
 ## Basic Combat
 
-__Basic Combat__ is the most simple form of complete combat rules, dealing
+_Basic combat_ is the most simple form of complete combat rules, dealing
 specifically with different characters on the fighting ground, performing
 different actions during combat.
 
@@ -9,8 +9,8 @@ different actions during combat.
 When an attack is declared, the target (or targets) can use a defence, either
 by using a specific combat skill or a _generic defence_.
 
-The attacker and defender perform a Contest using their chosen skill as a base.
-The attacker will add the modifier from the _dominance_ of its combat skill,
+The attacker and the defender perform a Contest using their chosen skill as a
+base. The attacker will add the modifier from the _dominance_ of its combat skill,
 and if any, of its weapon; similarly, the defender will add the _dominance_
 of the selected skill, and eventually, of its armour, to the defence roll.
 
@@ -27,8 +27,8 @@ $(include /Base_System/tables/base_injuries.md)
 ### Resist Damage
 
 The defender can degrade one injury per turn to the lower level (or avoiding
-completely light wounds) by performing a check on [__health__](#Health), for
-phisical attacks, or [__equilibrium__](#Equilibrium) for mental attacks,
+completely light wounds) by performing a check on [__health__](#health), for
+physical attacks, or [__equilibrium__](#equilibrium) for mental attacks,
 with the following modifiers:
 
 $(include /Base_System/tables/base_resist_injuries.md)
