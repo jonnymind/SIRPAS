@@ -16,7 +16,7 @@ are just examples taken from the basic rules.
   points is less than 16, they are forced to retreat and cannot combat until
   healed. If the count of injury points is greater than 16, they turn into ash.
 * Zombies: They can’t receive light or serious wounds, but are destroyed when
-  they receive an incapacitating or deadly wound. When they receive a light or
+  they receive a heavy or deadly wound. When they receive a light or
   serious wound, they are unharmed, but the damage count stays at the level of
   their health (e.g. it becomes easier to inflict a deeper wound).
 

@@ -25,4 +25,4 @@ Damage
 SM+D+6
 Condition
 Injury
-Try to grab the opponent while fighting, to deliver deeper wounds. On success, this manoeuvre delivers an injury one level higher than normal. Light wounds become severe, severe wounds become incapacitating, and incapacitating wounds become deadly.
+Try to grab the opponent while fighting, to deliver deeper wounds. On success, this manoeuvre delivers an injury one level higher than normal. Light wounds become severe, severe wounds become heavy, and heavy wounds become deadly.

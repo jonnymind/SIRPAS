@@ -1,3 +1,11 @@
+## Generic Manoeuvres
+
+$(dd ac_generic_manoeuvres)
+{
+   "Cost": "0 CP",
+   "Dominance": 0
+}
+
 Generic manoeuvres are themselves proper skills, which any character can use
 during a combat.
 

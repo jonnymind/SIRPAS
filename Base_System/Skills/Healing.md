@@ -13,5 +13,5 @@ $(include /Base_System/tables/healing.md)
 Specific healing aids in the target setting can provide other modifiers.
 The time required for the healing to be performed depends on the setting
 and on the device used. A SF cellular replicator or a magic balm could
-allow healing incapacitating wounds in one day, in a few hours or in minutes,
+allow healing heavy wounds in one day, in a few hours or in minutes,
 while in other settings, an herbal healing remedy might require a week.

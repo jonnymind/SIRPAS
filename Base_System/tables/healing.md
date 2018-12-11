@@ -2,4 +2,4 @@
 |----------------------------------|----------------------------------|
 | Light                            | Normal                           |
 | Severe                           | Difficult                        |
-| Incapacitating                   | Hard                             |
+| Heavy                   | Hard                             |

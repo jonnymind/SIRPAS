@@ -16,7 +16,7 @@ import json
 
 RE_COMMAND = re.compile("(.*)(?!\\\\)\\$\\((.*?)\\s+(.*?)\\)(.*)")
 
-	
+
 class Processor:
 	def __init__(self, basepath, fout):
 		self.basepath = basepath
@@ -36,8 +36,8 @@ class Processor:
 				return
 			pos = line.find("--)")
 		if pos >= 0:
-			self.fout.write(line[pos+3:])		
-			
+			self.fout.write(line[pos+3:])
+
 	def process_command(self, cmd, params):
 		if cmd == "include":
 			origin = os.path.abspath(os.path.dirname(self.current))
@@ -51,7 +51,7 @@ class Processor:
 		elif cmd == "dd":
 			self.process_dd(params)
 		elif cmd == "dt":
-			self.process_dt(params)			
+			self.process_dt(params)
 		else:
 			self.print_error("Unknown command: {}".format(cmd))
 
@@ -78,13 +78,13 @@ class Processor:
 		self.line = 0
 		for line in fin:
 			self.line += 1
-			# strip comments			
+			# strip comments
 			cmt = line.find("$(--")
 			if cmt >= 0:
 				self.fout.write(line[0:cmt])
 				self.process_comment(line[cmt:])
 				continue
-			
+
 			# Process commands
 			rcmd = RE_COMMAND.match(line)
 			if rcmd:
@@ -96,21 +96,21 @@ class Processor:
 				self.fout.write(line)
 		self.fout.write("\n")
 		self.pop_current()
-	
+
 	def pop_current(self):
 		if len(self.current_stack):
 			self.current = self.current_stack.pop()
 			self.line = self.line_stack.pop()
-	
+
 	def push_current(self):
 		self.current_stack.append(self.current)
 		self.line_stack.append(self.line)
-		
+
 	def process_dt(self, params):
 		table = self.get_json()
 		self.write_table(table)
-	
-	def write_table(self, table):		
+
+	def write_table(self, table):
 		if not table:
 			return
 		header = 0
@@ -120,17 +120,17 @@ class Processor:
 			if not header == 2 and "--" not in line[0]:
 				self.fout.write("|")
 				for word in line:
-					self.fout.write("-" * (len(word)+2) +"|")
-				self.fout.write("\n")					
+					self.fout.write("-" * (len(str(word))+2) +"|")
+				self.fout.write("\n")
 			self.fout.write( "| " + " | ".join(map(lambda x:str(x), line)) + " |\n")
-		
+
 	def process_dd(self, params):
 		ddict = self.get_json()
 		table = [[" ", " "]]
 		for key in sorted(ddict):
 			table.append([key[4:], ddict[key]])
 		self.write_table(table)
-		
+
 	def get_json(self):
 		opener, closer, level = None, None, 0
 		content = ""
@@ -145,27 +145,27 @@ class Processor:
 				elif opener == '{':
 					closer = '}'
 				else:
-					self.fout.write(line)					
+					self.fout.write(line)
 					return None
-			
+
 			level += line.count(opener) - line.count(closer)
 			content += line if opener == "[" else \
-						  line.replace('"', '"{0:03d}.'.format(linecount), 1) 
+						  line.replace('"', '"{0:03d}.'.format(linecount), 1)
 			linecount += 1
 			if level <= 0:
-				self.line += linecount				
+				self.line += linecount
 				try:
 					return json.loads(content)
 				except json.decoder.JSONDecodeError as error:
 					self.print_error(error)
 					return None
-			
+
 	def print_error(self, message):
 		sys.stderr.write("ERROR: {}({}): {}\n".format(
 							  self.current, self.line, message))
 
-		
-			
+
+
 ################################################################
 # Main
 ################################################################
@@ -182,7 +182,5 @@ else:
 
 for fin in opts.sources:
 	base = os.path.abspath(os.path.dirname(fin))
-	proc = Processor(base, fout)	
+	proc = Processor(base, fout)
 	proc.process(fin)
-		
-	
