@@ -1,4 +1,4 @@
-## Heavy Wounds
+## Localized Wounds (optional)
 
 When a heavy wounds occurs, usually, the GM decides what’s the
 heavy effect sustained by the character. However, there are some skills

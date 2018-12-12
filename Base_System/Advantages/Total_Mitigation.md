@@ -1,4 +1,5 @@
 ## Total Mitigation (6CP)
 
-Normal damage mitigation can reduce incoming damage to a
-minimum of 1 DP. With this advantage, the minimum becomes 0 DP.
+When the character receives a damage for 0 **DP**, under some conditions,
+it might still sustain a _scratch_. With this advantage, a damage of 0 **DP**
+is aways ignored. 
