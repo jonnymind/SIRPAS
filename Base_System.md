@@ -20,16 +20,6 @@ $(include Base_System/Statistics.md)
 $(include Base_System/Character_points.md)
 
 
-$(-- Section: CHECKS --)
-
-$(include Base_System/Checks.md)
-$(include Base_System/Checks/Simple_check.md)
-$(include Base_System/Checks/Repeated_attempts.md)
-$(include Base_System/Checks/Ranking_rolls.md)
-$(include Base_System/Checks/Direct_contest.md)
-$(include Base_System/Checks/Repeated_contest.md)
-$(include Base_System/Checks/Critical_Results.md)
-
 $(-- Section: STATISTICS  --)
 
 $(include Base_System/Mains.md)
@@ -45,6 +35,16 @@ $(include Base_System/Disadvantages/*.md)
 $(include Base_System/Perks_and_Drags.md)
 $(include Base_System/Perks_and_Drags/*.md)
 
+$(-- Section: CHECKS --)
+
+$(include Base_System/Checks.md)
+$(include Base_System/Checks/Simple_check.md)
+$(include Base_System/Checks/Repeated_attempts.md)
+$(include Base_System/Checks/Ranking_rolls.md)
+$(include Base_System/Checks/Direct_contest.md)
+$(include Base_System/Checks/Repeated_contest.md)
+$(include Base_System/Checks/Critical_Results.md)
+
 $(-- Section: DAMAGE  --)
 $(include Base_System/Injury_and_Damage.md)
 $(include Base_System/Injury_and_Damage/Standard_Injury_Rule.md)
@@ -58,8 +58,6 @@ $(include Base_System/Injury_and_Damage/Conditions.md)
 $(-- Section: COMBAT  --)
 
 $(include Base_System/Combat.md)
-$(include Base_System/Combat/Skill_Contest.md)
-$(include Base_System/Combat/Generic_Combat_Rules.md)
 $(include Base_System/Combat/Basic_Combat.md)
 $(include Base_System/Combat/Simplified_Combat.md)
 $(include Base_System/Combat/Advanced_Combat.md)
