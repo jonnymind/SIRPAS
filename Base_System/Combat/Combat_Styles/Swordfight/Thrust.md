@@ -5,10 +5,9 @@ $(dd cm_swordfight_thrust)
 	"Modifier": "mD",
 	"Prereq": "Swordfight 2",
 	"DR": "-1",
-	"Damage Type": "Cut",
 	"Limitation": "Swords",
-	"Damage": "__SM__+*S*+8"
+	"Damage": "__SM__+6"
 }
 
-Thrusts a cutting weapon towards the opponent. Cannot be used with blunt or 
+Thrusts a cutting weapon towards the opponent. Cannot be used with blunt or
 two handed weapons (including swords).

@@ -5,7 +5,7 @@ $(dd cm_brawl_kick)
 	"Modifier": "mD",
 	"Prereq": "Brawl 1",
 	"DR": "-1",
-	"Damage": "__SM__+*D*",
+	"Damage": "__SM__+mD",
 	"Condition": "__(Stun 2)__"
 }
 
@@ -13,4 +13,3 @@ $(dd cm_brawl_kick)
 The character attacks with a kick, causing a damage equal its dexterity plus the success margin.
 Gets a +2 modifier on small creatures (less half the size of the attacker) and grounded  targets.
 On critical success, it stuns the target for 2 turns.
-

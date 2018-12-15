@@ -1,7 +1,9 @@
 ### Instincitve Defence
 
 $(dd cm_generic_instinctive_defence)
-{ "Type": "Defence",
+{
+	"Cost": "3 CP",
+	"Type": "Defence",
 	"Modifier": "mD"
 }
 

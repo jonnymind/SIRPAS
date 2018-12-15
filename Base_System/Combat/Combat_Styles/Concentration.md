@@ -3,6 +3,7 @@
 $(dd ac_concentration)
 {
    "Cost": "2 CP",
+   "Modifier": "mW",
    "Dominance": 1
 }
 

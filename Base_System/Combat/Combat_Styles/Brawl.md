@@ -3,6 +3,7 @@
 $(dd ac_brawl)
 {
    "Cost": "2 CP",
+   "Modifier": "mS",
    "Dominance": 1
 }
 
@@ -14,7 +15,7 @@ useful in other combat situations.
 Every human or humanoid character has access to brawl.
 
 Unless differently specified, all attacks from *brawl* deal __blunt__
-damage, and all the manouvres are melee.
+damage, and all the manoeuvres are melee.
 
 The number of manoeuvres the character can use per round depends on
 the level of brawl:

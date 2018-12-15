@@ -1,7 +1,9 @@
 ### Willpower Defence
 
 $(dd cm_generic_willpower_defence)
-{ "Type": "Defence",
+{
+	"Cost": "3 CP",
+	"Type": "Defence",
 	"Modifier": "mW"
 }
 

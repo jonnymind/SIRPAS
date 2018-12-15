@@ -1,12 +1,11 @@
 ### Counter kick
 
-
 $(dd cm_full_contact_counter_kick)
 { "Type": "Defence",
 	"Modifier": "mD-2",
 	"Prereq": "Full Contact 3",
 	"DR": "-2",
-	"Damage": "__SM__",
+	"Damage": "__SM__-1",
 	"Condition": "__(Stun 2)__"
 }
 

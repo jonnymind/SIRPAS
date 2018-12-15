@@ -2,7 +2,7 @@
 
 $(dd cm_swordfight_parry_projectiles)
 { "Type": "Defence",
-	"Modifier": "mD-1",
+	"Modifier": "mD",
 	"Prereq": "Swordfight 6",
 	"DR": "-1",
 	"Range": "30 ft",

@@ -2,10 +2,10 @@
 
 $(dd cm_full_contact_elbow_blow)
 { "Type": "Attack",
-	"Modifier": "mS-1",
+	"Modifier": "mS",
 	"Prereq": "Full Contact 1",
 	"DR": "-2",
-	"Damage": "__SM__+*S*",
+	"Damage": "__SM__+2",
 	"Condition": "__(Stun 2)__"
 }
 

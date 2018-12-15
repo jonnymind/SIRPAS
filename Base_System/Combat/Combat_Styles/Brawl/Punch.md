@@ -5,7 +5,7 @@ $(dd cm_brawl_punch)
 	"Modifier": "mS",
 	"Prereq": "Brawl 1",
 	"DR": "-1",
-	"Damage": "__SM__+*S*",
+	"Damage": "__SM__+mS",
 	"Condition": "__(Stun 2)__"
 }
 

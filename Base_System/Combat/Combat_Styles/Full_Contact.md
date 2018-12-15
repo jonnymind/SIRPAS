@@ -2,8 +2,9 @@
 
 $(dd ac_full_contact)
 {
-   "Cost": "2 CP",
+   "Cost": "3 CP",
    "Prerequisite": "**Brawl** 4",
+   "Modifier": "mS",
    "Dominance": 3
 }
 

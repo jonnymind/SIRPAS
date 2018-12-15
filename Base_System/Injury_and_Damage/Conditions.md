@@ -1,6 +1,6 @@
 ## Conditions and Status
 
-Conditions are "standardised" negative effects that a particular
+_Conditions_ are "standardised" negative effects that a particular
 damage source can add, other than causing a direct damage.
 
 When a condition is applied to a character for a prolonged time, it becomes a

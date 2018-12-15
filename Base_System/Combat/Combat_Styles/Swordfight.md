@@ -3,6 +3,7 @@
 $(dd ac_swordfight)
 {
    "Cost": "6 CP",
+   "Modifier": "mS",
    "Dominance": 6
 }
 
@@ -13,10 +14,13 @@ flails, shields and so on.
 
 The style doesn’t differentiate between different kind of weapons as far as
 special effect and damage is concerned. To take advantage of the specificities
-of each weapon, a character can learn the specific style. Two-handed weapons
-can be used through this style as well; they prevent the usage of a shield
-(and any manoeuvre related requiring it), but gives a modifier of +4 to the
-damage delivered.
+of each weapon, a character can learn the specific style.
+
+###  Two-handed weapons
+
+This style can be used with large two-handed swords, maces and hammers as well;
+they prevent the usage of a shield (and any manoeuvre related requiring it),
+but give a **DP** modifier of +3.
 
 The number of manoeuvres the character can use per round depends on the level
 of Sword Fight:
