@@ -39,7 +39,7 @@ When its turn in ranking come, provided a character has still some actions to us
 with the chosen skill, they can perform an attack.
 
 It is always possible to use one of the _generic defences_ from
-[Generic Manoeuvres](#Generic_Manoeuvres) to resist an attack, no matter how
+[Generic Combat Skills](#Generic_Manoeuvres) to resist an attack, no matter how
 many actions have been performed with other skills.
 
 ### Instinctive Defence

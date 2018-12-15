@@ -17,10 +17,10 @@ To perform combat as a _basic combat_, all the participant must:
 2. Be actually able to use the skills involved. It's common
 	knowledge that you don't bring a knife in a gunfight.
 
-However, a character can use __Generic Manoeuvres__ skill to participate
+However, a character can use __Generic Combat Skills__ skill to participate
 a fight this way, if they agree. For example, if everyone else is using
 __swordfight__, one character that happens to have a sword in its hands,
-but not knowing __swordfight__, could use __Generic Manoeuvres/slash__
+but not knowing __swordfight__, could use __Generic Combat Skills/slash__
 instead, which acts as a sort of base for everyone trying to swing a
 weapon.
 

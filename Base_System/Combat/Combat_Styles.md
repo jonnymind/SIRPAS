@@ -3,7 +3,7 @@
 The skills used in combat go under the name of _combat styles_. Each style
 offers a collection of sub-skills called _manoeuvres_, which are used in the
 _advanced combat system_, and specify how a certain style is used during
-combat -- with the exception of [generic maneuveres](#Generic Manoeuvres),
+combat -- with the exception of [generic maneuveres](#Generic Combat Skills),
 which are proper skills on their own.
 
 Advantages and perks can be targeted at skills only: either _combat styles_ or
