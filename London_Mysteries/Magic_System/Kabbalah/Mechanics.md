@@ -1,6 +1,6 @@
 ### Mechanics
 
-To cast a Kabbala spell, the caster chants the Verb of Creation, the words of
+To cast a Kabbalah spell, the caster chants the Verb of Creation, the words of
 the Kabbalah. At each word spelled, the caster descends from the top of the tree
 of life, representing the external, visible aspects of reality, down to its
 roots, where the most powerful forces of nature dwell.
