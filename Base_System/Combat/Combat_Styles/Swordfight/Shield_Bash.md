@@ -6,7 +6,7 @@ $(dd cm_swordfight_shield_bash)
 	"Prereq": "Swordfight 4",
 	"DR": "-2",
 	"Damage Type": "Blunt",
-	"Damage": "__SM__",
+	"Damage": "__SM__-2",
 	"Condition": "(__Grounded__)"
 }
 

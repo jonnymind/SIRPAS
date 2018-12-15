@@ -5,7 +5,7 @@ $(dd cm_swordfight_slash)
 	"Modifier": "mS",
 	"Prereq": "Swordfight 1",
 	"DR": "-1",
-	"Damage": "__SM__+*S*+5"
+	"Damage": "__SM__+6"
 }
 
-A simple lateral stroke. 
+A simple lateral stroke.

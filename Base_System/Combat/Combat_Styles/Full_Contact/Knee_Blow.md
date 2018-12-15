@@ -2,10 +2,10 @@
 
 $(dd cm_full_contact_knee_blow)
 { "Type": "Attack",
-	"Modifier": "mD-1",
+	"Modifier": "mD",
 	"Prereq": "Full Contact 1",
 	"DR": "-2",
-	"Damage": "__SM__+*D*+2"
+	"Damage": "__SM__+3"
 }
 
 The character attacks with its knee, causing a damage equal to its dexterity,

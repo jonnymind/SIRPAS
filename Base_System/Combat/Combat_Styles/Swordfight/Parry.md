@@ -8,4 +8,4 @@ $(dd cm_swordfight_parry)
 }
 
 A basic defence; the character intercept the opponent’s blow with
-its own weapon, leveraging its own strength.
+its own weapon, using its own strength to resist it.

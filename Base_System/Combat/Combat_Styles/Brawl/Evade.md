@@ -7,7 +7,4 @@ $(dd cm_brawl_evade)
 	"DR": "-1"
 }
 
-Try and evade an attack.
-
-It can also be used against ranged attacks, 
-with a -3 modifier when the attacker is more than 15 feet away.
+Try and evade an attack moving the body out of the way of the incoming hit.

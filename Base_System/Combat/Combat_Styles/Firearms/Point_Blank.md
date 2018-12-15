@@ -6,10 +6,9 @@ $(dd cm_firearm_point_black)
 	"Prereq": "Firearms 6",
 	"DR": "-1",
 	"Range": "Melee",
-	"Damage": "__SM__+12",
+	"Damage": "__SM__+10",
 	"Condition": "__(Deadly)__"
 }
 
-Fires at point blank on targets in melee range. 
+Fires at point blank on targets in melee range.
 On critical success it causes a deadly wound.
-

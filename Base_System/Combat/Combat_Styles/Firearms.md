@@ -13,7 +13,7 @@ generated is usually the same. Firing with a pistol six feet away from the
 target or with a precision gun from 90 feet afar yields mostly the same results,
 provided you can hit the mark.
 
-All the damage type caused by *firearms* is of __piercging__ type, unless differently
+All the damage type caused by *firearms* is of __piercing__ type, unless differently
 specified.
 
 Everyone can shoot with a firearm; as such, the firearms style is available to

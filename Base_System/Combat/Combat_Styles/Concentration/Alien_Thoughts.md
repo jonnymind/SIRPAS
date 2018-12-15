@@ -6,8 +6,8 @@ $(dd cm_concentration_alien_thoughts)
 	"Prereq": "Concentration 1",
 	"DR": "-1",
 	"Damage Type": "Maddening",
-	"Damage": "__SM__+*I*"
+	"Damage": "__SM__+mI"
 }
 
-The attacker projects alien, irrational thoughts in the defendant’s, 
+The attacker projects alien, irrational thoughts in the defendant’s,
 in order to cause maddening.

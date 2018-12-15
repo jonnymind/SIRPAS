@@ -5,7 +5,7 @@ $(dd cm_knife_fight_hand_cutting)
 	"Modifier": "mD-2",
 	"Prereq": "Knife Fight 4",
 	"DR": "-2",
-	"Damage": "__SM__+4",
+	"Damage": "__SM__-2",
 	"Condition": "(__Disarm__)"
 }
 

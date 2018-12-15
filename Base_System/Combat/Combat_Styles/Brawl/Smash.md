@@ -5,7 +5,7 @@ $(dd cm_brawl_smash)
 	"Modifier": "mS",
 	"Prereq": "Brawl 6",
 	"DR": "-1",
-	"Damage": "__SM__",
+	"Damage": "__SM__-2",
 	"Condition": "__Grounded__"
 }
 
