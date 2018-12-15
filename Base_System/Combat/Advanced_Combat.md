@@ -16,12 +16,13 @@ when defending.
 ### Manoeuvre types
 
 Manoeuvres are divided into _attacks_, _defences_ and _actions_. Attacks and
-defences represent specific usages of the base combat skill; _actions_ are
+defences represent a mores specific usages of the base combat skill as
+per the _base combat_ rules; _actions_ are
 other ways a combat skill can be employed.
 
-For example, using the __aim__ manoeuvre of the __gunfight__ style is neither
-an attack nor a defence: allows to use the __gunfight__ skill as a normal skill,
-and on success it provides a bonus to the next attack.
+For example, the __aim__ manoeuvre of the __gunfight__ style is neither
+an attack nor a defence: it allows to use the __gunfight__ skill as a normal
+skill, and on success, it provides a bonus to the next attack.
 
 ### Manoeuvre modifier
 
