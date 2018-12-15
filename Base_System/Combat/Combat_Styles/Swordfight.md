@@ -3,6 +3,7 @@
 $(dd ac_swordfight)
 {
    "Cost": "6 CP",
+   "Modifier": "mS",
    "Dominance": 6
 }
 

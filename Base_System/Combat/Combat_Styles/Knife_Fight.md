@@ -3,6 +3,7 @@
 $(dd ac_knife_fight)
 {
    "Cost": "5 CP",
+   "Modifier": "mD",
    "Dominance": 4
 }
 

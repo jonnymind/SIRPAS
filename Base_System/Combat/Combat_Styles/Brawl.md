@@ -3,6 +3,7 @@
 $(dd ac_brawl)
 {
    "Cost": "2 CP",
+   "Modifier": "mS",
    "Dominance": 1
 }
 

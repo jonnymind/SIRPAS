@@ -1,11 +1,13 @@
 ### Thrust
 
 $(dd cm_generic_thrust)
-{ "Type": "Attack",
+{
+	"Cost": "5 CP",
+	"Type": "Attack",
 	"Modifier": "mD",
 	"DR": "-1",
 	"Damage Type": "cut",
-	"Damage": "(__SM__+*D*)/2"	
+	"Damage": "__SM__"	
 }
 
 A generic manoeuvre performed with any pointed or cutting weapon,

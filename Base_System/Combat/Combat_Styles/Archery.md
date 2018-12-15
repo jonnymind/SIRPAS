@@ -3,6 +3,7 @@
 $(dd ac_archery)
 {
    "Cost": "6 CP",
+   "Modifier": "mD",
    "Dominance": 4
 }
 

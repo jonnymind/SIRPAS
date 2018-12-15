@@ -3,6 +3,7 @@
 $(dd ac_firearms)
 {
    "Cost": "6 CP",
+   "Modifier": "mD",
    "Dominance": 7
 }
 
