@@ -86,3 +86,7 @@ $(include Base_System/Equipment.md)
 $(include Base_System/Equipment/Adventuring_Equipment.md)
 $(include Base_System/Equipment/Armours.md)
 $(include Base_System/Equipment/Weapons.md)
+
+$(-- Section: TECHNICAL  --)
+
+$(include Base_System/Technical.md)
