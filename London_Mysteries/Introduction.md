@@ -9,5 +9,5 @@ It is also the theatre of the struggle between occult societies to gain
 prominence, and enlarge their influence.
 
 This setting can be the base to play investigative adventures, as Sherlock
-Holmes styled private investigators or horror/supernatural oriented stories; or,
-like the late Sherlock Holmes, any viable mix of the two. 
+Holmes styled private investigators or horror/supernatural oriented stories;
+or, like the late Sherlock Holmes novels, any viable mix of the two. 

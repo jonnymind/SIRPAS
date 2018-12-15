@@ -6,7 +6,7 @@ $(dd cm_mentalism_deep_secrets)
 	"Prereq": "Mentalism 1",
 	"DR": "-1",
 	"Damage Type": "Despair",
-	"Damage": "__SM__+*W*",
+	"Damage": "__SM__+mW+3",
 	"Condition": "(__Wound__)"
 }
 
