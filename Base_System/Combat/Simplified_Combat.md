@@ -11,8 +11,8 @@ using __brawl__, or taking part in a little __swordfight__ skirmish.
 
 To perform combat as a _basic combat_, all the participant must:
 1. Agree to use the skills based on the same _root skill_.
-   For example, a _basic combat_ can take place when all the characters
-   use __brawl__ or __full contact__, which is based on __brawl__, but not
+   For example, a _simplified combat_ can take place when all the characters
+   use __brawl__ or its derived skill __full contact__, but not
    if one of the characters is going to use __archery__ or __firearms__.
 2. Be actually able to use the skills involved. It's common
 	knowledge that you don't bring a knife in a gunfight.
