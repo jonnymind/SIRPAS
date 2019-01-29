@@ -35,7 +35,7 @@ number of participants.
 ### Fight Resolution
 
 The fight is performed in the following order:
-1. have everyone involved rolls on the selected skill.
+1. Everyone involved rolls on the selected skill.
 1. To each roll, add the __dominance__ of the skill chosen by every character,
    and if present, also the __dominance__ of their weapon.
 1. Order the scores from each party in decreasing values.
@@ -69,9 +69,9 @@ If the fight is serious, the losing party will receive:
 
 The winning party takes two serious injuries for each critical failure.
 
-> Critical rolls are counted _after_ assigning the skill and weapon
-_dominance_ on the initial roll, but before adding the _dominance_ as the
-final correction.
+> Critical results are evaluated taking each pair of rolls as a contest,
+_after_ assigning the skill and weapon _dominance_ on the initial roll, 
+but before adding the armor _dominance_.
 
 ### Damage Ranking
 
@@ -84,9 +84,6 @@ severity (light to heavy).
 1. Assign as many wounds as necessary to match the __disable level__ to the
 last ranked, starting from top (the lightest wounds first).
 1. Continue with the second-last ranked, until all the wounds are assigned.
-
-The last ranked will be automatically knocked out, receiving enough light
-wounds to fill its _disable level_.
 
 Example: a party of four characters receive 6 light, 1 serious and 2
 heavy wounds _physical wounds_; all the characters have DL/W=4.
