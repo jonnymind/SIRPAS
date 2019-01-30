@@ -22,7 +22,8 @@ For most situations, you’ll want to consider the length of a combat turn being
 Each turn, all the participants roll a ranking on the skill called
 [__initiative__](#Initiative).
 
-Characters decide the action they want to perform proceeding in ranking order:
+Following the initialtive ranking order firtst to last, characters decide 
+the action they want to perform among the wollowings:
 
 * Attack
 * Wait for a better moment
@@ -30,17 +31,17 @@ Characters decide the action they want to perform proceeding in ranking order:
 * Switch Weapon
 * Use an item
 
-A character can use only a single combat skill during a turn, but some skill
-provides multiple _actions_, which means it can be used multiple times per turn.
-Any character must decide if it wants to use its skill actions for attack, defence
-or both.
+A character can use only a single combat skill during a turn, but some combat skills
+provide multiple _actions_, which means they can be used multiple times per turn to
+defend or attack.
 
-When its turn in ranking come, provided a character has still some actions to use
-with the chosen skill, they can perform an attack.
+A character can use the combat skill for defending against an attack also if it not
+its turn; however, when its turn comes, it will be able to attack only if it has some
+actions left unused.
 
-It is always possible to use one of the _generic defences_ from
-[Generic Combat Skills](#Generic_Manoeuvres) to resist an attack, no matter how
-many actions have been performed with other skills.
+A character might also decide not perform any action when its turn comes; if it does so,
+it can prehempt any other action performed later on by characters down the initiative
+ranking, or eventually use a defence to respond to a later attack.
 
 ### Instinctive Defence
 
@@ -65,11 +66,10 @@ It is possible to move during combat at the speed indicated in the
 
 Opponents targeting the character (either because they are nearby in melee,
 or because they have aimed at them previously) can use an attack against
-them to prevent them from moving.
-
-The moving character must successfully defend with the
-(__disengage__)[#Disengage] generic manoeuvre. If they fail, other than
-receiving normal damage, they will also fail to move.
+them to prevent them from moving. In that case, the moving character must 
+successfully defend with the (__disengage__)[#Disengage] generic manoeuvre. 
+If it fails, other than receiving normal damage, it also stays unmoved, and
+the action is nevertheless consumed.
 
 > If a character plans to move and there isn't any urgency to do that, it's
 better to wait for any opponent that might target them to use up all their
@@ -104,7 +104,8 @@ _full contact_ skill to try and avoid to be hit.
 
 When defending against _ranged skills_, a _melee_ skill receives a modifier of
 +1 when defending in _melee_ range (i.e. if they are in close quarters with
-the attaccker); if not, -1 for each 18 feet of distance from the source.
+the attaccker); if not, it receives a modifier of -1 for each 18 feet 
+of distance from the source.
 
 >For example, a martial artist using _full contact_ against a
 shooter 40 feet away would have a penalty of -2. If the attacker were
@@ -163,7 +164,7 @@ a stretch of boasting victories.
 to contemplate defeat and come with terms to that before the fight. It might
 depend of a perceived superiority of the opponents, or because all food was
 depleted and a breakthrough is necessary for survival, etc.
-* __Tiredness__: The characters are particularly tired, I.e. because they
+* __Tiredness__: The characters are particularly tired, i.e. because they
 couldn't rest after previous fight, or because being forced to fight after a
 long march, or for having run because of a chasing.
 * __Demoralised__: The characters are demoralised because of having lost
