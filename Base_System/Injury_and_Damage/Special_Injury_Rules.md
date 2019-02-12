@@ -5,11 +5,11 @@ characters. Your setting might
 have different rules for the same characters described here, as the following
 are just examples taken from the basic rules.
 
-* Ghosts (weak): They can sustain 4 injury points, and any light wound is
-  automatically turned into a serious wound.
-* Vampires (low rank): They can receive 8 wounds. If the total count of injury
+* Ghosts (weak): **DL/IP**=4 (can sustain 4 IPs before being disabled); 
+  moreover, and any light wound is automatically turned into a serious wound.
+* Vampires (low rank): **DL/W**=8. When disabled, if the total count of injury
   points is less than 16, they are forced to retreat and cannot combat until
-  healed. If the count of injury points is greater than 16, they turn into ash.
+  healed. If it's higher, they turn into ash.
 * Zombies: They are immune to light or serious wounds, but are destroyed when
   they receive a heavy or deadly wound.
 
