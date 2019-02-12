@@ -7,8 +7,8 @@ specified.
 Commonly, when the received damage passes a certain threshold called
 _resistance level_ (**RL**), the character suffers a wound.
 
-In the base system, the **RL** [__health__](#health), for physical damage,  
-[__equilibrium__](#equilibrium), for mental damages.
+In the base system, the **RL** is [__health__](#health), for physical damage, and [__equilibrium__](#equilibrium), 
+for mental damage.
 
 ### Disable Level
 
