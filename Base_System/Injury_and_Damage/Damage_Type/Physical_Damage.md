@@ -14,6 +14,6 @@ Physical damage types are:
   are example of piercing weapons.
 
 Notice that simple arrows are _normally_ considered generating
-_piercing damage_, as they would be stopped by the same kind of armour
+_cut damage_, as they would be stopped by the same kind of armour
 designed to stop other cut weapons, but some high-yield modern bow might
 generate _piercing damage_ instead.
