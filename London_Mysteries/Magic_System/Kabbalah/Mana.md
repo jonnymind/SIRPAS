@@ -11,7 +11,7 @@ naturally replenished at the rhythm of the same number of points as the level of
 Kabbalah each “day” (complete and satisfactory cycle of sleep and wake), to the
 maximum of the double of the Kabbalah level.
 
-Other than the natural recovery, Mana can be found and absorbed in many ways,hfor example:
+Other than the natural recovery, Mana can be found and absorbed in many ways, for example:
 
 * Reading grimoires.
 * Praying at sacred locations.
@@ -28,7 +28,7 @@ after some time; for example, a character might gain some mana by praying at the
 same shrine/church/temple every week.
 
 There is no upper limit to the amount of mana that can be accumulated this way;
-however, natural recovery will replenish the portion below the double of the
+however, natural recovery will replenish just the portion below the double of the
 level of Kabbalah. 
 
 For example, a character with Kabbalah 10 might have accumulated 80 Mana. No
