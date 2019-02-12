@@ -33,7 +33,10 @@ level of Kabbalah.
 
 For example, a character with Kabbalah 10 might have accumulated 80 Mana. No
 natural replenishment will occur until it uses at least 61 Mana, going below 20.
-Optional rule: a character having accumulated Mana for more than 10 times its
+
+### Mana excess (Optional)
+
+A character having accumulated Mana for more than 10 times its
 level of Kabbalah will start to give off obvious, involuntary and detrimental
 signs of its power. For example, it may cause skin burns to people it comes in
 touch with, its voice might become unnatural and scary, it might break delicate
