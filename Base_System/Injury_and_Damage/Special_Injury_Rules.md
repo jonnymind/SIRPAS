@@ -12,6 +12,9 @@ are just examples taken from the basic rules.
   healed. If it's higher, they turn into ash.
 * Zombies: They are immune to light or serious wounds, but are destroyed when
   they receive a heavy or deadly wound.
+ * Orcs: **DL/W** = 6. Also, their _disabled
+     status_ table is the same as that for humans with a bonus of 2 points
+     (e.g. they are conscious up to 8 injury points).
 
 Below, there are some examples of characters following the
 _standard injury rule_ with some special parameters:
@@ -21,7 +24,4 @@ _standard injury rule_ with some special parameters:
    regardless from the wound count.
 * Goblins and Kobolds: Their **DL/W** is 3. It means that they can receive
    3 wounds only before becoming disabled.
-* Orcs: **DL/W** = 6. They can sustain 6 wounds before becoming disabled.
-     Also, their _disabled
-     status_ table is the same as that for humans with a bonus of 2 points
-     (e.g. they are conscious up to 8 injury points).
+
