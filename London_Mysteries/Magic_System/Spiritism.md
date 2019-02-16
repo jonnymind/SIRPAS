@@ -36,20 +36,22 @@ stress points in the desired direction to bring them back to a desired level.
 
 Spiritic magic is divided in three categories.
 
-* Invocations: prayers to angels, demons or other entities that have a one-time only
+* Invocations (Inv): prayers to angels, demons or other entities that have a one-time only
 effect.
+* Summonings (Sum): the most common type of spiritic spells, they conjure a spirit that will
+continouosly provide some special effect for the caster, until banished.
+* Banishements (Ban): Attacks spiritual entities with direct damage, or removes them from this
+plane of existence entirely.
+
+### Spell conjuring mechanics
 
 ### Summon spell mechanics
 
-Using spiritism requires controlling the target spirits constantly. Once evoked,
+Using summonings requires controlling the target spirits constantly. Once evoked,
 the spirit will stay, and continue to deliver the same amount of **SSP** each turn,
-until banished. 
+until banished. No other action, except _free actions_ can be performed during that time;
+this includes other spiritism spells, excepting banishment spells directed at the summoned
+creature.
 
-To banish 
-
-T
-
-Each of this
-repeated checks gives stress points; this means that the spiritist are at risk
-of receiving serious damage if they try to overstep their ability, and control
-spirits they are not able to manage.
+To banish a summoned entity, the spiritist must successfully cast a matching banishing 
+spell. The summon spells will list which banisments are adequate.
