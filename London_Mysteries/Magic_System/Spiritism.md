@@ -13,7 +13,7 @@ adventure-oriented utility, and some combat utility as well.
  
 Connecting with the world of the spirits causes a great stress on the mind of
 the spiritist. Each times a skill is used, the caster receives a certain amount
-of positive or negative _spiritism stress points_ (**SSP**) . 
+of positive or negative _spiritism stress points_ (**SSP**). 
 
 Trying to contact or control the supernatural entities gives positive points, 
 while warding against them or acting against them generates negative points.
@@ -29,29 +29,32 @@ down to -8, and it will receive 2 points of typeless mental damage.
 If it tries the same spell again, being already at -8 **SSP**, it will now receive 4
 mental **DP**.
 
-**SSP** are never reset; however, the spiritist can follow spiritual based rythes to get 
-stress points in the desired direction to bring them back to a desired level.
+**SSP** are never reset; however, the spiritist can cast specific spells to bring them 
+back to a desired level.
 
-### Spell types
+### Spell types and Mechanics
 
-Spiritic magic is divided in three categories.
+Spiritic magic is divided in the following categories.
 
-* Invocations (Inv): prayers to angels, demons or other entities that have a one-time only
-effect.
-* Summonings (Sum): the most common type of spiritic spells, they conjure a spirit that will
-continouosly provide some special effect for the caster, until banished.
-* Banishements (Ban): Attacks spiritual entities with direct damage, or removes them from this
+* **Invocations** (Inv): prayers to angels, demons or other entities that have a one-time only
+effect. It could be a single word of power or a rather long prayer, spawning several turns.
+Once the invocation is complete, the effect is released and the **SSP** cost is paid.
+* **Summonings** (Sum): the most common type of spiritic spells, they conjure a spirit that will
+continouosly provide some special effect for the caster, until banished. The conjuring can be
+instantaneous, spawn several turns. Once the summoning is complete, the summoner will pay the
+required amount of **SSP** each turn, until the summoned entity is banished. The entity acts
+on its own will, and doesn't require any concentration by the caster; however, the caser cannot
+cast any other form of magic until the entity is banished.
+* **Banishements** (Ban): Attacks spiritual entities with direct damage, or removes them from this
 plane of existence entirely.
+* **Long Rituals** (Lor): Ritual to contact the spiritual realm, taking more than a minute to set up.
+They usually require a proper setup, and are extremely expensive in **SSP**. The effect is released at
+the end of the ritual.
 
-### Spell conjuring mechanics
+### Interruptions
 
-### Summon spell mechanics
+If the spiritist is interrupted in its casting, it must perform a **focus** check to avoid lose concentration.
+If the check fails, the caster pays half the **SSP** cost of the interrupted spell, and no effect is achieved.
 
-Using summonings requires controlling the target spirits constantly. Once evoked,
-the spirit will stay, and continue to deliver the same amount of **SSP** each turn,
-until banished. No other action, except _free actions_ can be performed during that time;
-this includes other spiritism spells, excepting banishment spells directed at the summoned
-creature.
 
-To banish a summoned entity, the spiritist must successfully cast a matching banishing 
-spell. The summon spells will list which banisments are adequate.
+
