@@ -1,0 +1,2 @@
+# Characters {#BaM-gen-characters}
+

@@ -1,4 +1,4 @@
-## Criminal Boss
+## Criminal Boss {#BaM-a-criminal-boss}
 
 Cost: variable.
 The character is the leader of a criminal organisation. It has a

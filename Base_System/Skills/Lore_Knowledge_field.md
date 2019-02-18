@@ -1,4 +1,4 @@
-## Lore Knowledge/field (-; E)
+## Lore Knowledge/field (-; E) {#BaM-s-lore-knowledge}
 
 This skill represents the knowledge of the character about lore and stories in
 the setting where the adventure takes place. The skill is specific for lore

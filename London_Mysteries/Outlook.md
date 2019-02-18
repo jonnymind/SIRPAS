@@ -1,4 +1,4 @@
-# Outlook
+# Outlook {#BaM-gen-outlook}
 
 London Mysteries takes place in Victorian London of the years between 1880-1899.
 

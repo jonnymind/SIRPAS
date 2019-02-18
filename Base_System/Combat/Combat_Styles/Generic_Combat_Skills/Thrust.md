@@ -1,4 +1,4 @@
-### Thrust
+### Thrust {#BaM-s-generic-combat-thrust}
 
 $(dd cm_generic_thrust)
 {

@@ -1,4 +1,4 @@
-## Climbing (D; E)
+## Climbing (D; E) {#BaM-s-climbing}
 
 Used to check when the character climbs a section of wall 6 feet high. Use the
 following table to determine the difficulty of the action:

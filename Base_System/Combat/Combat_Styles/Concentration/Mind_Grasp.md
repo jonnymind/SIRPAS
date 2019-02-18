@@ -1,4 +1,4 @@
-### Mind Grasp
+### Mind Grasp  {#BaM-s-concentration-mind-grasp}
 
 
 $(dd cm_concentration_mind_grasp)

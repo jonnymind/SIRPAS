@@ -1,6 +1,6 @@
 $(--
 	SIRPAS - Simple Role Play Adventure System
-	Full-lenght base rule manual.
+	Setting: London Mysteries
 
 	(C) Giancarlo Niccolai 2018.
 	LICENSE: CC-BY-ATTR Share-alike
@@ -10,6 +10,7 @@ $(-- Section: INTRODUCTION --)
 
 $(include London_Mysteries/Introduction.md)
 $(include London_Mysteries/Outlook.md)
+$(include London_Mysteries/Setting.md)
 
 $(-- Section: SETTING SPECIFIC STAT --)
 $(include London_Mysteries/Setting_Attributes.md)

@@ -1,4 +1,4 @@
-### Counter kick
+### Counter kick {#BaM-s-full-contact-counter-kick}
 
 $(dd cm_full_contact_counter_kick)
 { "Type": "Defence",

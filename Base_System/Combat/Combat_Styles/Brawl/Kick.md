@@ -1,4 +1,4 @@
-### Kick
+### Kick {#BaM-s-brawl-kick}
 
 $(dd cm_brawl_kick)
 { "Type": "Attack",

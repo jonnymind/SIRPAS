@@ -1,4 +1,4 @@
-# Attributes
+# Attributes {#BaM-gen-attributes}
 
 Attributes are a finer description than the mains for a character, and form the
 base for all the underlying skills. In the base system, there are four physical

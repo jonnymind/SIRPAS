@@ -1,4 +1,4 @@
-## Mastery/skill (10CP)
+## Mastery/skill (10CP) {#BaM-a-mastery}
 
 __*Preprequisite*__: *Expertise/skill*
 

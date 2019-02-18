@@ -1,4 +1,4 @@
-# Character points
+# Character points {#BaM-gen-character-points}
 
 Character Points (*CP*) express the amount of experience of your character, and with that, the amount of learning (improvement of its statistics) that the character will perform during the adventure, or in between adventures.
 Roughly speaking, statistics can be bought, and in some case sold, in exchange with character points.

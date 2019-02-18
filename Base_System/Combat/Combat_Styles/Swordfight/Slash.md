@@ -1,4 +1,4 @@
-### Slash
+### Slash {#BaM-s-swordfight-slash}
 
 $(dd cm_swordfight_slash)
 { "Type": "Attack",

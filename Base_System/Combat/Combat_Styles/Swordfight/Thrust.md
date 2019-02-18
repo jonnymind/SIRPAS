@@ -1,4 +1,4 @@
-### Thrust
+### Thrust {#BaM-s-swordfight-thrust}
 
 $(dd cm_swordfight_thrust)
 { "Type": "Attack",

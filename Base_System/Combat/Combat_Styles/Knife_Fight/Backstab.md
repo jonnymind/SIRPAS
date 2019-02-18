@@ -1,4 +1,4 @@
-### Backstab
+### Backstab {#BaM-s-knife-combat-backstab}
 
 $(dd cm_knife_fight_backstab)
 { "Type": "Attack",

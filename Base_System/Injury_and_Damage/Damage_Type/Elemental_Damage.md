@@ -1,4 +1,4 @@
-### Elemental Damage
+### Elemental Damage {#BaM-m-elemental-damage}
 
 Damage caused by energy, or in general, by life-threatening conditions the
 character might be subject to, is called elemental damage. It is important do

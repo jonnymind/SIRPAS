@@ -1,4 +1,4 @@
-## Weapons
+## Weapons {#BaM-gen-weapons}
 
 Weapons are either used unskilfully, using any one of the Generic Combat Skills, or through the appropriate combat style. The default damage (and often, damage type) caused by the weapon is already accounted for in the combat style; for example, Firearms/shoot causes a higher damage than Brawl/punch because guns are more lethal than bare hands.
 However, some special weapon (i.e. magic swords, experimental rifles etc.) might give their wielder a modifier either to the attack or defence rolls, or solely to the damage caused once a hit is scored.

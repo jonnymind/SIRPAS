@@ -1,4 +1,4 @@
-## Strength
+## Strength {#BaM-c-strength}
 
 Strength (*S*) is the attribute measuring a character physical strength. 
 In the default setting, it also indicates how much weight the character 

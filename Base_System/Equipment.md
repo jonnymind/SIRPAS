@@ -1,1 +1,1 @@
-# Equipment
+# Equipment {#BaM-gen-equipment}

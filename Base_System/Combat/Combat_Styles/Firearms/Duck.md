@@ -1,4 +1,4 @@
-### Duck
+### Duck {#BaM-s-firearms-duck}
 
 $(dd cm_firearm_duck)
 { "Type": "Defence",

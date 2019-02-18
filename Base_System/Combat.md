@@ -1,4 +1,4 @@
-# Combat
+# Combat {#BaM-gen-combat}
 
 Combat is an advanced form of contest. In a normal contest, characters
 try to win one over another on specific skills. Also in combat, there

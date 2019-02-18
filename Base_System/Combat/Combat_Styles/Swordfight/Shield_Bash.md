@@ -1,4 +1,4 @@
-### Shield Bash
+### Shield Bash {#BaM-s-swordfight-shield-bash}
 
 $(dd cm_swordfight_shield_bash)
 { "Type": "Attack",

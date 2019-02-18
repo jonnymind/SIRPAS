@@ -1,4 +1,4 @@
-## Lie Detection (mI; H)
+## Lie Detection (mI; H) {#BaM-s-lie-detection}
 
 This skill represents the ability of the character to detect lies, given
 small hints on the voice, facial expressions and behaviour of the target.

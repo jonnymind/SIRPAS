@@ -1,4 +1,4 @@
-### Aim
+### Aim {#BaM-s-firearms-aim}
 
 $(dd cm_firearm_aimed_shot)
 { "Type": "Action",

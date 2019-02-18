@@ -1,4 +1,4 @@
-# Mains
+# Mains {#BaM-c-mains}
 
 The main attributes, or simply mains, are the base of your character. For a fast
 adventure, you could simply set your mains and be ready to go, as everything
@@ -10,7 +10,7 @@ character, it should be given a body value in between the strength, that will be
 set higher, and the dexterity, that will be set lower.
 
 
-The Body (B) is a value that describes your overall physical prowess in terms of
+The Body (**B**) is a value that describes your overall physical prowess in terms of
 bodily strength, resilience to prolonged efforts, recovery speed, resistance to
 illness and so on. For humans, it is measured in the range between 3 and 18 (the
 possible outcomes of 3d6). Most adult characters score in the range between 10
@@ -20,7 +20,7 @@ a record runner and able to run as long as a marathon champion — all at the sa
 time), and 3 representing the weakest possible fully formed and barely
 functional body.
 
-The Mind (M) is the overall score of mental abilities in terms of intelligence,dcreativity, 
+The Mind (**M**) is the overall score of mental abilities in terms of intelligence,dcreativity, 
 will power, mental sanity, depth of knowledge and so on. 
 A mind level 3 represents a character that is barely functional as an autonomous person (or
 creature) in the reference setting, while a 18 represents a character maximallydintelligent, 

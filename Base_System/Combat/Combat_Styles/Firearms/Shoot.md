@@ -1,4 +1,4 @@
-### Shoot
+### Shoot {#BaM-s-firearms-shoot}
 
 $(dd cm_firearm_shot)
 { "Type": "Attack",

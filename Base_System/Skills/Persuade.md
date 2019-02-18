@@ -1,4 +1,4 @@
-## Persuade (I)
+## Persuade (I) {#BaM-s-persuade}
 
 With this skill, the character can persuade others. Persuading means leading
 others to believe the truth of some idea, fact or point of view (regardless of

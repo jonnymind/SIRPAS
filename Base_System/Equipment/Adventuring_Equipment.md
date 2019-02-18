@@ -1,4 +1,4 @@
-## Adventuring Equipment
+## Adventuring Equipment {#BaM-gen-adventuring-equipment}
 
 TODO
 

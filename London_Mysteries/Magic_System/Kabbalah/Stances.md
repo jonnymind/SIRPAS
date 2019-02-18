@@ -1,4 +1,4 @@
-### Stances
+### Stances {#BaM-m-kabbalah-tree-of-life}
 
 Kabbalah has two stances: offensive and defensive. In offensive stance,
 progressing forward from the top of the tree of life to its root produces a

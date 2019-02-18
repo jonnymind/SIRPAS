@@ -1,4 +1,4 @@
-### Knee Blow
+### Knee Blow {#BaM-s-full-contact-knee-blow}
 
 $(dd cm_full_contact_knee_blow)
 { "Type": "Attack",

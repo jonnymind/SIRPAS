@@ -1,4 +1,4 @@
-## Repeated contest
+## Repeated contest {#BaM-m-repeated-context}
 
 In some contest rolls, draws are considered stalemate. In this cases, the
 characters might decide to give up (and leave the situation at a standstill as

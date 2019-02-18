@@ -1,4 +1,4 @@
-### Punch
+### Punch {#BaM-s-brawl-punch}
 
 $(dd cm_brawl_punch)
 { "Type": "Attack",

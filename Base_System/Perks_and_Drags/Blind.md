@@ -1,4 +1,4 @@
-## Blind
+## Blind {#BaM-a-blind}
 
 *Cost*: -40 CP
 

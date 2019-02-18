@@ -1,4 +1,4 @@
-### Alien Thoughts
+### Alien Thoughts {#BaM-s-concentration-alien-thoughts}
 
 $(dd cm_concentration_alien_thoughts)
 { "Type": "Attack",

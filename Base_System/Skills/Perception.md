@@ -1,4 +1,4 @@
-## Perception (W; H)
+## Perception (W; H) {#BaM-s-perception}
 
 Determines whether the character is able to detect an element in the surrounding
 that is hard to spot, as a secret door, a potential danger, a follower and so
