@@ -50,6 +50,9 @@ plane of existence entirely.
 * **Long Rituals** (Lor): Ritual to contact the spiritual realm, taking more than a minute to set up.
 They usually require a proper setup, and are extremely expensive in **SSP**. The effect is released at
 the end of the ritual.
+* **Utilities** (Uti): Performs actions at combat-time (although, not necessarily
+while engaged in combat), which are not directed at harming or protecting a target.
+
 
 ### Interruptions
 
