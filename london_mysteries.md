@@ -10,6 +10,7 @@ $(-- Section: INTRODUCTION --)
 
 $(include London_Mysteries/Introduction.md)
 $(include London_Mysteries/Outlook.md)
+$(include London_Mysteries/Setting.md)
 
 $(-- Section: SETTING SPECIFIC STAT --)
 $(include London_Mysteries/Setting_Attributes.md)
