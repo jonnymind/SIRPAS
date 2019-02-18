@@ -1,6 +1,6 @@
 $(--
 	SIRPAS - Simple Role Play Adventure System
-	Full-lenght base rule manual.
+	Setting: London Mysteries
 
 	(C) Giancarlo Niccolai 2018.
 	LICENSE: CC-BY-ATTR Share-alike
