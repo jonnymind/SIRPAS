@@ -1,4 +1,4 @@
-## Criminal
+## Criminal {#BaM-a-criminal}
 
 *Cost*: 10 CP
 

@@ -1,4 +1,4 @@
-## Intelligence
+## Intelligence {#BaM-c-intelligence}
 
 Intelligence (*I*) is the ability to understand and solve complex problems, 
 comprehend difficult study subjects, see through schemes and machinations 

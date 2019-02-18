@@ -1,4 +1,5 @@
-## Ranking rolls
+## Ranking rolls {#BaM-m-ranking-rolls}
+
 
 Ranking rolls are contests between two or more characters, ranking them in a
 order that doesn’t allow for draws. Also, the margin each character has on the

@@ -1,4 +1,4 @@
-# Introduction
+# Introduction {#BaM-gen-introduction}
 
 “London Mysteries” is a Sirpas expansion. It presents the settings of Victorian
 London, in the bustling years after the Industrial Revolution, with large space

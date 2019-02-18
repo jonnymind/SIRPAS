@@ -1,4 +1,4 @@
-## Simplified Combat
+## Simplified Combat {#BaM-m-simplified-combat}
 
 A first option for resolving combat scenes is that of simply using the combat
 skills in a normal skill contest.

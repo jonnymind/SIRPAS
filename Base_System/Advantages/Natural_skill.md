@@ -1,4 +1,4 @@
-## Natural/skill (6CP)
+## Natural/skill (6CP) {#BaM-a-}
 
 The character is a “natural” of a certain discipline. Difficult
 checks on the target skill get an additional modifier of +1, 

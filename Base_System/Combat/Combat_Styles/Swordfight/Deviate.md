@@ -1,4 +1,4 @@
-### Deviate
+### Deviate {#BaM-s-swordfight-deviate}
 
 $(dd cm_swordfight_deviate)
 { "Type": "Defence",

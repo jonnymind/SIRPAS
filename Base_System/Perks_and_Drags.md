@@ -1,4 +1,4 @@
-# Perks and Drags
+# Perks and Drags {#BaM-gen-perks-and-drags}
 
 Perks and drags are generic advantages and disadvantages that don’t 
 impact the game system directly. They usually give more flavour  in 

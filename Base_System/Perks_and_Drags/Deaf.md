@@ -1,4 +1,4 @@
-## Deaf
+## Deaf {#BaM-a-deaf}
 
 *Cost*: -30 CP
 

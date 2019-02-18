@@ -1,4 +1,4 @@
-### Disengage
+### Disengage {#BaM-s-generic-combat-disengage}
 
 $(dd cm_generic_disengage)
 {

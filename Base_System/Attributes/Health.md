@@ -1,4 +1,4 @@
-## Health
+## Health {#BaM-c-health}
 
 Health (*H*) represents the resistance to illness and polluted 
 environment (including allergenic agents). The level of health

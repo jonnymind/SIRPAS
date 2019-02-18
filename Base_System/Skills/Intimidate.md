@@ -1,4 +1,4 @@
-## Intimidate (W)
+## Intimidate (W) {#BaM-s-intimidate}
 
 Intimidate is the action of menacing someone that some negative outcome will
 follow, unless they don’t comply with some desired course of actions. For

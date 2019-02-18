@@ -1,6 +1,6 @@
-### Feint
+### Feint {#BaM-s-knife-combat-feint}
 
-$(dd cm_knife_fight_feint)
+$(dd cm_knife_fight_feint) 
 { "Type": "Attack",
 	"Modifier": "+3",
 	"Prereq": "Knife Fight 3",

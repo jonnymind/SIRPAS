@@ -1,4 +1,4 @@
-# Checks
+# Checks {#BaM-gen-checks}
 
 A check consists of throwing dices and verify if the result is successful.
 Checks are the nuts and bolts of Sirpas. Practically every action that 

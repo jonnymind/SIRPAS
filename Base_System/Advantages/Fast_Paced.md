@@ -1,4 +1,4 @@
-## Fast Paced 1-3 (6/4CP)
+## Fast Paced 1-3 (6/4CP) {#BaM-a-fast-paced}
 
 __*Prerequisite*__: *D* 8
 

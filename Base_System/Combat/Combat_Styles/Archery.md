@@ -1,4 +1,4 @@
-## Archery
+## Archery {#BaM-s-archery}
 
 $(dd ac_archery)
 {

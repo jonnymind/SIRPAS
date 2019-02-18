@@ -1,4 +1,4 @@
-## Expertise/skill (6CP)
+## Expertise/skill (6CP) {#BaM-a-expertise}
 
 Skill Expertise (SE) it’s an advantage bought for specific skills. 
 In every check performed on the target skill, the player can

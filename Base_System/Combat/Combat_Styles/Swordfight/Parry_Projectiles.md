@@ -1,4 +1,4 @@
-### Parry Projectiles
+### Parry Projectiles {#BaM-s-swordfight-parry-projectiles}
 
 $(dd cm_swordfight_parry_projectiles)
 { "Type": "Defence",

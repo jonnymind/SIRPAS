@@ -1,4 +1,4 @@
-### Block
+### Block {#BaM-s-brawl-block}
 
 $(dd cm_brawl_block)
 { "Type": "Defence",

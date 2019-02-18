@@ -1,4 +1,4 @@
-### Aim
+### Aim {#BaM-s-aim}
 
 $(dd cm_archery_aim)
 { "Type": "Action",

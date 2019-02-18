@@ -1,4 +1,4 @@
-## Aristocracy
+## Aristocrat {#BaM-a-aristocrat}
 
 *Cost*: 20, 30, 40 CP
 

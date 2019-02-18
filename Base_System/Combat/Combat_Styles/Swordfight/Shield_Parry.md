@@ -1,4 +1,4 @@
-### Shield Parry
+### Shield Parry {#BaM-s-swordfight-shield-parry}
 
 $(dd cm_swordfight_shield_parry)
 { "Type": "Defence",

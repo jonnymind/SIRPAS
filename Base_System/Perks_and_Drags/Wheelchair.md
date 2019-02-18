@@ -1,4 +1,4 @@
-## Wheelchair
+## Wheelchair {#BaM-a-wheelchair}
 
 *Cost*: -25 CP
 

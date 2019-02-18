@@ -1,4 +1,4 @@
-### Localized Shot
+### Localized Shot {#BaM-s-firearms-localized-shot}
 
 $(dd cm_firearm_localized_shot)
 { "Type": "Attack",

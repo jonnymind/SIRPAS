@@ -1,4 +1,4 @@
-### Kabbalah Spells
+### Kabbalah Spells {#BaM-m-kabbalah-spells}
 
 Here follow the list of spells ordered by their path number. The offensive and defensive effects are prefixed respectively by OFF and DEF.
 

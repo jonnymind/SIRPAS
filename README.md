@@ -21,22 +21,24 @@ the include directive. See the London Mysteries setting for an example.
 
 Please, provide cross-reference identifiers to headers in your file, with this format:
 
-  ##... Your Heading {#IDENTIFIER}
+  `##... Your Heading {#IDENTIFIER}`
 
-Where IDENTIFIER is in the format ABC-SECTION-lowercased-title. ABC is a 3 letter code
-identifying yout extension (for example BaM for the base manual and LoM for London
+Where IDENTIFIER is in the format `ABC-SECTION-lowercased-title`. ABC is a 3 letter code
+identifying yout extension (for example `BaM` for the base manual and `LoM` for London
 Mysteries). Section is the overall section/type of entry, one of:
 
-* gen: generic, overall
-* set: backdrop, setting
-* s: skill
-* p: perk/drag
-* c: attribute/characteristic
-* a: advantage/disadvantage
+* `gen`: generic, overall
+* `set`: backdrop, setting
+* `app`: appendix, technical documentation
+* `m`: system or mechanics
+* `s`: skill
+* `p`: perk/drag
+* `c`: attribute/characteristic
+* `a`: advantage/disadvantage
 
 ## Cross-linking
 
-You can cross-link existing headers by using the Markdown format, [text to link](#target-header-id)
+You can cross-link existing headers by using the Markdown format, `[text to link](#target-header-id)`
 
 ## Special Commands
 

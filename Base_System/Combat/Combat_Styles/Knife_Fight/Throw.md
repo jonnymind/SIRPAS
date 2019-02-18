@@ -1,4 +1,4 @@
-### Throw
+### Throw {#BaM-s-knife-combat-throw}
 
 $(dd cm_knife_fight_)
 { "Type": "Attack",

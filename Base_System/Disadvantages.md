@@ -1,4 +1,4 @@
-# Disadvantages
+# Disadvantages {#BaM-gen-disadvantages}
 
 Advantages can also be negative (disadvantages). A character might be given
 disadvantages temporarily or permanently, because of what happened during

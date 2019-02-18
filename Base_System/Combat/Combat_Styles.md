@@ -1,16 +1,16 @@
-## Combat Skills and Styles
+## Combat Skills and Styles {#BaM-m-combat-skills-and-styles}
 
 The skills used in combat go under the name of _combat styles_. Each style
 offers a collection of sub-skills called _manoeuvres_, which are used in the
 _advanced combat system_, and specify how a certain style is used during
-combat -- with the exception of [generic maneuveres](#Generic Combat Skills),
+combat -- with the exception of [generic maneuveres](#BaM-s-generic-combat),
 which are proper skills on their own.
 
 Advantages and perks can be targeted at skills only: either _combat styles_ or
 _generic manoeuvres_
 
-For example, the advantage [__expert/skill__](#Exoert) can be targeted at all
-the [__brawl__](#Brawl) combat style or at the [__disengage__](#Disengage)
+For example, the advantage [__expert/skill__](#BaM-a-expert) can be targeted at all
+the [__brawl__](#Brawl) combat style or at the [__disengage__](#BaM-s-generic-combat-disengage)
 generic manoeuvre, but not at the __punch__ manoeuvre of the __brawl__ style.
 
 The same combat style can also cover different kind of weapons, with some

@@ -1,4 +1,4 @@
-### Mechanics
+### Mechanics {#BaM-m-kabbalah-mechanics}
 
 To cast a Kabbalah spell, the caster chants the Verb of Creation, the words of
 the Kabbalah. At each word spelled, the caster descends from the top of the tree

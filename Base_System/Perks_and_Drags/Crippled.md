@@ -1,4 +1,4 @@
-## Crippled
+## Crippled {#BaM-a-crippled}
 
 *Cost*: -15 or -20 CP
 

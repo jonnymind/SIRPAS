@@ -1,4 +1,4 @@
-### Feint
+### Feint {#BaM-s-swordfight-feint}
 
 $(dd cm_swordfight_feint)
 { "Type": "Attack",

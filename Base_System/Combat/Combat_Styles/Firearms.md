@@ -1,4 +1,4 @@
-## Firearms
+## Firearms {#BaM-s-firearms}
 
 $(dd ac_firearms)
 {

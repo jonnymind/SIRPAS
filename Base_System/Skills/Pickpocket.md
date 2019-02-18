@@ -1,4 +1,4 @@
-## Pickpocket (hD)
+## Pickpocket (hD) {#BaM-s-pickpocket}
 
 Tires to remove objects from another characters. The objects must not be
 secured to its body for the action to be successful. Use the following

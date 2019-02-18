@@ -1,4 +1,4 @@
-### Spring Up
+### Spring Up {#BaM-s-knife-combat-spring-up}
 
 $(dd cm_knife_fight_spring_up)
 { "Type": "Attack",

@@ -1,4 +1,4 @@
-## Initiative (D/W; H)
+## Initiative (D/W; H) {#BaM-s-initiative}
 
 This skill represents the reaction times and determination under pressure of
 the character. It is typically used in contests or rankings, to decide who

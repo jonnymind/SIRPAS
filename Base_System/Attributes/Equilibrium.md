@@ -1,4 +1,4 @@
-## Equilibrium
+## Equilibrium {#BaM-c-equilibrium}
 
 Equilibrium (*E*) is the stability of the mind, 
 or basically the equivalent of its health (*H*).

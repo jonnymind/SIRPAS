@@ -1,4 +1,4 @@
-## Law Enforcer
+## Law Enforcer {#BaM-a-law-enforcer}
 
 *Cost*: 15 CP or 20 CP
 

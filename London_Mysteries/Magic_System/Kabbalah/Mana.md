@@ -1,4 +1,4 @@
-### Mana
+### Mana {#BaM-m-kabbalah-mana}
 
 Mana is the mythical nourishment for the spirit that the caster needs in order
 to use the Kabbalah successfully.

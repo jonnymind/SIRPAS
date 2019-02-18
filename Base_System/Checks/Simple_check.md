@@ -1,4 +1,4 @@
-## Simple check
+## Simple check {#BaM-m-simple-check}
 
 A simple check is a direct check on a precise skill (or in rarer cases, on an
 attribute or on a main). For example to verify if the character can land safely

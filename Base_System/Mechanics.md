@@ -1,4 +1,4 @@
-# Mechanics
+# Mechanics {#BaM-gen-mechanics}
 
 The mechanics are the ways the game works, in terms of what players actually do
 to move their characters through the adventures. Formally declaring what a

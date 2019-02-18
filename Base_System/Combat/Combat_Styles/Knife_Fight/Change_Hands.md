@@ -1,4 +1,4 @@
-### Change Hands
+### Change Hands {#BaM-s-knife-combat-change-hands}
 
 $(dd cm_knife_fight_change_hands)
 { "Type": "Attack",

@@ -1,4 +1,4 @@
-### Instincitve Defence
+### Instincitve Defence {#BaM-s-generic-combat-instinctive-defence}
 
 $(dd cm_generic_instinctive_defence)
 {

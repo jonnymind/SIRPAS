@@ -1,4 +1,4 @@
-## Riding/mount (mD)
+## Riding/mount (mD) {#BaM-s-riding}
 
 This skill is used to perform particularly difficult actions while riding a
 specific animal. For example, jumping a fence with a horse, jumping across

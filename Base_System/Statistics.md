@@ -1,7 +1,8 @@
-# Statistics
+# Statistics {#BaM-gen-statistics}
 
-In Sirpas, the statistics are all the numeric or quality values that define a characters. 
+In SIRPAS, the statistics are all the numeric or quality values that define a characters. 
 They are divided in the following categories:
+
 * Mains: basic statistics on which every aspect of the character depends. 
   In the base system, they are body (*B*) and mind (*M*).
 * Attributes: important aspect of the character on which many other mechanics depend. 

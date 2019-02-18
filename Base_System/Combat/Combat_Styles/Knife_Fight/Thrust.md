@@ -1,4 +1,4 @@
-### Thrust
+### Thrust {#BaM-s-knife-combat-thrust}
 
 $(dd cm_knife_fight_)
 { "Type": "Attack",
