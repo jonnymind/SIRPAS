@@ -1,2 +1,2 @@
-# Setting Attributes
+# Attributes {#BaM-gen-attributes}
 

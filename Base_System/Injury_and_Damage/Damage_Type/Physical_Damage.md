@@ -1,4 +1,4 @@
-### Physical Damage
+### Physical Damage {#BaM-m-physical-damage}
 
 Physical damage types are:
 

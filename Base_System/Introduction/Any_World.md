@@ -1,4 +1,4 @@
-## Play Any World
+## Play Any World {#BaM-gen-play-any-world}
 
 Sirpas is a generic role playing system, that doesn’t presume anything on the
 setting of your adventures. The system applies whatever your players might want

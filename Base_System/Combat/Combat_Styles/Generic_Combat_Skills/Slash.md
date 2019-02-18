@@ -1,4 +1,4 @@
-### Slash
+### Slash {#BaM-s-generic-combat-slash}
 
 $(dd cm_generic_slash)
 {

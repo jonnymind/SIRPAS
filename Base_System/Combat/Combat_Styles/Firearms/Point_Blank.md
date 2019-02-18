@@ -1,4 +1,4 @@
-### Point Blank
+### Point Blank {#BaM-s-firearms-point-blank}
 
 $(dd cm_firearm_point_black)
 { "Type": "Attack",

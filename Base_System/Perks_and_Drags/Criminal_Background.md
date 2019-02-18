@@ -1,4 +1,4 @@
-## Criminal Background
+## Criminal Background {#BaM-a-criminal-background}
 
 *Cost*: 10 CP
 

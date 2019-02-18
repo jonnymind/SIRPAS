@@ -1,4 +1,4 @@
-### Fast Reload
+### Fast Reload {#BaM-s-firearms-fast-reload}
 
 $(dd cm_firearm_fast_reload)
 { "Type": "Actions",

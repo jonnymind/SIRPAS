@@ -1,4 +1,4 @@
-### Downstab
+### Downstab {#BaM-s-knife-combat-downstab}
 
 $(dd cm_knife_fight_downstab)
 { "Type": "Attack",

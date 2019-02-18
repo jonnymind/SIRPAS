@@ -1,4 +1,4 @@
-### Shoot
+### Shoot {#BaM-s-archery-shoot}
 
 $(dd cm_archery_shoot)
 { "Type": "Attack",

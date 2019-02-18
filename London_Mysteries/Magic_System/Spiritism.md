@@ -1,4 +1,4 @@
-## Spiritism
+## Spiritism {#BaM-m-spiritism}
 
 Spiritism is a magic system meant to deal directly with
 supernatural entitities. It's the ability to connect with, 
@@ -9,7 +9,7 @@ Although it’s possible to fight most supernatural
 entities with mentalism, spiritism is far superior at that. It has also some
 adventure-oriented utility, and some combat utility as well.
  
-### Spiritism Stress Points 
+### Spiritism Stress Points {#BaM-m-spiritism-stress-points}
  
 Connecting with the world of the spirits causes a great stress on the mind of
 the spiritist. Each times a skill is used, the caster receives a certain amount
@@ -32,7 +32,7 @@ mental **DP**.
 **SSP** are never reset; however, the spiritist can cast specific spells to bring them 
 back to a desired level.
 
-### Spell types and Mechanics
+### Spell types and Mechanics {#BaM-m-spiritism-spell-types-and-mechanics}
 
 Spiritic magic is divided in the following categories.
 
@@ -51,10 +51,8 @@ plane of existence entirely.
 They usually require a proper setup, and are extremely expensive in **SSP**. The effect is released at
 the end of the ritual.
 
-### Interruptions
+### Interruptions {#BaM-m-spiritism-interruptions}
 
 If the spiritist is interrupted in its casting, it must perform a **focus** check to avoid lose concentration.
 If the check fails, the caster pays half the **SSP** cost of the interrupted spell, and no effect is achieved.
-
-
 

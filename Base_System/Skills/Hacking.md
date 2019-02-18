@@ -1,4 +1,4 @@
-## Hacking/System (-; H)
+## Hacking/System (-; H) {#BaM-s-hacking}
 
 When a character wants to hack a device or a system, it can roll on this to
 check if it has the necessary knowledge to hack the system.

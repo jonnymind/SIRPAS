@@ -1,4 +1,4 @@
-## Dexterity
+## Dexterity {#BaM-c-dexterity}
 
 Dexterity (*D*) expresses the ability to control one’s own body.
 Eye-hand coordination, agility, reaction times and rapidity are all 

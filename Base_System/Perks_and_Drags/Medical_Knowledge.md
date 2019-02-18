@@ -1,4 +1,4 @@
-## Medical Knowledge
+## Medical Knowledge {#BaM-a-medical-knowledge}
 
 *Cost*: 12CP
 

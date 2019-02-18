@@ -1,4 +1,4 @@
-### Evade
+### Evade {#BaM-s-knife-combat-evade}
 
 $(dd cm_knife_fight_evade)
 { "Type": "Defence",

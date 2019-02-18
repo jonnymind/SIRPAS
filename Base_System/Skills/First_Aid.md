@@ -1,4 +1,4 @@
-## First Aid (-)
+## First Aid (-) {#BaM-s-first-aid}
 
 The character can stabilize a disabled target with a successful check. If a
 first aid kit is available, the check becomes trivial.

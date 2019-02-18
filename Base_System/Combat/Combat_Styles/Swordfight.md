@@ -1,4 +1,4 @@
-## Swordfight
+## Swordfight {#BaM-s-swordfight}
 
 $(dd ac_swordfight)
 {

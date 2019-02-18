@@ -1,2 +1,2 @@
-# Setting Combat Styles
+# Combat Styles {#BaM-gen-combat-styles}
 

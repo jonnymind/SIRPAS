@@ -1,4 +1,4 @@
-### Grapple
+### Grapple {#BaM-s-brawl-grapple}
 
 
 $(dd cm_brawl_grapple)

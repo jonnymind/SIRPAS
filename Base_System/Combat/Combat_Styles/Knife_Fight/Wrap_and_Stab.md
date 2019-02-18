@@ -1,4 +1,4 @@
-### Wrap and Stab
+### Wrap and Stab {#BaM-s-knife-combat-wrap-and-stab}
 
 $(dd cm_knife_fight_)
 { "Type": "Attack",

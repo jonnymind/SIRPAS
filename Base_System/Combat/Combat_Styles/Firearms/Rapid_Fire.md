@@ -1,4 +1,4 @@
-### Rapid Fire
+### Rapid Fire {#BaM-s-firearms-rapid-fire}
 
 $(dd cm_firearm_rapid_fire)
 { "Type": "Attack",

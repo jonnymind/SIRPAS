@@ -1,4 +1,4 @@
-## Critical Results
+## Critical Results {#BaM-m-critical-results}
 
 In some situations, it is possible to achieve a spectacular success, or a
 devastating failure.  The vast majority of direct checks and some contests are

@@ -1,4 +1,4 @@
-### Aimed Shot
+### Aimed Shot {#BaM-s-firearms-aimed-shot}
 
 $(dd cm_firearm_aimed_shot)
 { "Type": "Attack",

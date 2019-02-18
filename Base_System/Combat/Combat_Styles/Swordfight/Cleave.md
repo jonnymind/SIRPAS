@@ -1,4 +1,4 @@
-### Cleave
+### Cleave {#BaM-s-swordfight-cleave}
 
 $(dd cm_swordfight_cleave)
 { "Type": "Attack",

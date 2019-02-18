@@ -1,4 +1,4 @@
-## Charisma (M)
+## Charisma (M) {#BaM-s-charisma}
 
 Used to influence positively other characters. Not to be confused with
 *Persuade*. This skill is specifically meant for characters trying to

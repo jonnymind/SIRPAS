@@ -1,4 +1,4 @@
-## Lack of Instinct 1-4 (6/3CP)
+## Lack of Instinct 1-4 (6/3CP) {#BaM-a-lack-of-instinct}
 
 All instinctive defence checks and contests get a -1
 modifier per level bought. 

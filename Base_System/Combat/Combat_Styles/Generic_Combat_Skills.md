@@ -1,4 +1,4 @@
-## Generic Combat Skills
+## Generic Combat Skills {#BaM-s-generic-combat-skills}
 
 The skills in this sections are combat skills not related with any
 _combat style_.

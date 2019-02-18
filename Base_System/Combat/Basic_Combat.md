@@ -1,9 +1,9 @@
-## Basic Combat
+## Basic Combat {#BaM-m-basic-combat}
 
 Sirpas _basic combat_ is a sub-system employed when two or more parties are
 fighting each other.
 
-### Combat Turns
+### Combat Turns {#BaM-m-basic-combat-combat-turns}
 
 Combat is divided in turns. Normally, characters can perform just one action
 per turn, but certain skills and advantages grant the ability to perform more
@@ -17,10 +17,10 @@ fights between giant robots or starships and so on.
 For most situations, you’ll want to consider the length of a combat turn being
 10 seconds.
 
-### Initiative
+### Initiative {#BaM-m-basic-combat-initiative}
 
 Each turn, all the participants roll a ranking on the skill called
-[__initiative__](#Initiative).
+[__initiative__](#BaM-s-initiative).
 
 Following the initialtive ranking order firtst to last, characters decide 
 the action they want to perform among the wollowings:
@@ -43,7 +43,7 @@ A character might also decide not perform any action when its turn comes; if it 
 it can prehempt any other action performed later on by characters down the initiative
 ranking, or eventually use a defence to respond to a later attack.
 
-### Instinctive Defence
+### Instinctive Defence {#BaM-m-basic-combat-instinctive-defence}
 
 In some situations, the defender is aware of the incoming attack (i.e. has seen
 the attacker and is ready to receive the blow) but can’t use any defence. One
@@ -55,19 +55,19 @@ explicitly dictated by the rules — for example, defending against any attack
 after using disengage.
 
 In those cases, provided the defender is at least aware of the attacks, it can
-use either an [instinctive defence](#Instinctie Defence)
-(against physical attacks) or a [willpower defence](#Willpower Defence)
+use either an [instinctive defence](#BaM-s-generic-combat-instinctive-defence)
+(against physical attacks) or a [willpower defence](#BaM-s-generic-combat-willpower-defence)
 (against mind attacks).
 
 ### Moving during combat
 
 It is possible to move during combat at the speed indicated in the
-[__dexterity__](#Dexterity) table.
+[__dexterity__](#BaM-c-dexterity) table.
 
 Opponents targeting the character (either because they are nearby in melee,
 or because they have aimed at them previously) can use an attack against
 them to prevent them from moving. In that case, the moving character must 
-successfully defend with the (__disengage__)[#Disengage] generic manoeuvre. 
+successfully defend with the (__disengage__)[#BaM-s-generic-combat-disengage] generic manoeuvre. 
 If it fails, other than receiving normal damage, it also stays unmoved, and
 the action is nevertheless consumed.
 
@@ -219,7 +219,7 @@ by adding _passive defences_ that can affect the damage source (i.e. armours),
 and eventually _active defences_ they might use.
 
 Finally, the target character receives a number of __DP__ = __AD__ - __DM__.
-This damage is accounted as specified by the [_injury and damage_](injury-and-damage) rule.
+This damage is accounted as specified by the [_injury and damage_](#BaM-m-injury-and-damage) rule.
 
 ### Critical Rolls
 

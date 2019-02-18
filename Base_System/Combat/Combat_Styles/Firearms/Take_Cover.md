@@ -1,4 +1,4 @@
-### Take Cover
+### Take Cover {#BaM-s-firearms-take-cover}
 
 $(dd cm_firearm_take_cover)
 { "Type": "Defence",

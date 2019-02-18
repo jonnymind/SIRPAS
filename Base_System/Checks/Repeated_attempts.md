@@ -1,4 +1,4 @@
-## Repeated attempts
+## Repeated attempts {#BaM-m-repeated-attempts}
 
 In some situation, it is possible to repeat a failed attempt soon after the
 first try. For example, picking a lock (when no one is around and there aren’t

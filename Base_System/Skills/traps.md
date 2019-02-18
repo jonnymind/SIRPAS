@@ -1,4 +1,4 @@
-## Traps (I; H)
+## Traps (I; H) {#BaM-s-traps}
 
 This skill represents the knowledge of the character about traps, and is used
 to either detect, build or try and disarm traps, with the following modifiers:

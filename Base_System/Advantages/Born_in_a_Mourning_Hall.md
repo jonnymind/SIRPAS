@@ -1,4 +1,4 @@
-## Born in a Mourning Hall (20CP)
+## Born in a Mourning Hall (20CP) {#BaM-a-born-in-a-mourning-hall}
 
 __*Prerequisite*__: *Hard To Die*
 

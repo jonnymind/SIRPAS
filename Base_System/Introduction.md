@@ -1,4 +1,4 @@
-# Introduction
+# Introduction {#BaM-gen-introduction}
 
 Sirpas stands for “SImple Role Playing Adventure System”. Everything here is
 streamlined and stripped to what you need to get your role playing adventures

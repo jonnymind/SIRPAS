@@ -1,4 +1,4 @@
-## Strong Temper (20CP)
+## Strong Temper (20CP) {#BaM-a-strong-temper}
 
 __*Preprequisite*__: *Hard To Die*
 

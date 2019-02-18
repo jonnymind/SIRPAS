@@ -1,4 +1,4 @@
-### Willpower Defence
+### Willpower Defence {#BaM-s-generic-combat-willpower-defence}
 
 $(dd cm_generic_willpower_defence)
 {

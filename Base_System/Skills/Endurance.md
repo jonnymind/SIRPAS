@@ -1,4 +1,4 @@
-## Endurance (H)
+## Endurance (H) {#BaM-s-endurance}
 
 Endurance is the ability to resist long lasting physical strain. A long march,
 swimming, carrying weights for a long time etc. requires an endurance check.

@@ -1,4 +1,4 @@
-## Healing/Race (-; H)
+## Healing/Race (-; H) {#BaM-s-healing}
 
 __*Prerequisite*__: *First Aid* 6
 

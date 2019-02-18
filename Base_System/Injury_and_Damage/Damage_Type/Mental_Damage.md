@@ -1,4 +1,4 @@
-### Mental Damage
+### Mental Damage {#BaM-m-mental-damage}
 
 Mental damage types are:
 

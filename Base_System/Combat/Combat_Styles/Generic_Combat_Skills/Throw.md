@@ -1,4 +1,4 @@
-### Throw
+### Throw {#BaM-s-generic-combat-throw}
 
 $(dd cm_generic_throw)
 {

@@ -1,4 +1,4 @@
-### Brawl
+### Brawl {#BaM-s-brawl}
 
 $(dd ac_brawl)
 {

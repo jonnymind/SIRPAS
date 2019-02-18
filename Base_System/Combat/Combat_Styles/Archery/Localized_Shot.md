@@ -1,4 +1,4 @@
-### Localized Shot
+### Localized Shot {#BaM-s-localized-shot}
 
 
 $(dd cm_archery_localized_shot)

@@ -1,4 +1,4 @@
-## Direct contest
+## Direct contest {#BaM-m-diret-contest}
 
 Some actions are performed either in competition or against other characters.
 When this happens, a contest check must be performed. Both characters (or the
