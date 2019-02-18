@@ -7,7 +7,7 @@ $(dd cm_concentration_sensations)
 	"Prereq": "Concentration 4",
 	"DR": "-1",
 	"Damage Type": "Confusion",
-	"Damage": "__SM__+*W*",
+	"Damage": "__SM__+*mW*",
 	"Condition": "__(Stun 2)__"
 }
 
