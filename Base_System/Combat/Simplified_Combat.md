@@ -9,7 +9,7 @@ For example, you can use this method when two small bands are shooting at
 each other using the __firearm__ skill, or involved in a fist fight and
 using __brawl__, or taking part in a little __swordfight__ skirmish.
 
-To perform combat as a _basic combat_, all the participant must:
+To perform combat as a _simplified combat_, all the participants must:
 1. Agree to use the skills based on the same _root skill_.
    For example, a _simplified combat_ can take place when all the characters
    use __brawl__ or its derived skill __full contact__, but not
