@@ -27,12 +27,12 @@ weapon.
 In the most extreme cases, a player might wish to go along
 with its companions, just using using an __instinctive defence__.
 
-### Fight length
+### Fight Duration {#BaM-m-simplified-combat-fight-duration}
 
 In terms of fight length, each contest lasts a number of rounds equal to the
 number of participants.
 
-### Fight Resolution
+### Fight Resolution {#BaM-m-simplified-combat-fight-resolution}
 
 The fight is performed in the following order:
 1. Everyone involved rolls on the selected skill.
@@ -60,7 +60,7 @@ party.
 If you _want_ to determine the result of winning or losing the fight
 with more precision, you _can_ use the following rules.
 
-## Injury Generation in basic combat (optional)
+## Injury Generation in basic combat (optional) {#BaM-m-simplified-combat-injury}
 
 If the fight is serious, the losing party will receive:
 * Two light wounds for each defeat.
@@ -73,7 +73,7 @@ The winning party takes two serious injuries for each critical failure.
 _after_ assigning the skill and weapon _dominance_ on the initial roll, 
 but before adding the armor _dominance_.
 
-### Damage Ranking
+### Damage Ranking {#BaM-m-simplified-combat-damage-ranking}
 
 The injuries are randomly distributed by a ranking (without draws) on
 either __body__ or __mind__, depending on the type of fight in which the
@@ -96,7 +96,7 @@ heavy wounds _physical wounds_; all the characters have DL/W=4.
 > Notice that the negative modifier for __injury points__ applies to _any_
 action, including the fight resolution rolls.
 
-### Fight Continuation
+### Fight Continuation {#BaM-m-simplified-combat-fight-continuation}
 
 If the characters so desire, they can continue fighting, repeating the
 _fight resolution_ and the _damage ranking_, until there is someone standing.
