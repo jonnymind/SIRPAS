@@ -1,4 +1,4 @@
-### Medianic Question  {LoM-s-spiritism-exorcism}
+### Medianic Question  {LoM-s-spiritism-medianic-question}
 
 $(dd spiritism_medianic_question) { 
 "Type": "Uti",
