@@ -13,4 +13,4 @@ $(dd cm_concentration_yes_but_you)
 The defendant turns the mental attack against the attacker.
 If the defence is successful, the attacker is hit back for a
 number of despair points equal to the success margin
-of the defence.
+of the defence minus two (minimu 1 dp).
