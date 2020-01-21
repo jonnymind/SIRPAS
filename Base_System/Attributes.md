@@ -1,7 +1,22 @@
 # Attributes {#BaM-gen-attributes}
 
-Attributes are a finer description than the mains for a character, and form the
-base for all the underlying skills. In the base system, there are four physical
+Attributes describe a character as syntetically as possible. 
+They are the most important statistics, on which
+many other ones depend directly or indirectly. 
+
+Attributes are organized in hierarchies, with top-level attributes called **mains**.
+
+The base systems defines the following attributes:
+* Body (**B**): The phyisical aspect of the character. Body attributes are:
+ * Strength (**S**): raw phisical power;
+ * Dexterity (**D**): speed, precision and control over actions performed with the body;
+ * Health (**H**): Resilience against fatigue, injury and illness.
+* Mind (**M**): describes the mental prowess of a character. Mind attributes are:
+ * Will (**W**): Strength of conviction
+ * 
+
+
+In the base system, there are four physical
 and four mental attributes, which are respectively based on body and mind. By
 default the attributes assume the same value of their base, but it’s possible to
 increase attribute values with character points.
