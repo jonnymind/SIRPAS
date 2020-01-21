@@ -22,9 +22,7 @@ $(include Base_System/Character_points.md)
 
 $(-- Section: STATISTICS  --)
 
-$(include Base_System/Mains.md)
 $(include Base_System/Attributes.md)
-$(include Base_System/Attributes/*.md)
 $(include Base_System/Modifiers.md)
 $(include Base_System/Skills.md)
 $(include Base_System/Skills/*.md)
