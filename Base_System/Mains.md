@@ -23,7 +23,7 @@ functional body.
 The Mind (**M**) is the overall score of mental abilities in terms of intelligence,dcreativity, 
 will power, mental sanity, depth of knowledge and so on. 
 A mind level 3 represents a character that is barely functional as an autonomous person (or
-creature) in the reference setting, while a 18 represents a character maximallydintelligent, 
-penetrating, knowledgable, sane and wise. The vast majority ofdcharacters (or heroes)
- in the reference setting will have a mind between 10 and 12.
+creature) in the reference setting, while a 18 represents a character maximally intelligent, 
+penetrating, knowledgable, sane and wise. The vast majority of characters (or heroes)
+in the reference setting will have a mind between 10 and 12.
 
