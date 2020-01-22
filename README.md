@@ -1,10 +1,23 @@
 # SIRPAS
-Simple Role Play Adventure System 
+
+Simple Role Play Adventure System. 
+
+SIRPAS is meant to be a complete and detailed RPG system you can pick up
+to play adventures in any fantasy (or real) world you can imagine, and can be
+set up in one minute for a 2 hours night of fun with friends, or become a deep and
+intriguing hobby with unparalleled depth.
 
 ## Howto
 
-1. Use `Scripts/build.py <file.md> -o <target.md>` to build an assembly markdown file.
-1. Use your favorite .md renderer to create your final product.
+Books illustrating the systems are under the Books/ directory; they are broken down
+in multiple Markdown files, for simpler editing and re-organization.
+
+The file called `assembly.md` contains the top-level
+inclusion directives to create the final assembled markdown.
+
+1. Use `Scripts/build.py <Book_you_want>/assembly.md -o <target.md>` to assemble a
+markdown file.
+1. Use your favorite .md renderer to create your final product. We suggest iconv/pandoc.
 
 # Contributing
 
