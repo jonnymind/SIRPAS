@@ -17,8 +17,6 @@ used.
 Normally, a simple check has a *success level* of 21; this means that the *check score* must
 be equal or greater than 21.
 
-## Difficulty Modifiers {#BaM-m-difficulty-modifiers}
-
 Actions that are particularly difficult, or simple, have a **SL** different from 21, as indicated in the
 following table.
 
@@ -28,7 +26,7 @@ This reference values are referenced by the skills description; many of them des
 are to be considered *easy*, *hard* and so on. When the skill description doesn't specify it,
 the Game Master can assign a difficulty modifier depending on the situation.
 
-Instead of the generic difficulty level, some skills can assign determined modifiers;
+Instead of the generic difficulty level, which changes the **SL** for the ckeck, 
+some skills can assign determined modifiers to be applied to the *check score*;
 for example, jumping from a height requires a check on [acrobatics](#BaM-s-acrobatis) with a
 modifier that depends on how high is the jump.
-
