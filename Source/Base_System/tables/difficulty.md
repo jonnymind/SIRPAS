@@ -1,4 +1,4 @@
-| Difficuylty          | Modifier    | Minimum Score   |
+| Difficuylty          | Modifier    | Success Level   |
 |----------------------|------------:|----------------:|
 | Trivial              | 6           | 15              |
 | Easy                 | 3           | 18              |

@@ -19,6 +19,15 @@ $(include Mechanics.md)
 $(include Statistics.md)
 $(include Character_points.md)
 
+$(-- Section: CHECKS --)
+
+$(include Checks.md)
+$(include Checks/Simple_check.md)
+$(include Checks/Repeated_attempts.md)
+$(include Checks/Ranking_rolls.md)
+$(include Checks/Direct_contest.md)
+$(include Checks/Repeated_contest.md)
+$(include Checks/Critical_Results.md)
 
 $(-- Section: STATISTICS  --)
 
@@ -32,16 +41,6 @@ $(include Disadvantages.md)
 $(include Disadvantages/*.md)
 $(include Perks_and_Drags.md)
 $(include Perks_and_Drags/*.md)
-
-$(-- Section: CHECKS --)
-
-$(include Checks.md)
-$(include Checks/Simple_check.md)
-$(include Checks/Repeated_attempts.md)
-$(include Checks/Ranking_rolls.md)
-$(include Checks/Direct_contest.md)
-$(include Checks/Repeated_contest.md)
-$(include Checks/Critical_Results.md)
 
 $(-- Section: DAMAGE  --)
 $(include Injury_and_Damage.md)
