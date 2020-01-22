@@ -15,7 +15,7 @@ in multiple Markdown files, for simpler editing and re-organization.
 The file called `assembly.md` contains the top-level
 inclusion directives to create the final assembled markdown.
 
-1. Use `Scripts/build.py <Book_you_want>/assembly.md -o <target.md>` to assemble a
+1. Use `Scripts/build.py Source/<Book_you_want>/assembly.md -o <target.md>` to assemble a
 markdown file.
 1. Use your favorite .md renderer to create your final product. We suggest iconv/pandoc.
 
