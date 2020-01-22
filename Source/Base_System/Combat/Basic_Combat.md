@@ -123,13 +123,13 @@ against a _metaphysical_ attack.
 Attack with ranged weapons receive the following modifier, which depends on the
 distance to the target:
 
-$(include /Base_System/tables/ranged_falloff.md)
+$(include /tables/ranged_falloff.md)
 
 ### Cover
 
 Cover provides a modifier to the defence against ranged attacks.
 
-$(include /Base_System/tables/cover.md)
+$(include /tables/cover.md)
 
 If a character has _full coverage_ and doesn't attack, nor moves, nor doesn't
 perform any action that exposes it, it cannot be attacked with a ranged weapon.
@@ -150,7 +150,7 @@ bush, or very partial cover, as a think tree trunk.
 Some tactical situations during combat provide modifiers to the attack
 rolls.
 
-$(include /Base_System/tables/tactical_situation.md)
+$(include /tables/tactical_situation.md)
 
 * __Surprise__: one group surprises the other, which wasn't ready to fight.
 The surprise advantage lasts the first combat turn only.
@@ -179,7 +179,7 @@ for example, the target of a hidden sniper, or a sleeping victim.
 In those situations, the combat is not resolved through a contest; the attacker
 can simply roll on the attack skill, with the following difficulty table:
 
-$(include /Base_System/tables/automatic_attack.md)
+$(include /tables/automatic_attack.md)
 
 
 ### Attack and Defence

@@ -23,4 +23,4 @@ able to sustain a certain amount of **DP** before being disabled.
 The severity of wounds determine the amount of injury points it inflicts on
 the characters receiving them, according with the following table:
 
-$(include /Base_System/tables/injury_points.md)
+$(include /tables/injury_points.md)

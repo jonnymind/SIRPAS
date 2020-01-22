@@ -7,5 +7,5 @@ Statistics are scored with their base and a specific amount of points assigned t
 This means that it’s usually preferable to invest in the desired skills in the beginning, and then increase the base at a later time. On the other hands, later adventures typically provide a larger amount of CP per session, so the decision wether to invest on single skills or on more powerful bases, while important, is not as critical as it might seem.
 The following table describes how many CP must be spent in order to increase a statistic. Skills have different costs, depending on the complexity of learning a certain skill.
 
-$(include /Base_System/tables/cp_table.md)
+$(include /tables/cp_table.md)
 

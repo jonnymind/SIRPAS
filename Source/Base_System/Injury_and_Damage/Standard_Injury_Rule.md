@@ -92,7 +92,7 @@ it becomes disabled.
 The following Disabled Status Table describes the seriousness of the disabled
 status on humanoids and human-sized animals in common settings:
 
-$(include /Base_System/tables/disabled_status.md)
+$(include /tables/disabled_status.md)
 
 When a character is disabled, performing any action against it (including
 killing it) doesn’t require checks; however, this doesn’t apply if the acting

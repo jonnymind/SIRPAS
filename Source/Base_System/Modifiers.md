@@ -9,4 +9,4 @@ but a base statistic influences them nevertheless.
 For example, many combat styles are baseless, as you need to learn them from scratch to be good at those, 
 but characters with a higher dexterity, or rather strength, are naturally better at it.
 
-$(include /Base_System/tables/modifiers.md)
+$(include /tables/modifiers.md)

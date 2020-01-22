@@ -7,8 +7,8 @@ taking place in this setting.
 
 ## Organisations
 
-$(include London_Mysteries/Organisations/*.md)
+$(include Organizations/*.md)
 
 ## Characters
 
-$(include London_Mysteries/Characters/*.md)
+$(include Characters/*.md)

@@ -126,6 +126,9 @@ class Processor:
 
 	def process_dd(self, params):
 		ddict = self.get_json()
+		if ddict is None:
+                	self.print_error("Invalid DD entry: {}".format(self.get_json()))
+                	return
 		table = [[" ", " "]]
 		for key in sorted(ddict):
 			table.append([key[4:], ddict[key]])

@@ -53,7 +53,7 @@ carry without being slowed down, or that it can lift. There are different
 tiers  used in various occasion, all multiple of the value of Strength in 
 pounds:
 
-$(include /Base_System/tables/strength.md)
+$(include /tables/strength.md)
 
 The name of the tiers match the names of the skill difficulty levels, 
 as they are directly applied as a difficulty level in various checks.
@@ -77,7 +77,7 @@ The actual speed depends on what a character actually is; a cyborg with
 The following table is for humans; you can adapt it to other races
 by using the *speed coefficient* of that race (for humans, it's 1).
 
-$(include /Base_System/tables/dexterity.md)
+$(include /tables/dexterity.md)
 
 Notice that the speed for combat turn is not necessarily the sprint speed,
 as movement during combat is limited by other factors. Also, the combat

@@ -9,7 +9,7 @@ To win a simple check, the sum of 3d6 and the value of the skill must be equal
 or above 21. Modifiers can be applied when the check is particularly easy or
 hard:
 
-$(include /Base_System/tables/difficulty.md)
+$(include /tables/difficulty.md)
 
 Instead of the generic difficulty level, some skills have specific modifiers;
 for example, jumping from a height requires a check on acrobatics with a
