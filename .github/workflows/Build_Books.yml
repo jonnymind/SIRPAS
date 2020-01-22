@@ -1,0 +1,16 @@
+name: Python application
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Pick Python
+      with:
+        python-version: 3.7
+    - name: Run Books Build
+      run: |
+        for book in $(ls Source); do python Scripts/build.py Source/$book -o Books/$book.md; done
