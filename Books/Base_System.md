@@ -112,13 +112,15 @@ In SIRPAS, the statistics are all the numeric or quality values that define a ch
 They are divided in the following categories:
 
 * Attributes: important aspect of the character on which many other mechanics depend. 
-  For example body (*B*), mind (*M*), *health* and *will*.
-* Structural Staticstics, or **Structs**: A set of statistics that regulate how 
+  For example *body* (**B**), *mind* (**M**), *health* (**H**) and *will* (**W**).
+* Structural Staticstics, or *structs*: A set of statistics that regulate how 
   characters are structurally built; for example, how they receive and resist damage,
   how much stress they can sustain before going deranged, how many times they must feed
   or recharge in a day, and so on.
 * Skills: specific abilities to perform some actions, 
-  as *hacking*, *lock picking*, *running*, *climbing* etc.
+  as *hacking*, *lock picking*, *running*, *climbing* etc. They are divided into
+  three categories, depending on the difficulty of learning and improving them: 
+  *easy*, *normal* and *hard*.
 * Advantages/disadvantages: Statistics affecting other skills, as example an expert 
   modifier which increase the chance of winning checks against a specific skill. 
 * Perks/drags: distinctive traits setting the character apart from the 
@@ -135,7 +137,7 @@ would indicate a sub-normal characteristic. A value of 18 would represent
 the apex for the game environment, and the values between 10 and 12 would be 
 the most common across the reference population.
 
-The scaling would be relative to the game setting. For example, if playing 
+The scaling is relative to the game setting. For example, if playing 
 a campaign where the characters are Greek or Norse gods, a value of 3 on any 
 statistic would probably express a level of proficiency far superior to that of
 any human.
@@ -152,15 +154,71 @@ for example in a vampire society, the Body attribute (**B**) could be measured
 in a 0-100 range, where a B0 for a vampire would be equivalent to a B18 for a human,
 and where the difference between B0 and B1 and between B49 and B50 is the same.
 
+## Base and Specific Values {#BaM-m-base}
 
-# Character points {#BaM-gen-character-points}
+Statistcs are organized in a hierarchy, where a lower level statistics (as i.e. a skill)
+may depend on a higher level one (i.e. an attribute).
 
-Character Points (*CP*) express the amount of experience of your character, and with that, the amount of learning (improvement of its statistics) that the character will perform during the adventure, or in between adventures.
-Roughly speaking, statistics can be bought, and in some case sold, in exchange with character points.
-The amount of CP that must be spent to increase a certain statistic vary depending on the nature of the statistic, and in most cases, also depending on its current level. It is easier to increase low scores, and as the statistic gets higher, it becomes harder and harder to perfect it further.
-Statistics are scored with their base and a specific amount of points assigned to them. For example, the skill sprint is based on dexterity. If the current value of dexterity is 10, and nothing has been invested in sprint, then sprint will be 10 as well. To buy a point of sprint, the character must invest the CP needed to bring it from 10 to 11. Now, if at a later time the character increases its dexterity, the sprint skill will increase as well, as the points previously spent on sprint represent a bonus with respect to the dexterity base.
-This means that it’s usually preferable to invest in the desired skills in the beginning, and then increase the base at a later time. On the other hands, later adventures typically provide a larger amount of CP per session, so the decision wether to invest on single skills or on more powerful bases, while important, is not as critical as it might seem.
-The following table describes how many CP must be spent in order to increase a statistic. Skills have different costs, depending on the complexity of learning a certain skill.
+The "parent" statistic provides a "default" value for all its children, called **base**. Other
+than the base, each statistic has a **specific value**, which represent a specific training
+or ability that the character has acquired on a particular attribute or skill, which makes
+it better than what another character with the same **base** would have. 
+
+The actual value of any statistic is the sum of the **base** and the **specific value**. 
+ 
+For example, the skill [hiding](#BaM-s-hiding) is based on the attribute *intelligence*. 
+This means that any any character has the ability to hide, and the value of the skill
+is the same as its *intelligence*, and if its intelligence increases, so does its hiding ability. 
+However, a character may learn some simple tricks to improve its ability to hide without having to 
+increase its overall intelligence, which is certainly more difficult.
+
+To reflect this fact, the character sheet, all the information about a character are recorded,
+has a place to store the **specific value** besides the actual value of the statistic. In this way,
+when a base changes, it's easy to recompute the actual value of each statistic.
+
+In the above example, suppose that a character has learned how to hide better, acquiring 3 points of
+**specific value** in [hiding](#BaM-s-hiding); its intelligence is 13, and that gives a total of 16.
+Suppose that the character improves its intelligence, which becomes 14. The player will go through the
+list of skills for which she has acquired any **specific value**, and that are based on *intelligence*;
+knowing that the **specific value** of [hiding](#BaM-s-hiding) is 3, she will update the total value 
+from 16 to 17.
+
+### Baseless statistics {#BaM-m-baseless-statistic}
+
+Not every statistics has a base. Some skills can't be "improvised" naturally, and must be learned
+specifically. For example, everyone can swing a sword, but learning a style of swordsmanship is 
+a completely different matter. 
+
+Statistics without a base can be used only with a specific training: to use them, the character must
+have at least one point of **specific value** for them.
+
+### Difficulty and Bases {#BaM-m-difficulty-and-bases}
+
+While some statistics are baseless, not all those have a certain parent have the same base. Some skills
+are more difficult than others, and the value of the parent attribute can only provide a minimal basic
+proficiency.
+
+Normally, *easy* skills receive the full value of their base, *normal* skills only half of it (rounded down), 
+and *hard* skills get a third of their base (again, rounded down); 
+special bases could be assigned in particular cases, when the rules specify it.
+
+
+
+# Character Points {#BaM-m-character-points}
+
+Character Points (**CP**) express the amount of experience of your character, and with that, the amount of learning (improvement of its statistics) that the character will perform during the adventure, or in between adventures.
+
+Roughly speaking, statistics can be bought, and in some case sold, in exchange with **CP**s.
+
+The amount of **CP**s spent to increase a certain statistic varies depending on the nature of the statistic, and in most cases, also depending on its current level. It is easier to increase low scores, and as the statistic gets higher, it becomes harder and harder to perfect it further.
+
+As statistics are organized in a hierarchy, bying basic ones will influence more statistics related with them; as such
+attributes are more expensive than skills, and main attributes are more expensive than secondary ones. 
+
+This means that it’s usually preferable to invest in the desired skills in the beginning, and then increase their 
+base at a later time. On the other hands, later adventures typically provide a larger amount of CP per session, so the decision wether to invest on single skills or on more powerful bases, while important, is not as critical as it might seem.
+
+The following table describes how many CP must be spent in order to increase a statistic. Skills have different costs, depending on their complexity; the "level" value refers to the **specific value**, not the total value of the statistic.
 
 | Level        | Mains        | Attributes   | Skill/hard   | Skill/normal | Skill/easy   |
 |-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|
@@ -182,6 +240,190 @@ The following table describes how many CP must be spent in order to increase a s
 
 
 
+
+
+
+# Checks {#BaM-gen-checks}
+
+*Checks* are the nuts and bolts of SIRPAS. Practically every action that 
+might succeed or fail requires performing a successful check on a specific
+skill, or more rarely, on an attribute.
+
+
+
+## Simple check {#BaM-m-simple-check}
+
+A *simple check* is a test for the character to be able to perform a certain
+action, which requires a certain **skill** to be employed. For example, to verify 
+if the character can land safely after jumping down from a height, it must pass 
+a *simple check* on the skill [acrobatics](#BaM-s-acrobatics).
+
+The skill descriptions indicate which actions are covered by each of them. When a character 
+wants to perform an action not covered by a specific skill, one of its attributres are used instead; 
+the Game Master decide which is the most adequate one. For example, if a character is trying to 
+extract a sword stuck on a wooden beam, which is a situation not covered by any skill in the base manual, 
+the Game Master might ask to pass a *simple check* on [strength](#BaM-s-strength).
+
+To **perform** a *simple check* means to throw three dice (or a different number, where the
+rules specify it) and sum the result of the rolled dice to the value of the employed skill or
+attribute. The rules might specify other modifiers to be applied to specific checks; for example
+being injuried applies a penalty to an check that depends on the seriousness of the injury.
+
+The sole result of the dice rolls is called *natural result*, while the grand total of the *natural result*,
+skill or attribute value and modifiers is called *check result* (**CR**). To win (or *pass*) a *simple check*, 
+the *check result* must be above a score called *success level* (**SL**) that depends on the difficulty of 
+the action, according with the following table:
+
+| Difficuylty          |  Success Level   |
+|----------------------|-----------------:|
+| Trivial              |  15              |
+| Easy                 |  18              |
+| Normal               |  21              |
+| Difficult            |  24              |
+| Hard                 |  27              |
+| Very Hard            |  29              |
+
+
+This reference values are referenced by the skills description; many of them describe when actions
+are to be considered *easy*, *hard* and so on. When the skill description doesn't specify it,
+the Game Master can assign a difficulty modifier depending on the situation.
+
+Instead of the generic difficulty level, which changes the **SL** for the ckeck, 
+some skills can assign modifiers against a *normal* action (**SL**=21), depending on some situation;
+for example, jumping down from a high place requires a *normal* check on [acrobatics](#BaM-s-acrobatis) 
+with a modifier that depends on the height.
+
+### Success Margin {#BaM-m-success-margin}
+
+The difference between the *check result* and the *success level* is called *Success Margin* (**SM**), and
+is of crucial importance in most of the rules. The **SM** is 0 or above on success, and less than 0 on failure.
+
+### Automatic Results {#BaM-m-automatic-results}
+
+When a *natural 18* is scored, and if the action is of *normal* difficulty or easier, the *simple check*
+is automatically pased, regardless the *check result* being actually above the required **SL** or not.
+
+When a *natural 3* is scored, and if the action is of *normal* difficulty or harder, the *simple check*
+automatically fails, regardless the *check result* being actually below the required **SL** or not.
+
+ **Optional:** *easy* actions have an *automatic success* with a *natural 17* or better and *very easy*
+ actions with a *natural 16* or better. *Hard* actions fail automatically with a *natural 4* or worse, and
+ *very hard* actions with a *natural 5* or worse.
+
+
+
+
+## Repeated Attempts {#BaM-m-repeated-attempts}
+
+In some situation, it is possible to repeat a failed attempt soon after the
+first try, either by the same character or by another one in the same group.
+ 
+For example, picking a lock (when no one is around and there aren’t
+time constraint) can be repeated indefinitely by every member that could be 
+able to open it, until a success is achieved, or unless the lock turns out
+to be actually impossible to pick.
+
+Normally, any check that can rationally be performed more than once in a row can
+be repeated by increasing the **SL** by 2 points. For example, suppose you’retrying 
+to break in an apartment; you have to perform a check on [lock picking](#BaM-s-lock-picking)
+against a **SL** of 21 (a normal check). On failure, your character or another one in the group
+might try again, but this time the **SL** will be 23.
+
+The time required for an attempt is usually indicated in the description of the target
+skill; if not, the Game Master decides how long any attempt should take, depending on 
+the situation.
+
+It is possible to attempt the action again with its natural **SL** letting a reasonable
+amount of time to pass. For actions taking a few moments, it will be after a long rest
+(equivalent of a good night of sleep). For actions requiring long preparation (i.e. 
+studying the lore of a region), it might be a week or a month; if not specified in the
+skill description, the Game Master will decide.
+
+
+## Rankings {#BaM-m-rankings}
+
+Ranking rolls (**RNK**) are special contests between two or more characters, ranking them in a
+order that doesn’t allow for draws. Also, in *rankings* the **SM** is not relevant.
+
+For example, to establish the arrival order in a running relay, every participant rolls a ranking on 
+the [running](#BaM-s-running) skill.  The order of arrival is decided once and for all, 
+and draws are not allowed.
+
+Draws are resolved by re-rolling on the same skill. The re-roll is only relevant
+for the relative order of the characters in draw. For example, suppose that, in
+said race, four character score a total of 26, 22, 22 and 20 respectively. Now,
+the second and third characters roll to decide their relative position; the winner
+of the two will be the second in ranking, and the looser will be the third, regardless
+of the score they realise now.
+
+
+
+## Direct contest {#BaM-m-diret-contest}
+
+Some actions are performed either in competition or against other characters.
+When this happens, a *contest* (**CNT**) must be performed. Both characters (or the
+Master in place of NPCs), must perform the equivalent of a *simple check* on
+a *normal difficulty*, trying to beat the opponent's roll.
+
+Some contest can be asymmetrical: for example, an attacker will roll on some
+attack skill, while a defender will try and prevent the attacker success using
+some defence skill. The skill and combat sections describe some possible
+asymmetric skills, but players and masters (and other expansions) might come up
+with new ones if the situation suggests so.
+
+The character having scored the highest result wins the contest, and the **SM**
+is computed for the winner only (and so, it is always positive).
+
+Draws are normally allowed, and they might either mean that a new situation
+has taken by both characters having achieved a success at the same time,
+or nothing has changed as each character prevented the other from acting. 
+
+For example, suppose that two characters struggle to reach for a weapon during a
+brawl, with a contest on dexterity. If they roll a draw, it means both of them
+reached for the weapon, and now the situation has changed. A different contest
+may now take place: a contest on *strength* to determine who can pull the hardest.
+This time, if they have a draw, it means that none of them is able to snitch the
+weapon from the other, and they can try again. 
+
+Contests that don't allow draws are specifically indicated by the rules as
+*Drawless Contests* (**ndCNT**). In this cases, when a draw is scored, it is
+discarded as not performed, and another contest takes place.
+
+
+## Critical Results {#BaM-m-critical-results}
+
+Unless specified otherwise, a *success margin* particularly high is
+called *critical success* (**CrS**), and one particularly low is called 
+*critical failure* (**CrF**).
+
+Unless specified otherwise, critical successes and failures will
+result in particularly good or bad outcomes; when not specified by 
+the rules or the skill description, the Game Master will determine 
+how the outcome exceeds a normal result. 
+
+In a *contest* a *critical success* can be 
+scored only by the winning party (as the **SM** can be only positive, and
+is assigned to the winner); hence, a contest can't determine **critical failures**.
+
+The following table describes which **SM** are considiered **critical results,
+depending on the complexity of the action. *Contests* are considered *normal actions*
+on this regard, unless specified otherwise.
+
+| Difficulty      | SM for CrS  | SM for CrF |
+|-----------------|-------------|------------|
+| Very Easy       | >= +6       | <= -6      |
+| Easy            | >= +7       | <= -7      |
+| Normal          | >= +8       | <= -8      |
+| Hard            | >= +9       | <= -9      |
+| Very Hard       | >= +10      | <= -10     |
+
+
+
+**Optional**: [Automatic results](#BaM-m-automatic-results) 
+determine also a critical result: they
+are *critical successes* (or failures) regardless of the value of the **SM**. 
+For example, a *natural 18* against an action of normal or easier difficulty always
+determines a *critical success*.
 
 
 
@@ -1013,170 +1255,6 @@ perk on the same field.
 The character legs are non functional, and it needs assistance or mechanical
 devices to walk. This is not a drag in settings where the technology to
 fully substitute body parts is readily available.
-
-
-
-
-# Checks {#BaM-gen-checks}
-
-A check consists of throwing dices and verify if the result is successful.
-Checks are the nuts and bolts of Sirpas. Practically every action that 
-might succeed or fail requires performing a successful check. There different 
-kind of checks that apply to different situations, but in general, a check 
-consists in beating some high point score summing a 3d6 with the value of
-the statistics on which the check is performed.
-
-
-
-## Simple check {#BaM-m-simple-check}
-
-A simple check is a direct check on a precise skill (or in rarer cases, on an
-attribute or on a main). For example to verify if the character can land safely
-after jumping down from a height, a check on the skill acrobatics must be
-performed.
-
-To win a simple check, the sum of 3d6 and the value of the skill must be equal
-or above 21. Modifiers can be applied when the check is particularly easy or
-hard:
-
-| Difficuylty          | Modifier    | Minimum Score   |
-|----------------------|------------:|----------------:|
-| Trivial              | 6           | 15              |
-| Easy                 | 3           | 18              |
-| Normal               | 0           | 21              |
-| Difficult            | -3          | 24              |
-| Hard                 | -6          | 27              |
-| Very Hard            | -8          | 29              |
-
-
-Instead of the generic difficulty level, some skills have specific modifiers;
-for example, jumping from a height requires a check on acrobatics with a
-modifier that depends on how high is the jump.
-
-
-
-## Repeated attempts {#BaM-m-repeated-attempts}
-
-In some situation, it is possible to repeat a failed attempt soon after the
-first try. For example, picking a lock (when no one is around and there aren’t
-time constraint) can be repeated indefinitely, until a success is achieved — or
-unless the lock is actually impossible to pick.
-
-Normally, any skill that can rationally be performed more than once in a row can
-be repeated by applying a penalty of two points. For example, suppose you’retrying 
-to break in an apartment; you have to perform a check against *lock picking* at normal
-level, and your lock picking skill is at level 13. You roll 3d6 for 6 points, 
-for a total of 19, which is a failure. If you have enough time to try again, you can, 
-but now you must win against 23. You roll a 9, for a total of 22 (bad luck there), 
-and if you want to try again, now you must beat 25. You our 3d6 scores a 13, and 13+13 
-gives a total of 26, which is a success.
-
-The time required for an attempt is usually indicated in the description of the target
-skill; if not, is decided by the master, depending on the situation.
-
-## Ranking rolls {#BaM-m-ranking-rolls}
-
-
-Ranking rolls are contests between two or more characters, ranking them in a
-order that doesn’t allow for draws. Also, the margin each character has on the
-other is not relevant. For example, to establish the arrival order in a running
-relay, every participant rolls a ranking on running. 
-
-The order of arrival is
-decided once and for all, for the whole ranking, and draws are not allowed.
-
-Draws are resolved by re-rolling on the same skill. The re-roll is only relevant
-for the relative order of the characters in draw. For example, suppose that, in
-said race, four character score a total of 26, 22, 22 and 20 respectively. Now,
-the second and third characters roll to decide their relative position. Now, if
-player A rolls 26 and player B rolls 18, the A ends up second, and the B ends up
-third, no matter what the other participant scored before.
-
-
-
-## Direct contest {#BaM-m-diret-contest}
-
-Some actions are performed either in competition or against other characters.
-When this happens, a contest check must be performed. Both characters (or the
-Master in place of NPCs), must roll a 3d6 and add the value of the skill on
-which the contest is performed; the character scoring the highest points wins
-the contest.
-
-Some contest can be asymmetrical: for example, an attacker will roll on some
-attack skill, while a defender will try and prevent the attacker success using
-some defence skill. The skill and combat sections describe some possible
-asymmetric skills, but players and masters (and other expansions) might come up
-with new ones if the situation suggests so.
-
-Draws can be allowed or rerolled, depending on the situation and the skill. For
-example, suppose that two characters struggle to reach for a weapon during a
-brawl, with a contest on dexterity. If they roll a draw, it means both of them
-reached for the weapon, and now the situation has changed.
-
-In other cases, the draw might be ignored and rerolled until some of the
-participants win on the others. In this case, the draw is ignored, as if not
-rolled. This is the case of all the ranking rolls.
-
-In other cases yet, the draw means a temporary stalemate in the situation. This
-then becomes a repeated contest.
-
-## Repeated contest {#BaM-m-repeated-context}
-
-In some contest rolls, draws are considered stalemate. In this cases, the
-characters might decide to give up (and leave the situation at a standstill as
-it is), or try a completely new roll.
-
-For example, consider two characters trying to pull an object away from the grip
-of the other (i.e. a precious gold statuette found in an ancient temple). They
-roll a contest on strength, and a draw means that neither was able to snitch the
-treasure away from the other. Now, if there isn’t any savage tribe running after
-them, or if the temple is not collapsing, they may try again the same roll.
-
-## Critical Results {#BaM-m-critical-results}
-
-In some situations, it is possible to achieve a spectacular success, or a
-devastating failure.  The vast majority of direct checks and some contests are
-subject to this effect, unless specified otherwise.
-
-The actual result of a critical success or failure will be determined by the GM,
-if not specified in the skill description itself.
-
-This table represents what happens when rolling a high value, depending on the
-success margin.
-
-| SM               | Roll                 | Result                   |
-|----------------- |----------------------|--------------------------|
-| <= 0             | 18                   | Success                  |
-| = 1              | 18                   | Critical Success         |
-| >= 2             | 17-18                | Critical Success         |
-| >= 3             | 16-18                | Critical Success         |
-| >= 6             | 15-18                | Critical Success         |
-
-
-A roll of 18 always results in a success, even if the value of the base skill 
-plus the rolled 18 wouldn’t be enough to pass the level (SM less than or equal
-to zero).
-
-When SM is 1, a roll of 18 is a critical success. When it’s SM is larger than 
-one, a 17 is enough, when it’s 3 or larger, 16 is enough, and when it’s 6 or 
-larger, a 15 is enough.
-
-Similarly, the following is the table of the critical failure:
-
-| SM                      | Roll                     | Result                   |
-|-------------------------|--------------------------|--------------------------|
-| >= 0                    | 3                        | Failure                  |
-| = -1                    | 3                        | Critical Failure         |
-| <= -2                   | 3-4                      | Critical Failure         |
-| <= -3                   | 3-5                      | Critical Failure         |
-| <= -6                   | 3-6                      | Critical Failure         |
-
-
-
-This applies also to contests. Suppose a very strong character is facing a weak 
-opponent, and that the stronger character might win even by adding 3 points to 
-its base attack skill value. If it actually rolls a 3, the skill will fail, even 
-with a positive success margin.
 
 
 

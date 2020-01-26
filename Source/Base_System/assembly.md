@@ -26,7 +26,6 @@ $(include Checks/Simple_check.md)
 $(include Checks/Repeated_attempts.md)
 $(include Checks/Ranking_rolls.md)
 $(include Checks/Direct_contest.md)
-$(include Checks/Repeated_contest.md)
 $(include Checks/Critical_Results.md)
 
 $(-- Section: STATISTICS  --)
