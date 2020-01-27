@@ -5,10 +5,12 @@ They are divided in the following categories:
 
 * Attributes: important aspect of the character on which many other mechanics depend. 
   For example *body* (**B**), *mind* (**M**), *health* (**H**) and *will* (**W**).
-* Structural Staticstics, or *structs*: A set of statistics that regulate how 
+* Structural Staticstics, or **structs**: A set of statistics that regulate how 
   characters are structurally built; for example, how they receive and resist damage,
   how much stress they can sustain before going deranged, how many times they must feed
   or recharge in a day, and so on.
+* Status Statistics: values that vary fluidly during an adventure; for example,
+  the amount of **injury points**, **fatigue points** etc. 
 * Skills: specific abilities to perform some actions, 
   as *hacking*, *lock picking*, *running*, *climbing* etc. They are divided into
   three categories, depending on the difficulty of learning and improving them: 
@@ -45,6 +47,37 @@ Different settings might introduce different ranges with other scaling rules;
 for example in a vampire society, the Body attribute (**B**) could be measured 
 in a 0-100 range, where a B0 for a vampire would be equivalent to a B18 for a human,
 and where the difference between B0 and B1 and between B49 and B50 is the same.
+
+## Status Statistics {#BaM-m-status-statistics}
+
+*Status statistics* are a set of values that determines the current status of the
+character. The base system defines the following:
+
+* *Injury points* (**IP**): amount of damage currently sustained by a character. Damage
+has different effects on different type of charactrs, so **IP** might mean different things
+to different type of characters.
+* *Fatigue points* (**FgP**): current amount of physical tiredness.
+* *Stress points* (**StP**): current amount of mental tiredness.
+
+Other subsystem in this manyual introduce more status statistics; for example different
+kind of *magic* systems have *mana points*. 
+
+## Structural Statistics {#BaM-m-structs}
+
+*Structural Statistics*, or more simply **structs**, are special statistics
+descrbing the overall structure of the character.
+
+They are defined in the base system as:
+
+* *Injury Reistance* (**IR**): number of *injury points* a character can take 
+before becoming *incapacitated*. A normal human has **IR** 9,
+which can be slightly increased through advantages.
+* *Fatigue Resistance* (**FgR**): number of *fatigue points* a character can take 
+before becoming *incapacitated*. A normal human has **FgR** 9,
+which can be slightly increased through advantages.
+* *Stress Resistance* (**StR**): number of *stress points* a character can take 
+before becoming *incapacitated*. A normal human has **FgR** 9,
+which can be slightly increased through advantages.
 
 ## Base and Specific Values {#BaM-m-base}
 
@@ -94,4 +127,4 @@ Normally, *easy* skills receive the full value of their base, *normal* skills on
 and *hard* skills get a third of their base (again, rounded down); 
 special bases could be assigned in particular cases, when the rules specify it.
 
-
+injury points](#BaM-m-injury-points) 
