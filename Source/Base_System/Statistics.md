@@ -127,4 +127,3 @@ Normally, *easy* skills receive the full value of their base, *normal* skills on
 and *hard* skills get a third of their base (again, rounded down); 
 special bases could be assigned in particular cases, when the rules specify it.
 
-injury points](#BaM-m-injury-points) 

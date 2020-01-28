@@ -32,13 +32,12 @@ $(include Checks/multi_contest.md)
 $(include Checks/Critical_Results.md)
 
 $(-- Section: Injury  --)
-$(include Injury_and_Damage/Standard_Injury_Rule.md)
-$(include Injury_and_Damage/Special_Injury_Rules.md)
-$(include Injury_and_Damage/Localized_Wounds.md)
-$(include Injury_and_Damage/Damage_Type.md)
-$(include Injury_and_Damage/Damage_Type/*.md)
-$(include Injury_and_Damage/Damage_Mitigation.md)
-$(include Injury_and_Damage/Conditions.md)
+$(include Damage_and_injury.md)
+
+$(include Damage_and_injury/Localized_Wounds.md)
+$(include Damage_and_injury/Damage_Type.md)
+$(include Damage_and_injury/Damage_Type/*.md)
+$(include Damage_and_injury/Conditions.md)
 
 
 $(-- Section: STATISTICS  --)

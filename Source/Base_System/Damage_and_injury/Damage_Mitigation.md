@@ -29,3 +29,4 @@ If the count of **DP** after _passive mitigation_ is 0, the character doesn't
 receive any damage. However, if it's brought down to zero by
 _active mitigation_, a scratch is generated nevertheless (unless the the
 character has the [__total mitigation__](#BaM-a-total-mitigation) advantage).
+
