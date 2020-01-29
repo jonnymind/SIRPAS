@@ -23,7 +23,7 @@ can be used to run an anti-virus.
 The type of illness determine the difficulty of the check. The following table 
 gives a basic reference frame for deciding the difficulty of a check.
 
-$(include tables/healing.md)
+$(include /tables/healing.md)
 
 Specific information about the setting will be used by the GM or directly
 given in the descriptioin of the illnesses in order to determine the 

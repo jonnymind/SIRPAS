@@ -510,6 +510,12 @@
 <p>Group A has 1 point while group B has 2: group B wins the multi-contest. However, the first qualified members of group B and C will have a <em>SM</em> of -3 and -1 respectrively, while for what concerns the second qualified, it's the member of the group A that will have a negative <em>SM</em> (-2); also the second qualified of group C will have a <em>SM</em> of -3.</p>
 <p>The remaning one member in B and two members in C are not participating in the <em>multi-contest</em>; nevertheless, the most numerous group has an advantage in having more chances to score high points than the others -- everything else equal.</p>
 <p>The effect of the multi-contest in the adventure should reflect its outcome. In this example, the two highest scores in the ranking might have fumbled on the hill, or grabbed each other in a brawl, while the two winners of the winning party would have reached the top, nearly followed by the losers, and at a distance, by the ones excluded from the contest.</p>
+<h2 id="BaM-m-ranking-gm">Ranking generation for the <strong>GM</strong></h2>
+<p>In a multi-contest, each player rolls its own dice, and performs its own computation, communicating the final resul to the <strong>GM</strong>; the players may even arrive to order their scores before doing that, helping out the GM in its task.</p>
+<p>However, the GM is alone in rolling the dice for the character it controls; repeating several 3d6 rolls and adding various modifiers that can change during an action (i.e. because a GM controlled character gets wound), can be tiresome, and can slow down the pace of the game for the players as well.</p>
+<p>To prepare the multi-comparison, the GM should: 1. Write the character he controls on a column of a notepad. 1. Besides each name, it writes the modifiers for that characcters, to be updated if the contest is repeated. 1. Unless each GM controlled character is special, the GM always assigns the best outcome to the topmost character, so that it can read the ranking results going top to bottom.</p>
+<p>If the GM doesn't have a dice-throwing application handy, which can automate part of the process, it can use the following procedure to generte the scores at once, when it controls more than 3 characters: 1. Roll 2d6 and write down the result. 1. Roll Nd6, where N is the count of character controlled by the <em>GM</em>. 1. It is easy now to write the highest rolls on top, and write the others down in order. 1. If more than one 6 is rolled, count them as 7, 8 etc. 1. If more than one 1 is rolled, count them as 0, -1 etc.</p>
+<p>For example, the GM controls 5 characters. 1. It rolls 2d6 for a total of 7. 1. It now rolls 5d7; the results are 6, 6, 4, 1, 1. 1. The topmost character on the GM notepad get 7+7 = 14. 1. The others get 7+6 = 13, 7+4 = 11, 7+1 = 8 and 7+0 = 7. 1. Now the GM gets the result from the players, and communitcates their respective <strong>SM</strong> to each of them.</p>
 <h2 id="BaM-m-critical-results">Critical Results</h2>
 <p>Unless specified otherwise, a <em>success margin</em> particularly high is called <em>critical success</em> (<strong>CrS</strong>), and one particularly low is called <em>critical failure</em> (<strong>CrF</strong>).</p>
 <p>Unless specified otherwise, critical successes and failures will result in particularly good or bad outcomes; when not specified by the rules or the skill description, the Game Master will determine how the outcome exceeds a normal result.</p>
@@ -781,41 +787,101 @@
 <p>A critical failure indicates that the character is exhausted, and needs to rest. If it is in a precarious situation, i.e. swimming, walking along a dangerous mountain trail, it might be forced to roll against a deadly wound or die.</p>
 <h2 id="BaM-s-engineering">Engineering (-; H)</h2>
 <p>Technical skill in modern engineering.</p>
-<h2 id="BaM-s-first-aid">First Aid (-)</h2>
-<p>The character can stabilize a disabled target with a successful check. If a first aid kit is available, the check becomes trivial.</p>
-<p>The character can also cure a fresh wound with a successful check; having a first-aid kit at disposal gives a modifier of +6 (some special first aid kits have higher modifiers).</p>
-<p>The user can also cure more fresh wounds on the same character, applying a -2 penalty to for each further wounds cured.</p>
+<h2 id="BaM-s-first-aid">First Aid</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Spec</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>This skill can be used to perform the following actions: * cure a <em>light wound</em> with a successful <em>normal</em> check; * reduce a <em>serious wound</em> into a <em>light wound</em> with a <em>difficult</em> check; * reduce a <em>heavy wound</em> into a <em>serious wound</em> with a <em>hard</em> check.</p>
+<p>Using a standard first-aid kit gives a modifier of +6 (some special first-aid kits have higher modifiers).</p>
+<blockquote>
+<p>Notice that no matter the modifier received with a first-aid kit, for what concerns <em>critical results</em>, checks on <em>serious wounds</em> and <em>heavy wounds</em> are still <em>hard</em> and <em>very hard</em>.</p>
+</blockquote>
+<p>The user can also cure more wounds on the same character; each further cured wound requires adding the penalty of a <em>repeated check</em>, even if the previous check is successful.</p>
+<p>This skill can also be used to stabilize a disabled target with a successful <em>normal</em> check. Using a first-aid kit makes the check become <em>trivial</em> (no further modifier given by the first-aid kit is applied).</p>
+<p>A <em>critical success</em> (whether the skill is used to stabilize or cure a wound) heals another <em>light wound</em>, if the character has any.</p>
+<p>A <em>critical failure</em> causes a light wound. If the skill is used to stabilize a dying character, a critical failure will kill it immediately.</p>
+<p>If the skill is target of an <a href="#Bam-a-expertise-skill">expertise</a> advantage, it can also cure <em>serious wounds</em> instead of reducing them, and critical success will cure up to an extra <em>serious wound</em>, if the target character has no more <em>light wounds</em> to cure.</p>
 <h2 id="BaM-s-hacking">Hacking/System (-; H)</h2>
 <p>When a character wants to hack a device or a system, it can roll on this to check if it has the necessary knowledge to hack the system.</p>
 <p>Each action requires a different check. A critical failure implies the hacking has been neutralised and the source identified. A critical success implies that the character has gained privileged access, and further actions on the same system will not require a separate check.</p>
 <p>The specifics of the system depend on the setting. For some settings, the hacking skill could be general, while in other settings specific systems will be identified, and they might require a separate hacking skill.</p>
-<h2 id="BaM-s-healing">Healing/Race (-; H)</h2>
-<p><strong><em>Prerequisite</em></strong>: <em>First Aid</em> 6</p>
-<p>The character has advanced practical medical knowledge for the setting where the adventure takes place, and is able to heal wounds of the target creatures.</p>
-<p>The following table is applied when checking for the character success:</p>
+<h2 id="BaM-s-healing">Healing/Race</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>H</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>First-aid 3</td>
+</tr>
+<tr class="even">
+<td>Spec</td>
+<td>Race</td>
+</tr>
+</tbody>
+</table>
+<p>The character has advanced practical medical knowledge for the setting where the adventure takes place, and is able to heal illnesses, poisoning and equivalent conditions for the target settings.</p>
+<p>For instance, in a magic world where curses can cause illnesses, this skill can also be used to treat the effect of the curses.</p>
+<p>In a virtual words where AIs can be infected with viruses, this skill can be used to run an anti-virus.</p>
+<p>The type of illness determine the difficulty of the check. The following table gives a basic reference frame for deciding the difficulty of a check.</p>
 <table>
 <thead>
 <tr class="header">
+<th>Illness Type</th>
 <th>Severity</th>
-<th>Modifier</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Light</td>
+<td>Common Cold</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>Light Fever</td>
+<td>Easy</td>
+</tr>
+<tr class="odd">
+<td>Intestinal Fever</td>
 <td>Normal</td>
 </tr>
 <tr class="even">
-<td>Severe</td>
+<td>Malaria/Pneumonia</td>
 <td>Difficult</td>
 </tr>
 <tr class="odd">
-<td>Heavy</td>
+<td>Plague/Yellow Feever</td>
 <td>Hard</td>
 </tr>
 </tbody>
 </table>
-<p>Specific healing aids in the target setting can provide other modifiers. The time required for the healing to be performed depends on the setting and on the device used. A SF cellular replicator or a magic balm could allow healing heavy wounds in one day, in a few hours or in minutes, while in other settings, an herbal healing remedy might require a week.</p>
+<p>Specific information about the setting will be used by the GM or directly given in the descriptioin of the illnesses in order to determine the check difficulty.</p>
+<p>The time required for the cure to take effect is in the order of hours to days; the <em>success margin</em> can be used by the <em>GM</em> to decide how fast the recovery is.</p>
+<p>Ilnesses that are <em>difficult</em> or <em>hard</em> to cure will be transformed in <em>easy</em> or <em>trivial</em> ilnesses before being cured. For instance, a successful cure of <em>plague</em> will initially turn the illness into a <em>light feever</em>, which can then be cured again to heal it completely.</p>
+<p>Particular setting-specific devices can give determined bonuses in curing generic or particular illnesses. Specific medicines or magic potions can give very high bonuses (+12 or more) almost granting a success, even if the characters using them have no healing skill at all.</p>
+<p>A <em>critical success</em> will cure the illness completely and in record time. A <em>critical failure</em> will cause another illness to appear (i.e. intoxication from the medicinal active principle, appearance of secondary side-effects etc.).</p>
 <h2 id="BaM-s-hiding">Hiding (I; E)</h2>
 <p>The character knows how to hide so to look like inconspicuous material (i.e. a sack of potatoes, a part of a load of straw on a cart, a roll of cloth and so on). The difficulty of the check is determined by the GM.</p>
 <h2 id="BaM-s-hiding-in-shadows">Hiding in Shadows (mD)</h2>
@@ -963,6 +1029,78 @@
 </tr>
 </tbody>
 </table>
+<h2 id="BaM-s-stabilize">Stabilize</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>I</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>E</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Spec</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The character can perform a <em>hard</em> simple check in order to save the life of disable companions.</p>
+<p>Using a first-aid kit changes the difficulty of the check from <em>hard</em> to <em>easy</em>.</p>
+<p>A critical success means that the character also heals its lightest wound. A critical failure causes the character to die immediately.</p>
+<h2 id="BaM-s-treating-wounds">Treating wounds/Race Type</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>H</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>First-aid 6</td>
+</tr>
+<tr class="even">
+<td>Spec</td>
+<td>Race Type</td>
+</tr>
+</tbody>
+</table>
+<p>The character has advanced practical medical knowledge for the setting where the adventure takes place, and is able to heal wounds of the target creature race.</p>
+<p>The following table is applied when checking for the character success:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Severity</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Light</td>
+<td>Easy</td>
+</tr>
+<tr class="even">
+<td>Severe</td>
+<td>Normal</td>
+</tr>
+<tr class="odd">
+<td>Heavy</td>
+<td>Difficult</td>
+</tr>
+</tbody>
+</table>
+<p>Standard First-aid kits give a +6 modifier to heal <em>light wounds</em> only. Specific healing aids in the target setting can provide other modifiers.</p>
+<p>The time required for the healing to be performed depends on the setting and on the device used. A SF cellular replicator or a magic balm could allow healing heavy wounds in one day, in a few hours or in minutes, while in other settings, an herbal healing remedy might require a week.</p>
+<p>The <em>race type</em> specifier is to be considered in large categories. For example: * Humanoids (Humans, elves, orcs etc.) * Human-sized animals (dogs to deers) * Small animals (birds, cats, etc.) * Large animals (elefant, dragons, etc.)</p>
 <h2 id="BaM-s-traps">Traps (I; H)</h2>
 <p>This skill represents the knowledge of the character about traps, and is used to either detect, build or try and disarm traps, with the following modifiers:</p>
 <table>
@@ -1033,7 +1171,9 @@
 <p>The character has an innate resistance (or vulnerability, if the value is negative) to elemental attacks. This constitute the base for the <a href="#BaM-s-resistance-source">resistance</a> skill against elemental sources.</p>
 <p>This advantage should be granted only in settings where it makes sense, i.e. as a racial characteristic of a fantasy race, or for characters genetically engineered, or for synthetic life forms as androids etc.</p>
 <h2 id="BaM-a-expertise">Expertise/skill (6CP)</h2>
-<p>Skill Expertise (SE) it’s an advantage bought for specific skills. In every check performed on the target skill, the player can throw 4d6 instead of 3d6, and discard the lower result.</p>
+<p>Skill Expertise (SE) it’s an advantage bought for specific skills.</p>
+<p>In every check performed on the target skill, the player can throw 4d6 instead of 3d6, and discard the lower die.</p>
+<p>When targeted with this advantage, some skills also improve their quality. For example, <a href="#BaM-s-first-aid">first-aid</a> can normally cure light wounds only, but if the character has the advantage <em>Expertise/First-Aid</em>, it can also cure serious wounds.</p>
 <h2 id="BaM-a-fast-paced">Fast Paced 1-3 (6/4CP)</h2>
 <p><strong><em>Prerequisite</em></strong>: <em>D</em> 8</p>
 <p>During combat, the character can move for 6 extra feet per turn for each level of this skill.</p>
@@ -1429,35 +1569,23 @@
 <h2 id="BaM-m-simplified-combat">Simplified Combat</h2>
 <p>A first option for resolving combat scenes is that of simply using the combat skills in a normal skill contest.</p>
 <p>This is an option for when a small group of opponents (normally, two to six) are facing each other with <em>compatible</em> fighting skills and weaponry. For example, you can use this method when two small bands are shooting at each other using the <strong>firearm</strong> skill, or involved in a fist fight and using <strong>brawl</strong>, or taking part in a little <strong>swordfight</strong> skirmish.</p>
-<p>To perform combat as a <em>simplified combat</em>, all the participants must: 1. Agree to use the skills based on the same <em>root skill</em>. For example, a <em>simplified combat</em> can take place when all the characters use <strong>brawl</strong> or its derived skill <strong>full contact</strong>, but not if one of the characters is going to use <strong>archery</strong> or <strong>firearms</strong>. 2. Be actually able to use the skills involved. It's common knowledge that you don't bring a knife in a gunfight.</p>
+<p>To perform combat as a <em>simplified combat</em>, all the participants must use combat skills that belong to the same <em>category</em>. For example, a <em>simplified combat</em> can take place when all the characters use a form of melee unarmed combat, melee armed combat, distance combat, mental combat and so on.</p>
 <p>However, a character can use <strong>Generic Combat Skills</strong> skill to participate a fight this way, if they agree. For example, if everyone else is using <strong>swordfight</strong>, one character that happens to have a sword in its hands, but not knowing <strong>swordfight</strong>, could use <strong>Generic Combat Skills/slash</strong> instead, which acts as a sort of base for everyone trying to swing a weapon.</p>
-<p>In the most extreme cases, a player might wish to go along with its companions, just using using an <strong>instinctive defence</strong>.</p>
-<h3 id="BaM-m-simplified-combat-fight-duration">Fight Duration</h3>
-<p>In terms of fight length, each contest lasts a number of rounds equal to the number of participants.</p>
 <h3 id="BaM-m-simplified-combat-fight-resolution">Fight Resolution</h3>
-<p>The fight is performed in the following order: 1. Everyone involved rolls on the selected skill. 1. To each roll, add the <strong>dominance</strong> of the skill chosen by every character, and if present, also the <strong>dominance</strong> of their weapon. 1. Order the scores from each party in decreasing values. 1. The top score in one party is matched against the top of the other; the second highest on one side is matched against the second highest on the other; and so on. 1. Considering the lowest score in each pair, add the <strong>dominance</strong> of the armour of the losing character, if present. 1. If the lower score is still lower after adding the armour <strong>dominance</strong>, the roll counts as a <em>victory</em> for the other character; otherwise, it is discarded. 1. The party realising the highest number of victories is the winning side.</p>
-<p>In case the number of victories is the same on each side, repeat the procedure.</p>
-<p>The effect of winning is determined by the circumstances and the number of critical successes/failures on each party. For example, a tavern brawl is hardly lethal, and a &quot;friendly&quot; swordfight (i.e. in order to subdue or dissuade an opponent) might simply end with the surrender of the losing party.</p>
+<p>The simplified combat starts with a multi-contest; each participant uses the skill it prefers to use in this context (possibly, the highest one). If they have a weapon, the characters will also add its <strong>dominance</strong>.</p>
+<p>In case the number of points scored in the multi-contest is the same on each side, repeat the procedure.</p>
+<p>The final victory can be granted after a given number of rounds; 1, 3 or 5. The <strong>GM</strong> will decide how many rounds the fight will last in advance.</p>
+<p>The effect of winning is determined by the circumstances. For example, a tavern brawl is hardly lethal, and a &quot;friendly&quot; swordfight (i.e. in order to subdue or dissuade an opponent) might simply end with the surrender of the losing party.</p>
 <p>If you <em>want</em> to determine the result of winning or losing the fight with more precision, you <em>can</em> use the following rules.</p>
-<h2 id="BaM-m-simplified-combat-injury">Injury Generation in basic combat (optional)</h2>
-<p>If the fight is serious, the losing party will receive: * Two light wounds for each defeat. * Two serious wounds for each critical failure. * Two heavy wounds for each critical success in the winning party.</p>
-<p>The winning party takes two serious injuries for each critical failure.</p>
-<blockquote>
-<p>Critical results are evaluated taking each pair of rolls as a contest, <em>after</em> assigning the skill and weapon <em>dominance</em> on the initial roll, but before adding the armor <em>dominance</em>.</p>
-</blockquote>
-<h3 id="BaM-m-simplified-combat-damage-ranking">Damage Ranking</h3>
-<p>The injuries are randomly distributed by a ranking (without draws) on either <strong>body</strong> or <strong>mind</strong>, depending on the type of fight in which the party was involved.</p>
-<ol style="list-style-type: decimal">
-<li>List the wounds the receiving party will take, in increasing order of severity (light to heavy).</li>
-<li>Assign as many wounds as necessary to match the <strong>disable level</strong> to the last ranked, starting from top (the lightest wounds first).</li>
-<li>Continue with the second-last ranked, until all the wounds are assigned.</li>
-</ol>
-<p>Example: a party of four characters receive 6 light, 1 serious and 2 heavy wounds <em>physical wounds</em>; all the characters have DL/W=4. 1. the characters perform a draw-free ranking on <strong>body</strong>. 1. The last classified receives 4 light wounds and is knocked out. 1. the second-last receives 2 light, 1 serious and 1 heavy wound, and is knocked out; 1. the third-last receives the remaining heavy wound and is still in the fight.</p>
-<blockquote>
-<p>Notice that the negative modifier for <strong>injury points</strong> applies to <em>any</em> action, including the fight resolution rolls.</p>
-</blockquote>
+<h3 id="BaM-m-simplified-combat-fight-duration">Fight Duration</h3>
+<p>In terms of fight length, each round (multi-contest) lasts a number of combat turns equal to the number of participants of the largest party.</p>
+<p>For example, if three parties with 4, 5 and 6 members respectively are facing each other, each round will last 6 turns (usually, 10 seconds each, so one minute per round).</p>
 <h3 id="BaM-m-simplified-combat-fight-continuation">Fight Continuation</h3>
-<p>If the characters so desire, they can continue fighting, repeating the <em>fight resolution</em> and the <em>damage ranking</em>, until there is someone standing.</p>
+<p>If the characters so desire, they can continue fighting until the losing party is ultimately defeated (all of its characters are disabled) or decides to flee.</p>
+<h2 id="BaM-m-simplified-combat-injury">Injury Generation in Simplified Combat (optional)</h2>
+<p>In simplified combat, a losing character receives a number of <strong>DP</strong> equal to the inverse of its (in)success margin. For example, if it loses with a <strong>SM</strong> of -6, it receices 6 <strong>DP</strong>.</p>
+<p>The character can then use any sensible mitigation (armor or skills, if possible) to reduce the raw <strong>DP</strong>.</p>
+<p>A <em>critical failure</em> means that the character receives a <em>heavy wound</em> automatically. Notice that, if one party is larger than the other, some of the characters in that party will not be directly confront a character on the other side; so, the lowest-scoring characters will be unharmed. However, they may still score a <em>critical failure</em> and receive a wound because of that.</p>
 <h2 id="BaM-m-advanced-combat">Advanced Combat</h2>
 <p>Advanced Combat is the most sophisticated combat sub-system; it expands the basic combat system by adding a set of sub-skills for each combat skill, called <em>manoeuvres</em>.</p>
 <p><em>Manoeuvres</em> represent a special action a character can take while using the combat skill.</p>
