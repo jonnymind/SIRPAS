@@ -29,7 +29,8 @@
 <p>In SIRPAS, the statistics are all the numeric or quality values that define a characters. They are divided in the following categories:</p>
 <ul>
 <li>Attributes: important aspect of the character on which many other mechanics depend. For example <em>body</em> (<strong>B</strong>), <em>mind</em> (<strong>M</strong>), <em>health</em> (<strong>H</strong>) and <em>will</em> (<strong>W</strong>).</li>
-<li>Structural Staticstics, or <em>structs</em>: A set of statistics that regulate how characters are structurally built; for example, how they receive and resist damage, how much stress they can sustain before going deranged, how many times they must feed or recharge in a day, and so on.</li>
+<li>Structural Staticstics, or <strong>structs</strong>: A set of statistics that regulate how characters are structurally built; for example, how they receive and resist damage, how much stress they can sustain before going deranged, how many times they must feed or recharge in a day, and so on.</li>
+<li>Status Statistics: values that vary fluidly during an adventure; for example, the amount of <strong>injury points</strong>, <strong>fatigue points</strong> etc.</li>
 <li>Skills: specific abilities to perform some actions, as <em>hacking</em>, <em>lock picking</em>, <em>running</em>, <em>climbing</em> etc. They are divided into three categories, depending on the difficulty of learning and improving them: <em>easy</em>, <em>normal</em> and <em>hard</em>.</li>
 <li>Advantages/disadvantages: Statistics affecting other skills, as example an expert modifier which increase the chance of winning checks against a specific skill.</li>
 <li>Perks/drags: distinctive traits setting the character apart from the background people in the setting. Could be things a “famous” or “criminal”. They have an impact in the adventure at large, and might also affect indirectly some checks, providing bonuses and penalties at discretion of the game master.</li>
@@ -38,6 +39,22 @@
 <p>The scaling is relative to the game setting. For example, if playing a campaign where the characters are Greek or Norse gods, a value of 3 on any statistic would probably express a level of proficiency far superior to that of any human.</p>
 <p>Notice that the scaling is not linear: it follows the probability distribution of the 3d6 dice throw. For example, a character with strength 12 is just marginally stronger than one with strength 11, but one with strength 18 is in a totally different league than one with strength 17. Similarly, characters with health 10 and 11 have a very similar constitution, but one with health 3 will be much more gracile than one with health 4.</p>
 <p>Different settings might introduce different ranges with other scaling rules; for example in a vampire society, the Body attribute (<strong>B</strong>) could be measured in a 0-100 range, where a B0 for a vampire would be equivalent to a B18 for a human, and where the difference between B0 and B1 and between B49 and B50 is the same.</p>
+<h2 id="BaM-m-status-statistics">Status Statistics</h2>
+<p><em>Status statistics</em> are a set of values that determines the current status of the character. The base system defines the following:</p>
+<ul>
+<li><em>Injury points</em> (<strong>IP</strong>): amount of damage currently sustained by a character. Damage has different effects on different type of charactrs, so <strong>IP</strong> might mean different things to different type of characters.</li>
+<li><em>Fatigue points</em> (<strong>FgP</strong>): current amount of physical tiredness.</li>
+<li><em>Stress points</em> (<strong>StP</strong>): current amount of mental tiredness.</li>
+</ul>
+<p>Other subsystem in this manyual introduce more status statistics; for example different kind of <em>magic</em> systems have <em>mana points</em>.</p>
+<h2 id="BaM-m-structs">Structural Statistics</h2>
+<p><em>Structural Statistics</em>, or more simply <strong>structs</strong>, are special statistics descrbing the overall structure of the character.</p>
+<p>They are defined in the base system as:</p>
+<ul>
+<li><em>Injury Reistance</em> (<strong>IR</strong>): number of <em>injury points</em> a character can take before becoming <em>incapacitated</em>. A normal human has <strong>IR</strong> 9, which can be slightly increased through advantages.</li>
+<li><em>Fatigue Resistance</em> (<strong>FgR</strong>): number of <em>fatigue points</em> a character can take before becoming <em>incapacitated</em>. A normal human has <strong>FgR</strong> 9, which can be slightly increased through advantages.</li>
+<li><em>Stress Resistance</em> (<strong>StR</strong>): number of <em>stress points</em> a character can take before becoming <em>incapacitated</em>. A normal human has <strong>FgR</strong> 9, which can be slightly increased through advantages.</li>
+</ul>
 <h2 id="BaM-m-base">Base and Specific Values</h2>
 <p>Statistcs are organized in a hierarchy, where a lower level statistics (as i.e. a skill) may depend on a higher level one (i.e. an attribute).</p>
 <p>The &quot;parent&quot; statistic provides a &quot;default&quot; value for all its children, called <strong>base</strong>. Other than the base, each statistic has a <strong>specific value</strong>, which represent a specific training or ability that the character has acquired on a particular attribute or skill, which makes it better than what another character with the same <strong>base</strong> would have.</p>
@@ -45,12 +62,238 @@
 <p>For example, the skill <a href="#BaM-s-hiding">hiding</a> is based on the attribute <em>intelligence</em>. This means that any any character has the ability to hide, and the value of the skill is the same as its <em>intelligence</em>, and if its intelligence increases, so does its hiding ability. However, a character may learn some simple tricks to improve its ability to hide without having to increase its overall intelligence, which is certainly more difficult.</p>
 <p>To reflect this fact, the character sheet, all the information about a character are recorded, has a place to store the <strong>specific value</strong> besides the actual value of the statistic. In this way, when a base changes, it's easy to recompute the actual value of each statistic.</p>
 <p>In the above example, suppose that a character has learned how to hide better, acquiring 3 points of <strong>specific value</strong> in <a href="#BaM-s-hiding">hiding</a>; its intelligence is 13, and that gives a total of 16. Suppose that the character improves its intelligence, which becomes 14. The player will go through the list of skills for which she has acquired any <strong>specific value</strong>, and that are based on <em>intelligence</em>; knowing that the <strong>specific value</strong> of <a href="#BaM-s-hiding">hiding</a> is 3, she will update the total value from 16 to 17.</p>
-<h3 id="BaM-m-baseless-statistic">Baseless statistics</h3>
+<h3 id="BaM-m-baseless-statistic">Baseless Statistics</h3>
 <p>Not every statistics has a base. Some skills can't be &quot;improvised&quot; naturally, and must be learned specifically. For example, everyone can swing a sword, but learning a style of swordsmanship is a completely different matter.</p>
 <p>Statistics without a base can be used only with a specific training: to use them, the character must have at least one point of <strong>specific value</strong> for them.</p>
 <h3 id="BaM-m-difficulty-and-bases">Difficulty and Bases</h3>
 <p>While some statistics are baseless, not all those have a certain parent have the same base. Some skills are more difficult than others, and the value of the parent attribute can only provide a minimal basic proficiency.</p>
 <p>Normally, <em>easy</em> skills receive the full value of their base, <em>normal</em> skills only half of it (rounded down), and <em>hard</em> skills get a third of their base (again, rounded down); special bases could be assigned in particular cases, when the rules specify it.</p>
+<h1 id="BaM-m-attributes">Attributes</h1>
+<p>Attributes describe a character as syntetically as possible. They are the most important statistics, on which many other ones depend directly or indirectly.</p>
+<p>Attributes are organized in hierarchies, with top-level attributes called <strong>mains</strong>.</p>
+<p>The base systems defines the following attributes: * Body (<strong>B</strong>): The phyisical aspect of the character. Body attributes are: * Strength (<strong>S</strong>): raw phisical power; * Dexterity (<strong>D</strong>): speed, precision and control over actions performed with the body; * Health (<strong>H</strong>): Resilience against fatigue, injury and illness. * Mind (<strong>M</strong>): describes the mental prowess of a character. Mind attributes are: * Will (<strong>W</strong>): strength of conviction and assertiveness. * Intelligence (<strong>I</strong>): ability to understand and solve complex problems; mental flexibility. * Equilibrium (<strong>E</strong>): resilience to mental strain, stress and madness.</p>
+<p>Higher level attributes form the <strong>base</strong> of lower level ones. This meanst that the lower attributes are computed <em>by difference</em> with respect to their base. They start off as having the same value, and extra point can be bought (or sold) at a &quot;discount price&quot;, in order to increase them specifically.</p>
+<p>For example, initially, a character with M12 has also W12, I12 and E12. If the player buys one point of <strong>will</strong>, it will be now W13. If later on the player decides to buy a point of <strong>mind</strong>, the attribute values will now M13, I13 and E13, but having bought a point of <strong>will</strong> already, that will now be W14. Of course, the cost of buying points for higher level attributes is proportionally larger.</p>
+<p>A simple game session might be run by determinging nothing but the <strong>mains</strong>. If more time is spent in creating the characters, or as the game progresses, the lower level statistics can be finetuned and differentiated with respect to their parent attributes in the hyerarchy.</p>
+<h2 id="BaM-c-body">Body</h2>
+<p>The Body (<strong>B</strong>) is a value that describes your overall physical prowess in terms of bodily strength, resilience to prolonged efforts, recovery speed, resistance to illness and so on. For humans, it is measured in the range between 3 and 18 (the possible outcomes of 3d6). Most adult characters score in the range between 10 and 12, with 18 representing a person with the best possible body (rarely if ever ill, strong as the strongest wrestler or weight lifter, moving as swift as a record runner and able to run as long as a marathon champion — all at the same time), and 3 representing the weakest possible fully formed and barely functional body.</p>
+<h3 id="BaM-c-strength">Strength</h3>
+<p>Strength (<em>S</em>) is the attribute measuring a character physical strength. In the default setting, it also indicates how much weight the character can transport without being fatigued, or the amount of weight it can carry without being slowed down, or that it can lift. There are different tiers used in various occasion, all multiple of the value of Strength in pounds:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Weight</th>
+<th>Transport</th>
+<th>Lift</th>
+<th>Movement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">&lt;= <em>S</em> x 1 </td>
+<td>Trivial</td>
+<td>Normal</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td align="center">&lt;= <em>S</em> x 2</td>
+<td>Easy</td>
+<td>Difficult</td>
+<td>Normal</td>
+</tr>
+<tr class="odd">
+<td align="center">&lt;= <em>S</em> x 3</td>
+<td>Normal</td>
+<td>Hard</td>
+<td>3/4</td>
+</tr>
+<tr class="even">
+<td align="center">&lt;= <em>S</em> x 4</td>
+<td>Difficult</td>
+<td>Very Hard</td>
+<td>2/3</td>
+</tr>
+<tr class="odd">
+<td align="center">&lt;= <em>S</em> x 5</td>
+<td>Hard</td>
+<td>Very Hard</td>
+<td>1/2</td>
+</tr>
+<tr class="even">
+<td align="center">&gt; <em>S</em> x 5</td>
+<td>Very Hard</td>
+<td>Very Hard</td>
+<td>1/3</td>
+</tr>
+</tbody>
+</table>
+<p>The name of the tiers match the names of the skill difficulty levels, as they are directly applied as a difficulty level in various checks. However, they also define other effects that are not directly related with skills; for example, the transport weight tier is applied directly to the combat movement: a character transporting a “very hard” weight has its movement cut to one third of it normal movement</p>
+<h3 id="BaM-c-dexterity">Dexterity</h3>
+<p>Dexterity (<strong>D</strong>) expresses the ability to control one’s own body. Eye-hand coordination, agility, reaction times and rapidity are all components of dexterity. A dexterity of 3 indicates sluggish reaction times, 18 indicates a martial-art or olympic gymnast level of dexterity, with the vast majority of common people stacking around 10-12.</p>
+<p>The <em>dexterity</em> indicates also the base movement speed of a character. The actual speed depends on what a character actually is; a cyborg with <em>D</em>12 will probably be faster than any human with <em>D</em>18.</p>
+<p>The following table is for humans; you can adapt it to other races by using the <em>speed coefficient</em> of that race (for humans, it's 1).</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Dexterity</th>
+<th align="right">Sprint: Ft. x sec</th>
+<th align="right">Run: Ft. x sec</th>
+<th align="right">Ft. x turn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">7</td>
+<td align="right">2</td>
+<td align="right">11</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">3</td>
+<td align="right">13</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">13</td>
+<td align="right">4</td>
+<td align="right">15</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">15</td>
+<td align="right">5</td>
+<td align="right">18</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">17</td>
+<td align="right">7</td>
+<td align="right">22</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">19</td>
+<td align="right">9</td>
+<td align="right">26</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">20</td>
+<td align="right">11</td>
+<td align="right">28</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">21</td>
+<td align="right">12</td>
+<td align="right">30</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">23</td>
+<td align="right">13</td>
+<td align="right">33</td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="right">25</td>
+<td align="right">14</td>
+<td align="right">36</td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="right">28</td>
+<td align="right">16</td>
+<td align="right">40</td>
+</tr>
+<tr class="odd">
+<td align="right">15</td>
+<td align="right">31</td>
+<td align="right">18</td>
+<td align="right">45</td>
+</tr>
+<tr class="even">
+<td align="right">16</td>
+<td align="right">33</td>
+<td align="right">20</td>
+<td align="right">52</td>
+</tr>
+<tr class="odd">
+<td align="right">17</td>
+<td align="right">37</td>
+<td align="right">23</td>
+<td align="right">57</td>
+</tr>
+<tr class="even">
+<td align="right">18</td>
+<td align="right">42</td>
+<td align="right">27</td>
+<td align="right">63</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that the speed for combat turn is not necessarily the sprint speed, as movement during combat is limited by other factors. Also, the combat turn here is the standard 10 seconds combat turn of the the base system; other systems might redefine the duration of a combat turn (and how <em>dexterity</em> works in those contexts).</p>
+<h3 id="BaM-c-health">Health</h3>
+<p>Health (<strong>H</strong>) represents the resistance to fatigue, illness and polluted environment (including allergenic agents). It's used to determine how many <em>fatigue points</em> are generated in sitautions where the body is under strain, and gives the base for all resistance skills (i.e. <a href="#BaM-s-poison-resistance">poison resistance</a>).</p>
+<h2 id="BaM-c-mind">Mind</h2>
+<p>The Mind (<strong>M</strong>) is the overall score of mental abilities in terms of intelligence,dcreativity, will power, mental sanity, depth of knowledge and so on. A mind level 3 represents a character that is barely functional as an autonomous person (or creature) in the reference setting, while a 18 represents a character maximally intelligent, penetrating, knowledgable, sane and wise. The vast majority of characters (or heroes) in the reference setting will have a mind between 10 and 12.</p>
+<h3 id="BaM-c-will">Will</h3>
+<p>Will (<strong>W</strong>) is the power of the mind to focus on a certain task, perform prolonged mental activity, keep determination in adverse situations and so on. It can be roughly thought as the equivalent of the strength (<em>S</em>) in the mind realm.</p>
+<h3 id="BaM-c-intelligence">Intelligence</h3>
+<p>Intelligence (<strong>I</strong>) is the ability to understand and solve complex problems, comprehend difficult study subjects, see through schemes and machinations etc. As it measure the flexibility of the mind processes, it can be thought as the dexterity (<strong>D</strong>) of the mind.</p>
+<h3 id="BaM-c-equilibrium">Equilibrium</h3>
+<p>Equilibrium (<strong>E</strong>) is the stability of the mind, or basically the equivalent of its health (<strong>H</strong>). It determines how much mental stress a character can sustain before receiving a <em>stress point</em>.</p>
+<p>It indicates how much mental strain a person can take before being debilitated; of course, it is also important in those settings where attacks are delivered to the mind instead of the body: fantasy, sci-fi and horror settings can present as many dangers for the mind as for the body, or more.</p>
+<h1 id="BaM-gen-modifiers">Modifiers</h1>
+<p>In some situation, instead of using a statistic as a direct base, the system requires to use a base modifier.</p>
+<p>This happens when some statistics are baseless by their own nature, but a base statistic influences them nevertheless.</p>
+<p>For example, many combat styles are baseless, as you need to learn them from scratch to be good at those, but characters with a higher dexterity, or rather strength, are naturally better at it.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Attribute</th>
+<th align="right">Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">3-5</td>
+<td align="right">-3</td>
+</tr>
+<tr class="even">
+<td align="center">6-7</td>
+<td align="right">-2</td>
+</tr>
+<tr class="odd">
+<td align="center">8-9</td>
+<td align="right">-1</td>
+</tr>
+<tr class="even">
+<td align="center">10-11</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="center">12-13</td>
+<td align="right">+1</td>
+</tr>
+<tr class="even">
+<td align="center">14-15</td>
+<td align="right">+2</td>
+</tr>
+<tr class="odd">
+<td align="center">16-18</td>
+<td align="right">+3</td>
+</tr>
+</tbody>
+</table>
 <h1 id="BaM-m-character-points">Character Points</h1>
 <p>Character Points (<strong>CP</strong>) express the amount of experience of your character, and with that, the amount of learning (improvement of its statistics) that the character will perform during the adventure, or in between adventures.</p>
 <p>Roughly speaking, statistics can be bought, and in some case sold, in exchange with <strong>CP</strong>s.</p>
@@ -251,13 +494,24 @@
 <p>Ranking rolls (<strong>RNK</strong>) are special contests between two or more characters, ranking them in a order that doesn’t allow for draws. Also, in <em>rankings</em> the <strong>SM</strong> is not relevant.</p>
 <p>For example, to establish the arrival order in a running relay, every participant rolls a ranking on the <a href="#BaM-s-running">running</a> skill. The order of arrival is decided once and for all, and draws are not allowed.</p>
 <p>Draws are resolved by re-rolling on the same skill. The re-roll is only relevant for the relative order of the characters in draw. For example, suppose that, in said race, four character score a total of 26, 22, 22 and 20 respectively. Now, the second and third characters roll to decide their relative position; the winner of the two will be the second in ranking, and the looser will be the third, regardless of the score they realise now.</p>
-<h2 id="BaM-m-diret-contest">Direct contest</h2>
+<h2 id="BaM-m-contest">Contest</h2>
 <p>Some actions are performed either in competition or against other characters. When this happens, a <em>contest</em> (<strong>CNT</strong>) must be performed. Both characters (or the Master in place of NPCs), must perform the equivalent of a <em>simple check</em> on a <em>normal difficulty</em>, trying to beat the opponent's roll.</p>
 <p>Some contest can be asymmetrical: for example, an attacker will roll on some attack skill, while a defender will try and prevent the attacker success using some defence skill. The skill and combat sections describe some possible asymmetric skills, but players and masters (and other expansions) might come up with new ones if the situation suggests so.</p>
 <p>The character having scored the highest result wins the contest, and the <strong>SM</strong> is computed for the winner only (and so, it is always positive).</p>
 <p>Draws are normally allowed, and they might either mean that a new situation has taken by both characters having achieved a success at the same time, or nothing has changed as each character prevented the other from acting.</p>
 <p>For example, suppose that two characters struggle to reach for a weapon during a brawl, with a contest on dexterity. If they roll a draw, it means both of them reached for the weapon, and now the situation has changed. A different contest may now take place: a contest on <em>strength</em> to determine who can pull the hardest. This time, if they have a draw, it means that none of them is able to snitch the weapon from the other, and they can try again.</p>
 <p>Contests that don't allow draws are specifically indicated by the rules as <em>Drawless Contests</em> (<strong>ndCNT</strong>). In this cases, when a draw is scored, it is discarded as not performed, and another contest takes place.</p>
+<h2 id="BaM-m-multi-contest">Multi-contests</h2>
+<p>A multi-contest (<strong>mCNT</strong>) is a contest between two or more parties, each comprising one or more characters.</p>
+<p>In a multi-contest, each party performs a <em>ranking</em> on the selected skill. Then, the best <em>check scores</em> from each party are compared against each other, and a point is assinged to the party having the highest <em>check score</em> of all. The contest continues comparing the second-best scores, the third-best scores and so on, until all the parties have a score to oppose to the others. Draws are discarded.</p>
+<p>The party having scored the higest number of points is the winner; more than one party has totalized the same number of points, a multi-draw happens; depending on the context (and on the rules), draw might either lead to a new situation, or require the whole multi-contest to be repeated.</p>
+<p>As there could be negative consequences for the losing parties, each losing participant will receive a negative <em>success margin</em>.</p>
+<p>Notice that a multi-contest between two parties comprising just one character each is almost the same as a <em>direct contest</em>, with the difference that, instead of assigning a positive <em>SM</em> to the winner, a negative <em>SM</em> is assigned to the loser.</p>
+<p><strong>Example</strong>: Three paties, composed of 3, 4 and 5 members respectively, try to run up a hill before the others. They perform a <em>multi-contest</em> on <a href="#BaM-s-running">running</a>. The rankings in each party result in: * Party A: 29-23-20 * Party B: 26-25-22-19 * Party C: 28-22-21-18-16</p>
+<p>The points are assigned as follows: * A = 29, B = 26, C = 28 - Point for A * A = 23, B = 25, C = 22 - Point for B * A = 20, B = 22, C = 21 - Point for B</p>
+<p>Group A has 1 point while group B has 2: group B wins the multi-contest. However, the first qualified members of group B and C will have a <em>SM</em> of -3 and -1 respectrively, while for what concerns the second qualified, it's the member of the group A that will have a negative <em>SM</em> (-2); also the second qualified of group C will have a <em>SM</em> of -3.</p>
+<p>The remaning one member in B and two members in C are not participating in the <em>multi-contest</em>; nevertheless, the most numerous group has an advantage in having more chances to score high points than the others -- everything else equal.</p>
+<p>The effect of the multi-contest in the adventure should reflect its outcome. In this example, the two highest scores in the ranking might have fumbled on the hill, or grabbed each other in a brawl, while the two winners of the winning party would have reached the top, nearly followed by the losers, and at a distance, by the ones excluded from the contest.</p>
 <h2 id="BaM-m-critical-results">Critical Results</h2>
 <p>Unless specified otherwise, a <em>success margin</em> particularly high is called <em>critical success</em> (<strong>CrS</strong>), and one particularly low is called <em>critical failure</em> (<strong>CrF</strong>).</p>
 <p>Unless specified otherwise, critical successes and failures will result in particularly good or bad outcomes; when not specified by the rules or the skill description, the Game Master will determine how the outcome exceeds a normal result.</p>
@@ -300,233 +554,138 @@
 </tbody>
 </table>
 <p><strong>Optional</strong>: <a href="#BaM-m-automatic-results">Automatic results</a> determine also a critical result: they are <em>critical successes</em> (or failures) regardless of the value of the <strong>SM</strong>. For example, a <em>natural 18</em> against an action of normal or easier difficulty always determines a <em>critical success</em>.</p>
-<h1 id="BaM-gen-attributes">Attributes</h1>
-<p>Attributes describe a character as syntetically as possible. They are the most important statistics, on which many other ones depend directly or indirectly.</p>
-<p>Attributes are organized in hierarchies, with top-level attributes called <strong>mains</strong>.</p>
-<p>The base systems defines the following attributes: * Body (<strong>B</strong>): The phyisical aspect of the character. Body attributes are: * Strength (<strong>S</strong>): raw phisical power; * Dexterity (<strong>D</strong>): speed, precision and control over actions performed with the body; * Health (<strong>H</strong>): Resilience against fatigue, injury and illness. * Mind (<strong>M</strong>): describes the mental prowess of a character. Mind attributes are: * Will (<strong>W</strong>): strength of conviction and assertiveness. * Intelligence (<strong>I</strong>): ability to understand and solve complex problems; mental flexibility. * Equilibrium (<strong>E</strong>): resilience to mental strain, stress and madness.</p>
-<p>Higher level attributes form the <strong>base</strong> of lower level ones. This meanst that the lower attributes are computed <em>by difference</em> with respect to their base. They start off as having the same value, and extra point can be bought (or sold) at a &quot;discount price&quot;, in order to increase them specifically.</p>
-<p>For example, initially, a character with M12 has also W12, I12 and E12. If the player buys one point of <strong>will</strong>, it will be now W13. If later on the player decides to buy a point of <strong>mind</strong>, the attribute values will now M13, I13 and E13, but having bought a point of <strong>will</strong> already, that will now be W14. Of course, the cost of buying points for higher level attributes is proportionally larger.</p>
-<p>A simple game session might be run by determinging nothing but the <strong>mains</strong>. If more time is spent in creating the characters, or as the game progresses, the lower level statistics can be finetuned and differentiated with respect to their parent attributes in the hyerarchy.</p>
-<h2 id="BaM-c-body">Body</h2>
-<p>The Body (<strong>B</strong>) is a value that describes your overall physical prowess in terms of bodily strength, resilience to prolonged efforts, recovery speed, resistance to illness and so on. For humans, it is measured in the range between 3 and 18 (the possible outcomes of 3d6). Most adult characters score in the range between 10 and 12, with 18 representing a person with the best possible body (rarely if ever ill, strong as the strongest wrestler or weight lifter, moving as swift as a record runner and able to run as long as a marathon champion — all at the same time), and 3 representing the weakest possible fully formed and barely functional body.</p>
-<h3 id="BaM-c-strength">Strength</h3>
-<p>Strength (<em>S</em>) is the attribute measuring a character physical strength. In the default setting, it also indicates how much weight the character can transport without being fatigued, or the amount of weight it can carry without being slowed down, or that it can lift. There are different tiers used in various occasion, all multiple of the value of Strength in pounds:</p>
+<h1 id="BaM-m-damage-and-injury">Damage and Injury</h1>
+<p>A critical aspect of any RPG is the set of rules that determine how characters sustain damage and receive injuries.</p>
+<p>SIRPAS has a modular injury system, which can be fitted in any setting and play styles.</p>
+<p>It can be used to determine an overall status of a fight, or to determine precisely which part of a human body, mechanical robot, flying mount or AI virtual device has been damaged, and to what extent it has been incapacitated.</p>
+<p>It can be employed to keep the score of harmless intellectual challenges, as well as devastating psychic attacs on the mental sanity of the characters.</p>
+<h2 id="BaM-m-damage-points">Damage Points</h2>
+<p>The <em>raw damage</em> a character receives is measured in <em>damage points</em> (<strong>DP</strong>).</p>
+<p>Damage can come in the way of characters in various forms, and from various sources; hence, <strong>DP</strong> have also a <em>quality</em>, which depends on which source is generating them.</p>
+<p>Physical harm, fatigue, heat, cold, mental stress etc. can be source. The base system divides them in three main categories: <em>physical</em>, <em>mental</em> and <em>elemental</em>. These macro-categories further subdivided in specific <em>damage sources</em>, which are defined further down.</p>
+<h2 id="BaM-m-effective-damage">Effective Damage</h2>
+<p>Incoming <em>raw damage</em> is modified through the application of <em>defences</em>, that reduce it in various ways; they are mainly divided in the following categories: * <em>Passive Defences</em>: reducing the incoming <strong>DP</strong>s of a flat amount (like physical armors), or dividing the damage by a certain factor, i.e. 4/5 or 3/4 (like magic or sci-fi shields), or eventually by an hybrid formual (as in the case of specific resistances against some kind of damage). * <em>Active Defences</em>: the amount of reduced <strong>DP</strong>s depends on the use of a certain character ability.</p>
+<p>The way different kind of damages impact on the characters is fully considerd by the way defences are applied to reduce the incoming <strong>DP</strong>s.</p>
+<p>The count of <strong>DP</strong>s left after the defences are applied is called <em>effective damage</em> (<strong>ED</strong>), and is used to evaluate the effect of the damage on the character.</p>
+<h2 id="BaM-m-wounds">Wounds and Injury Points</h2>
+<p>When sustaining a certain amount of damage, the character receive a certain kind of wound: a <em>scratch</em> or a <em>light</em>, <em>serious</em> or <em>heavy</em> wound, and possibly even <em>deadly</em> ones, according with the following table:</p>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Weight</th>
-<th>Transport</th>
-<th>Lift</th>
-<th>Movement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">&lt;= <em>S</em> x 1 </td>
-<td>Trivial</td>
-<td>Normal</td>
-<td>Normal</td>
-</tr>
-<tr class="even">
-<td align="center">&lt;= <em>S</em> x 2</td>
-<td>Easy</td>
-<td>Difficult</td>
-<td>Normal</td>
-</tr>
-<tr class="odd">
-<td align="center">&lt;= <em>S</em> x 3</td>
-<td>Normal</td>
-<td>Hard</td>
-<td>3/4</td>
-</tr>
-<tr class="even">
-<td align="center">&lt;= <em>S</em> x 4</td>
-<td>Difficult</td>
-<td>Very Hard</td>
-<td>2/3</td>
-</tr>
-<tr class="odd">
-<td align="center">&lt;= <em>S</em> x 5</td>
-<td>Hard</td>
-<td>Very Hard</td>
-<td>1/2</td>
-</tr>
-<tr class="even">
-<td align="center">&gt; <em>S</em> x 5</td>
-<td>Very Hard</td>
-<td>Very Hard</td>
-<td>1/3</td>
-</tr>
-</tbody>
-</table>
-<p>The name of the tiers match the names of the skill difficulty levels, as they are directly applied as a difficulty level in various checks. However, they also define other effects that are not directly related with skills; for example, the transport weight tier is applied directly to the combat movement: a character transporting a “very hard” weight has its movement cut to one third of it normal movement</p>
-<h3 id="BaM-c-dexterity">Dexterity</h3>
-<p>Dexterity (<strong>D</strong>) expresses the ability to control one’s own body. Eye-hand coordination, agility, reaction times and rapidity are all components of dexterity. A dexterity of 3 indicates sluggish reaction times, 18 indicates a martial-art or olympic gymnast level of dexterity, with the vast majority of common people stacking around 10-12.</p>
-<p>The <em>dexterity</em> indicates also the base movement speed of a character. The actual speed depends on what a character actually is; a cyborg with <em>D</em>12 will probably be faster than any human with <em>D</em>18.</p>
-<p>The following table is for humans; you can adapt it to other races by using the <em>speed coefficient</em> of that race (for humans, it's 1).</p>
-<table>
-<thead>
-<tr class="header">
-<th align="right">Dexterity</th>
-<th align="right">Sprint: Ft. x sec</th>
-<th align="right">Run: Ft. x sec</th>
-<th align="right">Ft. x turn</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">3</td>
-<td align="right">3</td>
-<td align="right">1</td>
-<td align="right">10</td>
-</tr>
-<tr class="even">
-<td align="right">4</td>
-<td align="right">7</td>
-<td align="right">2</td>
-<td align="right">11</td>
-</tr>
-<tr class="odd">
-<td align="right">5</td>
-<td align="right">10</td>
-<td align="right">3</td>
-<td align="right">13</td>
-</tr>
-<tr class="even">
-<td align="right">6</td>
-<td align="right">13</td>
-<td align="right">4</td>
-<td align="right">15</td>
-</tr>
-<tr class="odd">
-<td align="right">7</td>
-<td align="right">15</td>
-<td align="right">5</td>
-<td align="right">18</td>
-</tr>
-<tr class="even">
-<td align="right">8</td>
-<td align="right">17</td>
-<td align="right">7</td>
-<td align="right">22</td>
-</tr>
-<tr class="odd">
-<td align="right">9</td>
-<td align="right">19</td>
-<td align="right">9</td>
-<td align="right">26</td>
-</tr>
-<tr class="even">
-<td align="right">10</td>
-<td align="right">20</td>
-<td align="right">11</td>
-<td align="right">28</td>
-</tr>
-<tr class="odd">
-<td align="right">11</td>
-<td align="right">21</td>
-<td align="right">12</td>
-<td align="right">30</td>
-</tr>
-<tr class="even">
-<td align="right">12</td>
-<td align="right">23</td>
-<td align="right">13</td>
-<td align="right">33</td>
-</tr>
-<tr class="odd">
-<td align="right">13</td>
-<td align="right">25</td>
-<td align="right">14</td>
-<td align="right">36</td>
-</tr>
-<tr class="even">
-<td align="right">14</td>
-<td align="right">28</td>
-<td align="right">16</td>
-<td align="right">40</td>
-</tr>
-<tr class="odd">
-<td align="right">15</td>
-<td align="right">31</td>
-<td align="right">18</td>
-<td align="right">45</td>
-</tr>
-<tr class="even">
-<td align="right">16</td>
-<td align="right">33</td>
-<td align="right">20</td>
-<td align="right">52</td>
-</tr>
-<tr class="odd">
-<td align="right">17</td>
-<td align="right">37</td>
-<td align="right">23</td>
-<td align="right">57</td>
-</tr>
-<tr class="even">
-<td align="right">18</td>
-<td align="right">42</td>
-<td align="right">27</td>
-<td align="right">63</td>
-</tr>
-</tbody>
-</table>
-<p>Notice that the speed for combat turn is not necessarily the sprint speed, as movement during combat is limited by other factors. Also, the combat turn here is the standard 10 seconds combat turn of the the base system; other systems might redefine the duration of a combat turn (and how <em>dexterity</em> works in those contexts).</p>
-<h3 id="BaM-c-health">Health</h3>
-<p>Health (<em>H</em>) represents the resistance to fatigue, illness and polluted environment (including allergenic agents). The level of health influences also the amount of damage that a body can sustain before being wounded, and that’s very important in fights and other dangerous situations</p>
-<h2 id="BaM-c-mind">Mind</h2>
-<p>The Mind (<strong>M</strong>) is the overall score of mental abilities in terms of intelligence,dcreativity, will power, mental sanity, depth of knowledge and so on. A mind level 3 represents a character that is barely functional as an autonomous person (or creature) in the reference setting, while a 18 represents a character maximally intelligent, penetrating, knowledgable, sane and wise. The vast majority of characters (or heroes) in the reference setting will have a mind between 10 and 12.</p>
-<h3 id="BaM-c-will">Will</h3>
-<p>Will (<em>W</em>) is the power of the mind to focus on a certain task, perform prolonged mental activity, keep determination in adverse situations and so on. It can be roughly thought as the equivalent of the strength (<em>S</em>) in the mind realm.</p>
-<h3 id="BaM-c-intelligence">Intelligence</h3>
-<p>Intelligence (<em>I</em>) is the ability to understand and solve complex problems, comprehend difficult study subjects, see through schemes and machinations etc. As it measure the flexibility of the mind processes, it can be thought as the dexterity (<em>D</em>) of the mind.</p>
-<h3 id="BaM-c-equilibrium">Equilibrium</h3>
-<p>Equilibrium (<em>E</em>) is the stability of the mind, or basically the equivalent of its health (<em>H</em>).</p>
-<p>It indicates how much mental strain a person can take before being debilitated; of course, it is also important in those settings where attacks are delivered to the mind instead of the body: fantasy, sci-fi and horror settings can present as many dangers for the mind as for the body, or more.</p>
-<h1 id="BaM-gen-modifiers">Modifiers</h1>
-<p>In some situation, instead of using a statistic as a direct base, the system requires to use a base modifier.</p>
-<p>This happens when some statistics are baseless by their own nature, but a base statistic influences them nevertheless.</p>
-<p>For example, many combat styles are baseless, as you need to learn them from scratch to be good at those, but characters with a higher dexterity, or rather strength, are naturally better at it.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Attribute</th>
+<th align="right"><strong>ED</strong></th>
+<th>Wound</th>
+<th align="right"><strong>IP</strong></th>
 <th align="right">Modifier</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center">3-5</td>
-<td align="right">-3</td>
+<td align="right">0</td>
+<td>Scratch</td>
+<td align="right">-</td>
+<td align="right">-</td>
 </tr>
 <tr class="even">
-<td align="center">6-7</td>
-<td align="right">-2</td>
+<td align="right">1-3</td>
+<td>Light</td>
+<td align="right">1</td>
+<td align="right">-</td>
 </tr>
 <tr class="odd">
-<td align="center">8-9</td>
+<td align="right">4-6</td>
+<td>Serious</td>
+<td align="right">2</td>
 <td align="right">-1</td>
 </tr>
 <tr class="even">
-<td align="center">10-11</td>
-<td align="right">0</td>
+<td align="right">7-9</td>
+<td>Heavy</td>
+<td align="right">4</td>
+<td align="right">-2</td>
 </tr>
 <tr class="odd">
-<td align="center">12-13</td>
-<td align="right">+1</td>
-</tr>
-<tr class="even">
-<td align="center">14-15</td>
-<td align="right">+2</td>
-</tr>
-<tr class="odd">
-<td align="center">16-18</td>
-<td align="right">+3</td>
+<td align="right">10+</td>
+<td>Deadly</td>
+<td align="right">-</td>
+<td align="right">-</td>
 </tr>
 </tbody>
 </table>
-<h1 id="BaM-gen-skills">Skills</h1>
+<p>The severity of the received wound determines the amount of <em>injury points</em> (<strong>IP</strong>) currently sustained by a certain character; once the <strong>IP</strong>s are above the maximum a character can sustain (its <em>injury resistance</em>), it becomes <em>incapacitated</em>, and it may eventually die, if the wounds are not treated.</p>
+<blockquote>
+<p>For example: A human has normally <strong>IR</strong> 9; this means it can sustan 1 light wound and 2 heavy wounds, or 4 serious wounds, before becoming unable to act, and possibly unconscious.</p>
+</blockquote>
+<blockquote>
+<p>In many RPGs, a form of <em>health</em>, <em>constitution</em> or similar statistic determines how how much damage a character can take. In SIRPAS, <strong>IR</strong> serves this purpose, and it's mostly fixed; more than stacking a single statistic, characters can acquire multiple resistances, skills and advantages to become progressively less affected by the same amount of damage.</p>
+</blockquote>
+<p><em>Scratches</em> and <em>deadly wounds</em> are treated differently.</p>
+<h3 id="BaM-m-wounds">Wounds Penalty</h3>
+<p>A serious wound causes a penalty of -1, and a heavy wound causes a penalty of -2, on every action.</p>
+<p>For example, if a character receives an heavy and a serious wound, every action requiring a check will be penalized by 3 points.</p>
+<h2 id="BaM-m-scratches">Scratches</h2>
+<p>A character hit by a damage source and reducing the <strong>ED</strong> to zero receives a <strong>scratch</strong> (although there are some situations in which a not even a scratch is received).</p>
+<p>Scratches are extremely light wounds that, by themselves, don't impact the character <strong>IP</strong> pool.</p>
+<p>However, once received a certain number of scratches, they are considered as one light wound. This number (namely a <strong>structural statistic</strong>) is called <em>scratch-to-wound</em> (<strong>StW</strong>), and it's 3, unless differently specified, for any character. No matter if we're talking of a dragon, a vampire, a god, an AI or a human, when they receive their equivalent of 3 scratches, they totalize a light wound, unless differently specified.</p>
+<p>Practically, the players will note down the received scratches, and when they amount to their <em>StW</em>, they will remove the scratches and assign a light wound to themselves.</p>
+<h2 id="BaM-m-deadly-wounds">Deadly Wounds (optional)</h2>
+<p>When a character receives more than 9 <em>ED</em> points, it sustains a wound that is potentially able to kill them immediately.</p>
+<p>To avert an immediate death, the character must pass a <em>simple check</em> on the <a href="#BaM-s-resistance-source">resistance</a> skill for the specific damage source.</p>
+<p>When character can't use any specific resistance skill, the check is performed on <strong>body</strong>, if the damage is physical, or <strong>mind</strong>, if it's mental.</p>
+<p>If the check is successful, the character receives a <em>heavy wound</em>.</p>
+<blockquote>
+<p>Remember that the <em>resistance check</em> has a negative modifier depeding on the received wounds, as any other action.</p>
+</blockquote>
+<h2 id="BaM-m-direct-wounds">Direct Wounds</h2>
+<p>In some situation, a character can receive a wound of a certain kind directly, and not as a consequence of a damage source dealing damage points. For instance, certain magic spells could cause a heavy wound directly, if the character fails an attempt to resist them. A overwhelmingly powerful weapon, for example a starship laser directed against a human, could have the same effect. Explicit actions performed on the character when it is unable to defend itself (i.e. forms of physical or mental torture) could deal an arbitrary wound as the attacker seems fit, etc.</p>
+<h2 id="localized-wounds-bam-m-localized-wounds">Localized Wounds {BaM-m-localized-wounds}</h2>
+<p>By default, wounds are generally directed in the generic direction of the body, but some abilities allow to aim a certain specific part of the body.</p>
+<p>When a wound is localized on a specific body part (an arm, a leg), any action involing that body part receives the double amount of penalty from that wound type. For instance, a <em>heavy wound</em> localized on a leg will cause every action to receive a penalty of -2 points, but the penalty will be -4 on <em>running</em>, <em>jumping</em>, and anything specifically involving that body part.</p>
+<p>This extends to non human and even virtual body parts as well: and AI receiving a heavy wound on a virtual device will have a double penalty if it tries to use that device to perform any action.</p>
+<p>A wound localized on the head adds an extra penalty point on every action. Specifically, a light wound on the head will cause a penalty of -1, a serious wound a penalty of -2, and a heavy wound a penalty of -3 on every action performed by the character. Again, this extends to non human body parts too: and AI hit on its virtual core will follow the same rule.</p>
+<h2 id="damage-type">Damage Type</h2>
+<p>Physical and mental damage are further divided in sub-types towards which characters might have specific resistances.</p>
+<h3 id="BaM-m-elemental-damage">Elemental Damage</h3>
+<p>Damage caused by energy, or in general, by life-threatening conditions the character might be subject to, is called elemental damage. It is important do determine which kind of elemental damage is sustained, as some characters can have resistance to some kind of element, while other might have a specific weakness.</p>
+<p>All elemental damage cause physical damage, unless differently specified. For example, the fantasy element <em>pure magic</em> generates mental damage.</p>
+<p>Elemental damage bypasses specific mental or physical resistances, but not generic resistances. For example, a flame thrower will generate heat damage, against which any specific cut, piercing and blunt damage resistance is useless; however, a generic resistance to physical damage would still apply.</p>
+<p>The elemental damage types are:</p>
+<ul>
+<li><em>Chemical</em>: includes acid and any poisonous substance.</li>
+<li><em>Cold</em>: for example, ice and unsustainable cold.</li>
+<li><em>Electricity</em>: for example, lightning or electric shocks.</li>
+<li><em>Heat</em>: for example, fire and unsustainable heat.</li>
+<li><em>Light</em>: Some creatures are damaged by light (radiation in the visible spectrum). _Doesn’t include lasers (which generate heat) or other radiation damage.</li>
+<li><em>Pure Magic</em>: metaphysical damage induced by magic, causing non-specific <em>mental</em> damage. Does not include magic spells creating a material effect (for example, causing something to catch fire) or directly attacking the mind (i.e. a hypnosis inducing magic spell).</li>
+<li><em>Radiation</em>: for example, exposition to radioactive material, neutron guns, microwaves etc.</li>
+<li><em>Void</em>: complete air pressure deprivation, i.e. the effects of deep space.</li>
+</ul>
+<h3 id="BaM-m-mental-damage">Mental Damage</h3>
+<p>Mental damage types are:</p>
+<ul>
+<li><em>Despair</em>: The mental attack or stress provokes a state of mental exhaustion, akin with depression, where the victim is less likely to be willing to fight for their own life, or simply, to live.</li>
+<li><em>Maddening</em>: The attack strips the victim character of its rationality, making its thought processes less coherent, and making it to believe things that are not true. It provokes sentiments of paranoia, terror, alienation, or alternatively, irrational boldness.</li>
+<li><em>Confusion</em>: This kind of damage confuses the mind of the target, dumbing down its movement, altering its perception, provoking hallucinations and generally scrambling perception and memories. The thought process of the victim is still sound, and it usually recognises the hallucinations as not being real and can deal with the numbed sensations, unless it’s also maddened.</li>
+</ul>
+<h3 id="BaM-m-physical-damage">Physical Damage</h3>
+<p>Physical damage types are:</p>
+<ul>
+<li><em>Blunt</em>: Impacts, falls, body slams and blunt weapons generate <em>blunt damage</em>.</li>
+<li><em>Cut</em>: Sharp weapons generate <em>cut</em> damage, regardless of the weapon being used to slash or thrust. For example, a slash hit from a broadsword, a thrust from a pike and the wound caused by an arrow are all generating <em>cut damage</em>.</li>
+<li><em>Piercing</em>: high-power weapons, with the potential to pass through the whole body of the target, and with high penetrating power against armours and covers, generate <em>piercing damage</em>. Guns, lasers, and high-yield crossbows are example of piercing weapons.</li>
+</ul>
+<p>Notice that simple arrows are <em>normally</em> considered generating <em>cut damage</em>, as they would be stopped by the same kind of armour designed to stop other cut weapons, but some high-yield modern bow might generate <em>piercing damage</em> instead.</p>
+<h2 id="conditions-and-status">Conditions and Status</h2>
+<p><em>Conditions</em> are &quot;standardised&quot; negative effects that a particular damage source can add, other than causing a direct damage.</p>
+<p>When a condition is applied to a character for a prolonged time, it becomes a <strong>status</strong>.</p>
+<ul>
+<li><em>Wound</em>: A success causes an immediate wound — the seriousness of the wound being described here or in the skill description.</li>
+<li><em>Block</em>: the target is grappled or anyhow blocked. The description of the skill will specified whether the attacker is blocked too.</li>
+<li><em>Stun X</em>: the target is stun for a count X of turns, giving it a modifier of -2 to any action.</li>
+<li><em>Fall</em>: The target falls on the ground, and is “grounded” for the next turn.</li>
+<li><em>Disarm</em>: The target loses its weapon.</li>
+<li><em>Cripple</em>: A limb of the target is crippled and becomes impaired. All actions requiring that limb receives a -4 modifier. If the crippled limb is a leg, 4-legged animals reduce their movement to half, bipedal animals (including human) to 1/4.</li>
+</ul>
+<h1 id="BaM-m-skills">Skills</h1>
 <p>Skills are abilities that a character can exercise at a certain moment, and They are usually based on a single attribute; this means that, if the character didn’t invent any CP in them, they assume the same value of he attribute they are based on.</p>
 <p>Some are based on multiple attributes: their base value can be a mean of two or more attributes, or can be the best out of alternative attributes.</p>
 <p>Some skills don’t have a base: they represent abilities that must be learned from scratch; for example lock picking must be learned before being used.</p>
@@ -718,10 +877,53 @@
 </tbody>
 </table>
 <p>The action cannot reasonably be tried if the target is actually aware of the fact that the character is actively trying to pickpocket it.</p>
-<h2 id="BaM-s-poison-resistance">Poison Resistance (H)</h2>
-<p>This skill is used to check if a character is able to resist a generic poison, when receiving a deadly wound from poison source.</p>
 <h2 id="BaM-s-poisons">Poisons (-)</h2>
 <p>Technical knowledge for recognizing (<em>normal</em>) and producing (<em>hard</em>) poisons.</p>
+<h2 id="BaM-s-resistance-source">Resistance/source</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>H/E/-</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>H</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Spec</td>
+<td><strong>DP</strong> source type</td>
+</tr>
+</tbody>
+</table>
+<p>The character has aqcuired a specific resistance against a determined damage source. The base of the resistance depends on the macro-category of the danage source, as specified in the following table:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Damage type</th>
+<th>Base</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Physical</td>
+<td>Health</td>
+</tr>
+<tr class="even">
+<td>Mental</td>
+<td>Equilibrium</td>
+</tr>
+<tr class="odd">
+<td>Elemental</td>
+<td>Elem. Res.</td>
+</tr>
+</tbody>
+</table>
+<p>The advantage <a href="BaM-a-elemental-resitance">Elemental Resistance</a> gives the base against elemental damage.</p>
 <h2 id="BaM-s-riding">Riding/mount (mD)</h2>
 <p>This skill is used to perform particularly difficult actions while riding a specific animal. For example, jumping a fence with a horse, jumping across acrobatic platforms with a motor bike, running through a busy skyline with a flying car and so on.</p>
 <p>The skill is specific for each device (or animal) that the character might ride. Some riding specialisation can be baseless, if learning them requires a specific preparation (for example, helicopter pilot).</p>
@@ -789,7 +991,10 @@
 </table>
 <p>Each tarp might come with a separate specific modifier in order to be detected and disarmed. Once a trap is discovered, the character might attempt a separate check on Traps at normal difficulty to determine its modifier prior attempting to remove it.</p>
 <h1 id="BaM-gen-advantages">Advantages</h1>
-<p>Advantages special conditions that apply to the character in general or to a specific skill in particular, and that have a direct effect on some game mechanics. While most advantages are simply possessed by a character or not, some can have different levels. For example, Survival Instinct can have a level 1 and 3, each level granting a higher modifier. In that case, the description of the advantage indicates the initial cost and the cost per additional level. The cost of a further level is given by the base cost, plus the additional level cost times the current level. For example, if the description indicates the cost of being 5/2, it means that the first level costs 5, the second 5+2<em>1 = 7, the third 5+2</em>2 = 9 and so on. Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. For example, they could require having already acquired another advantage, or having a certain minimal score in some specific statistic.</p>
+<p>Advantages special conditions that apply to the character in general or to a specific skill in particular, and that have a direct effect on some game mechanics.</p>
+<p>While most advantages are simply possessed by a character or not, some can have different levels. For example, Survival Instinct can have a level between 1 and 3, each granting a higher modifier.</p>
+<p>In that case, the description of the advantage indicates the initial cost and the cost per additional level. The cost of a further level is given by the base cost, plus the additional level cost times the current level. For example, if the description indicates the cost in <strong>CP</strong> being 5+2, it means that the first level costs 5, the second 5+2<em>1 = 7, the third 5+2</em>2 = 9 and so on.</p>
+<p>Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. For example, they could require having already acquired another advantage, or having a certain statistic at a minimum set score.</p>
 <h2 id="BaM-a-battleproof">Battleproof (10CP)</h2>
 <p>The character can withstand an additional wound from physical sources before being incapacitated. The first physical wound is received during a fight will automatically heal in 6 hours, even if not treated.</p>
 <h2 id="BaM-a-born-in-a-mourning-hall">Born in a Mourning Hall (20CP)</h2>
@@ -806,6 +1011,29 @@
 <p>When using the <a href="#BaM-m-basic-combat">Basic Combat System</a>, this advantage allows to to perform one extra <strong>damage resist</strong> check per point, when the damage source is mental.</p>
 <h2 id="BaM-a-easygoing">Easygoing/skill (3CP)</h2>
 <p>Easy checks on the target skill get an additional modifier of +1, and trivial checks have an additional modifier of +2.</p>
+<h2 id="BaM-a-elemental-resistance">Elemental Resistance</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Spec</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>4+1CP</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Max</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>The character has an innate resistance (or vulnerability, if the value is negative) to elemental attacks. This constitute the base for the <a href="#BaM-s-resistance-source">resistance</a> skill against elemental sources.</p>
+<p>This advantage should be granted only in settings where it makes sense, i.e. as a racial characteristic of a fantasy race, or for characters genetically engineered, or for synthetic life forms as androids etc.</p>
 <h2 id="BaM-a-expertise">Expertise/skill (6CP)</h2>
 <p>Skill Expertise (SE) it’s an advantage bought for specific skills. In every check performed on the target skill, the player can throw 4d6 instead of 3d6, and discard the lower result.</p>
 <h2 id="BaM-a-fast-paced">Fast Paced 1-3 (6/4CP)</h2>
@@ -839,10 +1067,32 @@
 <p>All instinctive defence checks and contests get a -1 modifier per level bought.</p>
 <p>Cannot be countered by buying Survival Instinct.</p>
 <h1 id="BaM-gen-perks-and-drags">Perks and Drags</h1>
-<p>Perks and drags are generic advantages and disadvantages that don’t impact the game system directly. They usually give more flavour in terms of roleplaying, and better define a character in its settings. Being famous, of noble origins, being able to play a certain instrument, knowing a certain literature or scientific topic, being rich, and the inverse of those are considered perks.</p>
-<p>They can and usually will have an influence in how the adventure play, and some of them has also some indirect effect on the rules. For example, Medical Knowledge is mainly meant for your character to be able to speak competently about illnesses and cures, but it also influences the rolls on First Aid; Criminal Boss is meant to direct your adventure in a certain direction, but it also influences the skill Intimidate.</p>
+<p>Perks and drags are generic advantages and disadvantages that don’t impact the game system directly. They usually give more flavour in terms of roleplaying, and better define a character in its settings.</p>
+<blockquote>
+<p>Being famous, of noble origins, being able to play a certain instrument, knowing a certain literature or scientific topic, being rich, and the inverse of those are considered perks (or drags).</p>
+</blockquote>
+<p>They can and usually will have an influence in how the adventure plays, and some of them has also some indirect effect on the rules. For example, Medical Knowledge is mainly meant for your character to be able to speak competently about illnesses and cures, but it also influences the rolls on First Aid; Criminal Boss is meant to direct your adventure in a certain direction, but it also influences the skill Intimidate.</p>
 <h2 id="BaM-a-aristocrat">Aristocrat</h2>
-<p><em>Cost</em>: 20, 30, 40 CP</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Spec</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>20/30/40 CP</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Max</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 <p>The character is an aristocrat in the target setting. In settings that don’t comprise a birth right, traditional aristocracy, the perk grants belonging to a similar oligarchy or high-order political elite.</p>
 <p>The cost, and the effect of the perk on the game, depend on the level of aristocracy:</p>
 <ul>
@@ -911,6 +1161,34 @@
 <h2 id="BaM-a-deaf">Deaf</h2>
 <p><em>Cost</em>: -30 CP</p>
 <p>The character is deaf. It can still use this drag even if it has a substitute for normal hearing, provided the substitute is just minimising the disadvantage. For example, having an laptop/tablet/phone that provides the character with speech-to-text recognition is still being deaf, but having the ability to communicate telepathically with demonic minions and use their hearing would invalidate this perk.</p>
+<h2 id="BaM-a-famous">Famous</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Spec</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>10/15/20 CP</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Max</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>The character is famous and easily identified by its peers. Also, whoever wants to know about the character, or searching for it because of any specific reason (i.e. to hire it for a job, or to hunt it down), can easily find information about it and its general whereabouts, unless the character actively disguises and hides.</p>
+<p>The cost depends on how famous the character is:</p>
+<ul>
+<li>10CP: Konw by 1/20th-1/10th of the population; people occasionally identify it when walking by, or tells it they heard about it.</li>
+<li>15CP: Konwn by 1/5th of the population. During a day out, or a long walk, the character is sure to be recognized, and possibly stopped by admirers (or haters).</li>
+<li>20CP: Known by more than half the poulation. Wherever the character goes, it is recognized, and when that happens, people flocks to see it.</li>
+</ul>
 <h2 id="BaM-a-field-expert">Field Expert</h2>
 <p><em>Cost</em>: 10 CP</p>
 <p>The character is an expert in some relevant field of study: physics, psychology, economics, information technology, regional lore, world lore, history etc. This perk can be bought once per specialisation field, and can be upgraded (immediately or later on) to Renown Field Expert.</p>
@@ -932,279 +1210,6 @@
 <h2 id="BaM-a-wheelchair">Wheelchair</h2>
 <p><em>Cost</em>: -25 CP</p>
 <p>The character legs are non functional, and it needs assistance or mechanical devices to walk. This is not a drag in settings where the technology to fully substitute body parts is readily available.</p>
-<h1 id="BaM-gen-injury-and-damage">Injury and Damage</h1>
-<p>Damage received in combat, or in other situations, impacts on the current physical or mental health of the character.</p>
-<h2 id="BaM-gen-injury-statistics">Injury statistics</h2>
-<p>Generic damage is measured in <em>Damage Points</em> (<strong>DP</strong>), which can cause <em>wounds</em> if exceeding a threshold. Some damage sources can also cause directly a <em>wound</em>.</p>
-<p>The severity of a <em>wound</em> determine the amount of <em>injury points</em> it inflicts to the character.</p>
-<p><em>Damage points</em>, <em>wounds</em> and <em>injury points</em> (<strong>IP</strong>) have different effects on different characters, depending on the most appropriate way to keep track of damage in a particular context. For example, living creatures will die if they sustain too many <em>wounds</em>, while a body-less AI could not be wound, but be able to sustain a certain amount of <strong>DP</strong> before being disabled.</p>
-<h2 id="BaM-gen-injury-points">Wounds and Injury points</h2>
-<p>The severity of wounds determine the amount of injury points it inflicts on the characters receiving them, according with the following table:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Wound severity</th>
-<th align="right">Injury points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Light</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td>Serious</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td>Heavy</td>
-<td align="right">4</td>
-</tr>
-</tbody>
-</table>
-<h2 id="BaM-m-standard-injury-rule">Standard Injury Rule</h2>
-<p>The most common rule regulating <strong>DP</strong>, <em>wounds</em> and <strong>IP</strong> is called <em>standard injury rule</em>, and is applied to any character unless differently specified.</p>
-<p>Commonly, when the received damage passes a certain threshold called <em>resistance level</em> (<strong>RL</strong>), the character suffers a wound.</p>
-<p>In the base system, the <strong>RL</strong> is <a href="#BaM-c-health"><strong>health</strong></a>, for physical damage, and <a href="#BaM-c-equilibrium"><strong>equilibrium</strong></a>, for mental damage.</p>
-<h3 id="BaM-m-disable-level">Disable Level</h3>
-<p>Characters have a <em>disable level</em> (<strong>DL</strong>), which is expressed either in <em>number of wounds</em> (<strong>DL/W</strong>) or in injury points (<strong>DL/IP</strong>). Once the count of <em>wounds</em>, or the total <em>injury points</em>, is equal or above the <em>disable level</em>, the character is <em>disabled</em>, that is, unable to perform any action, possibly unconscious or even dying.</p>
-<p>The default <em>disable level</em> for human and human-sized animals is <strong>DL/W</strong>=4: they can sustain 4 wounds before being disabled.</p>
-<h3 id="BaM-m-scratches">Scratches</h3>
-<p>Sustained damage that is not enough to cause a wound counts as a <em>scratch</em>. Once a character receives a number of <em>scratches</em> equal to its <strong>DL/W</strong>, it suffers a <strong>light wound</strong> (and the count of <em>scratches</em> is cleared).</p>
-<h3 id="BaM-m-injury-threshold">Injury thresholds</h3>
-<p>To determine the severity of wounds generated by the received damage, follow this table:</p>
-<table>
-<thead>
-<tr class="header">
-<th>RL</th>
-<th>Light</th>
-<th>Serious</th>
-<th>Heavy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>19-21</td>
-<td>4</td>
-<td>11</td>
-<td>18</td>
-</tr>
-<tr class="even">
-<td>16-18</td>
-<td>3</td>
-<td>9</td>
-<td>15</td>
-</tr>
-<tr class="odd">
-<td>13-15</td>
-<td>3</td>
-<td>8</td>
-<td>13</td>
-</tr>
-<tr class="even">
-<td>10-12</td>
-<td>2</td>
-<td>6</td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td>7-9</td>
-<td>2</td>
-<td>5</td>
-<td>8</td>
-</tr>
-<tr class="even">
-<td>3-6</td>
-<td>1</td>
-<td>3</td>
-<td>5</td>
-</tr>
-</tbody>
-</table>
-<p>The table is computed through the following procedure:</p>
-<ol style="list-style-type: decimal">
-<li>Divide the <strong>RL</strong> by 6 and round up to get the <em>light wounds</em> threshold.</li>
-<li>Divide the <strong>RL</strong> by 3 and round up.</li>
-<li>Add numbers at 1 and 2 to get the <em>serious wounds</em> threshold.</li>
-<li>Add numbers at 2 and 3 to get the <em>heavy wounds</em> threshold.</li>
-<li>Add 4 to the <strong>RL</strong> to get the *deadly wounds** threshold.</li>
-</ol>
-<p>For example, with <strong>RL</strong> 8, divide by 6 and round up, to get the <em>light wounds</em> threshold, which is 2. Then, divide 8 by three and round up, obtaining 3. The <em>serious</em> and <em>heavy</em> thresholds are respectively 2+3=5 and 2+3+3=8. Then, add 4+8=12 for the <em>deadly wounds</em> threshold.</p>
-<blockquote>
-<p>You should write down the <em>injury thresholds</em> for <strong>health</strong>, <strong>equilibrium</strong> and other <strong>RL</strong> statistics on your character sheet.</p>
-</blockquote>
-<h3 id="BaM-m-injury-penalty">Injury penalty</h3>
-<p>Unless differently specified, any character suffers a negative modifier equal to the currently sustained <strong>IP</strong> to <em>any action</em>.</p>
-<h3 id="BaM-m-deadly-wounds">Deadly Wounds (optional)</h3>
-<p>When the damage sustained is greater than the <strong>RL</strong>+4, the character receives a <em>deadly wound</em>.</p>
-<p>To avert an immediate death, the character must win <em>resistance check</em> against the damage source. For example, if the damage was caused by a poison, the character must perform a check on <a href="#BaM-s-poison-resistance"><strong>poison resistance</strong></a>.</p>
-<blockquote>
-<p>The description of skills indicates whether it can be used in specific <em>resistance checks</em> or not.</p>
-</blockquote>
-<p>When character can't use any specific resistance skill, the check is performed on <strong>body</strong>, if the damage is physical, or <strong>mind</strong>, if it's mental.</p>
-<p>If the check is successful, the character receives a <em>heavy wound</em>.</p>
-<blockquote>
-<p>Remember that the <em>resistance check</em> receives a negative modifier equal to the current count of injury points, as any other action.</p>
-</blockquote>
-<h3 id="BaM-m-disabled-status">Disabled Status</h3>
-<p>When a character receives more <em>wounds</em> or <strong>IP</strong> than it can sustain, it becomes disabled.</p>
-<p>The following Disabled Status Table describes the seriousness of the disabled status on humanoids and human-sized animals in common settings:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Injury Points</th>
-<th>Consequence</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Less than 6</td>
-<td>Character is disabled but conscious</td>
-</tr>
-<tr class="even">
-<td>6-7</td>
-<td>Character is unconscious for 2 hours</td>
-</tr>
-<tr class="odd">
-<td>8-9</td>
-<td>Character will die within 2 hours</td>
-</tr>
-<tr class="even">
-<td>10+</td>
-<td>Character will die within 10 minutes</td>
-</tr>
-</tbody>
-</table>
-<p>When a character is disabled, performing any action against it (including killing it) doesn’t require checks; however, this doesn’t apply if the acting character is anyhow busy with something else, for example, in a combat.</p>
-<p>A disabled character can recover naturally, if the wounds are not serious enough; otherwise, unless treated, it will die. The action of treating potentially lethal is called <em>stabilization</em>. Specific skills, perks and magic can be used in order to stabilise a disabled character.</p>
-<h2 id="special-injury-rules">Special Injury Rules</h2>
-<p>Here follow some different <em>injury rules</em> applied to specific type of characters. Your setting might have different rules for the same characters described here, as the following are just examples taken from the basic rules.</p>
-<ul>
-<li>Ghosts (weak): <strong>DL/IP</strong>=4 (can sustain 4 IPs before being disabled); moreover, and any light wound is automatically turned into a serious wound.</li>
-<li>Vampires (low rank): <strong>DL/W</strong>=8. When disabled, if the total count of injury points is less than 16, they are forced to retreat and cannot combat until healed. If it's higher, they turn into ash.</li>
-<li>Zombies: They are immune to light or serious wounds, but are destroyed when they receive a heavy or deadly wound.</li>
-<li>Orcs: <strong>DL/W</strong> = 6. Also, their <em>disabled status</em> table is the same as that for humans with a bonus of 2 points (e.g. they are conscious up to 8 injury points).</li>
-</ul>
-<p>Below, there are some examples of characters following the <em>standard injury rule</em> with some special parameters:</p>
-<ul>
-<li>Dragons: They have <strong>DL/IP</strong>=16. This means that they can sustain 16 injury points before becoming disabled, regardless from the wound count.</li>
-<li>Goblins and Kobolds: Their <strong>DL/W</strong> is 3. It means that they can receive 3 wounds only before becoming disabled.</li>
-</ul>
-<h2 id="localized-wounds-optional">Localized Wounds (optional)</h2>
-<p>When a heavy wounds occurs, usually, the GM decides what’s the heavy effect sustained by the character. However, there are some skills can direct damage to a specific part of the body, or some situations that involve only certain areas of a target. In those case, the effect of an heavy wound will be described by some specific rule. The following table is the Heavy Table for humans; it be used to select a random effect for heavy wounds, using a 3d6 roll, on humanoid figures.</p>
-<table>
-<thead>
-<tr class="header">
-<th>Roll Result</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>3-4</td>
-<td>Leg Numbed, half movement speed.</td>
-</tr>
-<tr class="even">
-<td>5-8</td>
-<td>Arm Numbed, half carrying capacity.</td>
-</tr>
-<tr class="odd">
-<td>9-12</td>
-<td>Arm Disabled, 1/4 carrying capacity.</td>
-</tr>
-<tr class="even">
-<td>13-16</td>
-<td>Leg Disabled, 1/4 movement speed.</td>
-</tr>
-<tr class="odd">
-<td>17</td>
-<td>Deafness.</td>
-</tr>
-<tr class="even">
-<td>18</td>
-<td>Blindness.</td>
-</tr>
-</tbody>
-</table>
-<p>Human-sized 4 legged animals are subject to the following Heavy Table:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Roll Result</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>3-8</td>
-<td>Fore Leg Numbed, half movement speed and carrying capacity</td>
-</tr>
-<tr class="even">
-<td>9-16</td>
-<td>Aft Leg disabled, 1/4 movement speed and 1/4 carrying capacity</td>
-</tr>
-<tr class="odd">
-<td>17</td>
-<td>Deafness</td>
-</tr>
-<tr class="even">
-<td>18</td>
-<td>Blindness</td>
-</tr>
-</tbody>
-</table>
-<h2 id="damage-type">Damage Type</h2>
-<p>Physical and mental damage are further divided in sub-types towards which characters might have specific resistances.</p>
-<h3 id="BaM-m-elemental-damage">Elemental Damage</h3>
-<p>Damage caused by energy, or in general, by life-threatening conditions the character might be subject to, is called elemental damage. It is important do determine which kind of elemental damage is sustained, as some characters can have resistance to some kind of element, while other might have a specific weakness.</p>
-<p>All elemental damage cause physical damage, unless differently specified. For example, the fantasy element <em>pure magic</em> generates mental damage.</p>
-<p>Elemental damage bypasses specific mental or physical resistances, but not generic resistances. For example, a flame thrower will generate heat damage, against which any specific cut, piercing and blunt damage resistance is useless; however, a generic resistance to physical damage would still apply.</p>
-<p>The elemental damage types are:</p>
-<ul>
-<li><em>Chemical</em>: includes acid and any poisonous substance.</li>
-<li><em>Cold</em>: for example, ice and unsustainable cold.</li>
-<li><em>Electricity</em>: for example, lightning or electric shocks.</li>
-<li><em>Heat</em>: for example, fire and unsustainable heat.</li>
-<li><em>Light</em>: Some creatures are damaged by light (radiation in the visible spectrum). _Doesn’t include lasers (which generate heat) or other radiation damage.</li>
-<li><em>Pure Magic</em>: metaphysical damage induced by magic, causing non-specific <em>mental</em> damage. Does not include magic spells creating a material effect (for example, causing something to catch fire) or directly attacking the mind (i.e. a hypnosis inducing magic spell).</li>
-<li><em>Radiation</em>: for example, exposition to radioactive material, neutron guns, microwaves etc.</li>
-<li><em>Void</em>: complete air pressure deprivation, i.e. the effects of deep space.</li>
-</ul>
-<h3 id="BaM-m-mental-damage">Mental Damage</h3>
-<p>Mental damage types are:</p>
-<ul>
-<li><em>Despair</em>: The mental attack or stress provokes a state of mental exhaustion, akin with depression, where the victim is less likely to be willing to fight for their own life, or simply, to live. Not to be confused with</li>
-<li><em>Maddening</em>: The attack strips the victim character of its rationality, making its thought processes less coherent, and making it to believe things that are not true. It provokes sentiments of paranoia, terror, alienation, or alternatively, irrational boldness.</li>
-<li><em>Confusion</em>: This kind of damage confuses the mind of the target, dumbing down its movement, altering its perception, provoking hallucinations and generally scrambling perception and memories. The thought processes of the victim is still sound, and it usually recognises the hallucinations as not being real and can deal with the numbed sensations, unless it’s also maddened.</li>
-</ul>
-<h3 id="BaM-m-physical-damage">Physical Damage</h3>
-<p>Physical damage types are:</p>
-<ul>
-<li><em>Blunt</em>: Impacts, falls, body slams and blunt weapons generate <em>blunt damage</em>.</li>
-<li><em>Cut</em>: Sharp weapons generate <em>cut</em> damage, regardless of the weapon being used to slash or thrust. For example, a slash hit from a broadsword, a thrust from a pike and the wound caused by an arrow are all generating <em>cut damage</em>.</li>
-<li><em>Piercing</em>: high-power weapons, with the potential to pass through the whole body of the target, and with high penetrating power against armours and covers, generate <em>piercing damage</em>. Guns, lasers, and high-yield crossbows are example of piercing weapons.</li>
-</ul>
-<p>Notice that simple arrows are <em>normally</em> considered generating <em>cut damage</em>, as they would be stopped by the same kind of armour designed to stop other cut weapons, but some high-yield modern bow might generate <em>piercing damage</em> instead.</p>
-<h2 id="damage-mitigation">Damage Mitigation</h2>
-<p>Incoming damage can be mitigated in several ways. Medieval warriors wear armours that are extremely effective against <em>cut</em> damage; modern army and militia fighters wear <em>piercing</em> resistant kevlar jackets; an advanced AI might have redundancy modules to mitigate the effect of <em>maddening</em>; a monk can meditate to absorb <em>despair</em>, and so on.</p>
-<p>The amount of incoming damage removed is called <em>damage mitigation</em> (<strong>DM</strong>).</p>
-<p>Armours, advantages and other means of mitigation that act regardless of the activity of the character provide an automatic <strong>DM</strong> called <em>passive mitigation</em>.</p>
-<p>Also, some skills can actively be used to mitigate incoming damage; in that case, the character receiving the damage must perform a successful check on the skill to activate the mitigation.</p>
-<p>The total value of mitigation after counting all the sources is subtracted from the incoming damage.</p>
-<p>Mitigation cannot reduce the incoming damage to less than 0 <strong>DP</strong>.</p>
-<h3 id="scratches-on-active-mitigation-optional">Scratches on active mitigation (optional)</h3>
-<p>If the count of <strong>DP</strong> after <em>passive mitigation</em> is 0, the character doesn't receive any damage. However, if it's brought down to zero by <em>active mitigation</em>, a scratch is generated nevertheless (unless the the character has the <a href="#BaM-a-total-mitigation"><strong>total mitigation</strong></a> advantage).</p>
-<h2 id="conditions-and-status">Conditions and Status</h2>
-<p><em>Conditions</em> are &quot;standardised&quot; negative effects that a particular damage source can add, other than causing a direct damage.</p>
-<p>When a condition is applied to a character for a prolonged time, it becomes a <strong>status</strong>.</p>
-<ul>
-<li><em>Wound</em>: A success causes an immediate wound — the seriousness of the wound being described here or in the skill description.</li>
-<li><em>Block</em>: the target is grappled or anyhow blocked. The description of the skill will specified whether the attacker is blocked too.</li>
-<li><em>Stun X</em>: the target is stun for a count X of turns, giving it a modifier of -2 to any action.</li>
-<li><em>Fall</em>: The target falls on the ground, and is “grounded” for the next turn.</li>
-<li><em>Disarm</em>: The target loses its weapon.</li>
-<li><em>Cripple</em>: A limb of the target is crippled and becomes impaired. All actions requiring that limb receives a -4 modifier. If the crippled limb is a leg, 4-legged animals reduce their movement to half, bipedal animals (including human) to 1/4.</li>
-</ul>
 <h1 id="BaM-gen-combat">Combat</h1>
 <p>Combat is an advanced form of contest. In a normal contest, characters try to win one over another on specific skills. Also in combat, there the contest is finalized at harming an opponent or defending from an attack.</p>
 <p>Sirpas provides several sub-systems to resolve conflicts, increasingly detailed (and complex):</p>

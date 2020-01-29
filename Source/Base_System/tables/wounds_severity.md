@@ -1,6 +1,9 @@
-| Wound              |    Damage          | Penalty            | Injury points      |
-|--------------------|--------------------|--------------------|--------------------|
-| Light              | < RL/2             | 0                  | 1                  |
-| Serious            | < RL               | -3                 | 2                  |
-| Heavy     | < RLx2             | -6                 | 4                  |
-| Deadly             | >= RLx2            | -                  | -                  |
+|**ED** | Wound   | **IP** | Modifier |
+|------:| -----   | ------:| -------: |
+| 0     | Scratch |      - | -        |
+| 1-3   | Light   |      1 | -        |
+| 4-6   | Serious |      2 | -1       | 
+| 7-9   | Heavy   |      4 | -2       |
+| 10+   | Deadly  |      - | -        |
+
+

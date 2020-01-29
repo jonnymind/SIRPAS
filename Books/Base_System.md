@@ -113,10 +113,12 @@ They are divided in the following categories:
 
 * Attributes: important aspect of the character on which many other mechanics depend. 
   For example *body* (**B**), *mind* (**M**), *health* (**H**) and *will* (**W**).
-* Structural Staticstics, or *structs*: A set of statistics that regulate how 
+* Structural Staticstics, or **structs**: A set of statistics that regulate how 
   characters are structurally built; for example, how they receive and resist damage,
   how much stress they can sustain before going deranged, how many times they must feed
   or recharge in a day, and so on.
+* Status Statistics: values that vary fluidly during an adventure; for example,
+  the amount of **injury points**, **fatigue points** etc. 
 * Skills: specific abilities to perform some actions, 
   as *hacking*, *lock picking*, *running*, *climbing* etc. They are divided into
   three categories, depending on the difficulty of learning and improving them: 
@@ -154,6 +156,37 @@ for example in a vampire society, the Body attribute (**B**) could be measured
 in a 0-100 range, where a B0 for a vampire would be equivalent to a B18 for a human,
 and where the difference between B0 and B1 and between B49 and B50 is the same.
 
+## Status Statistics {#BaM-m-status-statistics}
+
+*Status statistics* are a set of values that determines the current status of the
+character. The base system defines the following:
+
+* *Injury points* (**IP**): amount of damage currently sustained by a character. Damage
+has different effects on different type of charactrs, so **IP** might mean different things
+to different type of characters.
+* *Fatigue points* (**FgP**): current amount of physical tiredness.
+* *Stress points* (**StP**): current amount of mental tiredness.
+
+Other subsystem in this manyual introduce more status statistics; for example different
+kind of *magic* systems have *mana points*. 
+
+## Structural Statistics {#BaM-m-structs}
+
+*Structural Statistics*, or more simply **structs**, are special statistics
+descrbing the overall structure of the character.
+
+They are defined in the base system as:
+
+* *Injury Reistance* (**IR**): number of *injury points* a character can take 
+before becoming *incapacitated*. A normal human has **IR** 9,
+which can be slightly increased through advantages.
+* *Fatigue Resistance* (**FgR**): number of *fatigue points* a character can take 
+before becoming *incapacitated*. A normal human has **FgR** 9,
+which can be slightly increased through advantages.
+* *Stress Resistance* (**StR**): number of *stress points* a character can take 
+before becoming *incapacitated*. A normal human has **FgR** 9,
+which can be slightly increased through advantages.
+
 ## Base and Specific Values {#BaM-m-base}
 
 Statistcs are organized in a hierarchy, where a lower level statistics (as i.e. a skill)
@@ -183,7 +216,7 @@ list of skills for which she has acquired any **specific value**, and that are b
 knowing that the **specific value** of [hiding](#BaM-s-hiding) is 3, she will update the total value 
 from 16 to 17.
 
-### Baseless statistics {#BaM-m-baseless-statistic}
+### Baseless Statistics {#BaM-m-baseless-statistic}
 
 Not every statistics has a base. Some skills can't be "improvised" naturally, and must be learned
 specifically. For example, everyone can swing a sword, but learning a style of swordsmanship is 
@@ -203,6 +236,184 @@ and *hard* skills get a third of their base (again, rounded down);
 special bases could be assigned in particular cases, when the rules specify it.
 
 
+# Attributes {#BaM-m-attributes}
+
+Attributes describe a character as syntetically as possible. 
+They are the most important statistics, on which
+many other ones depend directly or indirectly. 
+
+Attributes are organized in hierarchies, with top-level attributes called **mains**.
+
+The base systems defines the following attributes:
+* Body (**B**): The phyisical aspect of the character. Body attributes are:
+ * Strength (**S**): raw phisical power;
+ * Dexterity (**D**): speed, precision and control over actions performed with the body;
+ * Health (**H**): Resilience against fatigue, injury and illness.
+* Mind (**M**): describes the mental prowess of a character. Mind attributes are:
+ * Will (**W**): strength of conviction and assertiveness.
+ * Intelligence (**I**): ability to understand and solve complex problems; mental flexibility.
+ * Equilibrium (**E**): resilience to mental strain, stress and madness.
+
+Higher level attributes form the **base** of lower level ones. This meanst that the lower
+attributes are computed _by difference_ with respect to their base. They start off as having
+the same value, and extra point can be bought (or sold) at a "discount price", in order
+to increase them specifically.
+
+For example, initially, a character with M12 has also W12, I12 and E12. If the player
+buys one point of **will**, it will be now W13. If later on the player decides to 
+buy a point of **mind**, the attribute values will now M13, I13 and E13, 
+but having bought a point of **will** already, that will now be W14. Of course, the cost
+of buying points for higher level attributes is proportionally larger. 
+
+A simple game session might be run by determinging nothing but the **mains**. 
+If more time is spent in creating the characters, or as the game progresses, the lower
+level statistics can be finetuned and differentiated with respect to their parent
+attributes in the hyerarchy.
+
+## Body {#BaM-c-body}
+
+The Body (**B**) is a value that describes your overall physical prowess in terms of
+bodily strength, resilience to prolonged efforts, recovery speed, resistance to
+illness and so on. For humans, it is measured in the range between 3 and 18 (the
+possible outcomes of 3d6). Most adult characters score in the range between 10
+and 12, with 18 representing a person with the best possible body (rarely if
+ever ill, strong as the strongest wrestler or weight lifter, moving as swift as
+a record runner and able to run as long as a marathon champion — all at the same
+time), and 3 representing the weakest possible fully formed and barely
+functional body.
+
+### Strength {#BaM-c-strength}
+
+Strength (*S*) is the attribute measuring a character physical strength. 
+In the default setting, it also indicates how much weight the character 
+can transport without being fatigued, or the amount of weight it can 
+carry without being slowed down, or that it can lift. There are different
+tiers  used in various occasion, all multiple of the value of Strength in 
+pounds:
+
+| Weight             | Transport          | Lift               | Movement           |
+|:------------------:|--------------------|--------------------|--------------------|
+| <= *S* x 1         | Trivial            | Normal             | Normal             |
+| <= *S* x 2         | Easy               | Difficult          | Normal             |
+| <= *S* x 3         | Normal             | Hard               | 3/4                |
+| <= *S* x 4         | Difficult          | Very Hard          | 2/3                |
+| <= *S* x 5         | Hard               | Very Hard          | 1/2                |
+|  > *S* x 5         | Very Hard          | Very Hard          | 1/3                |
+
+
+The name of the tiers match the names of the skill difficulty levels, 
+as they are directly applied as a difficulty level in various checks.
+However, they also define other effects that are not directly related with skills; 
+for example, the transport weight tier is applied directly to the combat movement: 
+a character transporting  a “very hard” weight has its movement cut to one third 
+of it normal movement
+
+### Dexterity {#BaM-c-dexterity}
+
+Dexterity (**D**) expresses the ability to control one’s own body.
+Eye-hand coordination, agility, reaction times and rapidity are all 
+components of dexterity. A dexterity of 3 indicates sluggish reaction times, 
+18 indicates a martial-art or olympic gymnast level of dexterity, 
+with the vast majority of common people stacking around 10-12.
+
+The *dexterity* indicates also the base movement speed of a character.
+The actual speed depends on what a character actually is; a cyborg with
+*D*12 will probably be faster than any human with *D*18. 
+
+The following table is for humans; you can adapt it to other races
+by using the *speed coefficient* of that race (for humans, it's 1).
+
+| Dexterity | Sprint: Ft. x sec | Run: Ft. x sec | Ft. x turn |
+|----------:|------------------:|---------------:|-----------:|
+|         3 |                 3 |              1 |         10 |
+|         4 |                 7 |              2 |         11 |
+|         5 |                10 |              3 |         13 |
+|         6 |                13 |              4 |         15 |
+|         7 |                15 |              5 |         18 |
+|         8 |                17 |              7 |         22 |
+|         9 |                19 |              9 |         26 |
+|        10 |                20 |             11 |         28 |
+|        11 |                21 |             12 |         30 |
+|        12 |                23 |             13 |         33 |
+|        13 |                25 |             14 |         36 |
+|        14 |                28 |             16 |         40 |
+|        15 |                31 |             18 |         45 |
+|        16 |                33 |             20 |         52 |
+|        17 |                37 |             23 |         57 |
+|        18 |                42 |             27 |         63 |
+
+
+Notice that the speed for combat turn is not necessarily the sprint speed,
+as movement during combat is limited by other factors. Also, the combat
+turn here is the standard 10 seconds combat turn of the the base system;
+other systems might redefine the duration of a combat turn (and how *dexterity*
+works in those contexts).
+
+### Health {#BaM-c-health}
+
+Health (**H**) represents the resistance to fatigue, illness and polluted 
+environment (including allergenic agents). It's used to determine how many
+*fatigue points* are generated in sitautions where the body is under strain,
+and gives the base for all resistance skills 
+(i.e. [poison resistance](#BaM-s-poison-resistance)).
+
+
+## Mind {#BaM-c-mind}
+
+The Mind (**M**) is the overall score of mental abilities in terms of intelligence,dcreativity, 
+will power, mental sanity, depth of knowledge and so on. 
+A mind level 3 represents a character that is barely functional as an autonomous person (or
+creature) in the reference setting, while a 18 represents a character maximally intelligent, 
+penetrating, knowledgable, sane and wise. The vast majority of characters (or heroes)
+in the reference setting will have a mind between 10 and 12.
+
+### Will {#BaM-c-will}
+
+Will (**W**) is the power of the mind to focus on a certain task, 
+perform prolonged mental activity, keep determination in 
+adverse situations and so on. It can be roughly thought as the 
+equivalent of the strength (*S*) in the mind realm.
+
+
+### Intelligence {#BaM-c-intelligence}
+
+Intelligence (**I**) is the ability to understand and solve complex problems, 
+comprehend difficult study subjects, see through schemes and machinations 
+etc. As it measure the flexibility of the mind processes, it can be thought 
+as the dexterity (**D**) of the mind.
+
+### Equilibrium {#BaM-c-equilibrium}
+
+Equilibrium (**E**) is the stability of the mind, 
+or basically the equivalent of its health (**H**). It determines how much
+mental stress a character can sustain before receiving a *stress point*.
+ 
+It indicates how much mental strain a person can take before being debilitated; 
+of course, it is also important in those settings where attacks are delivered 
+to the mind instead of the body: fantasy, sci-fi and horror settings 
+can present as many dangers for the mind as for the body, or more.
+
+
+# Modifiers {#BaM-gen-modifiers}
+
+In some situation, instead of using a statistic as a direct base, 
+the system requires to use a base modifier.
+
+This happens when some  statistics are baseless by their own nature, 
+but a base statistic influences them nevertheless.
+
+For example, many combat styles are baseless, as you need to learn them from scratch to be good at those, 
+but characters with a higher dexterity, or rather strength, are naturally better at it.
+
+| Attribute | Modifier |
+|:---------:|---------:|
+|    3-5    |       -3 |
+|    6-7    |       -2 |
+|    8-9    |       -1 |
+|   10-11   |        0 |
+|   12-13   |       +1 |
+| 14-15     |       +2 |
+| 16-18     |       +3 |
 
 # Character Points {#BaM-m-character-points}
 
@@ -358,7 +569,7 @@ of the score they realise now.
 
 
 
-## Direct contest {#BaM-m-diret-contest}
+## Contest {#BaM-m-contest}
 
 Some actions are performed either in competition or against other characters.
 When this happens, a *contest* (**CNT**) must be performed. Both characters (or the
@@ -388,6 +599,61 @@ weapon from the other, and they can try again.
 Contests that don't allow draws are specifically indicated by the rules as
 *Drawless Contests* (**ndCNT**). In this cases, when a draw is scored, it is
 discarded as not performed, and another contest takes place.
+
+
+## Multi-contests {#BaM-m-multi-contest}
+
+A multi-contest (**mCNT**) is a contest between two or more parties,
+each comprising one or more characters. 
+
+In a multi-contest, each party performs a *ranking* on the 
+selected skill. Then, the best *check scores* from each party
+are compared against each other, and a point is assinged to the
+party having the highest *check score* of all. The contest continues
+comparing the second-best scores, the third-best scores and so on,
+until all the parties have a score to oppose to the others. Draws
+are discarded.
+
+The party having scored the higest number of points is the winner;
+more than one party has totalized the same number of points, a multi-draw
+happens; depending on the context (and on the rules), draw might either
+lead to a new situation, or require the whole multi-contest to be repeated.
+
+As there could be negative consequences for the losing parties, each
+losing participant will receive a negative *success margin*.
+
+ Notice that a multi-contest between two parties comprising just one 
+ character each is almost the same as a *direct contest*, with the 
+ difference that, instead of assigning a positive *SM* to the winner, 
+ a negative *SM* is assigned to the loser.
+
+**Example**: Three paties, composed of 3, 4 and 5 members respectively,
+try to run up a hill before the others. They perform a *multi-contest*
+on [running](#BaM-s-running). The rankings in each party result in:
+* Party A: 29-23-20
+* Party B: 26-25-22-19
+* Party C: 28-22-21-18-16
+
+The points are assigned as follows:
+* A = 29, B = 26, C = 28 - Point for A
+* A = 23, B = 25, C = 22 - Point for B
+* A = 20, B = 22, C = 21 - Point for B
+
+Group A has 1 point while group B has 2: group B wins the multi-contest.
+However, the first qualified members of group B and C will have a *SM* of
+-3 and -1 respectrively, while for what concerns the second qualified,
+it's the member of the group A that will have a negative *SM* (-2); also
+the second qualified of group C will have a *SM* of -3.
+
+The remaning one member in B and two members in C are not participating in
+the *multi-contest*; nevertheless, the most numerous group has an advantage
+in having more chances to score high points than the others -- everything else equal.
+
+The effect of the multi-contest in the adventure should reflect its outcome. In this
+example, the two highest scores in the ranking might have fumbled on the hill, or grabbed each
+other in a brawl, while the two winners of the winning party would have reached the top,
+nearly followed by the losers, and at a distance, by the ones excluded from the contest.
+
 
 
 ## Critical Results {#BaM-m-critical-results}
@@ -427,184 +693,269 @@ determines a *critical success*.
 
 
 
+# Damage and Injury {#BaM-m-damage-and-injury}
 
-# Attributes {#BaM-gen-attributes}
+A critical aspect of any RPG is the set of rules that determine how characters
+sustain damage and receive injuries.
 
-Attributes describe a character as syntetically as possible. 
-They are the most important statistics, on which
-many other ones depend directly or indirectly. 
+SIRPAS has a modular injury system, which can be fitted in any setting and play styles.
 
-Attributes are organized in hierarchies, with top-level attributes called **mains**.
+It can be used to determine an overall status of a fight, or to determine precisely 
+which part of a human body, mechanical robot, flying mount or AI virtual device 
+has been damaged, and to what extent it has been incapacitated. 
 
-The base systems defines the following attributes:
-* Body (**B**): The phyisical aspect of the character. Body attributes are:
- * Strength (**S**): raw phisical power;
- * Dexterity (**D**): speed, precision and control over actions performed with the body;
- * Health (**H**): Resilience against fatigue, injury and illness.
-* Mind (**M**): describes the mental prowess of a character. Mind attributes are:
- * Will (**W**): strength of conviction and assertiveness.
- * Intelligence (**I**): ability to understand and solve complex problems; mental flexibility.
- * Equilibrium (**E**): resilience to mental strain, stress and madness.
+It can be employed to keep the score of harmless intellectual challenges, 
+as well as devastating psychic attacs on the mental sanity of the characters.
 
-Higher level attributes form the **base** of lower level ones. This meanst that the lower
-attributes are computed _by difference_ with respect to their base. They start off as having
-the same value, and extra point can be bought (or sold) at a "discount price", in order
-to increase them specifically.
+## Damage Points {#BaM-m-damage-points}
 
-For example, initially, a character with M12 has also W12, I12 and E12. If the player
-buys one point of **will**, it will be now W13. If later on the player decides to 
-buy a point of **mind**, the attribute values will now M13, I13 and E13, 
-but having bought a point of **will** already, that will now be W14. Of course, the cost
-of buying points for higher level attributes is proportionally larger. 
+The *raw damage* a character receives is measured in *damage points* (**DP**).
 
-A simple game session might be run by determinging nothing but the **mains**. 
-If more time is spent in creating the characters, or as the game progresses, the lower
-level statistics can be finetuned and differentiated with respect to their parent
-attributes in the hyerarchy.
+Damage can come in the way of characters in various forms, and from various
+sources; hence, **DP** have also a *quality*, which depends on which source
+is generating them.
 
-## Body {#BaM-c-body}
+Physical harm, fatigue, heat, cold, mental stress etc. can be source. The
+base system divides them in three main categories: *physical*, *mental* and
+*elemental*. These macro-categories further subdivided
+in specific *damage sources*, which are defined further down. 
 
-The Body (**B**) is a value that describes your overall physical prowess in terms of
-bodily strength, resilience to prolonged efforts, recovery speed, resistance to
-illness and so on. For humans, it is measured in the range between 3 and 18 (the
-possible outcomes of 3d6). Most adult characters score in the range between 10
-and 12, with 18 representing a person with the best possible body (rarely if
-ever ill, strong as the strongest wrestler or weight lifter, moving as swift as
-a record runner and able to run as long as a marathon champion — all at the same
-time), and 3 representing the weakest possible fully formed and barely
-functional body.
+## Effective Damage {#BaM-m-effective-damage}
 
-### Strength {#BaM-c-strength}
+Incoming *raw damage* is modified through the application of
+*defences*, that reduce it in various ways; they are mainly
+divided in the following categories:
+* *Passive Defences*: reducing the incoming **DP**s of a flat amount (like physical armors),
+  or dividing the damage by a certain factor, i.e. 4/5 or 3/4 (like magic or sci-fi shields),
+  or eventually by an hybrid formual (as in the case of specific resistances against some
+  kind of damage).
+* *Active Defences*: the amount of reduced **DP**s depends on the use of a certain
+  character ability. 
 
-Strength (*S*) is the attribute measuring a character physical strength. 
-In the default setting, it also indicates how much weight the character 
-can transport without being fatigued, or the amount of weight it can 
-carry without being slowed down, or that it can lift. There are different
-tiers  used in various occasion, all multiple of the value of Strength in 
-pounds:
+The way different kind of damages impact on the characters is fully considerd by the way
+defences are applied to reduce the incoming **DP**s.
 
-| Weight             | Transport          | Lift               | Movement           |
-|:------------------:|--------------------|--------------------|--------------------|
-| <= *S* x 1         | Trivial            | Normal             | Normal             |
-| <= *S* x 2         | Easy               | Difficult          | Normal             |
-| <= *S* x 3         | Normal             | Hard               | 3/4                |
-| <= *S* x 4         | Difficult          | Very Hard          | 2/3                |
-| <= *S* x 5         | Hard               | Very Hard          | 1/2                |
-|  > *S* x 5         | Very Hard          | Very Hard          | 1/3                |
+The count of **DP**s left after the defences are applied is called *effective damage* (**ED**), and
+is used to evaluate the effect of the damage on the character.
+
+## Wounds and Injury Points {#BaM-m-wounds}
+
+When sustaining a certain amount of damage, the character
+receive a certain kind of wound: a *scratch* or a *light*,
+*serious* or *heavy* wound, and possibly even *deadly* ones,
+according with the following table:
+
+|**ED** | Wound   | **IP** | Modifier |
+|------:| -----   | ------:| -------: |
+| 0     | Scratch |      - | -        |
+| 1-3   | Light   |      1 | -        |
+| 4-6   | Serious |      2 | -1       | 
+| 7-9   | Heavy   |      4 | -2       |
+| 10+   | Deadly  |      - | -        |
 
 
-The name of the tiers match the names of the skill difficulty levels, 
-as they are directly applied as a difficulty level in various checks.
-However, they also define other effects that are not directly related with skills; 
-for example, the transport weight tier is applied directly to the combat movement: 
-a character transporting  a “very hard” weight has its movement cut to one third 
-of it normal movement
-
-### Dexterity {#BaM-c-dexterity}
-
-Dexterity (**D**) expresses the ability to control one’s own body.
-Eye-hand coordination, agility, reaction times and rapidity are all 
-components of dexterity. A dexterity of 3 indicates sluggish reaction times, 
-18 indicates a martial-art or olympic gymnast level of dexterity, 
-with the vast majority of common people stacking around 10-12.
-
-The *dexterity* indicates also the base movement speed of a character.
-The actual speed depends on what a character actually is; a cyborg with
-*D*12 will probably be faster than any human with *D*18. 
-
-The following table is for humans; you can adapt it to other races
-by using the *speed coefficient* of that race (for humans, it's 1).
-
-| Dexterity | Sprint: Ft. x sec | Run: Ft. x sec | Ft. x turn |
-|----------:|------------------:|---------------:|-----------:|
-|         3 |                 3 |              1 |         10 |
-|         4 |                 7 |              2 |         11 |
-|         5 |                10 |              3 |         13 |
-|         6 |                13 |              4 |         15 |
-|         7 |                15 |              5 |         18 |
-|         8 |                17 |              7 |         22 |
-|         9 |                19 |              9 |         26 |
-|        10 |                20 |             11 |         28 |
-|        11 |                21 |             12 |         30 |
-|        12 |                23 |             13 |         33 |
-|        13 |                25 |             14 |         36 |
-|        14 |                28 |             16 |         40 |
-|        15 |                31 |             18 |         45 |
-|        16 |                33 |             20 |         52 |
-|        17 |                37 |             23 |         57 |
-|        18 |                42 |             27 |         63 |
 
 
-Notice that the speed for combat turn is not necessarily the sprint speed,
-as movement during combat is limited by other factors. Also, the combat
-turn here is the standard 10 seconds combat turn of the the base system;
-other systems might redefine the duration of a combat turn (and how *dexterity*
-works in those contexts).
+The severity of the received wound determines the amount of
+*injury points* (**IP**) currently sustained by a certain character;
+once the **IP**s are above the maximum a character can sustain (its
+*injury resistance*),
+it becomes *incapacitated*, and it may eventually die, if the wounds
+are not treated.
 
-### Health {#BaM-c-health}
+>For example: A human has normally **IR** 9; this means it can sustan 
+1 light wound and 2 heavy wounds, or 4 serious wounds, before becoming
+unable to act, and possibly unconscious.
 
-Health (*H*) represents the resistance to fatigue, illness and polluted 
-environment (including allergenic agents). The level of health
-influences also the amount of damage that a body can sustain before
-being wounded, and that’s very important in fights and other 
-dangerous situations
+>In many RPGs, a form of *health*, *constitution* or similar statistic determines how
+how much damage a character can take. In SIRPAS, **IR** serves this purpose,
+and it's mostly fixed; more than stacking a single statistic, characters can 
+acquire multiple resistances, skills and advantages to become progressively 
+less affected by the same amount of damage.
 
-## Mind {#BaM-c-mind}
+*Scratches* and *deadly wounds* are treated differently.
 
-The Mind (**M**) is the overall score of mental abilities in terms of intelligence,dcreativity, 
-will power, mental sanity, depth of knowledge and so on. 
-A mind level 3 represents a character that is barely functional as an autonomous person (or
-creature) in the reference setting, while a 18 represents a character maximally intelligent, 
-penetrating, knowledgable, sane and wise. The vast majority of characters (or heroes)
-in the reference setting will have a mind between 10 and 12.
+### Wounds Penalty {#BaM-m-wounds}
 
-### Will {#BaM-c-will}
+A serious wound causes a penalty of -1, and a heavy wound causes a penalty of
+-2, on every action.
 
-Will (*W*) is the power of the mind to focus on a certain task, 
-perform prolonged mental activity, keep determination in 
-adverse situations and so on. It can be roughly thought as the 
-equivalent of the strength (*S*) in the mind realm.
+For example, if a character receives an heavy and a serious wound, every action
+requiring a check will be penalized by 3 points.
 
 
-### Intelligence {#BaM-c-intelligence}
+## Scratches {#BaM-m-scratches}
 
-Intelligence (*I*) is the ability to understand and solve complex problems, 
-comprehend difficult study subjects, see through schemes and machinations 
-etc. As it measure the flexibility of the mind processes, it can be thought 
-as the dexterity (*D*) of the mind.
+A character hit by a damage source and
+reducing the **ED** to zero receives a **scratch** (although there are
+some situations in which a not even a scratch is received).
 
-### Equilibrium {#BaM-c-equilibrium}
+Scratches are extremely light wounds that, by themselves, don't impact
+the character **IP** pool.
 
-Equilibrium (*E*) is the stability of the mind, 
-or basically the equivalent of its health (*H*).
- 
-It indicates how much mental strain a person can take before being debilitated; 
-of course, it is also important in those settings where attacks are delivered 
-to the mind instead of the body: fantasy, sci-fi and horror settings 
-can present as many dangers for the mind as for the body, or more.
+However, once received a certain number of scratches, they are considered
+as one light wound. This number (namely a **structural statistic**) is called 
+*scratch-to-wound* (**StW**), and it's 3, unless differently specified, for any character.
+No matter if we're talking of a dragon, a vampire, a god, an AI or a human,
+when they receive their equivalent of 3 scratches, they totalize a light wound, 
+unless differently specified.
 
-# Modifiers {#BaM-gen-modifiers}
+Practically, the players will note down the received scratches, and when they amount
+to their *StW*, they will remove the scratches and assign a light wound to themselves.
 
-In some situation, instead of using a statistic as a direct base, 
-the system requires to use a base modifier.
+## Deadly Wounds (optional) {#BaM-m-deadly-wounds}
 
-This happens when some  statistics are baseless by their own nature, 
-but a base statistic influences them nevertheless.
+When a character receives more than 9 *ED* points, it sustains a wound that is
+potentially able to kill them immediately.
 
-For example, many combat styles are baseless, as you need to learn them from scratch to be good at those, 
-but characters with a higher dexterity, or rather strength, are naturally better at it.
+To avert an immediate death, the character must pass a _simple check_ on the
+[resistance](#BaM-s-resistance-source) skill for the specific damage source.
 
-| Attribute | Modifier |
-|:---------:|---------:|
-|    3-5    |       -3 |
-|    6-7    |       -2 |
-|    8-9    |       -1 |
-|   10-11   |        0 |
-|   12-13   |       +1 |
-| 14-15     |       +2 |
-| 16-18     |       +3 |
+When character can't use any specific resistance skill, the check is performed
+on __body__, if the damage is physical, or __mind__, if it's mental.
 
-# Skills {#BaM-gen-skills}
+If the check is successful, the character receives a _heavy wound_.
+
+> Remember that the _resistance check_ has a negative modifier depeding
+on the received wounds, as any other action.
+
+## Direct Wounds {#BaM-m-direct-wounds}
+
+In some situation, a character can receive a wound of a certain kind directly,
+and not as a consequence of a damage source dealing damage points. For instance,
+certain magic spells could cause a heavy wound directly, if the character fails
+an attempt to resist them. A overwhelmingly powerful weapon, for example a starship
+laser directed against a human, could have the same effect. Explicit actions 
+performed on the character when it is unable to defend itself 
+(i.e. forms of physical or mental torture) could deal
+an arbitrary wound as the attacker seems fit, etc.
+
+
+
+
+## Localized Wounds {BaM-m-localized-wounds}
+
+By default, wounds are generally directed in the generic direction of the body,
+but some abilities allow to aim a certain specific part of the body.
+
+When a wound is localized on a specific body part (an arm, a leg), 
+any action involing that body part receives the double amount of
+penalty from that wound type. For instance, a *heavy wound* localized
+on a leg will cause every action to receive a penalty of -2 points, 
+but the penalty will be -4 on *running*, *jumping*, and anything specifically
+involving that body part. 
+
+This extends to non human and even virtual body parts as well: and AI receiving
+a heavy wound on a virtual device will have a double penalty if it tries to use
+that device to perform any action.
+
+A wound localized on the head adds an extra penalty point on every action. 
+Specifically, a light wound on the head will cause a penalty of -1, a serious
+wound a penalty of -2, and a heavy wound a penalty of -3 on every action
+performed by the character. Again, this extends to non human body parts too:
+and AI hit on its virtual core will follow the same rule.
+
+
+## Damage Type
+
+Physical and mental damage are further divided in
+sub-types towards which characters might have specific resistances.
+
+### Elemental Damage {#BaM-m-elemental-damage}
+
+Damage caused by energy, or in general, by life-threatening conditions the
+character might be subject to, is called elemental damage. It is important do
+determine which kind of elemental damage is sustained, as some characters can
+have resistance to some kind of element, while other might have a specific
+weakness.
+
+All elemental damage cause physical damage, unless differently specified. For
+example, the fantasy element _pure magic_ generates mental damage.
+
+Elemental damage bypasses specific mental or physical resistances, but not
+generic resistances. For example, a flame thrower will generate heat damage,
+against which any specific cut, piercing and blunt damage resistance is useless;
+however, a generic resistance to physical damage would still apply.
+
+The elemental damage types are:
+
+* _Chemical_: includes acid and any poisonous substance.
+* _Cold_: for example, ice and unsustainable cold.
+* _Electricity_: for example, lightning or electric shocks.
+* _Heat_: for example, fire and unsustainable heat.
+* _Light_: Some creatures are damaged by light (radiation in the visible spectrum).
+  _Doesn’t include lasers (which generate heat) or other radiation damage.
+* _Pure Magic_: metaphysical damage induced by magic, causing non-specific
+  _mental_ damage. Does not include magic spells creating a material
+  effect (for example, causing something to catch fire) or directly attacking
+  the mind (i.e. a hypnosis inducing magic spell).
+* _Radiation_: for example, exposition to radioactive material, neutron guns,
+  microwaves etc.
+* _Void_: complete air pressure deprivation, i.e. the effects of deep space.
+
+### Mental Damage {#BaM-m-mental-damage}
+
+Mental damage types are:
+
+* _Despair_: The mental attack or stress provokes a state of mental
+  exhaustion, akin with depression, where the victim is less likely
+  to be willing to fight for their own life, or simply, to live.
+* _Maddening_: The attack strips the victim character of its rationality,
+  making its thought processes less coherent, and making it to believe
+  things that are not true. It provokes sentiments of paranoia, terror, 
+  alienation, or alternatively, irrational boldness.
+* _Confusion_: This kind of damage confuses the mind of the target,
+  dumbing down its movement, altering its perception, provoking hallucinations
+  and generally scrambling perception and memories. The thought process
+  of the victim is still sound, and it usually recognises the hallucinations
+  as not being real and can deal with the numbed sensations, unless it’s also
+  maddened.
+
+### Physical Damage {#BaM-m-physical-damage}
+
+Physical damage types are:
+
+* _Blunt_: Impacts, falls, body slams and blunt weapons generate
+   _blunt damage_.
+* _Cut_: Sharp weapons generate _cut_ damage, regardless of the
+  weapon being used to slash or thrust. For example, a slash hit from a
+  broadsword, a thrust from a pike and the wound caused by an arrow are all
+  generating _cut damage_.
+* _Piercing_: high-power weapons, with the potential to pass through the whole
+  body of the target, and with high penetrating power against armours and
+  covers, generate _piercing damage_. Guns, lasers, and high-yield crossbows
+  are example of piercing weapons.
+
+Notice that simple arrows are _normally_ considered generating
+_cut damage_, as they would be stopped by the same kind of armour
+designed to stop other cut weapons, but some high-yield modern bow might
+generate _piercing damage_ instead.
+
+## Conditions and Status
+
+_Conditions_ are "standardised" negative effects that a particular
+damage source can add, other than causing a direct damage.
+
+When a condition is applied to a character for a prolonged time, it becomes a
+__status__.
+
+* *Wound*: A success causes an immediate wound — the seriousness of the wound
+  being described here or in the skill description.
+* *Block*: the target is grappled or anyhow blocked. The description of the
+  skill will specified whether the attacker is blocked too.
+* *Stun X*: the target is stun for a count X of turns, giving it a modifier
+  of -2 to any action.
+* *Fall*: The target falls on the ground, and is “grounded” for the next turn.
+* *Disarm*: The target loses its weapon.
+* *Cripple*: A limb of the target is crippled and becomes impaired. All
+  actions requiring that limb receives a -4 modifier. If the crippled
+  limb is a leg, 4-legged animals reduce their movement to half, bipedal
+  animals (including human) to 1/4.
+
+
+
+
+# Skills {#BaM-m-skills}
 
 Skills are abilities that a character can exercise at a certain moment, and 
 They are usually based on a single attribute; this means that, if the character
@@ -865,14 +1216,34 @@ table to determine the difficulty of the action:
 The action cannot reasonably be tried if the target is actually aware of
 the fact that the character is actively trying to pickpocket it.
 
-## Poison Resistance (H) {#BaM-s-poison-resistance}
-
-This skill is used to check if a character is able to resist a generic
-poison, when receiving a deadly wound from poison source.
-
 ## Poisons (-) {#BaM-s-poisons}
 
 Technical knowledge for recognizing (_normal_) and producing (_hard_) poisons.
+
+## Resistance/source {#BaM-s-resistance-source}
+
+|   |   |
+|------|-------|
+| Base | H/E/- |
+| Type | H |
+| Prereq | - |
+| Spec | **DP** source type |
+
+The character has aqcuired a specific resistance against
+a determined damage source. The base of the resistance
+depends on the macro-category of the danage source,
+as specified in the following table:
+
+| Damage type | Base        |
+|-------------|-------------|
+| Physical    | Health      |
+| Mental      | Equilibrium |
+| Elemental   | Elem. Res.  |
+
+The advantage [Elemental Resistance](BaM-a-elemental-resitance) gives
+the base against elemental damage.
+
+
 
 ## Riding/mount (mD) {#BaM-s-riding}
 
@@ -924,9 +1295,20 @@ its modifier prior attempting to remove it.
 
 # Advantages {#BaM-gen-advantages}
 
-Advantages special conditions that apply to the character in general or to a specific skill in particular, and that have a direct effect on some game mechanics.
-While most advantages are simply possessed by a character or not, some can have different levels. For example, Survival Instinct can have a level 1 and 3, each level granting a higher modifier. In that case, the description of the advantage indicates the initial cost and the cost per additional level. The cost of a further level is given by the base cost, plus the additional level cost times the current level. For example, if the description indicates the cost of being 5/2, it means that the first level costs 5, the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
-Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. For example, they could require having already acquired another advantage, or having a certain minimal score in some specific statistic.
+Advantages special conditions that apply to the character in general or to a specific skill in particular, 
+and that have a direct effect on some game mechanics.
+
+While most advantages are simply possessed by a character or not, some can have different levels. 
+For example, Survival Instinct can have a level between 1 and 3, each granting a higher modifier. 
+
+In that case, the description of the advantage indicates the initial cost and the cost per additional level. 
+The cost of a further level is given by the base cost, plus the additional level cost times the current level. 
+For example, if the description indicates the cost in **CP** being 5+2, it means that the first level costs 5, 
+the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
+
+Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. 
+For example, they could require having already acquired another advantage, or having a certain 
+statistic at a minimum set score.
 
 
 
@@ -975,6 +1357,26 @@ is mental.
 
 Easy checks on the target skill get an additional modifier 
 of +1, and trivial checks have an additional modifier of +2.
+
+## Elemental Resistance {#BaM-a-elemental-resistance}
+
+|   |   |
+|------|--|
+| Spec |  |
+| Cost | 4+1CP |
+| Prereq | - |
+| Max | - |
+
+The character has an innate resistance (or vulnerability,
+if the value is negative) to elemental attacks. This
+constitute the base for the [resistance](#BaM-s-resistance-source)
+skill against elemental sources.
+
+This advantage should be granted only in settings where it
+makes sense, i.e. as a racial characteristic of a fantasy
+race, or for characters genetically engineered, or for
+synthetic life forms as androids etc.
+
 
 ## Expertise/skill (6CP) {#BaM-a-expertise}
 
@@ -1075,11 +1477,12 @@ Cannot be countered by buying Survival Instinct.
 Perks and drags are generic advantages and disadvantages that don’t 
 impact the game system directly. They usually give more flavour  in 
 terms of roleplaying, and better define a character in its settings.
- Being famous, of noble origins, being able to play a certain instrument, 
- knowing a certain literature or scientific topic, being rich, and the 
- inverse of those are considered perks. 
+
+>Being famous, of noble origins, being able to play a certain instrument, 
+knowing a certain literature or scientific topic, being rich, and the 
+inverse of those are considered perks (or drags). 
  
-They can and usually will have an influence in how the adventure play, 
+They can and usually will have an influence in how the adventure plays, 
 and some of them has also some indirect effect on the rules. For example, 
 Medical Knowledge is mainly meant for your character to be able to speak 
 competently about illnesses and cures, but it also influences the rolls on 
@@ -1089,7 +1492,12 @@ direction, but it also influences the skill Intimidate.
 
 ## Aristocrat {#BaM-a-aristocrat}
 
-*Cost*: 20, 30, 40 CP
+|   |   |
+|------|--|
+| Spec |  |
+| Cost | 20/30/40 CP |
+| Prereq | - |
+| Max | - |
 
 The character is an aristocrat in the target setting. In settings
 that don’t comprise a birth right, traditional aristocracy, the
@@ -1191,6 +1599,36 @@ the character with speech-to-text recognition is still being deaf, but
 having the ability to communicate telepathically with demonic minions and
 use their hearing would invalidate this perk.
 
+## Famous {#BaM-a-famous}
+
+|   |   |
+|------|--|
+| Spec |  |
+| Cost | 10/15/20 CP |
+| Prereq | - |
+| Max | - |
+
+The character is famous and easily identified by its peers.
+Also, whoever wants to know about the character, or searching
+for it because of any specific reason (i.e. to hire it for
+a job, or to hunt it down), can easily find information
+about it and its general whereabouts, unless the character
+actively disguises and hides.
+
+The cost depends on how famous the character is:
+
+* 10CP: Konw by 1/20th-1/10th of the population; people
+  occasionally identify it when walking by, or tells it
+  they heard about it.
+* 15CP: Konwn by 1/5th of the population. During a day out,
+  or a long walk, the character is sure to be recognized,
+  and possibly stopped by admirers (or haters).
+* 20CP: Known by more than half the poulation. Wherever the
+  character goes, it is recognized, and when that happens,
+  people flocks to see it.
+
+
+
 ## Field Expert {#BaM-a-field-expert}
 
 *Cost*: 10 CP
@@ -1255,339 +1693,6 @@ perk on the same field.
 The character legs are non functional, and it needs assistance or mechanical
 devices to walk. This is not a drag in settings where the technology to
 fully substitute body parts is readily available.
-
-
-
-# Injury and Damage {#BaM-gen-injury-and-damage}
-
-Damage received in combat, or in other situations, impacts on the current
-physical or mental health of the character.
-
-## Injury statistics {#BaM-gen-injury-statistics}
-
-Generic damage is measured in _Damage Points_ (**DP**), which can cause
-_wounds_ if exceeding a threshold. Some damage sources can also cause directly
-a _wound_.
-
-The severity of a _wound_ determine the amount of _injury points_ it inflicts
-to the character.
-
-_Damage points_, _wounds_ and _injury points_ (**IP**) have different effects on
-different characters, depending on the most appropriate way to keep track of
-damage in a particular context. For example, living creatures will die if they
-sustain too many _wounds_, while a body-less AI could not be wound, but be
-able to sustain a certain amount of **DP** before being disabled.
-
-## Wounds and Injury points {#BaM-gen-injury-points}
-
-The severity of wounds determine the amount of injury points it inflicts on
-the characters receiving them, according with the following table:
-
-| Wound severity  | Injury points |
-|-----------------|--------------:|
-| Light           | 1             |
-| Serious         | 2             |
-| Heavy           | 4             |
-
-
-## Standard Injury Rule {#BaM-m-standard-injury-rule}
-
-The most common rule regulating **DP**, _wounds_ and **IP** is called
-_standard injury rule_, and is applied to any character unless differently
-specified.
-
-Commonly, when the received damage passes a certain threshold called
-_resistance level_ (**RL**), the character suffers a wound.
-
-In the base system, the **RL** is [__health__](#BaM-c-health), for physical damage, 
-and [__equilibrium__](#BaM-c-equilibrium),  for mental damage.
-
-### Disable Level {#BaM-m-disable-level}
-
-Characters have a _disable level_ (**DL**), which is expressed either
-in _number of wounds_ (**DL/W**) or in injury points (**DL/IP**). Once the
-count of _wounds_, or the total _injury points_, is equal or above the
-_disable level_, the character is _disabled_, that is, unable to perform
-any action, possibly unconscious or even dying.
-
-The default _disable level_ for human and human-sized animals is __DL/W__=4:
-they can sustain 4 wounds before being disabled.
-
-### Scratches {#BaM-m-scratches}
-
-Sustained damage that is not enough to cause a wound counts as a _scratch_.
-Once a character receives a number of _scratches_ equal to its __DL/W__,
-it suffers a __light wound__ (and the count of _scratches_ is cleared).
-
-### Injury thresholds {#BaM-m-injury-threshold}
-
-To determine the severity of wounds generated by the received damage, follow
-this table:
-
-| RL    | Light | Serious | Heavy |
-|-------|-------|---------|-------|
-| 19-21 | 4     | 11      | 18    | 
-| 16-18 | 3     | 9       | 15    |
-| 13-15 | 3     | 8       | 13    |
-| 10-12 | 2     | 6       | 10    |
-| 7-9   | 2     | 5       | 8     |
-| 3-6   | 1     | 3       | 5     |
-
-The table is computed through the following procedure:
-
-1. Divide the **RL** by 6 and round up to get the *light wounds* threshold.
-1. Divide the **RL** by 3 and round up.
-1. Add numbers at 1 and 2 to get the *serious wounds* threshold.
-1. Add numbers at 2 and 3 to get the *heavy wounds* threshold.
-1. Add 4 to the **RL** to get the *deadly wounds** threshold.
-
-For example, with **RL** 8, divide by 6 and round up, to get the *light wounds* threshold,
-which is 2. Then, divide 8 by three and round up, obtaining 3. The *serious* and *heavy*
-thresholds are respectively 2+3=5 and 2+3+3=8. Then, add 4+8=12 for the *deadly wounds*
-threshold.
-
-> You should write down the _injury thresholds_ for __health__, __equilibrium__
-and other **RL** statistics on your character sheet.
-
-### Injury penalty {#BaM-m-injury-penalty}
-
-Unless differently specified, any character suffers a negative modifier
-equal to the currently sustained **IP** to _any action_.
-
-### Deadly Wounds (optional) {#BaM-m-deadly-wounds}
-
-When the damage sustained is greater than the **RL**+4, the character receives a
-_deadly wound_.
-
-To avert an immediate death, the character must win _resistance check_ against
-the damage source. For example, if the damage was
-caused by a poison, the character must perform a check on
-[__poison resistance__](#BaM-s-poison-resistance).
-
-> The description of skills indicates whether it can be used in specific
-_resistance checks_ or not.
-
-When character can't use any specific resistance skill, the check is performed
-on __body__, if the damage is physical, or __mind__, if it's mental.
-
-If the check is successful, the character receives a _heavy wound_.
-
-> Remember that the _resistance check_ receives a negative modifier equal
-to the current count of injury points, as any other action.
-
-
-### Disabled Status {#BaM-m-disabled-status}
-
-When a character receives more _wounds_ or **IP** than it can sustain,
-it becomes disabled.
-
-The following Disabled Status Table describes the seriousness of the disabled
-status on humanoids and human-sized animals in common settings:
-
-| Injury Points                        | Consequence                          |
-|--------------------------------------|--------------------------------------|
-| Less than 6                          | Character is disabled but conscious  |
-| 6-7                                  | Character is unconscious for 2 hours |
-| 8-9                                  | Character will die within 2 hours    |
-| 10+                                  | Character will die within 10 minutes |
-
-
-When a character is disabled, performing any action against it (including
-killing it) doesn’t require checks; however, this doesn’t apply if the acting
-character is anyhow busy with something else, for example, in a combat.
-
-A disabled character can recover naturally, if the wounds are not serious
-enough; otherwise, unless treated, it will die.
-The action of treating potentially lethal is called _stabilization_.
-Specific skills, perks and magic
-can be used in order to stabilise a disabled character.
-
-## Special Injury Rules
-
-Here follow some different _injury rules_ applied to specific type of
-characters. Your setting might
-have different rules for the same characters described here, as the following
-are just examples taken from the basic rules.
-
-* Ghosts (weak): **DL/IP**=4 (can sustain 4 IPs before being disabled); 
-  moreover, and any light wound is automatically turned into a serious wound.
-* Vampires (low rank): **DL/W**=8. When disabled, if the total count of injury
-  points is less than 16, they are forced to retreat and cannot combat until
-  healed. If it's higher, they turn into ash.
-* Zombies: They are immune to light or serious wounds, but are destroyed when
-  they receive a heavy or deadly wound.
- * Orcs: **DL/W** = 6. Also, their _disabled
-     status_ table is the same as that for humans with a bonus of 2 points
-     (e.g. they are conscious up to 8 injury points).
-
-Below, there are some examples of characters following the
-_standard injury rule_ with some special parameters:
-
-* Dragons: They have **DL/IP**=16. This means that
-   they can sustain 16 injury points before becoming disabled,
-   regardless from the wound count.
-* Goblins and Kobolds: Their **DL/W** is 3. It means that they can receive
-   3 wounds only before becoming disabled.
-
-
-## Localized Wounds (optional)
-
-When a heavy wounds occurs, usually, the GM decides what’s the
-heavy effect sustained by the character. However, there are some skills
-can direct damage to a specific part of the body, or some situations that
-involve only certain areas of a target. In those case, the effect of an
-heavy wound will be described by some specific rule.
-The following table is the Heavy Table for humans; it be used to select
-a random effect for heavy wounds, using a 3d6 roll, on humanoid figures.
-
-| Roll Result                          | Effect                               |
-|--------------------------------------|--------------------------------------|
-| 3-4                                  | Leg Numbed, half movement speed.     |
-| 5-8                                  | Arm Numbed, half carrying capacity.  |
-| 9-12                                 | Arm Disabled, 1/4 carrying capacity. |
-| 13-16                                | Leg Disabled, 1/4 movement speed.    |
-| 17                                   | Deafness.                            |
-| 18                                   | Blindness.                           |
-
-
-Human-sized 4 legged animals are subject to the following Heavy Table:
-
-| Roll Result  | Effect                             |
-|--------------|------------------------------------|
-| 3-8          | Fore Leg Numbed, half movement speed and carrying capacity  |
-| 9-16         | Aft Leg disabled, 1/4 movement speed and 1/4 carrying capacity |
-| 17           | Deafness                            |
-| 18           | Blindness                           |
-
-
-## Damage Type
-
-Physical and mental damage are further divided in
-sub-types towards which characters might have specific resistances.
-
-### Elemental Damage {#BaM-m-elemental-damage}
-
-Damage caused by energy, or in general, by life-threatening conditions the
-character might be subject to, is called elemental damage. It is important do
-determine which kind of elemental damage is sustained, as some characters can
-have resistance to some kind of element, while other might have a specific
-weakness.
-
-All elemental damage cause physical damage, unless differently specified. For
-example, the fantasy element _pure magic_ generates mental damage.
-
-Elemental damage bypasses specific mental or physical resistances, but not
-generic resistances. For example, a flame thrower will generate heat damage,
-against which any specific cut, piercing and blunt damage resistance is useless;
-however, a generic resistance to physical damage would still apply.
-
-The elemental damage types are:
-
-* _Chemical_: includes acid and any poisonous substance.
-* _Cold_: for example, ice and unsustainable cold.
-* _Electricity_: for example, lightning or electric shocks.
-* _Heat_: for example, fire and unsustainable heat.
-* _Light_: Some creatures are damaged by light (radiation in the visible spectrum).
-  _Doesn’t include lasers (which generate heat) or other radiation damage.
-* _Pure Magic_: metaphysical damage induced by magic, causing non-specific
-  _mental_ damage. Does not include magic spells creating a material
-  effect (for example, causing something to catch fire) or directly attacking
-  the mind (i.e. a hypnosis inducing magic spell).
-* _Radiation_: for example, exposition to radioactive material, neutron guns,
-  microwaves etc.
-* _Void_: complete air pressure deprivation, i.e. the effects of deep space.
-
-### Mental Damage {#BaM-m-mental-damage}
-
-Mental damage types are:
-
-* _Despair_: The mental attack or stress provokes a state of mental
-  exhaustion, akin with depression, where the victim is less likely
-  to be willing to fight for their own life, or simply, to live.
-  Not to be confused with
-* _Maddening_: The attack strips the victim character of its rationality,
-  making its thought processes less coherent, and making it to believe
-  things that are not true. It provokes sentiments of paranoia, terror, 
-  alienation, or alternatively, irrational boldness.
-* _Confusion_: This kind of damage confuses the mind of the target,
-  dumbing down its movement, altering its perception, provoking hallucinations
-  and generally scrambling perception and memories. The thought processes
-  of the victim is still sound, and it usually recognises the hallucinations
-  as not being real and can deal with the numbed sensations, unless it’s also
-  maddened.
-
-### Physical Damage {#BaM-m-physical-damage}
-
-Physical damage types are:
-
-* _Blunt_: Impacts, falls, body slams and blunt weapons generate
-   _blunt damage_.
-* _Cut_: Sharp weapons generate _cut_ damage, regardless of the
-  weapon being used to slash or thrust. For example, a slash hit from a
-  broadsword, a thrust from a pike and the wound caused by an arrow are all
-  generating _cut damage_.
-* _Piercing_: high-power weapons, with the potential to pass through the whole
-  body of the target, and with high penetrating power against armours and
-  covers, generate _piercing damage_. Guns, lasers, and high-yield crossbows
-  are example of piercing weapons.
-
-Notice that simple arrows are _normally_ considered generating
-_cut damage_, as they would be stopped by the same kind of armour
-designed to stop other cut weapons, but some high-yield modern bow might
-generate _piercing damage_ instead.
-
-## Damage Mitigation
-
-Incoming damage can be mitigated in several ways. Medieval warriors wear armours
-that are extremely effective against _cut_ damage; modern army and militia
-fighters wear _piercing_ resistant kevlar jackets; an advanced AI might have redundancy
-modules to mitigate the effect of _maddening_; a monk can meditate to absorb
-_despair_, and so on.
-
-
-The amount of incoming damage removed is called _damage mitigation_ (**DM**).
-
-Armours, advantages and other means of mitigation that act regardless of the
-activity of the character provide an automatic **DM** called
-_passive mitigation_.
-
-Also, some skills can actively be used to mitigate incoming damage;
-in that case, the character receiving the damage must perform a successful
-check on the skill to activate the mitigation.
-
-
-The total value of mitigation after counting all the sources is subtracted from
-the incoming damage.
-
-Mitigation cannot reduce the incoming damage to less than 0 **DP**.
-
-### Scratches on active mitigation (optional)
-
-If the count of **DP** after _passive mitigation_ is 0, the character doesn't
-receive any damage. However, if it's brought down to zero by
-_active mitigation_, a scratch is generated nevertheless (unless the the
-character has the [__total mitigation__](#BaM-a-total-mitigation) advantage).
-
-## Conditions and Status
-
-_Conditions_ are "standardised" negative effects that a particular
-damage source can add, other than causing a direct damage.
-
-When a condition is applied to a character for a prolonged time, it becomes a
-__status__.
-
-* *Wound*: A success causes an immediate wound — the seriousness of the wound
-  being described here or in the skill description.
-* *Block*: the target is grappled or anyhow blocked. The description of the
-  skill will specified whether the attacker is blocked too.
-* *Stun X*: the target is stun for a count X of turns, giving it a modifier
-  of -2 to any action.
-* *Fall*: The target falls on the ground, and is “grounded” for the next turn.
-* *Disarm*: The target loses its weapon.
-* *Cripple*: A limb of the target is crippled and becomes impaired. All
-  actions requiring that limb receives a -4 modifier. If the crippled
-  limb is a leg, 4-legged animals reduce their movement to half, bipedal
-  animals (including human) to 1/4.
 
 
 

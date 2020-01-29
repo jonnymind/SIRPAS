@@ -1,4 +1,4 @@
-# Attributes {#BaM-gen-attributes}
+# Attributes {#BaM-m-attributes}
 
 Attributes describe a character as syntetically as possible. 
 They are the most important statistics, on which
@@ -87,11 +87,12 @@ works in those contexts).
 
 ### Health {#BaM-c-health}
 
-Health (*H*) represents the resistance to fatigue, illness and polluted 
-environment (including allergenic agents). The level of health
-influences also the amount of damage that a body can sustain before
-being wounded, and that’s very important in fights and other 
-dangerous situations
+Health (**H**) represents the resistance to fatigue, illness and polluted 
+environment (including allergenic agents). It's used to determine how many
+*fatigue points* are generated in sitautions where the body is under strain,
+and gives the base for all resistance skills 
+(i.e. [poison resistance](#BaM-s-poison-resistance)).
+
 
 ## Mind {#BaM-c-mind}
 
@@ -104,7 +105,7 @@ in the reference setting will have a mind between 10 and 12.
 
 ### Will {#BaM-c-will}
 
-Will (*W*) is the power of the mind to focus on a certain task, 
+Will (**W**) is the power of the mind to focus on a certain task, 
 perform prolonged mental activity, keep determination in 
 adverse situations and so on. It can be roughly thought as the 
 equivalent of the strength (*S*) in the mind realm.
@@ -112,17 +113,19 @@ equivalent of the strength (*S*) in the mind realm.
 
 ### Intelligence {#BaM-c-intelligence}
 
-Intelligence (*I*) is the ability to understand and solve complex problems, 
+Intelligence (**I**) is the ability to understand and solve complex problems, 
 comprehend difficult study subjects, see through schemes and machinations 
 etc. As it measure the flexibility of the mind processes, it can be thought 
-as the dexterity (*D*) of the mind.
+as the dexterity (**D**) of the mind.
 
 ### Equilibrium {#BaM-c-equilibrium}
 
-Equilibrium (*E*) is the stability of the mind, 
-or basically the equivalent of its health (*H*).
+Equilibrium (**E**) is the stability of the mind, 
+or basically the equivalent of its health (**H**). It determines how much
+mental stress a character can sustain before receiving a *stress point*.
  
 It indicates how much mental strain a person can take before being debilitated; 
 of course, it is also important in those settings where attacks are delivered 
 to the mind instead of the body: fantasy, sci-fi and horror settings 
 can present as many dangers for the mind as for the body, or more.
+
