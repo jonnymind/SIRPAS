@@ -64,7 +64,12 @@ of its (in)success margin. For example, if it loses with a **SM** of -6, it rece
 The character can then use any sensible mitigation (armor or skills, if possible) to reduce
 the raw **DP**.
 
-A *critical failure* means that the character receives a *heavy wound* automatically. 
+A *critical failure* means that the character receives a *heavy wound* automatically.
+Notice that, if one party is larger than the other, some of the characters in that party
+will not be directly confront a character on the other side; so, the lowest-scoring
+characters will be unharmed. However, they may still score a *critical failure* and
+receive a wound because of that.
+ 
 
 
 
