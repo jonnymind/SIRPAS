@@ -108,7 +108,7 @@ list of skills for which she has acquired any **specific value**, and that are b
 knowing that the **specific value** of [hiding](#BaM-s-hiding) is 3, she will update the total value 
 from 16 to 17.
 
-### Baseless statistics {#BaM-m-baseless-statistic}
+### Baseless Statistics {#BaM-m-baseless-statistic}
 
 Not every statistics has a base. Some skills can't be "improvised" naturally, and must be learned
 specifically. For example, everyone can swing a sword, but learning a style of swordsmanship is 

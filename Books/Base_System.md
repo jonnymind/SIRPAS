@@ -216,7 +216,7 @@ list of skills for which she has acquired any **specific value**, and that are b
 knowing that the **specific value** of [hiding](#BaM-s-hiding) is 3, she will update the total value 
 from 16 to 17.
 
-### Baseless statistics {#BaM-m-baseless-statistic}
+### Baseless Statistics {#BaM-m-baseless-statistic}
 
 Not every statistics has a base. Some skills can't be "improvised" naturally, and must be learned
 specifically. For example, everyone can swing a sword, but learning a style of swordsmanship is 
@@ -955,7 +955,7 @@ __status__.
 
 
 
-# Skills {#BaM-gen-skills}
+# Skills {#BaM-m-skills}
 
 Skills are abilities that a character can exercise at a certain moment, and 
 They are usually based on a single attribute; this means that, if the character
@@ -1224,12 +1224,26 @@ Technical knowledge for recognizing (_normal_) and producing (_hard_) poisons.
 
 |   |   |
 |------|-------|
-| Base | B/M/- |
+| Base | H/E/- |
 | Type | H |
 | Prereq | - |
-| Spec | Dmg type |
+| Spec | **DP** source type |
 
-The character 
+The character has aqcuired a specific resistance against
+a determined damage source. The base of the resistance
+depends on the macro-category of the danage source,
+as specified in the following table:
+
+| Damage type | Base        |
+|-------------|-------------|
+| Physical    | Health      |
+| Mental      | Equilibrium |
+| Elemental   | Elem. Res.  |
+
+The advantage [Elemental Resistance](BaM-a-elemental-resitance) gives
+the base against elemental damage.
+
+
 
 ## Riding/mount (mD) {#BaM-s-riding}
 
@@ -1281,9 +1295,20 @@ its modifier prior attempting to remove it.
 
 # Advantages {#BaM-gen-advantages}
 
-Advantages special conditions that apply to the character in general or to a specific skill in particular, and that have a direct effect on some game mechanics.
-While most advantages are simply possessed by a character or not, some can have different levels. For example, Survival Instinct can have a level 1 and 3, each level granting a higher modifier. In that case, the description of the advantage indicates the initial cost and the cost per additional level. The cost of a further level is given by the base cost, plus the additional level cost times the current level. For example, if the description indicates the cost of being 5/2, it means that the first level costs 5, the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
-Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. For example, they could require having already acquired another advantage, or having a certain minimal score in some specific statistic.
+Advantages special conditions that apply to the character in general or to a specific skill in particular, 
+and that have a direct effect on some game mechanics.
+
+While most advantages are simply possessed by a character or not, some can have different levels. 
+For example, Survival Instinct can have a level between 1 and 3, each granting a higher modifier. 
+
+In that case, the description of the advantage indicates the initial cost and the cost per additional level. 
+The cost of a further level is given by the base cost, plus the additional level cost times the current level. 
+For example, if the description indicates the cost in **CP** being 5+2, it means that the first level costs 5, 
+the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
+
+Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. 
+For example, they could require having already acquired another advantage, or having a certain 
+statistic at a minimum set score.
 
 
 
@@ -1332,6 +1357,26 @@ is mental.
 
 Easy checks on the target skill get an additional modifier 
 of +1, and trivial checks have an additional modifier of +2.
+
+## Elemental Resistance {#BaM-a-elemental-resistance}
+
+|   |   |
+|------|--|
+| Spec |  |
+| Cost | 4+1CP |
+| Prereq | - |
+| Max | - |
+
+The character has an innate resistance (or vulnerability,
+if the value is negative) to elemental attacks. This
+constitute the base for the [resistance](#BaM-s-resistance-source)
+skill against elemental sources.
+
+This advantage should be granted only in settings where it
+makes sense, i.e. as a racial characteristic of a fantasy
+race, or for characters genetically engineered, or for
+synthetic life forms as androids etc.
+
 
 ## Expertise/skill (6CP) {#BaM-a-expertise}
 
@@ -1432,11 +1477,12 @@ Cannot be countered by buying Survival Instinct.
 Perks and drags are generic advantages and disadvantages that don’t 
 impact the game system directly. They usually give more flavour  in 
 terms of roleplaying, and better define a character in its settings.
- Being famous, of noble origins, being able to play a certain instrument, 
- knowing a certain literature or scientific topic, being rich, and the 
- inverse of those are considered perks. 
+
+>Being famous, of noble origins, being able to play a certain instrument, 
+knowing a certain literature or scientific topic, being rich, and the 
+inverse of those are considered perks (or drags). 
  
-They can and usually will have an influence in how the adventure play, 
+They can and usually will have an influence in how the adventure plays, 
 and some of them has also some indirect effect on the rules. For example, 
 Medical Knowledge is mainly meant for your character to be able to speak 
 competently about illnesses and cures, but it also influences the rolls on 
@@ -1446,7 +1492,12 @@ direction, but it also influences the skill Intimidate.
 
 ## Aristocrat {#BaM-a-aristocrat}
 
-*Cost*: 20, 30, 40 CP
+|   |   |
+|------|--|
+| Spec |  |
+| Cost | 20/30/40 CP |
+| Prereq | - |
+| Max | - |
 
 The character is an aristocrat in the target setting. In settings
 that don’t comprise a birth right, traditional aristocracy, the
@@ -1547,6 +1598,36 @@ the disadvantage. For example, having an laptop/tablet/phone that provides
 the character with speech-to-text recognition is still being deaf, but
 having the ability to communicate telepathically with demonic minions and
 use their hearing would invalidate this perk.
+
+## Famous {#BaM-a-famous}
+
+|   |   |
+|------|--|
+| Spec |  |
+| Cost | 10/15/20 CP |
+| Prereq | - |
+| Max | - |
+
+The character is famous and easily identified by its peers.
+Also, whoever wants to know about the character, or searching
+for it because of any specific reason (i.e. to hire it for
+a job, or to hunt it down), can easily find information
+about it and its general whereabouts, unless the character
+actively disguises and hides.
+
+The cost depends on how famous the character is:
+
+* 10CP: Konw by 1/20th-1/10th of the population; people
+  occasionally identify it when walking by, or tells it
+  they heard about it.
+* 15CP: Konwn by 1/5th of the population. During a day out,
+  or a long walk, the character is sure to be recognized,
+  and possibly stopped by admirers (or haters).
+* 20CP: Known by more than half the poulation. Wherever the
+  character goes, it is recognized, and when that happens,
+  people flocks to see it.
+
+
 
 ## Field Expert {#BaM-a-field-expert}
 

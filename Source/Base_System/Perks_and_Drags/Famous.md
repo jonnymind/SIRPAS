@@ -15,7 +15,7 @@ Also, whoever wants to know about the character, or searching
 for it because of any specific reason (i.e. to hire it for
 a job, or to hunt it down), can easily find information
 about it and its general whereabouts, unless the character
-actively disguises.
+actively disguises and hides.
 
 The cost depends on how famous the character is:
 
