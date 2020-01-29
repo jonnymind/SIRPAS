@@ -9,13 +9,11 @@ For example, you can use this method when two small bands are shooting at
 each other using the __firearm__ skill, or involved in a fist fight and
 using __brawl__, or taking part in a little __swordfight__ skirmish.
 
-To perform combat as a _simplified combat_, all the participants must:
-1. Agree to use the skills based on the same _root skill_.
-   For example, a _simplified combat_ can take place when all the characters
-   use __brawl__ or its derived skill __full contact__, but not
-   if one of the characters is going to use __archery__ or __firearms__.
-2. Be actually able to use the skills involved. It's common
-	knowledge that you don't bring a knife in a gunfight.
+To perform combat as a _simplified combat_, all the participants must use combat 
+skills that belong to the same _category_.
+For example, a _simplified combat_ can take place when all the characters
+use a form of melee unarmed combat, melee armed combat, distance combat,
+mental combat and so on.
 
 However, a character can use __Generic Combat Skills__ skill to participate
 a fight this way, if they agree. For example, if everyone else is using
@@ -24,79 +22,49 @@ but not knowing __swordfight__, could use __Generic Combat Skills/slash__
 instead, which acts as a sort of base for everyone trying to swing a
 weapon.
 
-In the most extreme cases, a player might wish to go along
-with its companions, just using using an __instinctive defence__.
-
-### Fight Duration {#BaM-m-simplified-combat-fight-duration}
-
-In terms of fight length, each contest lasts a number of rounds equal to the
-number of participants.
-
 ### Fight Resolution {#BaM-m-simplified-combat-fight-resolution}
 
-The fight is performed in the following order:
-1. Everyone involved rolls on the selected skill.
-1. To each roll, add the __dominance__ of the skill chosen by every character,
-   and if present, also the __dominance__ of their weapon.
-1. Order the scores from each party in decreasing values.
-1. The top score in one party is matched against the top of the other;
-   the second highest on one side is matched against the second highest on the other; and so on.
-1. Considering the lowest score in each pair, add the __dominance__ of the
-   armour of the losing character, if present.
-1. If the lower score is still lower after adding the armour __dominance__,
-   the roll counts as a _victory_ for the other character; otherwise, it is
-   discarded.
-1. The party realising the highest number of victories is the winning side.
+The simplified combat starts with a multi-contest; each participant
+uses the skill it prefers to use in this context (possibly, the highest one).
+If they have a weapon, the characters will also add its __dominance__.
 
-In case the number of victories is the same on each side, repeat the
-procedure.
+In case the number of points scored in the multi-contest is the same on each side,
+repeat the procedure.
 
-The effect of winning is determined by the circumstances and the number of
-critical successes/failures on each party. For example, a tavern brawl is
-hardly lethal, and a "friendly" swordfight (i.e. in order to subdue or
-dissuade an opponent) might simply end with the surrender of the losing
-party.
+The final victory can be granted after a given number of rounds; 1, 3 or 5.
+The **GM** will decide how many rounds the fight will last in advance.
+
+The effect of winning is determined by the circumstances. For example, 
+a tavern brawl is hardly lethal, and a "friendly" swordfight (i.e. in order 
+to subdue or dissuade an opponent) might simply end with the surrender of the
+losing party.
 
 If you _want_ to determine the result of winning or losing the fight
 with more precision, you _can_ use the following rules.
 
-## Injury Generation in basic combat (optional) {#BaM-m-simplified-combat-injury}
+### Fight Duration {#BaM-m-simplified-combat-fight-duration}
 
-If the fight is serious, the losing party will receive:
-* Two light wounds for each defeat.
-* Two serious wounds for each critical failure.
-* Two heavy wounds for each critical success in the winning party.
+In terms of fight length, each round (multi-contest) lasts a number of
+combat turns equal to the number of participants of the largest party.
 
-The winning party takes two serious injuries for each critical failure.
-
-> Critical results are evaluated taking each pair of rolls as a contest,
-_after_ assigning the skill and weapon _dominance_ on the initial roll, 
-but before adding the armor _dominance_.
-
-### Damage Ranking {#BaM-m-simplified-combat-damage-ranking}
-
-The injuries are randomly distributed by a ranking (without draws) on
-either __body__ or __mind__, depending on the type of fight in which the
-party was involved.
-
-1. List the wounds the receiving party will take, in increasing order of
-severity (light to heavy).
-1. Assign as many wounds as necessary to match the __disable level__ to the
-last ranked, starting from top (the lightest wounds first).
-1. Continue with the second-last ranked, until all the wounds are assigned.
-
-Example: a party of four characters receive 6 light, 1 serious and 2
-heavy wounds _physical wounds_; all the characters have DL/W=4.
-1. the characters perform a draw-free ranking on __body__.
-1. The last classified receives 4 light wounds and is knocked out.
-1. the second-last receives 2 light, 1 serious and 1 heavy wound, and is
-   knocked out;
-1. the third-last receives the remaining heavy wound and is still in the fight.
-
-> Notice that the negative modifier for __injury points__ applies to _any_
-action, including the fight resolution rolls.
+For example, if three parties with 4, 5 and 6 members respectively are facing
+each other, each round will last 6 turns (usually, 10 seconds each, so one minute
+per round).
 
 ### Fight Continuation {#BaM-m-simplified-combat-fight-continuation}
 
-If the characters so desire, they can continue fighting, repeating the
-_fight resolution_ and the _damage ranking_, until there is someone standing.
+If the characters so desire, they can continue fighting until the losing party is
+ultimately defeated (all of its characters are disabled) or decides to flee.
+
+## Injury Generation in Simplified Combat (optional) {#BaM-m-simplified-combat-injury}
+
+In simplified combat, a losing character receives a number of **DP** equal to the inverse
+of its (in)success margin. For example, if it loses with a **SM** of -6, it receices 6 **DP**.
+
+The character can then use any sensible mitigation (armor or skills, if possible) to reduce
+the raw **DP**.
+
+A *critical failure* means that the character receives a *heavy wound* automatically. 
+
+
+
