@@ -1,4 +1,4 @@
-# Skills {#BaM-gen-skills}
+# Skills {#BaM-m-skills}
 
 Skills are abilities that a character can exercise at a certain moment, and 
 They are usually based on a single attribute; this means that, if the character

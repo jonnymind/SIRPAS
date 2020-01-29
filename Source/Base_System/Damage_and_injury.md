@@ -3,26 +3,36 @@
 A critical aspect of any RPG is the set of rules that determine how characters
 sustain damage and receive injuries.
 
-SIRPAS has a modular injury system, which can be fitted in any setting and system:
-it can be used to determine an overall status of a fight, or to determine precisely 
+SIRPAS has a modular injury system, which can be fitted in any setting and play styles.
+
+It can be used to determine an overall status of a fight, or to determine precisely 
 which part of a human body, mechanical robot, flying mount or AI virtual device 
-has been damaged, and to what extent it has been incapacitated. It can be employed
-to keep the score of harmless intellectual challenges, as well as devastating psychic
-attacs on the mental sanity of the characters.
+has been damaged, and to what extent it has been incapacitated. 
+
+It can be employed to keep the score of harmless intellectual challenges, 
+as well as devastating psychic attacs on the mental sanity of the characters.
 
 ## Damage Points {#BaM-m-damage-points}
 
-Damage can come in the way of characters in various forms, and from various 
-*damage sources*; the raw damage received is measured in *damage points* (**DP**).
+The *raw damage* a character receives is measured in *damage points* (**DP**).
 
-## Defences and Effective Damage {#BaM-m-defences-and-effective-damage}
+Damage can come in the way of characters in various forms, and from various
+sources; hence, **DP** have also a *quality*, which depends on which source
+is generating them.
 
-this inital estimation of received damage is modified through the application of
-*defences*, that reduce the incoming damage in various ways; they are mainly
+Physical harm, fatigue, heat, cold, mental stress etc. can be source. The
+base system divides them in three main categories: *physical*, *mental* and
+*elemental*. These macro-categories further subdivided
+in specific *damage sources*, which are defined further down. 
+
+## Effective Damage {#BaM-m-effective-damage}
+
+Incoming *raw damage* is modified through the application of
+*defences*, that reduce it in various ways; they are mainly
 divided in the following categories:
-* *Passive defences*: reducing the incoming **DP**s of a flat amount (like physical armors),
+* *Passive Defences*: reducing the incoming **DP**s of a flat amount (like physical armors),
   or dividing the damage by a certain factor, i.e. 4/5 or 3/4 (like magic or sci-fi shields),
-  or eventually by an hybrid formual (as in the case of specific resistences against some
+  or eventually by an hybrid formual (as in the case of specific resistances against some
   kind of damage).
 * *Active Defences*: the amount of reduced **DP**s depends on the use of a certain
   character ability. 
@@ -32,12 +42,6 @@ defences are applied to reduce the incoming **DP**s.
 
 The count of **DP**s left after the defences are applied is called *effective damage* (**ED**), and
 is used to evaluate the effect of the damage on the character.
-
->In many RPGs, a form of *health*, *constitution* or similar statistic determines how
-how much damage a character can take. In SIRPAS, similar attributes determine
-how the damage impacts on the character, reducing the effective damage it receives. More
-than stacking a single statistic, characters can acquire multiple resistances, skills and
-advantages to become progressively less affected by the same amount of damage.
 
 ## Wounds and Injury Points {#BaM-m-wounds}
 
@@ -55,8 +59,15 @@ once the **IP**s are above the maximum a character can sustain (its
 it becomes *incapacitated*, and it may eventually die, if the wounds
 are not treated.
 
->For example: A human has normally **IR** 9; this means it can sustan 1 light wound and 2 heavy wounds, 
-or 4 serious wounds, before becoming unable to act, and possibly unconscious.
+>For example: A human has normally **IR** 9; this means it can sustan 
+1 light wound and 2 heavy wounds, or 4 serious wounds, before becoming
+unable to act, and possibly unconscious.
+
+>In many RPGs, a form of *health*, *constitution* or similar statistic determines how
+how much damage a character can take. In SIRPAS, **IR** serves this purpose,
+and it's mostly fixed; more than stacking a single statistic, characters can 
+acquire multiple resistances, skills and advantages to become progressively 
+less affected by the same amount of damage.
 
 *Scratches* and *deadly wounds* are treated differently.
 

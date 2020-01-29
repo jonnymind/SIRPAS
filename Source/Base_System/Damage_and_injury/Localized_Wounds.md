@@ -1,15 +1,22 @@
-## Localized Wounds (optional)
+## Localized Wounds {BaM-m-localized-wounds}
 
-When a heavy wounds occurs, usually, the GM decides what’s the
-heavy effect sustained by the character. However, there are some skills
-can direct damage to a specific part of the body, or some situations that
-involve only certain areas of a target. In those case, the effect of an
-heavy wound will be described by some specific rule.
-The following table is the Heavy Table for humans; it be used to select
-a random effect for heavy wounds, using a 3d6 roll, on humanoid figures.
+By default, wounds are generally directed in the generic direction of the body,
+but some abilities allow to aim a certain specific part of the body.
 
-$(include /tables/localized_wounds.md)
+When a wound is localized on a specific body part (an arm, a leg), 
+any action involing that body part receives the double amount of
+penalty from that wound type. For instance, a *heavy wound* localized
+on a leg will cause every action to receive a penalty of -2 points, 
+but the penalty will be -4 on *running*, *jumping*, and anything specifically
+involving that body part. 
 
-Human-sized 4 legged animals are subject to the following Heavy Table:
+This extends to non human and even virtual body parts as well: and AI receiving
+a heavy wound on a virtual device will have a double penalty if it tries to use
+that device to perform any action.
 
-$(include /tables/localized_wounds_4legs.md)
+A wound localized on the head adds an extra penalty point on every action. 
+Specifically, a light wound on the head will cause a penalty of -1, a serious
+wound a penalty of -2, and a heavy wound a penalty of -3 on every action
+performed by the character. Again, this extends to non human body parts too:
+and AI hit on its virtual core will follow the same rule.
+

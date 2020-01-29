@@ -110,11 +110,15 @@ class Processor:
 		table = self.get_json()
 		self.write_table(table)
 
-	def write_table(self, table):
+	def write_table(self, table, hidden_fields=False):
 		if not table:
 			return
 		header = 0
 		for line in table:
+			if line[0] and line[0][0] == '*':
+				if not hidden_fields:
+					continue
+				line[0] = line[0][1:]
 			header += 1
 			# skip creating a header separator if provided
 			if header == 2 and "--" not in line[0]:
