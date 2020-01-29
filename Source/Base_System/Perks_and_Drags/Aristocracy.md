@@ -1,6 +1,14 @@
 ## Aristocrat {#BaM-a-aristocrat}
 
-*Cost*: 20, 30, 40 CP
+$(dd perk_aristocrat)
+{
+  "*Name": "Aristocrat",
+  "*Short": "Chr. is in the aristocratic/political elite",
+  "Spec": "",
+  "Cost": "20/30/40 CP",
+  "Prereq": "-",
+  "Max": "-"
+}
 
 The character is an aristocrat in the target setting. In settings
 that don’t comprise a birth right, traditional aristocracy, the

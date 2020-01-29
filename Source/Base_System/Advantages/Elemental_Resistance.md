@@ -5,7 +5,7 @@ $(dd adv_elemental_resistance)
   "*Name": "Elemental Resistance",
   "*Short": "Base for elemental resistance skill",
   "Spec": "",
-  "Cost": "4CP",
+  "Cost": "4+1CP",
   "Prereq": "-",
   "Max": "-"
 }
