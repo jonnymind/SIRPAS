@@ -1,17 +1,30 @@
-## Healing/Race (-; H) {#BaM-s-healing}
+## Healing/Race {#BaM-s-healing}
 
-__*Prerequisite*__: *First Aid* 6
+$(dd skill_healing)
+{ 
+  "*Name": "Healing",
+  "*Brief": "Cure Illnesses",
+  "Base": "-",
+  "Type": "H",
+  "Prereq": "First-aid 3",
+  "Spec": "Race"
+}
 
 The character has advanced practical medical knowledge for the setting
-where the adventure takes place, and is able to heal wounds of the target
-creatures. 
+where the adventure takes place, and is able to heal illnesses, poisoning
+and equivalent conditions for the target settings.
 
-The following table is applied when checking for the character success:
+For instance, in a magic world where curses can cause illnesses, this
+skill can also be used to treat the effect of the curses.
 
-$(include /tables/healing.md)
+In a virtual words where AIs can be infected with viruses, this skill
+can be used to run an anti-virus.
 
-Specific healing aids in the target setting can provide other modifiers.
-The time required for the healing to be performed depends on the setting
-and on the device used. A SF cellular replicator or a magic balm could
-allow healing heavy wounds in one day, in a few hours or in minutes,
-while in other settings, an herbal healing remedy might require a week.
+The type of illness determine the difficulty of the check. The following table 
+gives a basic reference frame for deciding the difficulty of a check.
+
+$(include tables/healing.md)
+
+Specific information about the setting will be used by the GM or directly
+given in the descriptioin of the illnesses in order to determine the 
+check difficulty.
