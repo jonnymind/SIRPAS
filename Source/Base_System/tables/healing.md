@@ -3,7 +3,7 @@
 | Common Cold                      | Trivial                          |
 | Light Fever                      | Easy                             |
 | Intestinal Fever                 | Normal                           |
-| Viral Infection/Pneumonia        | Difficult                        |
-| Malaria/Yellow Feever            | Hard                             |
+| Malaria/Pneumonia                | Difficult                        |
+| Plague/Yellow Feever             | Hard                             |
 
 
