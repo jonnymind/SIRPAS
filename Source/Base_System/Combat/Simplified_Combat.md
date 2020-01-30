@@ -66,8 +66,8 @@ the raw **DP**.
 
 A *critical failure* means that the character receives a *heavy wound* automatically.
 Notice that, if one party is larger than the other, some of the characters in that party
-will not be directly confront a character on the other side; so, the lowest-scoring
-characters will be unharmed. However, they may still score a *critical failure* and
+will not directly confront a character on the other side; so, the lowest-scoring
+characters will be mostly unharmed. However, they may still score a *critical failure* and
 receive a wound because of that.
  
 
