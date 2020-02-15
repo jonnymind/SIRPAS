@@ -8,7 +8,7 @@ Sirpas provides several sub-systems to resolve conflicts, increasingly
 detailed (and complex):
 
 * *Simplified Combat*: It's a simple way to resolve small combats.
-	It consists in a specialized form of _skill contest_ applied to combat
+	It consists in a specialized form of _multi-ranking_ applied to combat
 	skills, which takes into account the relative ranking in the contests to
 	determine winners, losers, and other possible outcomes.
 * *Basic Combat*: It's a sub-system dedicated specifically to combat, using
