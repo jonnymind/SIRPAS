@@ -53,8 +53,8 @@ $(include Perks_and_Drags/*.md)
 $(-- Section: COMBAT  --)
 
 $(include Combat.md)
-$(include Combat/Basic_Combat.md)
 $(include Combat/Simplified_Combat.md)
+$(include Combat/Basic_Combat.md)
 $(include Combat/Advanced_Combat.md)
 
 $(include Combat/Combat_Styles.md)
