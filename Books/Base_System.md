@@ -358,7 +358,7 @@ and gives the base for all resistance skills
 
 ## Mind {#BaM-c-mind}
 
-The Mind (**M**) is the overall score of mental abilities in terms of intelligence,dcreativity, 
+The Mind (**M**) is the overall score of mental abilities in terms of intelligence, creativity, 
 will power, mental sanity, depth of knowledge and so on. 
 A mind level 3 represents a character that is barely functional as an autonomous person (or
 creature) in the reference setting, while a 18 represents a character maximally intelligent, 
