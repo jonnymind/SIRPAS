@@ -182,7 +182,7 @@ which can be slightly increased through advantages.
 before becoming *incapacitated*. A normal human has **FgR** 9,
 which can be slightly increased through advantages.
 * *Stress Resistance* (**StR**): number of *stress points* a character can take 
-before becoming *incapacitated*. A normal human has **FgR** 9,
+before becoming *incapacitated*. A normal human has **SgR** 9,
 which can be slightly increased through advantages.
 
 ## Base and Specific Values {#BaM-m-base}
