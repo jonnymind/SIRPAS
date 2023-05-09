@@ -244,13 +244,13 @@ Attributes are organized in hierarchies, with top-level attributes called **main
 
 The base systems defines the following attributes:
 * Body (**B**): The phyisical aspect of the character. Body attributes are:
-** Strength (**S**): raw phisical power;
-** Dexterity (**D**): speed, precision and control over actions performed with the body;
-** Health (**H**): Resilience against fatigue, injury and illness.
+	* Strength (**S**): raw phisical power;
+	* Dexterity (**D**): speed, precision and control over actions performed with the body;
+	* Health (**H**): Resilience against fatigue, injury and illness.
 * Mind (**M**): describes the mental prowess of a character. Mind attributes are:
-** Will (**W**): strength of conviction and assertiveness.
-** Intelligence (**I**): ability to understand and solve complex problems; mental flexibility.
-** Equilibrium (**E**): resilience to mental strain, stress and madness.
+	* Will (**W**): strength of conviction and assertiveness.
+	* Intelligence (**I**): ability to understand and solve complex problems; mental flexibility.
+	* Equilibrium (**E**): resilience to mental strain, stress and madness.
 
 Higher level attributes form the **base** of lower level ones. This meanst that the lower
 attributes are computed _by difference_ with respect to their base. They start off as having
