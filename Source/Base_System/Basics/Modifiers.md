@@ -1,4 +1,4 @@
-# Modifiers {#BaM-gen-modifiers}
+# Modifiers
 
 In some situation, instead of using a statistic as a direct base, 
 the system requires to use a base modifier.

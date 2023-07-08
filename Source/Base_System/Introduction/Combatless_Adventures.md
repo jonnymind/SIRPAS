@@ -1,4 +1,4 @@
-## Combatless Adventures {#BaM-gen-introduction}
+## Combatless Adventures
 
 In most RPG settings, combat is a central part of the game action, if not the
 absolute protagonist. This leads to RPG systems being usually structured around

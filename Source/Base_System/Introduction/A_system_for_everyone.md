@@ -1,4 +1,4 @@
-## A system for everyone {#BaM-gen-a-system-for-everyone}
+## A system for everyone
 
 Sirpas is for everyone: beginners, intermediate and veteran players.
 

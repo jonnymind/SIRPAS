@@ -6,20 +6,10 @@ $(--
 	LICENSE: CC-BY-ATTR Share-alike
 --)
 
-$(-- Section: INTRODUCTION --)
-
-$(include Introduction.md)
-$(include Introduction/A_system_for_everyone.md)
-$(include Introduction/Any_World.md)
-$(include Introduction/Combatless_Adventures.md)
+$(include Introduction)
+$(include Basics)
 
 
-$(-- Section: BASISC --)
-$(include Mechanics.md)
-$(include Statistics.md)
-$(include Attributes.md)
-$(include Modifiers.md)
-$(include Character_points.md)
 
 $(-- Section: CHECKS --)
 
