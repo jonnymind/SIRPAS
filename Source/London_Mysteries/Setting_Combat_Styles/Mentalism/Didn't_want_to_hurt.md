@@ -9,7 +9,7 @@ $(dd cm_mentalism_didnt_want_to_hurt_you)
 	"Damage": "__SM__+3"
 }
 
-This manoeuvre provides a sort of safety net in case of failure.
+This maneuver provides a sort of safety net in case of failure.
 
 In case of success, it delivers the damage as usual. In case of failure,
 the next attack receives a +1 modifier and +1 **DP** modifier.

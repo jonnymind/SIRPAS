@@ -10,4 +10,4 @@ $(dd cm_if_you_only_knew_me)
 }
 
 This is an attack that has a negative modifier, but on failure,
-it blocks any damage incoming from the successful defence.
+it blocks any damage incoming from the successful defense.

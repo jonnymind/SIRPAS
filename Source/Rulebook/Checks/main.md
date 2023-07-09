@@ -1,0 +1,6 @@
+$(include Simple_check.md)
+$(include Repeated_attempts.md)
+$(include Direct_contest.md)
+$(include Ranking_rolls.md)
+$(include Multi_contest.md)
+$(include Critical_Results.md)

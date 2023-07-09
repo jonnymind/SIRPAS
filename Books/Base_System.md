@@ -575,7 +575,7 @@ a *normal difficulty*, trying to beat the opponent's roll.
 
 Some contest can be asymmetrical: for example, an attacker will roll on some
 attack skill, while a defender will try and prevent the attacker success using
-some defence skill. The skill and combat sections describe some possible
+some defense skill. The skill and combat sections describe some possible
 asymmetric skills, but players and masters (and other expansions) might come up
 with new ones if the situation suggests so.
 
@@ -755,19 +755,19 @@ in specific *damage sources*, which are defined further down.
 ## Effective Damage {#BaM-m-effective-damage}
 
 Incoming *raw damage* is modified through the application of
-*defences*, that reduce it in various ways; they are mainly
+*defenses*, that reduce it in various ways; they are mainly
 divided in the following categories:
-* *Passive Defences*: reducing the incoming **DP**s of a flat amount (like physical armors),
+* *Passive Defenses*: reducing the incoming **DP**s of a flat amount (like physical armors),
   or dividing the damage by a certain factor, i.e. 4/5 or 3/4 (like magic or sci-fi shields),
   or eventually by an hybrid formual (as in the case of specific resistances against some
   kind of damage).
-* *Active Defences*: the amount of reduced **DP**s depends on the use of a certain
+* *Active Defenses*: the amount of reduced **DP**s depends on the use of a certain
   character ability. 
 
 The way different kind of damages impact on the characters is fully considerd by the way
-defences are applied to reduce the incoming **DP**s.
+defenses are applied to reduce the incoming **DP**s.
 
-The count of **DP**s left after the defences are applied is called *effective damage* (**ED**), and
+The count of **DP**s left after the defenses are applied is called *effective damage* (**ED**), and
 is used to evaluate the effect of the damage on the character.
 
 ## Wounds and Injury Points {#BaM-m-wounds}
@@ -1482,7 +1482,7 @@ hours, even if not treated.
 
 ## Combat Expert/style (10/5CP) {#BaM-a-combat-expert}
 
-The character can perform one additional defence with the selected 
+The character can perform one additional defense with the selected 
 style per combat turn.
 
 ### Combative Spirit 1-6 (7/3 CP) {#BaM-a-combative-spirit}
@@ -1551,7 +1551,7 @@ each level of this skill.
 
 __*Preprequisite*__: *B* 7
 
-The character gains a passive defence against blunt
+The character gains a passive defense against blunt
 damage equal to the level acquired, and against cut
 damage equal to half the level of this advantage.
 
@@ -1604,7 +1604,7 @@ automatically heal in 6 hours, even if not treated.
 
 ## Survival Instinct 1-4 (6/3CP) {#BaM-a-survival-instinct}
 
-All instinctive defence checks and contests get a modifier
+All instinctive defense checks and contests get a modifier
 of +1 per level bought.
 
 
@@ -1623,7 +1623,7 @@ spent elsewhere, in other statistics.
 
 ## Lack of Instinct 1-4 (6/3CP) {#BaM-a-lack-of-instinct}
 
-All instinctive defence checks and contests get a -1
+All instinctive defense checks and contests get a -1
 modifier per level bought. 
 
 Cannot be countered by buying Survival Instinct.
@@ -1870,7 +1870,7 @@ detailed (and complex):
 	the combat skills with specific rules, and takes into account positioning,
 	tactical advantages and other combat-specific elements.
 * *Advanced Combat*: This is the full fledged combat system, extending the
- 	_basic combat_ and using special sub-skills called _manoeuvres_.
+ 	_basic combat_ and using special sub-skills called _maneuvers_.
 
 You can mix and match these sub-systems in the same adventure, without
 limitation. You can either choose one or another depending on the experience
@@ -1889,7 +1889,7 @@ fighting each other.
 
 Combat is divided in turns. Normally, characters can perform just one action
 per turn, but certain skills and advantages grant the ability to perform more
-manoeuvres.
+maneuvers.
 
 The length of the turn depends on the settings: it might be one second in a Wild
 West setting where gunslingers are fighting, ten seconds when considering melee
@@ -1923,13 +1923,13 @@ actions left unused.
 
 A character might also decide not perform any action when its turn comes; if it does so,
 it can prehempt any other action performed later on by characters down the initiative
-ranking, or eventually use a defence to respond to a later attack.
+ranking, or eventually use a defense to respond to a later attack.
 
-### Instinctive Defence {#BaM-m-basic-combat-instinctive-defence}
+### Instinctive Defense {#BaM-m-basic-combat-instinctive-defense}
 
 In some situations, the defender is aware of the incoming attack (i.e. has seen
-the attacker and is ready to receive the blow) but can’t use any defence. One
-reason might be that it already used all the defence at its disposal in a combat
+the attacker and is ready to receive the blow) but can’t use any defense. One
+reason might be that it already used all the defense at its disposal in a combat
 turn and can’t react any more, or it might be that it has no proficiency in that
 kind of combat — this often happens with metaphysical attacks directed at
 targets that don’t have a specific skill to use in response — or in case it’s
@@ -1937,8 +1937,8 @@ explicitly dictated by the rules — for example, defending against any attack
 after using disengage.
 
 In those cases, provided the defender is at least aware of the attacks, it can
-use either an [instinctive defence](#BaM-s-generic-combat-instinctive-defence)
-(against physical attacks) or a [willpower defence](#BaM-s-generic-combat-willpower-defence)
+use either an [instinctive defense](#BaM-s-generic-combat-instinctive-defense)
+(against physical attacks) or a [willpower defense](#BaM-s-generic-combat-willpower-defense)
 (against mind attacks).
 
 ### Moving during combat
@@ -1949,7 +1949,7 @@ It is possible to move during combat at the speed indicated in the
 Opponents targeting the character (either because they are nearby in melee,
 or because they have aimed at them previously) can use an attack against
 them to prevent them from moving. In that case, the moving character must 
-successfully defend with the (__disengage__)[#BaM-s-generic-combat-disengage] generic manoeuvre. 
+successfully defend with the (__disengage__)[#BaM-s-generic-combat-disengage] generic maneuver. 
 If it fails, other than receiving normal damage, it also stays unmoved, and
 the action is nevertheless consumed.
 
@@ -1975,11 +1975,11 @@ Combat skills are divided into _melee_, _ranged_ and _metaphysical_.
 ### Mixing different skill ranges
 
 In some cases, it is necessary to mix differently ranged skills as attack
-and defences.
+and defenses.
 
 For example, an archer could be overcome by a
 soldier armed with a sword. It might then be be forced, or simply prefer,
-to use its _archery_ skill as its defence.
+to use its _archery_ skill as its defense.
 
 Similarly, a martial artist could spot a shooter, and decide to use its
 _full contact_ skill to try and avoid to be hit.
@@ -2015,7 +2015,7 @@ distance to the target:
 
 ### Cover
 
-Cover provides a modifier to the defence against ranged attacks.
+Cover provides a modifier to the defense against ranged attacks.
 
 | Cover         | Modifier |
 |:--------------|---------:|
@@ -2027,7 +2027,7 @@ Cover provides a modifier to the defence against ranged attacks.
 
 If a character has _full coverage_ and doesn't attack, nor moves, nor doesn't
 perform any action that exposes it, it cannot be attacked with a ranged weapon.
-The defence is required only if the character is actually performing an action
+The defense is required only if the character is actually performing an action
 that would expose part of it out of the cover.
 
 A _partial cover_ is a high wall, large tree or column, three feet rock, and
@@ -2093,21 +2093,21 @@ can simply roll on the attack skill, with the following difficulty table:
 
 
 
-### Attack and Defence
+### Attack and Defense
 
-When an attack is declared, the target (or targets) can use a defence, either
-by using a specific combat skill or a _generic defence_.
+When an attack is declared, the target (or targets) can use a defense, either
+by using a specific combat skill or a _generic defense_.
 
 The attacker and all the affected targets perform a Contest using their
 chosen skill as a base.
 
 The attacker rolls and adds the value of the skill, as for any contest.
 
-Determined the value for the attack roll, each defender performs its defence,
-rolling on the chosen defence skill.
+Determined the value for the attack roll, each defender performs its defense,
+rolling on the chosen defense skill.
 
-A draw means that neither the attack nor the defence have been successful.
-A successful attack delivers a damage to the target. A successful defence
+A draw means that neither the attack nor the defense have been successful.
+A successful attack delivers a damage to the target. A successful defense
 might have an effect that depends on the used skill (it might also deliver
 a damage to the attacker).
 
@@ -2116,7 +2116,7 @@ a damage to the attacker).
 Damage is measured in **DP**, and is accounted as the established by the
 __injury__ rule.
 
-The damage delivered by a successful attack (or defence) is specified in the
+The damage delivered by a successful attack (or defense) is specified in the
 skill description under the _base damage_ voice; usually, it's computed
 adding the success margin of the contest to some attribute based modifier.
 
@@ -2126,8 +2126,8 @@ incantation) might further be applied. The final total damage delivered
 is called _active damage_ (__AD__).
 
 The character receiving the damage computes its _damage mitigation_ (__DM__)
-by adding _passive defences_ that can affect the damage source (i.e. armours),
-and eventually _active defences_ they might use.
+by adding _passive defenses_ that can affect the damage source (i.e. armours),
+and eventually _active defenses_ they might use.
 
 Finally, the target character receives a number of __DP__ = __AD__ - __DM__.
 This damage is accounted as specified by the [_injury and damage_](#BaM-m-injury-and-damage) rule.
@@ -2138,7 +2138,7 @@ A critical success doubles the value of the _success margin_ when computing
 the _active damage_. When the damage roll doesn't involve the **SM** in the
 computation of the **AD**, a critical result adds 4 **DP**.
 
-> Notice that some defences might generate a damage too.
+> Notice that some defenses might generate a damage too.
 
 A critical failure indicates a failure even when the roll itself would
 indicate a success. For example, suppose an attacker with __brawl__ 16 against
@@ -2229,21 +2229,21 @@ receive a wound because of that.
 
 Advanced Combat is the most sophisticated combat sub-system; it expands the
 basic combat system by adding a set of sub-skills for each combat skill,
-called _manoeuvres_.
+called _maneuvers_.
 
-_Manoeuvres_ represent a special action a character can take while using
+_Maneuvers_ represent a special action a character can take while using
 the combat skill.
 
-There are specific manoeuvres to attack and defend in each style, and each of
+There are specific maneuvers to attack and defend in each style, and each of
 them has different balances of difficulty of execution versus potential damage,
-or different effects on the reset of the combat. Some manoeuvres provide
+or different effects on the reset of the combat. Some maneuvers provide
 modifiers to subsequent moves, while some other generate damage also
 when defending.
 
-### Manoeuvre types
+### Maneuver types
 
-Manoeuvres are divided into _attacks_, _defences_ and _actions_. Attacks and
-defences represent a mores specific usages of the base combat skill as
+Maneuvers are divided into _attacks_, _defenses_ and _actions_. Attacks and
+defenses represent a mores specific usages of the base combat skill as
 per the _base combat_ rules; _actions_ are
 other ways a combat skill can be employed.
 
@@ -2251,54 +2251,54 @@ For example, __crouch__ is an action, and uses __Full Contact__
 as a normal skill, adding the eventual success margin to the next damage
 generated by an attack.
 
-For example, the __aim__ manoeuvre of the __firearms__ style is neither
-an attack nor a defence: it allows to use the __firearms__ skill as a normal
+For example, the __aim__ maneuver of the __firearms__ style is neither
+an attack nor a defense: it allows to use the __firearms__ skill as a normal
 skill that will success automatically, providing a modifier to the next attack.
 
-### Manoeuvre modifier
+### Maneuver modifier
 
-Some manoeuvres are more difficult than others; some rely on brute force, others
-on finesse of execution. To reflect this, each manoeuvre can offer different
+Some maneuvers are more difficult than others; some rely on brute force, others
+on finesse of execution. To reflect this, each maneuver can offer different
 modifiers to the various combat skill rolls.
 
 In the advanced combat, the base skill modifier is ignored; only the
-manoeuvre modifier is used.
+maneuver modifier is used.
 
-### Manoeuvre damage
+### Maneuver damage
 
-Each manoeuvre has a different damage coefficient, which depends on various
+Each maneuver has a different damage coefficient, which depends on various
 factors. In the advanced combat, the _dominance_ of the base combat skill
 is ignored when computing the damage, as the damage generated by the skill
-is already incorporated in the manoeuvre damage modifier.
+is already incorporated in the maneuver damage modifier.
 
 However, eventual _dominance_ generated by weapons and other effects (i.e.
 temporary spells) are still added to the _active damage_.
 
 ### Diminishing Returns
 
-Some manoeuvres get a negative modifier if being used repeatedly against the same
+Some maneuvers get a negative modifier if being used repeatedly against the same
 target. For example, repeating using a brawl/punch has diminishing returns: your
 opponent will read your move, and will be able to better defend against the same
 attack. In those situations, you’ll want to be less predictable, and use other
-manoeuvres, or other styles altogether.
+maneuvers, or other styles altogether.
 
-This factor is called __diminishing return__ (**DR**) for a certain manoeuvre.
+This factor is called __diminishing return__ (**DR**) for a certain maneuver.
 
 
 ## Combat Skills and Styles {#BaM-m-combat-skills-and-styles}
 
 The skills used in combat go under the name of _combat styles_. Each style
-offers a collection of sub-skills called _manoeuvres_, which are used in the
+offers a collection of sub-skills called _maneuvers_, which are used in the
 _advanced combat system_, and specify how a certain style is used during
 combat -- with the exception of [generic maneuveres](#BaM-s-generic-combat),
 which are proper skills on their own.
 
 Advantages and perks can be targeted at skills only: either _combat styles_ or
-_generic manoeuvres_
+_generic maneuvers_
 
 For example, the advantage [__expert/skill__](#BaM-a-expert) can be targeted at all
 the [__brawl__](#Brawl) combat style or at the [__disengage__](#BaM-s-generic-combat-disengage)
-generic manoeuvre, but not at the __punch__ manoeuvre of the __brawl__ style.
+generic maneuver, but not at the __punch__ maneuver of the __brawl__ style.
 
 The same combat style can also cover different kind of weapons, with some
 specific actions limited to some weapons. For example, Firearms is a combat
@@ -2322,7 +2322,7 @@ it requires 20 CP.
 The skills in this sections are combat skills not related with any
 _combat style_.
 
-They differ from normal manoeuvres in the fact that they don’t belong to any
+They differ from normal maneuvers in the fact that they don’t belong to any
 style, and as proper skills, they can be learned independently, and targeted by
 advantages and perks.
 
@@ -2331,25 +2331,25 @@ advantages and perks.
 |   |   |
 |------|------|
 | Cost | 4 CP |
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 
 
-Disengage is a defence allowing to move half the normal movement speed in the current turn. It automatically succeeds if the opponents are not trying to attack the character using it.
+Disengage is a defense allowing to move half the normal movement speed in the current turn. It automatically succeeds if the opponents are not trying to attack the character using it.
 On failure, the disengagement fails and the character cannot move.
 If the contest succeeds, the character can move even if other subsequent attacks succeed.
 
-### Instincitve Defence {#BaM-s-generic-combat-instinctive-defence}
+### Instincitve Defense {#BaM-s-generic-combat-instinctive-defense}
 
 |   |   |
 |------|------|
 | Cost | 3 CP |
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 
-The instinctive defence is used against physical attacks whenever
-it’s not possible to use any other defence, for example, because
-the character has used up all of the available manoeuvres for this turn.
+The instinctive defense is used against physical attacks whenever
+it’s not possible to use any other defense, for example, because
+the character has used up all of the available maneuvers for this turn.
 
 It’s ineffective against mind attacks.
 
@@ -2380,7 +2380,7 @@ crossbows) can.
 | Damage | __SM__ |
 | Condition | __(Stun 2)__ |
 
-A generic combat manoeuvre that can be used with any weapon, including improvised ones. Clubs made out of table legs, guns without ammunitions used as maces, and in general anything you swing at an opponent without knowing exactly what you’re doing is covered under this manoeuvre.
+A generic combat maneuver that can be used with any weapon, including improvised ones. Clubs made out of table legs, guns without ammunitions used as maces, and in general anything you swing at an opponent without knowing exactly what you’re doing is covered under this maneuver.
 The damage type depends on the nature of the weapon. It can be either cut or blunt.
 On critical success, it applies stun for 2 turns.
 
@@ -2417,23 +2417,23 @@ A critical success applies also the stun condition for 2 turns.
 | Damage Type | cut |
 | Damage | __SM__ |
 
-A generic manoeuvre performed with any pointed or cutting weapon,
+A generic maneuver performed with any pointed or cutting weapon,
 (always causing __cut__ damage),
 including improvised ones. The character thrusts the weapon forward.
 On success, it causes a piercing damage for half the success margin
 plus the dexterity.
 
-### Willpower Defence {#BaM-s-generic-combat-willpower-defence}
+### Willpower Defense {#BaM-s-generic-combat-willpower-defense}
 
 |   |   |
 |------|------|
 | Cost | 3 CP |
-| Type | Defence |
+| Type | Defense |
 | Modifier | mW |
 
-The willpower defence is used against mental attacks, whenever
-it’s not possible to use any other defence, for example, because
-the character has used up all of the available manoeuvres for
+The willpower defense is used against mental attacks, whenever
+it’s not possible to use any other defense, for example, because
+the character has used up all of the available maneuvers for
 this turn.
 
 ## Archery {#BaM-s-archery}
@@ -2450,9 +2450,9 @@ weapons.
 Unless differently specified, all attacks from *archery* deal __cut__ damage,
 and the range depends on the used weapon.
 
-The number of manoeuvres the character can use per round depends on the level of Archery:
+The number of maneuvers the character can use per round depends on the level of Archery:
 
-| Level | Manoeuvres |
+| Level | Maneuvers |
 |-----|---|
 | 1-9 | 1 |
 | 10-16 | 2 |
@@ -2465,7 +2465,7 @@ The number of manoeuvres the character can use per round depends on the level of
 | Type | Action |
 | Prereq | Archery 3 |
 
-Take a manoeuvre to improve the next attack, giving it a modifier of +1.
+Take a maneuver to improve the next attack, giving it a modifier of +1.
 It can be repeated any number of times within a single turn, but the
 modifier is applied only to the very next Shoot.
 
@@ -2514,7 +2514,7 @@ The modifier to be applied depends on the target part of the body:
 | DR | -1 |
 | Limitation | Bows |
 
-Take a manoeuvre to bend the bow more than normal in order to improve
+Take a maneuver to bend the bow more than normal in order to improve
 the next attack, giving it a damage modifier equal to the success
 margin of this check.
 
@@ -2529,7 +2529,7 @@ Loads two arrows or two bolts in the weapon. The very next attack will have a
 fixed modifier of -3, but the character gains an extra attack
 to be used in the current or the next turn.
 
-> This manoeuvre gains an extra attack only. Defence and action count
+> This maneuver gains an extra attack only. Defense and action count
 is not affected.
 
 This is useful when it’s not currently possible or ideal to attack a target, but
@@ -2562,12 +2562,12 @@ useful in other combat situations.
 Every human or humanoid character has access to brawl.
 
 Unless differently specified, all attacks from *brawl* deal __blunt__
-damage, and all the manoeuvres are melee.
+damage, and all the maneuvers are melee.
 
-The number of manoeuvres the character can use per round depends on
+The number of maneuvers the character can use per round depends on
 the level of brawl:
 
-| Level | Manoeuvres |
+| Level | Maneuvers |
 |-----|---|
 | 1-5 | 1 |
 | 5-10 | 2 |
@@ -2578,7 +2578,7 @@ the level of brawl:
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mS |
 | Prereq | Brawl 1 |
 | DR | -1 |
@@ -2595,7 +2595,7 @@ a sword or a mace.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 | Prereq | Brawl 1 |
 | DR | -1 |
@@ -2691,10 +2691,10 @@ specifically supporting mind powers. However, the style is suitable for sci-fi
 settings to handle fights between AIs, robots, hackers and so on, with
 low-resolution.
 
-The number of manoeuvres the character can use per round depends on the level
+The number of maneuvers the character can use per round depends on the level
 of Concentration:
 
-| Level | Manoeuvres |
+| Level | Maneuvers |
 |-----|---|
 | 1-7 | 1 |
 | 8-13 | 2 |
@@ -2719,7 +2719,7 @@ in order to cause maddening.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mW |
 | Prereq | Concentration 1 |
 | DR | -1 |
@@ -2748,7 +2748,7 @@ The character attacks by searching for painful memories and thoughts, in order t
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mI |
 | Prereq | Concentration 1 |
 | DR | -1 |
@@ -2770,7 +2770,7 @@ thought or memory, causing the attack to miss.
 The character tries to acquire the control of the defendant mind. On success,
 the defendant is unable to act until. To keep holding the target, the attacker
 must continue to use this attack with + 3 modifier against it at each turn. When
-this manoeuvre is used against a blocked target, diminishing return is not
+this maneuver is used against a blocked target, diminishing return is not
 applied on either side.
 
 The attacker must keep using this attack once per turn and can’t move or perform
@@ -2801,7 +2801,7 @@ On critical success, the target is stunned for 2 turn.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mI |
 | Prereq | Concentration 6 |
 | DR | -1 |
@@ -2809,9 +2809,9 @@ On critical success, the target is stunned for 2 turn.
 | Damage | __SM__-2 |
 
 The defendant turns the mental attack against the attacker.
-If the defence is successful, the attacker is hit back for a
+If the defense is successful, the attacker is hit back for a
 number of despair points equal to the success margin
-of the defence minus two (minimum 1 dp).
+of the defense minus two (minimum 1 dp).
 
 ## Firearms {#BaM-s-firearms}
 
@@ -2831,11 +2831,11 @@ All the damage type caused by *firearms* is of __piercing__ type, unless differe
 specified.
 
 Everyone can shoot with a firearm; as such, the firearms style is available to
-anyone, but most manoeuvres have a relatively high pre-requisite.
-The number of manoeuvres the character can use per round depends on the level of
+anyone, but most maneuvers have a relatively high pre-requisite.
+The number of maneuvers the character can use per round depends on the level of
 Firearms:
 
-| Level | Manoeuvres |
+| Level | Maneuvers |
 |-----|---|
 | 1-5 | 1 |
 | 5-10 | 2 |
@@ -2849,7 +2849,7 @@ Firearms:
 | Type | Action |
 | Prereq | Firearms 3 |
 
-Take a manoeuvre to improve the next attack, giving it a
+Take a maneuver to improve the next attack, giving it a
 modifier of +1. It can be repeated any number of times within a 
 single turn, but the modifier is applied only to the very next 
 Shoot or Aimed Shoot, either within the same turn or in the very next one. 
@@ -2876,7 +2876,7 @@ heavy and heavy wounds becomes deadly.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 | Prereq | Firearms 2 |
 
@@ -2890,7 +2890,7 @@ Duck or evade while holding the firearm to avoid incoming fire.
 | Prereq | Firearms 4 |
 
 Ability to reload the weapon in the heat of the combat, using a
-manoeuvre.
+maneuver.
 
 ### Localized Shot {#BaM-s-firearms-localized-shot}
 
@@ -2951,7 +2951,7 @@ On critical success it causes a deadly wound.
 | Range | 15 ft |
 | Damage | __SM__+3 |
 
-Fires twice in a single manoeuvre, each time with reduced attack and
+Fires twice in a single maneuver, each time with reduced attack and
 damage. Can be used with pistols only.
 
 ### Shoot {#BaM-s-firearms-shoot}
@@ -2968,12 +2968,12 @@ Normal base attack with firearms.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | +3 |
 | Prereq | Firearms 3 |
 | DR | -2 |
 
-If a cover is within movement range for the turn, the character can use this defence to run towards a covered position, with a fixed +3 modifier.
+If a cover is within movement range for the turn, the character can use this defense to run towards a covered position, with a fixed +3 modifier.
 
 ## Full Contact {#BaM-s-full-contcat}
 
@@ -2989,20 +2989,20 @@ martial art, it’s a style of combat that requires dedication, and if
 professionally trained, can be quite effective even against more famous martial
 arts.
 
-A character using Full Contact can use all the manoeuvres from *Brawl* under
+A character using Full Contact can use all the maneuvers from *Brawl* under
 *Full Contact* instead (whichever has the higher level).
 
 All damage from *full contact* is of __blunt__ type, unless differently
 specified.
 
 A well trained full-contact fighter is as dangerous as an armed opponent.
-A character using Full Contact can use an extra manoeuvre from this style each
+A character using Full Contact can use an extra maneuver from this style each
 turn.
 
-For example, a character with Full Contact 10 has two manoeuvres it can
+For example, a character with Full Contact 10 has two maneuvers it can
 chose from either Full Contact or Brawl, plus one from Full Contact only.
 
-| Level | Manoeuvres |
+| Level | Maneuvers |
 |-----|---|
 | 1-5 | 1 |
 | 5-10 | 2 |
@@ -3013,7 +3013,7 @@ chose from either Full Contact or Brawl, plus one from Full Contact only.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mS-2 |
 | Prereq | Full Contact 3 |
 | DR | -2 |
@@ -3032,7 +3032,7 @@ Ineffective against non-melee and animal attacks.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD-2 |
 | Prereq | Full Contact 3 |
 | DR | -2 |
@@ -3057,7 +3057,7 @@ The character loads the next attack, receiving a **DP** modifier equal
 to the success margin to be used in the very next attack in Brawl
 or Full Contact styles.
 
-If the next manoeuvre used is not an attack, or if the attack fails, 
+If the next maneuver used is not an attack, or if the attack fails, 
 the modifier is lost.
 
 ### Elbow Blow {#BaM-s-full-contact-elbow-blow}
@@ -3101,10 +3101,10 @@ and grounded targets.
 Fighting with knives and very short swords has different mechanics than the ones used when wielding a longer blade. Basically, it’s like having a fist armed with a single fang.
 While the weapon themselves could be less effective than longer ones, the style itself can be extremely effective in every scenario.
 Knife fighting is particularly adequate for characters with a high dexterity.
-The number of manoeuvres the character can use per round depends on the level of Kinfe Fight:
+The number of maneuvers the character can use per round depends on the level of Kinfe Fight:
 
 (dt ac_knife_fight_levels)
-[["Level", "Manoeuvres"],
+[["Level", "Maneuvers"],
 ["1-5", 1],
 ["6-10", 2],
 ["11-15", 3],
@@ -3131,7 +3131,7 @@ wound_.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 | Prereq | Knife Fight 1 |
 | DR | -1 |
@@ -3160,10 +3160,10 @@ body.
 | Prereq | Knife Fight 2 |
 | DR | -2 |
 
-Use a manoeuvre to confuse the opponent and gain a +4 modifier on the next
+Use a maneuver to confuse the opponent and gain a +4 modifier on the next
 attack.
 
-The move is considered an attack, so the opponent must win a defence or
+The move is considered an attack, so the opponent must win a defense or
 suffer the standard penalty.
 
 ### Downstab {#BaM-s-knife-combat-downstab}
@@ -3183,7 +3183,7 @@ opponent body.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 | Prereq | Knife Fight 1 |
 | DR | -1 |
@@ -3207,7 +3207,7 @@ the success margin.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD-2 |
 | Prereq | Knife Fight 4 |
 | DR | -2 |
@@ -3272,7 +3272,7 @@ Attacks the target thrusting the knife forward, in a straight line.
 | Damage | __SM__+6 |
 | Condition | (__Injury__) |
 
-Try to grab the opponent while fighting, to deliver deeper wounds. On success, this manoeuvre delivers an injury one level higher than normal.
+Try to grab the opponent while fighting, to deliver deeper wounds. On success, this maneuver delivers an injury one level higher than normal.
 _Light wounds_ become severe,_ severe wounds_ become heavy, and
 _heavy wounds_ become deadly.
 
@@ -3296,13 +3296,13 @@ of each weapon, a character can learn the specific style.
 ###  Two-handed weapons
 
 This style can be used with large two-handed swords, maces and hammers as well;
-they prevent the usage of a shield (and any manoeuvre related requiring it),
+they prevent the usage of a shield (and any maneuver related requiring it),
 but give a **DP** modifier of +3.
 
-The number of manoeuvres the character can use per round depends on the level
+The number of maneuvers the character can use per round depends on the level
 of Sword Fight:
 
-| Level | Manoeuvres |
+| Level | Maneuvers |
 |-----|---|
 | 1-6 | 1 |
 | 7-11 | 2 |
@@ -3327,12 +3327,12 @@ A critical success stuns the opponent for 2 turns.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 | Prereq | Swordfight 1 |
 | DR | -1 |
 
-A basic defence; the character intercept the opponent’s blow with its own
+A basic defense; the character intercept the opponent’s blow with its own
 weapon, using its own dexterity.
 
 ### Feint {#BaM-s-swordfight-feint}
@@ -3352,19 +3352,19 @@ damage of very next attack.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mS |
 | Prereq | Swordfight 1 |
 | DR | -1 |
 
-A basic defence; the character intercept the opponent’s blow with
+A basic defense; the character intercept the opponent’s blow with
 its own weapon, using its own strength to resist it.
 
 ### Parry Projectiles {#BaM-s-swordfight-parry-projectiles}
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mD |
 | Prereq | Swordfight 6 |
 | DR | -1 |
@@ -3394,7 +3394,7 @@ ground. On success, the opponent is grounded for the rest of the turn.
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | mS+3 |
 | Prereq | Swordfight 2 |
 | DR | -1 |
@@ -3469,7 +3469,7 @@ The following table is a generic guide that indicates the type of material of wh
 ## Weapons {#BaM-gen-weapons}
 
 Weapons are either used unskilfully, using any one of the Generic Combat Skills, or through the appropriate combat style. The default damage (and often, damage type) caused by the weapon is already accounted for in the combat style; for example, Firearms/shoot causes a higher damage than Brawl/punch because guns are more lethal than bare hands.
-However, some special weapon (i.e. magic swords, experimental rifles etc.) might give their wielder a modifier either to the attack or defence rolls, or solely to the damage caused once a hit is scored.
+However, some special weapon (i.e. magic swords, experimental rifles etc.) might give their wielder a modifier either to the attack or defense rolls, or solely to the damage caused once a hit is scored.
 In the following table, the weight is the typical weight of for the given type of weapon, the range either the throwing distance or the range of the projectiles, in feet, and the cost is an indicative cost for a normal weapon of that kind.
 
 | Weapon Type        | Weight             | Range              | Cost              |

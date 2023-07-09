@@ -19,8 +19,8 @@ interrupt its walk and start all over again.
 Casting a spell, and moving to the next location in the tree of life always
 takes a combat turn. It’s not possible to speed up the casting (or slow it
 down), except with magical means. This means that this art doesn’t get more
-manoeuvres as it increases level, and there aren’t advantages giving more than
-one manoeuvre per turn.
+maneuvers as it increases level, and there aren’t advantages giving more than
+one maneuver per turn.
 
 If the caster is attacked, it must perform a focus check in order to avoid
 breaking the concentration. If the check fails, the caster needs to start from

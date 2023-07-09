@@ -208,10 +208,10 @@ that the character is being tricked into committing evil deeds.
 
 
 _Mentalism_ is an extension of the base combat style _concentration_.
-A mentalist can use all the manoeuvres from mind meld with either the level of
+A mentalist can use all the maneuvers from mind meld with either the level of
 _concentration_ or _mentalism,_ whichever is higher.
 
-| Level | Manoeuvres |
+| Level | Maneuvers |
 |-----|---|
 | 1-5 | 1 |
 | 6-10 | 2 |
@@ -243,7 +243,7 @@ A normal attack, causing directly a serious wound on critical success.
 | Damage Type | Maddening |
 | Damage | __SM__+3 |
 
-This manoeuvre provides a sort of safety net in case of failure.
+This maneuver provides a sort of safety net in case of failure.
 
 In case of success, it delivers the damage as usual. In case of failure,
 the next attack receives a +1 modifier and +1 **DP** modifier.
@@ -257,7 +257,7 @@ the next attack receives a +1 modifier and +1 **DP** modifier.
 | Prereq | Mentalism 3 |
 | DR | -1 |
 
-On success, the success margin of this manoeuvre gets added to the next
+On success, the success margin of this maneuver gets added to the next
 attack **DP**. However, the modifier is lost if the character is forced to
 use any other action other than an attack of _mentalism_ (or _concentration_), 
 or if the next attack fails.
@@ -274,20 +274,20 @@ or if the next attack fails.
 | Damage | __SM__+4 |
 
 This is an attack that has a negative modifier, but on failure,
-it blocks any damage incoming from the successful defence.
+it blocks any damage incoming from the successful defense.
 
 ### Meditation
 
 |   |   |
 |------|---------|
-| Type | Defence |
+| Type | Defense |
 | Modifier | -2 |
 | Prereq | Mentalism 6 |
 
-A defence that adds the success margin to the damage caused by the next attack,
+A defense that adds the success margin to the damage caused by the next attack,
 in this or the next turn.
 
-This manoeuvre can be used multiple times per turn and it doesn't have a
+This maneuver can be used multiple times per turn and it doesn't have a
 _diminishing return_, but each time it's used, the previously achieved **DP**
 modifier is discarded.
 
@@ -335,8 +335,8 @@ interrupt its walk and start all over again.
 Casting a spell, and moving to the next location in the tree of life always
 takes a combat turn. It’s not possible to speed up the casting (or slow it
 down), except with magical means. This means that this art doesn’t get more
-manoeuvres as it increases level, and there aren’t advantages giving more than
-one manoeuvre per turn.
+maneuvers as it increases level, and there aren’t advantages giving more than
+one maneuver per turn.
 
 If the caster is attacked, it must perform a focus check in order to avoid
 breaking the concentration. If the check fails, the caster needs to start from
@@ -416,9 +416,9 @@ Here follow the list of spells ordered by their path number. The offensive and d
 5. (Wisdom to Beauty) OFF: depress / DEF: reassure: The target gets a modifier of OFF: -2 / DEF: +2 to its mental damage mitigation (all damage types). A critical success adds a OFF: -1/ DEF:+1 modifier.  Lasts a number of combat turns equal to SM. (*)
 6. (Crown to Beauty) OFF: vulnerability / DEF: magic shield: The target gets a modifier of OFF: -2 / DEF: +2 to all magic resist checks. A critical success adds a OFF: -1/ DEF:+1 modifier.  Lasts a number of combat turns equal to SM. (*)
 7. (Knowledge to Beauty) OFF: expose / DEF: protect: The target gets a modifier of OFF: -2 / DEF: +2 to its physical damage mitigation (all damage types). A critical success adds a OFF: -1/ DEF:+1 modifier.  Lasts a number of combat turns equal to SM. (*)
-8. (Knowledge to Strength) OFF: slow / DEF: speed: if used offensively, the target loses a manoeuvre this turn (or skips the turn, if it had one action only). If used defensively, the target gains an extra manoeuvre. A critical success grants the removal / gain of 2 manoeuvres.
+8. (Knowledge to Strength) OFF: slow / DEF: speed: if used offensively, the target loses a maneuver this turn (or skips the turn, if it had one action only). If used defensively, the target gains an extra maneuver. A critical success grants the removal / gain of 2 maneuvers.
 9. (Strength to and from Mercy) Dispel: Removes a magic positive effect on a target, or causes SM spiritual damage to spiritual beings.
-10. (Mercy to Victory) OFF: fear / DEF: courage: When used offensively, the target tries to flee for the rest of the turn, and on critical success, also for the next turn, losing any manoeuvre. When used defensively, the target gets a +1 (+2 on critical success) modifier to all the defences in the rest of the turn.
+10. (Mercy to Victory) OFF: fear / DEF: courage: When used offensively, the target tries to flee for the rest of the turn, and on critical success, also for the next turn, losing any maneuver. When used defensively, the target gets a +1 (+2 on critical success) modifier to all the defenses in the rest of the turn.
 11. (Mercy to Beauty) OFF: despair / DEF: cheer up: Inflict/heal a number of points equal to SM of mental damage. The source of damage for the offensive attack is despair.
 12. (Strength to Beauty) OFF: smash / DEF: heal: Inflict/heal a number of points equal to SM of physical damage. When used offensively, the source of damage is blunt.
 13. (Strength to Splendour) OFF: Stun / DEF: Exalt: When used offensively, applies the status Stun to the target for 2 turns (3 on critical success). When used defensively, gives the Exalted status to the target for 2 turns (3 on critical success).
@@ -592,7 +592,7 @@ successfully conjured through a conjuring ritual.
 "Time": "2 turns"
 }
 
-The caster performs an attack against a mental defence of the defender. If the
+The caster performs an attack against a mental defense of the defender. If the
 attack is successful, it gains control of the target creature.
 
 To maintain the control, the caster must repeat the attack, and pay the price

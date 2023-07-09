@@ -7,7 +7,7 @@ $(dd cm_mentalism_grief)
 	"DR": "-1"
 }
 
-On success, the success margin of this manoeuvre gets added to the next
+On success, the success margin of this maneuver gets added to the next
 attack **DP**. However, the modifier is lost if the character is forced to
 use any other action other than an attack of _mentalism_ (or _concentration_), 
 or if the next attack fails.

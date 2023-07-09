@@ -7,7 +7,7 @@ $(dd spiritism_possession) {
 "Time": "2 turns"
 }
 
-The caster performs an attack against a mental defence of the defender. If the
+The caster performs an attack against a mental defense of the defender. If the
 attack is successful, it gains control of the target creature.
 
 To maintain the control, the caster must repeat the attack, and pay the price
