@@ -1,4 +1,4 @@
-## Repeated Attempts {#RB-repeated-attempts}
+## Repeated Attempts
 
 In some situation, it is possible to repeat a failed attempt soon after the
 first try, either by the same character or by another one in the same group.

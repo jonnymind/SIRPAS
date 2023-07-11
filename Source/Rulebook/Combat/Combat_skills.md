@@ -1,4 +1,4 @@
-## Combat skills {#RB-combat-skills}
+## Combat skills
 
 Every form of combat is based on special attributes called **combat skills**.
 They represent the proficiency of a character in fighting. 
@@ -20,7 +20,7 @@ the addition of the following characteristic:
   causing special effects to take place during the combat 
   (used in the _advanced system_ only). 
   
-### Generic combat skills {#RB-skill-range}
+### Generic combat skills
 
 Trying to attack any target against their will should always involve 
 a **combat skill**, even when not using a codified style of fighting. 
@@ -40,7 +40,7 @@ and they  don't have an associated **style**, that is,
 they cannot be used to execute any special **maneuver** in the advanced 
 combat system.
 
-### Skill Range {#RB-skill-range}
+### Skill Range
 
 Combat skills are divided into _melee_, _ranged_ and _metaphysical_.
 
@@ -55,7 +55,7 @@ Combat skills are divided into _melee_, _ranged_ and _metaphysical_.
    on another planet, as long as the user has a mean to see, feel or simply
    know _instantly_ about it.
 
-### Dominance {RB-Dominance}
+### Dominance
 
 The **dominance** (**Dom**) of a combat skill describes its effectiveness
 in a mixed combat, given opponents of the same skill level. 
@@ -84,7 +84,7 @@ For example, if you are able to bring a modern tank in a medieval setting,
 learning **modern warfare** may be easier than learning **traditional sword-fight**, 
 yet the dominance of the first will probably eclipse the second.
 
-### Styles and maneuvers  {#RB-styles-and-maneuvers}
+### Styles and maneuvers
   
 In the _advanced combat system_, **Combat skills** are associated with a _style_, that is a collection
 of actions that can be done using the skill (called **maneuvers**).

@@ -1,4 +1,4 @@
-# Damage and Injury {#RB-damage-and-injury}
+# Damage and Injury
 
 A critical aspect of any RPG is the set of rules that determine how characters
 sustain damage and receive injuries.
@@ -12,7 +12,7 @@ has been damaged, and to what extent it has been incapacitated.
 It can be employed to keep the score of harmless intellectual challenges, 
 as well as devastating psychic attack on the mental sanity of the characters.
 
-## Damage Points {#RB-damage-points}
+## Damage Points
 
 The *raw damage* a character receives is measured in *damage points* (**DP**).
 
@@ -23,7 +23,7 @@ is generating them.
 A source could be physical harm, fatigue, heat, cold, mental stress etc., as
 your module requires. 
 
-## Effective Damage {#RB-effective-damage}
+## Effective Damage
 
 Incoming *raw damage* is modified through the application of *defenses*, 
 that reduce it in various ways; they are mainly divided in the following categories:
@@ -41,7 +41,7 @@ defenses are applied to reduce the incoming **DP**s.
 The count of **DP**s left after the defenses are applied is called 
 *effective damage* (**ED**).
 
-## Effective Damage and Wounds {#RB-wounds}
+## Effective Damage and Wounds
 
 When sustaining a certain amount of damage, the character
 receive a certain kind of wound, according with the following table:
@@ -62,7 +62,7 @@ The number of *IP* that can be received before being incapacitated is
 determined by the **resistance** (**Res**) towards that damage source, which is
 an attributed defined by each module.
 
-### Wounds Penalty {#RB-wounds-penalty}
+### Wounds Penalty
 
 A character receives a penalty to any check of half the sum total of
 **IP**s across all types (rounded down). 
@@ -73,7 +73,7 @@ performing. You are not going to find a new theorem with a broken
 arm, and your fighting style will be less than effective if your
 mind is in shambles.
 
-## Scratches {#RB-scratches}
+## Scratches
 
 A character receiving an *effective damage* greater than 0, 
 but below the amount necessary to generate a wound receives a "scratch".
@@ -85,7 +85,7 @@ However, once received a certain number of scratches, they are considered
 as one light wound. The number is determined by the **scratch resistance** (**SRes**)
 to that damage type, which is defined by each module.
 
-### Non-scratches (optional) {#RB-direct-wounds}
+### Non-scratches (optional)
 
 When the damage received is mitigated to the point to be insignificant, 
 it doesn't generate a scratch.
@@ -95,7 +95,7 @@ that isn't accounted as a scratch. However, it may still generate negative effec
 for example apply any form of physical or magical poisoning, inject a virus in an AI
 or in a cyber brain and so on.
 
-## Deadly Wounds (optional) {#RB-deadly-wounds}
+## Deadly Wounds (optional)
 
 When a character receives more than 9 *ED* points, it sustains a wound that is
 potentially able to kill them immediately.
@@ -112,7 +112,7 @@ If the check is successful, the character receives a _heavy wound_.
 > Remember that the _resistance check_ has a negative modifier of half the
 received **IP**s, as any other action.
 
-## Direct Wounds {#RB-direct-wounds}
+## Direct Wounds
 
 In some situation, a character can receive a wound of a certain kind directly,
 and not as a consequence of a damage source dealing damage points. For instance,
@@ -126,7 +126,7 @@ an arbitrary wound as the attacker seems fit, etc.
 Direct wounds will immediately apply the relative **injury points** as if they were
 received through damage application.
 
-## Localized Wounds {RB-localized-wounds}
+## Localized Wounds
 
 By default, wounds are generally directed in the generic direction of the body,
 but some abilities allow to aim a certain specific part of the body.
@@ -151,7 +151,7 @@ to control the behavior of the target), it generates an additional **injury poin
 *Light wounds* generate 1 *IP*, while *medium* and *heavy wounds* generate 2 and 3
 **IP** respectively.
 
-### Curing wounds {#RB-direct-wounds}
+### Curing wounds
 
 As a wound is cured through any mean (medicine, magic, natural healing etc.), 
 its **IP** cost is removed.

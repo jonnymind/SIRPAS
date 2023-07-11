@@ -1,9 +1,9 @@
-## Basic Combat {#RB-basic-combat}
+## Basic Combat
 
 Sirpas _basic combat_ is a sub-system employed when two or more parties are
 fighting each other.
 
-### Combat Turns {#RB-basic-combat-combat-turns}
+### Combat Turns
 
 Combat is divided in turns. Normally, characters can perform just one action
 per turn, but certain skills and advantages grant the ability to perform more
@@ -17,7 +17,7 @@ fights between giant robots or starships and so on.
 For most situations, you’ll want to consider the length of a combat turn being
 10 seconds.
 
-### Combat order {#RB-basic-combat-order}
+### Combat order
 
 Each turn, a ranking throw called **combat order** is performed to determine the order in which
 every participant takes action. The attribute used for the ranking is decided
@@ -45,7 +45,7 @@ A character might also decide not perform any action when its turn comes; if it 
 it can interrupt any other action performed later on by characters down the initiative
 ranking, or eventually use a defense to respond to a later attack.
 
-### Instinctive Defense {#BaM-m-basic-combat-instinctive-defense}
+### Instinctive Defense
 
 In some situations, the defender is aware of the incoming attack (i.e. has seen
 the attacker and is ready to receive the blow) but can’t use any skill as a defense. 
@@ -63,22 +63,6 @@ an appropriate **generic combat skill** as a defense. Some **GCS** are meant spe
 to be used as instinctive defense, and may have a better base than more specific ones.
 For example, a module may have both **dodge** and **slash** as **GCS**, with **dodge**
 being a skill specific for defense only, and with a better base value than **slash**.
-
-### Moving during combat
-
-It is possible to move during combat at the speed indicated in the
-[__dexterity__](#BaM-c-dexterity) table.
-
-Opponents targeting the character (either because they are nearby in melee,
-or because they have aimed at them previously) can use an attack against
-them to prevent them from moving. In that case, the moving character must 
-successfully defend with the (__disengage__)[#BaM-s-generic-combat-disengage] generic maneuver. 
-If it fails, other than receiving normal damage, it also stays unmoved, and
-the action is nevertheless consumed.
-
-> If a character plans to move and there isn't any urgency to do that, it's
-better to wait for any opponent that might target them to use up all their
-attacks, so to be able to move freely.
 
 ### Mixing different skill ranges
 
@@ -189,10 +173,32 @@ The attacker rolls and adds the value of the skill, as for any contest.
 Determined the value for the attack roll, each defender performs its defense,
 rolling on the chosen defense skill.
 
-A draw means that neither the attack nor the defense have been successful.
+A draw means that neither the attack, nor the defense have been successful.
 A successful attack delivers a damage to the target. A successful defense
 might have an effect that depends on the used skill (it might also deliver
 a damage to the attacker).
+
+### Moving during combat
+
+It is possible to move during combat at a speed that can be reasonably covered
+in a combat turn. Modules can define the speed depending on module-specific attributes.
+
+Opponents targeting the character (either because they are nearby in melee,
+or because they have aimed at them previously) can use an attack against
+them to prevent them from moving, provided they still have actions 
+available in the combat round, and are in range of any part of the path 
+of their target. In that case, the moving character must successfully 
+defend using **disengage** as the only possible defense. 
+
+The **disengage** defense is either a viable defense of choice with -4 penalty,
+or a specific check/attribute defined by the modules.
+
+If it fails, other than receiving normal damage, it also stays unmoved, and
+the action is nevertheless consumed.
+
+> If a character plans to move and there isn't any urgency to do that, it's
+better to wait for any opponent that might target them to use up all their
+attacks, so to be able to move freely.
 
 ### Damage
 
@@ -203,7 +209,7 @@ The damage delivered by a successful attack (or defense) is specified in the
 skill description under the _base damage_ voice; usually, it's computed
 adding the success margin of the contest to some attribute based modifier.
 
-The _dominance_ of the skill, and eventually, of the used weapon is then
+The _dominance_ of the skill, and eventually of the used weapon, is
 added to the _base damage_; other modifiers (i.e. temporary magic
 incantation) might further be applied. The final total damage delivered
 is called _active damage_ (__AD__).
@@ -213,7 +219,7 @@ by adding _passive defenses_ that can affect the damage source (i.e. armours),
 and eventually _active defenses_ they might use.
 
 Finally, the target character receives a number of __DP__ = __AD__ - __DM__.
-This damage is accounted as specified by the [_injury and damage_](#BaM-m-injury-and-damage) rule.
+This damage is accounted as specified by the [injury and damage](#injury-and-damage) rule.
 
 ### Critical Rolls
 

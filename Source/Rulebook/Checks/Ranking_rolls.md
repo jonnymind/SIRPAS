@@ -1,4 +1,4 @@
-## Rankings {#RB-rankings}
+## Rankings
 
 Ranking rolls (**RNK**) are special contests between two or more characters, ranking them in a
 order that doesn’t allow for draws. Also, in *rankings* the **SM** is not relevant.

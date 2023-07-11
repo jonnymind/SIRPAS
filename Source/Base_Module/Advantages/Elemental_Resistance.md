@@ -12,7 +12,7 @@ $(dd adv_elemental_resistance)
 
 The character has an innate resistance (or vulnerability,
 if the value is negative) to elemental attacks. This
-constitute the base for the [resistance](#BaM-s-resistance-source)
+constitute the base for the [resistance](#resistance-source)
 skill against elemental sources.
 
 This advantage should be granted only in settings where it

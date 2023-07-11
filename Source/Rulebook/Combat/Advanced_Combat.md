@@ -1,4 +1,4 @@
-## Advanced Combat {#RB-advanced-combat}
+## Advanced Combat
 
 Advanced Combat is the most sophisticated combat sub-system; it expands the
 basic combat system by adding a set of sub-skills for each combat skill,

@@ -15,7 +15,7 @@ a **generic combat skill** and swing pieces of broken furniture around.
 In this cases, each participant will add the **dominance** value of the combat
 skill they're using. 
 
-### Fight Resolution {#RB-simplified-combat-fight-resolution}
+### Fight Resolution
 
 The simplified combat is a modified repeated multi-contest without draws.
 

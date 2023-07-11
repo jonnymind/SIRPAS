@@ -1,4 +1,4 @@
-## Critical Results {#RB-critical-results}
+## Critical Results
 
 [Automatic results](#RB-automatic-results) in simple checks are considered
 critical results, but a critical result can also be achieved when the

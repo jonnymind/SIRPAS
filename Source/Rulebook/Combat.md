@@ -1,4 +1,4 @@
-# Combat {#RB-combat}
+# Combat
 
 Combat is an advanced form of contest. In a normal contest, characters
 try to win one over another on specific skills, while in combat,

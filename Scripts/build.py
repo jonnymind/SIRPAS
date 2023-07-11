@@ -16,10 +16,14 @@ import json
 
 RE_COMMAND = re.compile("(.*)(?!\\\\)\\$\\((.*?)\\s+(.*?)\\)(.*)")
 
+def message(what):
+	pass
+	#print(what)
 
 class Processor:
-	def __init__(self, basepath, fout):
-		self.basepath = basepath
+	def __init__(self, fout):
+		message(f"Creating processor to {fout}")
+		self.basepath = None
 		self.fout = fout
 		self.fin = None
 		self.line = 0
@@ -63,17 +67,19 @@ class Processor:
 		flist.sort()
 		if len(flist) > 1:
 			for fin2 in flist:
-			   self.process(fin2)
-			return
+				self.process(fin2)
+				return
 		elif len(flist) == 0:
 			return
 		src = flist[0]
+		if os.path.isdir(src):
+			src = src + "/main.md"
 		with open(src, "r") as fin:
 			self.process_file(src, fin)
 
 	def process_file(self, src, fin):
-		self.push_current()
-		self.current = src
+		message(f"Processing file {src}")
+		self.push_current(src)
 		self.fin = fin
 		self.line = 0
 		for line in fin:
@@ -102,9 +108,13 @@ class Processor:
 			self.current = self.current_stack.pop()
 			self.line = self.line_stack.pop()
 
-	def push_current(self):
+	def push_current(self, current_file):
+		if not self.basepath:
+			self.basepath = os.path.abspath(os.path.dirname(current_file))
+			message(f"Base directory f{self.basepath}")
 		self.current_stack.append(self.current)
 		self.line_stack.append(self.line)
+		self.current = current_file
 
 	def process_dt(self, params):
 		table = self.get_json()
@@ -131,8 +141,8 @@ class Processor:
 	def process_dd(self, params):
 		ddict = self.get_json()
 		if ddict is None:
-                	self.print_error("Invalid DD entry: {}".format(self.get_json()))
-                	return
+			self.print_error("Invalid DD entry: {}".format(self.get_json()))
+			return
 		table = [[" ", " "]]
 		for key in sorted(ddict):
 			table.append([key[4:], ddict[key]])
@@ -188,6 +198,5 @@ else:
 	fout = sys.stdout
 
 for fin in opts.sources:
-	base = os.path.abspath(os.path.dirname(fin))
-	proc = Processor(base, fout)
+	proc = Processor(fout)
 	proc.process(fin)

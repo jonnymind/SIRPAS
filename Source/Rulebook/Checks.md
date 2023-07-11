@@ -1,4 +1,4 @@
-# Checks {#RB-checks}
+# Checks
 
 A check consists of throwing dices and verify if the result is successful.
 Checks are the nuts and bolts of SIRPAS. Practically every action that 

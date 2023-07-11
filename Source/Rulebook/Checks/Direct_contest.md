@@ -1,4 +1,4 @@
-## Contest {#RB-contest}
+## Contest
 
 Some actions are performed either in competition or against other characters.
 When this happens, a *contest* (**CNT**) must be performed. Both characters (or the

@@ -1,4 +1,4 @@
-# Perks and Drags {#RB-perks-and-drags}
+# Perks and Drags
 
 Perks and drags are generic advantages and disadvantages that don’t 
 impact the game system directly. They usually give more flavor  in 

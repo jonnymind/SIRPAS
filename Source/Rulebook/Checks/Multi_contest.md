@@ -1,4 +1,4 @@
-## Multi-contests {#RB-multi-contest}
+## Multi-contests
 
 A multi-contest (**mCNT**) is a contest between two or more parties,
 each comprising one or more characters. 
@@ -60,7 +60,7 @@ or grabbed each other in a brawl, while the two characters having scored points 
 winning party would have reached the top, nearly followed by the losers, 
 and at a distance, by the ones excluded from the contest.
 
-## Ranking generation for the **GM** {#RB-ranking-gm}
+## Ranking generation for the **GM**
 
 In a multi-contest, each player rolls its own dice, and performs its own computation, communicating
 the final result to the **GM**; the players may even sort their scores before

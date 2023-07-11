@@ -1,4 +1,4 @@
-## Simple check {#RB-simple-check}
+## Simple check
 
 A *simple check* is a test for the character to be able to perform a certain
 action, which requires a certain **skill** to be employed. For example, to verify 
@@ -31,12 +31,12 @@ Some skills may be performed only against a **normal** success level, but assign
 bonus or penalty depending on the situation. For example, trying to perform an acrobatic action
 while jumping from high may inflict a penalty that increases in proportion to the height of the jump.
 
-### Success Margin {#RB-success-margin}
+### Success Margin
 
 The difference between the **check result** and the **success level** is called **Success Margin** 
 (**SM**). The **SM** is 0 or above on success, and less than 0 on failure.
 
-### Automatic Results {#RB-automatic-results}
+### Automatic Results
 
 In a **simple check**, When a *natural 18* is scored, and if the action is of *normal* difficulty 
 or easier, the *simple check* is automatically passed, regardless the *check result* being actually 

@@ -1,4 +1,4 @@
-## Attributes {#RB-attributes}
+## Attributes
 
 Attributes describe a character as succinctly as possible. 
 They are organized in a hierarchy. Higher level attributes are more *generic*:
@@ -56,7 +56,7 @@ Attribute are described with:
 * Their *base* formula, if any
 * Their difficulty.
 
-### Training attributes {#RB-training}
+### Training attributes
 
 Higher level attributes form the **base** of the lower level ones. This means that,
 by default, all the sub-attributes of a top one will have its same value.

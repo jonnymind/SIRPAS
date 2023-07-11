@@ -17,4 +17,4 @@ $(include Perks.md)
 $(include Checks.md)
 $(include Damage_and_injury.md)
 
-$(inclide Technical.md)
+$(include Technical.md)

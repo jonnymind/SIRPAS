@@ -1,4 +1,4 @@
-# Statistics {#RB-statistics}
+# Statistics
 
 In SIRPAS, the statistics are all the numeric or quality values that define a characters. 
 They are divided in the following categories:

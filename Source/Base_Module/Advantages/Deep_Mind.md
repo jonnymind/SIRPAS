@@ -6,6 +6,6 @@ The character acquires a passive mitigation against despair
 damage equal to the level of this advantage, and a passive
 mitigation against maddening damage equal to half the level.
 
-When using the [Basic Combat System](#BaM-m-basic-combat), this advantage allows to
+When using the [Basic Combat System](#basic-combat), this advantage allows to
 to perform one extra __damage resist__ check per point, when the damage source
 is mental.

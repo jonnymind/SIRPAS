@@ -1,4 +1,4 @@
-# APPENDIX: Theorycrafting Elements {#RB-apx-theorycrafting-elements}
+# APPENDIX: Theorycrafting Elements
 
 In this appendix, you can find some technical elements about the numbers
 behind the SIRPAS system.
@@ -6,7 +6,7 @@ behind the SIRPAS system.
 This is also a place where we store our theory, and check our design
 explicitly, to see how it works when the dice start rolling.
 
-## Chance Table {#RB-chanche-table}
+## Chance Table
 
 This table gives you the probability to roll a certain number or to beat
 a certain value with the sum of 3d6.
@@ -18,7 +18,7 @@ _at least_ the number on the left, add both columns.
 
 $(include tables/chance_table.md)
 
-## Contest Table {#RB-context-table}
+## Contest Table
 
 This table shows how likely is to win, lose or achieve a draw on a contest
 roll, given a certain difference in the base.
@@ -35,5 +35,5 @@ other character is reversed.
 
 $(include tables/contest_table.md)
 
-Consider: with a -3 modifier, you have only 1 chance over five to win --
+Consider: with a -3 modifier, you have only 1 chance over five to win; 
 be very cautious fighting characters with higher bases than you.

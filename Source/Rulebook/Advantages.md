@@ -1,4 +1,4 @@
-# Advantages and Disadvantages {#RB-advantages}
+# Advantages and Disadvantages
 
 Advantages special conditions that apply to the character in general or to a specific attribute or set
 of attribute in particular, and that have a direct effect on some game mechanics.

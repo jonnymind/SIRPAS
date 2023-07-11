@@ -5,7 +5,7 @@ i.e. on or off. For example, a character may be *asleep* or *awake*: it's awaken
 be on/off.
 
 Some statuses have numeric values, and the character will be negatively affected if the number
-increases. For example, the number of [injury points]({#RB-injury-points}) is numeric status,
+increases. For example, the number of [injury points](
 the higher the worse.
 
 Finally, there are statuses that start at a certain maximum level, and as the characters use 
