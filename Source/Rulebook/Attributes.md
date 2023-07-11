@@ -46,12 +46,15 @@ but characters with a higher dexterity, or rather strength, are naturally better
 
 $(include /tables/modifiers.md)
 
-Suppose a skill has base declared as **mD**. This means the base of that skill is not **Dexterity**
-directly, but the modifier derived from the above table.
+To indicate that the base of an attribute is the modifier of another, the base is prefixed
+with a lower case "**m**". For example, Suppose a skill like **swimming** has base declared 
+as **mDex**. This means the base of that **swimming** is not the current value of **Dex**, 
+but the modifier of **Dex** derived from the above table.
 
 ### Attribute descriptions
 
 Attribute are described with:
+
 * Their short name (usually an acronym) always in **bold**.
 * Their *base* formula, if any
 * Their difficulty.
