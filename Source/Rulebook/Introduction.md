@@ -5,16 +5,17 @@ and extensible table-top RPG system, that aims to be as simple as needed and
 become as complex as you wish.
 
 SIRPAS is organized in the following components:
-* The **rulebook** (what you're reading now): bare-bone description of how the
+
+- The **rulebook** (what you're reading now): bare-bone description of how the
   system works. There isn't any list of skills, attributes, or specific 
   rendering of the rules in practice. At times we'll use some well known 
   skill that may be found in any generic RPG (e.g. *strength* or *climbing*) 
   to make some example of how the rules work, but nothing more.
-* The **base system**: a basic implementation of the rules, which describes
+- The **base system**: a basic implementation of the rules, which describes
   very generic attributes, skills, damage sources and other concrete aspect of the
   system, that should be general enough to be applied to most if not all the
   RPG settings you may come up with.
-* Additional **modules**: Extension of the base system (which may enrich it or
+- Additional **modules**: Extension of the base system (which may enrich it or
   change it if necessary), particularly adequate to describe some specific world
   or setting for your adventures.
 

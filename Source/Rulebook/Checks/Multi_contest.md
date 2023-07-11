@@ -36,11 +36,13 @@ a negative *SM* is assigned to the loser.
 **Example**: Three parties, composed of 3, 4 and 5 members respectively,
 try running up a hill before the others. They perform a *multi-contest*
 on a skill or attribute used for running. The rankings in each party result in:
+
 * Party A: 29-23-20
 * Party B: 26-25-22-19
 * Party C: 28-22-21-18-16
 
 The points are assigned as follows:
+
 * A = 29, B = 26, C = 28 - Point for A, **SM** of B = -3, **SM** of C = -1  
 * A = 23, B = 25, C = 22 - Point for B, **SM** of A = -2, **SM** of C = -3
 * A = 20, B = 22, C = 21 - Point for B, **SM** of A = -2, **SM** of C = -1

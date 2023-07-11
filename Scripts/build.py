@@ -49,6 +49,7 @@ class Processor:
 				tgt = (self.basepath + params) if params.startswith("/")\
 											 else os.path.join(origin, params)
 				self.process(tgt)
+				self.fout.write("\n")
 			except IOError as error:
 				self.print_error("Failed include {} - {}".format(
 								tgt, error))

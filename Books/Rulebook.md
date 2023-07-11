@@ -7,16 +7,17 @@ and extensible table-top RPG system, that aims to be as simple as needed and
 become as complex as you wish.
 
 SIRPAS is organized in the following components:
-* The **rulebook** (what you're reading now): bare-bone description of how the
+
+- The **rulebook** (what you're reading now): bare-bone description of how the
   system works. There isn't any list of skills, attributes, or specific 
   rendering of the rules in practice. At times we'll use some well known 
   skill that may be found in any generic RPG (e.g. *strength* or *climbing*) 
   to make some example of how the rules work, but nothing more.
-* The **base system**: a basic implementation of the rules, which describes
+- The **base system**: a basic implementation of the rules, which describes
   very generic attributes, skills, damage sources and other concrete aspect of the
   system, that should be general enough to be applied to most if not all the
   RPG settings you may come up with.
-* Additional **modules**: Extension of the base system (which may enrich it or
+- Additional **modules**: Extension of the base system (which may enrich it or
   change it if necessary), particularly adequate to describe some specific world
   or setting for your adventures.
 
@@ -78,30 +79,33 @@ media you’re reading the rulebook, we will:
    readers can skip.
 
 
+
 ## Feel of the system
 
 Sirpas has the following characteristics:
-* Generic: rules are meant to be applicable in any settings you can come up with. More on that later.
-* Modular: Sirpas has a lean set of rules called **Base System**. The base system is generic enough
+
+- Generic: rules are meant to be applicable in any settings you can come up with. More on that later.
+- Modular: Sirpas has a lean set of rules called **Base System**. The base system is generic enough
   to support any world setting and playing style. On this base system, additional rules (called **modules**)
   can be attached to better fit your game world. Want a system to perform mind fights between Asimov inspired psionic 
   super-humans? We got you. Want a be a gunslinger involved in western-styled show downs? That can be done too.
   A wizard casting magic spells? No problem. An occultist summoning extra-dimensional entities? That's fine.
   The system is even flexible enough to merge multiple styles of magic, melee combats, large scale fights
   and ranged missile firing in the same session. Yes, you can bring a bow (or a knife) in a gunfight.
-* Extensible: Other than designing your own additional modules, you can also modify the base system to fit
+- Extensible: Other than designing your own additional modules, you can also modify the base system to fit
   your need. For example, there base system has two main attributes called **Body** and **Mind**; if you
   want to play as an AI in a virtual world, you may replace **Body** with **MIPS** (millions of operation per second),
   and use **Mind** as an expression of the quality of your O.S. and software. The rest of the base system will
   still stand and be mostly useful for you to play with.
-* Role-play oriented: the system emphasizes the build-up of the character; both the composition of its skill set
+- Role-play oriented: the system emphasizes the build-up of the character; both the composition of its skill set
   in the adventure world, and the makeup of its personality, play a primary role in how the rules unfold.
-* Simple as you want: the base system has differently detailed rules to resolve game situations. For example,
+- Simple as you want: the base system has differently detailed rules to resolve game situations. For example,
   combat or any type of confrontation between two opposing parties could be resolved with a single throw of a few
   dices (Risk! style), or with the detail of a Warhammer miniature replica battlefield.
 
 All the system is based on multiple rolls of a standard dice with 6 face; however, different modules support other
 kind of dices, if that's the vibe you want for your game.
+
 ## Play Any World
 
 Sirpas is a generic role playing system, that doesn’t presume anything on the
@@ -109,6 +113,7 @@ setting of your adventures. The system applies whatever your players might want
 to play; as normal people struggling to survive in a post-apocalyptic world, as
 wizards and knights in a high fantasy setting, as cyborgs in a SF plot, or even
 as AIs in a virtual reality.
+
 
 ## Combatless Adventures
 
@@ -133,23 +138,27 @@ combat-intensive or combat-devoid as needed.
 
 
 
+
+
+
 # Statistics
 
 In SIRPAS, the statistics are all the numeric or quality values that define a characters. 
 They are divided in the following categories:
 
-* **Attributes**: important aspect of the character on which many other mechanics depend. 
+- **Attributes**: important aspect of the character on which many other mechanics depend. 
   For example *body* (**B**), *mind* (**M**), *health* (**H**) and *will* (**W**).
   **Skills** are special **attributes** used to perform specific actions, 
   as *hacking*, *lock picking*, *running*, *climbing* etc.
-* **Statuses**: values that vary fluidly during an adventure; for example,
+- **Statuses**: values that vary fluidly during an adventure; for example,
   to keep track of the current health of a character you can look at its **injury points**.
-* **Advantages**/**disadvantages**: Statistics affecting other skills, as example an expert 
+- **Advantages**/**disadvantages**: Statistics affecting other skills, as example an expert 
   modifier which increase the chance of winning checks against a specific skill. 
-* **Perks**/**drags**: distinctive traits setting the character apart from the 
+- **Perks**/**drags**: distinctive traits setting the character apart from the 
   background people in the setting. Could be things a "famous" or "criminal". 
   They have an impact in the adventure at large, and might also affect indirectly 
   some checks, providing bonuses and penalties at discretion of the game master.
+
 
 ## Character Points
 
@@ -197,6 +206,8 @@ Skills have different costs, depending on the complexity of learning a certain s
 | 16           | 55           | 20           | 6            | 4            | 3            |
 | 17           | 60           | 22           | 6            | 4            | 3            |
 | 18           | 70           | 25           | 7            | 5            | 4            |
+
+
 
 
 
@@ -256,6 +267,7 @@ but characters with a higher dexterity, or rather strength, are naturally better
 | 14-15     |       +2 |
 | 16-18     |       +3 |
 
+
 Suppose a skill has base declared as **mD**. This means the base of that skill is not **Dexterity**
 directly, but the modifier derived from the above table.
 
@@ -286,6 +298,7 @@ so that its **D**=11, its **Arc** grows to, as now **Arc**= **D**+1 = 12.
 The number of character point to be spent in each attribute or skill to train it depends on how
 many other attributed are based on that, and on the objective complexity of improving it.
 
+
 # Statuses and status points
 
 Characters will sustain negative effects in pools called *statuses*. Most statuses are binary,
@@ -300,6 +313,7 @@ Finally, there are statuses that start at a certain maximum level, and as the ch
 their skills, they are used up. This statuses are called *pools*, and various modules and 
 sub-systems can define different pools for specific usages. For example, a magic system may
 define a *mana pool*, which determines how many spells a character can cast.
+
 
 # Advantages and Disadvantages
 
@@ -336,6 +350,7 @@ or may allow to get some of them later on if that's fitting for the setting. For
 setting, many advantages may be granted through body implants, which may be be bought under certain
 conditions.
 
+
 # Perks and Drags
 
 Perks and drags are generic advantages and disadvantages that don’t 
@@ -352,6 +367,7 @@ and some of them can have indirect and direct effect on the rules.
 For example, if a certain module has a **Criminal Boss** perk, that may
 influence any attempt to **intimidate** specific characters that know 
 about the reputation of the character, and have a reason to fear it.
+
 
 
 # Checks
@@ -396,6 +412,7 @@ the action, according with the following table:
 | Very Hard            |  29              |
 
 
+
 Skill descriptions will reference this table to specify which kind off attempt are to considered, easy,
 normal, hard and so on. When the skill description doesn't specify it,
 the Game Master can assign a difficulty modifier depending on the situation.
@@ -425,6 +442,7 @@ actions with a *natural 16* or better. *Hard* actions fail automatically with a 
 An **automatic result** is considered also a **critical success** or **critical failure**.
 
 
+
 ## Repeated Attempts
 
 In some situation, it is possible to repeat a failed attempt soon after the
@@ -450,6 +468,7 @@ amount of time to pass. For actions taking a few moments, it will be after a lon
 (equivalent of a good night of sleep). For actions requiring long preparation (i.e. 
 studying the lore of a region), it might be a week or a month; if not specified in the
 skill description, the Game Master will decide.
+
 
 
 ## Contest
@@ -486,6 +505,7 @@ Contests that don't allow draws are specifically indicated by the rules as
 discarded as not performed, and another contest takes place.
 
 
+
 ## Rankings
 
 Ranking rolls (**RNK**) are special contests between two or more characters, ranking them in a
@@ -501,6 +521,7 @@ said race, four character score a total of 26, 22, 22 and 20 respectively. Now,
 the second and third characters roll to decide their relative position; the winner
 of the two will be the second in ranking, and the looser will be the third, regardless
 of the score they draw now.
+
 
 
 
@@ -542,11 +563,13 @@ a negative *SM* is assigned to the loser.
 **Example**: Three parties, composed of 3, 4 and 5 members respectively,
 try running up a hill before the others. They perform a *multi-contest*
 on a skill or attribute used for running. The rankings in each party result in:
+
 * Party A: 29-23-20
 * Party B: 26-25-22-19
 * Party C: 28-22-21-18-16
 
 The points are assigned as follows:
+
 * A = 29, B = 26, C = 28 - Point for A, **SM** of B = -3, **SM** of C = -1  
 * A = 23, B = 25, C = 22 - Point for B, **SM** of A = -2, **SM** of C = -3
 * A = 20, B = 22, C = 21 - Point for B, **SM** of A = -2, **SM** of C = -1
@@ -599,6 +622,7 @@ For example, the GM controls 5 characters.
 1. the scoring characters and, if relevant, the negative **SM** of the **succumber** characters.
 
 
+
 ## Critical Results
 
 [Automatic results](#RB-automatic-results) in simple checks are considered
@@ -639,6 +663,10 @@ on this regard, unless specified otherwise.
 
 
 
+
+
+
+
 # Damage and Injury
 
 A critical aspect of any RPG is the set of rules that determine how characters
@@ -669,11 +697,11 @@ your module requires.
 Incoming *raw damage* is modified through the application of *defenses*, 
 that reduce it in various ways; they are mainly divided in the following categories:
 
-* *Passive Defenses*: reducing the incoming **DP**s of a flat amount (like physical armors),
+- *Passive Defenses*: reducing the incoming **DP**s of a flat amount (like physical armors),
   or dividing the damage by a certain factor, i.e. 4/5 or 3/4 (like magic or sci-fi shields),
   or eventually by an hybrid formula (as in the case of specific resistances against some
   kind of damage).
-* *Active Defenses*: the amount of reduced **DP**s depends on the use of a certain
+- *Active Defenses*: the amount of reduced **DP**s depends on the use of a certain
   character ability. 
 
 The way different kind of damages impact on the characters is fully considered by the way
@@ -694,6 +722,7 @@ receive a certain kind of wound, according with the following table:
 | 4-6   | Serious |      2 |  
 | 7-9   | Heavy   |      4 | 
 | 10+   | Deadly  |      - | 
+
 
 
 Wounds are of the same type of the damage received. For example,
@@ -812,6 +841,7 @@ it may be applying wound-reducing foams.
 **Optional**: in any setting, the equivalent of a day of rest should clear any scratch.
 
 
+
 # APPENDIX: Theorycrafting Elements
 
 In this appendix, you can find some technical elements about the numbers
@@ -848,6 +878,7 @@ _at least_ the number on the left, add both columns.
 | 16           |    4.17%        |   1.85%         |
 | 17           |    1.39%        |   0.46%         |
 | 18           |    0.46%        |   0.00%         |
+
 
 
 ## Contest Table
@@ -888,7 +919,9 @@ other character is reversed.
 |  9          |   97.79%         |   1.20%        |     1.00%      |
 
 
+
 Consider: with a -3 modifier, you have only 1 chance over five to win; 
 be very cautious fighting characters with higher bases than you.
+
 
 
