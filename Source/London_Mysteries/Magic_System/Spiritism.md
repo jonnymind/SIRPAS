@@ -1,7 +1,7 @@
 ## Spiritism {#BaM-m-spiritism}
 
 Spiritism is a magic system meant to deal directly with
-supernatural entitities. It's the ability to connect with, 
+supernatural entities. It's the ability to connect with, 
 and possibly control, the spiritual world of disembodied
 souls, demons and angels.
 

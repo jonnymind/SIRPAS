@@ -13,7 +13,7 @@ SIRPAS is organized in the following components:
   rendering of the rules in practice. At times we'll use some well known 
   skill that may be found in any generic RPG (e.g. *strength* or *climbing*) 
   to make some example of how the rules work, but nothing more.
-- The **base system**: a basic implementation of the rules, which describes
+- The **base module**: a basic implementation of the rules, which describes
   very generic attributes, skills, damage sources and other concrete aspect of the
   system, that should be general enough to be applied to most if not all the
   RPG settings you may come up with.
@@ -21,12 +21,12 @@ SIRPAS is organized in the following components:
   change it if necessary), particularly adequate to describe some specific world
   or setting for your adventures.
 
-All you need is the **base system**. The system will often refer to the rules in this
+All you need is the **base module**. The system will often refer to the rules in this
 rulebook, so you will need to know them, but you don't need to know them *upfront*. The
-**base system** will briefly explain the relevant rules when possible or point at this
+**base module** will briefly explain the relevant rules when possible or point at this
 rulebook when necessary. You may wish to read this book in advance, skim over it, or
 just ignore it until you feel the need to read some portions of it following the 
-**base system**.
+**base module**.
 
 > **Experts**: Feel free to skip the rest of this introduction. 
 > The only thing an expert
@@ -160,57 +160,6 @@ They are divided in the following categories:
   some checks, providing bonuses and penalties at discretion of the game master.
 
 
-## Character Points
-
-Character Points (**CP**) express the amount of experience of your character, 
-and with that, the amount of learning (improvement of its statistics) that 
-the character will perform during the adventure, or in between adventures.
-
-Roughly speaking, statistics can be bought, and in some case sold, 
-in exchange with character points.
-
-The amount of **CP** that must be spent to increase a certain statistic vary depending 
-on the nature of the statistic, and in most cases, also depending on its current level. 
-It is easier to increase low scores, and as the statistic gets higher, it becomes harder 
-and harder to perfect it further.
-
-Statistics are scored with their base and a specific amount of points assigned to them. 
-For example, the skill sprint is based on dexterity. If the current value of dexterity is 10, 
-and nothing has been invested in sprint, then sprint will be 10 as well. To buy a point 
-of sprint, the character must invest the CP needed to bring it from 10 to 11. Now, if 
-at a later time the character increases its dexterity, the sprint skill will increase as well, 
-as the points previously spent on sprint represent a bonus with respect to the dexterity base.
-
-This means that it’s usually preferable to invest in the desired skills in the beginning, 
-and then increase the base at a later time. On the other hands, later adventures typically 
-provide a larger amount of CP per session, so the decision whether to invest on single skills 
-or on more powerful bases, while important, is not as critical as it might seem.
-
-The following table describes how many CP must be spent in order to increase a statistic. 
-Skills have different costs, depending on the complexity of learning a certain skill.
-
-| Level        | Mains        | Attributes   | Skill/hard   | Skill/normal | Skill/easy   |
-|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|
-| 4            | 15           | 5            | 1            | 1            | 1            |
-| 5            | 18           | 6            | 1            | 1            | 1            |
-| 6            | 21           | 7            | 1            | 1            | 1            |
-| 7            | 24           | 8            | 1            | 1            | 1            |
-| 8            | 27           | 9            | 2            | 1            | 1            |
-| 9            | 30           | 10           | 2            | 1            | 1            |
-| 10           | 33           | 11           | 3            | 2            | 1            |
-| 11           | 36           | 12           | 3            | 2            | 1            |
-| 12           | 39           | 13           | 4            | 2            | 2            |
-| 13           | 42           | 14           | 4            | 3            | 2            |
-| 14           | 45           | 16           | 5            | 3            | 2            |
-| 15           | 50           | 18           | 5            | 3            | 2            |
-| 16           | 55           | 20           | 6            | 4            | 3            |
-| 17           | 60           | 22           | 6            | 4            | 3            |
-| 18           | 70           | 25           | 7            | 5            | 4            |
-
-
-
-
-
 ## Attributes
 
 Attributes describe a character as succinctly as possible. 
@@ -223,7 +172,7 @@ Attributes and skills are normally expressed as a value between 3 and 18,
 which is the range of value that can be expressed by summing the 
 result of a 3d6 dice throw. A value of 3 represents the minimum skill 
 level, or characteristic, that a character could have to be still 
-considered minimally  functional in the game world — a value below 3 
+considered minimally functional in the game world — a value below 3 
 would indicate a sub-normal characteristic. A value of 18 would represent 
 the apex for the game environment, and the values between 10 and 12 would be 
 the most common across the reference population.
@@ -240,22 +189,71 @@ different league than one with strength 17. Similarly, characters with health
 10 and 11 have a very similar constitution, but one with health 3 will 
 be much weaker than one with health 4.
 
-Different settings might introduce different ranges with other scaling rules; 
-for example in a vampire society, the Body attribute (**B**) could be measured 
-in a 0-100 range, where a B0 for a vampire would be equivalent to a B18 for a human,
-and where the difference between B0 and B1 and between B49 and B50 is the same.
+Modules can introduce different range and scaling for some or all the attributes; 
+for example, in a vampire society an attribute like **Vampire Speed** (shortened as **VS**)
+could be measured as a linear scale in a 0-99 range, where a **VS**0 is as
+fast as the fastest human, with one point of difference having the same value whether the 
+**VS** is 0 or 99.
+
+### Most specific attribute
+
+As attributes are ordered in a hierarchy, the base of each of them indicating their parent,
+when a character needs to perform an action for which a specific attribute is not provided
+by the game module in use, the Game Master will chose the best approximation possible.
+
+Example: Suppose the game module provides the attributes **charisma**, base for **elegance**,
+which is base for **etiquette**. If the character needs to perform a correct ballroom 
+introduction, **etiquette** will be chosen; to determine how well they dance (provided 
+there isn't a **dance** skill available), **elegance** will be next in the line, and
+to determine the impression left with some chit-chat after the dance, **charisma** will be
+used.
+
+
+
+### Base value
+
+Higher level attributes form the **base** of the lower level ones, which are said
+to be their **dependent** attributes. Every dependent attribute has a **base value**,
+a default value that depends on the current value of its base.
+
+Whenever a base attribute improves for any reason, all the dependents improve as well. 
+Of course, improving attributes that form the base of many others is typically more 
+difficult than improving the dependents.
+
+For example, suppose that in a game world the attribute **Arm Wrestling (AW)** based on
+for **Strength (S)**. A character that has never learned any specific arm wrestling trick
+has the same value in **AW** and **S**. If **S** is 10, **AW** is 10 as well.
+If the character trains
+on **AW**, it may get an extra point and have **S**=10, **AW**= **S**+1 =11. 
+If the character then trains on general **S** (which is harder than specialize in **AW**),
+so that its **S**=11, its **AW** grows too, as now **AW**= **S**+1 = 12.
+
+The number of character point to be spent in each attribute or skill to train it depends on how
+many other attributed are based on that, and on the objective complexity of improving it.
+
+> Not all the attributes have bases; those at the top of the hierarchy, even some skill
+that cannot be classified or inherit any base value are called **baseless**, and their
+default value is 0 unless differently specified.
+
 
 ### Base Modifiers
 
-In some situation, instead of using a statistic as a direct base, 
-the system requires to use a base modifier (represented as **mX** where **X** is the 
-base attribute).
+In some situation, instead of using an attribute as a direct base, 
+the system requires to use a *modifier* that depends on the value
+of the base. Those are called **base modifiers**.
 
-This happens when some  statistics are baseless by their own nature, 
-but a base statistic influences them nevertheless.
+This happens when some attributes are hard to train, and so
+they need to be learned almost from scratch, but some other
+attribute may give a minor advantage. For example learning
+**lores** requires studying them; there is no way around actually
+opening the books (or any equivalent media). However, a high
+**intelligence** may help both to memorize and grasp some aspect or
+detail that would pass unnoticed by most. In such cases, the
+**intelligence** cannot be a direct base for **lores**, but could
+well provide a base modifier.
 
-For example, many combat styles are baseless, as you need to learn them from scratch to be good at those, 
-but characters with a higher dexterity, or rather strength, are naturally better at it.
+The following table indicates the **base modifier** associated with
+the value of the base attribute. 
 
 | Attribute | Modifier |
 |:---------:|---------:|
@@ -268,49 +266,161 @@ but characters with a higher dexterity, or rather strength, are naturally better
 | 16-18     |       +3 |
 
 
-To indicate that the base of an attribute is the modifier of another, the base is prefixed
-with a lower case "**m**". For example, Suppose a skill like **swimming** has base declared 
-as **mDex**. This means the base of that **swimming** is not the current value of **Dex**, 
-but the modifier of **Dex** derived from the above table.
+To indicate that the modifier of an attribute is base for another, the
+attribute is prefixed with a lower case "**m**". For example, 
+Suppose a skill like **swimming** is based on the modifier of an
+attribute called **Dex**. The base of **swimming** will be then
+expressed not as **Dex**, but as m**Dex**.
 
-### Attribute descriptions
 
-Attribute are described with:
 
-* Their short name (usually an acronym) always in **bold**.
-* Their *base* formula, if any
-* Their difficulty.
+### Type or base values
+
+While attributes are organized in a hierarchy, the hierarchy is not necessarily
+top-to-bottom. Some attributes may have multiple bases, or more complex way to
+determine their default value.
+
+For example, consider a magic system where the **mana pool** (amount of magic power
+that can be spent before resting) depends on the **affinity** to a certain element.
+The system has **affinity** attributes for *earth*, *air*, *water* and *fire*, which
+play different roles at different times, but the **mana pool** is based on the 
+*highest of them*. Or, it may have their average, or their sum as a base. In this
+case, **mana pool** is *dependent* of all of the **affinity** attributes, which are
+all its base, but the actual **base value** may be a formula.
+
+There are different type of bases, expressed as a formula in parenthesis after the
+dependent attribute name in their formal definition:
+
+* Baseless: the attribute has no base. This is expressed by not having any value
+in parenthesis after the name.
+* Fixed base: (N) where N is a number. N is the **base value** for that attribute.
+* Direct Base: expressed as (**X**) where **X** is the official abbreviation of the base.
+the attribute has the value of **X** as its **base value**.
+* Modifier Base: (m**X**). The **base value** is the *modifier* of the attribute X.
+* Base Portion: (**X**/N). The **base value** is a portion N of the base attribute.
+Typically N is 2, 3 or 4 (the **base value** being half, a third or a fourth of that of the
+base attribute). Rounding is always in defect.
+* Average Base: (avg **A**, **B**,...). The **base value** is the average of the listed
+values.
+* Choice Base: (**A** or **B**). The **base value** is the best between the options listed.
+
+
 
 ### Training attributes
 
-Higher level attributes form the **base** of the lower level ones. This means that,
-by default, all the sub-attributes of a top one will have its same value.
+Any permanent alteration to an attribute is known as "training". Generally, that
+means increasing its value, but a training can be negative (i.e. because of
+an accident producing a permanent disadvantage or a long-lasting curse).
 
-A player can increase the value of any attribute by **training** it:
-using **Character Points** to improve it. When it does so, 
-all the lower level attributes grow with their **base**. Of course, training on a
-base attribute is more expensive than training on specific detail attributes.
+The most common way to improve an attribute is spending a resource
+generated by going through various in-games experiences, called 
+**training tokens** (**TT**).
 
-For example, suppose that in a game world the attribute **Dexterity (D)** is the base
-for **Archery (Arc)**. A character that has never learned **Arc**, but has a value of 
-**D** 10, has a *default* value of 10 in **Arc** as well. If the character trains
-on **Arc**, it may get an extra point and have **D**=10, **Arc**= **D**+1 =11. 
-If the character then trains on general **D** (which is harder than specialize in **Arc**),
-so that its **D**=11, its **Arc** grows to, as now **Arc**= **D**+1 = 12.
+As attributes are hierarchical, and training base attributes is harder than
+derived ones, **TT**s can only be applied to the attribute of a specific level,
+or they can be exchanged with 2 **TT**s of the lower level.
 
-The number of character point to be spent in each attribute or skill to train it depends on how
-many other attributed are based on that, and on the objective complexity of improving it.
+In general, the hierarchy level of the **TT** is specified as a number, so
+that **TT**/1 is a train token for the top tier attributes, **TT**/2 is one
+for the attributes directly derived from them etc; however, every module can
+declare different attribute categories and hierarchies, that aren't necessarily
+following the base value chains.
+
+For example, if a module declares a hierarchy of attributes as
+```
+    Primary -> Generic -> Hard Skills -> Easy Skills
+```
+
+a **TT**/Primary can be exchanged for 2 **TT**/Generic, 4 **TT**/Hard,
+or 8 **TT**/Easy.
+
+It is not possible to exchange multiple lower level tokens for a higher level one:
+**TT**s represent formative experiences the characters have gone through during
+a game session, and to change something at the very base if their essence,
+they must have faced impressive events; a large number of small experiences
+won't cut it.
+
+> Notice that, usually, base skills will have more than 2 dependents;
+this means that exchanging a higher level token for 2 lower ones is
+usually not worth, unless the character really need some
+differently based lower level attribute to be improved as soon as possible.
+
+#### Training pre-requisites
+
+Some attributes may have pre-requisites for training. They can be either:
+
+* not accessible until one or more other attributes have reached a certain level, or
+* be capped to the current level of another attribute.
+
+For example, in a Sci-fi campaign with psionic powers, the skill **natural mentalism** may be
+capped to the current value of **mental power**, and **mind melding** could be inaccessible
+until **mental power** reaches at least level 10.
+
+Eventual prerequisites are declared in the attribute description.
+
+### In-world training (optional)
+
+The Game Master or the modules may require additional conditions to be able to train attributes,
+other than having the necessary **TT**. Some examples:
+
+* Having an adequate trainer available for teaching;
+* Undertake a specific ritual at a specific time/location;
+* Having the necessary cyber implants available;
+* Spending a sensible time in training;
+
+It's totally plausible for the character to just improve as a matter of spending
+the **TT**, as the tokens represent an amount of experience that *per se*, for the mere
+fact of being acquired, in the general case should grant an improvement of their abilities.
+
+But in some scenarios, the **TT** may represent a lived experience that needs to be formalized,
+a token of *being ready* to take the step of the formal training.
+
+
+
+
+
+
+### Temporary attribute variations
+
+Normally, the value of dependent attributes is computed only when the base attribute changes
+definitively, through a means that improves (or reduces it) permanently. In practice,
+this happens every few hours of uninterrupted game.
+
+However, it's possible that an attribute is temporarily altered by various means;
+for example by magic, drugs or boosts to cyber implants.
+
+If the attribute is a base for many others, it may be difficult to keep track of the
+temporary changes to its dependents. To avoid excessive burden to the game play,
+temporary attribute variations are applied to its dependents only if the attribute
+is their **direct base**.
+
+Every other case, that is, every case in which a dependent has a complex formula
+to determine its base value, is considered as if the value of its base (or bases)
+cannot be immediately applied.
+
+For example, an arm wrestler can feel a temporary boost or loss of
+strength right away. This will be expressed as the attribute **arm wrestling** 
+having the direct base value of *strength*, expressed as "(**S**)".
+Conversely, if **lore** has a base value expressed as
+"(m**I**)" where **I** stands for **intelligence**, and m**I** is the 
+**intelligence** modifier, this means that it takes some effort to learn lores
+even for a very intelligent character, and as such, a temporary improvement
+of **intelligence** won't be transferred to **lore**.
+
+
+
+
 
 
 # Statuses and status points
 
 Characters will sustain negative effects in pools called *statuses*. Most statuses are binary,
-i.e. on or off. For example, a character may be *asleep* or *awake*: it's awakeness status may
+i.e. on or off. For example, a character may be *asleep* or *awake*: its "being awake" status may
 be on/off.
 
 Some statuses have numeric values, and the character will be negatively affected if the number
-increases. For example, the number of [injury points](
-the higher the worse.
+increases. For example, the number of [injury points](#injury-points):
+the higher, the worse.
 
 Finally, there are statuses that start at a certain maximum level, and as the characters use 
 their skills, they are used up. This statuses are called *pools*, and various modules and 
@@ -324,29 +434,37 @@ Advantages special conditions that apply to the character in general or to a spe
 of attribute in particular, and that have a direct effect on some game mechanics.
 
 For example, some advantages may grant you the possibility to automatically win a draw once a day. 
-Others may give you extra dice to throw and use in some situation. Others may give you one extra
-point to all the skills having a certain base attribute, i.e. improve all the skills based on 
+Others may give you extra die to throw and use in some situation. Others may give you one extra
+point to all the skills having a certain base attribute, i.e. improve all the *easy skills* based on 
 **Dexterity**. Others may reduce the difficulty level of the attempts on a certain skill by one
-level, so that i.e. easy pickpocket targets become trivial, normal targets become easy and so on. 
+level, so that i.e. pickpocket on *easy* targets becomes trivial, on *normal* targets it 
+becomes *easy* and so on. 
 
 Advantages can also be negative (disadvantages). A character might be given
 disadvantages temporarily or permanently, because of what happened during
 previous adventures, or as a background flavor. As disadvantages have negative CP costs,
-a player can chose to get certain disadvantages in order to gain **CP** to be
+a player can chose to get certain disadvantages in order to gain **training tokens** to be
 spent elsewhere, in other statistics.
 
 While most advantages are simply either active or not, some can have different levels. 
 For example, an advantage called i.e. Survival Instinct, which, say, reduce the difficulty level
 of all survival checks, may have a level between 1 and 3, each granting a one extra reduced difficulty level. 
 
-In that case, the description of the advantage indicates the initial cost and the cost per additional level. 
-The cost of a further level is given by the base cost, plus the additional level cost times the current level. 
-For example, if the description indicates the cost in **CP** being 5+2, it means that the first level costs 5, 
-the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
+In that case, each additional level cost one additional training token of the same type.
+
+For example, suppose the advantage **graceful** has 3 levels, which gives 1, 2 or 3 points
+fixed base on any *easy* dexterity based skill, depending on the level. 
+The cost declared is 2 **TT**/*Primary* (training tokens of type *primary*). 
+To achieve the second level of **graceful**, the character must use 3 **TT**/*Primary*,
+and for the third level they must spend 4 **TT**/*Primary*.
+
+### Advantage prerequisites
 
 Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. 
 For example, they could require having already acquired another advantage, or having a certain 
 statistic at a minimum set score.
+
+### Other limitations (optional)
 
 The GM may allow to get a certain number of advantages and/or disadvantages to taken at character creation,
 or may allow to get some of them later on if that's fitting for the setting. For example, in a cyberpunk

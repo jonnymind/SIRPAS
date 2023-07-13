@@ -8,7 +8,6 @@ $(--
 
 $(include Introduction.md)
 $(include Statistics.md)
-$(include Character_points.md)
 $(include Attributes.md)
 $(include Statuses.md)
 $(include Advantages.md)

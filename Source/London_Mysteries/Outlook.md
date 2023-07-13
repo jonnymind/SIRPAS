@@ -8,9 +8,9 @@ focused on utility/support. Unless you’re dealing with supernatural entities
 to curse it. Yet, occultism can make your hand steadier, and give you
 that edge that might make the difference.
 
-Similarly, if you’re wound, you might heal with alchemy or ceremonial magic,
+Similarly, if you’re wounded, you might heal with alchemy or ceremonial magic,
 but you’re probably safer heading for the nearest hospital.
 
 The supernatural might totally absent, or included in adventures as a mere
-flavour, and even treated with contempt and scepticism; or, if you’re more
+flavor, and even treated with contempt and skepticism; or, if you’re more
 inclined to Gothic ambient, it might be a central aspect of the adventure.

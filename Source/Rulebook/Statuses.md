@@ -1,7 +1,7 @@
 # Statuses and status points
 
 Characters will sustain negative effects in pools called *statuses*. Most statuses are binary,
-i.e. on or off. For example, a character may be *asleep* or *awake*: it's awakeness status may
+i.e. on or off. For example, a character may be *asleep* or *awake*: its "being awake" status may
 be on/off.
 
 Some statuses have numeric values, and the character will be negatively affected if the number
