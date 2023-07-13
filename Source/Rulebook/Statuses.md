@@ -5,8 +5,8 @@ i.e. on or off. For example, a character may be *asleep* or *awake*: it's awaken
 be on/off.
 
 Some statuses have numeric values, and the character will be negatively affected if the number
-increases. For example, the number of [injury points](
-the higher the worse.
+increases. For example, the number of [injury points](#injury-points):
+the higher, the worse.
 
 Finally, there are statuses that start at a certain maximum level, and as the characters use 
 their skills, they are used up. This statuses are called *pools*, and various modules and 

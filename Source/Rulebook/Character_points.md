@@ -1,5 +1,7 @@
 ## Character Points
 
+TODO: change into training
+
 Character Points (**CP**) express the amount of experience of your character, 
 and with that, the amount of learning (improvement of its statistics) that 
 the character will perform during the adventure, or in between adventures.
@@ -29,3 +31,7 @@ Skills have different costs, depending on the complexity of learning a certain s
 
 $(include tables/cp_table.md)
 
+
+### In-world training (optional)
+
+TODO

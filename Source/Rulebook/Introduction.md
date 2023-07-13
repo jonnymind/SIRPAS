@@ -11,7 +11,7 @@ SIRPAS is organized in the following components:
   rendering of the rules in practice. At times we'll use some well known 
   skill that may be found in any generic RPG (e.g. *strength* or *climbing*) 
   to make some example of how the rules work, but nothing more.
-- The **base system**: a basic implementation of the rules, which describes
+- The **base module**: a basic implementation of the rules, which describes
   very generic attributes, skills, damage sources and other concrete aspect of the
   system, that should be general enough to be applied to most if not all the
   RPG settings you may come up with.
@@ -19,12 +19,12 @@ SIRPAS is organized in the following components:
   change it if necessary), particularly adequate to describe some specific world
   or setting for your adventures.
 
-All you need is the **base system**. The system will often refer to the rules in this
+All you need is the **base module**. The system will often refer to the rules in this
 rulebook, so you will need to know them, but you don't need to know them *upfront*. The
-**base system** will briefly explain the relevant rules when possible or point at this
+**base module** will briefly explain the relevant rules when possible or point at this
 rulebook when necessary. You may wish to read this book in advance, skim over it, or
 just ignore it until you feel the need to read some portions of it following the 
-**base system**.
+**base module**.
 
 > **Experts**: Feel free to skip the rest of this introduction. 
 > The only thing an expert
