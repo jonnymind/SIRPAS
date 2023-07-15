@@ -1,6 +1,6 @@
 ### Conjuring {LoM-s-spiritism-conjuring}
 
-$(dd spiritism_conjuring) { 
+@(dd spiritism_conjuring) { 
 "Type": "Sum",
 "Cost": "variable",
 "Prereq": "Spi 1",

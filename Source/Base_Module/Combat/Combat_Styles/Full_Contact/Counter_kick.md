@@ -1,6 +1,6 @@
 ### Counter kick {#BaM-s-full-contact-counter-kick}
 
-$(dd cm_full_contact_counter_kick)
+@(dd cm_full_contact_counter_kick)
 { "Type": "Defense",
 	"Modifier": "mD-2",
 	"Prereq": "Full Contact 3",

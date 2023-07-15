@@ -1,6 +1,6 @@
 ### Backstep {#BaM-s-knife-combat-backstep}
 
-$(dd cm_knife_fight_backstep)
+@(dd cm_knife_fight_backstep)
 { "Type": "Defense",
 	"Modifier": "mD",
 	"Prereq": "Knife Fight 1",

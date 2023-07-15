@@ -1,6 +1,6 @@
 ### Brawl {#BaM-s-brawl}
 
-$(dd ac_brawl)
+@(dd ac_brawl)
 {
    "Cost": "2 CP",
    "Modifier": "mS",
@@ -20,7 +20,7 @@ damage, and all the maneuvers are melee.
 The number of maneuvers the character can use per round depends on
 the level of brawl:
 
-$(dt ac_brawl_levels)
+@(dt ac_brawl_levels)
 [["Level", "Maneuvers"],
 ["1-5", 1],
 ["5-10", 2],

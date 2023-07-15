@@ -1,6 +1,6 @@
 ### Cleave {#BaM-s-swordfight-cleave}
 
-$(dd cm_swordfight_cleave)
+@(dd cm_swordfight_cleave)
 { "Type": "Attack",
 	"Modifier": "mS",
 	"Prereq": "Swordfight 1",

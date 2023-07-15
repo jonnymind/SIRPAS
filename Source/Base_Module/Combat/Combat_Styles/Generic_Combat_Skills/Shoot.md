@@ -1,6 +1,6 @@
 ### Shoot {#BaM-s-generic-combat-shoot}
 
-$(dd cm_generic_shoot)
+@(dd cm_generic_shoot)
 {
 	"Cost": "6 CP",
 	"Type": "Attack",

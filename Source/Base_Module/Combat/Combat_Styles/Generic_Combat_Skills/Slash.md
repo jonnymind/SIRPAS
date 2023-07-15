@@ -1,6 +1,6 @@
 ### Slash {#BaM-s-generic-combat-slash}
 
-$(dd cm_generic_slash)
+@(dd cm_generic_slash)
 {
 	"Cost": "5 CP",
 	"Type": "Attack",

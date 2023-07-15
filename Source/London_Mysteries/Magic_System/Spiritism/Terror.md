@@ -1,6 +1,6 @@
 ### Terror {#LoM-s-spiritism-terror}
 
-$(dd spiritism_terror) { 
+@(dd spiritism_terror) { 
 "Type": "Uti",
 "Cost": "-3",
 "Prereq": "Spi 3",

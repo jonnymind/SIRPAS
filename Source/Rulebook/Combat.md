@@ -22,4 +22,4 @@ You can chose to stick with one combat system or mix and match them the same adv
 without limitation, depending on how combat-centric is your adventure, or how
 important is a specific combat in your story.
 
-$(include Combat)
+@(include Combat)

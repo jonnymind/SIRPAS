@@ -1,6 +1,6 @@
 ### Downstab {#BaM-s-knife-combat-downstab}
 
-$(dd cm_knife_fight_downstab)
+@(dd cm_knife_fight_downstab)
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Knife Fight 2",

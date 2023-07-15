@@ -1,6 +1,6 @@
 ### Overload {#BaM-s-archery-overload}
 
-$(dd cm_archery_overload)
+@(dd cm_archery_overload)
 { "Type": "Action",
 	"Prereq": "Archery 9"
 }

@@ -1,6 +1,6 @@
 ### Block {#BaM-s-brawl-block}
 
-$(dd cm_brawl_block)
+@(dd cm_brawl_block)
 { "Type": "Defense",
 	"Modifier": "mS",
 	"Prereq": "Brawl 1",

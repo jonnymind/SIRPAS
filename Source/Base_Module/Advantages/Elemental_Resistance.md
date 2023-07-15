@@ -1,6 +1,6 @@
 ## Elemental Resistance {#BaM-a-elemental-resistance}
 
-$(dd adv_elemental_resistance)
+@(dd adv_elemental_resistance)
 {
   "*Name": "Elemental Resistance",
   "*Short": "Base for elemental resistance skill",

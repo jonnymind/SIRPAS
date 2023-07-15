@@ -1,6 +1,6 @@
 ### Aimed Shot {#BaM-s-firearms-aimed-shot}
 
-$(dd cm_firearm_aimed_shot)
+@(dd cm_firearm_aimed_shot)
 { "Type": "Attack",
 	"Modifier": "-3",
 	"Prereq": "Firearms 6",

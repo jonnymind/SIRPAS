@@ -6,7 +6,7 @@ height that would normally damage a less skilled character.
 If used to check if the character is hurt when falling from a height, the
 following table indicates the modifier applied:
 
-$(include /tables/fall.md)
+@(include /tables/fall.md)
 
 Above 30 feet, the check fails automatically. 
 

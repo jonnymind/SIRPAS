@@ -1,6 +1,6 @@
 ### Rapid Fire {#BaM-s-firearms-rapid-fire}
 
-$(dd cm_firearm_rapid_fire)
+@(dd cm_firearm_rapid_fire)
 { "Type": "Attack",
 	"Modifier": "-3",
 	"Prereq": "Firearms 9",

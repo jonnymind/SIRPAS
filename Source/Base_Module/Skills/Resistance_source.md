@@ -1,6 +1,6 @@
 ## Resistance/source {#BaM-s-resistance-source}
 
-$(dd skill_resistance_source)
+@(dd skill_resistance_source)
 { 
   "*Name": "Resistance",
   "Base": "H/E/-",

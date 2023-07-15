@@ -1,6 +1,6 @@
 ### Thrust {#BaM-s-generic-combat-thrust}
 
-$(dd cm_generic_thrust)
+@(dd cm_generic_thrust)
 {
 	"Cost": "5 CP",
 	"Type": "Attack",

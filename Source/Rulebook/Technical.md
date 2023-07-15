@@ -16,7 +16,7 @@ value on the left column. The "Chance to Beat" is the probability to roll a
 number _greater_ than the one on the left. To get the probability to roll
 _at least_ the number on the left, add both columns.
 
-$(include tables/chance_table.md)
+@(include tables/chance_table.md)
 
 ## Contest Table
 
@@ -33,7 +33,7 @@ other uses the row number 3. In this case the advantage character has 70%
 chance to win, 22% to lose and 8% to achieve a draw; the position of the
 other character is reversed.
 
-$(include tables/contest_table.md)
+@(include tables/contest_table.md)
 
 Consider: with a -3 modifier, you have only 1 chance over five to win; 
 be very cautious fighting characters with higher bases than you.

@@ -1,7 +1,7 @@
 ### Block  {#BaM-s-concentration-block}
 
 
-$(dd cm_concentration_block)
+@(dd cm_concentration_block)
 { "Type": "Defense",
 	"Modifier": "mW",
 	"Prereq": "Concentration 1",

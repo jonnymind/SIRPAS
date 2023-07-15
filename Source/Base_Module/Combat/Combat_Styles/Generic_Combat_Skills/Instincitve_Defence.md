@@ -1,6 +1,6 @@
 ### Instincitve Defense {#BaM-s-generic-combat-instinctive-defense}
 
-$(dd cm_generic_instinctive_defense)
+@(dd cm_generic_instinctive_defense)
 {
 	"Cost": "3 CP",
 	"Type": "Defense",

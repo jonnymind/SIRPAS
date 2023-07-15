@@ -1,6 +1,6 @@
 ### Parry Projectiles {#BaM-s-swordfight-parry-projectiles}
 
-$(dd cm_swordfight_parry_projectiles)
+@(dd cm_swordfight_parry_projectiles)
 { "Type": "Defense",
 	"Modifier": "mD",
 	"Prereq": "Swordfight 6",

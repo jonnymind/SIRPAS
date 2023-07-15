@@ -1,6 +1,6 @@
 ## Swordfight {#BaM-s-swordfight}
 
-$(dd ac_swordfight)
+@(dd ac_swordfight)
 {
    "Cost": "6 CP",
    "Modifier": "mS",
@@ -25,7 +25,7 @@ but give a **DP** modifier of +3.
 The number of maneuvers the character can use per round depends on the level
 of Sword Fight:
 
-$(dt ac_swordfight_levels)
+@(dt ac_swordfight_levels)
 [["Level", "Maneuvers"],
 ["1-6", 1],
 ["7-11", 2],

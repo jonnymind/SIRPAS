@@ -1,6 +1,6 @@
 ### Medianic Question  {LoM-s-spiritism-medianic-question}
 
-$(dd spiritism_medianic_question) { 
+@(dd spiritism_medianic_question) { 
 "Type": "Uti",
 "Cost": "+2",
 "Prereq": "Spi 1",

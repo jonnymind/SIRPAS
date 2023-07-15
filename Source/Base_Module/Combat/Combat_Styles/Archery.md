@@ -1,6 +1,6 @@
 ## Archery {#BaM-s-archery}
 
-$(dd ac_archery)
+@(dd ac_archery)
 {
    "Cost": "6 CP",
    "Modifier": "mD",
@@ -15,7 +15,7 @@ and the range depends on the used weapon.
 
 The number of maneuvers the character can use per round depends on the level of Archery:
 
-$(dt ac_archery_levels)
+@(dt ac_archery_levels)
 [["Level", "Maneuvers"],
 ["1-9", 1],
 ["10-16", 2],

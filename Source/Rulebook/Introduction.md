@@ -53,4 +53,4 @@ referred as *campaign*).
 But you don’t need to. The idea is having as little commitment as necessary to get 
 playing, and then, pour in as much commitment as you want if you like it.
 
-$(include Introduction)
+@(include Introduction)

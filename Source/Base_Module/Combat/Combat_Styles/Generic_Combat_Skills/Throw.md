@@ -1,6 +1,6 @@
 ### Throw {#BaM-s-generic-combat-throw}
 
-$(dd cm_generic_throw)
+@(dd cm_generic_throw)
 {
 	"Cost": "5 CP",
 	"Type": "Attack",

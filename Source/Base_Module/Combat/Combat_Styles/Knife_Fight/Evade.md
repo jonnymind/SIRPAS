@@ -1,6 +1,6 @@
 ### Evade {#BaM-s-knife-combat-evade}
 
-$(dd cm_knife_fight_evade)
+@(dd cm_knife_fight_evade)
 { "Type": "Defense",
 	"Modifier": "mD",
 	"Prereq": "Knife Fight 1",

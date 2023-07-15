@@ -1,6 +1,6 @@
 ### Meditation
 
-$(dd cm_mentalism_deep_secrets)
+@(dd cm_mentalism_deep_secrets)
 { "Type": "Defense",
 	"Modifier": "-2",
 	"Prereq": "Mentalism 6"

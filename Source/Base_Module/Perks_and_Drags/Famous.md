@@ -1,6 +1,6 @@
 ## Famous {#BaM-a-famous}
 
-$(dd perk_famous)
+@(dd perk_famous)
 {
   "*Name": "Famous",
   "*Short": "Chr. is famous",

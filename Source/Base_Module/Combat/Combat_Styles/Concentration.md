@@ -1,6 +1,6 @@
 ## Concentration {#BaM-s-concentration}
 
-$(dd ac_concentration)
+@(dd ac_concentration)
 {
    "Cost": "2 CP",
    "Modifier": "mW",
@@ -21,7 +21,7 @@ low-resolution.
 The number of maneuvers the character can use per round depends on the level
 of Concentration:
 
-$(dt ac_concentration_levels)
+@(dt ac_concentration_levels)
 [["Level", "Maneuvers"],
 ["1-7", 1],
 ["8-13", 2],

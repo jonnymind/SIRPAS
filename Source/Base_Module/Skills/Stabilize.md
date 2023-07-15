@@ -1,6 +1,6 @@
 ## Stabilize {#BaM-s-stabilize}
 
-$(dd skill_stabilize)
+@(dd skill_stabilize)
 { 
   "*Name": "Stabilize",
   "*Brief": "Prevents a charactrer from dying out of heavy wounds",

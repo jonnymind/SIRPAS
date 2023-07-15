@@ -1,6 +1,6 @@
 ### Possession {LoM-s-spiritism-possession}
 
-$(dd spiritism_possession) { 
+@(dd spiritism_possession) { 
 "Type": "Inv",
 "Cost": "+2",
 "Prereq": "Spi 2",

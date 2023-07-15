@@ -1,6 +1,6 @@
 ### Seance {LoM-s-spiritism-seance}
 
-$(dd spiritism_seance) { 
+@(dd spiritism_seance) { 
 "Type": "Lor",
 "Cost": "+4 or -4",
 "Prereq": "Spi 4",

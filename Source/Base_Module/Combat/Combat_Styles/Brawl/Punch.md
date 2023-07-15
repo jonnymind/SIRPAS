@@ -1,6 +1,6 @@
 ### Punch {#BaM-s-brawl-punch}
 
-$(dd cm_brawl_punch)
+@(dd cm_brawl_punch)
 { "Type": "Attack",
 	"Modifier": "mS",
 	"Prereq": "Brawl 1",

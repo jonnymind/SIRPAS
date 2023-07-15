@@ -1,6 +1,6 @@
 ### Deviate {#BaM-s-swordfight-deviate}
 
-$(dd cm_swordfight_deviate)
+@(dd cm_swordfight_deviate)
 { "Type": "Defense",
 	"Modifier": "mD",
 	"Prereq": "Swordfight 1",

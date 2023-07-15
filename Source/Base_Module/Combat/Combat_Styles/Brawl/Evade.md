@@ -1,6 +1,6 @@
 ### Evade {#BaM-s-brawl-evade}
 
-$(dd cm_brawl_evade)
+@(dd cm_brawl_evade)
 { "Type": "Defense",
 	"Modifier": "mD",
 	"Prereq": "Brawl 1",

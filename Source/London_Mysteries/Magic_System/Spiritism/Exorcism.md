@@ -1,6 +1,6 @@
 ### Exorcism  {LoM-s-spiritism-exorcism}
 
-$(dd spiritism_exorcism) { 
+@(dd spiritism_exorcism) { 
 "Type": "Ban",
 "Cost": "-4",
 "Prereq": "Spi 4",

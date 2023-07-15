@@ -1,6 +1,6 @@
 ### Belly Opener {#BaM-s-knife-combat-belly-opener}
 
-$(dd cm_knife_fight_belly_opener)
+@(dd cm_knife_fight_belly_opener)
 { "Type": "Attack",
 	"Modifier": "-1",
 	"Prereq": "Knife Fight 3",

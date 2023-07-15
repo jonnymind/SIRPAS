@@ -1,6 +1,6 @@
 ### Aim {#BaM-s-firearms-aim}
 
-$(dd cm_firearm_aimed_shot)
+@(dd cm_firearm_aimed_shot)
 { "Type": "Action",
 	"Prereq": "Firearms 3"
 }

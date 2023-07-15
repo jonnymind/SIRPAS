@@ -1,6 +1,6 @@
 ## Full Contact {#BaM-s-full-contcat}
 
-$(dd ac_full_contact)
+@(dd ac_full_contact)
 {
    "Cost": "3 CP",
    "Prerequisite": "**Brawl** 4",
@@ -26,7 +26,7 @@ turn.
 For example, a character with Full Contact 10 has two maneuvers it can
 chose from either Full Contact or Brawl, plus one from Full Contact only.
 
-$(dt ac_full_contact)
+@(dt ac_full_contact)
 [["Level", "Maneuvers"],
 ["1-5", 1],
 ["5-10", 2],

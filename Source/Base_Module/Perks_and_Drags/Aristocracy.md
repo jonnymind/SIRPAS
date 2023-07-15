@@ -1,6 +1,6 @@
 ## Aristocrat {#BaM-a-aristocrat}
 
-$(dd perk_aristocrat)
+@(dd perk_aristocrat)
 {
   "*Name": "Aristocrat",
   "*Short": "Chr. is in the aristocratic/political elite",

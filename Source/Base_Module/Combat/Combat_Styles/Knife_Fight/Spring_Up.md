@@ -1,6 +1,6 @@
 ### Spring Up {#BaM-s-knife-combat-spring-up}
 
-$(dd cm_knife_fight_spring_up)
+@(dd cm_knife_fight_spring_up)
 { "Type": "Attack",
 	"Modifier": "-3",
 	"Prereq": "Knife Fight 6",

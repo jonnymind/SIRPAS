@@ -1,6 +1,6 @@
 ### Willpower Defense {#BaM-s-generic-combat-willpower-defense}
 
-$(dd cm_generic_willpower_defense)
+@(dd cm_generic_willpower_defense)
 {
 	"Cost": "3 CP",
 	"Type": "Defense",

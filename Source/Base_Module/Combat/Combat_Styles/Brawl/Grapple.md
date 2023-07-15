@@ -1,7 +1,7 @@
 ### Grapple {#BaM-s-brawl-grapple}
 
 
-$(dd cm_brawl_grapple)
+@(dd cm_brawl_grapple)
 { "Type": "Attack",
 	"Prereq": "Brawl 8",
 	"DR": "-1",

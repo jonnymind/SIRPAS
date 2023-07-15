@@ -1,6 +1,6 @@
 ### Purify {LoM-s-spiritism-purify}
 
-$(dd spiritism_purify) { 
+@(dd spiritism_purify) { 
 "Type": "Ban",
 "Cost": "-6",
 "Prereq": "Spi 8",

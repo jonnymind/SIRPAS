@@ -1,6 +1,6 @@
 ### Alien Thoughts {#BaM-s-concentration-alien-thoughts}
 
-$(dd cm_concentration_alien_thoughts)
+@(dd cm_concentration_alien_thoughts)
 { "Type": "Attack",
 	"Modifier": "mI",
 	"Prereq": "Concentration 1",

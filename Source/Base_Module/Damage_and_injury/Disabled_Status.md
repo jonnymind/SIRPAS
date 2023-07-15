@@ -6,7 +6,7 @@ the character becomes *disabled*, and might die if not treated.
 The following table specifies what happens when the character receives an injury
 that puts it down down for the count:
 
-$(include tables/disable_status.md)
+@(include tables/disable_status.md)
 
 A heavy wound could be deadly, if it's received when the character was 1 **IP** away
 from its limit, and it will die fast (within 10 minutes) if it was exactly at its

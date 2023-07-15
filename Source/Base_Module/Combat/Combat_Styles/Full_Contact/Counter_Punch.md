@@ -1,6 +1,6 @@
 ### Counter Punch {#BaM-s-full-contact-counter-punch}
 
-$(dd cm_full_contact_counter_punch)
+@(dd cm_full_contact_counter_punch)
 { "Type": "Defense",
 	"Modifier": "mS-2",
 	"Prereq": "Full Contact 3",

@@ -1,6 +1,6 @@
 ### Overextend {#BaM-s-overextend}
 
-$(dd cm_archery_overextend)
+@(dd cm_archery_overextend)
 { "Type": "Action",
 	"Modifier": "mS-2",
 	"Prereq": "Archery 6",

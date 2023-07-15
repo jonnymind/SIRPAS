@@ -1,6 +1,6 @@
 ### Point Blank {#BaM-s-firearms-point-blank}
 
-$(dd cm_firearm_point_black)
+@(dd cm_firearm_point_black)
 { "Type": "Attack",
 	"Modifier": "+2",
 	"Prereq": "Firearms 6",

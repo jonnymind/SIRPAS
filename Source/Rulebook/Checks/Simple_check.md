@@ -21,7 +21,7 @@ skill or attribute value and modifiers is called *check result* (**CR**). To win
 the **check result** must be above a score called *success level* (**SL**) that depends on the difficulty of 
 the action, according with the following table:
 
-$(include /tables/difficulty.md)
+@(include /tables/difficulty.md)
 
 Skill descriptions will reference this table to specify which kind off attempt are to considered, easy,
 normal, hard and so on. When the skill description doesn't specify it,

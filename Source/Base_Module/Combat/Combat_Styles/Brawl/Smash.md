@@ -1,6 +1,6 @@
 ### Smash {#BaM-s-brawl-smash}
 
-$(dd cm_brawl_smash)
+@(dd cm_brawl_smash)
 { "Type": "Attack",
 	"Modifier": "mS",
 	"Prereq": "Brawl 6",

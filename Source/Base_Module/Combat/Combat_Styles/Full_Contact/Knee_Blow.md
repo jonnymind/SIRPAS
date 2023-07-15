@@ -1,6 +1,6 @@
 ### Knee Blow {#BaM-s-full-contact-knee-blow}
 
-$(dd cm_full_contact_knee_blow)
+@(dd cm_full_contact_knee_blow)
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Full Contact 1",

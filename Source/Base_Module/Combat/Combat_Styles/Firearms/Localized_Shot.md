@@ -1,6 +1,6 @@
 ### Localized Shot {#BaM-s-firearms-localized-shot}
 
-$(dd cm_firearm_localized_shot)
+@(dd cm_firearm_localized_shot)
 { "Type": "Attack",
 	"Modifier": "Variable",
 	"Prereq": "Firearms 4",

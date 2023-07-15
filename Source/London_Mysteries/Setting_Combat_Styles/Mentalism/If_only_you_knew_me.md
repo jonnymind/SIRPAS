@@ -1,6 +1,6 @@
 ### If only you knew me
 
-$(dd cm_if_you_only_knew_me)
+@(dd cm_if_you_only_knew_me)
 { "Type": "Attack",
 	"Modifier": "-2",
 	"Prereq": "Mentalism 8",

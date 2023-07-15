@@ -1,6 +1,6 @@
 ### Hand Cutting {#BaM-s-knife-combat-hand-cutting}
 
-$(dd cm_knife_fight_hand_cutting)
+@(dd cm_knife_fight_hand_cutting)
 { "Type": "Defense",
 	"Modifier": "mD-2",
 	"Prereq": "Knife Fight 4",

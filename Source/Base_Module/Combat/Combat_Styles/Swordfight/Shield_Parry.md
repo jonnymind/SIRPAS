@@ -1,6 +1,6 @@
 ### Shield Parry {#BaM-s-swordfight-shield-parry}
 
-$(dd cm_swordfight_shield_parry)
+@(dd cm_swordfight_shield_parry)
 { "Type": "Defense",
 	"Modifier": "mS+3",
 	"Prereq": "Swordfight 2",

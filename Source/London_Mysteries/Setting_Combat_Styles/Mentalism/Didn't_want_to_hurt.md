@@ -1,6 +1,6 @@
 ### Didn't want to hurt
 
-$(dd cm_mentalism_didnt_want_to_hurt_you)
+@(dd cm_mentalism_didnt_want_to_hurt_you)
 { "Type": "Attack",
 	"Modifier": "-1",
 	"Prereq": "Mentalism 7",

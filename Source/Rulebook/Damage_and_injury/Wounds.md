@@ -3,7 +3,7 @@
 When sustaining a certain amount of damage, the character
 receive a certain kind of wound, according with the following table:
 
-$(include /tables/wounds_severity.md)
+@(include /tables/wounds_severity.md)
 
 Wounds are of the same type of the damage received. For example,
 physical damage generate a physical wound; mental damage causes

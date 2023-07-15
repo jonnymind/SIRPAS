@@ -1,6 +1,6 @@
 ### Feint {#BaM-s-swordfight-feint}
 
-$(dd cm_swordfight_feint)
+@(dd cm_swordfight_feint)
 { "Type": "Attack",
 	"Modifier": "-3",
 	"Prereq": "Swordfight 6",

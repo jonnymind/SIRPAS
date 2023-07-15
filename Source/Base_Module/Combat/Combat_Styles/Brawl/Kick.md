@@ -1,6 +1,6 @@
 ### Kick {#BaM-s-brawl-kick}
 
-$(dd cm_brawl_kick)
+@(dd cm_brawl_kick)
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Brawl 1",

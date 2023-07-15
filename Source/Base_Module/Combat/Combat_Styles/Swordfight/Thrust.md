@@ -1,6 +1,6 @@
 ### Thrust {#BaM-s-swordfight-thrust}
 
-$(dd cm_swordfight_thrust)
+@(dd cm_swordfight_thrust)
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Swordfight 2",

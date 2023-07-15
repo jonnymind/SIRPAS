@@ -1,6 +1,6 @@
 ## Knife Fight {#BaM-s-knife-fight}
 
-$(dd ac_knife_fight)
+@(dd ac_knife_fight)
 {
    "Cost": "5 CP",
    "Modifier": "mD",

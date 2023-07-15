@@ -1,6 +1,6 @@
 ### Disengage {#BaM-s-generic-combat-disengage}
 
-$(dd cm_generic_disengage)
+@(dd cm_generic_disengage)
 {
 	"Cost": "4 CP",
 	"Type": "Defense",

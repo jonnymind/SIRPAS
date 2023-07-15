@@ -1,6 +1,6 @@
 ### Throw {#BaM-s-knife-combat-throw}
 
-$(dd cm_knife_fight_)
+@(dd cm_knife_fight_)
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Knife Fight 1",

@@ -1,7 +1,7 @@
 ### Localized Shot {#BaM-s-localized-shot}
 
 
-$(dd cm_archery_localized_shot)
+@(dd cm_archery_localized_shot)
 { "Type": "Attack",
 	"Modifier": "Variable",
 	"Prereq": "Archery 5",

@@ -1,6 +1,6 @@
 ### Backstab {#BaM-s-knife-combat-backstab}
 
-$(dd cm_knife_fight_backstab)
+@(dd cm_knife_fight_backstab)
 { "Type": "Attack",
 	"Modifier": "mD-2",
 	"Prereq": "Knife Fight 6",

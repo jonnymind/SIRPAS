@@ -1,6 +1,6 @@
 ### Elbow Blow {#BaM-s-full-contact-elbow-blow}
  
-$(dd cm_full_contact_elbow_blow)
+@(dd cm_full_contact_elbow_blow)
 { "Type": "Attack",
 	"Modifier": "mS",
 	"Prereq": "Full Contact 1",

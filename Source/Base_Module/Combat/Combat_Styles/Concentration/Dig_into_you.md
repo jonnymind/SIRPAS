@@ -1,7 +1,7 @@
 ### Dig into you  {#BaM-s-concentration-dig-into-you}
 
 
-$(dd cm_concentration_dig_into_you)
+@(dd cm_concentration_dig_into_you)
 { "Type": "Attack",
 	"Modifier": "mW",
 	"Prereq": "Concentration 1",

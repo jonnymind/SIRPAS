@@ -1,7 +1,7 @@
 ### Mind Grasp  {#BaM-s-concentration-mind-grasp}
 
 
-$(dd cm_concentration_mind_grasp)
+@(dd cm_concentration_mind_grasp)
 { "Type": "Attack",
 	"Modifier": "mI",
 	"Prereq": "Concentration 6",

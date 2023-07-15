@@ -33,4 +33,4 @@ could be measured as a linear scale in a 0-99 range, where a **VS**0 is as
 fast as the fastest human, with one point of difference having the same value whether the 
 **VS** is 0 or 99.
 
-$(include Attributes)
+@(include Attributes)

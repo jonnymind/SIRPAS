@@ -1,7 +1,7 @@
 ### Yes, but you... {#BaM-s-concentration-yes-but-you}
 
 
-$(dd cm_concentration_yes_but_you)
+@(dd cm_concentration_yes_but_you)
 { "Type": "Defense",
 	"Modifier": "mI",
 	"Prereq": "Concentration 6",

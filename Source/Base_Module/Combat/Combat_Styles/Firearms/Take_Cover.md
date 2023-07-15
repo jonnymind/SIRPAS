@@ -1,6 +1,6 @@
 ### Take Cover {#BaM-s-firearms-take-cover}
 
-$(dd cm_firearm_take_cover)
+@(dd cm_firearm_take_cover)
 { "Type": "Defense",
 	"Modifier": "+3",
 	"Prereq": "Firearms 3",

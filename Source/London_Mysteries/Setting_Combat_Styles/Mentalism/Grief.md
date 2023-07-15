@@ -1,6 +1,6 @@
 ### Grief
 
-$(dd cm_mentalism_grief)
+@(dd cm_mentalism_grief)
 { "Type": "Attack",
 	"Modifier": "-2",
 	"Prereq": "Mentalism 3",

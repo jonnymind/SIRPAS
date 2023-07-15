@@ -1,6 +1,6 @@
 ### Aim {#BaM-s-aim}
 
-$(dd cm_archery_aim)
+@(dd cm_archery_aim)
 { "Type": "Action",
 	"Prereq": "Archery 3"
 }

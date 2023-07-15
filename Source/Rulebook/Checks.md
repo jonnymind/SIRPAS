@@ -7,4 +7,4 @@ kind of checks that apply to different situations, but in general, a check
 consists in beating some high point score summing a 3d6 with the value of
 the statistics on which the check is performed.
 
-$(include Checks)
+@(include Checks)

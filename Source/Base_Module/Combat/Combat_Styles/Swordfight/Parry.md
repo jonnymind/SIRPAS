@@ -1,6 +1,6 @@
 ### Parry {#BaM-s-swordfight-parry}
 
-$(dd cm_swordfight_parry)
+@(dd cm_swordfight_parry)
 { "Type": "Defense",
 	"Modifier": "mS",
 	"Prereq": "Swordfight 1",

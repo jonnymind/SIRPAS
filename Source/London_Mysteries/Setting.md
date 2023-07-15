@@ -7,8 +7,8 @@ taking place in this setting.
 
 ## Organisations
 
-$(include Organizations/*.md)
+@(include Organizations/*.md)
 
 ## Characters
 
-$(include Characters/*.md)
+@(include Characters/*.md)

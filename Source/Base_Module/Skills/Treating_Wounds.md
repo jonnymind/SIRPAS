@@ -1,6 +1,6 @@
 ## Treating wounds/Race Type {#BaM-s-treating-wounds}
 
-$(dd skill_treating_wounds)
+@(dd skill_treating_wounds)
 { 
   "*Name": "Treating Wounds",
   "*Brief": "Cure any wound",
@@ -16,7 +16,7 @@ creature race.
 
 The following table is applied when checking for the character success:
 
-$(include /tables/treating_wounds.md)
+@(include /tables/treating_wounds.md)
 
 Standard First-aid kits give a +6 modifier to heal *light wounds* only. 
 Specific healing aids in the target setting can provide other modifiers.

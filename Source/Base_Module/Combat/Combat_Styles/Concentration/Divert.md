@@ -1,7 +1,7 @@
 ### Divert {#BaM-s-concentration-divert}
 
 
-$(dd cm_concentration_divert)
+@(dd cm_concentration_divert)
 { "Type": "Defense",
 	"Modifier": "mI",
 	"Prereq": "Concentration 1",

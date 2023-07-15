@@ -24,6 +24,6 @@ The following table describes which **SM** are considered **critical results**,
 depending on the complexity of the action. *Contests* are considered *normal actions*
 on this regard, unless specified otherwise.
 
-$(include /tables/critical.md)
+@(include /tables/critical.md)
 
 

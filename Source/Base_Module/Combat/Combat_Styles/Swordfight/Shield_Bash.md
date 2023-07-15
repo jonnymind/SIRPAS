@@ -1,6 +1,6 @@
 ### Shield Bash {#BaM-s-swordfight-shield-bash}
 
-$(dd cm_swordfight_shield_bash)
+@(dd cm_swordfight_shield_bash)
 { "Type": "Attack",
 	"Modifier": "-2",
 	"Prereq": "Swordfight 4",

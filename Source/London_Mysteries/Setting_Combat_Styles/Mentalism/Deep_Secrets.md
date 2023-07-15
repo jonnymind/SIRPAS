@@ -1,6 +1,6 @@
 ### Deep Secrets
 
-$(dd cm_mentalism_deep_secrets)
+@(dd cm_mentalism_deep_secrets)
 { "Type": "Attack",
 	"Modifier": "-1",
 	"Prereq": "Mentalism 1",

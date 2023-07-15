@@ -12,5 +12,5 @@ has been damaged, and to what extent it has been incapacitated.
 It can be employed to keep the score of harmless intellectual challenges, 
 as well as devastating psychic attack on the mental sanity of the characters.
 
-$(include Damage_and_injury)
+@(include Damage_and_injury)
 

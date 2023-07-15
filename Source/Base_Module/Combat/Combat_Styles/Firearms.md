@@ -1,6 +1,6 @@
 ## Firearms {#BaM-s-firearms}
 
-$(dd ac_firearms)
+@(dd ac_firearms)
 {
    "Cost": "6 CP",
    "Modifier": "mD",
@@ -21,7 +21,7 @@ anyone, but most maneuvers have a relatively high pre-requisite.
 The number of maneuvers the character can use per round depends on the level of
 Firearms:
 
-$(dt ac_firearms)
+@(dt ac_firearms)
 [["Level", "Maneuvers"],
 ["1-5", 1],
 ["5-10", 2],

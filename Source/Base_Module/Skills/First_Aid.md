@@ -1,6 +1,6 @@
 ## First Aid {#BaM-s-first-aid}
 
-$(dd skill_first_aid)
+@(dd skill_first_aid)
 { 
   "*Name": "First Aid",
   "*Brief": "Stabilize and allow using first-aid kits",

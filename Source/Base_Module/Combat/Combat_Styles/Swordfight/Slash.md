@@ -1,6 +1,6 @@
 ### Slash {#BaM-s-swordfight-slash}
 
-$(dd cm_swordfight_slash)
+@(dd cm_swordfight_slash)
 { "Type": "Attack",
 	"Modifier": "mS",
 	"Prereq": "Swordfight 1",

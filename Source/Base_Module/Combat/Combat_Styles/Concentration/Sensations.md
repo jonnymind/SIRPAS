@@ -1,7 +1,7 @@
 ### Sensations {#BaM-s-concentration-sensations}
 
 
-$(dd cm_concentration_sensations)
+@(dd cm_concentration_sensations)
 { "Type": "Attack",
 	"Modifier": "-1",
 	"Prereq": "Concentration 4",
