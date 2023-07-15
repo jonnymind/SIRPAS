@@ -1,7 +1,7 @@
 # Perks and Drags
 
 Perks and drags are generic advantages and disadvantages that don’t 
-impact the game system directly. They usually give more flavor  in 
+impact the game system directly. They are meant to give more flavor in 
 terms of roleplaying, and better define a character in its settings.
 
 Being famous, of noble origins, being able to play a certain instrument, 

@@ -7,7 +7,7 @@ determine their default value.
 
 For example, consider a magic system where the **mana pool** (amount of magic power
 that can be spent before resting) depends on the **affinity** to a certain element.
-The system has **affinity** attributes for *earth*, *air*, *water* and *fire*, which
+The system has **affinity**/*element* attributes for *earth*, *air*, *water* and *fire*, which
 play different roles at different times, but the **mana pool** is based on the 
 *highest of them*. Or, it may have their average, or their sum as a base. In this
 case, **mana pool** is *dependent* of all of the **affinity** attributes, which are

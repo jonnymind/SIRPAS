@@ -14,7 +14,8 @@ import sys
 import os
 import json
 
-RE_COMMAND = re.compile("(.*)(?!\\\\)\\$\\((.*?)\\s+(.*?)\\)(.*)")
+RE_COMMAND = re.compile("(.*)(?!\\\\)[$@]\\((.*?)\\s+(.*?)\\)(.*)")
+RE_COMMENT = re.compile("[@$]\\(--")
 
 def message(what):
 	pass
@@ -42,9 +43,13 @@ class Processor:
 		if pos >= 0:
 			self.fout.write(line[pos+3:])
 
-	def process_command(self, cmd, params):
+	def isLineCommand(self, cmd:str):
+		return cmd in ['include', 'dd', 'dt']
+	
+	def process_command(self, cmd, params: str):
 		if cmd == "include":
 			origin = os.path.abspath(os.path.dirname(self.current))
+			params = params.strip()
 			try:
 				tgt = (self.basepath + params) if params.startswith("/")\
 											 else os.path.join(origin, params)
@@ -85,17 +90,26 @@ class Processor:
 		self.line = 0
 		for line in fin:
 			self.line += 1
+
+			# Skip stray spaces at the end of files
+			if line.strip() == "":
+				self.fout.write("\n")
+				continue
+
 			# strip comments
-			cmt = line.find("$(--")
-			if cmt >= 0:
-				self.fout.write(line[0:cmt])
-				self.process_comment(line[cmt:])
+			cmt = RE_COMMENT.search(line)
+			if cmt:
+				self.fout.write(line[0:cmt.start(0)])
+				self.process_comment(line[cmt.start(0):])
 				continue
 
 			# Process commands
 			rcmd = RE_COMMAND.match(line)
 			if rcmd:
 				pre, cmd, params, post = rcmd.group(1), rcmd.group(2), rcmd.group(3), rcmd.group(4)
+				# Avoid stray characters if we're doing a line commaand.
+				if self.isLineCommand(cmd):
+					pre = post = ""
 				self.fout.write(pre)
 				self.process_command(cmd, params)
 				self.fout.write(post)

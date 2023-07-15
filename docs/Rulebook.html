@@ -207,10 +207,11 @@ chosen; to determine how well they dance (provided there isn’t a
 be next in the line, and to determine the impression left with some
 chit-chat after the dance, <strong>charisma</strong> will be used.</p>
 <h3 id="base-value">Base value</h3>
-<p>Higher level attributes form the <strong>base</strong> of the lower
-level ones, which are said to be their <strong>dependent</strong>
-attributes. Every dependent attribute has a <strong>base value</strong>,
-a default value that depends on the current value of its base.</p>
+<p>In general, it’s common for higher level attributes to form the
+<strong>base</strong> of the lower level ones, which are said to be
+their <strong>dependent</strong> attributes. Every dependent attribute
+has a <strong>base value</strong>, a default value that depends on the
+current value of its base.</p>
 <p>Whenever a base attribute improves for any reason, all the dependents
 improve as well. Of course, improving attributes that form the base of
 many others is typically more difficult than improving the
@@ -225,10 +226,7 @@ have <strong>S</strong>=10, <strong>AW</strong>= <strong>S</strong>+1
 =11. If the character then trains on general <strong>S</strong> (which
 is harder than specialize in <strong>AW</strong>), so that its
 <strong>S</strong>=11, its <strong>AW</strong> grows too, as now
-<strong>AW</strong>= <strong>S</strong>+1 = 12.</p>
-<p>The number of character point to be spent in each attribute or skill
-to train it depends on how many other attributed are based on that, and
-on the objective complexity of improving it.</p>
+<strong>AW</strong> = <strong>S</strong>+1 = 12.</p>
 <blockquote>
 <p>Not all the attributes have bases; those at the top of the hierarchy,
 even some skill that cannot be classified or inherit any base value are
@@ -301,14 +299,14 @@ more complex way to determine their default value.</p>
 <p>For example, consider a magic system where the <strong>mana
 pool</strong> (amount of magic power that can be spent before resting)
 depends on the <strong>affinity</strong> to a certain element. The
-system has <strong>affinity</strong> attributes for <em>earth</em>,
-<em>air</em>, <em>water</em> and <em>fire</em>, which play different
-roles at different times, but the <strong>mana pool</strong> is based on
-the <em>highest of them</em>. Or, it may have their average, or their
-sum as a base. In this case, <strong>mana pool</strong> is
-<em>dependent</em> of all of the <strong>affinity</strong> attributes,
-which are all its base, but the actual <strong>base value</strong> may
-be a formula.</p>
+system has <strong>affinity</strong>/<em>element</em> attributes for
+<em>earth</em>, <em>air</em>, <em>water</em> and <em>fire</em>, which
+play different roles at different times, but the <strong>mana
+pool</strong> is based on the <em>highest of them</em>. Or, it may have
+their average, or their sum as a base. In this case, <strong>mana
+pool</strong> is <em>dependent</em> of all of the
+<strong>affinity</strong> attributes, which are all its base, but the
+actual <strong>base value</strong> may be a formula.</p>
 <p>There are different type of bases, expressed as a formula in
 parenthesis after the dependent attribute name in their formal
 definition:</p>
@@ -432,7 +430,7 @@ example, a character may be <em>asleep</em> or <em>awake</em>: its
 “being awake” status may be on/off.</p>
 <p>Some statuses have numeric values, and the character will be
 negatively affected if the number increases. For example, the number of
-<a href="#injury-points">injury points</a>: the higher, the worse.</p>
+<a href="#wounds">injury points</a>: the higher, the worse.</p>
 <p>Finally, there are statuses that start at a certain maximum level,
 and as the characters use their skills, they are used up. This statuses
 are called <em>pools</em>, and various modules and sub-systems can
@@ -485,8 +483,8 @@ cyberpunk setting, many advantages may be granted through body implants,
 which may be be bought under certain conditions.</p>
 <h1 id="perks-and-drags">Perks and Drags</h1>
 <p>Perks and drags are generic advantages and disadvantages that don’t
-impact the game system directly. They usually give more flavor in terms
-of roleplaying, and better define a character in its settings.</p>
+impact the game system directly. They are meant to give more flavor in
+terms of roleplaying, and better define a character in its settings.</p>
 <p>Being famous, of noble origins, being able to play a certain
 instrument, knowing a certain literature or scientific topic, being
 rich, and the inverse of those are considered perks (or drags).</p>
@@ -827,7 +825,7 @@ actions</em> on this regard, unless specified otherwise.</p>
 characters sustain damage and receive injuries.</p>
 <p>SIRPAS has a modular injury system, which can be fitted in any
 setting and play styles.</p>
-<p>It can be used to determine an overall status of a fight, or to
+<p>It can be used to determine an overall result of a fight, or to
 determine precisely which part of a human body, mechanical robot, flying
 mount or AI virtual device has been damaged, and to what extent it has
 been incapacitated.</p>
@@ -860,7 +858,7 @@ considered by the way defenses are applied to reduce the incoming
 <strong>DP</strong>s.</p>
 <p>The count of <strong>DP</strong>s left after the defenses are applied
 is called <em>effective damage</em> (<strong>ED</strong>).</p>
-<h2 id="effective-damage-and-wounds">Effective Damage and Wounds</h2>
+<h2 id="wounds">Wounds</h2>
 <p>When sustaining a certain amount of damage, the character receive a
 certain kind of wound, according with the following table:</p>
 <table>
@@ -908,19 +906,15 @@ sustained by a certain character; once the <strong>IP</strong>s are
 above the maximum damage of a certain type a character can sustain, it
 becomes <em>incapacitated</em>, and it may eventually die, if the wounds
 are not treated.</p>
-<p>The number of <em>IP</em> that can be received before being
-incapacitated is determined by the <strong>resistance</strong>
-(<strong>Res</strong>) towards that damage source, which is an
-attributed defined by each module.</p>
 <h3 id="wounds-penalty">Wounds Penalty</h3>
 <p>A character receives a penalty to any check of half the sum total of
 <strong>IP</strong>s across all types (rounded down).</p>
 <p>While the type of the wounds its relevant for the amount of damage
 that can be sustained, that doesn’t matter for how well the character is
-performing. You are not going to find a new theorem with a broken arm,
-and your fighting style will be less than effective if your mind is in
-shambles.</p>
-<h2 id="scratches">Scratches</h2>
+performing. You are not going to find a new theorem with an untreated
+broken arm, and your fighting style will be less than effective if your
+mind is in shambles.</p>
+<h3 id="scratches">Scratches</h3>
 <p>A character receiving an <em>effective damage</em> greater than 0,
 but below the amount necessary to generate a wound receives a
 “scratch”.</p>
@@ -938,25 +932,11 @@ is -3 or less, that isn’t accounted as a scratch. However, it may still
 generate negative effects, for example apply any form of physical or
 magical poisoning, inject a virus in an AI or in a cyber brain and so
 on.</p>
-<h2 id="deadly-wounds-optional">Deadly Wounds (optional)</h2>
-<p>When a character receives more than 9 <em>ED</em> points, it sustains
-a wound that is potentially able to kill them immediately.</p>
-<p>To avert an immediate death, the character must pass a <em>simple
-check</em> on the <strong>resistance</strong> (<strong>Res</strong>) to
-the specific damage source, which is determined by each module.</p>
-<p>When character can’t use any specific resistance skill, the check is
-performed on <strong>body</strong>, if the damage is physical, or
-<strong>mind</strong>, if it’s mental.</p>
-<p>If the check is successful, the character receives a <em>heavy
-wound</em>.</p>
-<blockquote>
-<p>Remember that the <em>resistance check</em> has a negative modifier
-of half the received <strong>IP</strong>s, as any other action.</p>
-</blockquote>
 <h2 id="direct-wounds">Direct Wounds</h2>
 <p>In some situation, a character can receive a wound of a certain kind
-directly, and not as a consequence of a damage source dealing damage
-points. For instance, certain magic spells could cause a heavy wound
+directly, and not as a consequence of receiving a certain amount of
+<strong>damage points</strong>.</p>
+<p>For instance, certain magic spells could cause a heavy wound
 directly, if the character fails an attempt to resist them. A
 overwhelmingly powerful weapon, for example a starship laser directed
 against a human, could have the same effect. Explicit actions performed
@@ -965,6 +945,110 @@ physical or mental torture) could deal an arbitrary wound as the
 attacker seems fit, etc.</p>
 <p>Direct wounds will immediately apply the relative <strong>injury
 points</strong> as if they were received through damage application.</p>
+<h3 id="curing-wounds">Curing wounds</h3>
+<p>As a wound is cured through any mean (medicine, magic, natural
+healing etc.), its <strong>IP</strong> cost is removed.</p>
+<p>Scratches not turned into a light wound are removed after a
+reasonable amount of time and minimal care adequate to the setting. For
+example, in a fantasy setting, that may be spending a few minutes to
+tend the wounds after a combat. In a cyberpunk setting, it may be
+applying wound-reducing foams.</p>
+<p><strong>Optional</strong>: in any setting, the equivalent of a day of
+rest should clear any scratch.</p>
+<h2 id="resistance-check">Resistance check</h2>
+<p>In some situation, it’s possible to avert the received damage
+partially or completely using a <strong>resistance check</strong>
+(<strong>RC</strong>).</p>
+<p>The resistance check is a <strong>simple check</strong> with a
+difficulty modifier determined by seriousness of the damage that is
+being averted.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Wound seriouness</th>
+<th>Difficuylty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Non-scatch</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>Scratch</td>
+<td>Easy</td>
+</tr>
+<tr class="odd">
+<td>Light</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Serious</td>
+<td>Difficult</td>
+</tr>
+<tr class="odd">
+<td>Heavy</td>
+<td>Hard</td>
+</tr>
+<tr class="even">
+<td>Deadly</td>
+<td>Very Hard</td>
+</tr>
+</tbody>
+</table>
+<p>For example, suppose a character is hit with a deadly poisonous dart.
+To avert immediate death, they must perform a <strong>RC</strong>
+against poison with <em>very hard</em> difficulty.</p>
+<p>It’s not normally possible to avert non-lethal damage during combat
+using a <strong>resistance check</strong>, unless specific advantages or
+other module-specific rules provide this ability.</p>
+<p>The attribute used for <strong>RC</strong>s is the most detailed one
+that can be applied in the situation.</p>
+<p>Suppose for example that a module defines hierarchy the
+attributes:</p>
+<pre><code>Body -&gt; Metabolism
+Spirit -&gt; Willpower -&gt; Resistance/Fear.</code></pre>
+<p>In this situation, <strong>Metabolism</strong> would be used to
+resist poison, while <strong>Fear Resistance</strong> would be used to
+avert damages and negative effects caused by any <strong>fear</strong>
+based attack.</p>
+<p>In general, the ability to use some attribute in a resistance check
+is indicated in the attribute description; so the fact that
+<strong>Metabolism</strong> could be used to resist poison damage (and
+maybe some other negative effects as sickness) would be indicated in its
+description.</p>
+<p>At any rate, the Game Master can pick any attribute that would be
+relevant, and ultimately, the most basic attributes if a specific one
+can’t be found.</p>
+<blockquote>
+<p>The base module defines <strong>resistance</strong> skills covering
+all the damage sources it introduces.</p>
+</blockquote>
+<h2 id="incapacitation">Incapacitation</h2>
+<p>The amount of <strong>injury points</strong> that incapacitate a
+character is defined by the modules, and can be tweaked by the Game
+Master to better fit the mood of its campaign.</p>
+<p>A realistic setting may set the limit for humans to 4 or 5 heavy
+wounds, or equivalent amount of ligher wounds (that would be 16 or 20
+points), but if characters are something different from humans
+(e.g. vampires, werewolves, android etc.) they might have a greater
+resistance to pain and/or damage.</p>
+<p>Normally, a count of 20 <strong>IP</strong> would give a penalty of
+-10 to any check, which may be severely limiting even for a powerful
+character; however, the modules provide means to reduce or ignore the
+penalty under certain situations with advantages or special gear, as
+enchanted armors, stim shots, magic spells, nanomachines etc.</p>
+<h2 id="deadly-wounds-optional">Deadly Wounds (optional)</h2>
+<p>When a character receives more than 9 <em>ED</em> points, it sustains
+a wound that is potentially able to kill them immediately.</p>
+<p>To avert an immediate death, the character must pass a <em>simple
+check</em> on an attribute related with the type of damage received.</p>
+<p>If the check is successful, the character receives a <em>heavy
+wound</em>.</p>
+<blockquote>
+<p>Remember that the <em>resistance check</em> has a negative modifier
+of half the received <strong>IP</strong>s, as any other action.</p>
+</blockquote>
 <h2 id="localized-wounds">Localized Wounds</h2>
 <p>By default, wounds are generally directed in the generic direction of
 the body, but some abilities allow to aim a certain specific part of the
@@ -973,10 +1057,12 @@ body.</p>
 periferical devices</h3>
 <p>When a wound is localized on a specific body part (an arm, a leg),
 any action involving that body part receives the double amount of
-penalty from that wound type. For instance, a <em>heavy wound</em>
-localized on a leg will generate 2 <em>IP</em> as normal, generating a
-penalty of 2 points to any check, but the penalty will be -4 or any
-skill involving jumping, running and using specifically the legs.</p>
+penalty from that wound type (that is; the same amount of penalty as the
+number of injury points that part has received).</p>
+<p>For instance, a <em>heavy wound</em> localized on a leg will cause 4
+<em>IP</em> as normal, resulting in a penalty of -2 points to any check,
+but the penalty will be -4 or any skill involving jumping, running and
+using specifically the legs.</p>
 <p>This extends to non human and even virtual body parts as well: and AI
 receiving a heavy wound on a virtual device will have a double penalty
 if it tries to use that device to perform any action.</p>
@@ -985,11 +1071,23 @@ control unit</h3>
 <p>When a wound affects the head (or other target part that is
 particularly critical to control the behavior of the target), it
 generates an additional <strong>injury point</strong>. <em>Light
-wounds</em> generate 1 <em>IP</em>, while <em>medium</em> and <em>heavy
-wounds</em> generate 2 and 3 <strong>IP</strong> respectively.</p>
-<h3 id="curing-wounds">Curing wounds</h3>
+wounds</em> generate 2 <em>IP</em>, while <em>medium</em> and <em>heavy
+wounds</em> generate 3 and 5 <strong>IP</strong> respectively.</p>
+<h2 id="healing">Healing</h2>
+<p>The <strong>IP</strong> generated by wounds (and relative check
+penalties) affect the characters until they are healed. Wounds are
+healed one-by-one, unless a general healing procedure is applied (i.e. a
+magic spell that restores the character health completely, a
+backup-restore procedure on an AI etc.)</p>
 <p>As a wound is cured through any mean (medicine, magic, natural
-healing etc.), its <strong>IP</strong> cost is removed.</p>
+healing etc.), its <strong>IP</strong> cost and relative check penalty
+is removed.</p>
+<p>Light and serious wounds heal naturally after a reasonable amount of
+time. Common sense can be used by the Game Master and the players to
+determine the adequate time; for humans, a light wound may heal
+completely in less than a week, while a serious wound would take a
+month.</p>
+<p>Heavy wounds require specific treatment to be cured.</p>
 <p>Scratches not turned into a light wound are removed after a
 reasonable amount of time and minimal care adequate to the setting. For
 example, in a fantasy setting, that may be spending a few minutes to
