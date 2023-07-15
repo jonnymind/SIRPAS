@@ -78,12 +78,6 @@ innate advantage: its **Dom** may be somewhere around 3, while **brawl** **Dom**
 be 0 or 1. To resolve any fight, everyone will then add the value of the **dominance**
 of they skill they want to (or can) use to every roll they take.
 
-The **dominance** of a combat skill impacts also its training cost in **CP**. More
-effective combat styles are *usually* harder to train, with some exception. 
-For example, if you are able to bring a modern tank in a medieval setting, 
-learning **modern warfare** may be easier than learning **traditional sword-fight**, 
-yet the dominance of the first will probably eclipse the second.
-
 ### Styles and maneuvers
   
 In the _advanced combat system_, **Combat skills** are associated with a _style_, that is a collection
@@ -98,6 +92,7 @@ specific maneuvers limited to some weapons. For example, a combat skill may be
 precision rifles.
 
 Maneuvers have the following statistics:
+
 * Type: can be **attack**, **defense** or **action**.
 * Modifier: positive or negative bonus to the combat skill for any type of roll.
 * Prerequisite: minimum level of other attributes/skills required to perform this maneuver.

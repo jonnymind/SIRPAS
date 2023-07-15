@@ -1069,6 +1069,530 @@ it may be applying wound-reducing foams.
 
 
 
+# Combat
+
+Combat is an advanced form of contest. In a normal contest, characters
+try to win one over another on specific skills, while in combat,
+contests are finalized to deal damage or other negative effects on
+an unwilling target.
+
+SIRPAS offer three set of rules for resolving combat situations, with 
+increasing level of complexity:
+
+- *Simplified Combat*: It's a simple way to resolve small combat situations.
+	It consists in a specialized form of [multi-contest](#multi-contest) applied to combat
+	skills, which takes into account the relative ranking in the contests to
+	determine winners, losers, and other possible outcomes.
+- *Basic Combat*: It's a sub-system dedicated specifically to combat, using
+	the combat skills with specific rules, and takes into account positioning,
+	tactical advantages and other combat-specific elements.
+- *Advanced Combat*: This is the full fledged combat system, extending the
+ 	_basic combat_ and using special sub-skills called _maneuvers_.
+
+You can chose to stick with one combat system or mix and match them the same adventure, 
+without limitation, depending on how combat-centric is your adventure, or how
+important is a specific combat in your story.
+
+## Combat skills
+
+Every form of combat is based on special attributes called **combat skills**.
+They represent the proficiency of a character in fighting. 
+
+Skills like (for example) **archery**, **gunslinging**, **kung-fu dragon style**, 
+**battle hacking** or **punching**, or in general, any natural, codified or 
+semi-codified way to perform a fight in the adventure setting are **combat skills**. 
+
+**Combat skills** work similarly to any other skill in the system, with
+the addition of the following characteristic:
+
+* **Range type** (**Rt**): Can be **melee**, **ranged** or **Metaphysical**. 
+* **Actions**: Some skills can be used multiple times in a combat turn. For example,
+  a nimble skill having 3 **actions** would allow the character to attempt 3 attacks,
+  or move, switch weapon and attack, all in the same turn.
+* **Dominance** (**Dom**): a value roughly describing the effectiveness of the skill
+  in a mixed combat, given opponents of the same skill level. 
+* **Style**: A set of specific ways to use the combat skill, called **maneuvers** 
+  causing special effects to take place during the combat 
+  (used in the _advanced system_ only). 
+
+### Generic combat skills
+
+Trying to attack any target against their will should always involve 
+a **combat skill**, even when not using a codified style of fighting. 
+
+For example, a non-trained character may still just pick up a blunt
+weapon and swing it, or pull a trigger of a loaded fire arm, or simply
+try and punch someone, without a specific proficiency in a martial art or
+any other experience about a specific way to fight.
+
+The modules provide a set of "natural" **generic combat skills**, that
+work as a default skill used when trying to attack someone without any specific
+training. Of course, they are less effective than specific combat skills, but
+they are also cheaper to train.
+
+Also, **generic combat skills** always have a **dominance** of 0, **actions** of 1
+and they  don't have an associated **style**, that is,
+they cannot be used to execute any special **maneuver** in the advanced 
+combat system.
+
+### Skill Range
+
+Combat skills are divided into _melee_, _ranged_ and _metaphysical_.
+
+* _Melee_ skills work when the combatants are in close range, and can
+   physically harm each other without any projection.
+* _Ranged_ skills use a weapon, a projectile or any mean to physically
+   project a harmful device or source of energy towards a target. Skills of
+   magical nature might be ranged if they magically create a projectile, ray
+   of energy or any physical mean to harm a target.
+* _Metaphysical_ skills require their user to know where a target is in order
+   to direct the attack, but they have no physical range. The target could be
+   on another planet, as long as the user has a mean to see, feel or simply
+   know _instantly_ about it.
+
+### Dominance
+
+The **dominance** (**Dom**) of a combat skill describes its effectiveness
+in a mixed combat, given opponents of the same skill level. 
+
+For example, in a certain setting **archery** skill may have **Dom**3, 
+while **gunslinging** has **Dom**6; this means that a gunslinger would 
+way more effective than a comparably competent archer on the battlefield.
+
+Dominance is mostly used in the *advanced* combat system, but is also used
+when mixing combat styles in the other systems. Whenever different combat
+styles are employed, the **dominance** value of each skill is added to
+every roll.
+
+> For example, suppose a brawl fight
+takes place in a tavern, and the town guards, armed with their crossbows, turn
+in to stop the fight. As far as the combat skills go, the guards are using **archery**, 
+while the brawlers are using **brawl**. While guards are less experienced in 
+their **archery** than tavern goers are in their **brawl**, **archery** has an
+innate advantage: its **Dom** may be somewhere around 3, while **brawl** **Dom** could
+be 0 or 1. To resolve any fight, everyone will then add the value of the **dominance**
+of they skill they want to (or can) use to every roll they take.
+
+### Styles and maneuvers
+
+In the _advanced combat system_, **Combat skills** are associated with a _style_, that is a collection
+of actions that can be done using the skill (called **maneuvers**).
+
+**Maneuvers** are not stand-alone skills, and they cannot be target of advantages or perks.
+
+The same combat style can also cover different kind of weapons, with some
+specific maneuvers limited to some weapons. For example, a combat skill may be
+**Firearms**, covering any kind of modern firearm, and its style may include maneuvers as 
+**rapid reload**, which applies only to pistols, and **sniping**, which applies only to
+precision rifles.
+
+Maneuvers have the following statistics:
+
+* Type: can be **attack**, **defense** or **action**.
+* Modifier: positive or negative bonus to the combat skill for any type of roll.
+* Prerequisite: minimum level of other attributes/skills required to perform this maneuver.
+* Diminishing Return: modifier to the roll if using the same maneuver more than once in a row.
+* Range: If the combat skill is ranged, the distance at which this maneuver is effective.
+* Damage: How many **DP** the maneuver inflicts if successful. Defenses and actions can have
+  generate damage as well (i.e. counter-attacks or actions causing indirect damage).
+* Status: a status alteration of the target if the maneuver is successful (i.e. causing
+  the target to be *stunned* for 2 turns, and so on).
+
+
+## Simplified Combat {#BaM-m-simplified-combat}
+
+This combat system can be used to resolve fights between small group of opponents
+are facing each other with _compatible_ fighting skills and weaponry.
+For example, you can use this method when two small bands are shooting at
+each other using using a **firearm** or similar skill, or involved in a fist fight and
+using **brawl**, or taking part in a little __swordfight__ skirmish. 
+
+It is also possible for parties to use different, but somewhat compatible skills. 
+For example, in a medieval tavern fight, guards may interrupt a brawl using armed
+combat of some sort, or in a modern setting, someone may pull out a firearm during
+a bar fight, of some participant may not be confident in brawling and use
+a **generic combat skill** and swing pieces of broken furniture around.
+
+In this cases, each participant will add the **dominance** value of the combat
+skill they're using. 
+
+### Fight Resolution
+
+The simplified combat is a modified repeated multi-contest without draws.
+
+The **GM** and/or the player decide how many rounds the fight will last in advance,
+so that the best out of 1, 3, 5 (or more) rounds wins the fight.
+
+Each turn, every participant uses the skill it prefers to use in this context 
+(possibly, the best one). If the participants use different skills, 
+they add their respective **dominance** to their throw.
+
+On party draws (same number of points scored by each party), the throws are
+repeated.
+
+The effect of winning is determined by the circumstances. For example, 
+a tavern brawl is hardly lethal, and a "friendly" swordfight (i.e. in order 
+to subdue or dissuade an opponent) might simply end with the surrender of the
+losing party. If that's not the case, both winner and losers may receive 
+damage (with the losers generally receiving more).
+
+## Injury Generation in Simplified Combat (optional) {#BaM-m-simplified-combat-injury}
+
+In simplified combat, a losing character receives a number of **DP** equal to their
+(negative) success margin. For example, if it loses with a **SM** of -6, 
+it receives 6 **DP**. 
+
+> Reminder: each success margin is computed with respect to the throw having the same ranking
+in the other team. Highest throw in team A is compared with highest of team B, second highest
+of A with second highest of B and so on.
+
+The character can then use any sensible mitigation (armor or skills, if possible) to reduce
+the raw **DP**.
+
+A *critical failure* means that the character receives a *heavy wound* automatically.
+Notice that, if one party is larger than the other, some of the characters in that party
+(the ones with the lowest scores) will not be engaged directly in the fight; so, the lowest-scoring
+characters will be mostly unharmed. However, they may still score a *critical failure* and
+receive a wound because of that.
+
+> As all the other rules about damage, **Injury Point** penalty applies to the simplified combat
+as well. 
+
+### Fight Duration {#BaM-m-simplified-combat-fight-duration}
+
+In terms of fight length, each round (multi-contest) lasts a number of
+combat turns equal to the number of participants of the largest party.
+
+For example, if three parties with 4, 5 and 6 members respectively are facing
+each other, each round will last 6 turns (usually, 10 seconds each, so one minute
+per round).
+
+### Fight Continuation {#BaM-m-simplified-combat-fight-continuation}
+
+If the characters so desire, they can continue fighting until the losing party is
+ultimately defeated (all of its characters are disabled) or decides to flee.
+
+
+
+
+
+
+## Basic Combat
+
+Sirpas _basic combat_ is a sub-system employed when two or more parties are
+fighting each other.
+
+### Combat Turns
+
+Combat is divided in turns. Normally, characters can perform just one action
+per turn, but certain skills and advantages grant the ability to perform more
+maneuvers.
+
+The length of the turn depends on the settings: it might be one second in a Wild
+West setting where gunslingers are fighting, ten seconds when considering melee
+fights in medieval settings, one nanosecond in fights between AIs, one minute in
+fights between giant robots or starships and so on.
+
+For most situations, you’ll want to consider the length of a combat turn being
+10 seconds.
+
+### Combat order
+
+Each turn, a ranking throw called **combat order** is performed to determine the order in which
+every participant takes action. The attribute used for the ranking is decided
+by the **GM**, or it can be specified by the modules or adventure settings. 
+
+Once the **combat order** is established, each character takes action in turn,
+choosing what action they want to perform:
+
+* Attack
+* Wait for a better moment
+* Move
+* Switch Weapon
+* Use an item
+* Use a non-combat skill
+
+A character can use only a single combat skill during a turn, but some combat skills
+provide multiple _actions_, which means they can be used multiple times per turn to
+defend or attack.
+
+A character can use the combat skill for defending against an attack also if it not
+its turn; however, when its turn comes, it will be able to attack only if it has some
+actions left unused.
+
+A character might also decide not perform any action when its turn comes; if it does so,
+it can interrupt any other action performed later on by characters down the initiative
+ranking, or eventually use a defense to respond to a later attack.
+
+### Instinctive Defense
+
+In some situations, the defender is aware of the incoming attack (i.e. has seen
+the attacker and is ready to receive the blow) but can’t use any skill as a defense. 
+
+Typical reasons are:
+* The character already used all the actions at their disposal in a combat
+  turn and can’t react any more
+* The defender doesn't have a proficiency in the skill used by the attacker,
+  and is just reacting instinctively.
+* The rules explicitly prohibit the use of other defenses (i.e. when disengaging
+  from the combat).
+
+In those cases, provided the defender is at least aware of the attacks, it can use
+an appropriate **generic combat skill** as a defense. Some **GCS** are meant specifically
+to be used as instinctive defense, and may have a better base than more specific ones.
+For example, a module may have both **dodge** and **slash** as **GCS**, with **dodge**
+being a skill specific for defense only, and with a better base value than **slash**.
+
+### Mixing different skill ranges
+
+In some cases, it is necessary to mix differently ranged skills as attack
+and defenses. For example, an archer may be attacked in melee range by
+someone swinging a sword; similarly, a martial artist may need to dodge
+an arrow. 
+
+The situation is resolved as follows:
+
+* When the opponents are in *close quarters*,
+  **ranged** skills have a -2 modifier when defending against **melee** attacks. 
+
+* When opponents are are not in *close quarters*,
+  **melee** skills have a -1 modifier when defending 
+  against **ranged** attacks per every two times of the *close quarter* distance.
+
+The *close quarter* it's the distance that an average fighter can jump and perform
+a melee attack in one swoop. This is normally 6 feet, but may be different in settings
+where the characters have superpowers that allow for faster movement (i.e. in an
+adventure about vampires), or different sizes (i.e. in battles between giant robots).
+
+>For example, a martial artist using defending against a
+sharp shooter standing between 6 and 12 feet away would have a penalty of -1;
+at a distance of 60 feet, the penalty would be -5 (60/6/2 = 5). This can seem
+a lot, but ranged skills have penalties for long range shot and range limits
+already: no one can hope to perform a valid melee defense against a sniper
+hidden on the next hill.
+
+**Metaphysical** skills cannot be use to defend against **melee** or **ranged** skills, and
+the other away around, **melee** and **ranged** skills cannot be used to defend
+against a **metaphysical** attack.
+
+### Ranged attacks falloff
+
+Attack with ranged weapons receive the following modifier, which depends on the
+distance to the target:
+
+| Distance    | Modifier |
+|:-----------:|---------:|
+| < 1/4 range | 0        |
+| < 2/4 range | -1       |
+| < 3/4 range | -2       |
+| <= range    | -4       |
+
+
+
+### Cover
+
+Cover provides a modifier to the defense against ranged attacks.
+
+| Cover         | Modifier |
+|:--------------|---------:|
+| Full          | +4       |
+| Partial       | +2       |
+| On The Ground | +2       |
+| Precarious    | +1       |
+
+
+
+If a character has _full coverage_ and doesn't attack, nor moves, nor doesn't
+perform any action that exposes it, it cannot be attacked with a ranged weapon.
+The defense is required only if the character is actually performing an action
+that would expose part of it out of the cover.
+
+A _partial cover_ is a high wall, large tree or column, three feet rock, and
+anything that could cover part of the body from the aim of the opponent.
+
+A character _on the ground_ is completely squashed, and can only use weapons
+and skill that might be used from this position (i.e. firearms).
+
+A _precarious_ cover is something providing just visual obfuscation, like a
+bush, or very partial cover, as a think tree trunk.
+
+### Tactical situation
+
+Some tactical situations during combat provide modifiers to the attack
+rolls.
+
+| Condition      | Modifier |
+|:---------------|---------:|
+| Surprise       | +2       |
+| Higher Ground  | +1       |
+| High Morale    | +1       |
+| Desperate      | +1       |
+| Tiredness      | -2       |
+| Demoralized    | -1       |
+| Bad Visibility | -1       |
+
+
+
+* __Surprise__: one group surprises the other, which wasn't ready to fight.
+The surprise advantage lasts the first combat turn only.
+* __High Ground__: One group is fighting from uphill, or in an otherwise
+greatly advantageous position.
+* __High Morale__: The party has a high morale because of a specific fact;
+for example, because there is an important target in sight (the exit of a
+dungeon, the treasure or person they were searching for etc), or because of
+a stretch of boasting victories.
+* __Desperate__: The party is in a desperate situation, and had the time
+to contemplate defeat and come with terms to that before the fight. It might
+depend of a perceived superiority of the opponents, or because all food was
+depleted and a breakthrough is necessary for survival, etc.
+* __Tiredness__: The characters are particularly tired, i.e. because they
+couldn't rest after previous fight, or because being forced to fight after a
+long march, or for having run because of a chasing.
+* __Demoralized__: The characters are demoralized because of having lost
+an important target already, their leader, the location they were meant to
+defend, etc.
+
+### Automatic Attack
+
+In some case, the target of an attack is unsuspecting or unable to react:
+for example, the target of a hidden sniper, or a sleeping victim.
+
+In those situations, the combat is not resolved through a contest; the attacker
+rolls on the attack skill, with the following difficulty table:
+
+| Target Status                    | Modifier                         |
+|----------------------------------|----------------------------------|
+| Sleeping                         | Trivial                          |
+| Distracted                       | Easy                             |
+| Unaware                          | Normal                           |
+| Suspicious                       | Difficult                        |
+| Aware                            | Hard                             |
+| In guard                         | Very Hard                        |
+
+
+
+
+### Attack and Defense
+
+When an attack is declared, the target (or targets) can use a defense, either
+by using a specific combat skill or a _generic defense_.
+
+The attacker and all the affected targets perform a Contest using their
+chosen skill as a base.
+
+The attacker rolls and adds the value of the skill, as for any contest.
+
+Determined the value for the attack roll, each defender performs its defense,
+rolling on the chosen defense skill.
+
+A draw means that neither the attack, nor the defense have been successful.
+A successful attack delivers a damage to the target. A successful defense
+might have an effect that depends on the used skill (it might also deliver
+a damage to the attacker).
+
+### Moving during combat
+
+It is possible to move during combat at a speed that can be reasonably covered
+in a combat turn. Modules can define the speed depending on module-specific attributes.
+
+Opponents targeting the character (either because they are nearby in melee,
+or because they have aimed at them previously) can use an attack against
+them to prevent them from moving, provided they still have actions 
+available in the combat round, and are in range of any part of the path 
+of their target. In that case, the moving character must successfully 
+defend using **disengage** as the only possible defense. 
+
+The **disengage** defense is either a viable defense of choice with -4 penalty,
+or a specific check/attribute defined by the modules.
+
+If it fails, other than receiving normal damage, it also stays unmoved, and
+the action is nevertheless consumed.
+
+> If a character plans to move and there isn't any urgency to do that, it's
+better to wait for any opponent that might target them to use up all their
+attacks, so to be able to move freely.
+
+### Damage
+
+Damage is measured in *damage points* (**DP**), and is accounted as the established by the
+__injury__ rule.
+
+The damage delivered by a successful attack (or defense) is specified in the
+skill description under the _base damage_ voice; usually, it's computed
+adding the success margin of the contest to some attribute based modifier.
+
+The _dominance_ of the skill, and eventually of the used weapon, is
+added to the _base damage_; other modifiers (i.e. temporary magic
+incantation) might further be applied. The final total damage delivered
+is called _active damage_ (__AD__).
+
+The character receiving the damage computes its _damage mitigation_ (__DM__)
+by adding _passive defenses_ that can affect the damage source (i.e. armours),
+and eventually _active defenses_ they might use.
+
+Finally, the target character receives a number of __DP__ = __AD__ - __DM__.
+This damage is accounted as specified by the [injury and damage](#injury-and-damage) rule.
+
+### Critical Rolls
+
+A critical success doubles the value of the _success margin_ when computing
+the _active damage_. When the damage roll doesn't involve the **SM** in the
+computation of the **AD**, a critical result adds 4 **DP**.
+
+> Notice that some defenses might generate a damage too.
+
+A critical failure indicates a failure even when the roll itself would
+indicate a success. For example, suppose an attacker with __brawl__ 16 against
+a defender with __archery__ 5. If the attacker rolls 3, which is a critical
+failure, the attack fails even if 16+3 would be above the archer's roll.
+
+If both the attacker and defender roll a critical failure, the roll result
+(with the respective modifiers) is considered: critical failures on both sides
+elide each other.
+
+
+## Advanced Combat
+
+Advanced Combat is the most sophisticated combat sub-system; it expands the
+basic combat system by adding a set of sub-skills for each combat skill,
+called **maneuvers**. They represent special actions a character can take while using
+the combat skill.
+
+There are specific maneuvers to attack and defend in each style, and each of
+them has different balances of difficulty of execution versus potential damage,
+or different effects on the reset of the combat. Some maneuvers provide
+modifiers to subsequent moves, while some other generate damage also
+when defending.
+
+### Maneuver types
+
+Maneuvers are divided into _attacks_, _defenses_ and _actions_. Attacks and
+defenses represent a mores specific usages of the base combat skill as
+per the _base combat_ rules; _actions_ are
+other ways a combat skill can be employed.
+
+### Maneuver modifier
+
+Some maneuvers are more difficult than others; some rely on brute force, others
+on finesse of execution. To reflect this, each maneuver can offer different
+modifiers to the various combat skill rolls.
+
+### Diminishing Returns
+
+Some maneuvers get a negative modifier if being used repeatedly against the same
+target. For example, repeating using a brawl/punch has diminishing returns: your
+opponent will read your move, and will be able to better defend against the same
+attack. In those situations, you’ll want to be less predictable, and use other
+maneuvers, or other styles altogether.
+
+This factor is called __diminishing return__ (**DR**) for a certain maneuver.
+
+
+
+
+
+
+
 
 # APPENDIX: Theorycrafting Elements
 

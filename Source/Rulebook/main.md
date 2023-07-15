@@ -15,5 +15,7 @@ $(include Perks.md)
 
 $(include Checks.md)
 $(include Damage_and_injury.md)
+$(include Combat.md)
+
 
 $(include Technical.md)
