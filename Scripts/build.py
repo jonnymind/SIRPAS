@@ -2,10 +2,11 @@
 
 # Script pre-processing markdown
 # Known commands:
-# $(-- --) -- Comment
-# $(include xxx)  -- Include verbatim target document
-# $(dd xxx)  -- Create data dictionary
-# $(dt xxx)  -- Create data table
+# @(-- --) -- Comment
+# @(include xxx)  -- Include verbatim target document
+# @(dd xxx)  -- Create data dictionary
+# @(dt xxx)  -- Create data table
+# @(var ABC value) / @( ... $ABC ... ) -- macro substitutes variables
 
 import re
 import glob
@@ -13,24 +14,111 @@ import argparse
 import sys
 import os
 import json
+import io
+from typing import IO
 
-RE_COMMAND = re.compile("(.*)(?!\\\\)[$@]\\((.*?)\\s+(.*?)\\)(.*)")
+RE_COMMAND = re.compile("(.*)(?!\\\\)[$@]\\((.*?)(\\s+(.*?))?\\)(.*)")
 RE_COMMENT = re.compile("[@$]\\(--")
+RE_VARIABLE = re.compile("[$]([a-zA-Z0-9._-]+)")
 
 def message(what):
 	pass
 	#print(what)
 
+
+class Entry:
+	def __init__(self, type:str, title:str):
+		self.buffer = io.StringIO()
+		self.type = type
+		self.title = title
+		self.reference = self.make_reference(title)
+		self.break_line = False
+		
+	def make_reference(self, title: str) -> str:	
+		return title.strip().lower().replace(" ","-").replace("--","-")
+	
+	def write(self, data:str):
+		# Filter out blanks
+		data = data.strip(" ")
+		
+		# Skip multiple newlines and newlines on top of items.
+		if data == "\n": 
+			self.break_line = True
+			return
+		
+		if self.break_line:
+			self.break_line = False
+			self.buffer.write("\n")
+
+		self.buffer.write(data)
+
+	def dump(self, fout:IO[str]) -> bool:
+		data = self.buffer.getvalue()
+		fout.write(data)
+		return data.endswith("\n\n")
+		
+	def size(self):
+		return self.buffer.tell()
+	
+	def is_empty_text(self):
+		return self.type == "text" and self.size() == 0
+
+	def is_inline(self):
+		return self.type in ["placeholder"]
+
 class Processor:
-	def __init__(self, fout):
+	def __init__(self):
 		message(f"Creating processor to {fout}")
 		self.basepath = None
-		self.fout = fout
 		self.fin = None
 		self.line = 0
 		self.current = None
 		self.current_stack = []
 		self.line_stack = []
+		self.variables = {}
+		self.pending_entries_by_type = {}
+		self.pending_entries = {}
+		self.entries = []
+		self.reference_entries = {}
+		self.current_entry = None
+		self.create_entry("text", "@Start")
+
+	def create_entry(self, type_of_entry: str, title: str) -> Entry:
+		new_entry = Entry(type_of_entry, title)
+		self.add_entry(new_entry)
+		return new_entry
+	
+	def add_entry(self, new_entry: Entry) -> None:
+		self.append_entry(new_entry)
+		self.reference_entries[new_entry.reference] = new_entry
+		self.current_entry = new_entry
+		self.on_new_entry(new_entry)
+
+	def append_entry(self, new_entry: Entry) -> None:
+		# remove empty text entries
+		if self.entries and self.entries[-1].is_empty_text():
+			del self.entries[-1]
+		self.entries.append(new_entry)
+
+	def on_new_entry(self, entry: Entry):
+		lambda_action = self.pending_entries_by_type.pop(entry.type, None)
+		if lambda_action:
+			self.pending_entries.pop(entry.reference, None)
+			lambda_action[1](entry)
+		lambda_action = self.pending_entries.pop(entry.reference, None)
+		if lambda_action:
+			lambda_action[1](entry)
+		
+
+	def process_titles(self, title:str):
+		for type_of_entry, prefix in [
+				("chapter", "# "), 
+				("para", "## "),
+				("sub", "### ")]:
+
+			if title.startswith(prefix):
+				title = title[len(prefix):].strip()
+				new_entry = self.create_entry(type_of_entry, title)
 
 	def process_comment(self, line):
 		pos = line.find("--)")
@@ -41,12 +129,35 @@ class Processor:
 				return
 			pos = line.find("--)")
 		if pos >= 0:
-			self.fout.write(line[pos+3:])
+			self.current_entry.write(line[pos+3:])
 
-	def isLineCommand(self, cmd:str):
+	def is_line_command(self, cmd:str):
 		return cmd in ['include', 'dd', 'dt']
 	
-	def process_command(self, cmd, params: str):
+	def store_variable(self, vardef:str):
+		varname = vardef.split(' ')[0]
+		varvalue = vardef[len(varname)+1:].strip()
+		message(f"Defining {varname} = {varvalue}")
+		self.variables[varname] = varvalue
+		
+	def expand_variable(self, varname:str): 
+		if varname not in self.variables:
+			self.print_error("Unknown variable '{varname}'")
+			return "UNKNOWN_VARIABLE"
+		else:
+			return self.variables[varname]
+		
+	def expand_variables(self, params:str):
+		match = RE_VARIABLE.search(params)
+		while match:
+			message(f"Found variable {match.group(1)}")
+			params = params[0:match.start] + self.expand_variable(match.group(1)) + params[match.end:]
+		return params
+
+	def process_command(self, cmd:str, params: str):
+		if params:
+			params = self.expand_variables(params)
+		
 		if cmd == "include":
 			origin = os.path.abspath(os.path.dirname(self.current))
 			params = params.strip()
@@ -54,7 +165,6 @@ class Processor:
 				tgt = (self.basepath + params) if params.startswith("/")\
 											 else os.path.join(origin, params)
 				self.process(tgt)
-				self.fout.write("\n")
 			except IOError as error:
 				self.print_error("Failed include {} - {}".format(
 								tgt, error))
@@ -62,6 +172,12 @@ class Processor:
 			self.process_dd(params)
 		elif cmd == "dt":
 			self.process_dt(params)
+		elif cmd == "var":
+			self.store_variable(params)
+		elif cmd == "next":
+			self.process_next(params)
+		elif cmd.startswith("$"):
+			self.current_entry.write(self.expand_variable(cmd[1:]))
 		else:
 			self.print_error("Unknown command: {}".format(cmd))
 
@@ -91,31 +207,31 @@ class Processor:
 		for line in fin:
 			self.line += 1
 
-			# Skip stray spaces at the end of files
-			if line.strip() == "":
-				self.fout.write("\n")
-				continue
-
 			# strip comments
 			cmt = RE_COMMENT.search(line)
 			if cmt:
-				self.fout.write(line[0:cmt.start(0)])
+				self.current_entry.write(line[0:cmt.start(0)])
 				self.process_comment(line[cmt.start(0):])
 				continue
-
+			
+			# proecess titles
+			if line.startswith("#"):
+				self.process_titles(line)
+				# don't break, there could still be a command.
+			
 			# Process commands
 			rcmd = RE_COMMAND.match(line)
 			if rcmd:
-				pre, cmd, params, post = rcmd.group(1), rcmd.group(2), rcmd.group(3), rcmd.group(4)
+				pre, cmd, params, post = rcmd.group(1), rcmd.group(2), rcmd.group(4), rcmd.group(5)
 				# Avoid stray characters if we're doing a line commaand.
-				if self.isLineCommand(cmd):
+				if self.is_line_command(cmd):
 					pre = post = ""
-				self.fout.write(pre)
+				self.current_entry.write(pre)
 				self.process_command(cmd, params)
-				self.fout.write(post)
+				self.current_entry.write(post+"\n")
 			else:
-				self.fout.write(line)
-		self.fout.write("\n")
+				self.current_entry.write(line)
+		self.current_entry.write("\n")
 		self.pop_current()
 
 	def pop_current(self):
@@ -147,11 +263,11 @@ class Processor:
 			header += 1
 			# skip creating a header separator if provided
 			if header == 2 and "--" not in line[0]:
-				self.fout.write("|")
+				self.current_entry.write("|")
 				for word in line:
-					self.fout.write("-" * (len(str(word))+2) +"|")
-				self.fout.write("\n")
-			self.fout.write( "| " + " | ".join(map(lambda x:str(x), line)) + " |\n")
+					self.current_entry.write("-" * (len(str(word))+2) +"|")
+				self.current_entry.write("\n")
+			self.current_entry.write( "| " + " | ".join(map(lambda x:str(x), line)) + " |\n")
 
 	def process_dd(self, params):
 		ddict = self.get_json()
@@ -177,7 +293,7 @@ class Processor:
 				elif opener == '{':
 					closer = '}'
 				else:
-					self.fout.write(line)
+					self.current_entry.write(line)
 					return None
 
 			level += line.count(opener) - line.count(closer)
@@ -191,8 +307,34 @@ class Processor:
 				except json.decoder.JSONDecodeError as error:
 					self.print_error(error)
 					return None
+	
+	def process_next(self, waiting_for:str):
+		pending_entry = Entry("placeholder", f"Next {waiting_for}")
+		self.append_entry(pending_entry)
+		self.create_entry("text", "")
+		self.pending_entries_by_type[waiting_for] = (pending_entry, 
+			lambda ref_entry: self.apply_next(ref_entry, pending_entry))
+		
+	def apply_next(self, ref_entry:Entry, target_entry:Entry):
+		target_entry.write(ref_entry.reference)
 
-	def print_error(self, message):
+	def commit(self, output: IO[str]):
+		self.check_undefined()
+		previous_inline = True
+		for entry in self.entries:
+			if not previous_inline and not entry.is_inline():
+				output.write("\n")
+			well_terminated = entry.dump(output)
+			previous_inline = well_terminated or entry.is_inline()
+
+	def check_undefined(self):
+		for entry, func in list(self.pending_entries.values()) \
+					+ list(self.pending_entries_by_type.values()):
+			self.print_error(f"Undefined entry {entry.title}")
+			entry.write(f"NOT FOUND {entry.reference}")
+
+
+	def print_error(self, message:str):
 		sys.stderr.write("ERROR: {}({}): {}\n".format(
 							  self.current, self.line, message))
 
@@ -213,5 +355,6 @@ else:
 	fout = sys.stdout
 
 for fin in opts.sources:
-	proc = Processor(fout)
+	proc = Processor()
 	proc.process(fin)
+	proc.commit(fout)
