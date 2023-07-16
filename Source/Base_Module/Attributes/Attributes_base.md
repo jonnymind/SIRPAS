@@ -1,8 +1,6 @@
+## Main and primary attributes
 
-Top-level attributes are called *main attributes*, or simply **mains**; 
-sub-attributes of **mains** are called are called **primaries**. 
-
-The base system defines the following **mains** and **primaries**:
+Every character has the following **Main** attributes:
 
 * Body (**B**): The physical aspect of the character. Body **primary** attributes are:
    * Strength (**S**): raw physical power;
@@ -12,6 +10,58 @@ The base system defines the following **mains** and **primaries**:
   * Will (**W**): strength of conviction and assertiveness.
   * Intelligence (**I**): ability to understand and solve complex problems; mental flexibility.
   * Equilibrium (**E**): resilience to mental strain, stress and madness.
+
+The [**body**](#body) primary provides also the **base value** of 
+[**strength**](#strength), [**dexterity**](#dexterity) and (**health**)[#health]. This means that
+the value of **body** is also the *default* value for the these dependent primaries; you can
+then train each of them separately using *primary tokens*, and improve them over their base
+value, but if you train the main trait **body**, all its dependent attributes will grow with it.
+
+Similarly, [**mind**](#mind) provides the base value for [**will**](#will), [**intelligence**](#intelligence) and [**equilibrium**](#equilibrium).
+
+In turn, the primaries are themselves base for other attributes and skills.
+
+There is more to be known on each of those attributes, but you can [jump into action](@(next chapter)) 
+from here.
+
+## Character power
+
+At times it's useful to have a rough estimate of the approximate power of a character. That
+can be useful to determine at a glance if a certain adventure is too hard or too easy for
+the players, or to decide how many enemies of a certain type it's fair to face in a fight.
+
+How strong is a character is a matter of how the various skills have been trained. For this
+reason, the **power** of a character is determined as the number of **primary** training tokens
+needed train all its skills, rounded up. 
+
+To determine this value sum all the points spent on every skill and attribute, dividing them
+accordingly with their relative hierarchy position; ignore the **mains**, but 
+count the **primaries** as if they had no base. Hard skills and secondary attributes are worth
+half a point, normal skill a quarter and easy skills are just worth one eight.
+
+For example, a character is so built:
+
+- Strength: 11
+- Dexterity: 16
+- Health: 10
+- Will: 12
+- Intelligence: 14
+- Equilibrium : 10
+
+It has the following hard skills:
+
+- Endurance: 5
+- Engineering: 2
+
+And the following normal skills:
+
+- Deceit(**I**): 14 + 3 = 17
+- Acrobatics(**D**): 16 + 1 = 17
+
+
+
+
+
 
 ### Body
 

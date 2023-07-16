@@ -45,6 +45,8 @@ class Entry:
 		if data == "\n": 
 			self.break_line = True
 			return
+		elif data == "":
+			return
 		
 		if self.break_line:
 			self.break_line = False
@@ -81,7 +83,7 @@ class Processor:
 		self.entries = []
 		self.reference_entries = {}
 		self.current_entry = None
-		self.create_entry("text", "@Start")
+		self.create_entry("placeholder", "@Start")
 
 	def create_entry(self, type_of_entry: str, title: str) -> Entry:
 		new_entry = Entry(type_of_entry, title)

@@ -5,8 +5,10 @@
 	(C) Giancarlo Niccolai 2018.
 	LICENSE: CC-BY-ATTR Share-alike
 --)
+@(var BaseAddress https://jonnymind.github.io/SIRPAS)
 
 @(include Introduction.md)
+@(include Attributes.md)
 
 
 @(-- Section: STATISTICS  --)

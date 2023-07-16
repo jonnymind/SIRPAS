@@ -17,7 +17,7 @@ well provide a base modifier.
 The following table indicates the **base modifier** associated with
 the value of the base attribute. 
 
-$(include /tables/modifiers.md)
+@(include /tables/modifiers.md)
 
 To indicate that the modifier of an attribute is base for another, the
 attribute is prefixed with a lower case "**m**". For example, 
