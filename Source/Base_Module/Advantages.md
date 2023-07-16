@@ -1,18 +1,30 @@
-# Advantages {#BaM-gen-advantages}
+# Advantages
 
-Advantages special conditions that apply to the character in general or to a specific skill in particular, 
-and that have a direct effect on some game mechanics.
+Advantages special conditions that apply to the character in general 
+or to a specific skill in particular, and that have a direct effect 
+on some game mechanics.
 
-While most advantages are simply possessed by a character or not, some can have different levels. 
-For example, Survival Instinct can have a level between 1 and 3, each granting a higher modifier. 
+Advantages can be bought for a certain number of **training tokens**
+of a certain type; the more powerful the advantage, the more high
+level the training tokens needed to train a point.
 
-In that case, the description of the advantage indicates the initial cost and the cost per additional level. 
-The cost of a further level is given by the base cost, plus the additional level cost times the current level. 
-For example, if the description indicates the cost in **CP** being 5+2, it means that the first level costs 5, 
-the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
+While most advantages are simply possessed by a character or not,
+some can have different levels. In that case, the cost of
+each ulterior point will be the cost of the base previous level plus one
+token of the same type.
+
+For example, **Survival Instinct** can have a level between 1 and 4, 
+each granting a higher modifier. The first level costs 3 **TT**/*Normal*;
+this means that level 2 costs 4 **TT**/Normal, level 3 costs 5 **TT**/*Normal*
+and level 4 costs 6 **TT**/*Normal*.
+
 
 Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. 
-For example, they could require having already acquired another advantage, or having a certain 
-statistic at a minimum set score.
+For example, they could require having already acquired another advantage, 
+or having a certain attribute at a minimum set score.
 
+## List of advantages
 
+@(index 2)
+@(include Advantages/*.md)
+@(endindex)

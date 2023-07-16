@@ -57,7 +57,7 @@ class Entry:
 	def dump(self, fout:IO[str]) -> bool:
 		data = self.buffer.getvalue()
 		fout.write(data)
-		return data.endswith("\n\n")
+		return data.endswith("\n")
 		
 	def size(self):
 		return self.buffer.tell()
@@ -84,6 +84,7 @@ class Processor:
 		self.reference_entries = {}
 		self.current_entry = None
 		self.create_entry("placeholder", "@Start")
+		self.index_stack = []
 
 	def create_entry(self, type_of_entry: str, title: str) -> Entry:
 		new_entry = Entry(type_of_entry, title)
@@ -111,8 +112,7 @@ class Processor:
 		if lambda_action:
 			lambda_action[1](entry)
 		
-
-	def process_titles(self, title:str):
+	def process_titles(self, title: str):
 		for type_of_entry, prefix in [
 				("chapter", "# "), 
 				("para", "## "),
@@ -121,6 +121,8 @@ class Processor:
 			if title.startswith(prefix):
 				title = title[len(prefix):].strip()
 				new_entry = self.create_entry(type_of_entry, title)
+				if self.index_stack and self.index_stack[-1].depth >= len(prefix)-1:
+					self.index_stack[-1].content.append(new_entry)
 
 	def process_comment(self, line):
 		pos = line.find("--)")
@@ -134,7 +136,7 @@ class Processor:
 			self.current_entry.write(line[pos+3:])
 
 	def is_line_command(self, cmd:str):
-		return cmd in ['include', 'dd', 'dt']
+		return cmd in ['include', 'dd', 'dt', 'index', 'endindex']
 	
 	def store_variable(self, vardef:str):
 		varname = vardef.split(' ')[0]
@@ -178,6 +180,10 @@ class Processor:
 			self.store_variable(params)
 		elif cmd == "next":
 			self.process_next(params)
+		elif cmd == "index":
+			self.process_index(params)
+		elif cmd == "endindex":
+			self.process_endindex()
 		elif cmd.startswith("$"):
 			self.current_entry.write(self.expand_variable(cmd[1:]))
 		else:
@@ -192,7 +198,7 @@ class Processor:
 		if len(flist) > 1:
 			for fin2 in flist:
 				self.process(fin2)
-				return
+			return
 		elif len(flist) == 0:
 			return
 		src = flist[0]
@@ -253,10 +259,10 @@ class Processor:
 		table = self.get_json()
 		self.write_table(table)
 
-	def write_table(self, table, hidden_fields=False):
+	def write_table(self, table, hidden_fields=False, make_header=False):
 		if not table:
 			return
-		header = 0
+		header = 0 if make_header else 1
 		for line in table:
 			if line[0] and line[0][0] == '*':
 				if not hidden_fields:
@@ -276,10 +282,34 @@ class Processor:
 		if ddict is None:
 			self.print_error("Invalid DD entry: {}".format(self.get_json()))
 			return
-		table = [[" ", " "]]
+		#table = [[" ", " "]]
+		table = []
 		for key in sorted(ddict):
 			table.append([key[4:], ddict[key]])
-		self.write_table(table)
+		self.write_table(table, make_header=False)
+
+	def process_index(self, depth: str):
+		index_entry = Entry("index", f"Index {len(self.index_stack)}")
+		index_entry.content = []
+		try:
+			index_entry.depth = 1 if depth == "" else int(depth)
+		except Exception:
+			self.print_error("Index depth is not an integer")
+			index_entry.depth = 1
+
+		self.index_stack.append(index_entry)
+		self.append_entry(index_entry)
+		self.create_entry("text", "")
+	
+	def process_endindex(self):
+		if not self.index_stack:
+			self.print_error("Endindex command without open index")
+		else:
+			index_entry = self.index_stack.pop(-1)
+			index_entry.write("\n")
+			for entry in index_entry.content:
+				index_entry.write(f"- [{entry.title}]({entry.reference})\n")
+			index_entry.write("\n")
 
 	def get_json(self):
 		opener, closer, level = None, None, 0
@@ -323,11 +353,16 @@ class Processor:
 	def commit(self, output: IO[str]):
 		self.check_undefined()
 		previous_inline = True
+		well_terminated = True
 		for entry in self.entries:
-			if not previous_inline and not entry.is_inline():
-				output.write("\n")
+			if not previous_inline:
+				if not entry.is_inline():
+					output.write("\n")
+					if not well_terminated:
+						output.write("\n")
+
 			well_terminated = entry.dump(output)
-			previous_inline = well_terminated or entry.is_inline()
+			previous_inline = entry.is_inline()
 
 	def check_undefined(self):
 		for entry, func in list(self.pending_entries.values()) \

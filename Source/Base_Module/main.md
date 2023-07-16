@@ -8,18 +8,16 @@
 @(var BaseAddress https://jonnymind.github.io/SIRPAS)
 
 @(include Introduction.md)
-@(include Attributes.md)
-
 
 @(-- Section: STATISTICS  --)
-@(include Skills.md)
-@(include Skills/*.md)
+@(include Attributes.md)
 @(include Advantages.md)
-@(include Advantages/*.md)
 @(include Disadvantages.md)
 @(include Disadvantages/*.md)
 @(include Perks_and_Drags.md)
 @(include Perks_and_Drags/*.md)
+@(include Skills.md)
+@(include Skills/*.md)
 
 @(-- Section: COMBAT  --)
 
@@ -53,6 +51,6 @@
 @(include Equipment/Armours.md)
 @(include Equipment/Weapons.md)
 
-@(-- Section: TECHNICAL  --)
+@(-- Section: Design  --)
+@(include Character_power.md)
 
-@(include Technical.md)

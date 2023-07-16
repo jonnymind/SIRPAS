@@ -1,12 +1,21 @@
-## Born in a Mourning Hall (20CP) {#BaM-a-born-in-a-mourning-hall}
+## Born in a Mourning Hall 
 
-__*Prerequisite*__: *Hard To Die*
+@(dd Born_in_a_mourning_hall)
+{ 
+  "*Name": "Born in a Mourning Hall",
+  "*Brief": "Increases instinctive defense",
+  "Category": "Advantage",
+  "Cost": "2 TT/Hard",
+  "Prerequisite": "Hard to die"
+}
 
-The character can withstand an additional wound from mental sources before being
+
+The character can withstand an additional heavy wound from mental sources 
+(or the equivalent amount of **IP** from lighter wounds) before being
 incapacitated, and will not die in case the last wound received was from a
 mental source if not treated for 1 hour, regardless of the Injury Points
 sustained.
 
-The last  mental wound received during a fight will automatically heal in 6
+The last mental wound received during a fight will automatically heal in 4
 hours, even if not treated.
 

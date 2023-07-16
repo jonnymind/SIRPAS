@@ -1,5 +1,12 @@
-## Survival Instinct 1-4 (6/3CP) {#BaM-a-survival-instinct}
+## Survival instinct
 
-All instinctive defense checks and contests get a modifier
-of +1 per level bought.
+@(dd Survival_instinct)
+{ 
+  "*Name": "Survival instinct",
+  "*Brief": "Increases instinctive defense",
+  "Category": "Advantage",
+  "Cost": "3 TT/Normal"
+}
+
+All instinctive defense checks get a +1 modifier per level of this advantage.
 
