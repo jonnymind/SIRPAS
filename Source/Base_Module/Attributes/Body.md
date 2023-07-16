@@ -5,8 +5,8 @@
   "*Name": "Body",
   "*Brief": "Overall physical build up",
   "*Abbrev": "B",
-  "Base": "3",
-  "Category": "Main"
+  "Category": "Main",
+  "Base": "3"
 }
 
 The Body (**B**) is a value that describes your overall physical prowess in terms of

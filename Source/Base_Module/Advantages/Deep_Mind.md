@@ -1,11 +1,15 @@
-## Deep Mind 1-6 (5/2CP) {#BaM-a-deep-mind}
+## Deep Mind
 
-__*Prerequisite*__: *M* 8
+@(dd deep_mind)
+{ 
+  "*Name": "Deep Mind",
+  "*Brief": "Passive resistance against despair and maddening",
+  "Category": "Advantage",
+  "Prerequisite": "Mind 9",
+  "Cost": "2 TT/Hard",
+  "Levels": 6
+}
 
-The character acquires a passive mitigation against despair
-damage equal to the level of this advantage, and a passive
-mitigation against maddening damage equal to half the level.
+The character acquires a passive mitigation against *despair*
+and *maddening* damage equal to the level of this advantage.
 
-When using the [Basic Combat System](#basic-combat), this advantage allows to
-to perform one extra __damage resist__ check per point, when the damage source
-is mental.

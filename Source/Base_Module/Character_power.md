@@ -1,4 +1,3 @@
-
 ## Character power
 
 At times it's useful to have a rough estimate of the approximate power of a character. That

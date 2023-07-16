@@ -259,10 +259,10 @@ class Processor:
 		table = self.get_json()
 		self.write_table(table)
 
-	def write_table(self, table, hidden_fields=False, make_header=False):
+	def write_table(self, table, hidden_fields=False):
 		if not table:
 			return
-		header = 0 if make_header else 1
+		header = 0
 		for line in table:
 			if line[0] and line[0][0] == '*':
 				if not hidden_fields:
@@ -282,11 +282,10 @@ class Processor:
 		if ddict is None:
 			self.print_error("Invalid DD entry: {}".format(self.get_json()))
 			return
-		#table = [[" ", " "]]
-		table = []
+		table = [["<!-- -->", "<!-- -->"]]
 		for key in sorted(ddict):
 			table.append([key[4:], ddict[key]])
-		self.write_table(table, make_header=False)
+		self.write_table(table)
 
 	def process_index(self, depth: str):
 		index_entry = Entry("index", f"Index {len(self.index_stack)}")
@@ -308,7 +307,7 @@ class Processor:
 			index_entry = self.index_stack.pop(-1)
 			index_entry.write("\n")
 			for entry in index_entry.content:
-				index_entry.write(f"- [{entry.title}]({entry.reference})\n")
+				index_entry.write(f"- [{entry.title}](#{entry.reference})\n")
 			index_entry.write("\n")
 
 	def get_json(self):

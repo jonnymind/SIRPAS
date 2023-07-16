@@ -3,9 +3,10 @@
 @(dd Battleproof)
 { 
   "*Name": "Battleproof",
-  "*Brief": "Can sustain an additional heavy wound",
+  "*Brief": "Can sustain an additional physical heavy wound",
   "Category": "Advantage",
-  "Cost": "2 TT/Hard"
+  "Cost": "2 TT/Hard",
+  "Prerequisite": "Hard to die"
 }
 
 The character can withstand an additional heavy wound (or the equivalent **IP** from

@@ -3,12 +3,11 @@
 @(dd Born_in_a_mourning_hall)
 { 
   "*Name": "Born in a Mourning Hall",
-  "*Brief": "Increases instinctive defense",
+  "*Brief": "Can sustain an additional mental heavy wound",
   "Category": "Advantage",
   "Cost": "2 TT/Hard",
   "Prerequisite": "Hard to die"
 }
-
 
 The character can withstand an additional heavy wound from mental sources 
 (or the equivalent amount of **IP** from lighter wounds) before being

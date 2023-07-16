@@ -1,9 +1,23 @@
-## Expertise/skill (6CP) {#BaM-a-expertise}
+## Expertise
 
-Skill Expertise (SE) it’s an advantage bought for specific skills.
+@(dd expertise)
+{ 
+  "*Name": "Expertise",
+  "*Brief": "Throw 4 die and select 3 in any check",
+  "Category": "Advantage",
+  "Specialization": "Skill", 
+  "Cost": "3 TT/Hard",
+  "Prerequisite": "Easygoing"
+}
 
-In every check performed on the target skill, the player can
-throw 4d6 instead of 3d6, and discard the lower die.
+This advantage allows to throw 4 die instead of 3 in any check
+involving the specified skill, and select the three best rolls out
+of them.
+
+This includes combat styles and other combat skills.
+
+The prerequisite for Expertise is to have [Easygoing](#easygoing) on the
+same skill.
 
 When targeted with this advantage, some skills also improve their
 quality. For example, [first-aid](#BaM-s-first-aid) can normally

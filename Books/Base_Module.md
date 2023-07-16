@@ -93,6 +93,7 @@ from here.
 
 ## Body
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | 3 |
 | Category | Main |
@@ -109,6 +110,7 @@ functional body.
 
 ## Mind
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | 3 |
 | Category | Main |
@@ -122,6 +124,7 @@ in the reference setting will have a mind between 10 and 12.
 
 ## Strength
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | B |
 | Category | Primary |
@@ -151,6 +154,7 @@ of it normal movement
 
 ## Dexterity
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | B |
 | Category | Primary |
@@ -195,6 +199,7 @@ works in those contexts).
 
 ## Health
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | B |
 | Category | Primary |
@@ -206,6 +211,7 @@ and gives the base for all physical resistance skills.
 
 ## Will
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | M |
 | Category | Primary |
@@ -217,6 +223,7 @@ equivalent of the strength (**S**) in the mind realm.
 
 ## Intelligence
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | M |
 | Category | Primary |
@@ -228,6 +235,7 @@ as the dexterity (**D**) of the mind.
 
 ## Equilibrium
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | M |
 | Category | Primary |
@@ -243,107 +251,184 @@ Hence, it forms the base of all the mental resistance skills.
 
 # Advantages
 
-Advantages special conditions that apply to the character in general or to a specific skill in particular, 
-and that have a direct effect on some game mechanics.
+Advantages special conditions that apply to the character in general 
+or to a specific skill in particular, and that have a direct effect 
+on some game mechanics.
 
-While most advantages are simply possessed by a character or not, some can have different levels. 
-For example, Survival Instinct can have a level between 1 and 3, each granting a higher modifier. 
+Advantages can be bought for a certain number of **training tokens**
+of a certain type; the more powerful the advantage, the more high
+level the training tokens needed to train a point.
 
-In that case, the description of the advantage indicates the initial cost and the cost per additional level. 
-The cost of a further level is given by the base cost, plus the additional level cost times the current level. 
-For example, if the description indicates the cost in **CP** being 5+2, it means that the first level costs 5, 
-the second 5+2*1 = 7, the third 5+2*2 = 9 and so on.
+While most advantages are simply possessed by a character or not,
+some can have different levels. In that case, the cost of
+each ulterior point will be the cost of the base previous level plus one
+token of the same type.
+
+For example, **Survival Instinct** can have a level between 1 and 4, 
+each granting a higher modifier. The first level costs 3 **TT**/*Normal*;
+this means that level 2 costs 4 **TT**/Normal, level 3 costs 5 **TT**/*Normal*
+and level 4 costs 6 **TT**/*Normal*.
 
 Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. 
-For example, they could require having already acquired another advantage, or having a certain 
-statistic at a minimum set score.
+For example, they could require having already acquired another advantage, 
+or having a certain attribute at a minimum set score.
+
+## List of advantages
 
 
-- [Battleproof (10CP) {#BaM-a-battleproof}](battleproof-(10cp)-{#bam-a-battleproof})
-- [Born in a Mourning Hall (20CP) {#BaM-a-born-in-a-mourning-hall}](born-in-a-mourning-hall-(20cp)-{#bam-a-born-in-a-mourning-hall})
-- [Combat Expert/style (10/5CP) {#BaM-a-combat-expert}](combat-expert/style-(10/5cp)-{#bam-a-combat-expert})
-- [Deep Mind 1-6 (5/2CP) {#BaM-a-deep-mind}](deep-mind-1-6-(5/2cp)-{#bam-a-deep-mind})
-- [Easygoing/skill (3CP) {#BaM-a-easygoing}](easygoing/skill-(3cp)-{#bam-a-easygoing})
-- [Elemental Resistance {#BaM-a-elemental-resistance}](elemental-resistance-{#bam-a-elemental-resistance})
-- [Expertise/skill (6CP) {#BaM-a-expertise}](expertise/skill-(6cp)-{#bam-a-expertise})
-- [Fast Paced 1-3 (6/4CP) {#BaM-a-fast-paced}](fast-paced-1-3-(6/4cp)-{#bam-a-fast-paced})
-- [Hard Skin 1-6 (4/2CP) {#BaM-a-hard-skin}](hard-skin-1-6-(4/2cp)-{#bam-a-hard-skin})
-- [Hard to Die 1-3 (15/5CP) {#BaM-a-hard-to-die}](hard-to-die-1-3-(15/5cp)-{#bam-a-hard-to-die})
-- [Mastery/skill (10CP) {#BaM-a-mastery}](mastery/skill-(10cp)-{#bam-a-mastery})
-- [Natural/skill (6CP) {#BaM-a-}](natural/skill-(6cp)-{#bam-a-})
-- [Strong Temper (20CP) {#BaM-a-strong-temper}](strong-temper-(20cp)-{#bam-a-strong-temper})
-- [Survival Instinct 1-4 (6/3CP) {#BaM-a-survival-instinct}](survival-instinct-1-4-(6/3cp)-{#bam-a-survival-instinct})
-- [Total Mitigation (6CP) {#BaM-a-total-mitigation}](total-mitigation-(6cp)-{#bam-a-total-mitigation})
+- [Battleproof](#battleproof)
+- [Born in a Mourning Hall](#born-in-a-mourning-hall)
+- [By the skin of one's teeth](#by-the-skin-of-one's-teeth)
+- [Combative spirit](#combative-spirit)
+- [Deep Mind](#deep-mind)
+- [Defense Expert](#defense-expert)
+- [Easygoing](#easygoing)
+- [Elemental Resistance](#elemental-resistance)
+- [Expertise](#expertise)
+- [Fast Paced](#fast-paced)
+- [Hard Skin](#hard-skin)
+- [Hard to Die](#hard-to-die)
+- [Keen Eye](#keen-eye)
+- [Mastery](#mastery)
+- [Natural](#natural)
+- [Survival instinct](#survival-instinct)
+- [Total Mitigation](#total-mitigation)
 
-## Battleproof (10CP) {#BaM-a-battleproof}
+## Battleproof
 
-The character can withstand an additional wound from physical sources before
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 2 TT/Hard |
+| Prerequisite | Hard to die |
+
+The character can withstand an additional heavy wound (or the equivalent **IP** from
+lighter wounds) from physical sources before
 being incapacitated. The first physical wound is received during a fight will
-automatically heal in 6 hours, even if not treated.
+automatically heal in 4 hours, even if not treated.
 
-## Born in a Mourning Hall (20CP) {#BaM-a-born-in-a-mourning-hall}
+## Born in a Mourning Hall 
 
-__*Prerequisite*__: *Hard To Die*
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 2 TT/Hard |
+| Prerequisite | Hard to die |
 
-The character can withstand an additional wound from mental sources before being
+The character can withstand an additional heavy wound from mental sources 
+(or the equivalent amount of **IP** from lighter wounds) before being
 incapacitated, and will not die in case the last wound received was from a
 mental source if not treated for 1 hour, regardless of the Injury Points
 sustained.
 
-The last  mental wound received during a fight will automatically heal in 6
+The last mental wound received during a fight will automatically heal in 4
 hours, even if not treated.
 
-## Combat Expert/style (10/5CP) {#BaM-a-combat-expert}
+## By the skin of one's teeth
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 1 TT/Primary |
+
+This advantage allows to resist automatically a single
+deadly wound from any source once per day.
+
+The "boundary" of the day is selected by the GM (on player's suggestion),
+to be of some significance for the character. It could be the midnight
+in a specific place, the sunset, the sunrise, or performing a 
+daily ritual specific of the character's creed or habit.
+
+## Combative spirit
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 1 TT/Hard |
+| Levels | 3 |
+
+Ignore the negative modifier caused by wounds up to the level of this advantage
+(maximum 3).
+
+For example, if a character with **combative spirit** 1 receives a serious wound,
+it would normally have a penalty of -1 to any check, but with this advantages
+the penalty can be ignored. If another serious wound is received, instead of
+the normal -2 penalty, the character will only receive a -1 penalty.
+
+## Deep Mind
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Prerequisite | Mind 9 |
+| Cost | 2 TT/Hard |
+| Levels | 6 |
+
+The character acquires a passive mitigation against *despair*
+and *maddening* damage equal to the level of this advantage.
+
+## Defense Expert
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Combat style |
+| Cost | 2 TT/Normal |
 
 The character can perform one additional defense with the selected 
-style per combat turn.
+style per combat turn in one specific combat style. It's possible
+to get this advantage for multiple styles.
 
-### Combative Spirit 1-6 (7/3 CP) {#BaM-a-combative-spirit}
+## Easygoing
 
-Ignore the negative modifier caused by **Injury Points** up to the level
-of this advantage.
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Skill |
+| Cost | 2 TT/Normal |
 
-## Deep Mind 1-6 (5/2CP) {#BaM-a-deep-mind}
-
-__*Prerequisite*__: *M* 8
-
-The character acquires a passive mitigation against despair
-damage equal to the level of this advantage, and a passive
-mitigation against maddening damage equal to half the level.
-
-When using the [Basic Combat System](#basic-combat), this advantage allows to
-to perform one extra __damage resist__ check per point, when the damage source
-is mental.
-
-## Easygoing/skill (3CP) {#BaM-a-easygoing}
-
-Easy checks on the target skill get an additional modifier 
+Easy checks on the specialized skill get an additional modifier 
 of +1, and trivial checks have an additional modifier of +2.
 
-## Elemental Resistance {#BaM-a-elemental-resistance}
+This extends to any kind of checks and skills, including
+contests and combat skills.
 
-|------|--|
-| Spec |  |
-| Cost | 4+1CP |
-| Prereq | - |
-| Max | - |
+## Elemental Resistance
 
-The character has an innate resistance (or vulnerability,
-if the value is negative) to elemental attacks. This
-constitute the base for the [resistance](#resistance-source)
-skill against elemental sources.
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Element type |
+| Cost | 2 TT/Hard |
+| Levels | 6 |
+
+The character has an innate resistance to elemental attacks of the
+specified type. All checks against the element type receive the
+level of this advantage as a positive modifier. This includes
+defense checks in combat and resistance checks.
 
 This advantage should be granted only in settings where it
 makes sense, i.e. as a racial characteristic of a fantasy
 race, or for characters genetically engineered, or for
 synthetic life forms as androids etc.
 
-## Expertise/skill (6CP) {#BaM-a-expertise}
+## Expertise
 
-Skill Expertise (SE) it’s an advantage bought for specific skills.
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Skill |
+| Cost | 3 TT/Hard |
+| Prerequisite | Easygoing |
 
-In every check performed on the target skill, the player can
-throw 4d6 instead of 3d6, and discard the lower die.
+This advantage allows to throw 4 die instead of 3 in any check
+involving the specified skill, and select the three best rolls out
+of them.
+
+This includes combat styles and other combat skills.
+
+The prerequisite for Expertise is to have [Easygoing](#easygoing) on the
+same skill.
 
 When targeted with this advantage, some skills also improve their
 quality. For example, [first-aid](#BaM-s-first-aid) can normally
@@ -353,39 +438,63 @@ cure light wounds only, but if the character has the advantage
 Skills having a special effect when associated with Expertise will describe
 it explicitly in their description.
 
-## Fast Paced 1-3 (6/4CP) {#BaM-a-fast-paced}
+## Fast Paced
 
-__*Prerequisite*__: *D* 8
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 2 TT/Normal |
+| Prerequisite | Dexterity 9 |
+| Levels | 3 |
 
 During combat, the character can move for 6 extra feet per turn for 
 each level of this skill.
 
-## Hard Skin 1-6 (4/2CP) {#BaM-a-hard-skin}
+## Hard Skin
 
-__*Preprequisite*__: *B* 7
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Skill |
+| Cost | 2 TT/Hard |
+| Prerequisite | Body 9 |
+| Levels | 6 |
 
 The character gains a passive defense against blunt
-damage equal to the level acquired, and against cut
-damage equal to half the level of this advantage.
+and cut damage equal to the level acquired.
 
-When using the [Basic Combat System](#BaM-m-basic-combat), this advantage allows to
-to perform one extra __damage resist__ check per point, when the damage source
-is physical.
+## Hard to Die 
 
-## Hard to Die 1-3 (15/5CP) {#BaM-a-hard-to-die}
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 1 TT/Hard |
 
-The character can withstand an extra wound per level
-of the advantage before being disabled.
+When receiving a deadly wound, resistance checks are lowered
+by one difficulty level (normal checks become easy, 
+easy checks become trivial etc.).
 
-### Keen Eye 1-4 (6CP) {#BaM-a-keen-eye}
+## Keen Eye
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 1 TT/Hard |
+| Prerequisite | Dexterity 9 |
+| Levels | 4 |
 
 Falloff in ranged combat is increased of 6 ft. per point of this advantage.
 
-## Mastery/skill (10CP) {#BaM-a-mastery}
+## Mastery
 
-__*Preprequisite*__: *Expertise/skill*
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Skill |
+| Cost | 1 TT/Primary |
+| Prerequisite | Expertise |
 
-Skill Mastery (SM/skill) is an advantage that is 
+Skill Mastery is an advantage that is 
 applied on a specific skill. As a pre-requisite,
 the character must have already Expertise on the same skill.
 
@@ -393,38 +502,56 @@ Mastery changes all the checks using that skill from a 3d6
 throw to a 2d6+6 (as if one dice is always automatically 
 rolling a 6).
 
-## Natural/skill (6CP) {#BaM-a-}
+Combat styles and other combat skills can be targeted by
+mastery.
 
-The character is a “natural” of a certain discipline. Difficult
-checks on the target skill get an additional modifier of +1, 
+## Natural
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Skill |
+| Cost | 2 TT/Hard |
+| Prerequisite | Easygoing |
+
+The character is a "natural" in a certain discipline: tasks that would
+be normally hard for anyone else come much easier to them. 
+
+Difficult checks on the target skill get an additional modifier of +1, 
 hard checks have an additional modifier of +2, and Very Hard 
 checks have a +3 modifier. Without any other situational modifiers,
 the effective modifiers for difficult, hard and very hard checks 
 become -2, -4 and -5.
 
-## Strong Temper (20CP) {#BaM-a-strong-temper}
+This advantage can target also combat styles and other combat skills.
 
-__*Preprequisite*__: *Hard To Die*
+Before becoming "natural" in a certain discipline, the character must
+have acquired the advantage [easygoing](#easygoing) on the same discipline.
 
-The character can withstand an additional wound from
-physical sources before being incapacitated, and will
-not die in case the last wound received was from a
-physical source if not treated for 1 hour, regardless
-of the Injury Points sustained. 
+## Survival instinct
 
-The last physical wound received during a fight will
-automatically heal in 6 hours, even if not treated.
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 3 TT/Normal |
+| Levels | 4 |
 
-## Survival Instinct 1-4 (6/3CP) {#BaM-a-survival-instinct}
+All instinctive defense checks get a +1 modifier per level of this advantage.
 
-All instinctive defense checks and contests get a modifier
-of +1 per level bought.
+## Total Mitigation
 
-## Total Mitigation (6CP) {#BaM-a-total-mitigation}
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 2 TT/Normal |
 
-When the character receives a damage for 0 **DP**, under some conditions,
-it might still sustain a _scratch_. With this advantage, a damage of 0 **DP**
-is always ignored. 
+When the character receives an effective damage for 0 **DP** it still sustain a _scratch_.
+This advantage prevents that.
+
+However, other negative effects will still be applied. For example, if the character is
+hit by a poisonous dart but the effective damage after all the mitigations are applied is 0,
+while it won't receive a scratch, even with this advantage the poison will still be
+applied.
 
 # Disadvantages {#BaM-gen-disadvantages}
 
@@ -459,6 +586,7 @@ direction, but it also influences the skill Intimidate.
 
 ## Aristocrat {#BaM-a-aristocrat}
 
+| <!-- --> | <!-- --> |
 |------|--|
 | Spec |  |
 | Cost | 20/30/40 CP |
@@ -569,6 +697,7 @@ use their hearing would invalidate this drag.
 
 ## Famous {#BaM-a-famous}
 
+| <!-- --> | <!-- --> |
 |------|--|
 | Spec |  |
 | Cost | 10/15/20 CP |
@@ -765,6 +894,7 @@ Technical skill in modern engineering.
 
 ## First Aid {#BaM-s-first-aid}
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | - |
 | Type | N |
@@ -818,6 +948,7 @@ identified, and they might require a separate hacking skill.
 
 ## Healing/Race {#BaM-s-healing}
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | - |
 | Type | H |
@@ -972,6 +1103,7 @@ Technical knowledge for recognizing (_normal_) and producing (_hard_) poisons.
 
 ## Resistance/source {#BaM-s-resistance-source}
 
+| <!-- --> | <!-- --> |
 |------|-------|
 | Base | H/E/- |
 | Type | H |
@@ -1024,6 +1156,7 @@ following table describes possible modifiers:
 
 ## Stabilize {#BaM-s-stabilize}
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | I |
 | Type | E |
@@ -1040,6 +1173,7 @@ critical failure causes the character to die immediately.
 
 ## Treating wounds/Race Type {#BaM-s-treating-wounds}
 
+| <!-- --> | <!-- --> |
 |------|---|
 | Base | - |
 | Type | H |
@@ -1128,6 +1262,7 @@ advantages and perks.
 
 ### Disengage {#BaM-s-generic-combat-disengage}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 4 CP |
 | Type | Defense |
@@ -1139,6 +1274,7 @@ If the contest succeeds, the character can move even if other subsequent attacks
 
 ### Instincitve Defense {#BaM-s-generic-combat-instinctive-defense}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 3 CP |
 | Type | Defense |
@@ -1152,6 +1288,7 @@ It’s ineffective against mind attacks.
 
 ### Shoot {#BaM-s-generic-combat-shoot}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 6 CP |
 | Type | Attack |
@@ -1167,6 +1304,7 @@ crossbows) can.
 
 ### Slash {#BaM-s-generic-combat-slash}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 5 CP |
 | Type | Attack |
@@ -1181,6 +1319,7 @@ On critical success, it applies stun for 2 turns.
 
 ### Throw {#BaM-s-generic-combat-throw}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 5 CP |
 | Type | Attack |
@@ -1202,6 +1341,7 @@ A critical success applies also the stun condition for 2 turns.
 
 ### Thrust {#BaM-s-generic-combat-thrust}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 5 CP |
 | Type | Attack |
@@ -1218,6 +1358,7 @@ plus the dexterity.
 
 ### Willpower Defense {#BaM-s-generic-combat-willpower-defense}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 3 CP |
 | Type | Defense |
@@ -1230,6 +1371,7 @@ this turn.
 
 ## Archery {#BaM-s-archery}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 6 CP |
 | Modifier | mD |
@@ -1243,14 +1385,15 @@ and the range depends on the used weapon.
 
 The number of maneuvers the character can use per round depends on the level of Archery:
 
-|-------|-----------|
 | Level | Maneuvers |
+|-----|---|
 | 1-9 | 1 |
 | 10-16 | 2 |
 | 17+ | 3 |
 
 ### Aim {#BaM-s-aim}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Action |
 | Prereq | Archery 3 |
@@ -1261,6 +1404,7 @@ modifier is applied only to the very next Shoot.
 
 ### Localized Shot {#BaM-s-localized-shot}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | Variable |
@@ -1293,6 +1437,7 @@ The modifier to be applied depends on the target part of the body:
 
 ### Overextend {#BaM-s-overextend}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Action |
 | Modifier | mS-2 |
@@ -1306,6 +1451,7 @@ margin of this check.
 
 ### Overload {#BaM-s-archery-overload}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Action |
 | Prereq | Archery 9 |
@@ -1322,6 +1468,7 @@ you don’t want to lose the attack.
 
 ### Shoot {#BaM-s-archery-shoot}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |
@@ -1332,6 +1479,7 @@ Loads and shoot an arrow or a bolt.
 
 ### Brawl {#BaM-s-brawl}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 2 CP |
 | Modifier | mS |
@@ -1349,8 +1497,8 @@ damage, and all the maneuvers are melee.
 The number of maneuvers the character can use per round depends on
 the level of brawl:
 
-|-------|-----------|
 | Level | Maneuvers |
+|-----|---|
 | 1-5 | 1 |
 | 5-10 | 2 |
 | 11-15 | 3 |
@@ -1358,6 +1506,7 @@ the level of brawl:
 
 ### Block {#BaM-s-brawl-block}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mS |
@@ -1374,6 +1523,7 @@ a sword or a mace.
 
 ### Evade {#BaM-s-brawl-evade}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD |
@@ -1384,6 +1534,7 @@ Try and evade an attack moving the body out of the way of the incoming hit.
 
 ### Grapple {#BaM-s-brawl-grapple}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Prereq | Brawl 8 |
@@ -1401,6 +1552,7 @@ on either side.
 
 ### Kick {#BaM-s-brawl-kick}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |
@@ -1415,6 +1567,7 @@ On critical success, it stuns the target for 2 turns.
 
 ### Punch {#BaM-s-brawl-punch}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mS |
@@ -1428,6 +1581,7 @@ Receives a -2 modifier against targets larger than the attacker.
 
 ### Smash {#BaM-s-brawl-smash}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mS |
@@ -1446,6 +1600,7 @@ Can’t be used against grounded targets.
 
 ## Concentration {#BaM-s-concentration}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 2 CP |
 | Modifier | mW |
@@ -1465,14 +1620,15 @@ low-resolution.
 The number of maneuvers the character can use per round depends on the level
 of Concentration:
 
-|-------|-----------|
 | Level | Maneuvers |
+|-----|---|
 | 1-7 | 1 |
 | 8-13 | 2 |
 | 14+ | 3 |
 
 ### Alien Thoughts {#BaM-s-concentration-alien-thoughts}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mI |
@@ -1486,6 +1642,7 @@ in order to cause maddening.
 
 ### Block  {#BaM-s-concentration-block}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mW |
@@ -1496,6 +1653,7 @@ The character raises a mental barrier in order to block an incoming attack.
 
 ### Dig into you  {#BaM-s-concentration-dig-into-you}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mW |
@@ -1509,6 +1667,7 @@ The character attacks by searching for painful memories and thoughts, in order t
 
 ### Divert {#BaM-s-concentration-divert}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mI |
@@ -1520,6 +1679,7 @@ thought or memory, causing the attack to miss.
 
 ### Mind Grasp  {#BaM-s-concentration-mind-grasp}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mI |
@@ -1540,6 +1700,7 @@ If the attacker receives any damage, the concentration is broken.
 
 ### Sensations {#BaM-s-concentration-sensations}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | -1 |
@@ -1555,6 +1716,7 @@ On critical success, the target is stunned for 2 turn.
 
 ### Yes, but you... {#BaM-s-concentration-yes-but-you}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mI |
@@ -1570,6 +1732,7 @@ of the defense minus two (minimum 1 dp).
 
 ## Firearms {#BaM-s-firearms}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 6 CP |
 | Modifier | mD |
@@ -1589,8 +1752,8 @@ anyone, but most maneuvers have a relatively high pre-requisite.
 The number of maneuvers the character can use per round depends on the level of
 Firearms:
 
-|-------|-----------|
 | Level | Maneuvers |
+|-----|---|
 | 1-5 | 1 |
 | 5-10 | 2 |
 | 11-15 | 3 |
@@ -1598,6 +1761,7 @@ Firearms:
 
 ### Aim {#BaM-s-firearms-aim}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Action |
 | Prereq | Firearms 3 |
@@ -1612,6 +1776,7 @@ action will discard the modifiers achieved.
 
 ### Aimed Shot {#BaM-s-firearms-aimed-shot}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | -3 |
@@ -1626,6 +1791,7 @@ heavy and heavy wounds becomes deadly.
 
 ### Duck {#BaM-s-firearms-duck}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD |
@@ -1635,6 +1801,7 @@ Duck or evade while holding the firearm to avoid incoming fire.
 
 ### Fast Reload {#BaM-s-firearms-fast-reload}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Actions |
 | Prereq | Firearms 4 |
@@ -1644,6 +1811,7 @@ maneuver.
 
 ### Localized Shot {#BaM-s-firearms-localized-shot}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | Variable |
@@ -1676,6 +1844,7 @@ The modifier to be applied depends on the target part of the body:
 
 ### Point Blank {#BaM-s-firearms-point-blank}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | +2 |
@@ -1690,6 +1859,7 @@ On critical success it causes a deadly wound.
 
 ### Rapid Fire {#BaM-s-firearms-rapid-fire}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | -3 |
@@ -1703,6 +1873,7 @@ damage. Can be used with pistols only.
 
 ### Shoot {#BaM-s-firearms-shoot}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Prereq | Firearms 1 |
@@ -1712,6 +1883,7 @@ Normal base attack with firearms.
 
 ### Take Cover {#BaM-s-firearms-take-cover}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | +3 |
@@ -1722,6 +1894,7 @@ If a cover is within movement range for the turn, the character can use this def
 
 ## Full Contact {#BaM-s-full-contcat}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 3 CP |
 | Prerequisite | **Brawl** 4 |
@@ -1746,8 +1919,8 @@ turn.
 For example, a character with Full Contact 10 has two maneuvers it can
 chose from either Full Contact or Brawl, plus one from Full Contact only.
 
-|-------|-----------|
 | Level | Maneuvers |
+|-----|---|
 | 1-5 | 1 |
 | 5-10 | 2 |
 | 11-15 | 3 |
@@ -1755,6 +1928,7 @@ chose from either Full Contact or Brawl, plus one from Full Contact only.
 
 ### Counter Punch {#BaM-s-full-contact-counter-punch}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mS-2 |
@@ -1773,6 +1947,7 @@ Ineffective against non-melee and animal attacks.
 
 ### Counter kick {#BaM-s-full-contact-counter-kick}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD-2 |
@@ -1790,6 +1965,7 @@ Ineffective against non-melee and animal attacks.
 
 ### Crouch {#BaM-s-full-contact-crouch}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Action |
 | Prereq | Full Contact 3 |
@@ -1803,6 +1979,7 @@ the modifier is lost.
 
 ### Elbow Blow {#BaM-s-full-contact-elbow-blow}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mS |
@@ -1816,6 +1993,7 @@ plus its success margin, and a modifier of +2.
 
 ### Knee Blow {#BaM-s-full-contact-knee-blow}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |
@@ -1831,6 +2009,7 @@ and grounded targets.
 
 ## Knife Fight {#BaM-s-knife-fight}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 5 CP |
 | Modifier | mD |
@@ -1851,6 +2030,7 @@ The number of maneuvers the character can use per round depends on the level of 
 
 ### Backstab {#BaM-s-knife-combat-backstab}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD-2 |
@@ -1866,6 +2046,7 @@ wound_.
 
 ### Backstep {#BaM-s-knife-combat-backstep}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD |
@@ -1876,6 +2057,7 @@ Skip back, trying to get out of the range of a melee attack.
 
 ### Belly Opener {#BaM-s-knife-combat-belly-opener}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | -1 |
@@ -1888,6 +2070,7 @@ body.
 
 ### Change Hands {#BaM-s-knife-combat-change-hands}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |
@@ -1902,6 +2085,7 @@ suffer the standard penalty.
 
 ### Downstab {#BaM-s-knife-combat-downstab}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |
@@ -1914,6 +2098,7 @@ opponent body.
 
 ### Evade {#BaM-s-knife-combat-evade}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD |
@@ -1924,6 +2109,7 @@ Try and evade an attack.
 
 ### Feint {#BaM-s-knife-combat-feint}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | +3 |
@@ -1936,6 +2122,7 @@ the success margin.
 
 ### Hand Cutting {#BaM-s-knife-combat-hand-cutting}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD-2 |
@@ -1953,6 +2140,7 @@ weapon.
 
 ### Spring Up {#BaM-s-knife-combat-spring-up}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | -3 |
@@ -1966,6 +2154,7 @@ damage.
 
 ### Throw {#BaM-s-knife-combat-throw}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |
@@ -1978,6 +2167,7 @@ Throws the knife at an opponent within 15 feet. On success, it deals a limited d
 
 ### Thrust {#BaM-s-knife-combat-thrust}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |
@@ -1990,6 +2180,7 @@ Attacks the target thrusting the knife forward, in a straight line.
 
 ### Wrap and Stab {#BaM-s-knife-combat-wrap-and-stab}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD-3 |
@@ -2004,6 +2195,7 @@ _heavy wounds_ become deadly.
 
 ## Swordfight {#BaM-s-swordfight}
 
+| <!-- --> | <!-- --> |
 |------|------|
 | Cost | 6 CP |
 | Modifier | mS |
@@ -2026,8 +2218,8 @@ but give a **DP** modifier of +3.
 The number of maneuvers the character can use per round depends on the level
 of Sword Fight:
 
-|-------|-----------|
 | Level | Maneuvers |
+|-----|---|
 | 1-6 | 1 |
 | 7-11 | 2 |
 | 12-15 | 3 |
@@ -2035,6 +2227,7 @@ of Sword Fight:
 
 ### Cleave {#BaM-s-swordfight-cleave}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mS |
@@ -2048,6 +2241,7 @@ A critical success stuns the opponent for 2 turns.
 
 ### Deviate {#BaM-s-swordfight-deviate}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD |
@@ -2059,6 +2253,7 @@ weapon, using its own dexterity.
 
 ### Feint {#BaM-s-swordfight-feint}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | -3 |
@@ -2071,6 +2266,7 @@ damage of very next attack.
 
 ### Parry {#BaM-s-swordfight-parry}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mS |
@@ -2082,6 +2278,7 @@ its own weapon, using its own strength to resist it.
 
 ### Parry Projectiles {#BaM-s-swordfight-parry-projectiles}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mD |
@@ -2095,6 +2292,7 @@ can block a projectile incoming from a maximum range of 30 feet.
 
 ### Shield Bash {#BaM-s-swordfight-shield-bash}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | -2 |
@@ -2110,6 +2308,7 @@ ground. On success, the opponent is grounded for the rest of the turn.
 
 ### Shield Parry {#BaM-s-swordfight-shield-parry}
 
+| <!-- --> | <!-- --> |
 |------|---------|
 | Type | Defense |
 | Modifier | mS+3 |
@@ -2122,6 +2321,7 @@ the opponent’s blow with its shield.
 
 ### Slash {#BaM-s-swordfight-slash}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mS |
@@ -2133,6 +2333,7 @@ A simple lateral stroke.
 
 ### Thrust {#BaM-s-swordfight-thrust}
 
+| <!-- --> | <!-- --> |
 |------|--------|
 | Type | Attack |
 | Modifier | mD |

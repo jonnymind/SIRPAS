@@ -1,4 +1,13 @@
-## Hard to Die 1-3 (15/5CP) {#BaM-a-hard-to-die}
+## Hard to Die 
 
-The character can withstand an extra wound per level
-of the advantage before being disabled.
+@(dd Hard_to_die)
+{ 
+  "*Name": "Hard to Die",
+  "*Brief": "Improves resistance from deadly wounds",
+  "Category": "Advantage",
+  "Cost": "1 TT/Hard"
+}
+
+When receiving a deadly wound, resistance checks are lowered
+by one difficulty level (normal checks become easy, 
+easy checks become trivial etc.).
