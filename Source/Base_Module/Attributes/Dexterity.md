@@ -5,8 +5,8 @@
   "*Name": "Dexterity",
   "*Brief": "Body coordination and agility",
   "*Abbrev": "D",
-  "Base": "B",
-  "Category": "Primary"
+  "Category": "Primary",
+  "Base": "B"
 }
 
 Dexterity (**D**) expresses the ability to control one’s own body.

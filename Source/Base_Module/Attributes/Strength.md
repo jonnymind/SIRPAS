@@ -5,8 +5,8 @@
   "*Name": "Strength",
   "*Brief": "Physical prowess",
   "*Abbrev": "S",
-  "Base": "B",
-  "Category": "Primary"
+  "Category": "Primary",
+  "Base": "B"
 }
 
 Strength (**S**) is the attribute measuring a character physical strength. 

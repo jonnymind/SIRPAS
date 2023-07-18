@@ -4,9 +4,9 @@
 { 
   "*Name": "Equilibrium",
   "*Brief": "Mental stability and resilience",
-  "*Abbrev": "I",
-  "Base": "M",
-  "Category": "Primary"
+  "*Abbrev": "E",
+  "Category": "Primary",
+  "Base": "M"
 }
 
 Equilibrium (**E**) is the stability of the mind, 
