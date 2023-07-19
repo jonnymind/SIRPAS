@@ -5,7 +5,6 @@
   "*Name": "Hard Skin",
   "*Brief": "Resistance against blunt and cut damage",
   "Category": "Advantage",
-  "Specialization": "Skill", 
   "Cost": "2 TT/Hard",
   "Prerequisite": "Body 9",
   "Levels": 6

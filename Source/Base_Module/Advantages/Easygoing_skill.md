@@ -3,7 +3,7 @@
 @(dd easygoing)
 { 
   "*Name": "Easygoing",
-  "*Brief": "Bonus modifier on easy and trivia checks",
+  "*Brief": "Bonus modifier on easy and trivial checks",
   "Category": "Advantage",
   "Specialization": "Skill", 
   "Cost": "2 TT/Normal"

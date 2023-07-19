@@ -6,6 +6,7 @@
 	LICENSE: CC-BY-ATTR Share-alike
 --)
 @(var BaseAddress https://jonnymind.github.io/SIRPAS)
+@(var RulebookAddress $BaseAddress/Rulebook.html)
 
 @(include Introduction.md)
 

@@ -1,49 +1,33 @@
 # Disadvantages
 
-Disadvantages are permanent penalties that the character is afflicted with.
+Disadvantages are permanent penalties afflict the character.
 
-A player can decide to willfully apply some disadvantage to their character
+A player can decide to apply some disadvantage to their character
 before beginning an adventure, as doing so grants **training tokens** that
-can then be employed to make the character stronger in other aspects.
+can be employed to make the character stronger in other aspects.
 
 While most disadvantages are simply afflicting a character or not,
-some can have different levels. In that case, the heaviest the
-disadvantage, the more **TT** it will give the player.
-
-In this case, the number and type of **TT** indicate in the the disadvantage description
-is given when the character acquires the first level of the disadvantage;
-any further level acquired will grant one additional training toke of that type
-per level.
+some can have different In this case, the player receives the base
+value indicated in the description, plus the same amount of points
+as the level of the disadvantage.
 
 For example, **Nervous** can have a level between 1 and 3, 
-each granting a more negative modifier. The first level grants 3 **TT**/*Hard*;
-this means that bearing this disadvantage at level 2 provides 4 **TT**/*Hard* and
-level 3 gives 5 **TT**/*Hard*. So,
-if a character were to start its adventures wit **Nervous** 4, it would receive
-a total of 3 + 4 + 5 = 12 **TT**/*Hard* to be spent on other 
-attributes, perks or advantages.
+each inflicting a more negative modifier. The description indicates that the
+"cost" (to be intended as tokens refunded to the player) is 3 **TT**/*Hard*.
+To getting level 1 grants the player 3 + 1 = 4 **TT**/*Hard*; level 2 grants
+3 + 2 = 5 and level 3 grants 3 + 3 = 6 **TT**/*Hard*. This means that
+players can get a total of 4 + 5 + 6 = 15 **TT**/*Hard* if they give
+**Nervous**/3 to their characters.
 
-## Penalty disadvantages
+Curses and other negative effects can temporarily or permanently inflict
+disadvantages against the will of the players; in that case, they won't
+receive any bonus tokens. It is also possible to get rid of a disadvantage
+that the players don't want anymore, provided it was given to their
+character on their own will, by spending an amount of tokens double the
+ones received when it was applied (rounded down).
 
-In some cases, a character can receive a disadvantage unwillingly. This may be
-caused by magic, e.g. curses, or physical conditions, e.g. a necessary
-cybernetic component of their body becoming unserviceable or being hijacked by
-a malignant hacker.
-
-Whenever a disadvantage is a acquired as a penalty, that doesn't give any
-additional **TT**.
-
-## Removing disadvantages
-
-It is possible to remove a disadvantage. This can be done by:
-
-* paying back double the cost of the disadvantage in equivalent **Training Tokens**, or
-* by performing particularly worthy tasks in game, aimed directly at reducing or
-removing the disadvantage. For example, a player may save a famous cybernetic scientist
-in exchange for his help removing a defective cyber implant.
-
-If the disadvantage has levels, it needs to be reduced to level 1 before being completely 
-cleansed.
+For more details on the advantage system, consult the 
+[advantage system in the rulebook](@($RulebookAddress)/#advantages-and-disadvantages),
 
 ## Foudnational disadvantages
 
