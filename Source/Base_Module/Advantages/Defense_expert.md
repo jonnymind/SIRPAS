@@ -1,8 +1,8 @@
-## Defense Expert
+## Defensive flow
 
-@(dd defense_expert)
+@(dd devensive_flow)
 { 
-  "*Name": "Defense expert",
+  "*Name": "Defensive flow",
   "*Brief": "Can perform an additional defense per turn",
   "Category": "Advantage",
   "Specialization": "Combat style", 

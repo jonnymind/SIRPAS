@@ -6,7 +6,8 @@
   "*Brief": "Penalty modifier on easy and trivial checks",
   "Category": "Disadvantage",
   "Specialization": "Skill", 
-  "Cost": "2 TT/Normal"
+  "Cost": "2 TT/Normal",
+  "Conflict": "Easygoing"
 }
 
 Easy checks on the specialized skill get a penalty modifier 

@@ -5,7 +5,8 @@
   "*Name": "Lucky",
   "*Brief": "Reroll once any dice scoring 1",
   "Category": "Advantage",
-  "Cost": "1 TT/Main"
+  "Cost": "1 TT/Main",
+  "Conflict": "Unlucky"
 }
 
 The character can re-roll one dice having scored 1 on any check. This is applied 
@@ -27,3 +28,5 @@ reason.
 > For example, this happens in many **resistance checks** against a sudden
 death, or when covered by temporary effects that allow to re-roll any
 dice scoring 1 indefinitely.
+
+**Notice** that this advantage is opposed to **Unlucky**.
