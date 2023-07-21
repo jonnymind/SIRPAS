@@ -6,7 +6,7 @@
   "*Brief": "Receives extra DPs from the target source",
   "Category": "Disadvantage",
   "Specialization": "Damage source", 
-  "Cost": "3 TT/Normal",
+  "Cost": "1 TT/Hard",
   "Levels": 3
 }
 
@@ -27,5 +27,5 @@ providing resistance against some types of physical damages).
 
 On the other hand, a character may have resistance against some
 specific damage and vulnerabilities against others. For example,
-it may be resistance to cold but vulnerable to heat, both being
+it may be resistant to cold but vulnerable to heat, both being
 elemental damage sources.
