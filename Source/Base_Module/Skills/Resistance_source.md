@@ -1,6 +1,6 @@
-## Resistance/source {#BaM-s-resistance-source}
+## Resistance
 
-@(dd skill_resistance_source)
+@(dd resistance)
 { 
   "*Name": "Resistance",
   "Base": "H/E/-",
@@ -9,9 +9,9 @@
   "Spec": "**DP** source type"
 }
 
-The character has aqcuired a specific resistance against
+The character has acquired a specific resistance against
 a determined damage source. The base of the resistance
-depends on the macro-category of the danage source,
+depends on the macro-category of the damage source,
 as specified in the following table:
 
 | Damage type | Base        |
@@ -20,7 +20,7 @@ as specified in the following table:
 | Mental      | Equilibrium |
 | Elemental   | Elem. Res.  |
 
-The advantage [Elemental Resistance](BaM-a-elemental-resitance) gives
+The advantage [Elemental Resistance](#elemental-resitance) gives
 the base against elemental damage.
 
 
