@@ -5,7 +5,8 @@
   "*Name": "Unlucky",
   "*Brief": "Has a chance to worsen every check",
   "Category": "Disadvantage",
-  "Cost": "2 TT/Main"
+  "Cost": "2 TT/Main",
+  "Conflict": "Lucky"
 }
 
 The character performs every check (except direct **resistance checks**) 
@@ -31,3 +32,6 @@ normal dice rolls is 1 already.
 This penalty is **not** applied on any **resistance check**. Also, any
 temporary effect improving the natural rolls will temporarily disable
 this disadvantage as a side-effect.
+
+**Notice** that this disadvantage is opposed to **Lucky**.
+
