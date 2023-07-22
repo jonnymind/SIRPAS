@@ -10,8 +10,8 @@
 @(include Statistics.md)
 @(include Attributes.md)
 @(include Statuses.md)
-@(include Advantages.md)
-@(include Perks.md)
+@(include Vantages.md)
+@(include Backgrounds.md)
 
 @(include Checks.md)
 @(include Damage_and_injury.md)
