@@ -51,5 +51,5 @@ The power is then:
 For a grand total of 13 + 8 + 1.75 + 0.5 = 23.25, rounded up to 24.
 
 > It may be useful to note down the number of tokens actually spent
-rather than recompute the power of the characters each time it's needed
-looking at the value of all of their attributes
+rather than recompute the power of the characters each time it's needed,
+keeping track of the character power as it grows.

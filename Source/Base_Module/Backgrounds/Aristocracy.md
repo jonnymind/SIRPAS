@@ -13,7 +13,7 @@ that don’t consider birth rights as traditional aristocracy, the
 the character belongs to a similar oligarchy or high-order political
 elite.
 
-The cost, and the effect of the perk on the game, depend on the
+The cost, and the effect of the background on the game, depends on the
 level of aristocracy:
 
 * Baron, career politician, oligarch: 1/TT Primary
