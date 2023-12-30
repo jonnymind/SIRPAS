@@ -14,7 +14,7 @@ as the level of the disadvantage.
 For example, **Nervous** can have a level between 1 and 3, 
 each inflicting a more negative modifier. The description indicates that the
 "cost" (to be intended as tokens refunded to the player) is 3 **TT**/*Hard*.
-To getting level 1 grants the player 3 + 1 = 4 **TT**/*Hard*; level 2 grants
+So getting level 1 grants the player 3 + 1 = 4 **TT**/*Hard*; level 2 grants
 3 + 2 = 5 and level 3 grants 3 + 3 = 6 **TT**/*Hard*. This means that
 players can get a total of 4 + 5 + 6 = 15 **TT**/*Hard* if they give
 **Nervous**/3 to their characters.
@@ -32,6 +32,6 @@ For more details on the advantage system, consult the
 ## Foudnational disadvantages
 
 @(index 2)
-@(include disadvantages)
+@(include Disadvantages/*.md)
 @(endindex)
 

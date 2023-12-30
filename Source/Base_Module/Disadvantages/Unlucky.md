@@ -26,8 +26,8 @@ the lowest roll after applying **expert** (3) must be discarded
 and changed into 1, so the check result will now be 1 + 3 + 4 = 8 instead of
 3 + 3 + 4 = 10.
 
-Of course, nothing happens when the separate dice rolls 1 but one of the
-normal dice rolls is 1 already.
+If the special dice roll scores 1, but one of the other rolls was already
+a natural 1, nothing happens.
 
 This penalty is **not** applied on any **resistance check**. Also, any
 temporary effect improving the natural rolls will temporarily disable

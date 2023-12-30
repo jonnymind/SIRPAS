@@ -1,4 +1,15 @@
-## Hacking/System (-; H) {#BaM-s-hacking}
+## Hacking
+
+@(dd Hacking)
+{ 
+  "*Name": "Hacking",
+  "*Brief": "Breaks into computer systems",
+  "Base": "mI",
+  "Callsign": "Hk",
+  "Category": "Skill",
+  "Specialization: "system",
+  "Cost": "1 TT/Hard"
+}
 
 When a character wants to hack a device or a system, it can roll on this to
 check if it has the necessary knowledge to hack the system.

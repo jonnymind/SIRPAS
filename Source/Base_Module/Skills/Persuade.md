@@ -1,4 +1,13 @@
-## Persuade (I) {#BaM-s-persuade}
+## Persuade
+
+@(dd persuade)
+{ 
+  "*Name": "Persuade",
+  "*Brief": "Convince a target to believe a fact or information",
+  "Base": "mW",
+  "Category": "Skill",
+  "Cost": "1 TT/Normal"
+}
 
 With this skill, the character can persuade others. Persuading means leading
 others to believe the truth of some idea, fact or point of view (regardless of

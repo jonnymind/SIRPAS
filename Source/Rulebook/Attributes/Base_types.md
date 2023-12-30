@@ -1,4 +1,3 @@
-
 ### Type or base values
 
 While attributes are organized in a hierarchy, the hierarchy is not necessarily
@@ -24,7 +23,7 @@ the attribute has the value of **X** as its **base value**.
 * Modifier Base: (m**X**). The **base value** is the *modifier* of the attribute X.
 * Base Portion: (**X**/N). The **base value** is a portion N of the base attribute.
 Typically N is 2, 3 or 4 (the **base value** being half, a third or a fourth of that of the
-base attribute). Rounding is always in defect.
+base attribute). Rounding is always down.
 * Average Base: (avg **A**, **B**,...). The **base value** is the average of the listed
 values.
 * Choice Base: (**A** or **B**). The **base value** is the best between the options listed.

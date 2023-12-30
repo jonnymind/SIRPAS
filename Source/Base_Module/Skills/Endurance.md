@@ -1,4 +1,14 @@
-## Endurance (H) {#BaM-s-endurance}
+## Endurance
+
+@(dd endurance)
+{ 
+  "*Name": "Endurance",
+  "*Brief": "Resist prolonged strain",
+  "Base": "Body",
+  "Callsign": "End",
+  "Category": "Skill",
+  "Cost": "1 TT/Hard"
+}
 
 Endurance is the ability to resist long lasting physical strain. A long march,
 swimming, carrying weights for a long time etc. requires an endurance check.

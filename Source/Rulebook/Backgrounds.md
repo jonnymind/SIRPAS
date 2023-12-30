@@ -24,7 +24,7 @@ possible to receive the backgrounds as a consequence of adventuring;
 for example, one can certainly become an outlaw during the course 
 of an adventure; nobles can lose their titles, university professors
 can lose their positions and phobias can be cured, but differently from
-*advantages*, *backgrounds* can only be removed as a consequence of
+*vantages*, *backgrounds* can only be removed as a consequence of
 gameplay.
 
 ## Effect on the game

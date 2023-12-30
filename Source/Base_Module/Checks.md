@@ -1,6 +1,6 @@
 ## Checks
 
-> For the full description refer to the Rulebook *[checks]($(BaseAddress)/#checks)* section.
+> For the full description refer to the Rulebook **[checks]($RulebookAddress/#checks)** section.
 
 Attempting any non-trivial action requires performing a *check* on a given attribute
 related to the attempt to perform. For example, trying to push a cart stuck in the mud

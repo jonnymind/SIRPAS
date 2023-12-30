@@ -916,7 +916,7 @@ The elemental damage types are:
 * _Heat_: for example, fire and unsustainable heat.
 * _Light_: Some creatures are damaged by light (radiation in the visible spectrum).
   _Doesn’t include lasers (which generate heat) or other radiation damage.
-* _Pure Magic_: metaphysical damage induced by magic, causing non-specific
+* _Pure Magic_: transcendental damage induced by magic, causing non-specific
   _mental_ damage. Does not include magic spells creating a material
   effect (for example, causing something to catch fire) or directly attacking
   the mind (i.e. a hypnosis inducing magic spell).
@@ -1931,7 +1931,7 @@ In some situations, the defender is aware of the incoming attack (i.e. has seen
 the attacker and is ready to receive the blow) but can’t use any defense. One
 reason might be that it already used all the defense at its disposal in a combat
 turn and can’t react any more, or it might be that it has no proficiency in that
-kind of combat — this often happens with metaphysical attacks directed at
+kind of combat — this often happens with transcendental attacks directed at
 targets that don’t have a specific skill to use in response — or in case it’s
 explicitly dictated by the rules — for example, defending against any attack
 after using disengage.
@@ -1959,7 +1959,7 @@ attacks, so to be able to move freely.
 
 ### Skill Range
 
-Combat skills are divided into _melee_, _ranged_ and _metaphysical_.
+Combat skills are divided into _melee_, _ranged_ and _transcendental_.
 
 * _Melee_ skills work when the combatants are in close range, and can
    physically harm each other without any projection.
@@ -1967,7 +1967,7 @@ Combat skills are divided into _melee_, _ranged_ and _metaphysical_.
    project a harmful device or source of energy towards a target. Skills of
    magical nature might be ranged if they magically create a projectile, ray
    of energy or any physical mean to harm a target.
-* _Metaphysical_ skills require their user to know where a target is in order
+* _Transcendental_ skills require their user to know where a target is in order
    to direct the attack, but they have no physical range. The target could be
    on another planet, as long as the user has a mean to see, feel or simply
    know _instantly_ about it.
@@ -1996,9 +1996,9 @@ be any modifier.
 
 When defending against _melee_ skills, a _ranged_ skill gets a penalty of -3.
 
-_Metaphysical_ skills cannot be use to defend against physical skills, and
+_Transcendental_ skills cannot be use to defend against physical skills, and
 the other away around, _melee_ and _ranged_ skills cannot be used to defend
-against a _metaphysical_ attack.
+against a _transcendental_ attack.
 
 ### Ranged attacks falloff
 

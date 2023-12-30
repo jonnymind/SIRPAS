@@ -1,4 +1,13 @@
-## Acrobatics (D) {#BaM-s-acrobatics}
+## Acrobatics
+
+@(dd acrobatics)
+{ 
+  "*Name": "Acrobatics",
+  "*Brief": "Performs acrobatic feats",
+  "Base": "D",
+  "Category": "Skill",
+  "Cost": "1 TT/Normal"
+}
 
 The character is able to perform acrobatic feats, including falling from a
 height that would normally damage a less skilled character.

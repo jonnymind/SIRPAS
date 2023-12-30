@@ -1,13 +1,14 @@
-## Treating wounds/Race Type {#BaM-s-treating-wounds}
+## Treating Wounds
 
-@(dd skill_treating_wounds)
+@(dd treating_wouds)
 { 
   "*Name": "Treating Wounds",
-  "*Brief": "Cure any wound",
-  "Base": "-",
-  "Type": "H",
-  "Prereq": "First-aid 6",
-  "Spec": "Race Type"
+  "*Brief": "Fixes wounds",
+  "Callsign": "TrW",
+  "Category": "Skill",
+  "Specialization: "race type",
+  "Prerequisite": "Healing 3",
+  "Cost": "1 TT/Hard"
 }
 
 The character has advanced practical medical knowledge for the setting
@@ -31,6 +32,6 @@ example:
 * Humanoids (Humans, elves, orcs etc.)
 * Human-sized animals (dogs to deers)
 * Small animals (birds, cats, etc.)
-* Large animals (elefant, dragons, etc.)
+* Large animals (elephant, dragons, etc.)
 
 

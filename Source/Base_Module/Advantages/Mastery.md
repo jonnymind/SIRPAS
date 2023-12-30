@@ -18,5 +18,5 @@ Mastery changes all the checks using that skill from a 3d6
 throw to a 2d6+6 (as if one dice is always automatically 
 rolling a 6).
 
-Combat styles and other combat skills can be targeted by
-mastery.
+Combat styles and other combat skills **can** be targeted by
+**mastery**.

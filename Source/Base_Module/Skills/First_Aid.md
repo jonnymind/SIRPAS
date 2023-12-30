@@ -1,13 +1,11 @@
-## First Aid {#BaM-s-first-aid}
+## First Aid
 
-@(dd skill_first_aid)
+@(dd first_aid)
 { 
   "*Name": "First Aid",
-  "*Brief": "Stabilize and allow using first-aid kits",
-  "Base": "-",
-  "Type": "N",
-  "Prereq": "-",
-  "Spec": ""
+  "*Brief": "Field techniques to mitigate wounds",
+  "Category": "Skill",
+  "Cost": "1 TT/Normal"
 }
 
 This skill can be used to perform the following actions:

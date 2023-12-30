@@ -1,4 +1,4 @@
-| Difficuylty          |  Success Level   |
+| Difficulty           |  Success Level   |
 |----------------------|-----------------:|
 | Trivial              |  15              |
 | Easy                 |  18              |

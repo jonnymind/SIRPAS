@@ -1,13 +1,11 @@
-## Stabilize {#BaM-s-stabilize}
+## Stabilize
 
-@(dd skill_stabilize)
+@(dd stabilize)
 { 
   "*Name": "Stabilize",
-  "*Brief": "Prevents a charactrer from dying out of heavy wounds",
-  "Base": "I",
-  "Type": "E",
-  "Prereq": "-",
-  "Spec": ""
+  "*Brief": "Prevent a fallen companion from dying",
+  "Category": "Skill/combat",
+  "Cost": "1 TT/Easy"
 }
 
 The character can perform a *hard* simple check in order to save the life

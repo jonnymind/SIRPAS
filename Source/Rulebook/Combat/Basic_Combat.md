@@ -19,9 +19,10 @@ For most situations, you’ll want to consider the length of a combat turn being
 
 ### Combat order
 
-Each turn, a ranking throw called **combat order** is performed to determine the order in which
-every participant takes action. The attribute used for the ranking is decided
-by the **GM**, or it can be specified by the modules or adventure settings. 
+Each turn, a ranking throw called **combat order** is performed to determine the 
+order in which every participant takes action. The attribute used for the ranking 
+is decided by the **GM**, or it can be specified by the modules or adventure 
+settings. 
 
 Once the **combat order** is established, each character takes action in turn,
 choosing what action they want to perform:
@@ -37,12 +38,12 @@ A character can use only a single combat skill during a turn, but some combat sk
 provide multiple _actions_, which means they can be used multiple times per turn to
 defend or attack.
 
-A character can use the combat skill for defending against an attack also if it not
-its turn; however, when its turn comes, it will be able to attack only if it has some
-actions left unused.
+A character can use the combat skill for defending against an attack also if it's not
+their turn; however, when their turn comes, they will be able to attack only if they have
+some actions left unused.
 
-A character might also decide not perform any action when its turn comes; if it does so,
-it can interrupt any other action performed later on by characters down the initiative
+A character might also decide not perform any action when their turn comes; if so
+they can interrupt any other action performed later on by others down the initiative
 ranking, or eventually use a defense to respond to a later attack.
 
 ### Instinctive Defense
@@ -52,13 +53,13 @@ the attacker and is ready to receive the blow) but can’t use any skill as a de
 
 Typical reasons are:
 * The character already used all the actions at their disposal in a combat
-  turn and can’t react any more
+  turn and can’t react any more;
 * The defender doesn't have a proficiency in the skill used by the attacker,
   and is just reacting instinctively.
 * The rules explicitly prohibit the use of other defenses (i.e. when disengaging
   from the combat).
 
-In those cases, provided the defender is at least aware of the attacks, it can use
+In those cases, provided the defender is at least aware of the attacks, they can use
 an appropriate **generic combat skill** as a defense. Some **GCS** are meant specifically
 to be used as instinctive defense, and may have a better base than more specific ones.
 For example, a module may have both **dodge** and **slash** as **GCS**, with **dodge**
@@ -80,21 +81,16 @@ The situation is resolved as follows:
   **melee** skills have a -1 modifier when defending 
   against **ranged** attacks per every two times of the *close quarter* distance.
 
-The *close quarter* it's the distance that an average fighter can jump and perform
-a melee attack in one swoop. This is normally 6 feet, but may be different in settings
-where the characters have superpowers that allow for faster movement (i.e. in an
-adventure about vampires), or different sizes (i.e. in battles between giant robots).
-
->For example, a martial artist using defending against a
+> For example, a martial artist using defending against a
 sharp shooter standing between 6 and 12 feet away would have a penalty of -1;
 at a distance of 60 feet, the penalty would be -5 (60/6/2 = 5). This can seem
 a lot, but ranged skills have penalties for long range shot and range limits
 already: no one can hope to perform a valid melee defense against a sniper
 hidden on the next hill.
 
-**Metaphysical** skills cannot be use to defend against **melee** or **ranged** skills, and
-the other away around, **melee** and **ranged** skills cannot be used to defend
-against a **metaphysical** attack.
+**Transcendental** skills cannot be use to defend against **melee** 
+or **ranged** skills, and the other away around, **melee** and **ranged** 
+skills cannot be used to defend against a **transcendental** attack.
 
 ### Ranged attacks falloff
 
@@ -110,11 +106,11 @@ Cover provides a modifier to the defense against ranged attacks.
 @(include /tables/cover.md)
 
 If a character has _full coverage_ and doesn't attack, nor moves, nor doesn't
-perform any action that exposes it, it cannot be attacked with a ranged weapon.
+perform any action exposing them, they cannot be attacked with a ranged weapon.
 The defense is required only if the character is actually performing an action
-that would expose part of it out of the cover.
+that would expose part of them out of the cover.
 
-A _partial cover_ is a high wall, large tree or column, three feet rock, and
+A _partial cover_ is a high wall, large tree or column, a three feet tall rock, and
 anything that could cover part of the body from the aim of the opponent.
 
 A character _on the ground_ is completely squashed, and can only use weapons
@@ -140,10 +136,10 @@ dungeon, the treasure or person they were searching for etc), or because of
 a stretch of boasting victories.
 * __Desperate__: The party is in a desperate situation, and had the time
 to contemplate defeat and come with terms to that before the fight. It might
-depend of a perceived superiority of the opponents, or because all food was
+depend of a perceived superiority of the opponents, or because all food is
 depleted and a breakthrough is necessary for survival, etc.
 * __Tiredness__: The characters are particularly tired, i.e. because they
-couldn't rest after previous fight, or because being forced to fight after a
+couldn't rest after previous fights, or because being forced to fight after a
 long march, or for having run because of a chasing.
 * __Demoralized__: The characters are demoralized because of having lost
 an important target already, their leader, the location they were meant to
@@ -173,7 +169,7 @@ The attacker rolls and adds the value of the skill, as for any contest.
 Determined the value for the attack roll, each defender performs its defense,
 rolling on the chosen defense skill.
 
-A draw means that neither the attack, nor the defense have been successful.
+A draw means that neither the attack nor the defense have been successful.
 A successful attack delivers a damage to the target. A successful defense
 might have an effect that depends on the used skill (it might also deliver
 a damage to the attacker).
@@ -211,21 +207,21 @@ adding the success margin of the contest to some attribute based modifier.
 
 The _dominance_ of the skill, and eventually of the used weapon, is
 added to the _base damage_; other modifiers (i.e. temporary magic
-incantation) might further be applied. The final total damage delivered
-is called _active damage_ (__AD__).
+incantation) might further be applied. 
 
 The character receiving the damage computes its _damage mitigation_ (__DM__)
 by adding _passive defenses_ that can affect the damage source (i.e. armours),
 and eventually _active defenses_ they might use.
 
-Finally, the target character receives a number of __DP__ = __AD__ - __DM__.
+Finally, the target character receives a number of __ED__ = __DP__ - __DM__.
 This damage is accounted as specified by the [injury and damage](#injury-and-damage) rule.
 
 ### Critical Rolls
 
 A critical success doubles the value of the _success margin_ when computing
-the _active damage_. When the damage roll doesn't involve the **SM** in the
-computation of the **AD**, a critical result adds 4 **DP**.
+the **DP** (for the attacker) or the **DM** (for the defender). 
+When the damage roll doesn't involve the **SM**, the critical success adds
+automatically 4 points to the final result.
 
 > Notice that some defenses might generate a damage too.
 
@@ -234,6 +230,6 @@ indicate a success. For example, suppose an attacker with __brawl__ 16 against
 a defender with __archery__ 5. If the attacker rolls 3, which is a critical
 failure, the attack fails even if 16+3 would be above the archer's roll.
 
-If both the attacker and defender roll a critical failure, the roll result
-(with the respective modifiers) is considered: critical failures on both sides
-elide each other.
+If both the attacker and defender roll a critical of the same type, the critical part is
+discarded and only the roll result (with the respective modifiers) is considered: 
+critical failures or successes on both sides elide each other.

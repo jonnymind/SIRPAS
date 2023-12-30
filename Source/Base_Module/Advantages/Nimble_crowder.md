@@ -12,7 +12,7 @@
 
 This advantage allows to exchange the place in a [ranking]($RulebookAddress#ranking) or
 [multiranking]($RulebookAddress#multiranking) with any character from their party that scored
-in a lower position, in those rankings where being placed high
+in a lower position in those rankings where being placed high
 is advantageous, or raise in the ranking where higher places
 are disadvantageous.
 

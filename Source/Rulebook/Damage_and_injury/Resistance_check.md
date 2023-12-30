@@ -23,17 +23,17 @@ Suppose for example that a module defines hierarchy the attributes:
 
 ```
 Body -> Metabolism
-Spirit -> Willpower -> Resistance/Fear.
+Spirit -> Willpower -> Fear Resistance.
 ```
 
 In this situation, **Metabolism** would be used to resist poison, while
 **Fear Resistance** would be used to avert damages and negative effects
 caused by any **fear** based attack.
 
-In general, the ability to use some attribute in a resistance check is
-indicated in the attribute description; so the fact that **Metabolism**
+In general, the attribute description gives a generic indication on which
+type of damage it can avert; so the fact that **Metabolism**
 could be used to resist poison damage (and maybe some other negative
-effects as sickness) would be indicated in its description. 
+effects) would be indicated in its description. 
 
 At any rate, the Game Master can pick any attribute that would be relevant,
 and ultimately, the most basic attributes if a specific one can't be found.

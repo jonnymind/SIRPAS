@@ -4,7 +4,7 @@ This combat system can be used to resolve fights between small group of opponent
 are facing each other with _compatible_ fighting skills and weaponry.
 For example, you can use this method when two small bands are shooting at
 each other using using a **firearm** or similar skill, or involved in a fist fight and
-using **brawl**, or taking part in a little __swordfight__ skirmish. 
+using **brawl**, or taking part in a little **swordfight**_** skirmish. 
 
 It is also possible for parties to use different, but somewhat compatible skills. 
 For example, in a medieval tavern fight, guards may interrupt a brawl using armed
@@ -19,7 +19,7 @@ skill they're using.
 
 The simplified combat is a modified repeated multi-contest without draws.
 
-The **GM** and/or the player decide how many rounds the fight will last in advance,
+The **GM** and/or the players decide how many rounds the fight will last in advance,
 so that the best out of 1, 3, 5 (or more) rounds wins the fight.
 
 Each turn, every participant uses the skill it prefers to use in this context 
@@ -35,7 +35,7 @@ to subdue or dissuade an opponent) might simply end with the surrender of the
 losing party. If that's not the case, both winner and losers may receive 
 damage (with the losers generally receiving more).
 
-## Injury Generation in Simplified Combat (optional) {#BaM-m-simplified-combat-injury}
+## Injury Generation in Simplified Combat (optional)
 
 In simplified combat, a losing character receives a number of **DP** equal to their
 (negative) success margin. For example, if it loses with a **SM** of -6, 
@@ -57,16 +57,7 @@ receive a wound because of that.
 > As all the other rules about damage, **Injury Point** penalty applies to the simplified combat
 as well. 
 
-### Fight Duration {#BaM-m-simplified-combat-fight-duration}
-
-In terms of fight length, each round (multi-contest) lasts a number of
-combat turns equal to the number of participants of the largest party.
-
-For example, if three parties with 4, 5 and 6 members respectively are facing
-each other, each round will last 6 turns (usually, 10 seconds each, so one minute
-per round).
-
-### Fight Continuation {#BaM-m-simplified-combat-fight-continuation}
+### Fight Continuation 
 
 If the characters so desire, they can continue fighting until the losing party is
 ultimately defeated (all of its characters are disabled) or decides to flee.

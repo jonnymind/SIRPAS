@@ -1,4 +1,14 @@
-## Pickpocket (hD) {#BaM-s-pickpocket}
+## Pickpocket
+
+@(dd pickpocket)
+{ 
+  "*Name": "Pickpocket",
+  "*Brief": "Unintentionally relieve a target of their belongings",
+  "Base": "mD",
+  "Callsign": "Pp",
+  "Category": "Skill",
+  "Cost": "1 TT/Normal"
+}
 
 Tires to remove objects from another characters. The objects must not be
 secured to its body for the action to be successful. Use the following

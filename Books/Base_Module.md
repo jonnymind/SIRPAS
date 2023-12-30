@@ -94,14 +94,14 @@ from here.
 ## Body
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | 3 |
+|----------|------|
 | Category | Main |
+| Base | 3 |
 
 The Body (**B**) is a value that describes your overall physical prowess in terms of
 bodily strength, resilience to prolonged efforts, recovery speed, resistance to
 illness and so on. For humans, it is measured in the range between 3 and 18 (the
-possible outcomes of 3d6). Most adult characters score in the range between 10
+possible outcomes of 3d6). Most adult characters score in the range between 9
 and 12, with 18 representing a person with the best possible body (rarely if
 ever ill, strong as the strongest wrestler or weight lifter, moving as swift as
 a record runner and able to run as long as a marathon champion — all at the same
@@ -111,23 +111,23 @@ functional body.
 ## Mind
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | 3 |
+|----------|------|
 | Category | Main |
+| Base | 3 |
 
 The Mind (**M**) is the overall score of mental abilities in terms of intelligence, 
 creativity, will power, mental sanity, depth of knowledge and so on. 
 A mind level 3 represents a character that is barely functional as an autonomous person (or
 creature) in the reference setting, while a 18 represents a character maximally intelligent, 
 penetrating, knowledgable, sane and wise. The vast majority of characters (or heroes)
-in the reference setting will have a mind between 10 and 12.
+in the reference setting will have a mind between 9 and 12.
 
 ## Strength
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | B |
+|----------|---------|
 | Category | Primary |
+| Base | B |
 
 Strength (**S**) is the attribute measuring a character physical strength. 
 In the default setting, it also indicates how much weight the character 
@@ -155,9 +155,9 @@ of it normal movement
 ## Dexterity
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | B |
+|----------|---------|
 | Category | Primary |
+| Base | B |
 
 Dexterity (**D**) expresses the ability to control one’s own body.
 Eye-hand coordination, agility, reaction times and rapidity are all 
@@ -200,9 +200,9 @@ works in those contexts).
 ## Health
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | B |
+|----------|---------|
 | Category | Primary |
+| Base | B |
 
 Health (**H**) represents the resistance to fatigue, illness and polluted 
 environment (including allergenic agents). It's used to determine how many
@@ -212,9 +212,9 @@ and gives the base for all physical resistance skills.
 ## Will
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | M |
+|----------|---------|
 | Category | Primary |
+| Base | M |
 
 Will (**W**) is the power of the mind to focus on a certain task, 
 perform prolonged mental activity, keep determination in 
@@ -224,9 +224,9 @@ equivalent of the strength (**S**) in the mind realm.
 ## Intelligence
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | M |
+|----------|---------|
 | Category | Primary |
+| Base | M |
 
 Intelligence (**I**) is the ability to understand and solve complex problems, 
 comprehend difficult study subjects, see through schemes and machinations 
@@ -236,9 +236,9 @@ as the dexterity (**D**) of the mind.
 ## Equilibrium
 
 | <!-- --> | <!-- --> |
-|------|---|
-| Base | M |
+|----------|---------|
 | Category | Primary |
+| Base | M |
 
 Equilibrium (**E**) is the stability of the mind, 
 or basically the equivalent of its health (**H**). It indicates 
@@ -248,6 +248,39 @@ to the mind instead of the body: fantasy, sci-fi and horror settings
 can present as many dangers for the mind as for the body, or more.
 
 Hence, it forms the base of all the mental resistance skills.
+
+## Checks
+
+> For the full description refer to the Rulebook **[checks]($RulebookAddress/#checks)** section.
+
+Attempting any non-trivial action requires performing a *check* on a given attribute
+related to the attempt to perform. For example, trying to push a cart stuck in the mud
+may require a *check* on **strength**. 
+
+Checks (abbreviated as **CHK**) are resolved by adding the value of a throw of three 
+6-faced die (3d6) to the value of the attribute under check, and achieving total result 
+of **21** or more, called **Success Level** (**SL**). The **SL** may be different when
+the actions to perform are  easier or harder than normal. Other modifier can be
+applied as the situation requires; for example, being wound makes every action harder,
+applying a fixed penalty of -1 to -10 points depending on the severity of the wounds.
+
+Each check has a **Success Margin** (**SM**), that is the difference between the
+total value of the dice throw and the **SL**. On success, the **SM** is zero or
+greater; on failure, the **SM** is negative.
+
+When two characters attempt to perform the same action at the same time,
+or try to stop an opponent from performing an action using another skill, 
+a **Contest** happens. In this case, the success margin is the difference 
+between the highest score and the other.
+
+Finally, when there are multiple characters trying to best each other at a specific
+skill (e.g. running up a hill), a **Ranking** (**RNK**) is performed. In rankings,
+the winner has a success margin of zero, while all the others have a negative **SM**,
+that is the distance from the first. When whole parties try to best each other,
+a **Multiranking** (**MRNK**) takes place; each party performs a ranking, then
+the scores of the same ranks in each party is compared (first against first,
+second against second and so on); the winner party is the one with the most 
+winning ranks.
 
 # Advantages
 
@@ -259,21 +292,26 @@ Advantages can be bought for a certain number of **training tokens**
 of a certain type; the more powerful the advantage, the more high
 level the training tokens needed to train a point.
 
-While most advantages are simply possessed by a character or not,
+While most advantages are simply possessed by a character or not, 
 some can have different levels. In that case, the cost of
-each ulterior point will be the cost of the base previous level plus one
-token of the same type.
-
-For example, **Survival Instinct** can have a level between 1 and 4, 
-each granting a higher modifier. The first level costs 3 **TT**/*Normal*;
-this means that level 2 costs 4 **TT**/Normal, level 3 costs 5 **TT**/*Normal*
-and level 4 costs 6 **TT**/*Normal*.
+each ulterior point is the base cost plus one token of the same type
+per level. For example, **Survival Instinct** can have a level between 1 and 4, 
+each granting a higher modifier. The first level costs 3 **TT**/*Normal*; 
+this means that level 2 costs 3 + 2 = 5, level 3 costs 3 + 3 = 6
+and level 4 costs 3 + 4 = 7 **TT**/*Normal*.
 
 Some advantage could have a pre-requisite that must be fulfilled in order to be acquired. 
 For example, they could require having already acquired another advantage, 
 or having a certain attribute at a minimum set score.
 
-## List of advantages
+It is also possible to acquire advantages for free, as a special reward for
+a particularly brilliant deed; also, if an advantage is not needed anymore, 
+it can be removed, and half its total cost will be refunded (rounded up).
+
+For more details on the advantage system, consult the 
+[advantage system in the rulebook](https://jonnymind.github.io/SIRPAS/Rulebook.html/#advantages-and-disadvantages), 
+
+## Foudnational advantages
 
 
 - [Battleproof](#battleproof)
@@ -281,7 +319,6 @@ or having a certain attribute at a minimum set score.
 - [By the skin of one's teeth](#by-the-skin-of-one's-teeth)
 - [Combative spirit](#combative-spirit)
 - [Deep Mind](#deep-mind)
-- [Defense Expert](#defense-expert)
 - [Easygoing](#easygoing)
 - [Elemental Resistance](#elemental-resistance)
 - [Expertise](#expertise)
@@ -289,8 +326,12 @@ or having a certain attribute at a minimum set score.
 - [Hard Skin](#hard-skin)
 - [Hard to Die](#hard-to-die)
 - [Keen Eye](#keen-eye)
+- [Lucky](#lucky)
 - [Mastery](#mastery)
+- [Medical knowledge](#medical-knowledge)
 - [Natural](#natural)
+- [Nimble crowder](#nimble-crowder)
+- [Offensive flow](#offensive-flow)
 - [Survival instinct](#survival-instinct)
 - [Total Mitigation](#total-mitigation)
 
@@ -304,7 +345,9 @@ or having a certain attribute at a minimum set score.
 
 The character can withstand an additional heavy wound (or the equivalent **IP** from
 lighter wounds) from physical sources before
-being incapacitated. The first physical wound is received during a fight will
+being incapacitated. 
+
+The first physical wound is received during a fight will
 automatically heal in 4 hours, even if not treated.
 
 ## Born in a Mourning Hall 
@@ -367,18 +410,6 @@ the normal -2 penalty, the character will only receive a -1 penalty.
 The character acquires a passive mitigation against *despair*
 and *maddening* damage equal to the level of this advantage.
 
-## Defense Expert
-
-| <!-- --> | <!-- --> |
-|----------|-----------|
-| Category | Advantage |
-| Specialization | Combat style |
-| Cost | 2 TT/Normal |
-
-The character can perform one additional defense with the selected 
-style per combat turn in one specific combat style. It's possible
-to get this advantage for multiple styles.
-
 ## Easygoing
 
 | <!-- --> | <!-- --> |
@@ -386,6 +417,7 @@ to get this advantage for multiple styles.
 | Category | Advantage |
 | Specialization | Skill |
 | Cost | 2 TT/Normal |
+| Conflict | Self taught |
 
 Easy checks on the specialized skill get an additional modifier 
 of +1, and trivial checks have an additional modifier of +2.
@@ -455,7 +487,6 @@ each level of this skill.
 | <!-- --> | <!-- --> |
 |----------|-----------|
 | Category | Advantage |
-| Specialization | Skill |
 | Cost | 2 TT/Hard |
 | Prerequisite | Body 9 |
 | Levels | 6 |
@@ -485,6 +516,36 @@ easy checks become trivial etc.).
 
 Falloff in ranged combat is increased of 6 ft. per point of this advantage.
 
+## Lucky
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Cost | 1 TT/Main |
+| Conflict | Unlucky |
+
+The character can re-roll one dice having scored 1 on any check. This is applied 
+before any other advantage is considered.
+
+For example: a character with **expert**/*lockpicking* attempts opening a lock.
+As they have the advantage [expert](#expert) on lock-picking, they will roll 4d6 
+and select the best 3 rolls. 
+
+Suppose the rolls result in 1, 1, 3 and 4. The character can now re-roll one
+of the die having rolled 1, scoring a 6 instead, so the rolls are now
+1, 3, 4 and 6. **Expert** is applied next, which allows to chose 3, 4 and 6,
+for a total of 13.
+
+If the re-rolled dice scores a 1 again, that result must be accepted
+as final, unless other rules allows re-rolling a 1 roll for any other
+reason.
+
+> For example, this happens in many **resistance checks** against a sudden
+death, or when covered by temporary effects that allow to re-roll any
+dice scoring 1 indefinitely.
+
+**Notice** that this advantage is opposed to **Unlucky**.
+
 ## Mastery
 
 | <!-- --> | <!-- --> |
@@ -502,8 +563,27 @@ Mastery changes all the checks using that skill from a 3d6
 throw to a 2d6+6 (as if one dice is always automatically 
 rolling a 6).
 
-Combat styles and other combat skills can be targeted by
-mastery.
+Combat styles and other combat skills **can** be targeted by
+**mastery**.
+
+## Medical knowledge
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Skill |
+| Cost | 3 TT/Hard |
+| Level | 3 |
+
+The character knows relatively advanced medical treatment techniques.
+It can be either a medic, a surgeon or a researcher. Its knowledge is
+also correct, regardless of the technological level of the setting. For
+example, even if set in a medieval period, the character knows how to
+actually cure most illnesses, and the correct prophylactic procedure to
+minimize the spread of diseases as the plague.
+
+All checks involving medicines and cures receive a modifier equal to
+the level of this advantage
 
 ## Natural
 
@@ -527,6 +607,69 @@ This advantage can target also combat styles and other combat skills.
 
 Before becoming "natural" in a certain discipline, the character must
 have acquired the advantage [easygoing](#easygoing) on the same discipline.
+
+## Nimble crowder
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Skill |
+| Cost | 1 TT/Hard |
+| Conflict | Latecomer |
+
+This advantage allows to exchange the place in a [ranking]($RulebookAddress#ranking) or
+[multiranking]($RulebookAddress#multiranking) with any character from their party that scored
+in a lower position in those rankings where being placed high
+is advantageous, or raise in the ranking where higher places
+are disadvantageous.
+
+For example, supposed a [simplified combat]($RulebookAddress#simplified-combat)
+is taking place, and these are the results:
+
+| Place | Party A | Party B | Winner |
+|------:|---------|---------|--------|
+| 1     | 18      |  22     | B      |
+| 2     | 16      |  18     | B      |
+| 3     | 12      |  15     | B      |
+| 4     | 9       |  8      | A      |
+
+Party A scores 1 and party B scores 3 points, as party B wins the first three places, while 
+party A wins the 4th.
+
+If the character in second place uses the **nimble crowder** advantage to move down at the 3d rank,
+now party A and B are in a draw: 18-22 (point B), 12-18 (point B), 16-14 (point A), 9-8 (point A).
+With this move, the character that was previously in the second place can improve the tactical
+outcome of the battle.
+
+Another usage of this advantage may be during a [basic combat]($RulebookAddress#basic-combat) 
+**combat order** ranking, which, in this *foundation*, is performed on the [initiative](#initiative) 
+skill. Suppose the outcome of the ranking is as follows.
+
+| Place | Roll    | Party   | Member |
+|------:|---------|---------|--------|
+| 1     | 18      |  A      | Warrior|
+| 2     | 16      |  B      | Goblin |
+| 3     | 12      |  A      | Wizard |
+| 4     | 9       |  B      | Gnoll  |
+
+If the warrior uses the placement to just wait for a better moment, the goblin
+will go first; but they use this advantage to move to the third spot in place
+of the wizard, that character can go first, and cast a debilitating spell on
+the opposing party.
+
+This advantage conflicts with the [latecomer](#latecomer) disadvantage.
+
+## Offensive flow
+
+| <!-- --> | <!-- --> |
+|----------|-----------|
+| Category | Advantage |
+| Specialization | Combat style |
+| Cost | 2 TT/Hard |
+
+The character can perform one additional offense with the selected 
+style per combat turn in one specific combat style. It's possible
+to get this advantage for multiple styles.
 
 ## Survival instinct
 
@@ -553,156 +696,437 @@ hit by a poisonous dart but the effective damage after all the mitigations are a
 while it won't receive a scratch, even with this advantage the poison will still be
 applied.
 
-# Disadvantages {#BaM-gen-disadvantages}
+# Disadvantages
 
-Advantages can also be negative (disadvantages). A character might be given
-disadvantages temporarily or permanently, because of what happened during
-previous adventures, or as a background flavour, or in order to gain CP to be
-spent elsewhere, in other statistics.
+Disadvantages are permanent penalties afflict the character.
 
-## Lack of Instinct 1-4 (6/3CP) {#BaM-a-lack-of-instinct}
+A player can decide to apply some disadvantage to their character
+before beginning an adventure, as doing so grants **training tokens** that
+can be employed to make the character stronger in other aspects.
 
-All instinctive defense checks and contests get a -1
-modifier per level bought. 
+While most disadvantages are simply afflicting a character or not,
+some can have different In this case, the player receives the base
+value indicated in the description, plus the same amount of points
+as the level of the disadvantage.
 
-Cannot be countered by buying Survival Instinct.
+For example, **Nervous** can have a level between 1 and 3, 
+each inflicting a more negative modifier. The description indicates that the
+"cost" (to be intended as tokens refunded to the player) is 3 **TT**/*Hard*.
+So getting level 1 grants the player 3 + 1 = 4 **TT**/*Hard*; level 2 grants
+3 + 2 = 5 and level 3 grants 3 + 3 = 6 **TT**/*Hard*. This means that
+players can get a total of 4 + 5 + 6 = 15 **TT**/*Hard* if they give
+**Nervous**/3 to their characters.
 
-# Perks and Drags {#BaM-gen-perks-and-drags}
+Curses and other negative effects can temporarily or permanently inflict
+disadvantages against the will of the players; in that case, they won't
+receive any bonus tokens. It is also possible to get rid of a disadvantage
+that the players don't want anymore, provided it was given to their
+character on their own will, by spending an amount of tokens double the
+ones received when it was applied (rounded down).
 
-Perks and drags are generic advantages and disadvantages that don’t 
-impact the game system directly. They usually give more flavour  in 
-terms of roleplaying, and better define a character in its settings.
+For more details on the advantage system, consult the 
+[advantage system in the rulebook](https://jonnymind.github.io/SIRPAS/Rulebook.html/#advantages-and-disadvantages),
 
->Being famous, of noble origins, being able to play a certain instrument, 
-knowing a certain literature or scientific topic, being rich, and the 
-inverse of those are considered perks (or drags). 
+## Foudnational disadvantages
 
-They can and usually will have an influence in how the adventure plays, 
-and some of them has also some indirect effect on the rules. For example, 
-Medical Knowledge is mainly meant for your character to be able to speak 
-competently about illnesses and cures, but it also influences the rolls on 
-First Aid; Criminal Boss is meant to direct your adventure in a certain 
-direction, but it also influences the skill Intimidate.
 
-## Aristocrat {#BaM-a-aristocrat}
+- [Fainting](#fainting)
+- [Fumbling](#fumbling)
+- [Latecomer](#latecomer)
+- [Nervous](#nervous)
+- [Self Taught](#self-taught)
+- [Situational Unawareness](#situational-unawareness)
+- [Soft Skin](#soft-skin)
+- [Unlucky](#unlucky)
+- [Vulnerable](#vulnerable)
+- [Weak Mind](#weak-mind)
+
+## Fainting
 
 | <!-- --> | <!-- --> |
-|------|--|
-| Spec |  |
-| Cost | 20/30/40 CP |
-| Prereq | - |
-| Max | - |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 1 TT/main |
+
+A character with this disadvantage is subject to fainting when receiving
+a serious or heavy wound.
+
+The character must perform a **resistance check** against the source
+of damage causing the wound. On failure, it receives the 
+**fainting** status: the character is unable to perform any action for
+about half a minute.
+
+In combat, this translates in losing any action left in this turn
+and skipping the next one; in this situation, instinctive defense
+checks get a -3 modifier. Further wounds while affected by the
+**fainting** status do not re-apply it.
+
+## Fumbling
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 2 TT/Primary |
+
+This disadvantage makes considerably easier to score a critical failure
+in every check.
+
+Each entry in the [critical failure]($RulebookAddress#critical-results) 
+table is increased of three points. The success margin for scoring
+a critical failure becomes:
+
+* Trivial: -3
+* Easy: -4
+* Normal: -5
+* Hard: -6
+* Very hard: -7
+
+Also, in *normal*, *hard* and *very hard* checks a natural roll of 3 **or** 4 leads to 
+an automatic critical failure, regardless of the negative success margin.
+
+## Latecomer
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 2 TT/Primary |
+| Conflict | Nimble crowder |
+
+Whenever a [ranking]($RulebookAddress#ranking) is performed, the character 
+gets one place lower than their scored rank. This is not applied to
+[multirankings]($RulebookAddress#multiranking)
+
+If two or more characters with this disadvantage are stacked in consecutive places,
+the first character without this disadvantage ranks on top of them.
+
+For example, suppose this is the outcome of an **initiative** ranking to establish
+a **combat order**:
+
+| Place | Roll    | Party   | Member |
+|------:|---------|---------|--------|
+| 1     | 18      |  A      | Warrior|
+| 2     | 16      |  A      | Wizard |
+| 3     | 12      |  B      | Goblin |
+| 4     | 9       |  B      | Gnoll  |
+
+If both the warrior and the wizards have this disadvantage and the goblin hasn't,
+the ranking will be modified as:
+
+| Place | Roll    | Party   | Member |
+|------:|---------|---------|--------|
+| 1     | 12      |  B      | Goblin |
+| 2     | 18      |  A      | Warrior|
+| 3     | 16      |  A      | Wizard |
+| 4     | 9       |  B      | Gnoll  |
+
+This disadvantage conflicts with [nimble crowder](#nimble-crowder), even if that
+advantage have a similar effect, that is, being able to reduce the character
+position in any ranking at will.
+
+## Nervous
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 2 TT/Hard |
+| Levels | 3 |
+
+The character receives a penalty equal to the level of this disadvantage
+whenever they must "move first" in a game situation. This includes, but is
+not limited to:
+
+* When they are the first in a **combat order** ranking, i.e. when they
+move first in a combat round.
+* When they are on the top spot of a **multiranking**.
+* On the first check after winning a **ranking**, e.g. on the first action
+once entering a house after they won the ranking to rush inside.
+
+If it's possible to renounce being the first acting in a given context,
+the character can chose if move first and face the penalty of this disadvantage,
+or wait and move without penalty.
+
+For example, even when having won a **combat order** ranking, characters are not
+forced to move first. They can wait for any other moment in the round to act; if they
+let someone else (enemy or allied) to perform an action first, they can then
+act without any penalty.
+
+Similarly, even after winning a ranking that would allow them to move first,
+i.e. after being the first rushing in a house, they can forfeit the 
+privilege of being the first to act, and let someone else (e.g. the second
+in the ranking) to act first.
+
+However, it's not possible to arbitrarily change spot in a multiranking. So,
+if the character is first in their team in a multiranking, he or she will have
+to score against the other teams top-scorer applying the penalty of this
+disadvantage.
+
+## Self Taught
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Specialization | Skill |
+| Cost | 2 TT/Normal |
+| Conflict | Easygoing |
+
+Easy checks on the specialized skill get a penalty modifier 
+of -1, and trivial checks have a modifier of -2.
+
+This extends to any kind of checks and skills, including
+contests and combat skills.
+
+## Situational Unawareness
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 1 TT/Hard |
+| Levels | 3 |
+
+All instinctive defense checks and contests get a -1
+modifier per level of this disadvantage. 
+
+## Soft Skin
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 2 TT/Hard |
+| Levels | 3 |
+
+The character receives a passive penalty against blunt
+and cut damage equal to the level acquired.
+
+## Unlucky
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 2 TT/Main |
+| Conflict | Lucky |
+
+The character performs every check (except direct **resistance checks**) 
+rolling an additional, separate six-face dice (suggest using a 
+differently colored one, if possible).
+
+If the separate roll scores 1, the *worst* roll of the other die in the check
+(*after* applying other advantages) is substituted with 1.
+
+For example: a character with **expert**/*lockpicking* attempts opening a lock.
+As they have the advantage [expert](#expert) on lock-picking, they will roll 4d6 
+and select the best 3 rolls. However,
+they also must roll for **unlucky**. Suppose the roll for the check gives
+2, 3, 3 and 4, and the **expert** advantage allows to discard the lower roll (2),
+resulting in 3, 3 and 4. However, the unlucky dice rolls 1: 
+the lowest roll after applying **expert** (3) must be discarded
+and changed into 1, so the check result will now be 1 + 3 + 4 = 8 instead of
+3 + 3 + 4 = 10.
+
+If the special dice roll scores 1, but one of the other rolls was already
+a natural 1, nothing happens.
+
+This penalty is **not** applied on any **resistance check**. Also, any
+temporary effect improving the natural rolls will temporarily disable
+this disadvantage as a side-effect.
+
+**Notice** that this disadvantage is opposed to **Lucky**.
+
+## Vulnerable
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Specialization | Damage source |
+| Cost | 1 TT/Hard |
+| Levels | 3 |
+
+The character receives 1 additional **damage point** from the 
+target source, once at least 1 damage point is already received.
+
+This is before the application of direct damage reduction; this
+means that armors, force fields, energy shields, magic and so on
+can absorb part of the additional damage.
+
+If the damage source deals 0 **DP** before applying any mitigation
+for any reason, this disadvantage is not applied.
+
+This disadvantage is specialized by damage source. It is to 
+considered conflicting with any advantage that provides damage
+reduction from that specific damage source (e.g. [hard skin](#hard-skin)
+providing resistance against some types of physical damages).
+
+On the other hand, a character may have resistance against some
+specific damage and vulnerabilities against others. For example,
+it may be resistant to cold but vulnerable to heat, both being
+elemental damage sources.
+
+## Weak Mind
+
+| <!-- --> | <!-- --> |
+|----------|--------------|
+| Category | Disadvantage |
+| Cost | 2 TT/Hard |
+| Levels | 3 |
+
+The character acquires a passive vulnerability against *despair*
+and *maddening* damage equal to the level of this advantage.
+
+# Backgrounds
+
+Backgrounds are generic advantages and disadvantages giving 
+deeper customization to characters in the game world. 
+
+Whatever in makes the character stand out with respect to the vast
+population is considered a *background*.
+
+There isn't a net distinction between positive
+and negative backgrounds: they all have a positive cost in 
+**training tokens** to be spent at character creation. It is also
+possible to receive the backgrounds as a consequence of adventuring;
+for example, one can certainly become an outlaw during the course 
+of an adventure.
+
+For more details about backgrounds, 
+[read the background section in the Rulebook]($RulebookAddress#backgrounds)
+
+
+- [Aristocrat](#aristocrat)
+- [Corporative](#corporative)
+- [Criminal Boss](#criminal-boss)
+- [Cult member](#cult-member)
+- [Fallen Aristocrat](#fallen-aristocrat)
+- [Famous](#famous)
+- [Field expert](#field-expert)
+- [Gang member](#gang-member)
+- [Law Enforcer](#law-enforcer)
+- [Military](#military)
+- [Outlaw](#outlaw)
+- [Sectarian](#sectarian)
+- [Wealthy](#wealthy)
+
+## Aristocrat 
+
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1+ TT/Primary |
 
 The character is an aristocrat in the target setting. In settings
-that don’t comprise a birth right, traditional aristocracy, the
-perk grants belonging to a similar oligarchy or high-order political
+that don’t consider birth rights as traditional aristocracy, the
+the character belongs to a similar oligarchy or high-order political
 elite.
 
-The cost, and the effect of the perk on the game, depend on the
+The cost, and the effect of the background on the game, depends on the
 level of aristocracy:
 
-* Baron, career politician, oligarch: 20 CP
-* Count, party leader, organization leader: 30 CP
-* Duke, minister, CEO: 40 CP
+* Baron, career politician, oligarch: 1 TT/Primary
+* Count, party leader, organization leader: 2 TT/Primary
+* Duke, minister, CEO: 3 TT/Primary
+* King, prince, prime minister, president: 4 TT/Primary
 
-## Blind {#BaM-a-blind}
+The background is applied also if the character is a close family member
+(child, parent, souse) of a person in the given position. For example,
+if a player wants to play the son of a baron, they will have to spend
+1 TT/Primary too.
 
-*Cost*: -40 CP
+This background is not applied if the character is prevented from using the
+social position for any reason: check the background "Fallen aristocracy"
+for that.
 
-The character is blind. A character can minimize the effect
-of this drag through different means, but cannot use any functional
-substitute of normal vision unless it refunds the cost.
+## Corporative
 
-For example,
-having a dog companion that guides the character through every
-possible obstacle is still blindness, but having the ability to
-communicate telepathically with demonic minions and use their
-sight, or using a cyber plant that provides visual sensor stimuli
-directly to the brain is not allowed.
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1 TT/Hard |
 
-## Criminal {#BaM-a-criminal}
+A corporative is an employee of a company or governmental
+institution large enough to define a vast part of their 
+character and behavior.
 
-*Cost*: 10 CP
+For example, university professor, researcher, manager in a
+multinational, engineer in a governmental space program are all
+covered by this background.
 
-The character is an active criminal. It is in hiding and
-actively searched by the local law enforcement, and is in
-contact with other criminals and criminal organisations.
+Of course, the position must leave the character the possibility
+to participate in the adventure. That may be justified as paid absence,
+sabbatical, research project, special assignment, special operation
+etc.
 
-The character has an initial wealth of 25,000$.
+However, fort his background to be active, the character must always
+retain the connection with the organization, and suffer the consequences
+in case it breaks they break its rules.
 
-Add 5 CP if the character is also member of an active criminal
-organisation. In this case, the character will have an initial
-wealth of 50,000$ and a monthly wage of 3,000$, but it must abide
-to the rules of the criminal organisation it is part of.
+While covering governmental agencies, this background doesn't cover law 
+enforcement and military organizations, which are separately defined by
+the [law enforcer](#law-enforcer) and [military](#military) backgrounds.
 
-This perk grants a modifier of +2 to Intimidate.
+## Criminal Boss
 
-Law Enforcer, Criminal Background, Criminal Boss and Criminal
-are mutually exclusive: the character can chose only one of
-them.
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1 TT/main |
 
-## Criminal Background {#BaM-a-criminal-background}
-
-*Cost*: 10 CP
-
-The character was a member of a criminal organization, and has
-retained contacts with the ambient.
-
-Characters with this perk have a +2 modifier to Persuade and +1 to
-Intimidate.
-Law Enforcer, Criminal Background, Criminal Boss and Criminal are
-mutually exclusive: the character can chose only one of them.
-
-## Criminal Boss {#BaM-a-criminal-boss}
-
-Cost: variable.
 The character is the leader of a criminal organization. It has a
 relatively large network of criminals that follow his orders, a
 consistent wealth and a flux of incoming money. On the other side,
 it’s known to relevant police forces, constantly at risk of being
 arrested and not always welcome in high social circles.
 
-The size of the organization determines the cost in terms of points:
-
-| Size               | Wealth             | Monthly Income     | CP                 |
-|:------------------:|-------------------:|-------------------:|-------------------:|
-| \< 10              | 100,000\$          | 5000\$             | 20                 |
-| 10-20              | 250,000\$          | 7000\$             | 30                 |
-| 20-50              | 1M\$               | 20,000\$           | 50                 |
-| \>50               | 5M\$               | 100,000\$          | 75                 |
-
-This perk grants a modifier of +4 on Intimidate checks and comparisons
-against anyone, excluding other characters with the Criminal Boss perk.
-
-Law Enforcer, Criminal Background, Criminal Boss and Criminal are
-mutually exclusive: the character can chose only one of them.
-
-## Crippled {#BaM-a-crippled}
-
-*Cost*: -15 or -20 CP
-
-The character has one arm (-15 CP) or one leg (-20 CP) non
-functional or missing.
-
-## Deaf {#BaM-a-deaf}
-
-*Cost*: -30 CP
-
-The character is deaf. A character can still use this drag even if it has a 
-substitute for normal hearing, provided the substitute is just minimizing
-the disadvantage. For example, having a laptop/tablet/phone that provides
-the character with speech-to-text recognition is still being deaf, but
-having the ability to communicate telepathically with demonic minions and
-use their hearing would invalidate this drag.
-
-## Famous {#BaM-a-famous}
+## Cult member 
 
 | <!-- --> | <!-- --> |
-|------|--|
-| Spec |  |
-| Cost | 10/15/20 CP |
-| Prereq | - |
-| Max | - |
+|----------|------------|
+| Category | Background |
+| Cost | 1 TT/Hard |
+
+The character is an active follower of a cult.
+That includes any kind of cult, from major religions 
+to minor local cults, but not secret sects or outlawed
+cults; that is covered by the [Sectarian](#sectarian) background.
+
+Being an active follower means to uphold the principles and
+the practice of the rules with as little deviation as possible.
+
+## Fallen Aristocrat 
+
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1+ TT/Hard |
+
+The character was part of an aristocratic family in the target setting, 
+but either:
+
+* they are prevented from accessing the benefits of that position; or
+* they lost permanently or semi-permanently that position.
+
+Some possible examples:
+
+* an out-of-wedlock child of a baron, who is known by their
+father but not officially recognized as a heir; 
+* the only child survivor of a usurped and exterminated royal family;
+* a former party leader that has been excised out of the ruling structures
+during some power struggle.
+* A noble rebelling against their king.
+
+A character like Robin Hood would fit this background.
+
+The cost, and the effect of the background on the game, depends on the
+level of former / unrecognized aristocracy:
+
+* Baron, career politician, oligarch: 1 TT/Hard 
+* Count, party leader, organization leader: 2 TT/Hard
+* Duke, minister, CEO: 3 TT/Hard
+* King, prince, prime minister, president: 4 TT/Hard
+
+## Famous 
+
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1+ TT/Primary |
 
 The character is famous and easily identified by its peers.
 Also, whoever wants to know about the character, or searching
@@ -711,81 +1135,161 @@ a job, or to hunt it down), can easily find information
 about it and its general whereabouts, unless the character
 actively disguises and hides.
 
+Characters with other backgrounds may be famous as well;
+an aristocrat probably is, and so is a boss criminal. This
+background covers being famous directly for
+some deed or action, besides the ones specifically covered by
+other backgrounds.
+
 The cost depends on how famous the character is:
 
-* 10CP: Known by 1/20th-1/10th of the population; people
-occasionally identify it when walking by, or tells it
-they heard about it.
-* 15CP: Known by 1/5th of the population. During a day out,
+* 1 **TT**/*Primary*: Known by 1/20th-1/10th of the population; people
+occasionally identify them when walking by, and have
+heard of he character.
+* 2 **TT**/*Primary*: Known by 1/5th of the population. During a day out,
 or a long walk, the character is sure to be recognized,
 and possibly stopped by admirers (or haters).
-* 20CP: Known by more than half the population. Wherever the
-character goes, it is recognized, and when that happens,
-people flocks to see it.
+* 3 **TT**/*Primary*: Known by more than half the population. Wherever the
+character goes, they are recognized, and when that happens,
+people flock to see them, or flee if they have a negative fame.
 
-## Field Expert {#BaM-a-field-expert}
+## Field expert
 
-*Cost*: 10 CP
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1+ TT/Primary |
 
 The character is an expert in some relevant field of study: physics, psychology,
 economics, information technology, regional lore, world lore, history etc.
-This perk can be bought once per specialization field, and can be upgraded
-(immediately or later on) to Renown Field Expert.
 
-## Law Enforcer {#BaM-a-law-enforcer}
+## Gang member
 
-*Cost*: 15 CP or 20 CP
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 2 TT/Hard |
 
-The character is a member of Police or equivalent Law Enforcement agency. This
-includes also roles of Acting Inspectors and Prosecuting Judges.
+While not currently outlaw, the character is part of an active
+criminal organization.
 
-The character has an initial wealth of 20,000$ and a monthly wage of 1,000$. 
-Add 5 CP to be in higher ranks of Law Enforcement (Tenant in a police
-station, Prosecution Judge). In this case, the initial wealth will be
-40,000$ and the monthly wage will be 2,000$.
+Gang members have a higher initial pool of money to use.
 
-However, the character needs to respect the rules of Law Enforcement
-(or face the consequences), and fulfill direct orders from the upper
-ranks.
+## Law Enforcer
 
-The perk gives a modifier of +2 to Persuade and -1 to Intimidate.
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1+ TT/Hard |
 
-## Medical Knowledge {#BaM-a-medical-knowledge}
+The character is a member of the Police, city guard, castle guard, 
+or equivalent Law Enforcement agency. This includes also commanding
+roles
 
-*Cost*: 12CP
+* Simple Member: 1/TT Primary
+* Sergeant, squad leader, garrison leader: 2/TT Primary
+* Inspector, Inquirer, Inqusitor: 3/TT Primary
+* Prosecutor, Judge: 4/TT Primary
 
-The character knows relatively advanced medical treatment techniques.
-It can be either a medic, a surgeon or a researcher. Its knowledge is
-also correct, regardless of the technological level of the setting. For
-example, even if set in a medieval period, the character knows how to
-actually cure most illnesses, and the correct prophylactic procedure to
-minimize the spread of diseases as the plague.
+## Military
 
-A character with this perk gains First Aid, and has a modifier of +6 on
-all medical skills.
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1+ TT/Primary |
 
-## Renown Field Expert {#BaM-a-renown-field-expert}
+The character is part of a military organization, or organized
+militia. This includes modern armies, knight orders, semi-regular
+militia, legions and so on.
 
-*Cost*: 10 CP
-__*Prerequisite*__: *Field Expert*
+The cost of this background depends on the level occupied in the
+military:
 
-The character is a renown authority in some relevant field of study: physics,
-psychology, economics, information technology, regional lore, world lore,
-history etc.
+* Soldier: 1 TT/primary
+* Sergeant, legionary: 2 TT/primary
+* Captain, centurion: 3 TT/primary
+* Colonel, general: 4 TT/primary
 
-It has the same effect of the perk Famous, limited to the other people expert in
-the same field.
+Of course, the character needs to have a reason to join the adventure.
+This will usually be a special assignment, a long term espionage or
+survey mission, or even a temporary license.
 
-This perk can be bought only if the character has also bought the Field Expert
-perk on the same field.
+## Outlaw
 
-## Wheelchair {#BaM-a-wheelchair}
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 2 TT/Hard |
 
-*Cost*: -25 CP
+The character is a fugitive in the eye of the law, whether
+they have actually committed any crime or not.
 
-The character legs are non functional, and it needs assistance or mechanical
-devices to walk. This is not a drag in settings where the technology to
-fully substitute body parts is readily available.
+In some game worlds, political or religious organizations
+may be outlawed. In some others, characters with special
+birthmarks, uncommon powers or attributes may be outlaw.
+
+In some game worlds a person could become outlaw
+because of ostracism towards their family member; that would
+be the case of a king declaring the whole family of a
+treasonous baron to be outlaw.
+
+However, this applies also to real criminals, as a typical
+outlaw in a western movie.
+
+## Sectarian 
+
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 1 TT/Hard |
+
+The character is a member of a secret, non-governmental organization.
+
+This includes but is not limited to:
+
+* Secret criminal organizations. While all criminal organization
+require an amount of secrecy, to the organizations we're talking here
+are more in the line of the historical *hashashin*, super-villain 
+mysterious sects that have their primary activity into crime.
+* Occult and exoteric organizations.
+* Underground cults.
+* Underground anti-governmental organizations.
+
+And in general, any organization that:
+
+* has a strict code of conduct; and
+* has a proclaimed target objective that the members must actively pursue; and
+* requires exclusive and perpetual affiliation; and
+* requires secrecy and forbids members to let their affiliation known to any non authorized person.
+
+## Wealthy 
+
+| <!-- --> | <!-- --> |
+|----------|------------|
+| Category | Background |
+| Cost | 2 TT/hard |
+
+The character has personal wealth in excess with respect
+to the population average, enough to be considered in the richest 1%.
+
+This background doesn't cover the source of the wealth; it's to be
+employed only when no other background that would usually result
+in the character being wealthy cannot be applied. 
+
+Reasons for this background to apply could be:
+
+* While the family of the character is not part of the world
+aristocracy, it has accumulated wealth through trade and/or hard work.
+* The character has received their wealth as an inheritance, a lottery win,
+a gamble, or any other random reason.
+* The character found their wealth as a lucky consequence of a previous
+adventure, i.e. they stumbled on a treasure that wasn't supposed to be there.
+* The character has a very lucrative activity in the game world which is not
+covered by any other background.
+
+This background is not applied when the wealth of the character may be related
+or explained by any other background (i.e. being a high ranking member of the
+[military](#military)).
 
 # Skills {#BaM-m-skills}
 
@@ -803,426 +1307,6 @@ from scratch; for example lock picking must be learned before being used.
 Last, some skills have a base that depends on a base modifier; this is indicated
 with a lowercase letter 'm' in front of the attribute.
 
-## Acrobatics (D) {#BaM-s-acrobatics}
-
-The character is able to perform acrobatic feats, including falling from a
-height that would normally damage a less skilled character.
-
-If used to check if the character is hurt when falling from a height, the
-following table indicates the modifier applied:
-
-| Height                               | Modifier                             |
-|--------------------------------------|--------------------------------------|
-| 6 feet                               | Trivial                              |
-| 9 feet                               | Easy                                 |
-| 12 feet                              | Normal                               |
-| 18 feet                              | Difficult                            |
-| 24 feet                              | Hard                                 |
-| 30 feet                              | Very Hard                            |
-
-Above 30 feet, the check fails automatically. 
-
-When the check fails the character takes 1 damage point per feet.
-
-## Active Mitigation (-; H) {#BaM-s-active-mitigation}
-
-The character can mitigate a damage equal to the success margin once per
-turn.
-
-## Charisma (M) {#BaM-s-charisma}
-
-Used to influence positively other characters. Not to be confused with
-*Persuade*. This skill is specifically meant for characters trying to
-make a good impression, obtain favours, special treatments, or a
-generic good attitude. Persuade is the skill to deliver one specific
-talk with persuasive power.
-
-## Chemistry (-; H) {#BaM-s-chemistry}
-
-Technical knowledge of modern chemistry.
-
-## Climbing (D; E) {#BaM-s-climbing}
-
-Used to check when the character climbs a section of wall 6 feet high. Use the
-following table to determine the difficulty of the action:
-
-| Surface                          | Modifier                         |
-|--------------------------------------|--------------------------------------|
-| Ivy riddled wall                     | Trivial                              |
-| Old bricks                           | Easy                                 |
-| Stone Wall                           | Normal                               |
-| Rock Wall                            | Difficult                            |
-| Castle Wall                          | Hard                                 |
-| Polished Wall                        | Very Hard                            |
-
-If the character fails, it stays at its current spot, and it can try again
-with the repeated attempt modifiers.
-
-A critical failure implies that the character fell from the current spot.
-A critical success indicates it climbed for 12 feet instead of 6.
-
-## Deceit (I) {#BaM-s-deceit}
-
-It’s the ability to say a credible lie.
-
-## Endurance (H) {#BaM-s-endurance}
-
-Endurance is the ability to resist long lasting physical strain. A long march,
-swimming, carrying weights for a long time etc. requires an endurance check.
-Subsequent endurance checks against the same condition are treated as repeated
-check (each of them gets a -1 modifier), even if other skills are used
-meanwhile.
-
-For example, if a group is taking a forced march and has already passed a check,
-is forced to a fight and then resumes the march without any rest, the next
-endurance check will have a modifier of -1.
-
-A success indicates that the character is able to continue the effort. In case
-of failure, the character needs to try again with the ever increasing repeated
-check, until success becomes impossible.
-
-A critical success causes the next repeated check to be won automatically, and
-the current repeated modifier is also reduced by 1.
-
-A critical failure indicates that the character is exhausted, and needs to rest.
-If it is in a precarious situation, i.e. swimming, walking along a dangerous
-mountain trail, it might be forced to roll against a deadly wound or die.
-
-## Engineering (-; H) {#BaM-s-engineering}
-
-Technical skill in modern engineering.
-
-## First Aid {#BaM-s-first-aid}
-
-| <!-- --> | <!-- --> |
-|------|---|
-| Base | - |
-| Type | N |
-| Prereq | - |
-| Spec |  |
-
-This skill can be used to perform the following actions:
-* cure a *light wound* with a successful *normal* check;
-* reduce a *serious wound* into a *light wound* with a *difficult* check;
-* reduce a *heavy wound* into a *serious wound* with a *hard* check.
-
-Using a standard first-aid kit gives a modifier of +6 (some special first-aid kits
-have higher modifiers). 
-
->Notice that no matter the modifier received with a first-aid kit, for what
-concerns *critical results*, checks on 
-*serious wounds* and *heavy wounds* are still *hard* and *very hard*.
-
-The user can also cure more wounds on the same character; each further cured
-wound requires adding the penalty of a *repeated check*, even if the previous
-check is successful.
-
-This skill can also be used to stabilize a disabled target with a successful *normal* check. 
-Using a first-aid kit makes the check become *trivial* (no further modifier given by
-the first-aid kit is applied).
-
-A *critical success* (whether the skill is used to stabilize or cure a wound) heals another 
-*light wound*, if the character has any.
-
-A *critical failure* causes a light wound. If the skill is used to stabilize a dying 
-character, a critical failure will kill it immediately.
-
-If the skill is target of an [expertise](#Bam-a-expertise-skill) advantage, it can
-also cure *serious wounds* instead of reducing them, and critical success will cure
-up to an extra *serious wound*, if the target character has no more *light wounds* 
-to cure.
-
-## Hacking/System (-; H) {#BaM-s-hacking}
-
-When a character wants to hack a device or a system, it can roll on this to
-check if it has the necessary knowledge to hack the system.
-
-Each action requires a different check. A critical failure implies the hacking
-has been neutralised and the source identified. A critical success implies that
-the character has gained privileged access, and further actions on the same
-system will not require a separate check.
-
-The specifics of the system depend on the setting. For some settings, the
-hacking skill could be general, while in other settings specific systems will be
-identified, and they might require a separate hacking skill.
-
-## Healing/Race {#BaM-s-healing}
-
-| <!-- --> | <!-- --> |
-|------|---|
-| Base | - |
-| Type | H |
-| Prereq | First-aid 3 |
-| Spec | Race |
-
-The character has advanced practical medical knowledge for the setting
-where the adventure takes place, and is able to heal illnesses, poisoning
-and equivalent conditions for the target settings.
-
-For instance, in a magic world where curses can cause illnesses, this
-skill can also be used to treat the effect of the curses.
-
-In a virtual words where AIs can be infected with viruses, this skill
-can be used to run an anti-virus.
-
-The type of illness determine the difficulty of the check. The following table 
-gives a basic reference frame for deciding the difficulty of a check.
-
-| Illness Type                     | Severity                         |
-|----------------------------------|----------------------------------|
-| Common Cold                      | Trivial                          |
-| Light Fever                      | Easy                             |
-| Intestinal Fever                 | Normal                           |
-| Malaria/Pneumonia                | Difficult                        |
-| Plague/Yellow Fever              | Hard                             |
-
-Specific information about the setting will be used by the GM or directly
-given in the descriptioin of the illnesses in order to determine the 
-check difficulty.
-
-The time required for the cure to take effect is in the order of hours to days;
-the *success margin* can be used by the *GM* to decide how fast the recovery is.
-
-Ilnesses that are *difficult* or *hard* to cure will be transformed in *easy*
-or *trivial* ilnesses before being cured. For instance, a successful cure of
-*plague* will initially turn the illness into a *light feever*, which can then
-be cured again to heal it completely.
-
-Particular setting-specific devices can give determined bonuses in curing generic
-or particular illnesses. Specific medicines or magic potions can give very high
-bonuses (+12 or more) almost granting a success, even if the characters using them
-have no healing skill at all.
-
-A *critical success* will cure the illness completely and in record time.
-A *critical failure* will cause another illness to appear (i.e. intoxication
-from the medicinal active principle, appearance of secondary side-effects etc.).
-
-## Hiding (I; E) {#BaM-s-hiding}
-
-The character knows how to hide so to look like inconspicuous material
-(i.e. a sack of potatoes, a part of a load of straw on a cart, a roll
-of cloth and so on). The difficulty of the check is determined by the GM.
-
-## Hiding in Shadows (mD) {#BaM-s-hiding-in-shadows}
-
-The character knows how to hide in dark places, or pass unobserved in a
-crowded place.
-
-## Initiative (D/W; H) {#BaM-s-initiative}
-
-This skill represents the reaction times and determination under pressure of
-the character. It is typically used in contests or rankings, to decide who
-acts first during a stalemate, but it can be also used in checks. The order
-in which a combat turn develops is decided by a ranking on the initiative
-of all the involved characters.
-
-The base is either Dexterity or Will, the best of the two.
-
-## Intimidate (W) {#BaM-s-intimidate}
-
-Intimidate is the action of menacing someone that some negative outcome will
-follow, unless they don’t comply with some desired course of actions. For
-intimidation to be effective, the menace must be credible, and the target
-must actually wish for that not to happen.
-
-## Investigation (I; H) {#BaM-s-investigation}
-
-The ability to find hidden clue or draw correct conclusions with a limited
-amount of clue. Particularly useful when visiting the scene of a crime.
-
-## Lie Detection (mI; H) {#BaM-s-lie-detection}
-
-This skill represents the ability of the character to detect lies, given
-small hints on the voice, facial expressions and behaviour of the target.
-
-A skilled lier can oppose its deception. Otherwise, the character can try
-a check on this skill, with a difficulty that depends on the amount of
-information the character has about the truth.
-
-## Lock Picking (-) {#BaM-s-lock-picking}
-
-Used to try opening normal locks. The lock must be within the reach of the technological knowledge of the character. The character must have also proper tools at its disposal to try the action.
-
-## Lore Knowledge/field (-; E) {#BaM-s-lore-knowledge}
-
-This skill represents the knowledge of the character about lore and stories in
-the setting where the adventure takes place. The skill is specific for lore
-types; for example, it can be targeted at norse mythology, egyptology, local
-lores etc.
-
-To check wether a character knows a specific lore it gets in contact with, check
-against a difficulty which depends on how widespread the knowledge is,
-considered the specific setting where the adventure takes place.
-
-A lore everyone knows is checked as “trivial”, one that is particularly obscure
-an known only to experts or initiates is “very hard”.
-
-## Perception (W; H) {#BaM-s-perception}
-
-Determines whether the character is able to detect an element in the surrounding
-that is hard to spot, as a secret door, a potential danger, a follower and so
-on.
-
-It is used when there aren’t more specific skills to be applied in the specific
-situation. For example, trying to find traps is done by rolling on traps.
-
-## Persuade (I) {#BaM-s-persuade}
-
-With this skill, the character can persuade others. Persuading means leading
-others to believe the truth of some idea, fact or point of view (regardless of
-them being actually true or not). Persuasion works on characters that don’t have
-strong evidence or didn’t made up their mind already on said idea, fact or point
-of view.
-
-Persuasion can also be used to convince someone into performing some action, or
-abstaining to perform some action they should do, provided the consequences for
-doing so are not particularly harsh. For example, you can persuade some security
-guards to let you in a restricted party, provided they don’t have categorical
-orders, or provided that they think they can get away with a transgression.
-
-## Pickpocket (hD) {#BaM-s-pickpocket}
-
-Tires to remove objects from another characters. The objects must not be
-secured to its body for the action to be successful. Use the following
-table to determine the difficulty of the action:
-
-| Target awareness                 | Modifier                         |
-|----------------------------------|----------------------------------|
-| Sleeping/tied/helpless           | Trivial                          |
-| Busy (attention diverted)        | Easy                             |
-| Unsuspecting                     | Normal                           |
-| Attentive                        | Difficult                        |
-| Suspicious                       | Hard to very hard                |
-
-The action cannot reasonably be tried if the target is actually aware of
-the fact that the character is actively trying to pickpocket it.
-
-## Poisons (-) {#BaM-s-poisons}
-
-Technical knowledge for recognizing (_normal_) and producing (_hard_) poisons.
-
-## Resistance/source {#BaM-s-resistance-source}
-
-| <!-- --> | <!-- --> |
-|------|-------|
-| Base | H/E/- |
-| Type | H |
-| Prereq | - |
-| Spec | **DP** source type |
-
-The character has aqcuired a specific resistance against
-a determined damage source. The base of the resistance
-depends on the macro-category of the danage source,
-as specified in the following table:
-
-| Damage type | Base        |
-|-------------|-------------|
-| Physical    | Health      |
-| Mental      | Equilibrium |
-| Elemental   | Elem. Res.  |
-
-The advantage [Elemental Resistance](BaM-a-elemental-resitance) gives
-the base against elemental damage.
-
-## Riding/mount (mD) {#BaM-s-riding}
-
-This skill is used to perform particularly difficult actions while riding a
-specific animal. For example, jumping a fence with a horse, jumping across
-acrobatic platforms with a motor bike, running through a busy skyline with a
-flying car and so on.
-
-The skill is specific for each device (or animal) that the character might ride.
-Some riding specialisation can be baseless, if learning them requires a specific
-preparation (for example, helicopter pilot).
-
-## Running (D) {#BaM-s-running}
-
-Running is the skill used when deciding which character wins a run race.
-It can also be used to check if a character is able to run for a long time.
-
-## Silent Movement (D) {#BaM-s-silent-movement}
-
-This skill is used when the character wants to try and move silently. The
-following table describes possible modifiers:
-
-| Terrain                              | Modifier                             |
-|--------------------------------------|--------------------------------------|
-| Stone                                | Trivial                              |
-| Compact soil                         | Easy                                 |
-| House wooden floor                   | Normal                               |
-| Old wooden floor                     | Difficult                            |
-| Dead Leaves                          | Hard                                 |
-| Squeaky Floor.                       | Very Hard                            |
-
-## Stabilize {#BaM-s-stabilize}
-
-| <!-- --> | <!-- --> |
-|------|---|
-| Base | I |
-| Type | E |
-| Prereq | - |
-| Spec |  |
-
-The character can perform a *hard* simple check in order to save the life
-of disable companions. 
-
-Using a first-aid kit changes the difficulty of the check from *hard* to *easy*.
-
-A critical success means that the character also heals its lightest wound. A 
-critical failure causes the character to die immediately.
-
-## Treating wounds/Race Type {#BaM-s-treating-wounds}
-
-| <!-- --> | <!-- --> |
-|------|---|
-| Base | - |
-| Type | H |
-| Prereq | First-aid 6 |
-| Spec | Race Type |
-
-The character has advanced practical medical knowledge for the setting
-where the adventure takes place, and is able to heal wounds of the target
-creature race. 
-
-The following table is applied when checking for the character success:
-
-| Severity                         | Severity                         |
-|----------------------------------|----------------------------------|
-| Light                            | Easy                             |
-| Severe                           | Normal                           |
-| Heavy                            | Difficult                        |
-
-Standard First-aid kits give a +6 modifier to heal *light wounds* only. 
-Specific healing aids in the target setting can provide other modifiers.
-
-The time required for the healing to be performed depends on the setting
-and on the device used. A SF cellular replicator or a magic balm could
-allow healing heavy wounds in one day, in a few hours or in minutes,
-while in other settings, an herbal healing remedy might require a week.
-
-The *race type* specifier is to be considered in large categories. For
-example:
-* Humanoids (Humans, elves, orcs etc.)
-* Human-sized animals (dogs to deers)
-* Small animals (birds, cats, etc.)
-* Large animals (elefant, dragons, etc.)
-
-## Traps (I; H) {#BaM-s-traps}
-
-This skill represents the knowledge of the character about traps, and is used
-to either detect, build or try and disarm traps, with the following modifiers:
-
-| Height                           | Modifier                         |
-|--------------------------------------|--------------------------------------|
-| Build                                | Trivial                              |
-| Detect                               | Normal                               |
-| Disarm                               | Hard                                 |
-
-Each tarp might come with a separate specific modifier in order to be
-detected and disarmed. Once a trap is discovered, the character might
-attempt a separate check on Traps at normal difficulty to determine
-its modifier prior attempting to remove it.
-
 # Combat
 
 Combat is an advanced form of contest. In a normal contest, characters
@@ -1230,7 +1314,7 @@ try to win one over another on specific skills, while in combat,
 contests are finalized to deal damage or other negative effects on
 an unwilling target.
 
-The Base Module provides several sub-systems to resolve conflicts, increasingly
+The Rule Book provides several sub-systems to resolve conflicts, increasingly
 detailed (and complex):
 
 * *Simplified Combat*: It's a simple way to resolve small combats.
@@ -1251,1156 +1335,11 @@ a brawl erupted in a tavern as a *simplified combat*, to turn to the
 *advanced combat* when things get nasty while fighting the guards to escape
 a dungeon.
 
-## Generic Combat Skills {#BaM-s-generic-combat-skills}
+# Game Setup
 
-The skills in this sections are combat skills not related with any
-_combat style_.
+With all the rules down, how to organize, prepare and run a game session?
 
-They differ from normal maneuvers in the fact that they don’t belong to any
-style, and as proper skills, they can be learned independently, and targeted by
-advantages and perks.
-
-### Disengage {#BaM-s-generic-combat-disengage}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 4 CP |
-| Type | Defense |
-| Modifier | mD |
-
-Disengage is a defense allowing to move half the normal movement speed in the current turn. It automatically succeeds if the opponents are not trying to attack the character using it.
-On failure, the disengagement fails and the character cannot move.
-If the contest succeeds, the character can move even if other subsequent attacks succeed.
-
-### Instincitve Defense {#BaM-s-generic-combat-instinctive-defense}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 3 CP |
-| Type | Defense |
-| Modifier | mD |
-
-The instinctive defense is used against physical attacks whenever
-it’s not possible to use any other defense, for example, because
-the character has used up all of the available maneuvers for this turn.
-
-It’s ineffective against mind attacks.
-
-### Shoot {#BaM-s-generic-combat-shoot}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 6 CP |
-| Type | Attack |
-| Modifier | -1 |
-| Range | 30 ft |
-| Damage Type | Piercing |
-| Damage | __SM__+4 |
-
-Shoot with a projectile weapon while not being skilled to do so.
-Weapons requiring skill in being loaded (i.e. bows, special military
-rifles etc.) cannot be used with this skill, but loaded weapons (i.e.
-crossbows) can.
-
-### Slash {#BaM-s-generic-combat-slash}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 5 CP |
-| Type | Attack |
-| Modifier | mS |
-| DR | -1 |
-| Damage | __SM__ |
-| Condition | __(Stun 2)__ |
-
-A generic combat maneuver that can be used with any weapon, including improvised ones. Clubs made out of table legs, guns without ammunitions used as maces, and in general anything you swing at an opponent without knowing exactly what you’re doing is covered under this maneuver.
-The damage type depends on the nature of the weapon. It can be either cut or blunt.
-On critical success, it applies stun for 2 turns.
-
-### Throw {#BaM-s-generic-combat-throw}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 5 CP |
-| Type | Attack |
-| Modifier | mS |
-| DR | -1 |
-| Range | 15 ft |
-| Damage Type | blunt/cut |
-| Damage | __SM__ |
-| Condition | __(Stun 2)__ |
-
-This attack consists in throwing a heavy object to an enemy in range.
-Anything goes; even weapons, as long as the weight of the object is
-between two and eight pounds weight.
-
-The damage dealt is normally of __blunt__ type, unless the thrown object
-is sharp; then it becomes of __cut__ type.
-
-A critical success applies also the stun condition for 2 turns.
-
-### Thrust {#BaM-s-generic-combat-thrust}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 5 CP |
-| Type | Attack |
-| Modifier | mD |
-| DR | -1 |
-| Damage Type | cut |
-| Damage | __SM__ |
-
-A generic maneuver performed with any pointed or cutting weapon,
-(always causing __cut__ damage),
-including improvised ones. The character thrusts the weapon forward.
-On success, it causes a piercing damage for half the success margin
-plus the dexterity.
-
-### Willpower Defense {#BaM-s-generic-combat-willpower-defense}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 3 CP |
-| Type | Defense |
-| Modifier | mW |
-
-The willpower defense is used against mental attacks, whenever
-it’s not possible to use any other defense, for example, because
-the character has used up all of the available maneuvers for
-this turn.
-
-## Archery {#BaM-s-archery}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 6 CP |
-| Modifier | mD |
-| Dominance | 4 |
-
-This is the base style (and skill) needed to use bows, crossbows and similar projectile
-weapons.
-
-Unless differently specified, all attacks from *archery* deal __cut__ damage,
-and the range depends on the used weapon.
-
-The number of maneuvers the character can use per round depends on the level of Archery:
-
-| Level | Maneuvers |
-|-----|---|
-| 1-9 | 1 |
-| 10-16 | 2 |
-| 17+ | 3 |
-
-### Aim {#BaM-s-aim}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Action |
-| Prereq | Archery 3 |
-
-Take a maneuver to improve the next attack, giving it a modifier of +1.
-It can be repeated any number of times within a single turn, but the
-modifier is applied only to the very next Shoot.
-
-### Localized Shot {#BaM-s-localized-shot}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | Variable |
-| Prereq | Archery 5 |
-| DR | -1 |
-| Damage | __SM__+1 |
-| Condition | (__Cripple__) |
-
-Loads and shoot an arrow or a bolt aiming to a specific part of the body.
-
-A _critical success_ will cause automatically
-a _localized heavy wound_, crippling that part of the body,
-if the damage caused would be otherwise enough to cause at least
-a _light wound_.
-
-> Localized heavy wounds can have further negative effects with respect to
-normal heavy wounds, as disarming, reducing the movement speed, blinding
-and so on.
-
-If the localized shot was aimed at the head, a _critical success_ will cause
-a _deadly wound_.
-
-The modifier to be applied depends on the target part of the body:
-
-| Body Part | Modifier |
-|:---------:|---------:|
-| Arm       | -2       |
-| Leg       | -3       |
-| Head      | -4       |
-
-### Overextend {#BaM-s-overextend}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Action |
-| Modifier | mS-2 |
-| Prereq | Archery 6 |
-| DR | -1 |
-| Limitation | Bows |
-
-Take a maneuver to bend the bow more than normal in order to improve
-the next attack, giving it a damage modifier equal to the success
-margin of this check.
-
-### Overload {#BaM-s-archery-overload}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Action |
-| Prereq | Archery 9 |
-
-Loads two arrows or two bolts in the weapon. The very next attack will have a
-fixed modifier of -3, but the character gains an extra attack
-to be used in the current or the next turn.
-
-> This maneuver gains an extra attack only. Defense and action count
-is not affected.
-
-This is useful when it’s not currently possible or ideal to attack a target, but
-you don’t want to lose the attack.
-
-### Shoot {#BaM-s-archery-shoot}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Archery 1 |
-| Damage | __SM__+4 |
-
-Loads and shoot an arrow or a bolt.
-
-### Brawl {#BaM-s-brawl}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 2 CP |
-| Modifier | mS |
-| Dominance | 1 |
-
-Brawl is the style of fight with bare hand and feet, without a specific
-preparation. It’s often used in tavern and bar fights, and can also be
-useful in other combat situations.
-
-Every human or humanoid character has access to brawl.
-
-Unless differently specified, all attacks from *brawl* deal __blunt__
-damage, and all the maneuvers are melee.
-
-The number of maneuvers the character can use per round depends on
-the level of brawl:
-
-| Level | Maneuvers |
-|-----|---|
-| 1-5 | 1 |
-| 5-10 | 2 |
-| 11-15 | 3 |
-| 16+ | 4 |
-
-### Block {#BaM-s-brawl-block}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mS |
-| Prereq | Brawl 1 |
-| DR | -1 |
-
-Block an incoming blow with the lower part of the arms (similar to the guard
-in a boxe match).
-
-Can't be used against any weapon, unless the arms are given an amrour
-capable to completely block the attack; for example, a character arm might be
-stuck to an iron rod; in this case, the character can use __block__ against i.e.
-a sword or a mace.
-
-### Evade {#BaM-s-brawl-evade}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD |
-| Prereq | Brawl 1 |
-| DR | -1 |
-
-Try and evade an attack moving the body out of the way of the incoming hit.
-
-### Grapple {#BaM-s-brawl-grapple}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Prereq | Brawl 8 |
-| DR | -1 |
-| Condition | __Block__ |
-
-The character tries to grab and control the opponent. Effective only against
-targets with a strength less than the double of the attacker’s, and with a body
-less than double the size.
-
-The attacker and the defender are both blocked, until the attacker fails the
-attack with a +3 modifier in the subsequent turns, or performs another
-action.When used against the blocked target, diminishing return is not applied
-on either side.
-
-### Kick {#BaM-s-brawl-kick}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Brawl 1 |
-| DR | -1 |
-| Damage | __SM__+mD |
-| Condition | __(Stun 2)__ |
-
-The character attacks with a kick, causing a damage equal its dexterity plus the success margin.
-Gets a +2 modifier on small creatures (less half the size of the attacker) and grounded  targets.
-On critical success, it stuns the target for 2 turns.
-
-### Punch {#BaM-s-brawl-punch}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mS |
-| Prereq | Brawl 1 |
-| DR | -1 |
-| Damage | __SM__+mS |
-| Condition | __(Stun 2)__ |
-
-Attacks with a direct punch. A critical success stuns the target for 2 turns.
-Receives a -2 modifier against targets larger than the attacker.
-
-### Smash {#BaM-s-brawl-smash}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mS |
-| Prereq | Brawl 6 |
-| DR | -1 |
-| Damage | __SM__-2 |
-| Condition | __Grounded__ |
-
-The attacker throws its own body against the target. On success, the target is
-grounded for a turn.
-
-Receives a +2 modifier on smaller targets and -2 on larger targets. Brawl/Evade
-and other evasions receive a +2 modifier to defend against this action.
-
-Can’t be used against grounded targets.
-
-## Concentration {#BaM-s-concentration}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 2 CP |
-| Modifier | mW |
-| Dominance | 1 |
-
-Concentration is a simple mind-oriented fighting style, which can be seamlessly
-integrated in a traditional melee fight. It covers the role of the default
-combat style for mental combat, analogous to brawl for physical combat. In a
-world where mental fight is a thing, everyone should be able to mind meld, like
-everyone is able to brawl in physical worlds.
-
-While other fighting styles in the manual are realistic, this requires a setting
-specifically supporting mind powers. However, the style is suitable for sci-fi
-settings to handle fights between AIs, robots, hackers and so on, with
-low-resolution.
-
-The number of maneuvers the character can use per round depends on the level
-of Concentration:
-
-| Level | Maneuvers |
-|-----|---|
-| 1-7 | 1 |
-| 8-13 | 2 |
-| 14+ | 3 |
-
-### Alien Thoughts {#BaM-s-concentration-alien-thoughts}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mI |
-| Prereq | Concentration 1 |
-| DR | -1 |
-| Damage Type | Maddening |
-| Damage | __SM__+mI |
-
-The attacker projects alien, irrational thoughts in the defendant’s,
-in order to cause maddening.
-
-### Block  {#BaM-s-concentration-block}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mW |
-| Prereq | Concentration 1 |
-| DR | -1 |
-
-The character raises a mental barrier in order to block an incoming attack.
-
-### Dig into you  {#BaM-s-concentration-dig-into-you}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mW |
-| Prereq | Concentration 1 |
-| DR | -1 |
-| Damage Type | Despair |
-| Damage | __SM__+mW |
-| Condition | __(Stun 2)__ |
-
-The character attacks by searching for painful memories and thoughts, in order to cause despair in the target.
-
-### Divert {#BaM-s-concentration-divert}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mI |
-| Prereq | Concentration 1 |
-| DR | -1 |
-
-The defendant diverts the attention of the attacker on an irrelevant
-thought or memory, causing the attack to miss.
-
-### Mind Grasp  {#BaM-s-concentration-mind-grasp}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mI |
-| Prereq | Concentration 6 |
-| DR | -1 |
-| Condition | __Blocked__ |
-
-The character tries to acquire the control of the defendant mind. On success,
-the defendant is unable to act (blocked). To keep holding the target, the attacker
-must continue to use this attack with + 3 modifier against it at each turn. When
-this maneuver is used against a blocked target, diminishing return is not
-applied on either side.
-
-The attacker must keep using this attack once per turn and can’t move or perform
-any other action.
-
-If the attacker receives any damage, the concentration is broken.
-
-### Sensations {#BaM-s-concentration-sensations}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | -1 |
-| Prereq | Concentration 4 |
-| DR | -1 |
-| Damage Type | Confusion |
-| Damage | __SM__+*mW* |
-| Condition | __(Stun 2)__ |
-
-The attacker tries to hijack the sensory system of the target mind, 
-causing it to hallucinate and fail to coordinate with the body. 
-On critical success, the target is stunned for 2 turn.
-
-### Yes, but you... {#BaM-s-concentration-yes-but-you}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mI |
-| Prereq | Concentration 6 |
-| DR | -1 |
-| Damage Type | Despair |
-| Damage | __SM__-2 |
-
-The defendant turns the mental attack against the attacker.
-If the defense is successful, the attacker is hit back for a
-number of despair points equal to the success margin
-of the defense minus two (minimum 1 dp).
-
-## Firearms {#BaM-s-firearms}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 6 CP |
-| Modifier | mD |
-| Dominance | 7 |
-
-This combat style is the bases for using firearms. In general, the weapon gives
-the modifier for the attack roll and determines the range, but the damage
-generated is usually the same. Firing with a pistol six feet away from the
-target or with a precision gun from 90 feet afar yields mostly the same results,
-provided you can hit the mark.
-
-All the damage type caused by *firearms* is of __piercing__ type, unless differently
-specified.
-
-Everyone can shoot with a firearm; as such, the firearms style is available to
-anyone, but most maneuvers have a relatively high pre-requisite.
-The number of maneuvers the character can use per round depends on the level of
-Firearms:
-
-| Level | Maneuvers |
-|-----|---|
-| 1-5 | 1 |
-| 5-10 | 2 |
-| 11-15 | 3 |
-| 16+ | 4 |
-
-### Aim {#BaM-s-firearms-aim}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Action |
-| Prereq | Firearms 3 |
-
-Take a maneuver to improve the next attack, giving it a
-modifier of +1. It can be repeated any number of times within a 
-single turn, but the modifier is applied only to the very next 
-Shoot or Aimed Shoot, either within the same turn or in the very next one. 
-
-No other action can be performed while aiming, and performing another
-action will discard the modifiers achieved.
-
-### Aimed Shot {#BaM-s-firearms-aimed-shot}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | -3 |
-| Prereq | Firearms 6 |
-| DR | -2 |
-| Damage | __SM__+9 |
-| Condition | __Injury__ |
-
-Inflicts a -3 modifier on the attack, but it generates an injury one level
-more severe than normal. Light wounds becomes severe, severe wounds become
-heavy and heavy wounds becomes deadly.
-
-### Duck {#BaM-s-firearms-duck}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD |
-| Prereq | Firearms 2 |
-
-Duck or evade while holding the firearm to avoid incoming fire.
-
-### Fast Reload {#BaM-s-firearms-fast-reload}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Actions |
-| Prereq | Firearms 4 |
-
-Ability to reload the weapon in the heat of the combat, using a
-maneuver.
-
-### Localized Shot {#BaM-s-firearms-localized-shot}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | Variable |
-| Prereq | Firearms 4 |
-| DR | -2 |
-| Damage | __SM__+4 |
-| Condition | __(Cripple)__ |
-
-Shoot aiming a part of the body.
-
-A _critical success_ will cause automatically
-a _localized heavy wound_, crippling that part of the body,
-if the damage caused would be otherwise enough to cause at least
-a _light wound_.
-
-> Localized heavy wounds can have further negative effects with respect to
-normal heavy wounds, as disarming, reducing the movement speed, blinding
-and so on.
-
-If the localized shot was aimed at the head, a _critical success_ will cause
-a _deadly wound_.
-
-The modifier to be applied depends on the target part of the body:
-
-| Body Part  | Modifier |
-|:----------:|---------:|
-| Arm        | -2       |
-| Leg        | -3       |
-| Head       | -4       |
-
-### Point Blank {#BaM-s-firearms-point-blank}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | +2 |
-| Prereq | Firearms 6 |
-| DR | -1 |
-| Range | Melee |
-| Damage | __SM__+10 |
-| Condition | __(Deadly)__ |
-
-Fires at point blank on targets in melee range.
-On critical success it causes a deadly wound.
-
-### Rapid Fire {#BaM-s-firearms-rapid-fire}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | -3 |
-| Prereq | Firearms 9 |
-| DR | -3 |
-| Range | 15 ft |
-| Damage | __SM__+3 |
-
-Fires twice in a single maneuver, each time with reduced attack and
-damage. Can be used with pistols only.
-
-### Shoot {#BaM-s-firearms-shoot}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Prereq | Firearms 1 |
-| Damage | __SM__+7 |
-
-Normal base attack with firearms.
-
-### Take Cover {#BaM-s-firearms-take-cover}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | +3 |
-| Prereq | Firearms 3 |
-| DR | -2 |
-
-If a cover is within movement range for the turn, the character can use this defense to run towards a covered position, with a fixed +3 modifier.
-
-## Full Contact {#BaM-s-full-contcat}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 3 CP |
-| Prerequisite | **Brawl** 4 |
-| Modifier | mS |
-| Dominance | 3 |
-
-An advanced version and extension of Brawl. While still not being a full-fledged
-martial art, it’s a style of combat that requires dedication, and if
-professionally trained, can be quite effective even against more famous martial
-arts.
-
-A character using Full Contact can use all the maneuvers from *Brawl* under
-*Full Contact* instead (whichever has the higher level).
-
-All damage from *full contact* is of __blunt__ type, unless differently
-specified.
-
-A well trained full-contact fighter is as dangerous as an armed opponent.
-A character using Full Contact can use an extra maneuver from this style each
-turn.
-
-For example, a character with Full Contact 10 has two maneuvers it can
-chose from either Full Contact or Brawl, plus one from Full Contact only.
-
-| Level | Maneuvers |
-|-----|---|
-| 1-5 | 1 |
-| 5-10 | 2 |
-| 11-15 | 3 |
-| 16+ | 4 |
-
-### Counter Punch {#BaM-s-full-contact-counter-punch}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mS-2 |
-| Prereq | Full Contact 3 |
-| DR | -2 |
-| Damage | __SM__-1 |
-| Condition | __(Stun 2)__ |
-
-A counter-attack performed on melee attacks. Tries
-to evade the incoming blow and use the opening to strike
-with a punch on the higher part of the body. Has modifier -2 against
-smaller creatures (it’s harder to find a spot to counter-attack
-them with a punch).
-
-Ineffective against non-melee and animal attacks.
-
-### Counter kick {#BaM-s-full-contact-counter-kick}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD-2 |
-| Prereq | Full Contact 3 |
-| DR | -2 |
-| Damage | __SM__-1 |
-| Condition | __(Stun 2)__ |
-
-A counter-attack performed on melee attacks. Tries to evade
-the incoming blow and use the opening to strike with a punch
-on the higher part of the body. Has modifier +2 against
-smaller creatures.
-
-Ineffective against non-melee and animal attacks.
-
-### Crouch {#BaM-s-full-contact-crouch}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Action |
-| Prereq | Full Contact 3 |
-
-The character loads the next attack, receiving a **DP** modifier equal
-to the success margin to be used in the very next attack in Brawl
-or Full Contact styles.
-
-If the next maneuver used is not an attack, or if the attack fails, 
-the modifier is lost.
-
-### Elbow Blow {#BaM-s-full-contact-elbow-blow}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mS |
-| Prereq | Full Contact 1 |
-| DR | -2 |
-| Damage | __SM__+2 |
-| Condition | __(Stun 2)__ |
-
-The character attacks with the elbow, causing a damage equal to its strength
-plus its success margin, and a modifier of +2.
-
-### Knee Blow {#BaM-s-full-contact-knee-blow}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Full Contact 1 |
-| DR | -2 |
-| Damage | __SM__+3 |
-
-The character attacks with its knee, causing a damage equal to its dexterity,
-plus the success margin and a fixed modifier of 2.
-
-Gets a +2 modifier on small creatures (less half the size of the attacker)
-and grounded targets.
-
-## Knife Fight {#BaM-s-knife-fight}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 5 CP |
-| Modifier | mD |
-| Dominance | 4 |
-
-Fighting with knives and very short swords has different mechanics than the ones used when wielding a longer blade. Basically, it’s like having a fist armed with a single fang.
-While the weapon themselves could be less effective than longer ones, the style itself can be extremely effective in every scenario.
-Knife fighting is particularly adequate for characters with a high dexterity.
-The number of maneuvers the character can use per round depends on the level of Kinfe Fight:
-
-(dt ac_knife_fight_levels)
-[["Level", "Maneuvers"],
-["1-5", 1],
-["6-10", 2],
-["11-15", 3],
-["16+", 4]
-])
-
-### Backstab {#BaM-s-knife-combat-backstab}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD-2 |
-| Prereq | Knife Fight 6 |
-| DR | -2 |
-| Damage | __SM__+6 |
-| Condition | (__Deadly__) |
-
-Assail an opponent from behind and deliver a potentially deadly blow.
-The character must be positioned behind a target to be able to
-perform this move. On a critical success, the target receives a _deadly
-wound_.
-
-### Backstep {#BaM-s-knife-combat-backstep}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD |
-| Prereq | Knife Fight 1 |
-| DR | -1 |
-
-Skip back, trying to get out of the range of a melee attack.
-
-### Belly Opener {#BaM-s-knife-combat-belly-opener}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | -1 |
-| Prereq | Knife Fight 3 |
-| DR | -2 |
-| Damage | __SM__+5 |
-
-Swing the blade in an upward strike, aiming at the lower part of the opponent
-body.
-
-### Change Hands {#BaM-s-knife-combat-change-hands}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Knife Fight 2 |
-| DR | -2 |
-
-Use a maneuver to confuse the opponent and gain a +4 modifier on the next
-attack.
-
-The move is considered an attack, so the opponent must win a defense or
-suffer the standard penalty.
-
-### Downstab {#BaM-s-knife-combat-downstab}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Knife Fight 2 |
-| DR | -2 |
-| Damage | __SM__+4 |
-
-Swing the blade in a downward strike, aiming at the upper part of the
-opponent body.
-
-### Evade {#BaM-s-knife-combat-evade}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD |
-| Prereq | Knife Fight 1 |
-| DR | -1 |
-
-Try and evade an attack.
-
-### Feint {#BaM-s-knife-combat-feint}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | +3 |
-| Prereq | Knife Fight 3 |
-| DR | -2 |
-
-Fake an attack, without actually completing it. On success it doesn’t
-deal damage, but gives a **DP** modifier on the next move equal to
-the success margin.
-
-### Hand Cutting {#BaM-s-knife-combat-hand-cutting}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD-2 |
-| Prereq | Knife Fight 4 |
-| DR | -2 |
-| Damage | __SM__-2 |
-| Condition | (__Disarm__) |
-
-Aims at an incoming blow from dealt through an anatomic part (punch, kick,
-animal attack and so on). Effective also against most melee weapon users,
-when the attack moves the arm holding the weapon in range.
-
-If the counter-attack causes a serious wound or worse, the target loses the
-weapon.
-
-### Spring Up {#BaM-s-knife-combat-spring-up}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | -3 |
-| Prereq | Knife Fight 6 |
-| DR | -2 |
-| Damage | __SM__+8 |
-
-The character bend on its legs and springs forward, thrusting the blade towards
-the opponent. It has a -3 modifier, but on success it deals a devastating
-damage.
-
-### Throw {#BaM-s-knife-combat-throw}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Knife Fight 1 |
-| DR | -1 |
-| Damage | __SM__+1 |
-| Condition | (__Cripple__) |
-
-Throws the knife at an opponent within 15 feet. On success, it deals a limited damage.
-
-### Thrust {#BaM-s-knife-combat-thrust}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Knife Fight 1 |
-| DR | -1 |
-| Damage | __SM__+4 |
-| Condition | (__Cripple__) |
-
-Attacks the target thrusting the knife forward, in a straight line.
-
-### Wrap and Stab {#BaM-s-knife-combat-wrap-and-stab}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD-3 |
-| Prereq | Knife Fight 4 |
-| DR | -2 |
-| Damage | __SM__+6 |
-| Condition | (__Injury__) |
-
-Try to grab the opponent while fighting, to deliver deeper wounds. On success, this maneuver delivers an injury one level higher than normal.
-_Light wounds_ become severe,_ severe wounds_ become heavy, and
-_heavy wounds_ become deadly.
-
-## Swordfight {#BaM-s-swordfight}
-
-| <!-- --> | <!-- --> |
-|------|------|
-| Cost | 6 CP |
-| Modifier | mS |
-| Dominance | 6 |
-
-Swordfight is the simplest discipline for handling traditional melee weapons.
-Despite the name, it’s not limited to swords, as it can be used also with maces,
-flails, shields and so on.
-
-The style doesn’t differentiate between different kind of weapons as far as
-special effect and damage is concerned. To take advantage of the specificities
-of each weapon, a character can learn the specific style.
-
-###  Two-handed weapons
-
-This style can be used with large two-handed swords, maces and hammers as well;
-they prevent the usage of a shield (and any maneuver related requiring it),
-but give a **DP** modifier of +3.
-
-The number of maneuvers the character can use per round depends on the level
-of Sword Fight:
-
-| Level | Maneuvers |
-|-----|---|
-| 1-6 | 1 |
-| 7-11 | 2 |
-| 12-15 | 3 |
-| 17+ | 4 |
-
-### Cleave {#BaM-s-swordfight-cleave}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mS |
-| Prereq | Swordfight 1 |
-| DR | -1 |
-| Damage | __SM__+6 |
-| Condition | (__Stun 2__) |
-
-A vertical stroke, leveraging on the strength of the weapon welder.
-A critical success stuns the opponent for 2 turns.
-
-### Deviate {#BaM-s-swordfight-deviate}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD |
-| Prereq | Swordfight 1 |
-| DR | -1 |
-
-A basic defense; the character intercept the opponent’s blow with its own
-weapon, using its own dexterity.
-
-### Feint {#BaM-s-swordfight-feint}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | -3 |
-| Prereq | Swordfight 6 |
-| DR | -2 |
-
-Uses an attack that will not deliver damage on success,
-to get a **DP** modifier equal to the success margin on the
-damage of very next attack.
-
-### Parry {#BaM-s-swordfight-parry}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mS |
-| Prereq | Swordfight 1 |
-| DR | -1 |
-
-A basic defense; the character intercept the opponent’s blow with
-its own weapon, using its own strength to resist it.
-
-### Parry Projectiles {#BaM-s-swordfight-parry-projectiles}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mD |
-| Prereq | Swordfight 6 |
-| DR | -1 |
-| Range | 30 ft |
-| Limitation | Shield |
-
-Can be used only if the character is wearing a shield. The defender
-can block a projectile incoming from a maximum range of 30 feet.
-
-### Shield Bash {#BaM-s-swordfight-shield-bash}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | -2 |
-| Prereq | Swordfight 4 |
-| DR | -2 |
-| Damage Type | Blunt |
-| Damage | __SM__-2 |
-| Condition | (__Grounded__) |
-
-Can be used only if the character is wearing a shield. The attacker
-charges the opponent with its shield, trying to make it fall on the
-ground. On success, the opponent is grounded for the rest of the turn.
-
-### Shield Parry {#BaM-s-swordfight-shield-parry}
-
-| <!-- --> | <!-- --> |
-|------|---------|
-| Type | Defense |
-| Modifier | mS+3 |
-| Prereq | Swordfight 2 |
-| DR | -1 |
-| Limitation | Shield |
-
-Can be used only if the character is wearing a shield. The defender blocks
-the opponent’s blow with its shield.
-
-### Slash {#BaM-s-swordfight-slash}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mS |
-| Prereq | Swordfight 1 |
-| DR | -1 |
-| Damage | __SM__+6 |
-
-A simple lateral stroke.
-
-### Thrust {#BaM-s-swordfight-thrust}
-
-| <!-- --> | <!-- --> |
-|------|--------|
-| Type | Attack |
-| Modifier | mD |
-| Prereq | Swordfight 2 |
-| DR | -1 |
-| Limitation | Swords |
-| Damage | __SM__+6 |
-
-Thrusts a cutting weapon towards the opponent. Cannot be used with blunt or
-two handed weapons (including swords).
-
-# Equipment {#BaM-gen-equipment}
-
-## Adventuring Equipment {#BaM-gen-adventuring-equipment}
-
-TODO
-
-## Armours {#BaM-gen-armours}
-
-Armours provide damage mitigation against some specific damage types. Naturally, the damage mitigation applies to the part of the body where the armour is applied.
-The following table is a generic guide that indicates the type of material of which armours are built, their approximate weight  in pounds, the cut, blunt and piercing damage mitigation and an approximate cost. The weight refer to the material applied to a body armour; to get the weight of arm and leg armour divide by half, and for an helmet divide by four.
-
-| Material Type      | Weight       | Dominance    | Cut          | Blunt        | Piercing     | Cost        |
-|:-------------------|-------------:|-------------:|-------------:|-------------:|-------------:|------------:|
-| Heavy Garment (1)  | 2            | 0            | 1            | 0            | 1            | 200$        |
-| Kevlar             | 2            | 5            | 5            | 3            | 6            | 800$        |
-| Bullet-proof Armor | 12           | 5            | 6            | 4            | 7            | 500$        |
-| Meta-material (2)  | 6            | 6            | 4            | 6            | 3            | 1200$       |
-| Energy Shielding (3) | 0          | 7            | 6            | 7            | 5            | 4000$       |
-| Leather            | 8            | 1            | 3            | 1            | 2            | 40$         |
-| Ring Mail          | 10           | 2            | 3            | 2            | 1            | 80$         |
-| Chain Mail         | 14           | 2            | 3            | 1            | 2            | 150$        |
-| Scale Mail         | 15           | 3            | 4            | 2            | 3            | 400$        |
-| Thin Plate (4)     | 18           | 4            | 5            | 3            | 4            | 600$        |
-| Heavy Plate        | 24           | 5            | 6            | 4            | 5            | 800$        |
-
-(1) Normal clothing doesn’t provide any mitigation, but heavy, multi-layer garment (i.e. overcoat, jacket, gilet, shirt and underwear) do.
-(2) Gel-like material reactive to sudden shock.
-(3) Just indicative; can be anything, depending on the technology. 
-(4) Includes military metal helmets.
-
-## Weapons
-
-Weapons are either used unskillfully, using any one of the Generic Combat Skills, or through the appropriate combat style. The default damage (and often, damage type) caused by the weapon is already accounted for in the combat style; for example, Firearms/shoot causes a higher damage than Brawl/punch because guns are more lethal than bare hands.
-However, some special weapon (i.e. magic swords, experimental rifles etc.) might give their wielder a modifier either to the attack or defense rolls, or solely to the damage caused once a hit is scored.
-In the following table, the weight is the typical weight of for the given type of weapon, the range either the throwing distance or the range of the projectiles, in feet, and the cost is an indicative cost for a normal weapon of that kind.
-
-| Weapon Type        | Weight             | Range              | Cost              |
-|--------------------|--------------------|--------------------|-------------------|
-| Knife              | 1                  | 10                 | 20$               |
-| Sword              | 3                  | -                  | 400$              |
-| Mace               | 6                  | -                  | 100$              |
-| Throwing Knife     | 0.2                | 18                 | 5$                |
-| War Hammer (*)     | 12                 | -                  | 300$              |
-| Two Handed Sword (*) | 8                | -                  | 600$              |
-| Shield             | 6                  | -                  | 80$               |
-| Pistol (revolver)  | 1                  | 60                 | 600$              |
-| Pistol (Semi-auto) | 1                  | 60                 | 800$              |
-| Rifle              | 4                  | 90                 | 1200$             |
-| Sniper’s rifle     | 6                  | 120                | 1800$             |
-| Short Bow          | 1                  | 30                 | 40$               |
-| Bow                | 1                  | 45                 | 80$               |
-| Long Bow           | 2                  | 60                 | 120$              |
-| Crossbow           | 2                  | 40                 | 150$              |
-| Heavy Crossbow     | 4                  | 60                 | 200$              |
-
-(*) Two handed weapons.
+(TODO)
 
 ## Character power
 
@@ -2455,5 +1394,5 @@ The power is then:
 For a grand total of 13 + 8 + 1.75 + 0.5 = 23.25, rounded up to 24.
 
 > It may be useful to note down the number of tokens actually spent
-rather than recompute the power of the characters each time it's needed
-looking at the value of all of their attributes
+rather than recompute the power of the characters each time it's needed,
+keeping track of the character power as it grows.

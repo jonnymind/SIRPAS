@@ -155,7 +155,8 @@ class Processor:
 		match = RE_VARIABLE.search(params)
 		while match:
 			message(f"Found variable {match.group(1)}")
-			params = params[0:match.start] + self.expand_variable(match.group(1)) + params[match.end:]
+			params = params[0:match.start()] + self.expand_variable(match.group(1)) + params[match.end():]
+			match = RE_VARIABLE.search(params)
 		return params
 
 	def process_command(self, cmd:str, params: str):

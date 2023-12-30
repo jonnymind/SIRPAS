@@ -30,5 +30,5 @@ The cost depends on how famous the character is:
   or a long walk, the character is sure to be recognized,
   and possibly stopped by admirers (or haters).
 * 3 **TT**/*Primary*: Known by more than half the population. Wherever the
-  character goes, it is recognized, and when that happens,
-  people flock to see them, or flees if they have a negative fame.
+  character goes, they are recognized, and when that happens,
+  people flock to see them, or flee if they have a negative fame.

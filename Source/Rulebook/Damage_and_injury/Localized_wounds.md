@@ -1,7 +1,7 @@
 ## Localized Wounds
 
-By default, wounds are generally directed in the generic direction of the body,
-but some abilities allow to aim a certain specific part of the body.
+By default, wounds are generally applied in the generality of the body,
+but some abilities allow to aim a certain specific part.
 
 ### Wounds to limbs or periferical devices
 
@@ -18,9 +18,7 @@ This extends to non human and even virtual body parts as well: and AI receiving
 a heavy wound on a virtual device will have a double penalty if it tries to use
 that device to perform any action.
 
-### Wounds to the head or control unit
+### Wounds to the head or control unit (optional)
 
 When a wound affects the head (or other target part that is particularly critical
-to control the behavior of the target), it generates an additional **injury point**.
-*Light wounds* generate 2 *IP*, while *medium* and *heavy wounds* generate 3 and 5
-**IP** respectively.
+to control the behavior of the character), it generates an additional **injury point**.

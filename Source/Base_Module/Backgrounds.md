@@ -16,4 +16,6 @@ of an adventure.
 For more details about backgrounds, 
 [read the background section in the Rulebook]($RulebookAddress#backgrounds)
 
-$(include Backgrounds)
+@(index 2)
+@(include Backgrounds/*.md)
+@(endindex)

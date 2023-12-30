@@ -1,24 +1,22 @@
-## Healing/Race {#BaM-s-healing}
+## Healing
 
-@(dd skill_healing)
+@(dd healing)
 { 
   "*Name": "Healing",
-  "*Brief": "Cure Illnesses",
-  "Base": "-",
-  "Type": "H",
-  "Prereq": "First-aid 3",
-  "Spec": "Race"
+  "*Brief": "Heals a physical ailment",
+  "Callsign": "Hl",
+  "Category": "Skill",
+  "Prerequisite": "First Aid 6",
+  "Cost": "1 TT/Hard"
 }
 
 The character has advanced practical medical knowledge for the setting
 where the adventure takes place, and is able to heal illnesses, poisoning
-and equivalent conditions for the target settings.
+and equivalent conditions for the target settings, that may affect
+biological living beings.
 
 For instance, in a magic world where curses can cause illnesses, this
 skill can also be used to treat the effect of the curses.
-
-In a virtual words where AIs can be infected with viruses, this skill
-can be used to run an anti-virus.
 
 The type of illness determine the difficulty of the check. The following table 
 gives a basic reference frame for deciding the difficulty of a check.
@@ -30,9 +28,9 @@ given in the descriptioin of the illnesses in order to determine the
 check difficulty.
 
 The time required for the cure to take effect is in the order of hours to days;
-the *success margin* can be used by the *GM* to decide how fast the recovery is.
+the **Success Margin** can be used by the *GM* to decide how fast the recovery is.
 
-Ilnesses that are *difficult* or *hard* to cure will be transformed in *easy*
+Illnesses that are *difficult* or *hard* to cure will be transformed in *easy*
 or *trivial* ilnesses before being cured. For instance, a successful cure of
 *plague* will initially turn the illness into a *light feever*, which can then
 be cured again to heal it completely.

@@ -1,4 +1,13 @@
-## Charisma (M) {#BaM-s-charisma}
+## Charisma
+
+@(dd charisma)
+{ 
+  "*Name": "Charisma",
+  "*Brief": "Positively influence other characters",
+  "Base": "M",
+  "Category": "Skill",
+  "Cost": "1 TT/Normal"
+}
 
 Used to influence positively other characters. Not to be confused with
 *Persuade*. This skill is specifically meant for characters trying to

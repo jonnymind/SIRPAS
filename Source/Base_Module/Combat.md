@@ -5,7 +5,7 @@ try to win one over another on specific skills, while in combat,
 contests are finalized to deal damage or other negative effects on
 an unwilling target.
 
-The Base Module provides several sub-systems to resolve conflicts, increasingly
+The Rule Book provides several sub-systems to resolve conflicts, increasingly
 detailed (and complex):
 
 * *Simplified Combat*: It's a simple way to resolve small combats.

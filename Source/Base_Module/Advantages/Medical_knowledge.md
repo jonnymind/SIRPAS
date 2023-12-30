@@ -6,7 +6,7 @@
   "*Brief": "Receive a modifier to all medical checks",
   "Category": "Advantage",
   "Specialization": "Skill", 
-  "Cost": "3 TT/Hard"
+  "Cost": "3 TT/Hard",
   "Level": 3
 }
 

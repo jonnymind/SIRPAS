@@ -5,7 +5,7 @@
   "*Name": "Military",
   "*Short": "Chr. is part of an organized militia",
   "Category": "Background",
-  "Cost": "1+ TT/primary"
+  "Cost": "1+ TT/Primary"
 }
 
 The character is part of a military organization, or organized

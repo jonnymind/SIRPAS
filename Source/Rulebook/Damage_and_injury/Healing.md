@@ -6,18 +6,29 @@ a general healing procedure is applied (i.e. a magic spell that restores
 the character health completely, a backup-restore procedure on an AI etc.)
 
 As a wound is cured through any mean (medicine, magic, natural healing etc.), 
-its **IP** cost and relative check penalty is removed.
+its **IP** cost and relative check penalty are removed.
 
 Light and serious wounds heal naturally after a reasonable amount of time.
 Common sense can be used by the Game Master and the players to determine
 the adequate time; for humans, a light wound may heal completely in less
-than a week, while a serious wound would take a month.
+than a week (generally, after a day of full rest and basic treatment), 
+while a serious wound would take about month (or a week of full rest and
+basic treatment).
 
 Heavy wounds require specific treatment to be cured.
+
+### Healing Scratches
 
 Scratches not turned into a light wound are removed after a reasonable amount of time
 and minimal care adequate to the setting. For example, in a fantasy setting, that may
 be spending a few minutes to tend the wounds after a combat. In a cyberpunk setting, 
 it may be applying wound-reducing foams. 
 
-**Optional**: in any setting, the equivalent of a day of rest should clear any scratch.
+### Day-rest healing
+
+Unless differently specified by the modules a full day of rest and basic tending 
+will:
+
+* Heal all scratches not counted as light wounds;
+* If there character hasn't got any scratches, heal 1 light wound.
+

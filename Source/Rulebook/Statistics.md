@@ -9,7 +9,7 @@ They are divided in the following categories:
   as *hacking*, *lock picking*, *running*, *climbing* etc.
 - [Statuses](#statuses): values that vary fluidly during an adventure; for example,
   to keep track of the current health of a character you can look at its **injury points**.
-- [Vantages](#vantages): **Advantages** or **disadvantages** targeting either the
+- [Vantages](#vantages): **advantages** or **disadvantages** targeting either the
   rules as a whole or improving a specific attribute in some way. For example, some advantages
   allows you to throw more die in some situation, others may reduce the difficulty
   of actions performed with a certain skill.

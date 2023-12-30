@@ -1,4 +1,3 @@
-
 ## Effective Damage
 
 Incoming *raw damage* is modified through the application of *defenses*, 

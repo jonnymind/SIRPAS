@@ -10,7 +10,7 @@ semi-codified way to perform a fight in the adventure setting are **combat skill
 **Combat skills** work similarly to any other skill in the system, with
 the addition of the following characteristic:
 
-* **Range type** (**Rt**): Can be **melee**, **ranged** or **Metaphysical**. 
+* **Range type** (**Rt**): Can be **melee**, **ranged** or **transcendental**. 
 * **Actions**: Some skills can be used multiple times in a combat turn. For example,
   a nimble skill having 3 **actions** would allow the character to attempt 3 attacks,
   or move, switch weapon and attack, all in the same turn.
@@ -35,33 +35,43 @@ work as a default skill used when trying to attack someone without any specific
 training. Of course, they are less effective than specific combat skills, but
 they are also cheaper to train.
 
-Also, **generic combat skills** always have a **dominance** of 0, **actions** of 1
+**Generic combat skills** always have a **dominance** of 0, **actions** of 1
 and they  don't have an associated **style**, that is,
 they cannot be used to execute any special **maneuver** in the advanced 
 combat system.
 
 ### Skill Range
 
-Combat skills are divided into _melee_, _ranged_ and _metaphysical_.
+Combat skills are divided into _melee_, _ranged_ and _transcendental_.
 
-* _Melee_ skills work when the combatants are in close range, and can
+* _Melee_ skills work when the combatants are in *close quarters*, and can
    physically harm each other without any projection.
 * _Ranged_ skills use a weapon, a projectile or any mean to physically
    project a harmful device or source of energy towards a target. Skills of
    magical nature might be ranged if they magically create a projectile, ray
    of energy or any physical mean to harm a target.
-* _Metaphysical_ skills require their user to know where a target is in order
+* _Transcendental_ skills require their user to know where a target is in order
    to direct the attack, but they have no physical range. The target could be
    on another planet, as long as the user has a mean to see, feel or simply
    know _instantly_ about it.
+
+### Close Quarters
+
+The *close quarter* distance it's the distance at which a melee attack can 
+be proficiently employed.
+
+It corresponds to the distance an average fighter can jump and perform
+a melee attack in one swoop. This is normally 6 feet, but may be different in settings
+where the characters have superpowers that allow for faster movement (i.e. in an
+adventure about vampires), or different sizes (i.e. in battles between giant robots).
 
 ### Dominance
 
 The **dominance** (**Dom**) of a combat skill describes its effectiveness
 in a mixed combat, given opponents of the same skill level. 
 
-For example, in a certain setting **archery** skill may have **Dom**3, 
-while **gunslinging** has **Dom**6; this means that a gunslinger would 
+For example, in a certain setting **archery** skill may have **Dom** 3, 
+while **gunslinging** has **Dom** 6; this means that a gunslinger would 
 way more effective than a comparably competent archer on the battlefield.
 
 Dominance is mostly used in the *advanced* combat system, but is also used
@@ -80,12 +90,12 @@ of they skill they want to (or can) use to every roll they take.
 
 ### Styles and maneuvers
   
-In the _advanced combat system_, **Combat skills** are associated with a _style_, that is a collection
-of actions that can be done using the skill (called **maneuvers**).
+In the _advanced combat system_, **Combat skills** are associated with a _style_, 
+that is a collection of actions that can be done using the skill (called **maneuvers**).
 
 **Maneuvers** are not stand-alone skills, and they cannot be target of advantages or perks.
 
-The same combat style can also cover different kind of weapons, with some
+The same combat style can also cover different type of weapons, with some
 specific maneuvers limited to some weapons. For example, a combat skill may be
 **Firearms**, covering any kind of modern firearm, and its style may include maneuvers as 
 **rapid reload**, which applies only to pistols, and **sniping**, which applies only to

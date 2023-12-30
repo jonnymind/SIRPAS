@@ -49,11 +49,11 @@ The points are assigned as follows:
 
 Group A has 1 point, while group B has 2: group B wins the multi-contest.
 
-The the fourth
-ranked in B, and the fourth and fifth in C are **excluded** and will not contribute to winning.
-Nevertheless, the
-most numerous group has an advantage in having more chances to score high points 
-than the others -- everything else equal.
+The the fourth ranked in B, and the fourth and fifth in C are **excluded** 
+and will not contribute to winning.
+
+Nevertheless, the most numerous group has an advantage in having more chances
+to score high points than the others -- everything else equal.
 
 The effect of the multi-contest in the adventure should reflect its outcome. In this
 example, as team A had the highest score but ended up losing the race, the two 
@@ -77,20 +77,20 @@ To prepare the multi-contest, the GM should:
 1. Besides each name, write the modifiers for that characters, to be updated 
    if the contest is repeated.
 1. Unless each GM controlled character is special, the GM always assigns the best outcome 
-   to the topmost character, so that it can read the ranking results going top to bottom. 
+   to the topmost character, so that it can read the ranking results go top to bottom. 
 
 If the GM doesn't have a dice-throwing application handy, which can automate part of the process, it
 can use the following procedure to generate multiple scores at once:
 1. Roll 2d6 and write down the result.
-1. Roll Nd6, where N is the count of character controlled by the *GM*.
-1. If more than one 6 is rolled, count them as 7, 8 etc.
-1. If more than one 1 is rolled, count them as 0, -1 etc.
-1. Add each single rolled result to the previous 2d6 roll.
+2. Roll Nd6, where N is the count of character controlled by the *GM*.
+3. If more than one 6 is rolled, count them as 7, 8 etc.
+4. If more than one 1 is rolled, count them as 0, -1 etc.
+5. Add each single rolled result to the previous 2d6 roll.
 
 For example, the GM controls 5 characters.
 1. It rolls 2d6 for a total of 7.
 1. It now rolls 5d6, one per character; the results are 6, 6, 4, 1, 1.
 1. The characters gets the following points, top to bottom: 7+7 = 14, 7+6 = 13, 7+4 = 11, 7+1 = 8 and 7+0 = 7.
 1. Now the GM gets the result from the players, and communicates the winning party, 
-1. the scoring characters and, if relevant, the negative **SM** of the **succumber** characters.
+   the scoring characters and, if relevant, the negative **SM** of the **succumber** characters.
 
