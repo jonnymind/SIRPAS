@@ -37,4 +37,4 @@ of Sword Fight:
 ["17+", 4]
 ]
 
-@(include Swordfight)
+@(include Swordfight/*.md)

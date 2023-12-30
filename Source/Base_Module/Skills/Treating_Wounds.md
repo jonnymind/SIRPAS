@@ -6,7 +6,7 @@
   "*Brief": "Fixes wounds",
   "Callsign": "TrW",
   "Category": "Skill",
-  "Specialization: "race type",
+  "Specialization": "race type",
   "Prerequisite": "Healing 3",
   "Cost": "1 TT/Hard"
 }

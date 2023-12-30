@@ -25,7 +25,7 @@ a particularly brilliant deed; also, if an advantage is not needed anymore,
 it can be removed, and half its total cost will be refunded (rounded up).
 
 For more details on the advantage system, consult the 
-[advantage system in the rulebook](@($RulebookAddress)/#advantages-and-disadvantages), 
+[advantage system in the rulebook](@($RulebookAddress)#advantages-and-disadvantages), 
 
 ## Foudnational advantages
 

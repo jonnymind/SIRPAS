@@ -7,7 +7,7 @@
   "Base": "Varying",
   "Callsign": "Res",
   "Category": "Skill",
-  "Specialization: "Damage source",
+  "Specialization": "Damage source",
   "Cost": "1 TT/Hard"
 }
 

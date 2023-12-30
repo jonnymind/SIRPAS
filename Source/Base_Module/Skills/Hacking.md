@@ -7,7 +7,7 @@
   "Base": "mI",
   "Callsign": "Hk",
   "Category": "Skill",
-  "Specialization: "system",
+  "Specialization": "system",
   "Cost": "1 TT/Hard"
 }
 

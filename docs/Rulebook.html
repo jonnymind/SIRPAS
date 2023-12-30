@@ -140,23 +140,24 @@ be as combat-intensive or combat-devoid as needed.</p>
 <p>In SIRPAS, the statistics are all the numeric or quality values that
 define a characters. They are divided in the following categories:</p>
 <ul>
-<li><strong>Attributes</strong>: important aspect of the character on
-which many other mechanics depend. For example <em>body</em>
-(<strong>B</strong>), <em>mind</em> (<strong>M</strong>),
-<em>health</em> (<strong>H</strong>) and <em>will</em>
-(<strong>W</strong>). <strong>Skills</strong> are special
+<li><a href="#attributes">Attributes</a>: important aspect of the
+character on which many other mechanics depend. For example
+<em>body</em>, <em>strength</em>, or <em>spirit</em> could be attributes
+in many game worlds. <strong>Skills</strong> are special
 <strong>attributes</strong> used to perform specific actions, as
 <em>hacking</em>, <em>lock picking</em>, <em>running</em>,
 <em>climbing</em> etc.</li>
-<li><strong>Statuses</strong>: values that vary fluidly during an
+<li><a href="#statuses">Statuses</a>: values that vary fluidly during an
 adventure; for example, to keep track of the current health of a
 character you can look at its <strong>injury points</strong>.</li>
-<li><strong>Advantages</strong>/<strong>disadvantages</strong>:
-Statistics affecting other skills, as example an expert modifier which
-increase the chance of winning checks against a specific skill.</li>
-<li><strong>Perks</strong>/<strong>drags</strong>: distinctive traits
-setting the character apart from the background people in the setting.
-Could be things a “famous” or “criminal”. They have an impact in the
+<li><a href="#vantages">Vantages</a>: <strong>advantages</strong> or
+<strong>disadvantages</strong> targeting either the rules as a whole or
+improving a specific attribute in some way. For example, some advantages
+allows you to throw more die in some situation, others may reduce the
+difficulty of actions performed with a certain skill.</li>
+<li><a href="#backgrounds">Backgrounds</a>: distinctive traits setting
+the character apart from the background people in the setting; for
+example, being “famous” or “outlaw”. They have an impact in the
 adventure at large, and might also affect indirectly some checks,
 providing bonuses and penalties at discretion of the game master.</li>
 </ul>
@@ -324,7 +325,7 @@ value</strong> is the <em>modifier</em> of the attribute X.</li>
 <li>Base Portion: (<strong>X</strong>/N). The <strong>base
 value</strong> is a portion N of the base attribute. Typically N is 2, 3
 or 4 (the <strong>base value</strong> being half, a third or a fourth of
-that of the base attribute). Rounding is always in defect.</li>
+that of the base attribute). Rounding is always down.</li>
 <li>Average Base: (avg <strong>A</strong>, <strong>B</strong>,…). The
 <strong>base value</strong> is the average of the listed values.</li>
 <li>Choice Base: (<strong>A</strong> or <strong>B</strong>). The
@@ -349,7 +350,7 @@ attributes directly derived from them etc; however, every module can
 declare different attribute categories and hierarchies, that aren’t
 necessarily following the base value chains.</p>
 <p>For example, if a module declares a hierarchy of attributes as</p>
-<pre><code>    Primary -&gt; Generic -&gt; Hard Skills -&gt; Easy Skills</code></pre>
+<pre><code>Primary -&gt; Generic -&gt; Hard Skills -&gt; Easy Skills</code></pre>
 <p>a <strong>TT</strong>/Primary can be exchanged for 2
 <strong>TT</strong>/Generic, 4 <strong>TT</strong>/Hard, or 8
 <strong>TT</strong>/Easy.</p>
@@ -395,6 +396,24 @@ in the general case should grant an improvement of their abilities.</p>
 <p>But in some scenarios, the <strong>TT</strong> may represent a lived
 experience that needs to be formalized, a token of <em>being ready</em>
 to take the step of the formal training.</p>
+<h3 id="cascade-attributes">Cascade Attributes</h3>
+<p>Cascade attributes are attributes that can be be trained multiple
+times, each of them representing a single attempt in repeated
+checks.</p>
+<p>For example, some combat skills can be used only once per combat
+turn. To use them multiple times in a turn, a second version of the same
+skill must be trained.</p>
+<p>In the player sheet, they will be indicated as “Composite skill / 1”,
+“Composite Skill / 2” and so on. If the composite skill is specialized,
+it will be indicated as “Skill/specialization / 1”,
+“Skill/specialization / 2” and so on.</p>
+<p>Composite attributes are still targeted as a single one by
+attribute-targeting advantages and disadvantages.</p>
+<p>For example, if “Active Mitigation” is a combat specialized and
+composite attribute, and <strong>Swordfight</strong> is a combat style,
+the advantage <strong>Expert / Active Mitigation / Swordfight</strong>
+will cover all the versions of <strong>Active Mitigation /
+Swordfight</strong>.</p>
 <h3 id="temporary-attribute-variations">Temporary attribute
 variations</h3>
 <p>Normally, the value of dependent attributes is computed only when the
@@ -437,39 +456,51 @@ are called <em>pools</em>, and various modules and sub-systems can
 define different pools for specific usages. For example, a magic system
 may define a <em>mana pool</em>, which determines how many spells a
 character can cast.</p>
-<h1 id="advantages-and-disadvantages">Advantages and Disadvantages</h1>
-<p>Advantages special conditions that apply to the character in general
-or to a specific attribute or set of attribute in particular, and that
-have a direct effect on some game mechanics.</p>
+<h1 id="vantages">Vantages</h1>
+<p><strong>Vantages</strong> special conditions that apply to the
+character in general or to a specific attribute or set of attribute in
+particular, and that have a direct effect on some game mechanics. They
+are called <strong>advantages</strong> if positive and
+<strong>disadvantages</strong> if negative.</p>
 <p>For example, some advantages may grant you the possibility to
 automatically win a draw once a day. Others may give you extra die to
 throw and use in some situation. Others may give you one extra point to
-all the skills having a certain base attribute, i.e. improve all the
-<em>easy skills</em> based on <strong>Dexterity</strong>. Others may
+all the skills having a certain base attribute, i.e. improve all
+<em>easy skill checks</em> based on a certain attribute. Others may
 reduce the difficulty level of the attempts on a certain skill by one
-level, so that i.e. pickpocket on <em>easy</em> targets becomes trivial,
-on <em>normal</em> targets it becomes <em>easy</em> and so on.</p>
-<p>Advantages can also be negative (disadvantages). A character might be
-given disadvantages temporarily or permanently, because of what happened
-during previous adventures, or as a background flavor. As disadvantages
-have negative CP costs, a player can chose to get certain disadvantages
-in order to gain <strong>training tokens</strong> to be spent elsewhere,
-in other statistics.</p>
+level, so that i.e. a skill called <strong>climbing</strong> on
+<em>easy</em> targets becomes trivial, on <em>normal</em> targets it
+becomes <em>easy</em> and so on.</p>
+<p><strong>Disadvantages</strong> are negative
+<strong>vantages</strong>. A character might be given disadvantages
+temporarily or permanently, because of what happened during previous
+adventures, or as a background flavor. As disadvantages have negative CP
+costs, a player can chose to get certain disadvantages in order to gain
+<strong>training tokens</strong> to be spent elsewhere, in other
+statistics.</p>
 <p>While most advantages are simply either active or not, some can have
 different levels. For example, an advantage called i.e. Survival
 Instinct, which, say, reduce the difficulty level of all survival
 checks, may have a level between 1 and 3, each granting a one extra
 reduced difficulty level.</p>
-<p>In that case, each additional level cost one additional training
-token of the same type.</p>
-<p>For example, suppose the advantage <strong>graceful</strong> has 3
-levels, which gives 1, 2 or 3 points fixed base on any <em>easy</em>
-dexterity based skill, depending on the level. The cost declared is 2
+<p>In that case, the cost to be paid (or refund obtained) of each level
+is the base cost plus the level acquired.</p>
+<p>For example, suppose an advantage called <strong>graceful</strong>
+can be acquired at levels 1 to 3, each level making the advantage
+stronger. The cost indicated in the description is 2
 <strong>TT</strong>/<em>Primary</em> (training tokens of type
-<em>primary</em>). To achieve the second level of
-<strong>graceful</strong>, the character must use 3
-<strong>TT</strong>/<em>Primary</em>, and for the third level they must
-spend 4 <strong>TT</strong>/<em>Primary</em>.</p>
+<em>primary</em>). To buy level 1, the players must spend 2 + 1 = 3
+tokens; level 2 costs 2 + 2 = 4, and level 3 2 + 3 = 5 tokens. This
+means that if players wants to get <strong>graceful</strong>/3 from
+scratch, they must use 3 + 4 + 5 = 12 <em>primary</em> tokens.</p>
+<p>The tokens refunded when acquiring (willfully) a disadvantage follow
+the same rule, granting a number of tokens equal to the indicated base
+cost plus the level the players are willing to take, cumulated. So, if a
+disadvantage called <strong>clumsy</strong> has base “cost” 2
+<strong>TT</strong>/<em>Primary</em> and can be acquired with level 1 to
+3, players giving <strong>clumsy</strong>/3 to their character will
+receive 3 + 4 + 5 = 12 <strong>TT</strong>/<em>Primary</em> to be spent
+on something else.</p>
 <h3 id="advantage-prerequisites">Advantage prerequisites</h3>
 <p>Some advantage could have a pre-requisite that must be fulfilled in
 order to be acquired. For example, they could require having already
@@ -477,24 +508,140 @@ acquired another advantage, or having a certain statistic at a minimum
 set score.</p>
 <h3 id="other-limitations-optional">Other limitations (optional)</h3>
 <p>The GM may allow to get a certain number of advantages and/or
-disadvantages to taken at character creation, or may allow to get some
-of them later on if that’s fitting for the setting. For example, in a
-cyberpunk setting, many advantages may be granted through body implants,
-which may be be bought under certain conditions.</p>
-<h1 id="perks-and-drags">Perks and Drags</h1>
-<p>Perks and drags are generic advantages and disadvantages that don’t
-impact the game system directly. They are meant to give more flavor in
-terms of roleplaying, and better define a character in its settings.</p>
-<p>Being famous, of noble origins, being able to play a certain
-instrument, knowing a certain literature or scientific topic, being
-rich, and the inverse of those are considered perks (or drags).</p>
-<p>They can and usually will have an influence in how the adventure
-plays, and some of them can have indirect and direct effect on the
-rules.</p>
-<p>For example, if a certain module has a <strong>Criminal Boss</strong>
-perk, that may influence any attempt to <strong>intimidate</strong>
-specific characters that know about the reputation of the character, and
-have a reason to fear it.</p>
+disadvantages to be taken at character creation, or may allow to get
+some of them later on if that’s fitting for the setting. For example, in
+a cyberpunk setting, many advantages may be granted through body
+implants, which may be be bought under certain conditions.</p>
+<h2 id="premium-advantages">Premium advantages</h2>
+<p>In some cases, a character can receive an advantage as a reward for
+completing a certain task. Advantages can be gained by magic,
+e.g. blessings, or physical conditions, e.g. receiving a cybernetic
+implant by the government as a reward for being enlisted in a special
+corp.</p>
+<p>Whenever an advantage is a acquired as a reward, that require
+spending the front cost in <strong>TT</strong>s</p>
+<h2 id="removing-advantages">Removing advantages</h2>
+<p>It is possible to remove advantages that have become obsolete. If the
+player so wishes, it can remove an advantage and recover half its
+nominal cost in <strong>TT</strong>s (rounded up). This doesn’t include
+premium advantages, that is, advantages received as rewards for in-game
+deeds.</p>
+<h2 id="penalty-disadvantages">Penalty disadvantages</h2>
+<p>In some cases, a character can receive a disadvantage unwillingly.
+This may be caused by magic, e.g. curses, or physical conditions, e.g. a
+necessary cybernetic component of their body becoming unserviceable or
+being hijacked by a malignant hacker.</p>
+<p>Whenever a disadvantage is a acquired as a penalty, that doesn’t give
+any additional <strong>TT</strong>.</p>
+<h2 id="removing-disadvantages">Removing disadvantages</h2>
+<p>It is possible to remove disadvantages that the players have
+willfully applied on their character. This can be done by:</p>
+<ul>
+<li>paying back double the cost of the disadvantage in equivalent
+<strong>Training Tokens</strong>, or</li>
+<li>by performing particularly worthy tasks in game, aimed directly at
+reducing or removing the disadvantage. For example, a player may save a
+famous cybernetic scientist in exchange for his help removing a
+defective cyber implant. This can remove also <em>penalty
+disadvantages</em>.</li>
+</ul>
+<p>If the disadvantage has levels, each level needs to be removed
+separately: it’s necessary to pay double the tokens received by
+acquiring each level, one by one, before being able to remove the
+disadvantage completely.</p>
+<p>For example, if a <strong>clumsy</strong>/3 disadvantage, with base
+cost 2 <strong>TT</strong>/<em>Primary</em> granted 3 + 4 + 5 = 12
+tokens, to remove it players must pay 24
+<strong>TT</strong>/<em>Primary</em>.</p>
+<h2 id="conflicting-vantages">Conflicting vantages</h2>
+<p>Characters cannot acquire advantages having opposite effects to
+disadvantages they own, and the other way around, they cannot acquire
+disadvantages conflicting with advantages they already own.</p>
+<p>If a game situation applies a <em>premium advantage</em> or a
+<em>penalty disadvantage</em> to a character already having a
+conflicting vantage, that one is removed instead.</p>
+<p>For example, suppose that the advantage <strong>graceful</strong> has
+the opposite disadvantage called <strong>clumsy</strong>: it acts on the
+same skills and checks, but the first gives a bonus while the second
+inflicts an opposite penalty. In this situation, if a character having
+<strong>graceful</strong> is hit by <strong>clumsy</strong> because of
+the effect of a curse, <strong>graceful</strong> is removed instead.</p>
+<p>If the conflicting advantages are leveled, the character is left with
+the larger of the two, reduced of the value of the other. For example,
+if a character with <strong>clumsy</strong>/1 receives a blessing that
+would grant <strong>graceful</strong>/3, then
+<strong>graceful</strong>/2 is applied instead.</p>
+<p>This happens also if the to statistics are not exactly specular, but
+just acting in opposite direction on the same skills or checks. For
+example, if <strong>expert</strong> reduces the natural penalty of
+<em>normal</em>, <em>hard</em> and <em>very hard</em> checks for a
+certain skill while <strong>novice</strong> increases the penalty of
+<em>trivial</em> checks only, they are still considered conflicting
+under this rule. However, they would not be considered conflicting if
+they affect different skills.</p>
+<h2 id="skill-specific-disadvantages">Skill-specific disadvantages</h2>
+<p>Some disadvantage can target specific skills and checks, making them
+harder or weaker for the character afflicted by it.</p>
+<p>In general, the <strong>GM</strong> should allow players to acquire
+the disadvantage in exchange for tokens only if it’s actually relevant
+for them:</p>
+<ul>
+<li>On a skill that is very commonly used by everyone in-world, as a
+hacking skill on a AI or cyberpunk setting, or a fist fighting skill in
+a fantasy world.</li>
+<li>On a skill that is relevant for the in-world occupation of the
+player, as for example thievery skills for thieves and spies, healing
+skills for healers and so on.</li>
+</ul>
+<p>The idea here is that of not giving “free upgrades” for the players
+to use without consequences.</p>
+<p>This doesn’t <em>necessarily</em> apply to <em>penalty
+disadvantages</em>, that characters may be subject to because of
+something happening during their adventure. For example, a character may
+receive a light curse that afflicts a specific skill by design, which
+may or may not be relevant for the character.</p>
+<h1 id="backgrounds">Backgrounds</h1>
+<p>Backgrounds are generic advantages and disadvantages giving deeper
+customization to characters in the game world.</p>
+<p>Whatever in makes the character stand out with respect to the vast
+population is considered a <em>background</em>.</p>
+<p>Some backgrounds may be generally advantageous for the character,
+while others might be generally detrimental.</p>
+<p>For example, being famous, of noble origins, having a career in a
+peculiar field as university professor, being an outlaw, a member of an
+ostracized religious sect or having an uncommon phobia are all
+<em>backgrounds</em>. While being famous seems more desirable than being
+an outlaw, in some game situations it may be preferable to be the latter
+than the former.</p>
+<p>For this reason, there isn’t a net distinction between positive and
+negative backgrounds, and they all have a positive cost in
+<strong>training tokens</strong> to be spent at character creation. It
+is also possible to receive the backgrounds as a consequence of
+adventuring; for example, one can certainly become an outlaw during the
+course of an adventure; nobles can lose their titles, university
+professors can lose their positions and phobias can be cured, but
+differently from <em>vantages</em>, <em>backgrounds</em> can only be
+removed as a consequence of gameplay.</p>
+<h2 id="effect-on-the-game">Effect on the game</h2>
+<p>Backgrounds can and usually will have an influence in how the
+adventure plays, but they don’t have a direct effect on the rules; that
+what’s vantages are for. However, some of them may have some indirect
+effect on the rules in some specific situation.</p>
+<p>For example, being a <strong>criminal boss</strong> doesn’t give the
+character a direct upgrade or downgrade in any skill check; it is meant
+to direct the character’s adventure in a certain direction, and make
+clearer how they will react when facing criminality or law enforcement,
+but in some cases the <strong>GM</strong> may apply a discretional bonus
+or penalty on some check, i.e. when trying to
+<strong>intimidate</strong> a gang member.</p>
+<h2 id="backgrounds-are-not-physical">Backgrounds are not physical</h2>
+<p>Physical characteristics are never to be considered backgrounds; this
+because any physically apparent characteristic would either have an
+effect on attributes or be severely limiting on the gameplay. For
+example, the ability to <strong>persuade</strong> already takes into
+account the attractiveness of a character. Conversely, a physical
+disability is difficult to translate into gameplay, while a low
+attribute number can better represent it.</p>
 <h1 id="checks">Checks</h1>
 <p>A check consists of throwing dices and verify if the result is
 successful. Checks are the nuts and bolts of SIRPAS. Practically every
@@ -534,7 +681,7 @@ table:</p>
 <table>
 <thead>
 <tr class="header">
-<th>Difficuylty</th>
+<th>Difficulty</th>
 <th style="text-align: right;">Success Level</th>
 </tr>
 </thead>
@@ -718,8 +865,8 @@ running. The rankings in each party result in:</p>
 <p>Group A has 1 point, while group B has 2: group B wins the
 multi-contest.</p>
 <p>The the fourth ranked in B, and the fourth and fifth in C are
-<strong>excluded</strong> and will not contribute to winning.
-Nevertheless, the most numerous group has an advantage in having more
+<strong>excluded</strong> and will not contribute to winning.</p>
+<p>Nevertheless, the most numerous group has an advantage in having more
 chances to score high points than the others – everything else
 equal.</p>
 <p>The effect of the multi-contest in the adventure should reflect its
@@ -745,19 +892,19 @@ he controls on a column of a notepad. 1. Besides each name, write the
 modifiers for that characters, to be updated if the contest is repeated.
 1. Unless each GM controlled character is special, the GM always assigns
 the best outcome to the topmost character, so that it can read the
-ranking results going top to bottom.</p>
+ranking results go top to bottom.</p>
 <p>If the GM doesn’t have a dice-throwing application handy, which can
 automate part of the process, it can use the following procedure to
 generate multiple scores at once: 1. Roll 2d6 and write down the result.
-1. Roll Nd6, where N is the count of character controlled by the
-<em>GM</em>. 1. If more than one 6 is rolled, count them as 7, 8 etc. 1.
-If more than one 1 is rolled, count them as 0, -1 etc. 1. Add each
+2. Roll Nd6, where N is the count of character controlled by the
+<em>GM</em>. 3. If more than one 6 is rolled, count them as 7, 8 etc. 4.
+If more than one 1 is rolled, count them as 0, -1 etc. 5. Add each
 single rolled result to the previous 2d6 roll.</p>
 <p>For example, the GM controls 5 characters. 1. It rolls 2d6 for a
 total of 7. 1. It now rolls 5d6, one per character; the results are 6,
 6, 4, 1, 1. 1. The characters gets the following points, top to bottom:
 7+7 = 14, 7+6 = 13, 7+4 = 11, 7+1 = 8 and 7+0 = 7. 1. Now the GM gets
-the result from the players, and communicates the winning party, 1. the
+the result from the players, and communicates the winning party, the
 scoring characters and, if relevant, the negative <strong>SM</strong> of
 the <strong>succumber</strong> characters.</p>
 <h2 id="critical-results">Critical Results</h2>
@@ -773,13 +920,13 @@ particularly low is called <em>critical failure</em>
 bad outcomes; when not specified by the rules or the skill description,
 the Game Master will determine how the outcome exceeds a normal
 result.</p>
-<p>In a <em>contest</em> a <em>critical success</em> can be scored only
-by the winning party (as the <strong>SM</strong> can be only positive,
-and is assigned to the winner); hence, a contest can’t determine
-<strong>critical failures</strong>.</p>
+<p>In a <em>contest</em> the <strong>SM</strong> can be only positive.
+For this reason, a contest can’t determine <strong>critical
+failures</strong>, only a <strong>critical success</strong> for the
+winner.</p>
 <p>Conversely, <strong>rankings</strong> have only negative
-<strong>SM</strong>, so they cannot result in <strong>critical
-successes</strong>.</p>
+<strong>SM</strong>, so they can only result in <strong>critical
+failures</strong></p>
 <p>The following table describes which <strong>SM</strong> are
 considered <strong>critical results</strong>, depending on the
 complexity of the action. <em>Contests</em> are considered <em>normal
@@ -871,12 +1018,12 @@ certain kind of wound, according with the following table:</p>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">0</td>
+<td style="text-align: right;">0-1</td>
 <td>Scratch</td>
 <td style="text-align: right;">-</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">1-3</td>
+<td style="text-align: right;">2-3</td>
 <td>Light</td>
 <td style="text-align: right;">1</td>
 </tr>
@@ -909,52 +1056,41 @@ are not treated.</p>
 <h3 id="wounds-penalty">Wounds Penalty</h3>
 <p>A character receives a penalty to any check of half the sum total of
 <strong>IP</strong>s across all types (rounded down).</p>
-<p>While the type of the wounds its relevant for the amount of damage
+<p>While the type of the wounds is relevant for the amount of damage
 that can be sustained, that doesn’t matter for how well the character is
 performing. You are not going to find a new theorem with an untreated
 broken arm, and your fighting style will be less than effective if your
 mind is in shambles.</p>
 <h3 id="scratches">Scratches</h3>
-<p>A character receiving an <em>effective damage</em> greater than 0,
-but below the amount necessary to generate a wound receives a
+<p>A character receiving an <em>effective damage</em> not less than 0,
+but below the amount necessary to generate a light wound receives a
 “scratch”.</p>
 <p>Scratches are extremely light wounds that, by themselves, don’t
 impact the character <strong>IP</strong> pool.</p>
-<p>However, once received a certain number of scratches, they are
-considered as one light wound. The number is determined by the
-<strong>scratch resistance</strong> (<strong>SRes</strong>) to that
-damage type, which is defined by each module.</p>
-<h3 id="non-scratches-optional">Non-scratches (optional)</h3>
-<p>When the damage received is mitigated to the point to be
-insignificant, it doesn’t generate a scratch.</p>
-<p>Unless the module specifies differently, when the <strong>ED</strong>
-is -3 or less, that isn’t accounted as a scratch. However, it may still
-generate negative effects, for example apply any form of physical or
-magical poisoning, inject a virus in an AI or in a cyber brain and so
-on.</p>
+<h3 id="scratches-to-wounds">Scratches to Wounds</h3>
+<p>Once received a certain number of scratches, they are considered as
+one light wound (<strong>Scratch To Wound</strong>, or
+<strong>StW</strong>). By default, this value is 4, meaning that 4
+scratches are considered a light wound, but this can be overridden by
+modules depending on their setting.</p>
+<h3 id="side-effect-of-non-scratches-optional">Side effect of
+non-scratches (optional)</h3>
+<p>When the <strong>ED</strong> is less than 0, that isn’t accounted as
+a scratch. However, it may still generate negative side effects, for
+example apply any form of physical or magical poisoning, inject a virus
+in an AI or in a cyber brain and so on.</p>
 <h2 id="direct-wounds">Direct Wounds</h2>
 <p>In some situation, a character can receive a wound of a certain kind
-directly, and not as a consequence of receiving a certain amount of
-<strong>damage points</strong>.</p>
-<p>For instance, certain magic spells could cause a heavy wound
-directly, if the character fails an attempt to resist them. A
-overwhelmingly powerful weapon, for example a starship laser directed
-against a human, could have the same effect. Explicit actions performed
-on the character when it is unable to defend itself (i.e. forms of
-physical or mental torture) could deal an arbitrary wound as the
+directly, (not just as a consequence of receiving a certain amount of
+<strong>damage points</strong>).</p>
+<p>For instance, certain magic spells could cause a heavy wound directly
+if the character fails an attempt to resist them. A overwhelmingly
+powerful weapon, for example a starship laser directed against a human,
+could have the same effect. Explicit actions performed on the character
+when it is unable to defend itself could deal an arbitrary wound as the
 attacker seems fit, etc.</p>
 <p>Direct wounds will immediately apply the relative <strong>injury
 points</strong> as if they were received through damage application.</p>
-<h3 id="curing-wounds">Curing wounds</h3>
-<p>As a wound is cured through any mean (medicine, magic, natural
-healing etc.), its <strong>IP</strong> cost is removed.</p>
-<p>Scratches not turned into a light wound are removed after a
-reasonable amount of time and minimal care adequate to the setting. For
-example, in a fantasy setting, that may be spending a few minutes to
-tend the wounds after a combat. In a cyberpunk setting, it may be
-applying wound-reducing foams.</p>
-<p><strong>Optional</strong>: in any setting, the equivalent of a day of
-rest should clear any scratch.</p>
 <h2 id="resistance-check">Resistance check</h2>
 <p>In some situation, it’s possible to avert the received damage
 partially or completely using a <strong>resistance check</strong>
@@ -1007,15 +1143,15 @@ that can be applied in the situation.</p>
 <p>Suppose for example that a module defines hierarchy the
 attributes:</p>
 <pre><code>Body -&gt; Metabolism
-Spirit -&gt; Willpower -&gt; Resistance/Fear.</code></pre>
+Spirit -&gt; Willpower -&gt; Fear Resistance.</code></pre>
 <p>In this situation, <strong>Metabolism</strong> would be used to
 resist poison, while <strong>Fear Resistance</strong> would be used to
 avert damages and negative effects caused by any <strong>fear</strong>
 based attack.</p>
-<p>In general, the ability to use some attribute in a resistance check
-is indicated in the attribute description; so the fact that
+<p>In general, the attribute description gives a generic indication on
+which type of damage it can avert; so the fact that
 <strong>Metabolism</strong> could be used to resist poison damage (and
-maybe some other negative effects as sickness) would be indicated in its
+maybe some other negative effects) would be indicated in its
 description.</p>
 <p>At any rate, the Game Master can pick any attribute that would be
 relevant, and ultimately, the most basic attributes if a specific one
@@ -1029,30 +1165,30 @@ all the damage sources it introduces.</p>
 character is defined by the modules, and can be tweaked by the Game
 Master to better fit the mood of its campaign.</p>
 <p>A realistic setting may set the limit for humans to 4 or 5 heavy
-wounds, or equivalent amount of ligher wounds (that would be 16 or 20
+wounds, or equivalent amount of lighter wounds (that would be 16 or 20
 points), but if characters are something different from humans
 (e.g. vampires, werewolves, android etc.) they might have a greater
 resistance to pain and/or damage.</p>
 <p>Normally, a count of 20 <strong>IP</strong> would give a penalty of
 -10 to any check, which may be severely limiting even for a powerful
-character; however, the modules provide means to reduce or ignore the
-penalty under certain situations with advantages or special gear, as
-enchanted armors, stim shots, magic spells, nanomachines etc.</p>
+character; however, the modules may provide means to reduce or ignore
+the penalty under certain situations with advantages or special gear, as
+enchanted armors, stimulant shots, magic spells, nanomachines etc.</p>
 <h2 id="deadly-wounds-optional">Deadly Wounds (optional)</h2>
-<p>When a character receives more than 9 <em>ED</em> points, it sustains
-a wound that is potentially able to kill them immediately.</p>
+<p>When a character receives an amount of <em>ED</em> higher than the
+higher limit for heavy wounds, it sustains a wound that is potentially
+able to kill them immediately.</p>
 <p>To avert an immediate death, the character must pass a <em>simple
 check</em> on an attribute related with the type of damage received.</p>
 <p>If the check is successful, the character receives a <em>heavy
-wound</em>.</p>
+wound</em> instead.</p>
 <blockquote>
 <p>Remember that the <em>resistance check</em> has a negative modifier
 of half the received <strong>IP</strong>s, as any other action.</p>
 </blockquote>
 <h2 id="localized-wounds">Localized Wounds</h2>
-<p>By default, wounds are generally directed in the generic direction of
-the body, but some abilities allow to aim a certain specific part of the
-body.</p>
+<p>By default, wounds are generally applied in the generality of the
+body, but some abilities allow to aim a certain specific part.</p>
 <h3 id="wounds-to-limbs-or-periferical-devices">Wounds to limbs or
 periferical devices</h3>
 <p>When a wound is localized on a specific body part (an arm, a leg),
@@ -1066,13 +1202,11 @@ using specifically the legs.</p>
 <p>This extends to non human and even virtual body parts as well: and AI
 receiving a heavy wound on a virtual device will have a double penalty
 if it tries to use that device to perform any action.</p>
-<h3 id="wounds-to-the-head-or-control-unit">Wounds to the head or
-control unit</h3>
+<h3 id="wounds-to-the-head-or-control-unit-optional">Wounds to the head
+or control unit (optional)</h3>
 <p>When a wound affects the head (or other target part that is
-particularly critical to control the behavior of the target), it
-generates an additional <strong>injury point</strong>. <em>Light
-wounds</em> generate 2 <em>IP</em>, while <em>medium</em> and <em>heavy
-wounds</em> generate 3 and 5 <strong>IP</strong> respectively.</p>
+particularly critical to control the behavior of the character), it
+generates an additional <strong>injury point</strong>.</p>
 <h2 id="healing">Healing</h2>
 <p>The <strong>IP</strong> generated by wounds (and relative check
 penalties) affect the characters until they are healed. Wounds are
@@ -1081,20 +1215,28 @@ magic spell that restores the character health completely, a
 backup-restore procedure on an AI etc.)</p>
 <p>As a wound is cured through any mean (medicine, magic, natural
 healing etc.), its <strong>IP</strong> cost and relative check penalty
-is removed.</p>
+are removed.</p>
 <p>Light and serious wounds heal naturally after a reasonable amount of
 time. Common sense can be used by the Game Master and the players to
 determine the adequate time; for humans, a light wound may heal
-completely in less than a week, while a serious wound would take a
-month.</p>
+completely in less than a week (generally, after a day of full rest and
+basic treatment), while a serious wound would take about month (or a
+week of full rest and basic treatment).</p>
 <p>Heavy wounds require specific treatment to be cured.</p>
+<h3 id="healing-scratches">Healing Scratches</h3>
 <p>Scratches not turned into a light wound are removed after a
 reasonable amount of time and minimal care adequate to the setting. For
 example, in a fantasy setting, that may be spending a few minutes to
 tend the wounds after a combat. In a cyberpunk setting, it may be
 applying wound-reducing foams.</p>
-<p><strong>Optional</strong>: in any setting, the equivalent of a day of
-rest should clear any scratch.</p>
+<h3 id="day-rest-healing">Day-rest healing</h3>
+<p>Unless differently specified by the modules a full day of rest and
+basic tending will:</p>
+<ul>
+<li>Heal all scratches not counted as light wounds;</li>
+<li>If there character hasn’t got any scratches, heal 1 light
+wound.</li>
+</ul>
 <h1 id="combat">Combat</h1>
 <p>Combat is an advanced form of contest. In a normal contest,
 characters try to win one over another on specific skills, while in
@@ -1160,7 +1302,7 @@ skills</strong>, that work as a default skill used when trying to attack
 someone without any specific training. Of course, they are less
 effective than specific combat skills, but they are also cheaper to
 train.</p>
-<p>Also, <strong>generic combat skills</strong> always have a
+<p><strong>Generic combat skills</strong> always have a
 <strong>dominance</strong> of 0, <strong>actions</strong> of 1 and they
 don’t have an associated <strong>style</strong>, that is, they cannot be
 used to execute any special <strong>maneuver</strong> in the advanced
@@ -1169,25 +1311,34 @@ combat system.</p>
 <p>Combat skills are divided into <em>melee</em>, <em>ranged</em> and
 <em>transcendental</em>.</p>
 <ul>
-<li><em>Melee</em> skills work when the combatants are in close range,
-and can physically harm each other without any projection.</li>
+<li><em>Melee</em> skills work when the combatants are in <em>close
+quarters</em>, and can physically harm each other without any
+projection.</li>
 <li><em>Ranged</em> skills use a weapon, a projectile or any mean to
 physically project a harmful device or source of energy towards a
 target. Skills of magical nature might be ranged if they magically
 create a projectile, ray of energy or any physical mean to harm a
 target.</li>
-<li><em>transcendental</em> skills require their user to know where a
+<li><em>Transcendental</em> skills require their user to know where a
 target is in order to direct the attack, but they have no physical
 range. The target could be on another planet, as long as the user has a
 mean to see, feel or simply know <em>instantly</em> about it.</li>
 </ul>
+<h3 id="close-quarters">Close Quarters</h3>
+<p>The <em>close quarter</em> distance it’s the distance at which a
+melee attack can be proficiently employed.</p>
+<p>It corresponds to the distance an average fighter can jump and
+perform a melee attack in one swoop. This is normally 6 feet, but may be
+different in settings where the characters have superpowers that allow
+for faster movement (i.e. in an adventure about vampires), or different
+sizes (i.e. in battles between giant robots).</p>
 <h3 id="dominance">Dominance</h3>
 <p>The <strong>dominance</strong> (<strong>Dom</strong>) of a combat
 skill describes its effectiveness in a mixed combat, given opponents of
 the same skill level.</p>
 <p>For example, in a certain setting <strong>archery</strong> skill may
-have <strong>Dom</strong>3, while <strong>gunslinging</strong> has
-<strong>Dom</strong>6; this means that a gunslinger would way more
+have <strong>Dom</strong> 3, while <strong>gunslinging</strong> has
+<strong>Dom</strong> 6; this means that a gunslinger would way more
 effective than a comparably competent archer on the battlefield.</p>
 <p>Dominance is mostly used in the <em>advanced</em> combat system, but
 is also used when mixing combat styles in the other systems. Whenever
@@ -1214,7 +1365,7 @@ collection of actions that can be done using the skill (called
 <strong>maneuvers</strong>).</p>
 <p><strong>Maneuvers</strong> are not stand-alone skills, and they
 cannot be target of advantages or perks.</p>
-<p>The same combat style can also cover different kind of weapons, with
+<p>The same combat style can also cover different type of weapons, with
 some specific maneuvers limited to some weapons. For example, a combat
 skill may be <strong>Firearms</strong>, covering any kind of modern
 firearm, and its style may include maneuvers as <strong>rapid
@@ -1246,7 +1397,7 @@ skills and weaponry. For example, you can use this method when two small
 bands are shooting at each other using using a <strong>firearm</strong>
 or similar skill, or involved in a fist fight and using
 <strong>brawl</strong>, or taking part in a little
-<strong>swordfight</strong> skirmish.</p>
+<strong>swordfight</strong>_** skirmish.</p>
 <p>It is also possible for parties to use different, but somewhat
 compatible skills. For example, in a medieval tavern fight, guards may
 interrupt a brawl using armed combat of some sort, or in a modern
@@ -1258,7 +1409,7 @@ combat skill</strong> and swing pieces of broken furniture around.</p>
 <h3 id="fight-resolution">Fight Resolution</h3>
 <p>The simplified combat is a modified repeated multi-contest without
 draws.</p>
-<p>The <strong>GM</strong> and/or the player decide how many rounds the
+<p>The <strong>GM</strong> and/or the players decide how many rounds the
 fight will last in advance, so that the best out of 1, 3, 5 (or more)
 rounds wins the fight.</p>
 <p>Each turn, every participant uses the skill it prefers to use in this
@@ -1273,8 +1424,8 @@ example, a tavern brawl is hardly lethal, and a “friendly” swordfight
 the surrender of the losing party. If that’s not the case, both winner
 and losers may receive damage (with the losers generally receiving
 more).</p>
-<h2 id="BaM-m-simplified-combat-injury">Injury Generation in Simplified
-Combat (optional)</h2>
+<h2 id="injury-generation-in-simplified-combat-optional">Injury
+Generation in Simplified Combat (optional)</h2>
 <p>In simplified combat, a losing character receives a number of
 <strong>DP</strong> equal to their (negative) success margin. For
 example, if it loses with a <strong>SM</strong> of -6, it receives 6
@@ -1298,15 +1449,7 @@ that.</p>
 <p>As all the other rules about damage, <strong>Injury Point</strong>
 penalty applies to the simplified combat as well.</p>
 </blockquote>
-<h3 id="BaM-m-simplified-combat-fight-duration">Fight Duration</h3>
-<p>In terms of fight length, each round (multi-contest) lasts a number
-of combat turns equal to the number of participants of the largest
-party.</p>
-<p>For example, if three parties with 4, 5 and 6 members respectively
-are facing each other, each round will last 6 turns (usually, 10 seconds
-each, so one minute per round).</p>
-<h3 id="BaM-m-simplified-combat-fight-continuation">Fight
-Continuation</h3>
+<h3 id="fight-continuation">Fight Continuation</h3>
 <p>If the characters so desire, they can continue fighting until the
 losing party is ultimately defeated (all of its characters are disabled)
 or decides to flee.</p>
@@ -1344,26 +1487,26 @@ takes action in turn, choosing what action they want to perform:</p>
 some combat skills provide multiple <em>actions</em>, which means they
 can be used multiple times per turn to defend or attack.</p>
 <p>A character can use the combat skill for defending against an attack
-also if it not its turn; however, when its turn comes, it will be able
-to attack only if it has some actions left unused.</p>
-<p>A character might also decide not perform any action when its turn
-comes; if it does so, it can interrupt any other action performed later
-on by characters down the initiative ranking, or eventually use a
-defense to respond to a later attack.</p>
+also if it’s not their turn; however, when their turn comes, they will
+be able to attack only if they have some actions left unused.</p>
+<p>A character might also decide not perform any action when their turn
+comes; if so they can interrupt any other action performed later on by
+others down the initiative ranking, or eventually use a defense to
+respond to a later attack.</p>
 <h3 id="instinctive-defense">Instinctive Defense</h3>
 <p>In some situations, the defender is aware of the incoming attack
 (i.e. has seen the attacker and is ready to receive the blow) but can’t
 use any skill as a defense.</p>
 <p>Typical reasons are: * The character already used all the actions at
-their disposal in a combat turn and can’t react any more * The defender
+their disposal in a combat turn and can’t react any more; * The defender
 doesn’t have a proficiency in the skill used by the attacker, and is
 just reacting instinctively. * The rules explicitly prohibit the use of
 other defenses (i.e. when disengaging from the combat).</p>
 <p>In those cases, provided the defender is at least aware of the
-attacks, it can use an appropriate <strong>generic combat skill</strong>
-as a defense. Some <strong>GCS</strong> are meant specifically to be
-used as instinctive defense, and may have a better base than more
-specific ones. For example, a module may have both
+attacks, they can use an appropriate <strong>generic combat
+skill</strong> as a defense. Some <strong>GCS</strong> are meant
+specifically to be used as instinctive defense, and may have a better
+base than more specific ones. For example, a module may have both
 <strong>dodge</strong> and <strong>slash</strong> as
 <strong>GCS</strong>, with <strong>dodge</strong> being a skill specific
 for defense only, and with a better base value than
@@ -1384,12 +1527,6 @@ to dodge an arrow.</p>
 <strong>ranged</strong> attacks per every two times of the <em>close
 quarter</em> distance.</p></li>
 </ul>
-<p>The <em>close quarter</em> it’s the distance that an average fighter
-can jump and perform a melee attack in one swoop. This is normally 6
-feet, but may be different in settings where the characters have
-superpowers that allow for faster movement (i.e. in an adventure about
-vampires), or different sizes (i.e. in battles between giant
-robots).</p>
 <blockquote>
 <p>For example, a martial artist using defending against a sharp shooter
 standing between 6 and 12 feet away would have a penalty of -1; at a
@@ -1398,11 +1535,11 @@ a lot, but ranged skills have penalties for long range shot and range
 limits already: no one can hope to perform a valid melee defense against
 a sniper hidden on the next hill.</p>
 </blockquote>
-<p><strong>transcendental</strong> skills cannot be use to defend against
-<strong>melee</strong> or <strong>ranged</strong> skills, and the other
-away around, <strong>melee</strong> and <strong>ranged</strong> skills
-cannot be used to defend against a <strong>transcendental</strong>
-attack.</p>
+<p><strong>Transcendental</strong> skills cannot be use to defend
+against <strong>melee</strong> or <strong>ranged</strong> skills, and
+the other away around, <strong>melee</strong> and
+<strong>ranged</strong> skills cannot be used to defend against a
+<strong>transcendental</strong> attack.</p>
 <h3 id="ranged-attacks-falloff">Ranged attacks falloff</h3>
 <p>Attack with ranged weapons receive the following modifier, which
 depends on the distance to the target:</p>
@@ -1461,13 +1598,13 @@ depends on the distance to the target:</p>
 </tbody>
 </table>
 <p>If a character has <em>full coverage</em> and doesn’t attack, nor
-moves, nor doesn’t perform any action that exposes it, it cannot be
+moves, nor doesn’t perform any action exposing them, they cannot be
 attacked with a ranged weapon. The defense is required only if the
-character is actually performing an action that would expose part of it
-out of the cover.</p>
-<p>A <em>partial cover</em> is a high wall, large tree or column, three
-feet rock, and anything that could cover part of the body from the aim
-of the opponent.</p>
+character is actually performing an action that would expose part of
+them out of the cover.</p>
+<p>A <em>partial cover</em> is a high wall, large tree or column, a
+three feet tall rock, and anything that could cover part of the body
+from the aim of the opponent.</p>
 <p>A character <em>on the ground</em> is completely squashed, and can
 only use weapons and skill that might be used from this position
 (i.e. firearms).</p>
@@ -1528,10 +1665,10 @@ for etc), or because of a stretch of boasting victories.</li>
 <li><strong>Desperate</strong>: The party is in a desperate situation,
 and had the time to contemplate defeat and come with terms to that
 before the fight. It might depend of a perceived superiority of the
-opponents, or because all food was depleted and a breakthrough is
+opponents, or because all food is depleted and a breakthrough is
 necessary for survival, etc.</li>
 <li><strong>Tiredness</strong>: The characters are particularly tired,
-i.e. because they couldn’t rest after previous fight, or because being
+i.e. because they couldn’t rest after previous fights, or because being
 forced to fight after a long march, or for having run because of a
 chasing.</li>
 <li><strong>Demoralized</strong>: The characters are demoralized because
@@ -1589,7 +1726,7 @@ their chosen skill as a base.</p>
 contest.</p>
 <p>Determined the value for the attack roll, each defender performs its
 defense, rolling on the chosen defense skill.</p>
-<p>A draw means that neither the attack, nor the defense have been
+<p>A draw means that neither the attack nor the defense have been
 successful. A successful attack delivers a damage to the target. A
 successful defense might have an effect that depends on the used skill
 (it might also deliver a damage to the attacker).</p>
@@ -1624,22 +1761,21 @@ it’s computed adding the success margin of the contest to some attribute
 based modifier.</p>
 <p>The <em>dominance</em> of the skill, and eventually of the used
 weapon, is added to the <em>base damage</em>; other modifiers
-(i.e. temporary magic incantation) might further be applied. The final
-total damage delivered is called <em>active damage</em>
-(<strong>AD</strong>).</p>
+(i.e. temporary magic incantation) might further be applied.</p>
 <p>The character receiving the damage computes its <em>damage
 mitigation</em> (<strong>DM</strong>) by adding <em>passive
 defenses</em> that can affect the damage source (i.e. armours), and
 eventually <em>active defenses</em> they might use.</p>
 <p>Finally, the target character receives a number of
-<strong>DP</strong> = <strong>AD</strong> - <strong>DM</strong>. This
+<strong>ED</strong> = <strong>DP</strong> - <strong>DM</strong>. This
 damage is accounted as specified by the <a
 href="#injury-and-damage">injury and damage</a> rule.</p>
 <h3 id="critical-rolls">Critical Rolls</h3>
 <p>A critical success doubles the value of the <em>success margin</em>
-when computing the <em>active damage</em>. When the damage roll doesn’t
-involve the <strong>SM</strong> in the computation of the
-<strong>AD</strong>, a critical result adds 4 <strong>DP</strong>.</p>
+when computing the <strong>DP</strong> (for the attacker) or the
+<strong>DM</strong> (for the defender). When the damage roll doesn’t
+involve the <strong>SM</strong>, the critical success adds automatically
+4 points to the final result.</p>
 <blockquote>
 <p>Notice that some defenses might generate a damage too.</p>
 </blockquote>
@@ -1649,9 +1785,10 @@ would indicate a success. For example, suppose an attacker with
 <strong>archery</strong> 5. If the attacker rolls 3, which is a critical
 failure, the attack fails even if 16+3 would be above the archer’s
 roll.</p>
-<p>If both the attacker and defender roll a critical failure, the roll
-result (with the respective modifiers) is considered: critical failures
-on both sides elide each other.</p>
+<p>If both the attacker and defender roll a critical of the same type,
+the critical part is discarded and only the roll result (with the
+respective modifiers) is considered: critical failures or successes on
+both sides elide each other.</p>
 <h2 id="advanced-combat">Advanced Combat</h2>
 <p>Advanced Combat is the most sophisticated combat sub-system; it
 expands the basic combat system by adding a set of sub-skills for each

@@ -1,4 +1,4 @@
-# Skills {#BaM-m-skills}
+# Skills
 
 Skills are abilities that a character can exercise at a certain moment, and 
 They are usually based on a single attribute; this means that, if the character
@@ -13,3 +13,7 @@ from scratch; for example lock picking must be learned before being used.
 
 Last, some skills have a base that depends on a base modifier; this is indicated
 with a lowercase letter 'm' in front of the attribute.
+
+@(index 2)
+@(include Skills/*.md)
+@(endindex)

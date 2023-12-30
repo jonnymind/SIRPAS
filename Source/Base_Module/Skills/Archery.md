@@ -28,4 +28,4 @@ This is the number of maneuvers granted by archery in advanced combat system.
    ["17+", 3]
 ]
 
-@(include Archery)
+@(include Archery/*.md)

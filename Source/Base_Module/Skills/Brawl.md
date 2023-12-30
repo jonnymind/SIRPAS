@@ -33,4 +33,4 @@ the level of brawl:
    ["16+", 4]
 ]
 
-@(include Brawl)
+@(include Brawl/*.md)

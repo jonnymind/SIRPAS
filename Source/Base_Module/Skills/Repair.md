@@ -7,7 +7,7 @@
   "Base": "mI",
   "Callsign": "Rep",
   "Category": "Skill",
-  "Specialization: "machinery type",
+  "Specialization": "machinery type",
   "Cost": "1 TT/Normal"
 }
 

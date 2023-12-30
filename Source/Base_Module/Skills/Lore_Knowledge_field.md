@@ -6,7 +6,7 @@
   "*Brief": "Knowledge of specific parts of the world lores",
   "Callsign": "lk",
   "Category": "Skill",
-  "Specialization: "field",
+  "Specialization": "field",
   "Cost": "1 TT/Easy"
 }
 

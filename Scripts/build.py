@@ -39,13 +39,13 @@ class Entry:
 	
 	def write(self, data:str):
 		# Filter out blanks
-		data = data.strip(" ")
+		sdata = data.strip(" ")
 		
 		# Skip multiple newlines and newlines on top of items.
-		if data == "\n": 
+		if sdata == "\n": 
 			self.break_line = True
 			return
-		elif data == "":
+		elif sdata == "":
 			return
 		
 		if self.break_line:

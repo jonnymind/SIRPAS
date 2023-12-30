@@ -5,7 +5,7 @@
   "*Name": "Riding",
   "*Brief": "The ability to perform ride a vehicle or mount",
   "Category": "Skill",
-  "Specialization: "mount",
+  "Specialization": "mount",
   "Cost": "1 TT/Easy"
 }
 

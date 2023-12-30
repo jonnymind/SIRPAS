@@ -27,4 +27,4 @@ The number of maneuvers the character can use per round depends on the level of 
    ["16+", 4]
 ]
 
-@(include Knife_Fight)
+@(include Knife_Fight/*.md)

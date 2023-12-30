@@ -34,4 +34,4 @@ of Concentration:
    ["14+", 3]
 ]
 
-@(include Concentration)
+@(include Concentration/*.md)

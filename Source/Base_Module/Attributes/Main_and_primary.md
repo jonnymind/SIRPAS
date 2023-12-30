@@ -3,11 +3,11 @@
 Every character has the following **Main** attributes:
 
 * Body (**B**): The physical aspect of the character. Body **primary** attributes are:
-   * Strength (**S**): raw physical power;
-   * Dexterity (**D**): speed, precision and control over actions performed with the body;
-   * Health (**H**): Resilience against fatigue, injury and illness.
+  * Strength (**S**): raw physical power;
+  * Dexterity (**D**): speed, precision and control over actions performed with the body;
+  * Health (**H**): Resilience against fatigue, injury and illness.
 * Mind (**M**): describes the mental prowess of a character. Mind **primary** attributes are:
-  * Will (**W**): strength of conviction and assertiveness.
+  * Will (**W**): strength of conviction and assertiveness.  
   * Intelligence (**I**): ability to understand and solve complex problems; mental flexibility.
   * Equilibrium (**E**): resilience to mental strain, stress and madness.
 

@@ -40,4 +40,4 @@ chose from either Full Contact or Brawl, plus one from Full Contact only.
    ["16+", 4]
 ]
 
-@(include Full Contact)
+@(include Full_Contact/*.md)
