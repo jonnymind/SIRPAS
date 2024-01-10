@@ -7,17 +7,17 @@ become as complex as you wish.
 SIRPAS is organized in the following components:
 
 - The **rulebook** (what you're reading now): bare-bone description of how the
-system works. There isn't any list of skills, attributes, or specific 
-rendering of the rules in practice. At times we'll use some well known 
-skill that may be found in any generic RPG (e.g. *strength* or *climbing*) 
-to make some example of how the rules work, but nothing more.
+  system works. There isn't any list of skills, attributes, or specific 
+  rendering of the rules in practice. At times we'll use some well known 
+  skill that may be found in any generic RPG (e.g. *strength* or *climbing*) 
+  to make some example of how the rules work, but nothing more.
 - The **base module**: a basic implementation of the rules, which describes
-very generic attributes, skills, damage sources and other concrete aspect of the
-system, that should be general enough to be applied to most if not all the
-RPG settings you may come up with.
+  very generic attributes, skills, damage sources and other concrete aspect of the
+  system, that should be general enough to be applied to most if not all the
+  RPG settings you may come up with.
 - Additional **modules**: Extension of the base system (which may enrich it or
-change it if necessary), particularly adequate to describe some specific world
-or setting for your adventures.
+  change it if necessary), particularly adequate to describe some specific world
+  or setting for your adventures.
 
 All you need is the **base module**. The system will often refer to the rules in this
 rulebook, so you will need to know them, but you don't need to know them *upfront*. The
@@ -71,9 +71,9 @@ media you’re reading the rulebook, we will:
 
 1.	provide hyperlink to the description of the term. 
 2.	highlighting terms with special meaning in RPG. A fast Internet search
-for "RPG" and the highlighted word will  bring you to the description of the term.
+   for "RPG" and the highlighted word will  bring you to the description of the term.
 3.	Add a box named "For Beginners" near the relevant terms, that experienced
-readers can skip.
+   readers can skip.
 
 ## Feel of the system
 
@@ -81,22 +81,22 @@ Sirpas has the following characteristics:
 
 - Generic: rules are meant to be applicable in any settings you can come up with. More on that later.
 - Modular: Sirpas has a lean set of rules called **Base System**. The base system is generic enough
-to support any world setting and playing style. On this base system, additional rules (called **modules**)
-can be attached to better fit your game world. Want a system to perform mind fights between Asimov inspired psionic 
-super-humans? We got you. Want a be a gunslinger involved in western-styled show downs? That can be done too.
-A wizard casting magic spells? No problem. An occultist summoning extra-dimensional entities? That's fine.
-The system is even flexible enough to merge multiple styles of magic, melee combats, large scale fights
-and ranged missile firing in the same session. Yes, you can bring a bow (or a knife) in a gunfight.
+  to support any world setting and playing style. On this base system, additional rules (called **modules**)
+  can be attached to better fit your game world. Want a system to perform mind fights between Asimov inspired psionic 
+  super-humans? We got you. Want a be a gunslinger involved in western-styled show downs? That can be done too.
+  A wizard casting magic spells? No problem. An occultist summoning extra-dimensional entities? That's fine.
+  The system is even flexible enough to merge multiple styles of magic, melee combats, large scale fights
+  and ranged missile firing in the same session. Yes, you can bring a bow (or a knife) in a gunfight.
 - Extensible: Other than designing your own additional modules, you can also modify the base system to fit
-your need. For example, there base system has two main attributes called **Body** and **Mind**; if you
-want to play as an AI in a virtual world, you may replace **Body** with **MIPS** (millions of operation per second),
-and use **Mind** as an expression of the quality of your O.S. and software. The rest of the base system will
-still stand and be mostly useful for you to play with.
+  your need. For example, there base system has two main attributes called **Body** and **Mind**; if you
+  want to play as an AI in a virtual world, you may replace **Body** with **MIPS** (millions of operation per second),
+  and use **Mind** as an expression of the quality of your O.S. and software. The rest of the base system will
+  still stand and be mostly useful for you to play with.
 - Role-play oriented: the system emphasizes the build-up of the character; both the composition of its skill set
-in the adventure world, and the makeup of its personality, play a primary role in how the rules unfold.
+  in the adventure world, and the makeup of its personality, play a primary role in how the rules unfold.
 - Simple as you want: the base system has differently detailed rules to resolve game situations. For example,
-combat or any type of confrontation between two opposing parties could be resolved with a single throw of a few
-dices (Risk! style), or with the detail of a Warhammer miniature replica battlefield.
+  combat or any type of confrontation between two opposing parties could be resolved with a single throw of a few
+  dices (Risk! style), or with the detail of a Warhammer miniature replica battlefield.
 
 All the system is based on multiple rolls of a standard dice with 6 face; however, different modules support other
 kind of dices, if that's the vibe you want for your game.
@@ -136,19 +136,19 @@ In SIRPAS, the statistics are all the numeric or quality values that define a ch
 They are divided in the following categories:
 
 - [Attributes](#attributes): important aspect of the character on which many other mechanics depend. 
-For example *body*, *strength*, or *spirit* could be attributes in many game worlds.
-**Skills** are special **attributes** used to perform specific actions, 
-as *hacking*, *lock picking*, *running*, *climbing* etc.
+  For example *body*, *strength*, or *spirit* could be attributes in many game worlds.
+  **Skills** are special **attributes** used to perform specific actions, 
+  as *hacking*, *lock picking*, *running*, *climbing* etc.
 - [Statuses](#statuses): values that vary fluidly during an adventure; for example,
-to keep track of the current health of a character you can look at its **injury points**.
+  to keep track of the current health of a character you can look at its **injury points**.
 - [Vantages](#vantages): **advantages** or **disadvantages** targeting either the
-rules as a whole or improving a specific attribute in some way. For example, some advantages
-allows you to throw more die in some situation, others may reduce the difficulty
-of actions performed with a certain skill.
+  rules as a whole or improving a specific attribute in some way. For example, some advantages
+  allows you to throw more die in some situation, others may reduce the difficulty
+  of actions performed with a certain skill.
 - [Backgrounds](#backgrounds): distinctive traits setting the character apart from the 
-background people in the setting; for example, being "famous" or "outlaw". 
-They have an impact in the adventure at large, and might also affect indirectly 
-some checks, providing bonuses and penalties at discretion of the game master.
+  background people in the setting; for example, being "famous" or "outlaw". 
+  They have an impact in the adventure at large, and might also affect indirectly 
+  some checks, providing bonuses and penalties at discretion of the game master.
 
 ## Attributes
 
@@ -307,7 +307,7 @@ following the base value chains.
 
 For example, if a module declares a hierarchy of attributes as
 ```
-Primary -> Generic -> Hard Skills -> Easy Skills
+    Primary -> Generic -> Hard Skills -> Easy Skills
 ```
 
 a **TT**/Primary can be exchanged for 2 **TT**/Generic, 4 **TT**/Hard,
@@ -836,9 +836,9 @@ gets wounded) can be tiresome, and can slow down the pace of the game for the pl
 To prepare the multi-contest, the GM should:
 1. Write the characters he controls on a column of a notepad.
 1. Besides each name, write the modifiers for that characters, to be updated 
-if the contest is repeated.
+   if the contest is repeated.
 1. Unless each GM controlled character is special, the GM always assigns the best outcome 
-to the topmost character, so that it can read the ranking results go top to bottom. 
+   to the topmost character, so that it can read the ranking results go top to bottom. 
 
 If the GM doesn't have a dice-throwing application handy, which can automate part of the process, it
 can use the following procedure to generate multiple scores at once:
@@ -853,7 +853,7 @@ For example, the GM controls 5 characters.
 1. It now rolls 5d6, one per character; the results are 6, 6, 4, 1, 1.
 1. The characters gets the following points, top to bottom: 7+7 = 14, 7+6 = 13, 7+4 = 11, 7+1 = 8 and 7+0 = 7.
 1. Now the GM gets the result from the players, and communicates the winning party, 
-the scoring characters and, if relevant, the negative **SM** of the **succumber** characters.
+   the scoring characters and, if relevant, the negative **SM** of the **succumber** characters.
 
 ## Critical Results
 
@@ -920,11 +920,11 @@ Incoming *raw damage* is modified through the application of *defenses*,
 that reduce it in various ways; they are mainly divided in the following categories:
 
 - *Passive Defenses*: reducing the incoming **DP**s of a flat amount (like physical armors),
-or dividing the damage by a certain factor, i.e. 4/5 or 3/4 (like magic or sci-fi shields),
-or eventually by an hybrid formula (as in the case of specific resistances against some
-kind of damage).
+  or dividing the damage by a certain factor, i.e. 4/5 or 3/4 (like magic or sci-fi shields),
+  or eventually by an hybrid formula (as in the case of specific resistances against some
+  kind of damage).
 - *Active Defenses*: the amount of reduced **DP**s depends on the use of a certain
-character ability. 
+  character ability. 
 
 The way different kind of damages impact on the characters is fully considered by the way
 defenses are applied to reduce the incoming **DP**s.
@@ -1163,7 +1163,7 @@ increasing level of complexity:
 	the combat skills with specific rules, and takes into account positioning,
 	tactical advantages and other combat-specific elements.
 - *Advanced Combat*: This is the full fledged combat system, extending the
-	_basic combat_ and using special sub-skills called _maneuvers_.
+ 	_basic combat_ and using special sub-skills called _maneuvers_.
 
 You can chose to stick with one combat system or mix and match them the same adventure, 
 without limitation, depending on how combat-centric is your adventure, or how
@@ -1183,13 +1183,13 @@ the addition of the following characteristic:
 
 * **Range type** (**Rt**): Can be **melee**, **ranged** or **transcendental**. 
 * **Actions**: Some skills can be used multiple times in a combat turn. For example,
-a nimble skill having 3 **actions** would allow the character to attempt 3 attacks,
-or move, switch weapon and attack, all in the same turn.
+  a nimble skill having 3 **actions** would allow the character to attempt 3 attacks,
+  or move, switch weapon and attack, all in the same turn.
 * **Dominance** (**Dom**): a value roughly describing the effectiveness of the skill
-in a mixed combat, given opponents of the same skill level. 
+  in a mixed combat, given opponents of the same skill level. 
 * **Style**: A set of specific ways to use the combat skill, called **maneuvers** 
-causing special effects to take place during the combat 
-(used in the _advanced system_ only). 
+  causing special effects to take place during the combat 
+  (used in the _advanced system_ only). 
 
 ### Generic combat skills
 
@@ -1216,15 +1216,15 @@ combat system.
 Combat skills are divided into _melee_, _ranged_ and _transcendental_.
 
 * _Melee_ skills work when the combatants are in *close quarters*, and can
-physically harm each other without any projection.
+   physically harm each other without any projection.
 * _Ranged_ skills use a weapon, a projectile or any mean to physically
-project a harmful device or source of energy towards a target. Skills of
-magical nature might be ranged if they magically create a projectile, ray
-of energy or any physical mean to harm a target.
+   project a harmful device or source of energy towards a target. Skills of
+   magical nature might be ranged if they magically create a projectile, ray
+   of energy or any physical mean to harm a target.
 * _Transcendental_ skills require their user to know where a target is in order
-to direct the attack, but they have no physical range. The target could be
-on another planet, as long as the user has a mean to see, feel or simply
-know _instantly_ about it.
+   to direct the attack, but they have no physical range. The target could be
+   on another planet, as long as the user has a mean to see, feel or simply
+   know _instantly_ about it.
 
 ### Close Quarters
 
@@ -1280,9 +1280,9 @@ Maneuvers have the following statistics:
 * Diminishing Return: modifier to the roll if using the same maneuver more than once in a row.
 * Range: If the combat skill is ranged, the distance at which this maneuver is effective.
 * Damage: How many **DP** the maneuver inflicts if successful. Defenses and actions can have
-generate damage as well (i.e. counter-attacks or actions causing indirect damage).
+  generate damage as well (i.e. counter-attacks or actions causing indirect damage).
 * Status: a status alteration of the target if the maneuver is successful (i.e. causing
-the target to be *stunned* for 2 turns, and so on).
+  the target to be *stunned* for 2 turns, and so on).
 
 ## Simplified Combat {#BaM-m-simplified-combat}
 
@@ -1403,11 +1403,11 @@ the attacker and is ready to receive the blow) but can’t use any skill as a de
 
 Typical reasons are:
 * The character already used all the actions at their disposal in a combat
-turn and can’t react any more;
+  turn and can’t react any more;
 * The defender doesn't have a proficiency in the skill used by the attacker,
-and is just reacting instinctively.
+  and is just reacting instinctively.
 * The rules explicitly prohibit the use of other defenses (i.e. when disengaging
-from the combat).
+  from the combat).
 
 In those cases, provided the defender is at least aware of the attacks, they can use
 an appropriate **generic combat skill** as a defense. Some **GCS** are meant specifically
@@ -1425,11 +1425,11 @@ an arrow.
 The situation is resolved as follows:
 
 * When the opponents are in *close quarters*,
-**ranged** skills have a -2 modifier when defending against **melee** attacks. 
+  **ranged** skills have a -2 modifier when defending against **melee** attacks. 
 
 * When opponents are are not in *close quarters*,
-**melee** skills have a -1 modifier when defending 
-against **ranged** attacks per every two times of the *close quarter* distance.
+  **melee** skills have a -1 modifier when defending 
+  against **ranged** attacks per every two times of the *close quarter* distance.
 
 > For example, a martial artist using defending against a
 sharp shooter standing between 6 and 12 feet away would have a penalty of -1;
@@ -1643,6 +1643,72 @@ attack. In those situations, you’ll want to be less predictable, and use other
 maneuvers, or other styles altogether.
 
 This factor is called __diminishing return__ (**DR**) for a certain maneuver.
+
+# Equipment
+
+For *equipment* we intend whatever material is necessary for a skill to function.
+For example, to use (lock picking)[#lock_picking] it is necessary for the characters to have a 
+basic lock picking set available. Many combat skills require a specific type of weapons.
+
+Advanced equipment may provide improvements of various nature:
+
+* Provide a flat bonus to some dice roll involved in the skill.
+* Reduce the difficulty level of checks.
+* Improve the dominance of the combat skill used.
+* Provide advantages as described in the manual (i.e. an automatic *mastery*).
+* Provide additional side effects as:
+  * reducing the noise caused by certain actions
+  * introduce poison-like effects
+  * produce a curse or a blessing when used
+  * provide a passive or active damage reduction when receiving damage
+
+Similarly, poor equipment may have reverse effect; for example, 
+making simple actions more difficult, or providing a penalty to any dice roll.
+
+Reasons why equipment may provide non-standard advantages are:
+
+* Manufacture quality
+* Magic
+* Explicit upgrades
+* Setting anachronism (coming from the future / a different place).
+
+## Equipment Categories
+
+Equipment is divided in *categories* (**EC**) which is the type of equipment that may be used
+by a certain skill. 
+
+A generic skill may actually use multiple **EC**s; for example, generic
+**Shoot** skill may use anything that can be loaded with a projectile, so **EC** could include
+firearms and crossbows.
+
+Similarly, a single item may belong to multiple categories; a sniper rifle may be a *firearm* and
+also a *precision weapon*.
+
+## Optional Equipment
+
+Some skills do not require to use any equipment, but may benefit from using one. For
+example, in a fistfight is possible to fight with bare hands, but when using a device
+as a metal gauntlet, the efficacy increases. 
+
+## Generic Items
+
+Not all objects the characters can use, wear or eat are considered "equipment". Anything that
+isn't needed by a specific attribute is referred as a *generic item*. This includes:
+
+* Clothing
+* Food
+* Magic Potions
+* Single-use Healing Devices (e.g. stim-shot)
+* etc.
+
+In general, anything a character an use or carry but is not directly used by a specific skill or
+attribute is a *generic item*.
+
+## Charges and re-charges
+
+Some equipment can be used a limited number of times, after which it either becomes unusable or
+needs to be recharged. This is the case of magic scrolls in certain magic settings, that can be
+used only once, or pistols that require recharging after their magazine is depleted.
 
 # APPENDIX: Theorycrafting Elements
 

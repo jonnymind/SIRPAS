@@ -8,6 +8,7 @@
   "Callsign": "Hk",
   "Category": "Skill",
   "Specialization": "system",
+  "EC": "Rootkit (opt)",
   "Cost": "1 TT/Hard"
 }
 

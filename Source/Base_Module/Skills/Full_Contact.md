@@ -8,6 +8,7 @@
   "Category": "Skill/combat",
   "Prerequisite": "Brawl 4",
   "Dominance": "3",
+  "EC": "Hand Fight (opt)",
   "Cost": "1 TT/Hard"
 }
 

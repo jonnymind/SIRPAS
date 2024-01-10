@@ -8,6 +8,7 @@
   "Category": "Skill/combat",
   "Specialization": "combat style",
   "Cascade": "Yes",
+  "EC": "Shields (opt)",
   "Cost": "1 TT/Hard"
 }
 

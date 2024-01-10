@@ -1,4 +1,5 @@
-## Adventuring Equipment {#BaM-gen-adventuring-equipment}
+## Adventuring Equipment
 
-TODO
+Adventuring equipment is the equipment used in non-combat skills.
 
+@(include /tables/equipment.md)

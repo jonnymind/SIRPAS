@@ -4,9 +4,10 @@
 { 
   "*Name": "Will",
   "*Brief": "Mental strength",
-  "*Abbrev": "W",
+  "Callsign": "W",
   "Category": "Primary",
-  "Base": "M"
+  "Base": "M",
+  "Cost": "1 TT/Primary"
 }
 
 Will (**W**) is the power of the mind to focus on a certain task, 

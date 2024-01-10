@@ -17,5 +17,6 @@
 @(include Damage_and_injury.md)
 @(include Combat.md)
 
+@(include Equipment.md)
 
 @(include Technical.md)

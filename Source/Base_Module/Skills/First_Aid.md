@@ -5,6 +5,7 @@
   "*Name": "First Aid",
   "*Brief": "Field techniques to mitigate wounds",
   "Category": "Skill",
+  "EC": "First Aid Kit",
   "Cost": "1 TT/Normal"
 }
 

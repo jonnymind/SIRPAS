@@ -7,6 +7,7 @@
   "Base": "mS",
   "Callsign": "",
   "Category": "Skill/combat",
+  "EC": "Blades, Maces",
   "Cost": "1 TT/Easy"
 }
 

@@ -4,9 +4,10 @@
 { 
   "*Name": "Intelligence",
   "*Brief": "Mental acuity",
-  "*Abbrev": "I",
+  "Callsign": "I",
   "Category": "Primary",
-  "Base": "M"
+  "Base": "M",
+  "Cost": "1 TT/Primary"
 }
 
 Intelligence (**I**) is the ability to understand and solve complex problems, 

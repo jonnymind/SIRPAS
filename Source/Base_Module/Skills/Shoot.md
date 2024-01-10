@@ -6,6 +6,7 @@
   "*Brief": "Activate a projectile weapon",
   "Base": "mD",
   "Category": "Skill/combat",
+  "EC": "Projectiles",
   "Cost": "1 TT/Normal"
 }
 

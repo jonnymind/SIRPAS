@@ -7,6 +7,7 @@
   "Callsign": "Hl",
   "Category": "Skill",
   "Prerequisite": "First Aid 6",
+  "EC": "First Aid Kit, Healing Kit (opt)",
   "Cost": "1 TT/Hard"
 }
 

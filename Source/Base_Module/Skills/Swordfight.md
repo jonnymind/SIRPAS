@@ -7,6 +7,7 @@
   "Base": "mS or mD",
   "Category": "Skill/combat",
   "Dominance": "4",
+  "EC": "Swords, Maces",
   "Cost": "1 TT/Hard"
 }
 

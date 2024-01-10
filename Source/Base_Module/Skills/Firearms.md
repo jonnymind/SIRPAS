@@ -7,6 +7,7 @@
   "Base": "mD",
   "Category": "Skill/combat",
   "Dominance": "5",
+  "EC": "Firearms",
   "Cost": "1 TT/Hard"
 }
 

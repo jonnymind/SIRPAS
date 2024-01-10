@@ -15,6 +15,7 @@
 @(include Disadvantages.md)
 @(include Backgrounds.md)
 @(include Skills.md)
+@(include Equipment.md)
 @(include Combat.md)
 @(include Game_setup.md)
 

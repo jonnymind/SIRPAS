@@ -1,4 +1,4 @@
-## Armours {#BaM-gen-armours}
+## Armours
 
 Armours provide damage mitigation against some specific damage types. Naturally, the damage mitigation applies to the part of the body where the armour is applied.
 The following table is a generic guide that indicates the type of material of which armours are built, their approximate weight  in pounds, the cut, blunt and piercing damage mitigation and an approximate cost. The weight refer to the material applied to a body armour; to get the weight of arm and leg armour divide by half, and for an helmet divide by four.

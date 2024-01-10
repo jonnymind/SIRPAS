@@ -7,6 +7,7 @@
   "Base": "mD",
   "Category": "Skill/combat",
   "Dominance": "4",
+  "EC": "Bows, Crossbows",
   "Cost": "1 TT/Hard"
 }
 

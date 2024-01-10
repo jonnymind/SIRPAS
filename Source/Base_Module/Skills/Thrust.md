@@ -6,6 +6,7 @@
   "*Brief": "Thrust a pointed or cutting weapon",
   "Base": "mD",
   "Category": "Skill/combat",
+  "EC": "Blades",
   "Cost": "1 TT/Normal"
 }
 

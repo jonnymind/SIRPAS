@@ -7,6 +7,7 @@
   "Base": "mD",
   "Category": "Skill/combat",
   "Dominance": "3",
+  "EC": "Knives",
   "Cost": "1 TT/Hard"
 }
 

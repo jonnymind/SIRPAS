@@ -8,6 +8,7 @@
   "Category": "Skill",
   "Specialization": "race type",
   "Prerequisite": "Healing 3",
+  "EC": "Healing Kit (opt)",
   "Cost": "1 TT/Hard"
 }
 

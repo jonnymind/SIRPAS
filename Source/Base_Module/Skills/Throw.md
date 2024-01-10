@@ -6,6 +6,7 @@
   "*Brief": "Throws an object to hit an opponent",
   "Base": "mD",
   "Category": "Skill/combat",
+  "EC": "Throwable (opt)",
   "Cost": "1 TT/Hard"
 }
 

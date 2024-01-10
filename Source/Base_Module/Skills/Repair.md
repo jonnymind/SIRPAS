@@ -8,6 +8,7 @@
   "Callsign": "Rep",
   "Category": "Skill",
   "Specialization": "machinery type",
+  "EC": "Repair Kit",
   "Cost": "1 TT/Normal"
 }
 

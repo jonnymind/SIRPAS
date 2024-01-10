@@ -4,9 +4,10 @@
 { 
   "*Name": "Body",
   "*Brief": "Overall physical build up",
-  "*Abbrev": "B",
+  "Callsign": "B",
   "Category": "Main",
-  "Base": "3"
+  "Base": "3",
+  "Cost": "1 TT/Main"
 }
 
 The Body (**B**) is a value that describes your overall physical prowess in terms of

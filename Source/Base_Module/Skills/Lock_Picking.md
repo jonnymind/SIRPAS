@@ -6,6 +6,7 @@
   "*Brief": "Opens the door",
   "Callsign": "lp",
   "Category": "Skill",
+  "EC": "Lock Picks",
   "Cost": "1 TT/Normal"
 }
 

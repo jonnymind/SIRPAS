@@ -94,9 +94,11 @@ from here.
 ## Body
 
 | <!-- --> | <!-- --> |
-|----------|------|
+|----------|---|
+| Callsign | B |
 | Category | Main |
 | Base | 3 |
+| Cost | 1 TT/Main |
 
 The Body (**B**) is a value that describes your overall physical prowess in terms of
 bodily strength, resilience to prolonged efforts, recovery speed, resistance to
@@ -111,9 +113,11 @@ functional body.
 ## Mind
 
 | <!-- --> | <!-- --> |
-|----------|------|
+|----------|---|
+| Callsign | M |
 | Category | Main |
 | Base | 3 |
+| Cost | 1 TT/Main |
 
 The Mind (**M**) is the overall score of mental abilities in terms of intelligence, 
 creativity, will power, mental sanity, depth of knowledge and so on. 
@@ -125,9 +129,11 @@ in the reference setting will have a mind between 9 and 12.
 ## Strength
 
 | <!-- --> | <!-- --> |
-|----------|---------|
+|----------|---|
+| Callsign | S |
 | Category | Primary |
 | Base | B |
+| Cost | 1 TT/Primary |
 
 Strength (**S**) is the attribute measuring a character physical strength. 
 In the default setting, it also indicates how much weight the character 
@@ -155,9 +161,11 @@ of it normal movement
 ## Dexterity
 
 | <!-- --> | <!-- --> |
-|----------|---------|
+|----------|---|
+| Callsign | D |
 | Category | Primary |
 | Base | B |
+| Cost | 1 TT/Primary |
 
 Dexterity (**D**) expresses the ability to control one’s own body.
 Eye-hand coordination, agility, reaction times and rapidity are all 
@@ -200,21 +208,34 @@ works in those contexts).
 ## Health
 
 | <!-- --> | <!-- --> |
-|----------|---------|
-| Category | Primary |
+|----------|---|
+| Callsign | H |
 | Base | B |
+| Category | Primary |
+| Cost | 1 TT/Primary |
 
 Health (**H**) represents the resistance to fatigue, illness and polluted 
 environment (including allergenic agents). It's used to determine how many
-injuries can be withstood before being incapacitated,
-and gives the base for all physical resistance skills.
+injuries can be withstood before being incapacitated, and gives the base for 
+all physical resistance skills.
+
+A normal character can sustain 10 + **H** **IP**s from physical sources before 
+becoming *incapacitated* and risk dying without an active intervention (e.g.
+having someone using the [stabilize](#stabilize) skill on them).
+
+Also, characters can ignore the **IP** penalty up to **mH**. For example,
+a character with *health* 17 (**mH** = 3) can ignore the first 3 penalties
+(at **IP** 6). If the character receives 16 **IP**s, it will suffer 
+(16-6)/2 = 5 points of penalty.
 
 ## Will
 
 | <!-- --> | <!-- --> |
-|----------|---------|
+|----------|---|
+| Callsign | W |
 | Category | Primary |
 | Base | M |
+| Cost | 1 TT/Primary |
 
 Will (**W**) is the power of the mind to focus on a certain task, 
 perform prolonged mental activity, keep determination in 
@@ -224,9 +245,11 @@ equivalent of the strength (**S**) in the mind realm.
 ## Intelligence
 
 | <!-- --> | <!-- --> |
-|----------|---------|
+|----------|---|
+| Callsign | I |
 | Category | Primary |
 | Base | M |
+| Cost | 1 TT/Primary |
 
 Intelligence (**I**) is the ability to understand and solve complex problems, 
 comprehend difficult study subjects, see through schemes and machinations 
@@ -236,9 +259,11 @@ as the dexterity (**D**) of the mind.
 ## Equilibrium
 
 | <!-- --> | <!-- --> |
-|----------|---------|
+|----------|---|
+| Callsign | E |
 | Category | Primary |
 | Base | M |
+| Cost | 1 TT/Primary |
 
 Equilibrium (**E**) is the stability of the mind, 
 or basically the equivalent of its health (**H**). It indicates 
@@ -248,6 +273,15 @@ to the mind instead of the body: fantasy, sci-fi and horror settings
 can present as many dangers for the mind as for the body, or more.
 
 Hence, it forms the base of all the mental resistance skills.
+
+A normal character can sustain 10 + **E** **IP**s from psychic sources before 
+becoming *incapacitated* and risk dying without an active intervention (e.g.
+having someone using the [stabilize](#stabilize) skill on them).
+
+Also, characters can ignore the **IP** penalty up to **mE**. For example,
+a character with *euqilibrium* 17 (**mE** = 3) can ignore the first 3 penalties
+(at **IP** 6). If the character receives 16 **IP**s, it will suffer 
+(16-6)/2 = 5 points of penalty.
 
 ## Checks
 
@@ -1302,10 +1336,14 @@ Some are based on multiple attributes: their base value can be a mean of two or
 more attributes, or can be the best out of alternative attributes.
 
 Some skills don’t have a base: they represent abilities that must be learned
-from scratch; for example lock picking must be learned before being used.
-
-Last, some skills have a base that depends on a base modifier; this is indicated
+from scratch; for example lock picking must be learned before being used. Others 
+have a base that depends on a base modifier; this is indicated
 with a lowercase letter 'm' in front of the attribute.
+
+Some skill require a using a certain [equipment]($RulebookAddress#equipment); non-standard
+equipment may provide advantages or penalties of various nature to performing some
+action. When relevant, the type of equipment required to use a certain skill is specified under the 
+**EC** (equipment category) entry; optional equipment is marked as **opt**.
 
 
 - [Acrobatics](#acrobatics)
@@ -1391,6 +1429,7 @@ When the check fails the character takes 1 damage point per feet.
 | Category | Skill/combat |
 | Specialization | combat style |
 | Cascade | Yes |
+| EC | Shields (opt) |
 | Cost | 1 TT/Hard |
 
 Once per combat turn, the character can mitigate incoming damage
@@ -1416,6 +1455,7 @@ active mitigations per turn.
 | Base | mD |
 | Category | Skill/combat |
 | Dominance | 4 |
+| EC | Bows, Crossbows |
 | Cost | 1 TT/Hard |
 
 This is the base style (and skill) needed to use bows, crossbows and similar projectile
@@ -1556,6 +1596,7 @@ the defendant will be actively engaged in the block.
 | Base | mS |
 | Category | Skill/combat |
 | Dominance | 1 |
+| EC | Hand Fight (opt) |
 | Cost | 1 TT/Normal |
 
 Brawl is the style of fight with bare hand and feet, without a specific
@@ -1948,6 +1989,7 @@ mechanical devices.
 | Base | mD |
 | Category | Skill/combat |
 | Dominance | 5 |
+| EC | Firearms |
 | Cost | 1 TT/Hard |
 
 This combat style is the bases for using firearms. In general, the weapon gives
@@ -2112,6 +2154,7 @@ If a cover is within movement range for the turn, the character can use this def
 | <!-- --> | <!-- --> |
 |----------|-------|
 | Category | Skill |
+| EC | First Aid Kit |
 | Cost | 1 TT/Normal |
 
 This skill can be used to perform the following actions:
@@ -2153,6 +2196,7 @@ to cure.
 | Category | Skill/combat |
 | Prerequisite | Brawl 4 |
 | Dominance | 3 |
+| EC | Hand Fight (opt) |
 | Cost | 1 TT/Hard |
 
 An advanced version and extension of Brawl. While still not being a full-fledged
@@ -2271,6 +2315,7 @@ and grounded targets.
 | Callsign | Hk |
 | Category | Skill |
 | Specialization | system |
+| EC | Rootkit (opt) |
 | Cost | 1 TT/Hard |
 
 When a character wants to hack a device or a system, it can roll on this to
@@ -2292,6 +2337,7 @@ identified, and they might require a separate hacking skill.
 | Callsign | Hl |
 | Category | Skill |
 | Prerequisite | First Aid 6 |
+| EC | First Aid Kit, Healing Kit (opt) |
 | Cost | 1 TT/Hard |
 
 The character has advanced practical medical knowledge for the setting
@@ -2434,6 +2480,7 @@ amount of clue. Particularly useful when visiting the scene of a crime.
 | Base | mD |
 | Category | Skill/combat |
 | Dominance | 3 |
+| EC | Knives |
 | Cost | 1 TT/Hard |
 
 Fighting with knives and very short swords has different mechanics than the ones used when wielding a longer blade. Basically, it’s like having a fist armed with a single fang.
@@ -2644,6 +2691,7 @@ information the character has about the truth.
 |----------|----|
 | Callsign | lp |
 | Category | Skill |
+| EC | Lock Picks |
 | Cost | 1 TT/Normal |
 
 Used to try opening normal locks. The lock must be within the 
@@ -2753,6 +2801,7 @@ To produce one successfully, they must pass a *hard* check.
 | Callsign | Rep |
 | Category | Skill |
 | Specialization | machinery type |
+| EC | Repair Kit |
 | Cost | 1 TT/Normal |
 
 This skill is used to fix machineries, magic constructs, AI, and in general
@@ -2829,6 +2878,7 @@ It can also be used to check if a character is able to run for a long time.
 |------|----|
 | Base | mD |
 | Category | Skill/combat |
+| EC | Projectiles |
 | Cost | 1 TT/Normal |
 
 Shoot with a projectile weapon while not being specifically skilled to do so.
@@ -2864,6 +2914,7 @@ following table describes possible modifiers:
 | Base | mS |
 | Callsign |  |
 | Category | Skill/combat |
+| EC | Blades, Maces |
 | Cost | 1 TT/Easy |
 
 A generic combat maneuver that can be used with any weapon, 
@@ -2901,6 +2952,7 @@ critical failure causes the character to die immediately.
 | Base | mS or mD |
 | Category | Skill/combat |
 | Dominance | 4 |
+| EC | Swords, Maces |
 | Cost | 1 TT/Hard |
 
 Swordfight is the simplest discipline for handling traditional melee weapons.
@@ -3055,6 +3107,7 @@ two handed weapons (including swords).
 |------|----|
 | Base | mD |
 | Category | Skill/combat |
+| EC | Throwable (opt) |
 | Cost | 1 TT/Hard |
 
 This attack consists in throwing a heavy object to an enemy in range.
@@ -3076,6 +3129,7 @@ A critical success applies also the stun condition for 1 turn.
 |------|----|
 | Base | mD |
 | Category | Skill/combat |
+| EC | Blades |
 | Cost | 1 TT/Normal |
 
 A generic maneuver performed with any pointed or cutting weapon,
@@ -3095,6 +3149,7 @@ In combat, a normal **CFR** is attempted against the opponent's defense.
 | Category | Skill |
 | Specialization | race type |
 | Prerequisite | Healing 3 |
+| EC | Healing Kit (opt) |
 | Cost | 1 TT/Hard |
 
 The character has advanced practical medical knowledge for the setting
@@ -3175,6 +3230,86 @@ detected and disarmed. Once a trap is discovered (either through
 this skill or by other means), the character might
 attempt a separate check on Traps at easy difficulty to determine
 its modifier prior attempting to disarm it.
+
+# Equipment
+
+The Foundation provides only a reference frame with very basic equipment that may
+be generally used in simple adventures, while other settings shall introduce more
+specific equipment. 
+
+For more detail read the [equipment]($RulebookAddress#equipment) section of the Rulebook.
+
+## Adventuring Equipment
+
+Adventuring equipment is the equipment used in non-combat skills.
+
+| Weapon Type          | Modifier   | Weight |     EC                 | Cost     |
+|--------------------  |------------|-------:|:----------------------:|---------:|
+| First Aid            | -          | 1      | First Aid Kit          | 20$      |
+| Improved First Aid   | +1 PT      | 4      | First Aid Kit          | 400$     |
+| Portable ER          | +2 PT      | 8      | First Aid, Healing Kit | 1000$    |
+| Medikit              | Expertise  | 12     | First Aid, Healing Kit | 5000$    |
+| Net Tools            | +1 PT      | -      | Rootkit                | 100$     |
+| Penetration Kit      | Expertise  | -      | Rootkit                | 1000$    |
+| Lock Picks           | -          | -      | Lock Picks             | 10$      |
+| Improved Lock Picks  | +1 PT      | -      | Lock Picks             | 100$     |
+| Prof. Lock Picks     | +2 PT      | -      | Lock Picks             | 400$     |
+| Repair Set           | -          | -      | Repair Kit             | 80$      |
+| Workshop Set         | +2 PT      | -      | Repair Kit             | 500$     |
+
+## Armours
+
+Armours provide damage mitigation against some specific damage types. Naturally, the damage mitigation applies to the part of the body where the armour is applied.
+The following table is a generic guide that indicates the type of material of which armours are built, their approximate weight  in pounds, the cut, blunt and piercing damage mitigation and an approximate cost. The weight refer to the material applied to a body armour; to get the weight of arm and leg armour divide by half, and for an helmet divide by four.
+
+| Material Type      | Weight       | Cut          | Blunt        | Piercing     | Cost        |
+|:-------------------|-------------:|-------------:|-------------:|-------------:|------------:|
+| Heavy Garment (1)  | 2            | 1            | 0            | 1            | 200$        |
+| Kevlar             | 2            | 5            | 3            | 6            | 800$        |
+| Bullet-proof Armor | 12           | 6            | 4            | 7            | 500$        |
+| Meta-material (2)  | 6            | 4            | 6            | 3            | 1200$       |
+| Energy Shielding (3) | 0          | 6            | 7            | 5            | 4000$       |
+| Leather            | 8            | 3            | 1            | 2            | 40$         |
+| Ring Mail          | 10           | 3            | 2            | 1            | 80$         |
+| Chain Mail         | 14           | 3            | 1            | 2            | 150$        |
+| Scale Mail         | 15           | 4            | 2            | 3            | 400$        |
+| Thin Plate (4)     | 18           | 5            | 3            | 4            | 600$        |
+| Heavy Plate        | 24           | 6            | 4            | 5            | 800$        | 
+
+(1) Normal clothing doesn’t provide any mitigation, but heavy, multi-layer garment (i.e. overcoat, jacket, gilet, shirt and underwear) do.
+(2) Gel-like material reactive to sudden shock.
+(3) Just indicative; can be anything, depending on the technology. 
+(4) Includes military metal helmets.
+
+## Weapons
+
+Weapons are either used unskillfully, using any one of the Generic Combat Skills, or through the appropriate combat style. The default damage (and often, damage type) caused by the weapon is already accounted for in the combat style; for example, Firearms/shoot causes a higher damage than Brawl/punch because guns are more lethal than bare hands.
+However, some special weapon (i.e. magic swords, experimental rifles etc.) might give their wielder a modifier either to the attack or defense rolls, or solely to the damage caused once a hit is scored.
+In the following table, the weight is the typical weight of for the given type of weapon, the range either the throwing distance or the range of the projectiles, in feet, and the cost is an indicative cost for a normal weapon of that kind.
+
+| Weapon Type          | Modifier   | Weight | Range  |     EC                 | Cost     |
+|--------------------  |------------|-------:|-------:|:----------------------:|---------:|
+| Knife                | -          | 1      | 10     | Knives, Blades         | 20$      |
+| Sword                | -          | 3      | -      | Swords, Blades         | 400$     |
+| Mace                 | -          | 6      | -      | Maces                  | 100$     |
+| Iron Fist            | +1 Dom     | 1      | -      | Hand Fight             | 20$      |
+| Gauntlet             | +2 Dom     | 4      | -      | Hand Fight             | 200$     |
+| Throwing Knife       | +1 Dom     | 0.2    | 18     | Throwing               | 5$       |
+| War Hammer (*)       | +1 Dom     | 12     | -      | Maces                  | 300$     |
+| Two Handed Sword (*) | -          | 8      | -      | Swords                 | 600$     |
+| Shield               | +1 PT      | 6      | -      | Shields                | 80$      |
+| Large Shield         | Expertise  | 12     | -      | Shields                | 600$     |
+| Pistol (revolver)    | -          | 1      | 60     | Firearms, Projectile   | 600$     |
+| Pistol (semi-auto)   | +1 Dom     | 1      | 60     | Firearms, Projectile   | 800$     |
+| Rifle                | +2 Dom     | 4      | 90     | Firearms, Projectile   | 1200$    |
+| Sniper’s rifle       | +1 Dom     | 6      | 200    | Firearms, Precision    | 1800$    |
+| Short Bow            | -          | 1      | 30     | Bows                   | 40$      |
+| Bow                  | -          | 1      | 45     | Bows                   | 80$      |
+| Long Bow             | +1 Dom     | 2      | 60     | Bows                   | 120$     |
+| Crossbow             | -          | 2      | 40     | Bows, Projectile       | 150$     |
+| Heavy Crossbow       | +1 Dom     | 4      | 60     | Bows, Projectile       | 200$     |
+
+(*) Two handed weapons.
 
 # Combat
 

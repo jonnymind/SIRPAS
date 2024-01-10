@@ -7,6 +7,7 @@
   "Base": "mS",
   "Category": "Skill/combat",
   "Dominance": "1",
+  "EC": "Hand Fight (opt)",
   "Cost": "1 TT/Normal"
 }
 

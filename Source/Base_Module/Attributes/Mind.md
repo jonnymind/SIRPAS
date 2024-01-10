@@ -4,9 +4,10 @@
 { 
   "*Name": "Mind",
   "*Brief": "Overall mental build-up",
-  "*Abbrev": "M",
+  "Callsign": "M",
   "Category": "Main",
-  "Base": "3"
+  "Base": "3",
+  "Cost": "1 TT/Main"
 }
 
 The Mind (**M**) is the overall score of mental abilities in terms of intelligence, 
