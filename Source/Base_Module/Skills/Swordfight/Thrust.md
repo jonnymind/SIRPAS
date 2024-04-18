@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Swordfight 2",
-	"DR": "-1",
+	"ACR": "1 **Stm**",
 	"Limitation": "Swords",
 	"Damage": "__SM__+6"
 }

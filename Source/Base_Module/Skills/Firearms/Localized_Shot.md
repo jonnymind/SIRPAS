@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "Variable",
 	"Prereq": "Firearms 4",
-	"DR": "-2",
+	"ACR": "1 **Fcs**",
 	"Damage": "__SM__+4",
 	"Condition": "__(Cripple)__"
 }

@@ -1,8 +1,10 @@
 #### Crouch
 
 @(dd cm_full_contact_crouch)
-{ "Type": "Action",
-	"Prereq": "Full Contact 3"
+{ 
+	"Type": "Action",
+	"Prereq": "Full Contact 3",
+	"ACR": "1 **Stm**"
 }
 
 The character loads the next attack, receiving a **DP** modifier equal

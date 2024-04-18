@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Full Contact 1",
-	"DR": "-2",
+	"ACR": "1 **Stm**",
 	"Damage": "__SM__+3"
 }
 

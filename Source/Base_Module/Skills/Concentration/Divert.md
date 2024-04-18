@@ -1,10 +1,11 @@
 #### Divert
 
 @(dd cm_concentration_divert)
-{ "Type": "Defense",
+{ "
+	Type": "Defense",
 	"Modifier": "mI",
 	"Prereq": "Concentration 1",
-	"DR": "-1"
+	"ACR": "1 **Fcs**"
 }
 
 The defendant diverts the attention of the attacker on an irrelevant

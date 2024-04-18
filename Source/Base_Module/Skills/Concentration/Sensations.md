@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "-1",
 	"Prereq": "Concentration 4",
-	"DR": "-1",
+	"ACR": "2 **Fcs**",
 	"Damage Type": "Confusion",
 	"Damage": "__SM__+*mW*",
 	"Condition": "__(Stun 2)__"

@@ -1,7 +1,8 @@
 #### Overload
 
 @(dd cm_archery_overload)
-{ "Type": "Action",
+{ 
+	"Type": "Action",
 	"Prereq": "Archery 9"
 }
 

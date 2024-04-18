@@ -1,10 +1,11 @@
 #### Smash
 
 @(dd cm_brawl_smash)
-{ "Type": "Attack",
+{ 
+	"Type": "Attack",
 	"Modifier": "mS",
 	"Prereq": "Brawl 6",
-	"DR": "-1",
+	"ACR": "3 **Stm**",
 	"Damage": "__SM__-2",
 	"Condition": "__Grounded__"
 }

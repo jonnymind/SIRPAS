@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "-3",
 	"Prereq": "Knife Fight 6",
-	"DR": "-2",
+	"ACR": "4 **Stm**",
 	"Damage": "__SM__+8"
 }
 

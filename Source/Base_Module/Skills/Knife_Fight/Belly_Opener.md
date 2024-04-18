@@ -4,8 +4,8 @@
 { "Type": "Attack",
 	"Modifier": "-1",
 	"Prereq": "Knife Fight 3",
-	"DR": "-2",
-	"Damage": "__SM__+5"
+	"ACR": "3 **Stm**",
+	"Damage": "+5"
 }
 
 Swing the blade in an upward strike, aiming at the lower part of the opponent

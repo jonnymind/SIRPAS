@@ -4,7 +4,7 @@
 { "Type": "Defense",
 	"Modifier": "mS",
 	"Prereq": "Brawl 1",
-	"DR": "-1"
+	"ACR": "1"
 }
 
 Block an incoming blow with the lower part of the arms (similar to the guard

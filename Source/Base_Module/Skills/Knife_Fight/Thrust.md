@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Knife Fight 1",
-	"DR": "-1",
+	"ACR": "1 **Stm**",
 	"Damage": "__SM__+4",
 	"Condition": "(__Cripple__)"
 }

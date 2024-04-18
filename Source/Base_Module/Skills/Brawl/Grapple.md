@@ -3,7 +3,7 @@
 @(dd cm_brawl_grapple)
 { "Type": "Attack",
 	"Prereq": "Brawl 8",
-	"DR": "-1",
+	"ACR": "3 **Stm**",
 	"Condition": "__Block__"
 }
 

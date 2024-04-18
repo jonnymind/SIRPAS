@@ -4,7 +4,7 @@
 { "Type": "Action",
 	"Modifier": "mS-2",
 	"Prereq": "Archery 6",
-	"DR": "-1",
+	"ACR": "3 **Stm**",
 	"Limitation": "Bows"
 }
 

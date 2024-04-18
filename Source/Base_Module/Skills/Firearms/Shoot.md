@@ -1,9 +1,10 @@
 #### Shoot
 
 @(dd cm_firearm_shot)
-{ "Type": "Attack",
+{ 
+	"Type": "Attack",
 	"Prereq": "Firearms 1",
-	"Damage": "__SM__+7"
+	"ACR": "0"
 }
 
 Normal base attack with firearms.

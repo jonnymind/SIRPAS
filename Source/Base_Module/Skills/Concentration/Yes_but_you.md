@@ -5,7 +5,7 @@
 { "Type": "Defense",
 	"Modifier": "mI",
 	"Prereq": "Concentration 6",
-	"DR": "-1",
+	"ACR": "2 **Fcs**",
 	"Damage Type": "Despair",
 	"Damage": "__SM__-2"
 }

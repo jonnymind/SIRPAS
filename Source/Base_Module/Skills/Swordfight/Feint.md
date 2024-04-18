@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "-3",
 	"Prereq": "Swordfight 6",
-	"DR": "-2"
+	"ACR": "2 **Stm**"
 }
 
 Uses an attack that will not deliver damage on success,

@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "mW",
 	"Prereq": "Concentration 1",
-	"DR": "-1",
+	"ACR": "2 **Fcs**",
 	"Damage Type": "Despair",
 	"Damage": "__SM__+mW",
 	"Condition": "__(Stun 2)__"

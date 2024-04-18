@@ -4,7 +4,7 @@
 { "Type": "Defense",
 	"Modifier": "mD-2",
 	"Prereq": "Full Contact 3",
-	"DR": "-2",
+	"ACR": "2 **Stm**",
 	"Damage": "__SM__-1",
 	"Condition": "__(Stun 2)__"
 }

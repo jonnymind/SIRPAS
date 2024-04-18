@@ -15,21 +15,14 @@ when defending.
 
 Maneuvers are divided into _attacks_, _defenses_ and _actions_. Attacks and
 defenses represent a mores specific usages of the base combat skill as
-per the _base combat_ rules; _actions_ are
-other ways a combat skill can be employed.
+per the _base combat_ rules; _actions_ are other ways a combat skill can be employed.
 
-### Maneuver modifier
+### Maneuver Cost and Combat Resource
 
-Some maneuvers are more difficult than others; some rely on brute force, others
-on finesse of execution. To reflect this, each maneuver can offer different
-modifiers to the various combat skill rolls.
+Each maneuver requires to spend a certain amount of **Advanced Combat Resources** (**ACR**) to be
+successfully performed. The pool of ACR depends on the **Main** attribute on which the combat type
+relies on (physical, mental, magical etc.), and is replenished at the end of the combat.
 
-### Diminishing Returns
-
-Some maneuvers get a negative modifier if being used repeatedly against the same
-target. For example, repeating using a brawl/punch has diminishing returns: your
-opponent will read your move, and will be able to better defend against the same
-attack. In those situations, you’ll want to be less predictable, and use other
-maneuvers, or other styles altogether.
-
-This factor is called __diminishing return__ (**DR**) for a certain maneuver.
+Once the pool is depleted, the character can perform only the basic maneuvers of the given combat style,
+which has a cost of 0 **ACR**, and usually consists of the same basic action that could be performed in the
+base combat.

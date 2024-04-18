@@ -14,7 +14,7 @@
 This is the base style (and skill) needed to use bows, crossbows and similar projectile
 weapons.
 
-Unless differently specified, all attacks from *archery* deal __cut__ damage,
+Unless differently specified, all attacks from *archery* deal __pierce__ damage,
 and the range depends on the used weapon.
 
 ### Advanced Combat 

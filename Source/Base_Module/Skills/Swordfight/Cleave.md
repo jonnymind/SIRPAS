@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "mS",
 	"Prereq": "Swordfight 1",
-	"DR": "-1",
+	"ACR": "3 **Stm**",
 	"Damage": "__SM__+6",
 	"Condition": "(__Stun 2__)"
 }

@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "mI",
 	"Prereq": "Concentration 1",
-	"DR": "-1",
+	"ACR": "0",
 	"Damage Type": "Maddening",
 	"Damage": "__SM__+mI"
 }

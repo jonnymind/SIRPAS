@@ -3,7 +3,8 @@
 @(dd archery_aim)
 { 
 	"Type": "Action",
-	"Prereq": "Archery 3"
+	"Prereq": "Archery 3",
+	"ACR": "1 **Fcs**"
 }
 
 Take a maneuver to improve the next attack, giving it a modifier of +1.

@@ -5,7 +5,7 @@
 	"Type": "Attack",
 	"Modifier": "Variable",
 	"Prereq": "Archery 5",
-	"DR": "-1",
+	"ACR": "3 **Fcs**",
 	"Damage": "__SM__+1",
 	"Condition": "(__Cripple__)"
 }

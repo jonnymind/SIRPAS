@@ -6,7 +6,7 @@
   "*Brief": "Fistfight and and basic melee fighting skill",
   "Base": "mS",
   "Category": "Skill/combat",
-  "Dominance": "1",
+  "Dominance": "0",
   "EC": "Hand Fight (opt)",
   "Cost": "1 TT/Normal"
 }

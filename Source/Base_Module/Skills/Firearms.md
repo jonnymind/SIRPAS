@@ -25,6 +25,9 @@ anyone, but most maneuvers have a relatively high pre-requisite.
 
 ### Advanced Combat
 
+The Advanced Combat Cost of Firearm maneuvers is expressed in Focus (**Fcs**). 
+A sharp mind is required to be a good sharpshooter.
+
 The number of maneuvers the character can use per round depends on the level of
 Firearms:
 

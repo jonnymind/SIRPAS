@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "+2",
 	"Prereq": "Firearms 6",
-	"DR": "-1",
+	"ACR": "3 **Fcs**",
 	"Range": "Melee",
 	"Damage": "__SM__+10",
 	"Condition": "__(Deadly)__"

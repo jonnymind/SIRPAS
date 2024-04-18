@@ -1,8 +1,10 @@
 #### Aim
 
 @(dd cm_firearm_aimed_shot)
-{ "Type": "Action",
-	"Prereq": "Firearms 3"
+{ 
+	"Type": "Action",
+	"Prereq": "Firearms 3",
+	"ACR": "1 **Fcs**"
 }
 
 Take a maneuver to improve the next attack, giving it a

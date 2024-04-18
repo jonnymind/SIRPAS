@@ -1,20 +1,17 @@
 #### Mind Grasp
 #
 @(dd cm_concentration_mind_grasp)
-{ "Type": "Attack",
+{ 
+	"Type": "Attack",
 	"Modifier": "mI",
 	"Prereq": "Concentration 6",
-	"DR": "-1",
+	"ACR": "3 **Fcs**",
 	"Condition": "__Blocked__"
 }
 
 The character tries to acquire the control of the defendant mind. On success,
 the defendant is unable to act (blocked). To keep holding the target, the attacker
-must continue to use this attack with + 3 modifier against it at each turn. When
-this maneuver is used against a blocked target, diminishing return is not
-applied on either side.
+must continue to use this attack with + 3 modifier against it at each turn. 
 
-The attacker must keep using this attack once per turn and can’t move or perform
-any other action.
-
-If the attacker receives any damage, the concentration is broken.
+The attacker must maintain its **concentration** to keep the target blocked. Only
+one target can be blocked at a time.
