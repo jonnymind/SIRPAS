@@ -4,7 +4,7 @@
 { "Type": "Defense",
 	"Modifier": "mD",
 	"Prereq": "Knife Fight 1",
-	"DR": "-1"
+	"ACR": "3 **Stm**"
 }
 
 Try and evade an attack.

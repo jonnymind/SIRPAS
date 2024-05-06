@@ -4,7 +4,7 @@
 { "Type": "Defense",
 	"Modifier": "mS",
 	"Prereq": "Swordfight 1",
-	"DR": "-1"
+	"ACR": "0"
 }
 
 A basic defense; the character intercept the opponent’s blow with

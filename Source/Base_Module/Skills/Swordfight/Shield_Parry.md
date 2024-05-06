@@ -4,7 +4,7 @@
 { "Type": "Defense",
 	"Modifier": "mS+3",
 	"Prereq": "Swordfight 2",
-	"ACR": "1 **Fcr**",
+	"ACR": "1 **Stm**",
 	"Limitation": "Shield"
 }
 

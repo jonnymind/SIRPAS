@@ -4,7 +4,7 @@
 { "Type": "Defense",
 	"Modifier": "mD",
 	"Prereq": "Swordfight 6",
-	"DR": "-1",
+	"ACR": "0",
 	"Range": "30 ft",
 	"Limitation": "Shield"
 }

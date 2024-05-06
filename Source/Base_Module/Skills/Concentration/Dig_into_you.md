@@ -1,7 +1,8 @@
 #### Dig into you
 
 @(dd cm_concentration_dig_into_you)
-{ "Type": "Attack",
+{ 
+	"Type": "Attack",
 	"Modifier": "mW",
 	"Prereq": "Concentration 1",
 	"ACR": "2 **Fcs**",

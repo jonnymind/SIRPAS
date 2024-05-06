@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "mD",
 	"Prereq": "Knife Fight 2",
-	"DR": "-2"
+	"ACR": "1 **Stm**"
 }
 
 Use a maneuver to confuse the opponent and gain a +4 modifier on the next

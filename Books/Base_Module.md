@@ -1461,7 +1461,7 @@ active mitigations per turn.
 This is the base style (and skill) needed to use bows, crossbows and similar projectile
 weapons.
 
-Unless differently specified, all attacks from *archery* deal __cut__ damage,
+Unless differently specified, all attacks from *archery* deal __pierce__ damage,
 and the range depends on the used weapon.
 
 ### Advanced Combat 
@@ -1480,6 +1480,7 @@ This is the number of maneuvers granted by archery in advanced combat system.
 |------|--------|
 | Type | Action |
 | Prereq | Archery 3 |
+| ACR | 1 **Fcs** |
 
 Take a maneuver to improve the next attack, giving it a modifier of +1.
 It can be repeated any number of times within a single turn, but the
@@ -1492,7 +1493,7 @@ modifier is applied only to the very next Shoot.
 | Type | Attack |
 | Modifier | Variable |
 | Prereq | Archery 5 |
-| DR | -1 |
+| ACR | 3 **Fcs** |
 | Damage | __SM__+1 |
 | Condition | (__Cripple__) |
 
@@ -1525,7 +1526,7 @@ The modifier to be applied depends on the target part of the body:
 | Type | Action |
 | Modifier | mS-2 |
 | Prereq | Archery 6 |
-| DR | -1 |
+| ACR | 3 **Stm** |
 | Limitation | Bows |
 
 Take a maneuver to bend the bow more than normal in order to improve
@@ -1556,7 +1557,7 @@ you don’t want to lose the attack.
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Archery 1 |
-| Damage | __SM__+4 |
+| ACR | 0 |
 
 Loads and shoot an arrow or a bolt.
 
@@ -1595,7 +1596,7 @@ the defendant will be actively engaged in the block.
 |------|----|
 | Base | mS |
 | Category | Skill/combat |
-| Dominance | 1 |
+| Dominance | 0 |
 | EC | Hand Fight (opt) |
 | Cost | 1 TT/Normal |
 
@@ -1627,7 +1628,7 @@ the level of brawl:
 | Type | Defense |
 | Modifier | mS |
 | Prereq | Brawl 1 |
-| DR | -1 |
+| ACR | 1 |
 
 Block an incoming blow with the lower part of the arms (similar to the guard
 in a boxe match).
@@ -1644,7 +1645,7 @@ a sword or a mace.
 | Type | Defense |
 | Modifier | mD |
 | Prereq | Brawl 1 |
-| DR | -1 |
+| ACR | 0 |
 
 Try and evade an attack moving the body out of the way of the incoming hit.
 
@@ -1654,7 +1655,7 @@ Try and evade an attack moving the body out of the way of the incoming hit.
 |------|--------|
 | Type | Attack |
 | Prereq | Brawl 8 |
-| DR | -1 |
+| ACR | 3 **Stm** |
 | Condition | __Block__ |
 
 The character tries to grab and control the opponent. Effective only against
@@ -1673,12 +1674,12 @@ on either side.
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Brawl 1 |
-| DR | -1 |
+| ACR | 1 **Stm** |
 | Damage | __SM__+mD |
 | Condition | __(Stun 2)__ |
 
 The character attacks with a kick, causing a damage equal its dexterity plus the success margin.
-Gets a +2 modifier on small creatures (less half the size of the attacker) and grounded  targets.
+Gets a +2 modifier on small creatures (less half the size of the attacker) and grounded targets.
 On critical success, it stuns the target for 2 turns.
 
 #### Punch
@@ -1688,8 +1689,7 @@ On critical success, it stuns the target for 2 turns.
 | Type | Attack |
 | Modifier | mS |
 | Prereq | Brawl 1 |
-| DR | -1 |
-| Damage | __SM__+mS |
+| ACR | 0 |
 | Condition | __(Stun 2)__ |
 
 Attacks with a direct punch. A critical success stuns the target for 2 turns.
@@ -1702,7 +1702,7 @@ Receives a -2 modifier against targets larger than the attacker.
 | Type | Attack |
 | Modifier | mS |
 | Prereq | Brawl 6 |
-| DR | -1 |
+| ACR | 3 **Stm** |
 | Damage | __SM__-2 |
 | Condition | __Grounded__ |
 
@@ -1802,7 +1802,7 @@ of Concentration:
 | Type | Attack |
 | Modifier | mI |
 | Prereq | Concentration 1 |
-| DR | -1 |
+| ACR | 0 |
 | Damage Type | Maddening |
 | Damage | __SM__+mI |
 
@@ -1816,7 +1816,7 @@ in order to cause maddening.
 | Type | Defense |
 | Modifier | mW |
 | Prereq | Concentration 1 |
-| DR | -1 |
+| ACR | 0 |
 
 The character raises a mental barrier in order to block an incoming attack.
 
@@ -1827,7 +1827,7 @@ The character raises a mental barrier in order to block an incoming attack.
 | Type | Attack |
 | Modifier | mW |
 | Prereq | Concentration 1 |
-| DR | -1 |
+| ACR | 2 **Fcs** |
 | Damage Type | Despair |
 | Damage | __SM__+mW |
 | Condition | __(Stun 2)__ |
@@ -1841,7 +1841,7 @@ The character attacks by searching for painful memories and thoughts, in order t
 | Type | Defense |
 | Modifier | mI |
 | Prereq | Concentration 1 |
-| DR | -1 |
+| ACR | 1 **Fcs** |
 
 The defendant diverts the attention of the attacker on an irrelevant
 thought or memory, causing the attack to miss.
@@ -1853,19 +1853,15 @@ thought or memory, causing the attack to miss.
 | Type | Attack |
 | Modifier | mI |
 | Prereq | Concentration 6 |
-| DR | -1 |
+| ACR | 3 **Fcs** |
 | Condition | __Blocked__ |
 
 The character tries to acquire the control of the defendant mind. On success,
 the defendant is unable to act (blocked). To keep holding the target, the attacker
-must continue to use this attack with + 3 modifier against it at each turn. When
-this maneuver is used against a blocked target, diminishing return is not
-applied on either side.
+must continue to use this attack with + 3 modifier against it at each turn. 
 
-The attacker must keep using this attack once per turn and can’t move or perform
-any other action.
-
-If the attacker receives any damage, the concentration is broken.
+The attacker must maintain its **concentration** to keep the target blocked. Only
+one target can be blocked at a time.
 
 #### Sensations
 
@@ -1874,7 +1870,7 @@ If the attacker receives any damage, the concentration is broken.
 | Type | Attack |
 | Modifier | -1 |
 | Prereq | Concentration 4 |
-| DR | -1 |
+| ACR | 2 **Fcs** |
 | Damage Type | Confusion |
 | Damage | __SM__+*mW* |
 | Condition | __(Stun 2)__ |
@@ -1890,7 +1886,7 @@ On critical success, the target is stunned for 2 turn.
 | Type | Defense |
 | Modifier | mI |
 | Prereq | Concentration 6 |
-| DR | -1 |
+| ACR | 2 **Fcs** |
 | Damage Type | Despair |
 | Damage | __SM__-2 |
 
@@ -2006,6 +2002,9 @@ anyone, but most maneuvers have a relatively high pre-requisite.
 
 ### Advanced Combat
 
+The Advanced Combat Cost of Firearm maneuvers is expressed in Focus (**Fcs**). 
+A sharp mind is required to be a good sharpshooter.
+
 The number of maneuvers the character can use per round depends on the level of
 Firearms:
 
@@ -2022,6 +2021,7 @@ Firearms:
 |------|--------|
 | Type | Action |
 | Prereq | Firearms 3 |
+| ACR | 1 **Fcs** |
 
 Take a maneuver to improve the next attack, giving it a
 modifier of +1. It can be repeated any number of times within a 
@@ -2038,7 +2038,7 @@ action will discard the modifiers achieved.
 | Type | Attack |
 | Modifier | -3 |
 | Prereq | Firearms 6 |
-| DR | -2 |
+| ACR | 4 **Fcs** |
 | Damage | __SM__+9 |
 | Condition | __Injury__ |
 
@@ -2053,6 +2053,7 @@ heavy and heavy wounds becomes deadly.
 | Type | Defense |
 | Modifier | mD |
 | Prereq | Firearms 2 |
+| ACR | 0 |
 
 Duck or evade while holding the firearm to avoid incoming fire.
 
@@ -2062,6 +2063,7 @@ Duck or evade while holding the firearm to avoid incoming fire.
 |------|---------|
 | Type | Actions |
 | Prereq | Firearms 4 |
+| ACR | 1 **Fcs** |
 
 Ability to reload the weapon in the heat of the combat, using a
 maneuver.
@@ -2073,7 +2075,7 @@ maneuver.
 | Type | Attack |
 | Modifier | Variable |
 | Prereq | Firearms 4 |
-| DR | -2 |
+| ACR | 1 **Fcs** |
 | Damage | __SM__+4 |
 | Condition | __(Cripple)__ |
 
@@ -2106,7 +2108,7 @@ The modifier to be applied depends on the target part of the body:
 | Type | Attack |
 | Modifier | +2 |
 | Prereq | Firearms 6 |
-| DR | -1 |
+| ACR | 3 **Fcs** |
 | Range | Melee |
 | Damage | __SM__+10 |
 | Condition | __(Deadly)__ |
@@ -2121,7 +2123,7 @@ On critical success it causes a deadly wound.
 | Type | Attack |
 | Modifier | -3 |
 | Prereq | Firearms 9 |
-| DR | -3 |
+| ACR | 2 **Fcs** |
 | Range | 15 ft |
 | Damage | __SM__+3 |
 
@@ -2134,7 +2136,7 @@ damage. Can be used with pistols only.
 |------|--------|
 | Type | Attack |
 | Prereq | Firearms 1 |
-| Damage | __SM__+7 |
+| ACR | 0 |
 
 Normal base attack with firearms.
 
@@ -2145,9 +2147,10 @@ Normal base attack with firearms.
 | Type | Defense |
 | Modifier | +3 |
 | Prereq | Firearms 3 |
-| DR | -2 |
+| ACR | 2 **Fcs** |
 
-If a cover is within movement range for the turn, the character can use this defense to run towards a covered position, with a fixed +3 modifier.
+If a cover is within movement range for the turn, the character can use this defense 
+to run towards a covered position, with a fixed +3 modifier.
 
 ## First Aid
 
@@ -2233,7 +2236,7 @@ chose from either Full Contact or Brawl, plus one from Full Contact only.
 | Type | Defense |
 | Modifier | mS-2 |
 | Prereq | Full Contact 3 |
-| DR | -2 |
+| ACR | 2 **Stm** |
 | Damage | __SM__-1 |
 | Condition | __(Stun 2)__ |
 
@@ -2252,7 +2255,7 @@ Ineffective against non-melee and animal attacks.
 | Type | Defense |
 | Modifier | mD-2 |
 | Prereq | Full Contact 3 |
-| DR | -2 |
+| ACR | 2 **Stm** |
 | Damage | __SM__-1 |
 | Condition | __(Stun 2)__ |
 
@@ -2269,6 +2272,7 @@ Ineffective against non-melee and animal attacks.
 |------|--------|
 | Type | Action |
 | Prereq | Full Contact 3 |
+| ACR | 1 **Stm** |
 
 The character loads the next attack, receiving a **DP** modifier equal
 to the success margin to be used in the very next attack in Brawl
@@ -2284,7 +2288,7 @@ the modifier is lost.
 | Type | Attack |
 | Modifier | mS |
 | Prereq | Full Contact 1 |
-| DR | -2 |
+| ACR | 2 **Stm** |
 | Damage | __SM__+2 |
 | Condition | __(Stun 2)__ |
 
@@ -2298,7 +2302,7 @@ plus its success margin, and a modifier of +2.
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Full Contact 1 |
-| DR | -2 |
+| ACR | 1 **Stm** |
 | Damage | __SM__+3 |
 
 The character attacks with its knee, causing a damage equal to its dexterity,
@@ -2507,7 +2511,7 @@ The number of maneuvers the character can use per round depends on the level of 
 | Type | Attack |
 | Modifier | mD-2 |
 | Prereq | Knife Fight 6 |
-| DR | -2 |
+| ACR | 2 **Stm** |
 | Damage | __SM__+6 |
 | Condition | (__Deadly__) |
 
@@ -2523,7 +2527,7 @@ wound_.
 | Type | Defense |
 | Modifier | mD |
 | Prereq | Knife Fight 1 |
-| DR | -1 |
+| ACR | 0 |
 
 Skip back, trying to get out of the range of a melee attack.
 
@@ -2534,8 +2538,8 @@ Skip back, trying to get out of the range of a melee attack.
 | Type | Attack |
 | Modifier | -1 |
 | Prereq | Knife Fight 3 |
-| DR | -2 |
-| Damage | __SM__+5 |
+| ACR | 4 **Stm** |
+| Damage | +5 |
 
 Swing the blade in an upward strike, aiming at the lower part of the opponent
 body.
@@ -2547,7 +2551,7 @@ body.
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Knife Fight 2 |
-| DR | -2 |
+| ACR | 1 **Stm** |
 
 Use a maneuver to confuse the opponent and gain a +4 modifier on the next
 attack.
@@ -2562,8 +2566,8 @@ suffer the standard penalty.
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Knife Fight 2 |
-| DR | -2 |
-| Damage | __SM__+4 |
+| ACR | 3 **Stm** |
+| Damage | +4 |
 
 Swing the blade in a downward strike, aiming at the upper part of the
 opponent body.
@@ -2575,7 +2579,7 @@ opponent body.
 | Type | Defense |
 | Modifier | mD |
 | Prereq | Knife Fight 1 |
-| DR | -1 |
+| ACR | 3 **Stm** |
 
 Try and evade an attack.
 
@@ -2586,7 +2590,7 @@ Try and evade an attack.
 | Type | Attack |
 | Modifier | +3 |
 | Prereq | Knife Fight 3 |
-| DR | -2 |
+| ACR | 1 **Stm** |
 
 Fake an attack, without actually completing it. On success it doesn’t
 deal damage, but gives a **DP** modifier on the next move equal to
@@ -2599,7 +2603,7 @@ the success margin.
 | Type | Defense |
 | Modifier | mD-2 |
 | Prereq | Knife Fight 4 |
-| DR | -2 |
+| ACR | 3 **Stm** |
 | Damage | __SM__-2 |
 | Condition | (__Disarm__) |
 
@@ -2617,7 +2621,7 @@ weapon.
 | Type | Attack |
 | Modifier | -3 |
 | Prereq | Knife Fight 6 |
-| DR | -2 |
+| ACR | 4 **Stm** |
 | Damage | __SM__+8 |
 
 The character bend on its legs and springs forward, thrusting the blade towards
@@ -2631,7 +2635,7 @@ damage.
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Knife Fight 1 |
-| DR | -1 |
+| ACR | 1 **Stm** |
 | Damage | __SM__+1 |
 | Condition | (__Cripple__) |
 
@@ -2644,7 +2648,7 @@ Throws the knife at an opponent within 15 feet. On success, it deals a limited d
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Knife Fight 1 |
-| DR | -1 |
+| ACR | 1 **Stm** |
 | Damage | __SM__+4 |
 | Condition | (__Cripple__) |
 
@@ -2657,7 +2661,7 @@ Attacks the target thrusting the knife forward, in a straight line.
 | Type | Attack |
 | Modifier | mD-3 |
 | Prereq | Knife Fight 4 |
-| DR | -2 |
+| ACR | 3 **Stm** |
 | Damage | __SM__+6 |
 | Condition | (__Injury__) |
 
@@ -2988,7 +2992,7 @@ of Sword Fight:
 | Type | Attack |
 | Modifier | mS |
 | Prereq | Swordfight 1 |
-| DR | -1 |
+| ACR | 3 **Stm** |
 | Damage | __SM__+6 |
 | Condition | (__Stun 2__) |
 
@@ -3002,7 +3006,7 @@ A critical success stuns the opponent for 2 turns.
 | Type | Defense |
 | Modifier | mD |
 | Prereq | Swordfight 1 |
-| DR | -1 |
+| ACR | 1 **Stm** |
 
 A basic defense; the character intercept the opponent’s blow with its own
 weapon, using its own dexterity.
@@ -3014,7 +3018,7 @@ weapon, using its own dexterity.
 | Type | Attack |
 | Modifier | -3 |
 | Prereq | Swordfight 6 |
-| DR | -2 |
+| ACR | 2 **Stm** |
 
 Uses an attack that will not deliver damage on success,
 to get a **DP** modifier equal to the success margin on the
@@ -3027,7 +3031,7 @@ damage of very next attack.
 | Type | Defense |
 | Modifier | mS |
 | Prereq | Swordfight 1 |
-| DR | -1 |
+| ACR | 0 |
 
 A basic defense; the character intercept the opponent’s blow with
 its own weapon, using its own strength to resist it.
@@ -3039,7 +3043,7 @@ its own weapon, using its own strength to resist it.
 | Type | Defense |
 | Modifier | mD |
 | Prereq | Swordfight 6 |
-| DR | -1 |
+| ACR | 0 |
 | Range | 30 ft |
 | Limitation | Shield |
 
@@ -3053,7 +3057,7 @@ can block a projectile incoming from a maximum range of 30 feet.
 | Type | Attack |
 | Modifier | -2 |
 | Prereq | Swordfight 4 |
-| DR | -2 |
+| ACR | 1 **Stm** |
 | Damage Type | Blunt |
 | Damage | __SM__-2 |
 | Condition | (__Grounded__) |
@@ -3069,7 +3073,7 @@ ground. On success, the opponent is grounded for the rest of the turn.
 | Type | Defense |
 | Modifier | mS+3 |
 | Prereq | Swordfight 2 |
-| DR | -1 |
+| ACR | 1 **Stm** |
 | Limitation | Shield |
 
 Can be used only if the character is wearing a shield. The defender blocks
@@ -3082,7 +3086,7 @@ the opponent’s blow with its shield.
 | Type | Attack |
 | Modifier | mS |
 | Prereq | Swordfight 1 |
-| DR | -1 |
+| ACR | 0 |
 | Damage | __SM__+6 |
 
 A simple lateral stroke.
@@ -3094,7 +3098,7 @@ A simple lateral stroke.
 | Type | Attack |
 | Modifier | mD |
 | Prereq | Swordfight 2 |
-| DR | -1 |
+| ACR | 1 **Stm** |
 | Limitation | Swords |
 | Damage | __SM__+6 |
 
@@ -3338,6 +3342,28 @@ relevance of the combat in the adventure. For example, you could resolve
 a brawl erupted in a tavern as a *simplified combat*, to turn to the
 *advanced combat* when things get nasty while fighting the guards to escape
 a dungeon.
+
+## Advanced Combat Resources
+
+Special maneuvers that can be performed in the advanced combat system have a
+cost in either **Stamina** (**Stm**) or **Focus** (**Fcs**), depending on them
+being based on either **Body** or **Mind**.
+
+Characters have an initial pool of **Stamina** equal to the value of their **Body**,
+and **Focus** equal to the value of their **Mind**; Vantages can increase or reduce
+them, and other effects (sickness, curses, magic etc.) can temporarily change their 
+value.
+
+A character can perform a certain maneuver only if they have enough resources, which
+are then consumed, until the pool hits zero. After that, only maneuvers with a cost of 0
+can be performed.
+
+The pool is replenished at the end of the combat, after a period of rest that of one
+minute for each point to be replenished, rounded up to the nearest ten minute slot.
+
+Consider, for example, a team with two characters that have lost 6 points of **Stamina** and
+12 points of **Focus** respectively. The party will need a rest of 20 minutes in order
+to fully replenish their pool.
 
 # Game Setup
 

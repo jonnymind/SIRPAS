@@ -4,7 +4,7 @@
 { "Type": "Attack",
 	"Modifier": "-2",
 	"Prereq": "Swordfight 4",
-	"DR": "-2",
+	"ACR": "1 **Stm**",
 	"Damage Type": "Blunt",
 	"Damage": "__SM__-2",
 	"Condition": "(__Grounded__)"
