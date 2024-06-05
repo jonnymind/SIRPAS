@@ -28,6 +28,5 @@ weapon from the other, and they can try again.
 ### Non-draw contests
 
 Contests that don't allow draws are specifically indicated by the rules as
-*Drawless Contests* (**ndCNT**). In this cases, when a draw is scored, it is
+*Non-Draw Contests* (**ndCNT**). In this cases, when a draw is scored, it is
 discarded as not performed, and another contest takes place.
-

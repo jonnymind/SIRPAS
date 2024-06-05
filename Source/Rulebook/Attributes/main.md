@@ -5,3 +5,5 @@
 @(include Training_Attributes.md)
 @(include Cascade_attributes.md)
 @(include Temporary_variation.md)
+
+@(include Generic)

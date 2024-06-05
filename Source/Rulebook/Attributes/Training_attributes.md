@@ -12,19 +12,8 @@ As attributes are hierarchical, and training base attributes is harder than
 derived ones, **TT**s can only be applied to the attribute of a specific level,
 or they can be exchanged with 2 **TT**s of the lower level.
 
-In general, the hierarchy level of the **TT** is specified as a number, so
-that **TT**/1 is a train token for the top tier attributes, **TT**/2 is one
-for the attributes directly derived from them etc; however, every module can
-declare different attribute categories and hierarchies, that aren't necessarily
-following the base value chains.
-
-For example, if a module declares a hierarchy of attributes as
-```
-    Primary -> Generic -> Hard Skills -> Easy Skills
-```
-
-a **TT**/Primary can be exchanged for 2 **TT**/Generic, 4 **TT**/Hard,
-or 8 **TT**/Easy.
+So, **TT/Primary** can be exchanged for 2 **TT/Secondary**, 4 **TT/Hard Skill**,
+8 **TT/Normal Skill** and 16 **TT/Easy Skill**.
 
 It is not possible to exchange multiple lower level tokens for a higher level one:
 **TT**s represent formative experiences the characters have gone through during
@@ -66,7 +55,3 @@ fact of being acquired, in the general case should grant an improvement of their
 
 But in some scenarios, the **TT** may represent a lived experience that needs to be formalized,
 a token of *being ready* to take the step of the formal training.
-
-
-
-

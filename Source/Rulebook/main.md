@@ -6,6 +6,8 @@
 	LICENSE: CC-BY-ATTR Share-alike
 --)
 
+# SIRPAS Ruleset Manual
+
 @(include Introduction.md)
 @(include Statistics.md)
 @(include Attributes.md)

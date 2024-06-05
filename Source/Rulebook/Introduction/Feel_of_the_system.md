@@ -1,5 +1,7 @@
 ## Feel of the system
 
+@(-- deprecated --)
+
 Sirpas has the following characteristics:
 
 - Generic: rules are meant to be applicable in any settings you can come up with. More on that later.
@@ -18,8 +20,6 @@ Sirpas has the following characteristics:
 - Role-play oriented: the system emphasizes the build-up of the character; both the composition of its skill set
   in the adventure world, and the makeup of its personality, play a primary role in how the rules unfold.
 - Simple as you want: the base system has differently detailed rules to resolve game situations. For example,
-  combat or any type of confrontation between two opposing parties could be resolved with a single throw of a few
-  dices (Risk! style), or with the detail of a Warhammer miniature replica battlefield.
+  combat or any type of confrontation between two opposing parties could be resolved with a single throw of a few dices ("Risk!" style), or with the detail of a Warhammer miniature replica battlefield.
 
-All the system is based on multiple rolls of a standard dice with 6 face; however, different modules support other
-kind of dices, if that's the vibe you want for your game.
+All the system is based on multiple rolls of a standard dice with 6 faces; however, different modules support other kind of die, if that's the vibe you want for your game.

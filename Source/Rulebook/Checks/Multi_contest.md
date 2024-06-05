@@ -74,9 +74,8 @@ gets wounded) can be tiresome, and can slow down the pace of the game for the pl
 
 To prepare the multi-contest, the GM should:
 1. Write the characters he controls on a column of a notepad.
-1. Besides each name, write the modifiers for that characters, to be updated 
-   if the contest is repeated.
-1. Unless each GM controlled character is special, the GM always assigns the best outcome 
+2. Besides each name, write the modifiers for that characters.
+3. Unless each GM controlled character is special, the GM always assigns the best outcome 
    to the topmost character, so that it can read the ranking results go top to bottom. 
 
 If the GM doesn't have a dice-throwing application handy, which can automate part of the process, it

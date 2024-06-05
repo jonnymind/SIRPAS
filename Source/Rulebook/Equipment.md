@@ -63,3 +63,7 @@ attribute is a *generic item*.
 Some equipment can be used a limited number of times, after which it either becomes unusable or
 needs to be recharged. This is the case of magic scrolls in certain magic settings, that can be
 used only once, or pistols that require recharging after their magazine is depleted.
+
+## Generic skillset: equipment
+
+@(include Equipent/*.md)

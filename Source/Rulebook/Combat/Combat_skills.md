@@ -88,27 +88,3 @@ innate advantage: its **Dom** may be somewhere around 3, while **brawl** **Dom**
 be 0 or 1. To resolve any fight, everyone will then add the value of the **dominance**
 of they skill they want to (or can) use to every roll they take.
 
-### Styles and maneuvers
-  
-In the _advanced combat system_, **Combat skills** are associated with a _style_, 
-that is a collection of actions that can be done using the skill (called **maneuvers**).
-
-**Maneuvers** are not stand-alone skills, and they cannot be target of advantages or perks.
-
-The same combat style can also cover different type of weapons, with some
-specific maneuvers limited to some weapons. For example, a combat skill may be
-**Firearms**, covering any kind of modern firearm, and its style may include maneuvers as 
-**rapid reload**, which applies only to pistols, and **sniping**, which applies only to
-precision rifles.
-
-Maneuvers have the following statistics:
-
-* Type: can be **attack**, **defense** or **action**.
-* Modifier: positive or negative bonus to the combat skill for any type of roll.
-* Prerequisite: minimum level of other attributes/skills required to perform this maneuver.
-* Diminishing Return: modifier to the roll if using the same maneuver more than once in a row.
-* Range: If the combat skill is ranged, the distance at which this maneuver is effective.
-* Damage: How many **DP** the maneuver inflicts if successful. Defenses and actions can have
-  generate damage as well (i.e. counter-attacks or actions causing indirect damage).
-* Status: a status alteration of the target if the maneuver is successful (i.e. causing
-  the target to be *stunned* for 2 turns, and so on).
