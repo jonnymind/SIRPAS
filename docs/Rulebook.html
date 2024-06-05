@@ -1,117 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>SIRPAS Rulebook</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SIRPAS Rulebook</h1>
+</header>
+<h1 id="sirpas-ruleset-manual">SIRPAS Ruleset Manual</h1>
 <h1 id="introduction">Introduction</h1>
 <p>SIRPAS stands for “SImple Role Playing Adventure System”. It’s a
 generic, modular and extensible table-top RPG system, that aims to be as
 simple as needed and become as complex as you wish.</p>
-<p>SIRPAS is organized in the following components:</p>
-<ul>
-<li>The <strong>rulebook</strong> (what you’re reading now): bare-bone
-description of how the system works. There isn’t any list of skills,
-attributes, or specific rendering of the rules in practice. At times
-we’ll use some well known skill that may be found in any generic RPG
-(e.g. <em>strength</em> or <em>climbing</em>) to make some example of
-how the rules work, but nothing more.</li>
-<li>The <strong>base module</strong>: a basic implementation of the
-rules, which describes very generic attributes, skills, damage sources
-and other concrete aspect of the system, that should be general enough
-to be applied to most if not all the RPG settings you may come up
-with.</li>
-<li>Additional <strong>modules</strong>: Extension of the base system
-(which may enrich it or change it if necessary), particularly adequate
-to describe some specific world or setting for your adventures.</li>
-</ul>
-<p>All you need is the <strong>base module</strong>. The system will
-often refer to the rules in this rulebook, so you will need to know
-them, but you don’t need to know them <em>upfront</em>. The <strong>base
-module</strong> will briefly explain the relevant rules when possible or
-point at this rulebook when necessary. You may wish to read this book in
-advance, skim over it, or just ignore it until you feel the need to read
-some portions of it following the <strong>base module</strong>.</p>
-<blockquote>
-<p><strong>Experts</strong>: Feel free to skip the rest of this
-introduction. The only thing an expert need to know about is that SIRPAS
-is generic (setting-less), skill-based, using d6 only (and mostly 3d6)
-with a fully modular system architecture. Detailed sub-system can be
-used or ignored, depending on the mood of the night, while still having
-your character set-up count. Also, all the systems are inter-playable:
-you could bring a character from a Cthulu-esque campaign in a cyberpunk
-settings, and the rules will work just fine.</p>
-</blockquote>
-<h2 id="what-is-sirpas">What is SIRPAS?</h2>
-<p>SIRPAS is a “SImple Role Playing Adventure System”.</p>
-<p>So, we’re talking <em>adventures</em> here: a role playing session
-that can spawn for a casual night with friends, or with the family, or
-with strangers met at a gaming club. Systems thought for Role Playing
-Games are (usually) complex enough for you to invest lots of time in
-creating your characters, play through multiple sessions and use some
-time off to sort your past games out to get fun out of them.</p>
-<p>Some may say that’s actually part of the fun itself. If you like the
-streamlined experience of Sirpas gameplay, you can play adventures
-spawning multiple sessions, or multiple adventures with the same
-characters, in the same world (this is often referred as
-<em>campaign</em>).</p>
-<p>But you don’t need to. The idea is having as little commitment as
-necessary to get playing, and then, pour in as much commitment as you
-want if you like it.</p>
 <h2 id="a-system-for-everyone">A system for everyone</h2>
 <p>Sirpas is for everyone: beginners, intermediate and veteran
 players.</p>
-<p>Who reads this manual and has never heard about role playing games
-before will encounter many new terms that have a special meaning in RPG,
-as <em>session</em>, <em>adventure</em>, <em>campaign</em>,
-<em>world</em>, <em>setting</em>, <em>character</em>, etc. Also, they
-might need on how to prepare, organize, manage, or even behave during a
-session. This is important, but it is not covered in this manual. This
-rulebook presents the game as succinctly as possible; all the concepts
-commonly known in RPG can be easily found in the larger Internet.</p>
-<p>However, to help the beginners getting on RPG with Sirpas, depending
-on the media you’re reading the rulebook, we will:</p>
-<ol type="1">
-<li>provide hyperlink to the description of the term.</li>
-<li>highlighting terms with special meaning in RPG. A fast Internet
-search for “RPG” and the highlighted word will bring you to the
-description of the term.</li>
-<li>Add a box named “For Beginners” near the relevant terms, that
-experienced readers can skip.</li>
-</ol>
-<h2 id="feel-of-the-system">Feel of the system</h2>
-<p>Sirpas has the following characteristics:</p>
-<ul>
-<li>Generic: rules are meant to be applicable in any settings you can
-come up with. More on that later.</li>
-<li>Modular: Sirpas has a lean set of rules called <strong>Base
-System</strong>. The base system is generic enough to support any world
-setting and playing style. On this base system, additional rules (called
-<strong>modules</strong>) can be attached to better fit your game world.
-Want a system to perform mind fights between Asimov inspired psionic
-super-humans? We got you. Want a be a gunslinger involved in
-western-styled show downs? That can be done too. A wizard casting magic
-spells? No problem. An occultist summoning extra-dimensional entities?
-That’s fine. The system is even flexible enough to merge multiple styles
-of magic, melee combats, large scale fights and ranged missile firing in
-the same session. Yes, you can bring a bow (or a knife) in a
-gunfight.</li>
-<li>Extensible: Other than designing your own additional modules, you
-can also modify the base system to fit your need. For example, there
-base system has two main attributes called <strong>Body</strong> and
-<strong>Mind</strong>; if you want to play as an AI in a virtual world,
-you may replace <strong>Body</strong> with <strong>MIPS</strong>
-(millions of operation per second), and use <strong>Mind</strong> as an
-expression of the quality of your O.S. and software. The rest of the
-base system will still stand and be mostly useful for you to play
-with.</li>
-<li>Role-play oriented: the system emphasizes the build-up of the
-character; both the composition of its skill set in the adventure world,
-and the makeup of its personality, play a primary role in how the rules
-unfold.</li>
-<li>Simple as you want: the base system has differently detailed rules
-to resolve game situations. For example, combat or any type of
-confrontation between two opposing parties could be resolved with a
-single throw of a few dices (Risk! style), or with the detail of a
-Warhammer miniature replica battlefield.</li>
-</ul>
-<p>All the system is based on multiple rolls of a standard dice with 6
-face; however, different modules support other kind of dices, if that’s
-the vibe you want for your game.</p>
+<p>However, this manual takes the basic concepts of RPGs for granted; it
+doesn’t explain how to prepare, organize, manage, or behave during a
+game session. This rulebook presents the game as succinctly as possible;
+all the concepts commonly known in RPG can be easily found in the larger
+Internet, and may be introduced in a different manual.</p>
 <h2 id="play-any-world">Play Any World</h2>
 <p>Sirpas is a generic role playing system, that doesn’t presume
 anything on the setting of your adventures. The system applies whatever
@@ -124,7 +196,7 @@ reality.</p>
 not the absolute protagonist. This leads to RPG systems being usually
 structured around the combat mechanics, and gaming sessions being mainly
 occupied by detailing combat actions.</p>
-<p>Sirpas works the other way around: the combat system is simply the
+<p>SIRPAS works the other way around: the combat system is simply the
 specialization of the general system. As such, is possible to run
 adventures or entire campaign devoid of “combat”, and focusing either on
 other kind of contest (as i.e. skill battles in virtual worlds), or in
@@ -134,8 +206,72 @@ gunfights might play an important part in the campaign, the very nature
 of a gunfight doesn’t translate into interesting RPG mechanics, while
 more interesting actions as sword fights or martial art fights might not
 fit the setting.</p>
-<p>As such, Sirpas focuses on a more differentiated gameplay, which can
+<p>As such, SIRPAS focuses on a more differentiated gameplay, which can
 be as combat-intensive or combat-devoid as needed.</p>
+<h2 id="ruleset-and-skillset">Ruleset and Skillset</h2>
+<p>SIRPAS is based on a <em>ruleset</em> and one or more
+<em>skillsets</em>. Together, they describe how to use the
+<em>roleplaying mechanics</em>: they explain how to perform certain
+action, attack or defend in combat, cast a magic spell and so on,
+perform an athletic feat and so on.</p>
+<p>A <em>skillset</em> is a set of numerical and qualitative attributes
+that describe the abilities of a character. <em>Strength</em>,
+<em>dexterity</em>, <em>ancient knowledge</em>, <em>piloting
+vehicles</em> and so on would be some of the attributes defined by a
+<em>skillset</em>.</p>
+<p>The <em>ruleset</em> describes how any skillset in the SIRPAS system
+works.</p>
+<p>This manual contains the <em>ruleset</em> and the <em>generic
+skillset</em>, which can be used in most scenarios and game worlds
+directly any modification.</p>
+<p>To make this manual simpler to use, the <strong>generic
+skillset</strong> is presented together with the parts of the
+<em>rulset</em> it refers to, in sections separated by the heading
+“Generic Skillset”. Despite being in the same manual, the <em>generic
+skillset</em> should not be considered a mandatory part of the SIRPAS
+system: it’s just a basic implementation, ready for use to start playing
+right away.</p>
+<p><strong>Example</strong>: the <em>ruleset</em> indicates that
+characters participating in a fight need to perform a <em>ranking
+check</em> to determine the order in which they can perform their
+action, but doesn’t indicate which skill is to be used for the ranking.
+The <em>generic skillset</em> defines an <strong>Initiative</strong>
+skill, which is based on either <strong>Dexterity</strong> or
+<strong>Will</strong> attributes, that is used to perform the ranking.
+Another <em>skillset</em> may:</p>
+<ul>
+<li>redefine the <strong>Initiative</strong> skill to be based on
+different characteristics: for example, it may be baseless or based on
+<strong>Computational Speed</strong> for AIs; or</li>
+<li>set up a different skill for the purpose; for example, in a western
+epic setting it may be <strong>Gunslinging</strong>.</li>
+</ul>
+<h3 id="limits-of-the-generic-skillset">Limits of the Generic
+Skillset</h3>
+<p>The <em>generic skillset</em> should be directly applicable to many
+different scenarios; from realistic historical settings to high-fantasy
+realms, from space operas to cyberpunk future cities. However, it
+assumes that the playing characters are either humans, and that their
+feat are somewhat grounded in common human experiences. It may be not
+adequate to describe worlds where characters are completely different;
+for example, body-less AIs, Chinese opera Wu-xia semi-gods, giant
+robots, starships etc. could require a completely different
+skillset.</p>
+<p>Some settings could leverage the <em>generic skillset</em> by just
+adding or altering some aspects, while others may use a completely
+different set of skills. For example, a setting about a war between
+lycanthropes and vampires may be based on the the generic skillset
+and:</p>
+<ul>
+<li>Add a primary attribute besides <strong>Body</strong> and
+<strong>Mind</strong>, i.e. <strong>Darkness</strong>.</li>
+<li>add some skills that only lycanthropes or vampires can have.</li>
+<li>tweak the maximum values beyond 18 to reflect super-human
+abilities.</li>
+</ul>
+<p>On the other hand, a Cthulhu-eqsue adventure setting may ditch the
+concept of <strong>Body</strong> and <strong>Mind</strong> entirely, and
+just define a <strong>Sanity</strong> primary attribute.</p>
 <h1 id="statistics">Statistics</h1>
 <p>In SIRPAS, the statistics are all the numeric or quality values that
 define a characters. They are divided in the following categories:</p>
@@ -161,21 +297,34 @@ example, being “famous” or “outlaw”. They have an impact in the
 adventure at large, and might also affect indirectly some checks,
 providing bonuses and penalties at discretion of the game master.</li>
 </ul>
-<h2 id="attributes">Attributes</h2>
-<p>Attributes describe a character as succinctly as possible. They are
-organized in a hierarchy. Higher level attributes are more
-<em>generic</em>: they describe general aspects of your character. The
-lower you descend in the hierarchy, the more detailed the attribute
-become. At the bottom of the hierarchy we find <strong>skills</strong>,
-that are attributes dedicated to performing specific actions.</p>
-<p>Attributes and skills are normally expressed as a value between 3 and
-18, which is the range of value that can be expressed by summing the
-result of a 3d6 dice throw. A value of 3 represents the minimum skill
-level, or characteristic, that a character could have to be still
-considered minimally functional in the game world — a value below 3
-would indicate a sub-normal characteristic. A value of 18 would
-represent the apex for the game environment, and the values between 10
-and 12 would be the most common across the reference population.</p>
+<h2 id="attributes-and-skills">Attributes and Skills</h2>
+<p>Attributes describe a character as succinctly as possible.</p>
+<p>Main attributes, describe the overall build of a character,
+indicating their characteristics in broad categories as physical and
+mental, spiritual, magical, technological etc.</p>
+<p>Skills are specialized attributes that are used to perform specific
+actions.</p>
+<ol type="1">
+<li><em>Primary attributes</em> (or <em>primaries</em>) describe the
+overall build of your character.</li>
+<li><em>Secondary attributes</em> (or <em>secondaries</em>) are
+specializations of <em>primaries</em> to better describe the overall
+character capabilities.</li>
+<li><em>Hard Skills</em> require special training on top of the natural
+prowess granted by the attributes.</li>
+<li><em>Normal skills</em> just require a basic training on top of the
+natural abilities of a character.</li>
+<li><em>Easy skills</em> can be performed by anyone, although a special
+training may grant a character better results.</li>
+</ol>
+<p>Attributes are normally expressed as a value between 3 and 18, which
+is the range of value that can be expressed by summing the result of a
+3d6 dice throw. A value of 3 represents the minimum skill level, or
+characteristic, that a character could have to be still considered
+minimally functional in the game world — a value below 3 would indicate
+a sub-normal characteristic. A value of 18 would represent the apex for
+the game environment, and the values between 10 and 12 would be the most
+common across the reference population.</p>
 <p>The scaling would be relative to the game setting. For example, if
 playing a campaign where the characters are Greek or Norse gods, a value
 of 3 on any statistic would probably express a level of proficiency far
@@ -187,13 +336,6 @@ one with strength 18 is in a totally different league than one with
 strength 17. Similarly, characters with health 10 and 11 have a very
 similar constitution, but one with health 3 will be much weaker than one
 with health 4.</p>
-<p>Modules can introduce different range and scaling for some or all the
-attributes; for example, in a vampire society an attribute like
-<strong>Vampire Speed</strong> (shortened as <strong>VS</strong>) could
-be measured as a linear scale in a 0-99 range, where a
-<strong>VS</strong>0 is as fast as the fastest human, with one point of
-difference having the same value whether the <strong>VS</strong> is 0 or
-99.</p>
 <h3 id="most-specific-attribute">Most specific attribute</h3>
 <p>As attributes are ordered in a hierarchy, the base of each of them
 indicating their parent, when a character needs to perform an action for
@@ -343,17 +485,10 @@ generated by going through various in-games experiences, called
 harder than derived ones, <strong>TT</strong>s can only be applied to
 the attribute of a specific level, or they can be exchanged with 2
 <strong>TT</strong>s of the lower level.</p>
-<p>In general, the hierarchy level of the <strong>TT</strong> is
-specified as a number, so that <strong>TT</strong>/1 is a train token
-for the top tier attributes, <strong>TT</strong>/2 is one for the
-attributes directly derived from them etc; however, every module can
-declare different attribute categories and hierarchies, that aren’t
-necessarily following the base value chains.</p>
-<p>For example, if a module declares a hierarchy of attributes as</p>
-<pre><code>    Primary -&gt; Generic -&gt; Hard Skills -&gt; Easy Skills</code></pre>
-<p>a <strong>TT</strong>/Primary can be exchanged for 2
-<strong>TT</strong>/Generic, 4 <strong>TT</strong>/Hard, or 8
-<strong>TT</strong>/Easy.</p>
+<p>So, <strong>TT/Primary</strong> can be exchanged for 2
+<strong>TT/Secondary</strong>, 4 <strong>TT/Hard Skill</strong>, 8
+<strong>TT/Normal Skill</strong> and 16 <strong>TT/Easy
+Skill</strong>.</p>
 <p>It is not possible to exchange multiple lower level tokens for a
 higher level one: <strong>TT</strong>s represent formative experiences
 the characters have gone through during a game session, and to change
@@ -396,21 +531,21 @@ in the general case should grant an improvement of their abilities.</p>
 <p>But in some scenarios, the <strong>TT</strong> may represent a lived
 experience that needs to be formalized, a token of <em>being ready</em>
 to take the step of the formal training.</p>
-<h3 id="cascade-attributes">Cascade Attributes</h3>
-<p>Cascade attributes are attributes that can be be trained multiple
-times, each of them representing a single attempt in repeated
-checks.</p>
+<h3 id="cascade-skills">Cascade Skills</h3>
+<p><em>Cascade skills</em> are skills that require a check on a
+different subversion of the skill each time a check is repeatedly
+attempted.</p>
 <p>For example, some combat skills can be used only once per combat
 turn. To use them multiple times in a turn, a second version of the same
 skill must be trained.</p>
-<p>In the player sheet, they will be indicated as “Composite skill / 1”,
-“Composite Skill / 2” and so on. If the composite skill is specialized,
-it will be indicated as “Skill/specialization / 1”,
-“Skill/specialization / 2” and so on.</p>
+<p>In the player sheet, they will be indicated as “Cascade skill / 1”,
+“Cascade Skill / 2” and so on. If the composite skill is specialized, it
+will be indicated as “Cascade Skill/specialization / 1”, “Cascade
+Skill/specialization / 2” and so on.</p>
 <p>Composite attributes are still targeted as a single one by
 attribute-targeting advantages and disadvantages.</p>
-<p>For example, if “Active Mitigation” is a combat specialized and
-composite attribute, and <strong>Swordfight</strong> is a combat style,
+<p>For example, if “Active Mitigation” is a combat cascade and
+specialized skill, and <strong>Swordfight</strong> is a combat style,
 the advantage <strong>Expert / Active Mitigation / Swordfight</strong>
 will cover all the versions of <strong>Active Mitigation /
 Swordfight</strong>.</p>
@@ -442,6 +577,1763 @@ expressed as “(<strong>S</strong>)”. Conversely, if
 effort to learn lores even for a very intelligent character, and as
 such, a temporary improvement of <strong>intelligence</strong> won’t be
 transferred to <strong>lore</strong>.</p>
+<h2 id="generic-attributes">Generic Attributes</h2>
+<p>The <em>Generic Skillset</em> provides a set of primary and secondary
+attributes that can be used in most settings, together with some generic
+skills that cover most common situations.</p>
+<p>Every character has the following <em>primary</em> and
+<em>secondary</em> attributes:</p>
+<ul>
+<li>Body (<strong>B</strong>): The physical aspect of the character.
+Body <em>secondary</em> attributes are:
+<ul>
+<li>Strength (<strong>S</strong>): raw physical power;</li>
+<li>Dexterity (<strong>D</strong>): speed, precision and control over
+actions performed with the body;</li>
+<li>Health (<strong>H</strong>): Resilience against fatigue, injury and
+illness.</li>
+</ul></li>
+<li>Mind (<strong>M</strong>): describes the mental prowess of a
+character. Mind <em>secondary</em> attributes are:
+<ul>
+<li>Will (<strong>W</strong>): strength of conviction and
+assertiveness.<br />
+</li>
+<li>Intelligence (<strong>I</strong>): ability to understand and solve
+complex problems; mental flexibility.</li>
+<li>Equilibrium (<strong>E</strong>): resilience to mental strain,
+stress and madness.</li>
+</ul></li>
+</ul>
+<p>The <a href="#body"><strong>body</strong></a> primary provides also
+the <strong>base value</strong> of <a
+href="#strength"><strong>strength</strong></a>, <a
+href="#dexterity"><strong>dexterity</strong></a> and
+(<strong>health</strong>)[#health]. This means that the value of
+<strong>body</strong> is also the <em>default</em> value for the these
+dependent primaries; you can then train each of them separately using
+<em>scondary tokens</em>, and improve them over their base value, but if
+you train the main trait <strong>body</strong>, all its dependent
+attributes will grow with it.</p>
+<p>Similarly, <a href="#mind"><strong>mind</strong></a> provides the
+base value for <a href="#will"><strong>will</strong></a>, <a
+href="#intelligence"><strong>intelligence</strong></a> and <a
+href="#equilibrium"><strong>equilibrium</strong></a>.</p>
+<p>In turn, the secondary attributes are themselves base for other
+attributes and skills.</p>
+<h3 id="body">Body</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Primary</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Primary</td>
+</tr>
+</tbody>
+</table>
+<p>The Body (<strong>B</strong>) is a value that describes your overall
+physical prowess in terms of bodily strength, resilience to prolonged
+efforts, recovery speed, resistance to illness and so on. For humans, it
+is measured in the range between 3 and 18 (the possible outcomes of
+3d6). Most adult characters score in the range between 9 and 12, with 18
+representing a person with the best possible body (rarely if ever ill,
+strong as the strongest wrestler or weight lifter, moving as swift as a
+record runner and able to run as long as a marathon champion — all at
+the same time), and 3 representing the weakest possible fully formed and
+barely functional body.</p>
+<h3 id="mind">Mind</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Primary</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Primary</td>
+</tr>
+</tbody>
+</table>
+<p>The Mind (<strong>M</strong>) is the overall score of mental
+abilities in terms of intelligence, creativity, will power, mental
+sanity, depth of knowledge and so on. A mind level 3 represents a
+character that is barely functional as an autonomous person (or
+creature) in the reference setting, while a 18 represents a character
+maximally intelligent, penetrating, knowledgable, sane and wise. The
+vast majority of characters (or heroes) in the reference setting will
+have a mind between 9 and 12.</p>
+<h3 id="strength">Strength</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Secondary</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>Strength (<strong>S</strong>) is the attribute measuring a character
+physical strength. In the default setting, it also indicates how much
+weight the character can transport without being fatigued, or the amount
+of weight it can carry without being slowed down, or that it can lift.
+There are different tiers used in various occasion, all multiple of the
+value of Strength in pounds:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Weight</th>
+<th>Transport</th>
+<th>Lift</th>
+<th>Movement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">&lt;= <em>S</em> x 1 </td>
+<td>Trivial</td>
+<td>Normal</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">&lt;= <em>S</em> x 2</td>
+<td>Easy</td>
+<td>Difficult</td>
+<td>Normal</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">&lt;= <em>S</em> x 3</td>
+<td>Normal</td>
+<td>Hard</td>
+<td>3/4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">&lt;= <em>S</em> x 4</td>
+<td>Difficult</td>
+<td>Very Hard</td>
+<td>2/3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">&lt;= <em>S</em> x 5</td>
+<td>Hard</td>
+<td>Very Hard</td>
+<td>1/2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">&gt; <em>S</em> x 5</td>
+<td>Very Hard</td>
+<td>Very Hard</td>
+<td>1/3</td>
+</tr>
+</tbody>
+</table>
+<p>The name of the tiers match the names of the skill difficulty levels,
+as they are directly applied as a difficulty level in various checks.
+However, they also define other effects that are not directly related
+with skills; for example, the transport weight tier is applied directly
+to the combat movement: a character transporting a “very hard” weight
+has its movement cut to one third of it normal movement</p>
+<h3 id="dexterity">Dexterity</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>D</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Secondary</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>Dexterity (<strong>D</strong>) expresses the ability to control one’s
+own body. Eye-hand coordination, agility, reaction times and rapidity
+are all components of dexterity. A dexterity of 3 indicates sluggish
+reaction times, 18 indicates a martial-art or olympic gymnast level of
+dexterity, with the vast majority of common people stacking around
+10-12.</p>
+<p>The <em>dexterity</em> indicates also the base movement speed of a
+character. The actual speed depends on what a character actually is; a
+cyborg with <strong>D</strong>12 will probably be faster than any human
+with <strong>D</strong>18.</p>
+<p>The following table is for humans; you can adapt it to other races by
+using the <em>speed coefficient</em> of that race (for humans, it’s
+1).</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Dexterity</th>
+<th style="text-align: right;">Sprint: Ft. x sec</th>
+<th style="text-align: right;">Run: Ft. x sec</th>
+<th style="text-align: right;">Ft. x turn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">52</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">57</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">63</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that the speed for combat turn is not necessarily the sprint
+speed, as movement during combat is limited by other factors. Also, the
+combat turn here is the standard 10 seconds combat turn of the the base
+system; other systems might redefine the duration of a combat turn (and
+how <em>dexterity</em> works in those contexts).</p>
+<h3 id="health">Health</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>H</td>
+</tr>
+<tr class="even">
+<td>Base</td>
+<td>B</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Secondary</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>Health (<strong>H</strong>) represents the resistance to fatigue,
+illness and polluted environment (including allergenic agents). It’s
+used to determine how many injuries can be withstood before being
+incapacitated, and gives the base for all physical resistance
+skills.</p>
+<p>A normal character can sustain 10 + <strong>H</strong>
+<strong>IP</strong>s from physical sources before becoming
+<em>incapacitated</em> and risk dying without an active intervention
+(e.g. having someone using the <a href="#stabilize">stabilize</a> skill
+on them).</p>
+<p>Also, characters can ignore the <strong>IP</strong> penalty up to
+<strong>mH</strong>. For example, a character with <em>health</em> 17
+(<strong>mH</strong> = 3) can ignore the first 3 penalties (at
+<strong>IP</strong> 6). If the character receives 16
+<strong>IP</strong>s, it will suffer (16-6)/2 = 5 points of penalty.</p>
+<h3 id="will">Will</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>W</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Secondary</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>Will (<strong>W</strong>) is the power of the mind to focus on a
+certain task, perform prolonged mental activity, keep determination in
+adverse situations and so on. It can be roughly thought as the
+equivalent of the strength (<strong>S</strong>) in the mind realm.</p>
+<h3 id="intelligence">Intelligence</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>I</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Secondary</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>Intelligence (<strong>I</strong>) is the ability to understand and
+solve complex problems, comprehend difficult study subjects, see through
+schemes and machinations etc. As it measure the flexibility of the mind
+processes, it can be thought as the dexterity (<strong>D</strong>) of
+the mind.</p>
+<h3 id="equilibrium">Equilibrium</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>E</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Secondary</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>Equilibrium (<strong>E</strong>) is the stability of the mind, or
+basically the equivalent of its health (<strong>H</strong>). It
+indicates how much mental strain a person can take before being
+debilitated; of course, it is important in those settings where attacks
+are delivered to the mind instead of the body: fantasy, sci-fi and
+horror settings can present as many dangers for the mind as for the
+body, or more.</p>
+<p>Hence, it forms the base of all the mental resistance skills.</p>
+<p>A normal character can sustain 10 + <strong>E</strong>
+<strong>IP</strong>s from psychic sources before becoming
+<em>incapacitated</em> and risk dying without an active intervention
+(e.g. having someone using the <a href="#stabilize">stabilize</a> skill
+on them).</p>
+<p>Also, characters can ignore the <strong>IP</strong> penalty up to
+<strong>mE</strong>. For example, a character with <em>euqilibrium</em>
+17 (<strong>mE</strong> = 3) can ignore the first 3 penalties (at
+<strong>IP</strong> 6). If the character receives 16
+<strong>IP</strong>s, it will suffer (16-6)/2 = 5 points of penalty.</p>
+<h2 id="generic-skillset-general-skills">Generic skillset: General
+skills</h2>
+<p>The <em>Generic Skillset</em> provides a set of skills that can be
+used in most settings.</p>
+<p>Skills specifically used for combat that are still part of the
+generic skillset are described separately, under the <em>combat
+system</em> section.</p>
+<ul>
+<li><a href="#acrobatics">Acrobatics</a></li>
+<li><a href="#charisma">Charisma</a></li>
+<li><a href="#chemistry">Chemistry</a></li>
+<li><a href="#climbing">Climbing</a></li>
+<li><a href="#deceit">Deceit</a></li>
+<li><a href="#endurance">Endurance</a></li>
+<li><a href="#engineering">Engineering</a></li>
+<li><a href="#first-aid">First Aid</a></li>
+<li><a href="#hacking">Hacking</a></li>
+<li><a href="#healing">Healing</a></li>
+<li><a href="#hiding">Hiding</a></li>
+<li><a href="#hiding-in-shadows">Hiding in Shadows</a></li>
+<li><a href="#intimidate">Intimidate</a></li>
+<li><a href="#investigation">Investigation</a></li>
+<li><a href="#lie-detection">Lie Detection</a></li>
+<li><a href="#lock-picking">Lock Picking</a></li>
+<li><a href="#lore-knowledge">Lore Knowledge</a></li>
+<li><a href="#perception">Perception</a></li>
+<li><a href="#persuade">Persuade</a></li>
+<li><a href="#pickpocket">Pickpocket</a></li>
+<li><a href="#poisons">Poisons</a></li>
+<li><a href="#repair">Repair</a></li>
+<li><a href="#resistance">Resistance</a></li>
+<li><a href="#riding">Riding</a></li>
+<li><a href="#running">Running</a></li>
+<li><a href="#silent-movement">Silent Movement</a></li>
+<li><a href="#traps">Traps</a></li>
+<li><a href="#treating-wounds">Treating Wounds</a></li>
+</ul>
+<h3 id="acrobatics">Acrobatics</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>D</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>The character is able to perform acrobatic feats, including falling
+from a height that would normally damage a less skilled character.</p>
+<p>If used to check if the character is hurt when falling from a height,
+the following table indicates the modifier applied:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Height</th>
+<th>Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6 feet</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>9 feet</td>
+<td>Easy</td>
+</tr>
+<tr class="odd">
+<td>12 feet</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>18 feet</td>
+<td>Difficult</td>
+</tr>
+<tr class="odd">
+<td>24 feet</td>
+<td>Hard</td>
+</tr>
+<tr class="even">
+<td>30 feet</td>
+<td>Very Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Above 30 feet, the check fails automatically.</p>
+<p>When the check fails the character takes 1 damage point per feet.</p>
+<h3 id="charisma">Charisma</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>M</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>Used to influence positively other characters. Not to be confused
+with <em>Persuade</em>. This skill is specifically meant for characters
+trying to make a good impression, obtain favours, special treatments, or
+a generic good attitude. Persuade is the skill to deliver one specific
+talk with persuasive power.</p>
+<h3 id="chemistry">Chemistry</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Technical knowledge of chemistry or equivalent science in the world
+setting (e.g. alchemy in a magic world).</p>
+<h3 id="climbing">Climbing</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>D</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>Used to check when the character climbs a section of wall 6 feet
+high. Use the following table to determine the difficulty of the
+action:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Surface</th>
+<th>Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ivy riddled wall</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>Old bricks</td>
+<td>Easy</td>
+</tr>
+<tr class="odd">
+<td>Stone Wall</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Rock Wall</td>
+<td>Difficult</td>
+</tr>
+<tr class="odd">
+<td>Castle Wall</td>
+<td>Hard</td>
+</tr>
+<tr class="even">
+<td>Polished Wall</td>
+<td>Very Hard</td>
+</tr>
+</tbody>
+</table>
+<p>If the character fails, it stays at its current spot, and it can try
+again with the repeated attempt modifiers.</p>
+<p>A critical failure implies that the character fell from the current
+spot. A critical success indicates it climbed for 12 feet instead of
+6.</p>
+<h3 id="deceit">Deceit</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>I</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>It’s the ability to say a credible lie.</p>
+<p>A critical failure indicates that the target hasn’t just understood
+it was being deceived, but they also understood the truth that the
+character was trying to hide.</p>
+<p>A critical success indicates that the target will still believe the
+deceit after being shown proof of the contrary.</p>
+<h3 id="endurance">Endurance</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>Body</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>End</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Endurance is the ability to resist long lasting physical strain. A
+long march, swimming, carrying weights for a long time etc. requires an
+endurance check. Subsequent endurance checks against the same condition
+are treated as repeated check (each of them gets a -1 modifier), even if
+other skills are used meanwhile.</p>
+<p>For example, if a group is taking a forced march and has already
+passed a check, is forced to a fight and then resumes the march without
+any rest, the next endurance check will have a modifier of -1.</p>
+<p>A success indicates that the character is able to continue the
+effort. In case of failure, the character needs to try again with the
+ever increasing repeated check, until success becomes impossible.</p>
+<p>A critical success causes the next repeated check to be won
+automatically, and the current repeated modifier is also reduced by
+1.</p>
+<p>A critical failure indicates that the character is exhausted, and
+needs to rest. If it is in a precarious situation, i.e. swimming,
+walking along a dangerous mountain trail, it might be forced to roll
+against a deadly wound or die.</p>
+<h3 id="engineering">Engineering</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Technical skill in world-relevant engineering. For example, in a
+steampunk world, it would be the ability to put together mechanical
+devices.</p>
+<h3 id="first-aid">First Aid</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>First Aid Kit</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>This skill can be used to perform the following actions: * cure a
+<em>light wound</em> with a successful <em>normal</em> check; * reduce a
+<em>serious wound</em> into a <em>light wound</em> with a
+<em>difficult</em> check; * reduce a <em>heavy wound</em> into a
+<em>serious wound</em> with a <em>hard</em> check.</p>
+<p>Using a standard first-aid kit gives a modifier of +6 (some special
+first-aid kits have higher modifiers).</p>
+<blockquote>
+<p>Notice that no matter the modifier received with a first-aid kit, for
+what concerns <em>critical results</em>, checks on <em>serious
+wounds</em> and <em>heavy wounds</em> are still <em>hard</em> and
+<em>very hard</em>.</p>
+</blockquote>
+<p>The user can also cure more wounds on the same character; each
+further cured wound requires adding the penalty of a <em>repeated
+check</em>, even if the previous check is successful.</p>
+<p>This skill can also be used to stabilize a disabled target with a
+successful <em>normal</em> check. Using a first-aid kit makes the check
+become <em>trivial</em> (no further modifier given by the first-aid kit
+is applied).</p>
+<p>A <em>critical success</em> (whether the skill is used to stabilize
+or cure a wound) heals another <em>light wound</em>, if the character
+has any.</p>
+<p>A <em>critical failure</em> causes a light wound. If the skill is
+used to stabilize a dying character, a critical failure will kill it
+immediately.</p>
+<p>If the skill is target of an <a
+href="#Bam-a-expertise-skill">expertise</a> advantage, it can also cure
+<em>serious wounds</em> instead of reducing them, and critical success
+will cure up to an extra <em>serious wound</em>, if the target character
+has no more <em>light wounds</em> to cure.</p>
+<h3 id="hacking">Hacking</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mI</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Hk</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>system</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Rootkit (opt)</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>When a character wants to hack a device or a system, it can roll on
+this to check if it has the necessary knowledge to hack the system.</p>
+<p>Each action requires a different check. A critical failure implies
+the hacking has been neutralised and the source identified. A critical
+success implies that the character has gained privileged access, and
+further actions on the same system will not require a separate
+check.</p>
+<p>The specifics of the system depend on the setting. For some settings,
+the hacking skill could be general, while in other settings specific
+systems will be identified, and they might require a separate hacking
+skill.</p>
+<h3 id="healing">Healing</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>Hl</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Prerequisite</td>
+<td>First Aid 6</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>First Aid Kit, Healing Kit (opt)</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character has advanced practical medical knowledge for the
+setting where the adventure takes place, and is able to heal illnesses,
+poisoning and equivalent conditions for the target settings, that may
+affect biological living beings.</p>
+<p>For instance, in a magic world where curses can cause illnesses, this
+skill can also be used to treat the effect of the curses.</p>
+<p>The type of illness determine the difficulty of the check. The
+following table gives a basic reference frame for deciding the
+difficulty of a check.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Illness Type</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Common Cold</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>Light Fever</td>
+<td>Easy</td>
+</tr>
+<tr class="odd">
+<td>Intestinal Fever</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Malaria/Pneumonia</td>
+<td>Difficult</td>
+</tr>
+<tr class="odd">
+<td>Plague/Yellow Fever</td>
+<td>Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Specific information about the setting will be used by the GM or
+directly given in the descriptioin of the illnesses in order to
+determine the check difficulty.</p>
+<p>The time required for the cure to take effect is in the order of
+hours to days; the <strong>Success Margin</strong> can be used by the
+<em>GM</em> to decide how fast the recovery is.</p>
+<p>Illnesses that are <em>difficult</em> or <em>hard</em> to cure will
+be transformed in <em>easy</em> or <em>trivial</em> ilnesses before
+being cured. For instance, a successful cure of <em>plague</em> will
+initially turn the illness into a <em>light feever</em>, which can then
+be cured again to heal it completely.</p>
+<p>Particular setting-specific devices can give determined bonuses in
+curing generic or particular illnesses. Specific medicines or magic
+potions can give very high bonuses (+12 or more) almost granting a
+success, even if the characters using them have no healing skill at
+all.</p>
+<p>A <em>critical success</em> will cure the illness completely and in
+record time. A <em>critical failure</em> will cause another illness to
+appear (i.e. intoxication from the medicinal active principle,
+appearance of secondary side-effects etc.).</p>
+<h3 id="hiding">Hiding</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mI</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>The character knows how to hide so to look like inconspicuous
+material (i.e. a sack of potatoes, a part of a load of straw on a cart,
+a roll of cloth and so on). The difficulty of the check is determined by
+the GM.</p>
+<p>This skill is used only when trying to hide into a spot or a location
+that offer a high chance not to be seen at all. To try and hide in
+places or behind covers that would offer little screening from sight,
+use <a href="#hiding-in-shadows">Hiding in Shadows</a> instead.</p>
+<h3 id="hiding-in-shadows">Hiding in Shadows</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>HiS</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>The character knows how to hide in dark places, or pass unobserved in
+a crowded place.</p>
+<p>This skill can also be used to hide in behind furnitures, tapestries,
+and in general, in environments that would offer little chance for
+hiding effectively otherwise.</p>
+<h3 id="intimidate">Intimidate</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mW</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>Intimidate is the action of menacing someone that some negative
+outcome will follow, unless they don’t comply with some desired course
+of actions. For intimidation to be effective, the menace must be
+credible, and the target must actually wish for that not to happen.</p>
+<h3 id="investigation">Investigation</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>I</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Inv</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The ability to find hidden clue or draw correct conclusions with a
+limited amount of clue. Particularly useful when visiting the scene of a
+crime.</p>
+<h3 id="lie-detection">Lie Detection</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mI</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>LD</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>This skill represents the ability of the character to detect lies,
+given small hints on the voice, facial expressions and behavior of the
+target.</p>
+<p>A skilled lier can oppose its deception; in this case, there will be
+a simple contest (<strong>CNT</strong>) between the <a
+href="#persuade">persuade</a> skill of the target against the
+<strong>LD</strong> of the character.</p>
+<p>If the target isn’t an able deceiver, the character can try a check
+on this skill, with a difficulty that depends on the amount of
+information the character has about the truth.</p>
+<h3 id="lock-picking">Lock Picking</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>lp</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Lock Picks</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>Used to try opening normal locks. The lock must be within the reach
+of the technological knowledge of the character. The character must have
+also proper tools at its disposal to try the action.</p>
+<h3 id="lore-knowledge">Lore Knowledge</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>lk</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Specialization</td>
+<td>field</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>This skill represents the knowledge of the character about lore and
+stories in the setting where the adventure takes place. The skill is
+specific for lore types; for example, it can be targeted at norse
+mythology, egyptology, local lores etc.</p>
+<p>To check wether a character knows a specific lore it gets in contact
+with, check against a difficulty which depends on how widespread the
+knowledge is, considered the specific setting where the adventure takes
+place.</p>
+<p>A lore everyone knows is checked as “trivial”, one that is
+particularly obscure an known only to experts or initiates is “very
+hard”.</p>
+<h3 id="perception">Perception</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>W</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Prc</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>Determines whether the character is able to detect an element in the
+surrounding that is hard to spot, as a secret door, a potential danger,
+a follower and so on.</p>
+<p>It is used when there aren’t more specific skills to be applied in
+the specific situation. For example, trying to find traps is done by
+rolling on traps.</p>
+<h3 id="persuade">Persuade</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mW</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>With this skill, the character can persuade others. Persuading means
+leading others to believe the truth of some idea, fact or point of view
+(regardless of them being actually true or not). Persuasion works on
+characters that don’t have strong evidence or didn’t made up their mind
+already on said idea, fact or point of view.</p>
+<p>Persuasion can also be used to convince someone into performing some
+action, or abstaining to perform some action they should do, provided
+the consequences for doing so are not particularly harsh. For example,
+you can persuade some security guards to let you in a restricted party,
+provided they don’t have categorical orders, or provided that they think
+they can get away with a transgression.</p>
+<h3 id="pickpocket">Pickpocket</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Pp</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>Tires to remove objects from another characters. The objects must not
+be secured to its body for the action to be successful. Use the
+following table to determine the difficulty of the action:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Target awareness</th>
+<th>Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sleeping/tied/helpless</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>Busy (attention diverted)</td>
+<td>Easy</td>
+</tr>
+<tr class="odd">
+<td>Unsuspecting</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Attentive</td>
+<td>Difficult</td>
+</tr>
+<tr class="odd">
+<td>Suspicious</td>
+<td>Hard to very hard</td>
+</tr>
+</tbody>
+</table>
+<p>The action cannot reasonably be tried if the target is actually aware
+of the fact that the character is actively trying to pickpocket it.</p>
+<h3 id="poisons">Poisons</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Technical knowledge for recognizing or producing poisons.</p>
+<p>To recognize a poison, the character must win a simple check at
+<em>normal</em> difficulty.</p>
+<p>To produce one successfully, they must pass a <em>hard</em>
+check.</p>
+<h3 id="repair">Repair</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mI</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Rep</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>machinery type</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Repair Kit</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>This skill is used to fix machineries, magic constructs, AI, and in
+general any non-living entity that doesn’t have a <em>health</em>.</p>
+<p>The skill must be specialize for machinery category, which must be
+relevant in the game world.</p>
+<p>Special repair kit, software tools, magic devices etc. may provide a
+bouns on the simple check roll.</p>
+<h3 id="resistance">Resistance</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>Varying</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Res</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Damage source</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character has acquired a specific resistance against a determined
+damage source. The base of the resistance depends on the macro-category
+of the damage source, as specified in the following table:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Damage type</th>
+<th>Base</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Physical</td>
+<td>Health</td>
+</tr>
+<tr class="even">
+<td>Mental</td>
+<td>Equilibrium</td>
+</tr>
+<tr class="odd">
+<td>Elemental</td>
+<td>Elem. Res.</td>
+</tr>
+</tbody>
+</table>
+<p>The advantage <a href="#elemental-resitance">Elemental Resistance</a>
+gives the base against elemental damage.</p>
+<p>This skill is used in <strong>Resistance Checks</strong>
+(<strong>RC</strong>) to avoid negative effects from various deadly or
+potentially incapacitating sources. Poisons, illness, certain magic
+spells, overwhelming mental attacks and so on.</p>
+<p>This is not a combat skill, but it may be used in specific situation
+also in combat; for example, it’s used to avert complete incapacitation
+after receiving a deadly wound.</p>
+<h2 id="riding">Riding</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>mount</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>This skill is used to perform particularly difficult actions while
+riding a specific animal or vehicle. For example, jumping a fence with a
+horse, jumping across acrobatic platforms with a motor bike, running
+through a busy skyline with a flying car and so on.</p>
+<p>The skill is specific for each device (or animal) that the character
+might ride.</p>
+<h3 id="running">Running</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>D</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>Running is the skill used when deciding which character wins a run
+race. It can also be used to check if a character is able to run for a
+long time.</p>
+<h3 id="silent-movement">Silent Movement</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Sil</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>This skill is used when the character wants to try and move silently.
+The following table describes possible modifiers:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Terrain</th>
+<th>Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stone</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>Compact soil</td>
+<td>Easy</td>
+</tr>
+<tr class="odd">
+<td>House wooden floor</td>
+<td>Normal</td>
+</tr>
+<tr class="even">
+<td>Old wooden floor</td>
+<td>Difficult</td>
+</tr>
+<tr class="odd">
+<td>Dead Leaves</td>
+<td>Hard</td>
+</tr>
+<tr class="even">
+<td>Squeaky Floor.</td>
+<td>Very Hard</td>
+</tr>
+</tbody>
+</table>
+<h3 id="traps">Traps</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>I</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>This skill represents the knowledge of the character about traps, and
+is used to either detect, build or try and disarm traps, with the
+following modifiers:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Height</th>
+<th>Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Build</td>
+<td>Trivial</td>
+</tr>
+<tr class="even">
+<td>Detect</td>
+<td>Normal</td>
+</tr>
+<tr class="odd">
+<td>Disarm</td>
+<td>Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Each tarp might come with a separate specific modifier in order to be
+detected and disarmed. Once a trap is discovered (either through this
+skill or by other means), the character might attempt a separate check
+on Traps at easy difficulty to determine its modifier prior attempting
+to disarm it.</p>
+<h3 id="treating-wounds">Treating Wounds</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>TrW</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Specialization</td>
+<td>race type</td>
+</tr>
+<tr class="even">
+<td>Prerequisite</td>
+<td>Healing 3</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Healing Kit (opt)</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character has advanced practical medical knowledge for the
+setting where the adventure takes place, and is able to heal wounds of
+the target creature race.</p>
+<p>The following table is applied when checking for the character
+success:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Severity</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Light</td>
+<td>Easy</td>
+</tr>
+<tr class="even">
+<td>Severe</td>
+<td>Normal</td>
+</tr>
+<tr class="odd">
+<td>Heavy</td>
+<td>Difficult</td>
+</tr>
+</tbody>
+</table>
+<p>Standard First-aid kits give a +6 modifier to heal <em>light
+wounds</em> only. Specific healing aids in the target setting can
+provide other modifiers.</p>
+<p>The time required for the healing to be performed depends on the
+setting and on the device used. A SF cellular replicator or a magic balm
+could allow healing heavy wounds in one day, in a few hours or in
+minutes, while in other settings, an herbal healing remedy might require
+a week.</p>
+<p>The <em>race type</em> specifier is to be considered in large
+categories. For example: * Humanoids (Humans, elves, orcs etc.) *
+Human-sized animals (dogs to deers) * Small animals (birds, cats, etc.)
+* Large animals (elephant, dragons, etc.)</p>
 <h1 id="statuses-and-status-points">Statuses and status points</h1>
 <p>Characters will sustain negative effects in pools called
 <em>statuses</em>. Most statuses are binary, i.e. on or off. For
@@ -600,6 +2492,1182 @@ disadvantages</em>, that characters may be subject to because of
 something happening during their adventure. For example, a character may
 receive a light curse that afflicts a specific skill by design, which
 may or may not be relevant for the character.</p>
+<h2 id="generic-skillset-advantages">Generic Skillset: Advantages</h2>
+<ul>
+<li><a href="#battleproof">Battleproof</a></li>
+<li><a href="#born-in-a-mourning-hall">Born in a Mourning Hall</a></li>
+<li><a href="#by-the-skin-of-one&#39;s-teeth">By the skin of one’s
+teeth</a></li>
+<li><a href="#combat-flow">Combat Flow</a></li>
+<li><a href="#combative-spirit">Combative spirit</a></li>
+<li><a href="#deep-mind">Deep Mind</a></li>
+<li><a href="#easygoing">Easygoing</a></li>
+<li><a href="#elemental-resistance">Elemental Resistance</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#fast-paced">Fast Paced</a></li>
+<li><a href="#hard-skin">Hard Skin</a></li>
+<li><a href="#hard-to-die">Hard to Die</a></li>
+<li><a href="#keen-eye">Keen Eye</a></li>
+<li><a href="#lucky">Lucky</a></li>
+<li><a href="#mastery">Mastery</a></li>
+<li><a href="#medical-knowledge">Medical knowledge</a></li>
+<li><a href="#natural">Natural</a></li>
+<li><a href="#nimble-crowder">Nimble crowder</a></li>
+<li><a href="#survival-instinct">Survival instinct</a></li>
+<li><a href="#total-mitigation">Total Mitigation</a></li>
+</ul>
+<h3 id="battleproof">Battleproof</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Prerequisite</td>
+<td>Hard to die</td>
+</tr>
+</tbody>
+</table>
+<p>The character can withstand an additional heavy wound (or the
+equivalent <strong>IP</strong> from lighter wounds) from physical
+sources before being incapacitated.</p>
+<p>The first physical wound is received during a fight will
+automatically heal in 4 hours, even if not treated.</p>
+<h3 id="born-in-a-mourning-hall">Born in a Mourning Hall</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Prerequisite</td>
+<td>Hard to die</td>
+</tr>
+</tbody>
+</table>
+<p>The character can withstand an additional heavy wound from mental
+sources (or the equivalent amount of <strong>IP</strong> from lighter
+wounds) before being incapacitated, and will not die in case the last
+wound received was from a mental source if not treated for 1 hour,
+regardless of the Injury Points sustained.</p>
+<p>The last mental wound received during a fight will automatically heal
+in 4 hours, even if not treated.</p>
+<h3 id="by-the-skin-of-ones-teeth">By the skin of one’s teeth</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>This advantage allows to resist automatically a single deadly wound
+from any source once per day.</p>
+<p>The “boundary” of the day is selected by the GM (on player’s
+suggestion), to be of some significance for the character. It could be
+the midnight in a specific place, the sunset, the sunrise, or performing
+a daily ritual specific of the character’s creed or habit.</p>
+<h3 id="combat-flow">Combat Flow</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Primary</td>
+</tr>
+<tr class="odd">
+<td>Levels</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>The character receivers an additional point of the <em>Advanced
+Combat Resource</em> generated by the target primary:
+<strong>Stamina</strong> for <strong>Body</strong> and
+<strong>Focus</strong> for <strong>Mind</strong>.</p>
+<h3 id="combative-spirit">Combative spirit</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Levels</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Ignore the negative modifier caused by wounds up to the level of this
+advantage (maximum 3).</p>
+<p>For example, if a character with <strong>combative spirit</strong> 1
+receives a serious wound, it would normally have a penalty of -1 to any
+check, but with this advantages the penalty can be ignored. If another
+serious wound is received, instead of the normal -2 penalty, the
+character will only receive a -1 penalty.</p>
+<h3 id="deep-mind">Deep Mind</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Prerequisite</td>
+<td>Mind 9</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="even">
+<td>Levels</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>The character acquires a passive mitigation against <em>despair</em>
+and <em>maddening</em> damage equal to the level of this advantage.</p>
+<h3 id="easygoing">Easygoing</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>2 TT/Normal</td>
+</tr>
+<tr class="even">
+<td>Conflict</td>
+<td>Self taught</td>
+</tr>
+</tbody>
+</table>
+<p>Easy checks on the specialized skill get an additional modifier of
++1, and trivial checks have an additional modifier of +2.</p>
+<p>This extends to any kind of checks and skills, including contests and
+combat skills.</p>
+<h3 id="elemental-resistance">Elemental Resistance</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Element type</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="even">
+<td>Levels</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>The character has an innate resistance to elemental attacks of the
+specified type. All checks against the element type receive the level of
+this advantage as a positive modifier. This includes defense checks in
+combat and resistance checks.</p>
+<p>This advantage should be granted only in settings where it makes
+sense, i.e. as a racial characteristic of a fantasy race, or for
+characters genetically engineered, or for synthetic life forms as
+androids etc.</p>
+<h3 id="expertise">Expertise</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>3 TT/Hard</td>
+</tr>
+<tr class="even">
+<td>Prerequisite</td>
+<td>Easygoing</td>
+</tr>
+</tbody>
+</table>
+<p>This advantage allows to throw 4 die instead of 3 in any check
+involving the specified skill, and select the three best rolls out of
+them.</p>
+<p>This includes combat styles and other combat skills.</p>
+<p>The prerequisite for Expertise is to have <a
+href="#easygoing">Easygoing</a> on the same skill.</p>
+<p>When targeted with this advantage, some skills also improve their
+quality. For example, <a href="#BaM-s-first-aid">first-aid</a> can
+normally cure light wounds only, but if the character has the advantage
+<em>Expertise/First-Aid</em>, it can also cure serious wounds.</p>
+<p>Skills having a special effect when associated with Expertise will
+describe it explicitly in their description.</p>
+<h3 id="fast-paced">Fast Paced</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Normal</td>
+</tr>
+<tr class="odd">
+<td>Prerequisite</td>
+<td>Dexterity 9</td>
+</tr>
+<tr class="even">
+<td>Levels</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>During combat, the character can move for 6 extra feet per turn for
+each level of this skill.</p>
+<h3 id="hard-skin">Hard Skin</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Prerequisite</td>
+<td>Body 9</td>
+</tr>
+<tr class="even">
+<td>Levels</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>The character gains a passive defense against blunt and cut damage
+equal to the level acquired.</p>
+<h3 id="hard-to-die">Hard to Die</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>When receiving a deadly wound, resistance checks are lowered by one
+difficulty level (normal checks become easy, easy checks become trivial
+etc.).</p>
+<h3 id="keen-eye">Keen Eye</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Prerequisite</td>
+<td>Dexterity 9</td>
+</tr>
+<tr class="even">
+<td>Levels</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Falloff in ranged combat is increased of 6 ft. per point of this
+advantage.</p>
+<h3 id="lucky">Lucky</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Primary</td>
+</tr>
+<tr class="odd">
+<td>Conflict</td>
+<td>Unlucky</td>
+</tr>
+</tbody>
+</table>
+<p>The character can re-roll one dice having scored 1 on any check. This
+is applied before any other advantage is considered.</p>
+<p>For example: a character with
+<strong>expert</strong>/<em>lockpicking</em> attempts opening a lock. As
+they have the advantage <a href="#expert">expert</a> on lock-picking,
+they will roll 4d6 and select the best 3 rolls.</p>
+<p>Suppose the rolls result in 1, 1, 3 and 4. The character can now
+re-roll one of the die having rolled 1, scoring a 6 instead, so the
+rolls are now 1, 3, 4 and 6. <strong>Expert</strong> is applied next,
+which allows to chose 3, 4 and 6, for a total of 13.</p>
+<p>If the re-rolled dice scores a 1 again, that result must be accepted
+as final, unless other rules allows re-rolling a 1 roll for any other
+reason.</p>
+<blockquote>
+<p>For example, this happens in many <strong>resistance checks</strong>
+against a sudden death, or when covered by temporary effects that allow
+to re-roll any dice scoring 1 indefinitely.</p>
+</blockquote>
+<p><strong>Notice</strong> that this advantage is opposed to
+<strong>Unlucky</strong>.</p>
+<h3 id="mastery">Mastery</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Secondary</td>
+</tr>
+<tr class="even">
+<td>Prerequisite</td>
+<td>Expertise</td>
+</tr>
+</tbody>
+</table>
+<p>Skill Mastery is an advantage that is applied on a specific skill. As
+a pre-requisite, the character must have already Expertise on the same
+skill.</p>
+<p>Mastery changes all the checks using that skill from a 3d6 throw to a
+2d6+6 (as if one dice is always automatically rolling a 6).</p>
+<p>Combat styles and other combat skills <strong>can</strong> be
+targeted by <strong>mastery</strong>.</p>
+<h3 id="medical-knowledge">Medical knowledge</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>3 TT/Hard</td>
+</tr>
+<tr class="even">
+<td>Level</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>The character knows relatively advanced medical treatment techniques.
+It can be either a medic, a surgeon or a researcher. Its knowledge is
+also correct, regardless of the technological level of the setting. For
+example, even if set in a medieval period, the character knows how to
+actually cure most illnesses, and the correct prophylactic procedure to
+minimize the spread of diseases as the plague.</p>
+<p>All checks involving medicines and cures receive a modifier equal to
+the level of this advantage</p>
+<h3 id="natural">Natural</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="even">
+<td>Prerequisite</td>
+<td>Easygoing</td>
+</tr>
+</tbody>
+</table>
+<p>The character is a “natural” in a certain discipline: tasks that
+would be normally hard for anyone else come much easier to them.</p>
+<p>Difficult checks on the target skill get an additional modifier of
++1, hard checks have an additional modifier of +2, and Very Hard checks
+have a +3 modifier. Without any other situational modifiers, the
+effective modifiers for difficult, hard and very hard checks become -2,
+-4 and -5.</p>
+<p>This advantage can target also combat styles and other combat
+skills.</p>
+<p>Before becoming “natural” in a certain discipline, the character must
+have acquired the advantage <a href="#easygoing">easygoing</a> on the
+same discipline.</p>
+<h3 id="nimble-crowder">Nimble crowder</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+<tr class="even">
+<td>Conflict</td>
+<td>Latecomer</td>
+</tr>
+</tbody>
+</table>
+<p>This advantage allows to exchange the place in a <a
+href="$RulebookAddress#ranking">ranking</a> or <a
+href="$RulebookAddress#multiranking">multiranking</a> with any character
+from their party that scored in a lower position in those rankings where
+being placed high is advantageous, or raise in the ranking where higher
+places are disadvantageous.</p>
+<p>For example, supposed a <a
+href="$RulebookAddress#simplified-combat">simplified combat</a> is
+taking place, and these are the results:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Place</th>
+<th>Party A</th>
+<th>Party B</th>
+<th>Winner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>18</td>
+<td>22</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>16</td>
+<td>18</td>
+<td>B</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>12</td>
+<td>15</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>9</td>
+<td>8</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p>Party A scores 1 and party B scores 3 points, as party B wins the
+first three places, while party A wins the 4th.</p>
+<p>If the character in second place uses the <strong>nimble
+crowder</strong> advantage to move down at the 3d rank, now party A and
+B are in a draw: 18-22 (point B), 12-18 (point B), 16-14 (point A), 9-8
+(point A). With this move, the character that was previously in the
+second place can improve the tactical outcome of the battle.</p>
+<p>Another usage of this advantage may be during a <a
+href="$RulebookAddress#basic-combat">basic combat</a> <strong>combat
+order</strong> ranking, which, in this <em>foundation</em>, is performed
+on the <a href="#initiative">initiative</a> skill. Suppose the outcome
+of the ranking is as follows.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Place</th>
+<th>Roll</th>
+<th>Party</th>
+<th>Member</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>18</td>
+<td>A</td>
+<td>Warrior</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>16</td>
+<td>B</td>
+<td>Goblin</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>12</td>
+<td>A</td>
+<td>Wizard</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>9</td>
+<td>B</td>
+<td>Gnoll</td>
+</tr>
+</tbody>
+</table>
+<p>If the warrior uses the placement to just wait for a better moment,
+the goblin will go first; but they use this advantage to move to the
+third spot in place of the wizard, that character can go first, and cast
+a debilitating spell on the opposing party.</p>
+<p>This advantage conflicts with the <a href="#latecomer">latecomer</a>
+disadvantage.</p>
+<h3 id="survival-instinct">Survival instinct</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>3 TT/Normal</td>
+</tr>
+<tr class="odd">
+<td>Levels</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>All instinctive defense checks get a +1 modifier per level of this
+advantage.</p>
+<h3 id="total-mitigation">Total Mitigation</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Advantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>When the character receives an effective damage for 0
+<strong>DP</strong> it still sustain a <em>scratch</em>. This advantage
+prevents that.</p>
+<p>However, other negative effects will still be applied. For example,
+if the character is hit by a poisonous dart but the effective damage
+after all the mitigations are applied is 0, while it won’t receive a
+scratch, even with this advantage the poison will still be applied.</p>
+<h2 id="generic-skillset-disadvantages">Generic Skillset:
+Disadvantages</h2>
+<ul>
+<li><a href="#fainting">Fainting</a></li>
+<li><a href="#fumbling">Fumbling</a></li>
+<li><a href="#latecomer">Latecomer</a></li>
+<li><a href="#nervous">Nervous</a></li>
+<li><a href="#self-taught">Self Taught</a></li>
+<li><a href="#situational-unawareness">Situational Unawareness</a></li>
+<li><a href="#soft-skin">Soft Skin</a></li>
+<li><a href="#unlucky">Unlucky</a></li>
+<li><a href="#vulnerable">Vulnerable</a></li>
+<li><a href="#weak-mind">Weak Mind</a></li>
+</ul>
+<h2 id="fainting">Fainting</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Primary</td>
+</tr>
+</tbody>
+</table>
+<p>A character with this disadvantage is subject to fainting when
+receiving a serious or heavy wound.</p>
+<p>The character must perform a <strong>resistance check</strong>
+against the source of damage causing the wound. On failure, it receives
+the <strong>fainting</strong> status: the character is unable to perform
+any action for about half a minute.</p>
+<p>In combat, this translates in losing any action left in this turn and
+skipping the next one; in this situation, instinctive defense checks get
+a -3 modifier. Further wounds while affected by the
+<strong>fainting</strong> status do not re-apply it.</p>
+<h3 id="fumbling">Fumbling</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>This disadvantage makes considerably easier to score a critical
+failure in every check.</p>
+<p>Each entry in the <a
+href="$RulebookAddress#critical-results">critical failure</a> table is
+increased of three points. The success margin for scoring a critical
+failure becomes:</p>
+<ul>
+<li>Trivial: -3</li>
+<li>Easy: -4</li>
+<li>Normal: -5</li>
+<li>Hard: -6</li>
+<li>Very hard: -7</li>
+</ul>
+<p>Also, in <em>normal</em>, <em>hard</em> and <em>very hard</em> checks
+a natural roll of 3 <strong>or</strong> 4 leads to an automatic critical
+failure, regardless of the negative success margin.</p>
+<h3 id="latecomer">Latecomer</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Secondary</td>
+</tr>
+<tr class="odd">
+<td>Conflict</td>
+<td>Nimble crowder</td>
+</tr>
+</tbody>
+</table>
+<p>Whenever a <a href="$RulebookAddress#ranking">ranking</a> is
+performed, the character gets one place lower than their scored rank.
+This is not applied to <a
+href="$RulebookAddress#multiranking">multirankings</a></p>
+<p>If two or more characters with this disadvantage are stacked in
+consecutive places, the first character without this disadvantage ranks
+on top of them.</p>
+<p>For example, suppose this is the outcome of an
+<strong>initiative</strong> ranking to establish a <strong>combat
+order</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Place</th>
+<th>Roll</th>
+<th>Party</th>
+<th>Member</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>18</td>
+<td>A</td>
+<td>Warrior</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>16</td>
+<td>A</td>
+<td>Wizard</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>12</td>
+<td>B</td>
+<td>Goblin</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>9</td>
+<td>B</td>
+<td>Gnoll</td>
+</tr>
+</tbody>
+</table>
+<p>If both the warrior and the wizards have this disadvantage and the
+goblin hasn’t, the ranking will be modified as:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Place</th>
+<th>Roll</th>
+<th>Party</th>
+<th>Member</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>12</td>
+<td>B</td>
+<td>Goblin</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>18</td>
+<td>A</td>
+<td>Warrior</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>16</td>
+<td>A</td>
+<td>Wizard</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>9</td>
+<td>B</td>
+<td>Gnoll</td>
+</tr>
+</tbody>
+</table>
+<p>This disadvantage conflicts with <a href="#nimble-crowder">nimble
+crowder</a>, even if that advantage have a similar effect, that is,
+being able to reduce the character position in any ranking at will.</p>
+<h3 id="nervous">Nervous</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Levels</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>The character receives a penalty equal to the level of this
+disadvantage whenever they must “move first” in a game situation. This
+includes, but is not limited to:</p>
+<ul>
+<li>When they are the first in a <strong>combat order</strong> ranking,
+i.e. when they move first in a combat round.</li>
+<li>When they are on the top spot of a
+<strong>multiranking</strong>.</li>
+<li>On the first check after winning a <strong>ranking</strong>, e.g. on
+the first action once entering a house after they won the ranking to
+rush inside.</li>
+</ul>
+<p>If it’s possible to renounce being the first acting in a given
+context, the character can chose if move first and face the penalty of
+this disadvantage, or wait and move without penalty.</p>
+<p>For example, even when having won a <strong>combat order</strong>
+ranking, characters are not forced to move first. They can wait for any
+other moment in the round to act; if they let someone else (enemy or
+allied) to perform an action first, they can then act without any
+penalty.</p>
+<p>Similarly, even after winning a ranking that would allow them to move
+first, i.e. after being the first rushing in a house, they can forfeit
+the privilege of being the first to act, and let someone else (e.g. the
+second in the ranking) to act first.</p>
+<p>However, it’s not possible to arbitrarily change spot in a
+multiranking. So, if the character is first in their team in a
+multiranking, he or she will have to score against the other teams
+top-scorer applying the penalty of this disadvantage.</p>
+<h3 id="self-taught">Self Taught</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>2 TT/Normal</td>
+</tr>
+<tr class="even">
+<td>Conflict</td>
+<td>Easygoing</td>
+</tr>
+</tbody>
+</table>
+<p>Easy checks on the specialized skill get a penalty modifier of -1,
+and trivial checks have a modifier of -2.</p>
+<p>This extends to any kind of checks and skills, including contests and
+combat skills.</p>
+<h3 id="situational-unawareness">Situational Unawareness</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Levels</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>All instinctive defense checks and contests get a -1 modifier per
+level of this disadvantage.</p>
+<h3 id="soft-skin">Soft Skin</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Levels</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>The character receives a passive penalty against blunt and cut damage
+equal to the level acquired.</p>
+<h3 id="unlucky">Unlucky</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Primary</td>
+</tr>
+<tr class="odd">
+<td>Conflict</td>
+<td>Lucky</td>
+</tr>
+</tbody>
+</table>
+<p>The character performs every check (except direct <strong>resistance
+checks</strong>) rolling an additional, separate six-face dice (suggest
+using a differently colored one, if possible).</p>
+<p>If the separate roll scores 1, the <em>worst</em> roll of the other
+die in the check (<em>after</em> applying other advantages) is
+substituted with 1.</p>
+<p>For example: a character with
+<strong>expert</strong>/<em>lockpicking</em> attempts opening a lock. As
+they have the advantage <a href="#expert">expert</a> on lock-picking,
+they will roll 4d6 and select the best 3 rolls. However, they also must
+roll for <strong>unlucky</strong>. Suppose the roll for the check gives
+2, 3, 3 and 4, and the <strong>expert</strong> advantage allows to
+discard the lower roll (2), resulting in 3, 3 and 4. However, the
+unlucky dice rolls 1: the lowest roll after applying
+<strong>expert</strong> (3) must be discarded and changed into 1, so the
+check result will now be 1 + 3 + 4 = 8 instead of 3 + 3 + 4 = 10.</p>
+<p>If the special dice roll scores 1, but one of the other rolls was
+already a natural 1, nothing happens.</p>
+<p>This penalty is <strong>not</strong> applied on any
+<strong>resistance check</strong>. Also, any temporary effect improving
+the natural rolls will temporarily disable this disadvantage as a
+side-effect.</p>
+<p><strong>Notice</strong> that this disadvantage is opposed to
+<strong>Lucky</strong>.</p>
+<h3 id="vulnerable">Vulnerable</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Specialization</td>
+<td>Damage source</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+<tr class="even">
+<td>Levels</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>The character receives 1 additional <strong>damage point</strong>
+from the target source, once at least 1 damage point is already
+received.</p>
+<p>This is before the application of direct damage reduction; this means
+that armors, force fields, energy shields, magic and so on can absorb
+part of the additional damage.</p>
+<p>If the damage source deals 0 <strong>DP</strong> before applying any
+mitigation for any reason, this disadvantage is not applied.</p>
+<p>This disadvantage is specialized by damage source. It is to
+considered conflicting with any advantage that provides damage reduction
+from that specific damage source (e.g. <a href="#hard-skin">hard
+skin</a> providing resistance against some types of physical
+damages).</p>
+<p>On the other hand, a character may have resistance against some
+specific damage and vulnerabilities against others. For example, it may
+be resistant to cold but vulnerable to heat, both being elemental damage
+sources.</p>
+<h3 id="weak-mind">Weak Mind</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Disadvantage</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+<tr class="odd">
+<td>Levels</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>The character acquires a passive vulnerability against
+<em>despair</em> and <em>maddening</em> damage equal to the level of
+this advantage.</p>
 <h1 id="backgrounds">Backgrounds</h1>
 <p>Backgrounds are generic advantages and disadvantages giving deeper
 customization to characters in the game world.</p>
@@ -642,6 +3710,444 @@ example, the ability to <strong>persuade</strong> already takes into
 account the attractiveness of a character. Conversely, a physical
 disability is difficult to translate into gameplay, while a low
 attribute number can better represent it.</p>
+<h2 id="generic-skillset-backgrounds">Generic Skillset: Backgrounds</h2>
+<ul>
+<li><a href="#aristocrat">Aristocrat</a></li>
+<li><a href="#corporative">Corporative</a></li>
+<li><a href="#criminal-boss">Criminal Boss</a></li>
+<li><a href="#cult-member">Cult member</a></li>
+<li><a href="#fallen-aristocrat">Fallen Aristocrat</a></li>
+<li><a href="#famous">Famous</a></li>
+<li><a href="#field-expert">Field expert</a></li>
+<li><a href="#gang-member">Gang member</a></li>
+<li><a href="#law-enforcer">Law Enforcer</a></li>
+<li><a href="#military">Military</a></li>
+<li><a href="#outlaw">Outlaw</a></li>
+<li><a href="#sectarian">Sectarian</a></li>
+<li><a href="#wealthy">Wealthy</a></li>
+</ul>
+<h2 id="aristocrat">Aristocrat</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1+ TT/Secondary</td>
+</tr>
+</tbody>
+</table>
+<p>The character is an aristocrat in the target setting. In settings
+that don’t consider birth rights as traditional aristocracy, the the
+character belongs to a similar oligarchy or high-order political
+elite.</p>
+<p>The cost, and the effect of the background on the game, depends on
+the level of aristocracy:</p>
+<ul>
+<li>Baron, career politician, oligarch: 1 TT/Secondary</li>
+<li>Count, party leader, organization leader: 2 TT/Secondary</li>
+<li>Duke, minister, CEO: 3 TT/Secondary</li>
+<li>King, prince, prime minister, president: 4 TT/Secondary</li>
+</ul>
+<p>The background is applied also if the character is a close family
+member (child, parent, souse) of a person in the given position. For
+example, if a player wants to play the son of a baron, they will have to
+spend 1 TT/Secondary too.</p>
+<p>This background is not applied if the character is prevented from
+using the social position for any reason: check the background “Fallen
+aristocracy” for that.</p>
+<h2 id="corporative">Corporative</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>A corporative is an employee of a company or governmental institution
+large enough to define a vast part of their character and behavior.</p>
+<p>For example, university professor, researcher, manager in a
+multinational, engineer in a governmental space program are all covered
+by this background.</p>
+<p>Of course, the position must leave the character the possibility to
+participate in the adventure. That may be justified as paid absence,
+sabbatical, research project, special assignment, special operation
+etc.</p>
+<p>However, fort his background to be active, the character must always
+retain the connection with the organization, and suffer the consequences
+in case it breaks they break its rules.</p>
+<p>While covering governmental agencies, this background doesn’t cover
+law enforcement and military organizations, which are separately defined
+by the <a href="#law-enforcer">law enforcer</a> and <a
+href="#military">military</a> backgrounds.</p>
+<h2 id="criminal-boss">Criminal Boss</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/main</td>
+</tr>
+</tbody>
+</table>
+<p>The character is the leader of a criminal organization. It has a
+relatively large network of criminals that follow his orders, a
+consistent wealth and a flux of incoming money. On the other side, it’s
+known to relevant police forces, constantly at risk of being arrested
+and not always welcome in high social circles.</p>
+<h2 id="cult-member">Cult member</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character is an active follower of a cult. That includes any kind
+of cult, from major religions to minor local cults, but not secret sects
+or outlawed cults; that is covered by the <a
+href="#sectarian">Sectarian</a> background.</p>
+<p>Being an active follower means to uphold the principles and the
+practice of the rules with as little deviation as possible.</p>
+<h2 id="fallen-aristocrat">Fallen Aristocrat</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1+ TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character was part of an aristocratic family in the target
+setting, but either:</p>
+<ul>
+<li>they are prevented from accessing the benefits of that position;
+or</li>
+<li>they lost permanently or semi-permanently that position.</li>
+</ul>
+<p>Some possible examples:</p>
+<ul>
+<li>an out-of-wedlock child of a baron, who is known by their father but
+not officially recognized as a heir;</li>
+<li>the only child survivor of a usurped and exterminated royal
+family;</li>
+<li>a former party leader that has been excised out of the ruling
+structures during some power struggle.</li>
+<li>A noble rebelling against their king.</li>
+</ul>
+<p>A character like Robin Hood would fit this background.</p>
+<p>The cost, and the effect of the background on the game, depends on
+the level of former / unrecognized aristocracy:</p>
+<ul>
+<li>Baron, career politician, oligarch: 1 TT/Hard</li>
+<li>Count, party leader, organization leader: 2 TT/Hard</li>
+<li>Duke, minister, CEO: 3 TT/Hard</li>
+<li>King, prince, prime minister, president: 4 TT/Hard</li>
+</ul>
+<h2 id="famous">Famous</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1+ TT/Primary</td>
+</tr>
+</tbody>
+</table>
+<p>The character is famous and easily identified by its peers. Also,
+whoever wants to know about the character, or searching for it because
+of any specific reason (i.e. to hire it for a job, or to hunt it down),
+can easily find information about it and its general whereabouts, unless
+the character actively disguises and hides.</p>
+<p>Characters with other backgrounds may be famous as well; an
+aristocrat probably is, and so is a boss criminal. This background
+covers being famous directly for some deed or action, besides the ones
+specifically covered by other backgrounds.</p>
+<p>The cost depends on how famous the character is:</p>
+<ul>
+<li>1 <strong>TT</strong>/<em>Primary</em>: Known by 1/20th-1/10th of
+the population; people occasionally identify them when walking by, and
+have heard of he character.</li>
+<li>2 <strong>TT</strong>/<em>Primary</em>: Known by 1/5th of the
+population. During a day out, or a long walk, the character is sure to
+be recognized, and possibly stopped by admirers (or haters).</li>
+<li>3 <strong>TT</strong>/<em>Primary</em>: Known by more than half the
+population. Wherever the character goes, they are recognized, and when
+that happens, people flock to see them, or flee if they have a negative
+fame.</li>
+</ul>
+<h2 id="field-expert">Field expert</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1+ TT/Primary</td>
+</tr>
+</tbody>
+</table>
+<p>The character is an expert in some relevant field of study: physics,
+psychology, economics, information technology, regional lore, world
+lore, history etc.</p>
+<h2 id="gang-member">Gang member</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>While not currently outlaw, the character is part of an active
+criminal organization.</p>
+<p>Gang members have a higher initial pool of money to use.</p>
+<h2 id="law-enforcer">Law Enforcer</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1+ TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character is a member of the Police, city guard, castle guard, or
+equivalent Law Enforcement agency. This includes also commanding
+roles</p>
+<ul>
+<li>Simple Member: 1/TT Primary</li>
+<li>Sergeant, squad leader, garrison leader: 2/TT Primary</li>
+<li>Inspector, Inquirer, Inqusitor: 3/TT Primary</li>
+<li>Prosecutor, Judge: 4/TT Primary</li>
+</ul>
+<h2 id="military">Military</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1+ TT/Primary</td>
+</tr>
+</tbody>
+</table>
+<p>The character is part of a military organization, or organized
+militia. This includes modern armies, knight orders, semi-regular
+militia, legions and so on.</p>
+<p>The cost of this background depends on the level occupied in the
+military:</p>
+<ul>
+<li>Soldier: 1 TT/primary</li>
+<li>Sergeant, legionary: 2 TT/primary</li>
+<li>Captain, centurion: 3 TT/primary</li>
+<li>Colonel, general: 4 TT/primary</li>
+</ul>
+<p>Of course, the character needs to have a reason to join the
+adventure. This will usually be a special assignment, a long term
+espionage or survey mission, or even a temporary license.</p>
+<h2 id="outlaw">Outlaw</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character is a fugitive in the eye of the law, whether they have
+actually committed any crime or not.</p>
+<p>In some game worlds, political or religious organizations may be
+outlawed. In some others, characters with special birthmarks, uncommon
+powers or attributes may be outlaw.</p>
+<p>In some game worlds a person could become outlaw because of ostracism
+towards their family member; that would be the case of a king declaring
+the whole family of a treasonous baron to be outlaw.</p>
+<p>However, this applies also to real criminals, as a typical outlaw in
+a western movie.</p>
+<h2 id="sectarian">Sectarian</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character is a member of a secret, non-governmental
+organization.</p>
+<p>This includes but is not limited to:</p>
+<ul>
+<li>Secret criminal organizations. While all criminal organization
+require an amount of secrecy, to the organizations we’re talking here
+are more in the line of the historical <em>hashashin</em>, super-villain
+mysterious sects that have their primary activity into crime.</li>
+<li>Occult and exoteric organizations.</li>
+<li>Underground cults.</li>
+<li>Underground anti-governmental organizations.</li>
+</ul>
+<p>And in general, any organization that:</p>
+<ul>
+<li>has a strict code of conduct; and</li>
+<li>has a proclaimed target objective that the members must actively
+pursue; and</li>
+<li>requires exclusive and perpetual affiliation; and</li>
+<li>requires secrecy and forbids members to let their affiliation known
+to any non authorized person.</li>
+</ul>
+<h2 id="wealthy">Wealthy</h2>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Category</td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>2 TT/hard</td>
+</tr>
+</tbody>
+</table>
+<p>The character has personal wealth in excess with respect to the
+population average, enough to be considered in the richest 1%.</p>
+<p>This background doesn’t cover the source of the wealth; it’s to be
+employed only when no other background that would usually result in the
+character being wealthy cannot be applied.</p>
+<p>Reasons for this background to apply could be:</p>
+<ul>
+<li>While the family of the character is not part of the world
+aristocracy, it has accumulated wealth through trade and/or hard
+work.</li>
+<li>The character has received their wealth as an inheritance, a lottery
+win, a gamble, or any other random reason.</li>
+<li>The character found their wealth as a lucky consequence of a
+previous adventure, i.e. they stumbled on a treasure that wasn’t
+supposed to be there.</li>
+<li>The character has a very lucrative activity in the game world which
+is not covered by any other background.</li>
+</ul>
+<p>This background is not applied when the wealth of the character may
+be related or explained by any other background (i.e. being a high
+ranking member of the <a href="#military">military</a>).</p>
 <h1 id="checks">Checks</h1>
 <p>A check consists of throwing dices and verify if the result is
 successful. Checks are the nuts and bolts of SIRPAS. Practically every
@@ -797,7 +4303,7 @@ they have a draw, it means that none of them is able to snitch the
 weapon from the other, and they can try again.</p>
 <h3 id="non-draw-contests">Non-draw contests</h3>
 <p>Contests that don’t allow draws are specifically indicated by the
-rules as <em>Drawless Contests</em> (<strong>ndCNT</strong>). In this
+rules as <em>Non-Draw Contests</em> (<strong>ndCNT</strong>). In this
 cases, when a draw is scored, it is discarded as not performed, and
 another contest takes place.</p>
 <h2 id="rankings">Rankings</h2>
@@ -888,11 +4394,10 @@ can change during an action (i.e. because a GM controlled character gets
 wounded) can be tiresome, and can slow down the pace of the game for the
 players as well.</p>
 <p>To prepare the multi-contest, the GM should: 1. Write the characters
-he controls on a column of a notepad. 1. Besides each name, write the
-modifiers for that characters, to be updated if the contest is repeated.
-1. Unless each GM controlled character is special, the GM always assigns
-the best outcome to the topmost character, so that it can read the
-ranking results go top to bottom.</p>
+he controls on a column of a notepad. 2. Besides each name, write the
+modifiers for that characters. 3. Unless each GM controlled character is
+special, the GM always assigns the best outcome to the topmost
+character, so that it can read the ranking results go top to bottom.</p>
 <p>If the GM doesn’t have a dice-throwing application handy, which can
 automate part of the process, it can use the following procedure to
 generate multiple scores at once: 1. Roll 2d6 and write down the result.
@@ -1207,7 +4712,7 @@ or control unit (optional)</h3>
 <p>When a wound affects the head (or other target part that is
 particularly critical to control the behavior of the character), it
 generates an additional <strong>injury point</strong>.</p>
-<h2 id="healing">Healing</h2>
+<h2 id="healing-1">Healing</h2>
 <p>The <strong>IP</strong> generated by wounds (and relative check
 penalties) affect the characters until they are healed. Wounds are
 healed one-by-one, unless a general healing procedure is applied (i.e. a
@@ -1358,38 +4863,6 @@ any fight, everyone will then add the value of the
 <strong>dominance</strong> of they skill they want to (or can) use to
 every roll they take.</p>
 </blockquote>
-<h3 id="styles-and-maneuvers">Styles and maneuvers</h3>
-<p>In the <em>advanced combat system</em>, <strong>Combat
-skills</strong> are associated with a <em>style</em>, that is a
-collection of actions that can be done using the skill (called
-<strong>maneuvers</strong>).</p>
-<p><strong>Maneuvers</strong> are not stand-alone skills, and they
-cannot be target of advantages or perks.</p>
-<p>The same combat style can also cover different type of weapons, with
-some specific maneuvers limited to some weapons. For example, a combat
-skill may be <strong>Firearms</strong>, covering any kind of modern
-firearm, and its style may include maneuvers as <strong>rapid
-reload</strong>, which applies only to pistols, and
-<strong>sniping</strong>, which applies only to precision rifles.</p>
-<p>Maneuvers have the following statistics:</p>
-<ul>
-<li>Type: can be <strong>attack</strong>, <strong>defense</strong> or
-<strong>action</strong>.</li>
-<li>Modifier: positive or negative bonus to the combat skill for any
-type of roll.</li>
-<li>Prerequisite: minimum level of other attributes/skills required to
-perform this maneuver.</li>
-<li>Diminishing Return: modifier to the roll if using the same maneuver
-more than once in a row.</li>
-<li>Range: If the combat skill is ranged, the distance at which this
-maneuver is effective.</li>
-<li>Damage: How many <strong>DP</strong> the maneuver inflicts if
-successful. Defenses and actions can have generate damage as well
-(i.e. counter-attacks or actions causing indirect damage).</li>
-<li>Status: a status alteration of the target if the maneuver is
-successful (i.e. causing the target to be <em>stunned</em> for 2 turns,
-and so on).</li>
-</ul>
 <h2 id="BaM-m-simplified-combat">Simplified Combat</h2>
 <p>This combat system can be used to resolve fights between small group
 of opponents are facing each other with <em>compatible</em> fighting
@@ -1804,19 +5277,2632 @@ generate damage also when defending.</p>
 <em>actions</em>. Attacks and defenses represent a mores specific usages
 of the base combat skill as per the <em>base combat</em> rules;
 <em>actions</em> are other ways a combat skill can be employed.</p>
-<h3 id="maneuver-modifier">Maneuver modifier</h3>
-<p>Some maneuvers are more difficult than others; some rely on brute
-force, others on finesse of execution. To reflect this, each maneuver
-can offer different modifiers to the various combat skill rolls.</p>
-<h3 id="diminishing-returns">Diminishing Returns</h3>
-<p>Some maneuvers get a negative modifier if being used repeatedly
-against the same target. For example, repeating using a brawl/punch has
-diminishing returns: your opponent will read your move, and will be able
-to better defend against the same attack. In those situations, you’ll
-want to be less predictable, and use other maneuvers, or other styles
-altogether.</p>
-<p>This factor is called <strong>diminishing return</strong>
-(<strong>DR</strong>) for a certain maneuver.</p>
+<h3 id="maneuver-cost-and-combat-resource">Maneuver Cost and Combat
+Resource</h3>
+<p>Each maneuver requires to spend a certain amount of <strong>Advanced
+Combat Resources</strong> (<strong>ACR</strong>) to be successfully
+performed. The pool of ACR depends on the <strong>Primary</strong>
+attribute on which the combat type relies on (physical, mental, magical
+etc.).</p>
+<p>Once the pool is depleted, the character can perform only the basic
+maneuvers of the given combat style, which has a cost of 0
+<strong>ACR</strong>, and usually consists of the same basic action that
+could be performed in the base combat.</p>
+<p>Each primary attribute in the system determines a type and initial
+pool of combat resources. For example, the <strong>Generic
+Skillset</strong> <strong>Body</strong> attribute determines an amount
+of <strong>Stamina</strong>, which is used to perform physical advanced
+maneuvers based.</p>
+<p>Advantages and temporary effect can provide a larger resource
+pool.</p>
+<p>The pool is replenished at the end of the combat, after a period of
+rest that of one minute for each point to be replenished, rounded up to
+the nearest ten minute slot.</p>
+<h2 id="generic-skillset-combat-skills">Generic Skillset: Combat
+Skills</h2>
+<ul>
+<li><a href="#active-mitigation">Active Mitigation</a></li>
+<li><a href="#archery">Archery</a></li>
+<li><a href="#advanced-combat">Advanced Combat</a></li>
+<li><a href="#block">Block</a></li>
+<li><a href="#brawl">Brawl</a></li>
+<li><a href="#advanced-combat">Advanced Combat</a></li>
+<li><a href="#break-free">Break Free</a></li>
+<li><a href="#concentration">Concentration</a></li>
+<li><a href="#advanced-combat">Advanced Combat</a></li>
+<li><a href="#disengage">Disengage</a></li>
+<li><a href="#firearms">Firearms</a></li>
+<li><a href="#advanced-combat">Advanced Combat</a></li>
+<li><a href="#full-contact">Full Contact</a></li>
+<li><a href="#advanced-combat">Advanced Combat</a></li>
+<li><a href="#initiative">Initiative</a></li>
+<li><a href="#instinctive-defense">Instinctive Defense</a></li>
+<li><a href="#knife-fight">Knife Fight</a></li>
+<li><a href="#advanced-combat">Advanced Combat</a></li>
+<li><a href="#shoot">Shoot</a></li>
+<li><a href="#slash">Slash</a></li>
+<li><a href="#swordfight">Swordfight</a></li>
+<li><a href="#two-handed-weapons">Two-handed weapons</a></li>
+<li><a href="#advanced-combat">Advanced Combat</a></li>
+<li><a href="#throw">Throw</a></li>
+<li><a href="#thrust">Thrust</a></li>
+<li><a href="#willpower-defense">Willpower Defense</a></li>
+</ul>
+<h3 id="active-mitigation">Active Mitigation</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Callsign</td>
+<td>AM</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Specialization</td>
+<td>combat style</td>
+</tr>
+<tr class="even">
+<td>Cascade</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Shields (opt)</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Once per combat turn, the character can mitigate incoming damage by
+an amount equal (or less) than the <strong>Success Margin</strong> on a
+<strong>Simple Check</strong> on this skill.</p>
+<p>This skill can be used also in simplified combat, after the full
+amount of damage received by a character is computed.</p>
+<p>For example, a warrior has <strong>AM/Swordfight</strong> 6, and the
+advantage <strong>Expertise/AM/Swordfight</strong> It receives damage
+for 5 <strong>DP</strong> after passive mitigation. Rolling on this
+skill 4 die (as an expert for <strong>AM</strong> in
+<strong>Swordfight</strong> style) it obtains 6, 5, 5, 1, for a total of
+6 + 5 + 5 for the roll and 6 for the skill level; the total is 22, so
+the <strong>SM</strong> is 22 - 21 = 1.</p>
+<p>In the end, the fighter receives 5-1 = 4 <strong>DP</strong>.</p>
+<p><strong>Optional</strong>: Dedicated equipment can change the
+difficulty of the check. Wearing a shield or a defensive equivalent for
+the selected style will make the check <em>easy</em>. In ranged styles,
+cover will be considered adequate shielding. More advanced technology or
+magic may make the check <em>very easy</em>.</p>
+<p>This is a <a href="$RulebookAddress#cascade-skills">cascade
+skill</a>; this means it’s possible to acquire this attribute multiple
+times to perform multiple active mitigations per turn.</p>
+<h3 id="archery">Archery</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Dominance</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>Bows, Crossbows</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>This is the base style (and skill) needed to use bows, crossbows and
+similar projectile weapons.</p>
+<p>Unless differently specified, all attacks from <em>archery</em> deal
+<strong>pierce</strong> damage, and the range depends on the used
+weapon.</p>
+<h3 id="advanced-combat-1">Advanced Combat</h3>
+<p><em>Archery</em> uses <strong>Focus</strong> as combat resources,
+which is determined by the <strong>Mind</strong> primary attribute.</p>
+<h4 id="aim">Aim</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Action</td>
+</tr>
+<tr class="even">
+<td>Prereq</td>
+<td>Archery 3</td>
+</tr>
+<tr class="odd">
+<td>ACR</td>
+<td>1 <strong>Fcs</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Take a maneuver to improve the next attack, giving it a modifier of
++1. It can be repeated any number of times within a single turn, but the
+modifier is applied only to the very next Shoot.</p>
+<h4 id="localized-shot">Localized Shot</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>Variable</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Archery 5</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+1</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>(<strong>Cripple</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>Loads and shoot an arrow or a bolt aiming to a specific part of the
+body.</p>
+<p>A <em>critical success</em> will cause automatically a <em>localized
+heavy wound</em>, crippling that part of the body, if the damage caused
+would be otherwise enough to cause at least a <em>light wound</em>.</p>
+<blockquote>
+<p>Localized heavy wounds can have further negative effects with respect
+to normal heavy wounds, as disarming, reducing the movement speed,
+blinding and so on.</p>
+</blockquote>
+<p>If the localized shot was aimed at the head, a <em>critical
+success</em> will cause a <em>deadly wound</em>.</p>
+<p>The modifier to be applied depends on the target part of the
+body:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Body Part</th>
+<th style="text-align: right;">Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Arm</td>
+<td style="text-align: right;">-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Leg</td>
+<td style="text-align: right;">-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Head</td>
+<td style="text-align: right;">-4</td>
+</tr>
+</tbody>
+</table>
+<h4 id="overextend">Overextend</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Action</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS-2</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Archery 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Limitation</td>
+<td>Bows</td>
+</tr>
+</tbody>
+</table>
+<p>Take a maneuver to bend the bow more than normal in order to improve
+the next attack, giving it a damage modifier equal to the success margin
+of this check.</p>
+<h4 id="overload">Overload</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Action</td>
+</tr>
+<tr class="even">
+<td>Prereq</td>
+<td>Archery 9</td>
+</tr>
+</tbody>
+</table>
+<p>Loads two arrows or two bolts in the weapon. The very next attack
+will have a fixed modifier of -3, but the character gains an extra
+attack to be used in the current or the next turn.</p>
+<blockquote>
+<p>This maneuver gains an extra attack only. Defense and action count is
+not affected.</p>
+</blockquote>
+<p>This is useful when it’s not currently possible or ideal to attack a
+target, but you don’t want to lose the attack.</p>
+<h4 id="shoot">Shoot</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Archery 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Loads and shoot an arrow or a bolt.</p>
+<h3 id="block">Block</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>D/2</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Blk</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>This skill is used to try and block an opponent in <em>close
+quarters</em>.</p>
+<p>If the opponent is unaware, the attempt will succeed with a
+<strong>CHK</strong> at <em>easy</em> level.</p>
+<p>In combat, the opponent can use any melee defense. In that case, a
+<strong>CFR</strong> between <strong>Blk</strong> and the defense is
+attempted.</p>
+<p>Normally, the block lasts one turn; then the opponent can try to <a
+href="#break-free">break free</a> or any relevant melee defense to exit
+the block.</p>
+<p>A critical success indicates that the blocker has completely subdued
+the opponent, that will be unable to break free unless the blocker is
+forced to remove the block.</p>
+<p>Multiple characters can attempt to block the same opponent; in that
+case, a <strong>RNK</strong> is attempted. All the characters scoring
+higher than the defendant will be actively engaged in the block.</p>
+<h3 id="brawl">Brawl</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mS</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Dominance</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>Hand Fight (opt)</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>Brawl is the style of fight with bare hand and feet, without a
+specific preparation. It’s often used in tavern and bar fights, and can
+also be useful in other combat situations.</p>
+<p>Every human or humanoid character has access to brawl.</p>
+<p>Unless differently specified, all attacks from <strong>brawl</strong>
+deal <em>blunt</em> damage, and all the maneuvers are melee.</p>
+<h3 id="advanced-combat-2">Advanced Combat</h3>
+<p><em>Brawl</em> uses <strong>Stamina</strong> as combat resources,
+which is determined by the <strong>Body</strong> primary attribute.</p>
+<h4 id="block-1">Block</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Brawl 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Block an incoming blow with the lower part of the arms (similar to
+the guard in a boxe match).</p>
+<p>Can’t be used against any weapon, unless the arms are given an amrour
+capable to completely block the attack; for example, a character arm
+might be stuck to an iron rod; in this case, the character can use
+<strong>block</strong> against i.e. a sword or a mace.</p>
+<h4 id="evade">Evade</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Brawl 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Try and evade an attack moving the body out of the way of the
+incoming hit.</p>
+<h4 id="grapple">Grapple</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Prereq</td>
+<td>Brawl 8</td>
+</tr>
+<tr class="odd">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>Block</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The character tries to grab and control the opponent. Effective only
+against targets with a strength less than the double of the attacker’s,
+and with a body less than double the size.</p>
+<p>The attacker and the defender are both blocked, until the attacker
+fails the attack with a +3 modifier in the subsequent turns, or performs
+another action.When used against the blocked target, diminishing return
+is not applied on either side.</p>
+<h4 id="kick">Kick</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Brawl 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+mD</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>(Stun 2)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The character attacks with a kick, causing a damage equal its
+dexterity plus the success margin. Gets a +2 modifier on small creatures
+(less half the size of the attacker) and grounded targets. On critical
+success, it stuns the target for 2 turns.</p>
+<h4 id="punch">Punch</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Brawl 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Condition</td>
+<td><strong>(Stun 2)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Attacks with a direct punch. A critical success stuns the target for
+2 turns. Receives a -2 modifier against targets larger than the
+attacker.</p>
+<h4 id="smash">Smash</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Brawl 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>-2</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>Grounded</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The attacker throws its own body against the target. On success, the
+target is grounded for a turn.</p>
+<p>Receives a +2 modifier on smaller targets and -2 on larger targets.
+Brawl/Evade and other evasions receive a +2 modifier to defend against
+this action.</p>
+<p>Can’t be used against grounded targets.</p>
+<h3 id="break-free">Break Free</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>D/2</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Bfr</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>This skill is used to try and break free out of an engaged block.
+Unless the character is completely subdued, they can attempt a
+<strong>Bfr</strong> each successive turn.</p>
+<p>To successfully break free, a character must win a
+<strong>RNK</strong> against all the opponents that have achieved a
+successful lock in the previous turn.</p>
+<h3 id="concentration">Concentration</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mW</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Dominance</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Concentration is a simple mind-oriented fighting style, which can be
+seamlessly integrated in a traditional melee fight. It covers the role
+of the default combat style for mental combat, analogous to brawl for
+physical combat. In a world where mental fight is a thing, everyone
+should be able to mind meld, like everyone is able to brawl in physical
+worlds.</p>
+<p>While other fighting styles in the manual are realistic, this
+requires a setting specifically supporting mind powers. However, the
+style is suitable for sci-fi settings to handle fights between AIs,
+robots, hackers and so on, with low-resolution.</p>
+<h3 id="advanced-combat-3">Advanced Combat</h3>
+<p><em>Concentration</em> uses <strong>Focus</strong> as combat
+resources, which is determined by the <strong>Mind</strong> primary
+attribute.</p>
+<h4 id="alien-thoughts">Alien Thoughts</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mI</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Concentration 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Damage Type</td>
+<td>Maddening</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>+mI</td>
+</tr>
+</tbody>
+</table>
+<p>The attacker projects alien, irrational thoughts in the defendant’s,
+in order to cause maddening.</p>
+<h4 id="block-2">Block</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mW</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Concentration 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The character raises a mental barrier in order to block an incoming
+attack.</p>
+<h4 id="dig-into-you">Dig into you</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mW</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Concentration 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage Type</td>
+<td>Despair</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>+mW</td>
+</tr>
+<tr class="odd">
+<td>Condition</td>
+<td><strong>(Stun 2)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The character attacks by searching for painful memories and thoughts,
+in order to cause despair in the target.</p>
+<h4 id="divert">Divert</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mI</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Concentration 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Fcs</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The defendant diverts the attention of the attacker on an irrelevant
+thought or memory, causing the attack to miss.</p>
+<h4 id="mind-grasp">Mind Grasp</h4>
+<h1 id="section"></h1>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mI</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Concentration 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Condition</td>
+<td><strong>Blocked</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The character tries to acquire the control of the defendant mind. On
+success, the defendant is unable to act (blocked). To keep holding the
+target, the attacker must continue to use this attack with + 3 modifier
+against it at each turn.</p>
+<p>The attacker must maintain its <strong>concentration</strong> to keep
+the target blocked. Only one target can be blocked at a time.</p>
+<h4 id="sensations">Sensations</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>-1</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Concentration 4</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage Type</td>
+<td>Confusion</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>+<em>mW</em></td>
+</tr>
+<tr class="odd">
+<td>Condition</td>
+<td><strong>(Stun 2)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The attacker tries to hijack the sensory system of the target mind,
+causing it to hallucinate and fail to coordinate with the body. On
+critical success, the target is stunned for 2 turn.</p>
+<h4 id="yes-but-you">Yes, but you…</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mI</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Concentration 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage Type</td>
+<td>Despair</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>-2</td>
+</tr>
+</tbody>
+</table>
+<p>The defendant turns the mental attack against the attacker. If the
+defense is successful, the attacker is hit back for a number of despair
+points equal to the success margin of the defense minus two (minimum 1
+dp).</p>
+<h3 id="disengage">Disengage</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>D</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>Dis</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>Disengage allows to break off from a melee engagement, and to move
+half the normal movement speed in the current turn.</p>
+<p>It automatically succeeds if there isn’t any opponent currently able
+or willing to attack the character using it.</p>
+<p>This skill can also be used against an incoming attack; in that case,
+it works as a standard defense, and a combat <strong>CNT</strong> is
+performed between the attack skill of the attacker and the
+<strong>Dis</strong> of the defender.</p>
+<p>If one or more opponents try to stop the disengaging character with
+something else than a direct attack (i.e. grabbing or blocking them), a
+<strong>RNK</strong> is performed, and the disengagement succeeds only
+if the defendant is the top ranked.</p>
+<p>On failure, the disengagement fails and the character cannot move;
+when used as a defense, this also means that the attack has been
+successful.</p>
+<h3 id="firearms">Firearms</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Dominance</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>Firearms</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>This combat style is the bases for using firearms. In general, the
+weapon gives the modifier for the attack roll and determines the range,
+but the damage generated is usually the same. Firing with a pistol six
+feet away from the target or with a precision gun from 90 feet afar
+yields mostly the same results, provided you can hit the mark.</p>
+<p>All the damage type caused by <strong>firearms</strong> is of
+<em>piercing</em> type, unless differently specified.</p>
+<p>Everyone can shoot with a firearm; as such, the firearms style is
+available to anyone, but most maneuvers have a relatively high
+pre-requisite.</p>
+<h3 id="advanced-combat-4">Advanced Combat</h3>
+<p>The Advanced Combat Cost of <em>Firearm</em> maneuvers is expressed
+in Focus (<strong>Fcs</strong>). A sharp mind is required to be a good
+sharpshooter.</p>
+<h4 id="aim-1">Aim</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Action</td>
+</tr>
+<tr class="even">
+<td>Prereq</td>
+<td>Firearms 3</td>
+</tr>
+<tr class="odd">
+<td>ACR</td>
+<td>1 <strong>Fcs</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Take a maneuver to improve the next attack, giving it a modifier of
++1. It can be repeated any number of times within a single turn, but the
+modifier is applied only to the very next Shoot or Aimed Shoot, either
+within the same turn or in the very next one.</p>
+<p>No other action can be performed while aiming, and performing another
+action will discard the modifiers achieved.</p>
+<h4 id="aimed-shot">Aimed Shot</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>-3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Firearms 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>4 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+9</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>Injury</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Inflicts a -3 modifier on the attack, but it generates an injury one
+level more severe than normal. Light wounds becomes severe, severe
+wounds become heavy and heavy wounds becomes deadly.</p>
+<h4 id="duck">Duck</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Firearms 2</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Duck or evade while holding the firearm to avoid incoming fire.</p>
+<h4 id="fast-reload">Fast Reload</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Actions</td>
+</tr>
+<tr class="even">
+<td>Prereq</td>
+<td>Firearms 4</td>
+</tr>
+<tr class="odd">
+<td>ACR</td>
+<td>1 <strong>Fcs</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Ability to reload the weapon in the heat of the combat, using a
+maneuver.</p>
+<h4 id="localized-shot-1">Localized Shot</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>Variable</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Firearms 4</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+4</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>(Cripple)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Shoot aiming a part of the body.</p>
+<p>A <em>critical success</em> will cause automatically a <em>localized
+heavy wound</em>, crippling that part of the body, if the damage caused
+would be otherwise enough to cause at least a <em>light wound</em>.</p>
+<blockquote>
+<p>Localized heavy wounds can have further negative effects with respect
+to normal heavy wounds, as disarming, reducing the movement speed,
+blinding and so on.</p>
+</blockquote>
+<p>If the localized shot was aimed at the head, a <em>critical
+success</em> will cause a <em>deadly wound</em>.</p>
+<p>The modifier to be applied depends on the target part of the
+body:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Body Part</th>
+<th style="text-align: right;">Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Arm</td>
+<td style="text-align: right;">-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Leg</td>
+<td style="text-align: right;">-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Head</td>
+<td style="text-align: right;">-4</td>
+</tr>
+</tbody>
+</table>
+<h4 id="point-blank">Point Blank</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>+2</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Firearms 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Range</td>
+<td>Melee</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>+10</td>
+</tr>
+<tr class="odd">
+<td>Condition</td>
+<td><strong>(Deadly)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Fires at point blank on targets in melee range. On critical success
+it causes a deadly wound.</p>
+<h4 id="rapid-fire">Rapid Fire</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>-3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Firearms 9</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Fcs</strong></td>
+</tr>
+<tr class="odd">
+<td>Range</td>
+<td>15 ft</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>+3</td>
+</tr>
+</tbody>
+</table>
+<p>Fires twice in a single maneuver, each time with reduced attack and
+damage. Can be used with pistols only.</p>
+<h4 id="shoot-1">Shoot</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Prereq</td>
+<td>Firearms 1</td>
+</tr>
+<tr class="odd">
+<td>ACR</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Normal base attack with firearms.</p>
+<h4 id="take-cover">Take Cover</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>+3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Firearms 3</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Fcs</strong></td>
+</tr>
+</tbody>
+</table>
+<p>If a cover is within movement range for the turn, the character can
+use this defense to run towards a covered position, with a fixed +3
+modifier.</p>
+<h3 id="full-contact">Full Contact</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>Brawl/2</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Prerequisite</td>
+<td>Brawl 4</td>
+</tr>
+<tr class="even">
+<td>Dominance</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Hand Fight (opt)</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>An advanced version and extension of Brawl. While still not being a
+full-fledged martial art, it’s a style of combat that requires
+dedication, and if professionally trained, can be quite effective even
+against more famous martial arts.</p>
+<p>A character using Full Contact can use all the maneuvers from
+<em>Brawl</em> under <em>Full Contact</em> instead (whichever has the
+higher level).</p>
+<p>All damage from <em>full contact</em> is of <strong>blunt</strong>
+type, unless differently specified.</p>
+<h3 id="advanced-combat-5">Advanced Combat</h3>
+<p><em>Full Contact</em> uses <strong>Stamina</strong> as combat
+resources, which is determined by the <strong>Body</strong> primary
+attribute.</p>
+<h4 id="counter-punch">Counter Punch</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS-2</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Full Contact 3</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>-1</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>(Stun 2)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A counter-attack performed on melee attacks. Tries to evade the
+incoming blow and use the opening to strike with a punch on the higher
+part of the body. Has modifier -2 against smaller creatures (it’s harder
+to find a spot to counter-attack them with a punch).</p>
+<p>Ineffective against non-melee and animal attacks.</p>
+<h4 id="counter-kick">Counter kick</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD-2</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Full Contact 3</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>-1</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>(Stun 2)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A counter-attack performed on melee attacks. Tries to evade the
+incoming blow and use the opening to strike with a punch on the higher
+part of the body. Has modifier +2 against smaller creatures.</p>
+<p>Ineffective against non-melee and animal attacks.</p>
+<h4 id="crouch">Crouch</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Action</td>
+</tr>
+<tr class="even">
+<td>Prereq</td>
+<td>Full Contact 3</td>
+</tr>
+<tr class="odd">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The character loads the next attack, receiving a <strong>DP</strong>
+modifier equal to the success margin to be used in the very next attack
+in Brawl or Full Contact styles.</p>
+<p>If the next maneuver used is not an attack, or if the attack fails,
+the modifier is lost.</p>
+<h4 id="elbow-blow">Elbow Blow</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Full Contact 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+2</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td><strong>(Stun 2)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The character attacks with the elbow, causing a damage equal to its
+strength plus its success margin, and a modifier of +2.</p>
+<h4 id="knee-blow">Knee Blow</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Full Contact 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+3</td>
+</tr>
+</tbody>
+</table>
+<p>The character attacks with its knee, causing a damage equal to its
+dexterity, plus the success margin and a fixed modifier of 2.</p>
+<p>Gets a +2 modifier on small creatures (less half the size of the
+attacker) and grounded targets.</p>
+<h3 id="initiative">Initiative</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>D or W</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td>In</td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>This skill represents the reaction times and determination under
+pressure of the character. It is typically used in contests or rankings,
+to decide who acts first during a stalemate, but it can be also used in
+checks. The order in which a combat turn develops is decided by a
+ranking on the initiative of all the involved characters.</p>
+<p>Initiative is a combat skill, and is typically used in the base and
+advanced combat systems; it can also be used in any out-of-combat
+situation that requires readiness of wit and/or sudden mobility.</p>
+<p>The base is either Dexterity or Will, the best of the two.</p>
+<h3 id="instinctive-defense-1">Instinctive Defense</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The instinctive defense is used against physical attacks whenever
+it’s not possible to use any other defense, for example, because the
+character has used up all of the available maneuvers for this turn.</p>
+<p>It’s ineffective against mind attacks.</p>
+<h3 id="knife-fight">Knife Fight</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Dominance</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>Knives</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Fighting with knives and very short swords has different mechanics
+than the ones used when wielding a longer blade. Basically, it’s like
+having a fist armed with a single fang. While the weapon themselves
+could be less effective than longer ones, the style itself can be
+extremely effective in every scenario. Knife fighting is particularly
+adequate for characters with a high dexterity.</p>
+<h3 id="advanced-combat-6">Advanced Combat</h3>
+<p><em>Knife Fight</em> uses <strong>Stamina</strong> as combat
+resources, which is determined by the <strong>Body</strong> primary
+attribute.</p>
+<h4 id="backstab">Backstab</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD-2</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+6</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>(<strong>Deadly</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>Assail an opponent from behind and deliver a potentially deadly blow.
+The character must be positioned behind a target to be able to perform
+this move. On a critical success, the target receives a <em>deadly
+wound</em>.</p>
+<h4 id="backstep">Backstep</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Skip back, trying to get out of the range of a melee attack.</p>
+<h4 id="belly-opener">Belly Opener</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>-1</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 3</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>4 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td>+5</td>
+</tr>
+</tbody>
+</table>
+<p>Swing the blade in an upward strike, aiming at the lower part of the
+opponent body.</p>
+<h4 id="change-hands">Change Hands</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 2</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Use a maneuver to confuse the opponent and gain a +4 modifier on the
+next attack.</p>
+<p>The move is considered an attack, so the opponent must win a defense
+or suffer the standard penalty.</p>
+<h4 id="downstab">Downstab</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 2</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td>+4</td>
+</tr>
+</tbody>
+</table>
+<p>Swing the blade in a downward strike, aiming at the upper part of the
+opponent body.</p>
+<h4 id="evade-1">Evade</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Try and evade an attack.</p>
+<h4 id="feint">Feint</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>+3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 3</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Fake an attack, without actually completing it. On success it doesn’t
+deal damage, but gives a <strong>DP</strong> modifier on the next move
+equal to the success margin.</p>
+<h4 id="hand-cutting">Hand Cutting</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD-2</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 4</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>-2</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>(<strong>Disarm</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>Aims at an incoming blow from dealt through an anatomic part (punch,
+kick, animal attack and so on). Effective also against most melee weapon
+users, when the attack moves the arm holding the weapon in range.</p>
+<p>If the counter-attack causes a serious wound or worse, the target
+loses the weapon.</p>
+<h4 id="spring-up">Spring Up</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>-3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>4 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+8</td>
+</tr>
+</tbody>
+</table>
+<p>The character bend on its legs and springs forward, thrusting the
+blade towards the opponent. It has a -3 modifier, but on success it
+deals a devastating damage.</p>
+<h4 id="throw">Throw</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+1</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>(<strong>Cripple</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>Throws the knife at an opponent within 15 feet. On success, it deals
+a limited damage.</p>
+<h4 id="thrust">Thrust</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+4</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>(<strong>Cripple</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>Attacks the target thrusting the knife forward, in a straight
+line.</p>
+<h4 id="wrap-and-stab">Wrap and Stab</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD-3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Knife Fight 4</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+6</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>(<strong>Injury</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>Try to grab the opponent while fighting, to deliver deeper wounds. On
+success, this maneuver delivers an injury one level higher than normal.
+<em>Light wounds</em> become severe,_ severe wounds_ become heavy, and
+<em>heavy wounds</em> become deadly.</p>
+<h3 id="shoot-2">Shoot</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Projectiles</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>Shoot with a projectile weapon while not being specifically skilled
+to do so. Weapons requiring skill in being loaded (i.e. bows, special
+military rifles etc.) cannot be used with this skill, but loaded weapons
+(i.e. crossbows) can.</p>
+<h3 id="slash">Slash</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mS</td>
+</tr>
+<tr class="even">
+<td>Callsign</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>Blades, Maces</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Easy</td>
+</tr>
+</tbody>
+</table>
+<p>A generic combat maneuver that can be used with any weapon, including
+improvised ones. Clubs made out of table legs, guns without ammunitions
+used as maces, and in general anything you swing at an opponent without
+knowing exactly what you’re doing is covered under this maneuver.</p>
+<p>If the opponent is unaware, the skill requires a <strong>CHK</strong>
+at <em>easy</em> level.</p>
+<p>In combat, the opponent can use any defense, and a normal combat
+<strong>CFR</strong> is performed.</p>
+<p>The damage type depends on the nature of the weapon. It can be either
+cut or blunt. On critical success, it applies stun for 1 turns.</p>
+<h3 id="swordfight">Swordfight</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mS or mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Dominance</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>EC</td>
+<td>Swords, Maces</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>Swordfight is the simplest discipline for handling traditional melee
+weapons. Despite the name, it’s not limited to swords, as it can be used
+also with maces, flails, shields and so on.</p>
+<p>The style doesn’t differentiate between different kind of weapons as
+far as special effect and damage is concerned. To take advantage of the
+specificities of each weapon, a character can learn the specific
+style.</p>
+<h3 id="two-handed-weapons">Two-handed weapons</h3>
+<p>This style can be used with large two-handed swords, maces and
+hammers as well; they prevent the usage of a shield (and any maneuver
+related requiring it), but give a <strong>DP</strong> modifier of
++3.</p>
+<h3 id="advanced-combat-7">Advanced Combat</h3>
+<p>Brawl uses <strong>Stamina</strong> as combat resources, which is
+determined by the <strong>Body</strong> primary attribute.</p>
+<h4 id="cleave">Cleave</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>3 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+6</td>
+</tr>
+<tr class="even">
+<td>Condition</td>
+<td>(<strong>Stun 2</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>A vertical stroke, leveraging on the strength of the weapon welder. A
+critical success stuns the opponent for 2 turns.</p>
+<h4 id="deviate">Deviate</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A basic defense; the character intercept the opponent’s blow with its
+own weapon, using its own dexterity.</p>
+<h4 id="feint-1">Feint</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>-3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>2 <strong>Stm</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Uses an attack that will not deliver damage on success, to get a
+<strong>DP</strong> modifier equal to the success margin on the damage
+of very next attack.</p>
+<h4 id="parry">Parry</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>A basic defense; the character intercept the opponent’s blow with its
+own weapon, using its own strength to resist it.</p>
+<h4 id="parry-projectiles">Parry Projectiles</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 6</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Range</td>
+<td>30 ft</td>
+</tr>
+<tr class="even">
+<td>Limitation</td>
+<td>Shield</td>
+</tr>
+</tbody>
+</table>
+<p>Can be used only if the character is wearing a shield. The defender
+can block a projectile incoming from a maximum range of 30 feet.</p>
+<h4 id="shield-bash">Shield Bash</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>-2</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 4</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Damage Type</td>
+<td>Blunt</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>-2</td>
+</tr>
+<tr class="odd">
+<td>Condition</td>
+<td>(<strong>Grounded</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>Can be used only if the character is wearing a shield. The attacker
+charges the opponent with its shield, trying to make it fall on the
+ground. On success, the opponent is grounded for the rest of the
+turn.</p>
+<h4 id="shield-parry">Shield Parry</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Defense</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS+3</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 2</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Limitation</td>
+<td>Shield</td>
+</tr>
+</tbody>
+</table>
+<p>Can be used only if the character is wearing a shield. The defender
+blocks the opponent’s blow with its shield.</p>
+<h4 id="slash-1">Slash</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mS</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 1</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Damage</td>
+<td><strong>SM</strong>+6</td>
+</tr>
+</tbody>
+</table>
+<p>A simple lateral stroke.</p>
+<h4 id="thrust-1">Thrust</h4>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Attack</td>
+</tr>
+<tr class="even">
+<td>Modifier</td>
+<td>mD</td>
+</tr>
+<tr class="odd">
+<td>Prereq</td>
+<td>Swordfight 2</td>
+</tr>
+<tr class="even">
+<td>ACR</td>
+<td>1 <strong>Stm</strong></td>
+</tr>
+<tr class="odd">
+<td>Limitation</td>
+<td>Swords</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td><strong>SM</strong>+6</td>
+</tr>
+</tbody>
+</table>
+<p>Thrusts a cutting weapon towards the opponent. Cannot be used with
+blunt or two handed weapons (including swords).</p>
+<h3 id="throw-1">Throw</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Throwable (opt)</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>This attack consists in throwing a heavy object to an enemy in range.
+Anything goes; even weapons, as long as the weight of the object is
+between two and eight pounds weight.</p>
+<p>The damage dealt is normally of <strong>blunt</strong> type, unless
+the thrown object is sharp; then it becomes of <strong>cut</strong>
+type.</p>
+<p>If the opponent is unaware, the skill requires a <strong>CHK</strong>
+at <em>normal</em> difficulty to succeed. In combat, a normal combat
+<strong>CFR</strong> against the opponent’s defense is attempted.</p>
+<p>A critical success applies also the stun condition for 1 turn.</p>
+<h3 id="thrust-2">Thrust</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mD</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>EC</td>
+<td>Blades</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>1 TT/Normal</td>
+</tr>
+</tbody>
+</table>
+<p>A generic maneuver performed with any pointed or cutting weapon,
+(always causing <strong>cut</strong> damage), including improvised ones.
+The character thrusts the weapon forward.</p>
+<p>If the opponent is unaware, the skill requires a successful
+<strong>CHK</strong> against <em>easy</em> difficulty.</p>
+<p>In combat, a normal <strong>CFR</strong> is attempted against the
+opponent’s defense.</p>
+<h3 id="willpower-defense">Willpower Defense</h3>
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>mW</td>
+</tr>
+<tr class="even">
+<td>Category</td>
+<td>Skill/combat</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>1 TT/Hard</td>
+</tr>
+</tbody>
+</table>
+<p>The willpower defense is used against mental attacks, whenever it’s
+not possible to use any other defense, for example, because the
+character has used up all of the available actions for this turn.</p>
 <h1 id="equipment">Equipment</h1>
 <p>For <em>equipment</em> we intend whatever material is necessary for a
 skill to function. For example, to use (lock picking)[#lock_picking] it
@@ -1882,6 +7968,422 @@ used by a specific skill or attribute is a <em>generic item</em>.</p>
 either becomes unusable or needs to be recharged. This is the case of
 magic scrolls in certain magic settings, that can be used only once, or
 pistols that require recharging after their magazine is depleted.</p>
+<h2 id="generic-skillset-equipment">Generic skillset: Equipment</h2>
+<h3 id="adventuring-equipment">Adventuring Equipment</h3>
+<p>Adventuring equipment is the equipment used in non-combat skills.</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 16%" />
+<col style="width: 10%" />
+<col style="width: 32%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weapon Type</th>
+<th>Modifier</th>
+<th style="text-align: right;">Weight</th>
+<th style="text-align: center;">EC</th>
+<th style="text-align: right;">Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First Aid</td>
+<td>-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">First Aid Kit</td>
+<td style="text-align: right;">20$</td>
+</tr>
+<tr class="even">
+<td>Improved First Aid</td>
+<td>+1 PT</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: center;">First Aid Kit</td>
+<td style="text-align: right;">400$</td>
+</tr>
+<tr class="odd">
+<td>Portable ER</td>
+<td>+2 PT</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: center;">First Aid, Healing Kit</td>
+<td style="text-align: right;">1000$</td>
+</tr>
+<tr class="even">
+<td>Medikit</td>
+<td>Expertise</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: center;">First Aid, Healing Kit</td>
+<td style="text-align: right;">5000$</td>
+</tr>
+<tr class="odd">
+<td>Net Tools</td>
+<td>+1 PT</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Rootkit</td>
+<td style="text-align: right;">100$</td>
+</tr>
+<tr class="even">
+<td>Penetration Kit</td>
+<td>Expertise</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Rootkit</td>
+<td style="text-align: right;">1000$</td>
+</tr>
+<tr class="odd">
+<td>Lock Picks</td>
+<td>-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Lock Picks</td>
+<td style="text-align: right;">10$</td>
+</tr>
+<tr class="even">
+<td>Improved Lock Picks</td>
+<td>+1 PT</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Lock Picks</td>
+<td style="text-align: right;">100$</td>
+</tr>
+<tr class="odd">
+<td>Prof. Lock Picks</td>
+<td>+2 PT</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Lock Picks</td>
+<td style="text-align: right;">400$</td>
+</tr>
+<tr class="even">
+<td>Repair Set</td>
+<td>-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Repair Kit</td>
+<td style="text-align: right;">80$</td>
+</tr>
+<tr class="odd">
+<td>Workshop Set</td>
+<td>+2 PT</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Repair Kit</td>
+<td style="text-align: right;">500$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="armours">Armours</h3>
+<p>Armours provide damage mitigation against some specific damage types.
+Naturally, the damage mitigation applies to the part of the body where
+the armour is applied. The following table is a generic guide that
+indicates the type of material of which armours are built, their
+approximate weight in pounds, the cut, blunt and piercing damage
+mitigation and an approximate cost. The weight refer to the material
+applied to a body armour; to get the weight of arm and leg armour divide
+by half, and for an helmet divide by four.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Material Type</th>
+<th style="text-align: right;">Weight</th>
+<th style="text-align: right;">Cut</th>
+<th style="text-align: right;">Blunt</th>
+<th style="text-align: right;">Piercing</th>
+<th style="text-align: right;">Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Heavy Garment (1)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">200$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kevlar</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">800$</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bullet-proof Armor</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">500$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Meta-material (2)</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1200$</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Energy Shielding (3)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4000$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Leather</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">40$</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ring Mail</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">80$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chain Mail</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">150$</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Scale Mail</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">400$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thin Plate (4)</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">600$</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Heavy Plate</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">800$</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Normal clothing doesn’t provide any mitigation, but heavy,
+multi-layer garment (i.e. overcoat, jacket, gilet, shirt and underwear)
+do.</li>
+<li>Gel-like material reactive to sudden shock.</li>
+<li>Just indicative; can be anything, depending on the technology.</li>
+<li>Includes military metal helmets.</li>
+</ol>
+<h3 id="weapons">Weapons</h3>
+<p>Weapons are either used unskillfully, using any one of the Generic
+Combat Skills, or through the appropriate combat style. The default
+damage (and often, damage type) caused by the weapon is already
+accounted for in the combat style; for example, Firearms/shoot causes a
+higher damage than Brawl/punch because guns are more lethal than bare
+hands.</p>
+<p>However, some special weapon (i.e. magic swords, experimental rifles
+etc.) might give their wielder a modifier either to the attack or
+defense rolls, or solely to the damage caused once a hit is scored. In
+the following table, the weight is the typical weight of for the given
+type of weapon, the range either the throwing distance or the range of
+the projectiles, in feet, and the cost is an indicative cost for a
+normal weapon of that kind.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 29%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weapon Type</th>
+<th>Modifier</th>
+<th style="text-align: right;">Weight</th>
+<th style="text-align: right;">Range</th>
+<th style="text-align: center;">EC</th>
+<th style="text-align: right;">Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Knife</td>
+<td>-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">Knives, Blades</td>
+<td style="text-align: right;">20$</td>
+</tr>
+<tr class="even">
+<td>Sword</td>
+<td>-</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Swords, Blades</td>
+<td style="text-align: right;">400$</td>
+</tr>
+<tr class="odd">
+<td>Mace</td>
+<td>-</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Maces</td>
+<td style="text-align: right;">100$</td>
+</tr>
+<tr class="even">
+<td>Iron Fist</td>
+<td>+1 Dom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Hand Fight</td>
+<td style="text-align: right;">20$</td>
+</tr>
+<tr class="odd">
+<td>Gauntlet</td>
+<td>+2 Dom</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Hand Fight</td>
+<td style="text-align: right;">200$</td>
+</tr>
+<tr class="even">
+<td>Throwing Knife</td>
+<td>+1 Dom</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: center;">Throwing</td>
+<td style="text-align: right;">5$</td>
+</tr>
+<tr class="odd">
+<td>War Hammer (*)</td>
+<td>+1 Dom</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Maces</td>
+<td style="text-align: right;">300$</td>
+</tr>
+<tr class="even">
+<td>Two Handed Sword (*)</td>
+<td>-</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Swords</td>
+<td style="text-align: right;">600$</td>
+</tr>
+<tr class="odd">
+<td>Shield</td>
+<td>+1 PT</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Shields</td>
+<td style="text-align: right;">80$</td>
+</tr>
+<tr class="even">
+<td>Large Shield</td>
+<td>Expertise</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: center;">Shields</td>
+<td style="text-align: right;">600$</td>
+</tr>
+<tr class="odd">
+<td>Pistol (revolver)</td>
+<td>-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: center;">Firearms, Projectile</td>
+<td style="text-align: right;">600$</td>
+</tr>
+<tr class="even">
+<td>Pistol (semi-auto)</td>
+<td>+1 Dom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: center;">Firearms, Projectile</td>
+<td style="text-align: right;">800$</td>
+</tr>
+<tr class="odd">
+<td>Rifle</td>
+<td>+2 Dom</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: center;">Firearms, Projectile</td>
+<td style="text-align: right;">1200$</td>
+</tr>
+<tr class="even">
+<td>Sniper’s rifle</td>
+<td>+1 Dom</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: center;">Firearms, Precision</td>
+<td style="text-align: right;">1800$</td>
+</tr>
+<tr class="odd">
+<td>Short Bow</td>
+<td>-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">Bows</td>
+<td style="text-align: right;">40$</td>
+</tr>
+<tr class="even">
+<td>Bow</td>
+<td>-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: center;">Bows</td>
+<td style="text-align: right;">80$</td>
+</tr>
+<tr class="odd">
+<td>Long Bow</td>
+<td>+1 Dom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: center;">Bows</td>
+<td style="text-align: right;">120$</td>
+</tr>
+<tr class="even">
+<td>Crossbow</td>
+<td>-</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: center;">Bows, Projectile</td>
+<td style="text-align: right;">150$</td>
+</tr>
+<tr class="odd">
+<td>Heavy Crossbow</td>
+<td>+1 Dom</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: center;">Bows, Projectile</td>
+<td style="text-align: right;">200$</td>
+</tr>
+</tbody>
+</table>
+<p>(*) Two handed weapons.</p>
 <h1 id="appendix-theorycrafting-elements">APPENDIX: Theorycrafting
 Elements</h1>
 <p>In this appendix, you can find some technical elements about the
@@ -2127,3 +8629,5 @@ a draw; the position of the other character is reversed.</p>
 <p>Consider: with a -3 modifier, you have only 1 chance over five to
 win; be very cautious fighting characters with higher bases than
 you.</p>
+</body>
+</html>

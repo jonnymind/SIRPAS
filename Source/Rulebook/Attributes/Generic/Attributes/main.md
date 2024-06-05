@@ -1,4 +1,3 @@
-@(include Generic.md)
 @(include Body.md)
 @(include Mind.md)
 @(include Strength.md)

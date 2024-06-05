@@ -107,13 +107,13 @@ to because of something happening during their adventure. For example, a
 character may receive a light curse that afflicts a specific skill by design, which
 may or may not be relevant for the character.
 
-## Generic Advantages
+## Generic Skillset: Advantages
 
 @(index 3)
 @(include Generic/Advantages/*.md)
 @(endindex)
 
-## Generic Disadvantages
+## Generic Skillset: Disadvantages
 
 @(index 3)
 @(include Generic/Disadvantages/*.md)

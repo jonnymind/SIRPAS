@@ -21,6 +21,8 @@ the ability to **persuade** already takes into account the attractiveness
 of a character. Conversely, a physical disability is difficult to translate
 into gameplay, while a low attribute number can better represent it.
 
+## Generic Skillset: Backgrounds
+
 @(index 2)
 @(include Generic/*.md)
 @(endindex)

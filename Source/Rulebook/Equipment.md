@@ -64,6 +64,6 @@ Some equipment can be used a limited number of times, after which it either beco
 needs to be recharged. This is the case of magic scrolls in certain magic settings, that can be
 used only once, or pistols that require recharging after their magazine is depleted.
 
-## Generic skillset: equipment
+## Generic skillset: Equipment
 
-@(include Equipent/*.md)
+@(include Equipment/*.md)

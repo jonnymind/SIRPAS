@@ -6,7 +6,7 @@
   "*Brief": "Additional **ACR**",
   "Category": "Advantage",
   "Specialization": "Primary",
-  "Levels": 6ß, 
+  "Levels": 6, 
   "Cost": "1 TT/Normal"
 }
 

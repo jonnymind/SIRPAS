@@ -27,7 +27,7 @@ In turn, the secondary attributes are themselves base for other attributes and s
 
 @(include Attributes)
 
-## Generic Skills
+## Generic skillset: General skills
 The *Generic Skillset* provides a set of skills that can be used in most settings.
 
 Skills specifically used for combat that are still part of the generic
